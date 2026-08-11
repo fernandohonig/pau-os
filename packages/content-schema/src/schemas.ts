@@ -22,9 +22,9 @@ export const SkillSchema = z.object({
   academic_year: z.number().int(),
 
   name: LocalizedStringSchema,
-  description: LocalizedStringSchema.optional(),
+  description: LocalizedStringSchema.nullish(),
 
-  parent: z.string().optional(),
+  parent: z.string().nullish(),
   prerequisites: z.array(z.string()).default([]),
   related: z.array(z.string()).default([]),
 
@@ -49,17 +49,18 @@ export const QuestionAnswerSchema = z.object({
 
 export const QuestionSourceSchema = z.object({
   type: ProvanceTypeEnum,
-  authority: z.string().optional(),
-  exam_year: z.number().int().optional(),
-  exam_id: z.string().optional(),
-  url: z.string().url().optional(),
+  authority: z.string().nullish(),
+  exam_year: z.number().int().nullish(),
+  exam_id: z.string().nullish(),
+  // Accept a real URL or an empty/placeholder string; never fabricate URLs.
+  url: z.string().url().nullish().or(z.literal('')),
 });
 
 export const QuestionReviewSchema = z.object({
   status: ReviewStatusEnum.default('draft'),
-  reviewed_by: z.string().optional(),
-  reviewed_at: z.string().datetime().optional(),
-  notes: z.string().optional(),
+  reviewed_by: z.string().nullish(),
+  reviewed_at: z.string().datetime().nullish(),
+  notes: z.string().nullish(),
 });
 
 export const QuestionSchema = z.object({
@@ -76,7 +77,7 @@ export const QuestionSchema = z.object({
 
   difficulty: z.object({
     initial: z.number().min(0).max(1),
-    calibrated: z.number().min(0).max(1).optional(),
+    calibrated: z.number().min(0).max(1).nullish(),
   }),
 
   question: LocalizedStringSchema,
@@ -102,7 +103,7 @@ export const DegreeSchema = z.object({
   university_id: z.string(),
 
   name: LocalizedStringSchema,
-  description: LocalizedStringSchema.optional(),
+  description: LocalizedStringSchema.nullish(),
 
   admission_score_max: z.number().positive(),
   weightings: z.array(WeightingSchema).default([]),
@@ -120,7 +121,7 @@ export const CutoffSchema = z.object({
     authority: z.string(),
     type: z.enum(['official', 'estimated', 'historical']),
     retrieved_at: z.string().datetime(),
-    url: z.string().url().optional(),
+    url: z.string().url().nullish().or(z.literal('')),
   }),
 });
 

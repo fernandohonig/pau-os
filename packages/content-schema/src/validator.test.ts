@@ -103,7 +103,7 @@ describe('Content Validation', () => {
         source: { type: 'official' },
       };
 
-      const { question, errors } = validateQuestion(data, 'test.yaml');
+      const { errors } = validateQuestion(data, 'test.yaml');
       expect(errors.length).toBeGreaterThan(0);
     });
   });

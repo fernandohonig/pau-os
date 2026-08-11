@@ -1,17 +1,25 @@
 {
+  "root": true,
   "extends": ["eslint:recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
+  "env": {
+    "node": true,
+    "es2020": true
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "build/", "*.config.ts"],
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "@typescript-eslint/explicit-function-return-types": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
-        "argsIgnorePattern": "^_"
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_"
       }
     ],
     "no-console": [
