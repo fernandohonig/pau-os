@@ -1,25 +1,30 @@
-// Self-contained API client for the app. Mirrors @pau/api-client (the canonical
-// typed client) but is kept in-app to avoid bundling workspace TypeScript
-// through Metro. Base URL comes from app.json `extra.apiBaseUrl`.
+// Typed REST client for the PAU OS API. Base URL and Google client id come from
+// Vite env (VITE_API_BASE_URL / VITE_GOOGLE_CLIENT_ID).
 
-import Constants from 'expo-constants';
-
-const baseUrl =
-  (Constants.expoConfig?.extra?.apiBaseUrl as string | undefined) ?? 'http://localhost:3000';
+const baseUrl = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:3000';
 
 /** Google OAuth web client id, if configured (enables the Google button). */
-export const googleClientId = Constants.expoConfig?.extra?.googleClientId as string | undefined;
-/** Platform client ids for native builds; the audience differs per platform. */
-export const googleIosClientId = Constants.expoConfig?.extra?.googleIosClientId as
-  | string
-  | undefined;
-export const googleAndroidClientId = Constants.expoConfig?.extra?.googleAndroidClientId as
-  | string
-  | undefined;
+export const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID as string | undefined;
 
+const TOKEN_KEY = 'pau-token';
 let authToken: string | null = null;
+try {
+  authToken = localStorage.getItem(TOKEN_KEY);
+} catch {
+  authToken = null;
+}
+
 export function setAuthToken(token: string | null): void {
   authToken = token;
+  try {
+    if (token) localStorage.setItem(TOKEN_KEY, token);
+    else localStorage.removeItem(TOKEN_KEY);
+  } catch {
+    /* storage unavailable — in-memory only */
+  }
+}
+export function getAuthToken(): string | null {
+  return authToken;
 }
 
 export interface AuthResult {
@@ -74,11 +79,30 @@ export type TargetEstimate =
   | {
       goal: { degreeId: string; targetScore: number | null };
       degreeName: string;
-      subjectLevel: { level: number; range: [number, number]; confidence: number; assessedSkillCount: number };
-      contribution: { subject: string; coefficient: number; points: number; range: [number, number] } | null;
+      subjectLevel: {
+        level: number;
+        range: [number, number];
+        confidence: number;
+        assessedSkillCount: number;
+      };
+      contribution: {
+        subject: string;
+        coefficient: number;
+        points: number;
+        range: [number, number];
+      } | null;
       cutoff: { score: number; assignment: string; academicYear: number; sourceType: string } | null;
       disclaimer: string;
     };
+
+/** Auth/permission errors carry the HTTP status so the UI can react (e.g. 401). */
+export class ApiError extends Error {
+  status: number;
+  constructor(message: string, status: number) {
+    super(message);
+    this.status = status;
+  }
+}
 
 async function req<T>(method: string, path: string, body?: unknown): Promise<T> {
   const headers: Record<string, string> = {};
@@ -91,7 +115,7 @@ async function req<T>(method: string, path: string, body?: unknown): Promise<T> 
   });
   const text = await res.text();
   const json = text ? JSON.parse(text) : {};
-  if (!res.ok) throw new Error((json && json.error) || `request_failed_${res.status}`);
+  if (!res.ok) throw new ApiError((json && json.error) || `request_failed_${res.status}`, res.status);
   return json as T;
 }
 
@@ -143,6 +167,7 @@ export interface ReviewHistoryItem {
 
 export const api = {
   // Auth
+  me: () => req<{ role: 'student' | 'admin'; email: string | null; studentId: string | null }>('GET', '/v1/auth/me'),
   devLogin: (role: 'student' | 'admin') => req<AuthResult>('POST', '/v1/auth/dev', { role }),
   googleLogin: (idToken: string, linkStudentId?: string) =>
     req<AuthResult>('POST', '/v1/auth/google', { idToken, linkStudentId }),
@@ -162,7 +187,8 @@ export const api = {
 
   createStudent: () => req<{ id: string }>('POST', '/v1/students'),
   getDegrees: () => req<{ degrees: Degree[]; provisional: boolean }>('GET', '/v1/catalog/degrees'),
-  getSkillCatalog: () => req<{ skills: { id: string; name: LocalizedText }[] }>('GET', '/v1/catalog/skills'),
+  getSkillCatalog: () =>
+    req<{ skills: { id: string; name: LocalizedText }[] }>('GET', '/v1/catalog/skills'),
   createGoal: (studentId: string, degreeId: string, targetScore?: number) =>
     req('POST', '/v1/goals', { studentId, degreeId, targetScore }),
   startAssessment: (studentId: string) =>
@@ -215,8 +241,8 @@ export const api = {
       progress: { answered: number };
     }>('POST', `/v1/sessions/${sessionId}/responses`, { questionId, answer, idk }),
   completeSession: (sessionId: string) =>
-    req<{ level: { level: number; range: [number, number]; confidence: number }; skills: ProfileBandItem[] }>(
-      'POST',
-      `/v1/sessions/${sessionId}/complete`,
-    ),
+    req<{
+      level: { level: number; range: [number, number]; confidence: number };
+      skills: ProfileBandItem[];
+    }>('POST', `/v1/sessions/${sessionId}/complete`),
 };

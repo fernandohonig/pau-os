@@ -1,0 +1,29 @@
+# Render Blueprint for the PAU OS API (services/api).
+# New → Blueprint → point at this repo. Set the `sync: false` secrets in the
+# dashboard (they are never stored in Git).
+services:
+  - type: web
+    name: pau-os-api
+    runtime: node
+    plan: free
+    region: ohio # closest to the Neon us-east-2 database
+    healthCheckPath: /health
+    # Install the whole pnpm workspace (dev deps included so tsx is available),
+    # generate the Prisma client, then apply migrations against DATABASE_URL.
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm db:generate && pnpm db:migrate
+    startCommand: pnpm --filter @pau/api start
+    envVars:
+      - key: NODE_VERSION
+        value: '22.12.0'
+      - key: NODE_ENV
+        value: production # disables dev login in production
+      - key: DATABASE_URL
+        sync: false # set in dashboard — the Neon connection string
+      - key: JWT_SECRET
+        generateValue: true # Render generates a strong secret
+      - key: ADMIN_EMAILS
+        sync: false # e.g. fernando@honig.com.ar
+      - key: GOOGLE_CLIENT_ID
+        sync: false # the OAuth Web client id
+      - key: CORS_ORIGINS
+        value: https://pau-os.vercel.app

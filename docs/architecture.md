@@ -9,8 +9,8 @@
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                      Frontend (Mobile/Web)              │
-│                   React Native + Expo                   │
+│                     Frontend (Web)                      │
+│              Vite + React + Tailwind (SPA)              │
 └────────────────────────┬────────────────────────────────┘
                          │
                     HTTPS / REST
@@ -66,7 +66,7 @@
 
 ### 2.3 Monorepo with Workspace Organization
 
-- `apps/`: Frontend (mobile, web, admin)
+- `apps/`: Frontend — `web` (Vite + React + Tailwind SPA; includes the admin UI)
 - `packages/`: Shared logic (assessment, knowledge-model, recommendation, scoring)
 - `services/`: API server
 - `content/`: YAML/JSON data
@@ -337,8 +337,9 @@ Week 3 (Assessment): `@pau/scoring` (Bayesian mastery), `@pau/knowledge-model`
 (profile/level/recommendation), `@pau/assessment` (adaptive diagnostic),
 `@pau/api` diagnostic endpoints + analytics; 30 questions.
 
-Week 4 (Student Experience): `@pau/api-client`, Expo app (`@pau/mobile`) with the
-full screen flow, minimal practice with feedback, goals/catalog endpoints.
+Week 4 (Student Experience): `@pau/api-client`, the full screen flow, minimal
+practice with feedback, goals/catalog endpoints. (Originally an Expo app; later
+migrated to a web-only Vite + React app, `@pau/web`.)
 
 Week 5 (University Goal Engine): universities/degrees/weightings/cutoffs content
 (provisional, non-official), `@pau/scoring` admission module (specific-phase

@@ -31,17 +31,9 @@ const TOKEN_TTL = '30d';
 
 /** Build auth config from environment (used by the running server). */
 export function loadAuthConfig(env: NodeJS.ProcessEnv = process.env): AuthConfig {
-  const googleClientId = env.GOOGLE_CLIENT_ID;
-  // A Google ID token's `aud` is the client id that requested it, which differs
-  // per platform: web uses GOOGLE_CLIENT_ID, native builds use the iOS/Android
-  // client ids. Accept any configured client id as a valid audience.
-  const googleAudiences = [
-    env.GOOGLE_CLIENT_ID,
-    env.GOOGLE_IOS_CLIENT_ID,
-    env.GOOGLE_ANDROID_CLIENT_ID,
-  ]
-    .map((v) => v?.trim())
-    .filter((v): v is string => Boolean(v));
+  // Web-only: the app is served in the browser via Google Identity Services, so
+  // an ID token's `aud` is always the web OAuth client id.
+  const googleClientId = env.GOOGLE_CLIENT_ID?.trim() || undefined;
 
   const adminEmails = (env.ADMIN_EMAILS ?? '')
     .split(',')
@@ -52,7 +44,7 @@ export function loadAuthConfig(env: NodeJS.ProcessEnv = process.env): AuthConfig
     env.AUTH_DEV_LOGIN === 'true' ||
     (env.AUTH_DEV_LOGIN !== 'false' && env.NODE_ENV !== 'production');
 
-  const client = googleAudiences.length ? new OAuth2Client(googleAudiences[0]) : null;
+  const client = googleClientId ? new OAuth2Client(googleClientId) : null;
 
   return {
     jwtSecret: env.JWT_SECRET ?? 'dev-secret-change-me',
@@ -60,8 +52,8 @@ export function loadAuthConfig(env: NodeJS.ProcessEnv = process.env): AuthConfig
     devLoginEnabled,
     googleClientId,
     verifyGoogleIdToken: async (idToken: string) => {
-      if (!client || googleAudiences.length === 0) return null;
-      const ticket = await client.verifyIdToken({ idToken, audience: googleAudiences });
+      if (!client || !googleClientId) return null;
+      const ticket = await client.verifyIdToken({ idToken, audience: googleClientId });
       const email = ticket.getPayload()?.email;
       return email ? { email } : null;
     },

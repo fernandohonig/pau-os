@@ -26,7 +26,7 @@ Open-source academic GPS for Spanish PAU preparation.
 - [x] Diagnostic REST API (`@pau/api`) with analytics events — see [docs/api.md](docs/api.md)
 - [x] 30 practice questions (≥2 per core skill) for a meaningful diagnostic
 - [x] Typed API client (`@pau/api-client`), integration-tested against the live API
-- [x] Expo app (`@pau/mobile`): Welcome → Goal → Diagnostic → Results → Home → Practice → Progress
+- [x] Web app (`@pau/web`, Vite + React + Tailwind): Welcome → Goal → Diagnostic → Results → Home → Practice → Progress (responsive, light/dark)
 - [x] Minimal practice flow (immediate feedback + explanation) + goals/catalog endpoints
 - [x] University goal engine: universities/degrees/weightings/cutoffs (provisional), goal scoring
 - [x] Honest target estimate: subject level → specific-phase contribution (no fake 14-pt prediction)
@@ -39,7 +39,7 @@ Open-source academic GPS for Spanish PAU preparation.
 - [x] Right to erasure (`DELETE /v1/students/:id`); privacy posture ([docs/privacy.md](docs/privacy.md))
 - [x] MVP acceptance criteria tracked ([docs/acceptance.md](docs/acceptance.md))
 - [x] Auth: anonymous-first students, optional Google sign-in, admin email allowlist, dev login ([docs/auth.md](docs/auth.md))
-- [x] CI/CD (lint, typecheck, mobile typecheck, content validation, unit + integration tests)
+- [x] CI/CD (lint, typecheck, web typecheck, content validation, unit + integration tests)
 
 > ⚠️ **Provisional university data.** Degree weightings and cut-offs under
 > `content/universities/` are **placeholders**, not official Canal Universitats
@@ -53,9 +53,9 @@ Open-source academic GPS for Spanish PAU preparation.
 docker compose up -d && pnpm db:migrate:dev && pnpm db:seed
 npx tsx services/api/src/server.ts       # → http://localhost:3000
 
-# 2. The app (web), in another terminal
-pnpm --filter @pau/mobile web            # Expo web dev server
-# API base URL: app.json → expo.extra.apiBaseUrl (default http://localhost:3000)
+# 2. The web app, in another terminal
+pnpm --filter @pau/web dev               # → http://localhost:5173
+# Config: apps/web/.env.local (VITE_API_BASE_URL, VITE_GOOGLE_CLIENT_ID)
 ```
 
 **Test as a student and as an admin** (no Google setup needed): the sign-in
@@ -66,10 +66,10 @@ screen shows, in dev builds, a *Developer sign-in* card:
 For real Google sign-in and the admin allowlist, see [docs/auth.md](docs/auth.md).
 Dev login is disabled in production.
 
-The screens call the API via `apps/mobile/src/api.ts`, whose endpoints are the
-same ones covered by the `@pau/api-client` integration test. The app is verified
-to typecheck and bundle for web (Metro), and its API contract is tested
-end-to-end; on-device rendering/UX polish comes later (spec §29 step 17).
+The screens call the API via `apps/web/src/api.ts`, whose endpoints are the same
+ones covered by the `@pau/api-client` integration test. The app typechecks and
+builds (`pnpm --filter @pau/web build`), is responsive (mobile → desktop), and
+supports light/dark themes.
 
 ## Getting Started
 
@@ -112,9 +112,7 @@ pnpm lint               # ESLint
 ```
 pau-os/
 ├── apps/
-│   ├── mobile/          # React Native + Expo
-│   ├── web/             # Web frontend
-│   └── admin/           # Admin UI
+│   └── web/             # Vite + React + Tailwind web app (incl. admin)
 ├── packages/
 │   ├── content-schema/  # YAML schema & validation
 │   ├── assessment/      # Diagnostic & session logic

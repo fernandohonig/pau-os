@@ -69,9 +69,9 @@ describe('loadAuthConfig', () => {
     expect(cfg.googleClientId).toBeUndefined();
     await expect(cfg.verifyGoogleIdToken('any-token')).resolves.toBeNull();
   });
-  it('enables Google verification when any platform client id is set', () => {
-    // No web client id, only a native one — Google auth should still be active.
-    const cfg = loadAuthConfig({ GOOGLE_ANDROID_CLIENT_ID: 'android.apps.googleusercontent.com' });
+  it('picks up the web Google client id', () => {
+    const cfg = loadAuthConfig({ GOOGLE_CLIENT_ID: 'web.apps.googleusercontent.com' });
+    expect(cfg.googleClientId).toBe('web.apps.googleusercontent.com');
     expect(typeof cfg.verifyGoogleIdToken).toBe('function');
   });
 });

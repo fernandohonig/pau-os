@@ -17,8 +17,9 @@ if (!connectionString) {
   process.exit(1);
 }
 
-const port = Number(process.env.API_PORT ?? 3000);
-const host = process.env.API_HOST ?? 'localhost';
+// Render (and most PaaS) inject PORT and require binding 0.0.0.0.
+const port = Number(process.env.PORT ?? process.env.API_PORT ?? 3000);
+const host = process.env.API_HOST ?? '0.0.0.0';
 
 const db = createPrisma(connectionString);
 const app = buildApp(db);

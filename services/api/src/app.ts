@@ -292,7 +292,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   // Allowed origins come from CORS_ORIGINS (comma-separated); dev defaults cover
   // the Expo web / Metro ports.
   const corsOrigins = (process.env.CORS_ORIGINS ??
-    'http://localhost:8081,http://localhost:19006,http://localhost:19000')
+    'http://localhost:5173,http://localhost:4173')
     .split(',')
     .map((o) => o.trim())
     .filter(Boolean);
