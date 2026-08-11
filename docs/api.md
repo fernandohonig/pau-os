@@ -185,6 +185,48 @@ Right to erasure (spec §23): deletes the student and cascades to all derived
 data; analytics events are anonymized.
 - `200 { "deleted": true }` · `404 { "error": "student_not_found" }`
 
+## Content review (admin, spec §17/§19)
+
+Reviewers inspect and approve content. Only `approved`/`published` questions are
+served to students; everything else stays in the review queue. Review state is
+**DB-authoritative** — the content importer seeds new questions as
+`pending_review` and never overwrites an admin decision on re-import (Git remains
+the source of truth for question *content*, not review status).
+
+All routes below are **admin only** — an admin bearer token is required (`401`
+without a token, `403` for a non-admin). See [Authentication](#authentication).
+Each decision appends an auditable `ContentReview` row (spec §24). `:id` is a
+question id.
+
+### `GET /v1/admin/reviews`
+List questions awaiting review. Optional `?status=` (comma-separated) overrides
+the default queue states (`draft,automated_validation,pending_review`).
+- `200 { "reviews": AdminQuestion[] }` — full detail incl. `answer`, `explanation`, `reviewStatus`, provenance.
+
+### `GET /v1/admin/reviews/:id`
+Full question detail plus its review history.
+- `200 { "question": AdminQuestion, "history": ContentReview[] }`
+- `404 { "error": "question_not_found" }`
+
+### `POST /v1/admin/reviews/:id/approve`
+Set `reviewStatus = "approved"` (question becomes servable). Body: `{ "notes"?: string }`.
+- `200 { "id": string, "reviewStatus": "approved" }`
+- `404 { "error": "question_not_found" }`
+
+### `POST /v1/admin/reviews/:id/reject`
+Set `reviewStatus = "rejected"` (kept out of the served bank). Body: `{ "notes"?: string }`.
+- `200 { "id": string, "reviewStatus": "rejected" }`
+- `404 { "error": "question_not_found" }`
+
+### `PATCH /v1/admin/questions/:id`
+Edit content fields and/or `reviewStatus`. Body (all optional): `questionCA`,
+`questionES`, `options`, `answer`, `explanation`, `skills`, `competencies`,
+`difficultyInitial`, `sourceType`, `reviewStatus`.
+> Content edits are overwritten by a re-import (Git owns content); only review
+> status is DB-authoritative.
+- `200 { "question": AdminQuestion }`
+- `400 { "error": "no_fields_to_update" }` · `404 { "error": "question_not_found" }`
+
 ## Authentication
 
 Students are anonymous-first (spec §20/§23): no token is required for the

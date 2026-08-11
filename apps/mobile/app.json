@@ -6,7 +6,11 @@
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "ios": {
       "bundleIdentifier": "app.pauos.mobile"
     },
@@ -19,8 +23,12 @@
     "extra": {
       "apiBaseUrl": "http://localhost:3000",
       "googleClientId": "1083016220865-bbdeulma51p2t9a1pjof34s8ae5puk2m.apps.googleusercontent.com",
-      "googleIosClientId": "",
-      "googleAndroidClientId": ""
-    }
+      "googleIosClientId": "1083016220865-il7cdp8btr7evbpq6o40snbv75op78aq.apps.googleusercontent.com",
+      "googleAndroidClientId": "1083016220865-9t35jlqeuk1tb7nqfs3v3dta5332b7jf.apps.googleusercontent.com",
+      "eas": {
+        "projectId": "f04e6e47-e7d0-45d6-9bf4-0a84b1eb3627"
+      }
+    },
+    "owner": "fernandohonigs-team"
   }
 }

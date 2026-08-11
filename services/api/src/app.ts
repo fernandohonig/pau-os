@@ -50,6 +50,9 @@ import {
   outcomeFor,
   effectiveDifficulty,
   explanationOf,
+  loadReviewQueue,
+  getQuestionForReview,
+  toAdminQuestion,
   type QuestionRow,
 } from './questions.js';
 
@@ -1128,6 +1131,151 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
     for (const e of events) eventCounts[e.event] = e._count.event;
 
     return { summary: summarizeCohort(perStudent), eventCounts };
+  });
+
+  // --- Admin content review (spec §17/§19) --------------------------------
+  // A "review" is a question in a non-final state. Review state is
+  // DB-authoritative; each decision writes a ContentReview audit row.
+
+  // Record an admin decision on a question: update its review state and append
+  // an auditable ContentReview row (spec §24).
+  async function recordReview(
+    questionId: string,
+    reviewStatus: string,
+    auditStatus: string,
+    reviewedBy: string,
+    notes?: string,
+  ): Promise<void> {
+    const reviewedAt = new Date();
+    await db.question.update({
+      where: { id: questionId },
+      data: { reviewStatus, reviewedBy, reviewedAt },
+    });
+    await db.contentReview.create({
+      data: {
+        contentId: questionId,
+        contentType: 'question',
+        status: auditStatus,
+        reviewedBy,
+        reviewedAt,
+        notes: notes ?? null,
+      },
+    });
+  }
+
+  // List questions awaiting review. Optional `?status=` (comma-separated)
+  // overrides the default queue states.
+  app.get<{ Querystring: { status?: string } }>(
+    '/v1/admin/reviews',
+    { preHandler: requireAdmin },
+    async (req) => {
+      const statuses = req.query?.status
+        ? req.query.status.split(',').map((s) => s.trim()).filter(Boolean)
+        : undefined;
+      const rows = await loadReviewQueue(db, statuses);
+      return { reviews: rows.map(toAdminQuestion) };
+    },
+  );
+
+  // Full detail for one question plus its review history.
+  app.get<{ Params: { id: string } }>(
+    '/v1/admin/reviews/:id',
+    { preHandler: requireAdmin },
+    async (req, reply) => {
+      const row = await getQuestionForReview(db, req.params.id);
+      if (!row) return reply.code(404).send({ error: 'question_not_found' });
+      const history = await db.contentReview.findMany({
+        where: { contentId: req.params.id },
+        orderBy: { reviewedAt: 'desc' },
+      });
+      return { question: toAdminQuestion(row), history };
+    },
+  );
+
+  app.post<{ Params: { id: string }; Body: { notes?: string } }>(
+    '/v1/admin/reviews/:id/approve',
+    { preHandler: requireAdmin },
+    async (req, reply) => {
+      const id = identify(req);
+      const row = await getQuestionForReview(db, req.params.id);
+      if (!row) return reply.code(404).send({ error: 'question_not_found' });
+      await recordReview(row.id, 'approved', 'approved', id!.sub, req.body?.notes);
+      return { id: row.id, reviewStatus: 'approved' };
+    },
+  );
+
+  app.post<{ Params: { id: string }; Body: { notes?: string } }>(
+    '/v1/admin/reviews/:id/reject',
+    { preHandler: requireAdmin },
+    async (req, reply) => {
+      const id = identify(req);
+      const row = await getQuestionForReview(db, req.params.id);
+      if (!row) return reply.code(404).send({ error: 'question_not_found' });
+      await recordReview(row.id, 'rejected', 'rejected', id!.sub, req.body?.notes);
+      return { id: row.id, reviewStatus: 'rejected' };
+    },
+  );
+
+  // Edit a question's content and/or review status. NOTE: Git remains the
+  // source of truth for question *content*, so a re-import overwrites content
+  // edits made here; only review *status* is DB-authoritative.
+  app.patch<{
+    Params: { id: string };
+    Body: {
+      questionCA?: string;
+      questionES?: string | null;
+      options?: unknown;
+      answer?: unknown;
+      explanation?: unknown;
+      skills?: string[];
+      competencies?: string[];
+      difficultyInitial?: number;
+      sourceType?: string;
+      reviewStatus?: string;
+    };
+  }>('/v1/admin/questions/:id', { preHandler: requireAdmin }, async (req, reply) => {
+    const identity = identify(req);
+    const row = await getQuestionForReview(db, req.params.id);
+    if (!row) return reply.code(404).send({ error: 'question_not_found' });
+
+    const body = req.body ?? {};
+    const editable = [
+      'questionCA',
+      'questionES',
+      'options',
+      'answer',
+      'explanation',
+      'skills',
+      'competencies',
+      'difficultyInitial',
+      'sourceType',
+      'reviewStatus',
+    ] as const;
+    const data: Record<string, unknown> = {};
+    for (const key of editable) {
+      if (body[key] !== undefined) data[key] = body[key];
+    }
+    if (Object.keys(data).length === 0) {
+      return reply.code(400).send({ error: 'no_fields_to_update' });
+    }
+    if (body.reviewStatus !== undefined) {
+      data.reviewedBy = identity!.sub;
+      data.reviewedAt = new Date();
+    }
+
+    await db.question.update({ where: { id: row.id }, data });
+    await db.contentReview.create({
+      data: {
+        contentId: row.id,
+        contentType: 'question',
+        status: 'edited',
+        reviewedBy: identity!.sub,
+        reviewedAt: new Date(),
+        notes: `edited: ${Object.keys(data).join(', ')}`,
+      },
+    });
+    const updated = await getQuestionForReview(db, row.id);
+    return { question: toAdminQuestion(updated!) };
   });
 
   // --- Questions ----------------------------------------------------------

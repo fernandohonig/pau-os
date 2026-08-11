@@ -32,10 +32,11 @@ unless noted.
 
 ## Admin
 
-- [~] Reviewer can inspect and approve content — review status is modeled and
-      validated; a reviewer UI/endpoints are not yet built (deferred)
-- [x] Changes are auditable — content lives in Git (diff/history);
-      `learning_events` records system actions
+- [x] Reviewer can inspect and approve content — admin review endpoints
+      (`/v1/admin/reviews`, approve/reject, `PATCH /v1/admin/questions/:id`) +
+      mobile review queue; only approved content is served (spec §17/§19)
+- [x] Changes are auditable — content lives in Git (diff/history); admin
+      decisions append `ContentReview` rows; `learning_events` records system actions
 
 ## Data
 

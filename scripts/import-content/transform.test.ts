@@ -50,11 +50,10 @@ describe('content transforms', () => {
     expect(row.difficultyCali).toBeNull();
     expect(row.sourceType).toBe('community');
     expect(row.sourceUrl).toBeNull();
-    expect(row.reviewedAt).toBeNull();
     expect(Array.isArray(row.options)).toBe(true);
   });
 
-  it('parses a reviewedAt ISO string into a Date', () => {
+  it('does not import review state (DB-authoritative; set by the review workflow)', () => {
     const q = {
       id: 'q',
       version: 1,
@@ -70,12 +69,14 @@ describe('content transforms', () => {
       answer: { type: 'single', correct: 'A' },
       explanation: { ca: 'e' },
       source: { type: 'community' },
+      // Even if the YAML carries a review status, the importer ignores it.
       review: { status: 'approved', reviewed_at: '2026-01-15T10:00:00.000Z' },
     } as unknown as Question;
 
-    const row = questionToRow(q);
-    expect(row.reviewedAt).toBeInstanceOf(Date);
-    expect(row.reviewedAt?.toISOString()).toBe('2026-01-15T10:00:00.000Z');
+    const row = questionToRow(q) as Record<string, unknown>;
+    expect(row.reviewStatus).toBeUndefined();
+    expect(row.reviewedBy).toBeUndefined();
+    expect(row.reviewedAt).toBeUndefined();
   });
 
   it('maps a degree with weightings preserved as JSON', () => {

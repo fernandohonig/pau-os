@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { useCallback, useEffect, useState } from 'react';
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import {
   Body,
   Button,
@@ -20,6 +20,8 @@ import {
   type SkillProfileItem,
   type TargetEstimate,
   type AdminSummary,
+  type AdminQuestion,
+  type ReviewHistoryItem,
 } from './api';
 
 export type SkillNames = Record<string, string>;
@@ -458,7 +460,13 @@ export function Practice({
 }
 
 // --- Admin dashboard (role-gated) -----------------------------------------
-export function AdminDashboard({ onSignOut }: { onSignOut: () => void }) {
+export function AdminDashboard({
+  onSignOut,
+  onOpenReview,
+}: {
+  onSignOut: () => void;
+  onOpenReview: () => void;
+}) {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<AdminSummary | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -522,7 +530,168 @@ export function AdminDashboard({ onSignOut }: { onSignOut: () => void }) {
           </Card>
         </>
       ) : null}
+      <Button label="Review content" onPress={onOpenReview} />
       <Button label="Sign out" variant="secondary" onPress={onSignOut} />
+    </Screen>
+  );
+}
+
+// --- Admin content review (role-gated) ------------------------------------
+const reviewStatusColor = (status: string): string =>
+  status === 'approved' || status === 'published'
+    ? colors.success
+    : status === 'rejected'
+      ? colors.danger
+      : colors.warning;
+
+export function ContentReview({ onBack }: { onBack: () => void }) {
+  const [loading, setLoading] = useState(true);
+  const [reviews, setReviews] = useState<AdminQuestion[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [history, setHistory] = useState<ReviewHistoryItem[]>([]);
+  const [notes, setNotes] = useState('');
+  const [busy, setBusy] = useState(false);
+
+  const loadQueue = useCallback(async () => {
+    setLoading(true);
+    try {
+      const { reviews: rs } = await api.adminReviews();
+      setReviews(rs);
+      setError(null);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'error');
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    void loadQueue().then(() => cancelled);
+    return () => {
+      cancelled = true;
+    };
+  }, [loadQueue]);
+
+  const selected = reviews.find((r) => r.id === selectedId) ?? null;
+
+  async function openDetail(id: string): Promise<void> {
+    setSelectedId(id);
+    setNotes('');
+    setHistory([]);
+    try {
+      const { history: h } = await api.adminReview(id);
+      setHistory(h);
+    } catch {
+      // History is best-effort; the queue item already holds the question.
+    }
+  }
+
+  async function decide(action: 'approve' | 'reject'): Promise<void> {
+    if (!selected) return;
+    setBusy(true);
+    try {
+      if (action === 'approve') await api.approveReview(selected.id, notes || undefined);
+      else await api.rejectReview(selected.id, notes || undefined);
+      setSelectedId(null);
+      await loadQueue();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'error');
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  if (loading) return <Screen><Loading label="Loading review queue…" /></Screen>;
+
+  // Detail view for a selected question.
+  if (selected) {
+    const correct = selected.answer?.correct;
+    return (
+      <Screen>
+        <Body muted>Review · {selected.id}</Body>
+        <Title>Question</Title>
+        {error ? <Body>{error}</Body> : null}
+        <Card>
+          <View style={styles.row}>
+            <Pill text={selected.reviewStatus} color={reviewStatusColor(selected.reviewStatus)} />
+            <Pill text={selected.source.type} color={colors.muted} />
+          </View>
+          <Text style={styles.body}>{selected.question.ca}</Text>
+          {selected.options.map((o) => {
+            const isCorrect = Array.isArray(correct) ? correct.includes(o.id) : correct === o.id;
+            return (
+              <View key={o.id} style={styles.rowBetween}>
+                <Text style={styles.body}>
+                  {o.id}. {o.ca}
+                </Text>
+                {isCorrect ? <Pill text="correct" color={colors.success} /> : null}
+              </View>
+            );
+          })}
+        </Card>
+        <Card>
+          <Body muted>Explanation</Body>
+          <Text style={styles.body}>{selected.explanation.ca || '—'}</Text>
+        </Card>
+        {history.length ? (
+          <Card>
+            <Body muted>History</Body>
+            {history.map((h) => (
+              <View key={h.id} style={styles.rowBetween}>
+                <Text style={styles.body}>{h.status}</Text>
+                <Text style={styles.optionMeta}>{h.notes ?? ''}</Text>
+              </View>
+            ))}
+          </Card>
+        ) : null}
+        <TextInput
+          style={styles.input}
+          placeholder="Notes (optional)"
+          value={notes}
+          onChangeText={setNotes}
+          multiline
+        />
+        <Button label="Approve" onPress={() => void decide('approve')} disabled={busy} />
+        <Button
+          label="Reject"
+          variant="secondary"
+          onPress={() => void decide('reject')}
+          disabled={busy}
+        />
+        <Button label="Back to queue" variant="secondary" onPress={() => setSelectedId(null)} />
+      </Screen>
+    );
+  }
+
+  // Queue list.
+  return (
+    <Screen>
+      <Body muted>Admin</Body>
+      <Title>Review queue</Title>
+      {error ? <Body>{error}</Body> : null}
+      {reviews.length === 0 ? (
+        <Card>
+          <Body muted>Nothing awaiting review.</Body>
+        </Card>
+      ) : (
+        reviews.map((r) => (
+          <Pressable key={r.id} onPress={() => void openDetail(r.id)}>
+            <Card>
+              <View style={styles.row}>
+                <Pill text={r.reviewStatus} color={reviewStatusColor(r.reviewStatus)} />
+                <Pill text={r.source.type} color={colors.muted} />
+              </View>
+              <Text style={styles.body} numberOfLines={2}>
+                {r.question.ca}
+              </Text>
+              <Text style={styles.optionMeta}>{r.skills.join(', ')}</Text>
+            </Card>
+          </Pressable>
+        ))
+      )}
+      <Button label="Back" variant="secondary" onPress={onBack} />
     </Screen>
   );
 }
@@ -554,4 +723,14 @@ const styles = StyleSheet.create({
   body: { fontSize: font.body, color: colors.text, flexShrink: 1, paddingRight: spacing.sm },
   big: { fontSize: 40, fontWeight: '800', color: colors.text },
   bigUnit: { fontSize: font.heading, color: colors.muted, fontWeight: '600' },
+  input: {
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: radius.md,
+    padding: spacing.md,
+    fontSize: font.body,
+    color: colors.text,
+    minHeight: 44,
+  },
 });

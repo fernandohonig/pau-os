@@ -64,10 +64,13 @@ async function main(): Promise<void> {
     let questionCount = 0;
     for (const question of content.questions) {
       const row = questionToRow(question);
-      // JSON columns need `as never` because Prisma types them per-model.
+      // Review state is DB-authoritative: new questions enter the review queue
+      // as `pending_review`; existing rows keep whatever the admin decided
+      // (update omits the review columns). JSON columns need `as never` because
+      // Prisma types them per-model.
       await prisma.question.upsert({
         where: { id: row.id },
-        create: row as never,
+        create: { ...row, reviewStatus: 'pending_review', reviewedBy: null, reviewedAt: null } as never,
         update: row as never,
       });
       questionCount++;

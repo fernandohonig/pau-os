@@ -68,9 +68,6 @@ export interface QuestionRow {
   sourceExamYear: number | null;
   sourceExamId: string | null;
   sourceUrl: string | null;
-  reviewStatus: string;
-  reviewedBy: string | null;
-  reviewedAt: Date | null;
 }
 
 export function questionToRow(q: Question): QuestionRow {
@@ -95,9 +92,10 @@ export function questionToRow(q: Question): QuestionRow {
     sourceExamYear: orNull(q.source.exam_year),
     sourceExamId: orNull(q.source.exam_id),
     sourceUrl: q.source.url ? q.source.url : null,
-    reviewStatus: q.review.status,
-    reviewedBy: orNull(q.review.reviewed_by),
-    reviewedAt: q.review.reviewed_at ? new Date(q.review.reviewed_at) : null,
+    // Review state (reviewStatus/reviewedBy/reviewedAt) is DB-authoritative and
+    // deliberately NOT imported: it is owned by the admin review workflow. New
+    // questions are seeded as `pending_review` on insert; re-imports preserve
+    // whatever the admin has since decided. See scripts/import-content/index.ts.
   };
 }
 

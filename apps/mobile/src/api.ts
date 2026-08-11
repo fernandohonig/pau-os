@@ -109,12 +109,56 @@ export interface AdminSummary {
   eventCounts: Record<string, number>;
 }
 
+/** Full question detail for admin review (correctness visible). */
+export interface AdminQuestion {
+  id: string;
+  version: number;
+  type: string;
+  skills: string[];
+  competencies: string[];
+  difficulty: number;
+  reviewStatus: string;
+  reviewedBy: string | null;
+  reviewedAt: string | null;
+  question: LocalizedText;
+  options: Array<{ id: string; ca: string; es?: string }>;
+  answer: { type: string; correct: string | string[] };
+  explanation: LocalizedText;
+  source: {
+    type: string;
+    authority: string | null;
+    examYear: number | null;
+    examId: string | null;
+    url: string | null;
+  };
+}
+
+export interface ReviewHistoryItem {
+  id: string;
+  status: string;
+  reviewedBy: string | null;
+  reviewedAt: string | null;
+  notes: string | null;
+}
+
 export const api = {
   // Auth
   devLogin: (role: 'student' | 'admin') => req<AuthResult>('POST', '/v1/auth/dev', { role }),
   googleLogin: (idToken: string, linkStudentId?: string) =>
     req<AuthResult>('POST', '/v1/auth/google', { idToken, linkStudentId }),
   adminSummary: () => req<AdminSummary>('GET', '/v1/admin/metrics/summary'),
+  // Content review (admin)
+  adminReviews: (status?: string) =>
+    req<{ reviews: AdminQuestion[] }>(
+      'GET',
+      `/v1/admin/reviews${status ? `?status=${encodeURIComponent(status)}` : ''}`,
+    ),
+  adminReview: (id: string) =>
+    req<{ question: AdminQuestion; history: ReviewHistoryItem[] }>('GET', `/v1/admin/reviews/${id}`),
+  approveReview: (id: string, notes?: string) =>
+    req<{ id: string; reviewStatus: string }>('POST', `/v1/admin/reviews/${id}/approve`, { notes }),
+  rejectReview: (id: string, notes?: string) =>
+    req<{ id: string; reviewStatus: string }>('POST', `/v1/admin/reviews/${id}/reject`, { notes }),
 
   createStudent: () => req<{ id: string }>('POST', '/v1/students'),
   getDegrees: () => req<{ degrees: Degree[]; provisional: boolean }>('GET', '/v1/catalog/degrees'),

@@ -15,6 +15,7 @@ import {
   Progress,
   Practice,
   AdminDashboard,
+  ContentReview,
   type SkillNames,
 } from './src/screens';
 import {
@@ -41,7 +42,8 @@ type ScreenName =
   | 'home'
   | 'progress'
   | 'practice'
-  | 'admin';
+  | 'admin'
+  | 'review';
 
 export default function App() {
   const [screen, setScreen] = useState<ScreenName>('signin');
@@ -259,7 +261,10 @@ export default function App() {
         ) : null;
         break;
       case 'admin':
-        body = <AdminDashboard onSignOut={signOut} />;
+        body = <AdminDashboard onSignOut={signOut} onOpenReview={() => setScreen('review')} />;
+        break;
+      case 'review':
+        body = <ContentReview onBack={() => setScreen('admin')} />;
         break;
     }
   }

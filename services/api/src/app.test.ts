@@ -28,6 +28,13 @@ describe.skipIf(!DB_URL)('diagnostic flow (integration)', () => {
     db = createPrisma(DB_URL as string);
     app = buildApp(db, testAuth);
     await app.ready();
+    // Serving is now gated on review approval, but seed content imports as
+    // `pending_review`. Approve the ambient bank so the student-flow tests have
+    // servable questions (the admin-review tests use their own fixtures).
+    await db.question.updateMany({
+      where: { subject: 'mathematics-ii', reviewStatus: { notIn: ['approved', 'published'] } },
+      data: { reviewStatus: 'approved' },
+    });
   });
 
   afterAll(async () => {
@@ -282,5 +289,161 @@ describe.skipIf(!DB_URL)('diagnostic flow (integration)', () => {
 
     await db.student.delete({ where: { id: devStudent.studentId } }).catch(() => undefined);
     await db.student.delete({ where: { id: google.studentId } }).catch(() => undefined);
+  });
+
+  // --- Admin content review ------------------------------------------------
+  describe('admin content review', () => {
+    const fixtureIds: string[] = [];
+
+    async function makePendingQuestion(suffix: string): Promise<string> {
+      const id = `test-review-${suffix}`;
+      await db.question.create({
+        data: {
+          id,
+          version: 1,
+          region: 'catalunya',
+          academicYear: 2026,
+          subject: 'mathematics-ii',
+          type: 'multiple_choice',
+          skills: ['mathematics.algebra.polynomials'],
+          competencies: ['reasoning'],
+          difficultyInitial: 0.5,
+          questionCA: 'Fixture question',
+          options: [
+            { id: 'A', ca: 'a' },
+            { id: 'B', ca: 'b' },
+          ],
+          answer: { type: 'single', correct: 'A' },
+          explanation: { ca: 'because' },
+          sourceType: 'community',
+          reviewStatus: 'pending_review',
+        },
+      });
+      fixtureIds.push(id);
+      return id;
+    }
+
+    async function adminToken(): Promise<string> {
+      return (
+        await app.inject({ method: 'POST', url: '/v1/auth/dev', payload: { role: 'admin' } })
+      ).json().token;
+    }
+
+    afterAll(async () => {
+      for (const id of fixtureIds) {
+        await db.contentReview.deleteMany({ where: { contentId: id } }).catch(() => undefined);
+        await db.question.delete({ where: { id } }).catch(() => undefined);
+      }
+    });
+
+    it('gates all review routes behind an admin token', async () => {
+      const student = (
+        await app.inject({ method: 'POST', url: '/v1/auth/dev', payload: { role: 'student' } })
+      ).json();
+      for (const url of ['/v1/admin/reviews', '/v1/admin/reviews/x']) {
+        expect((await app.inject({ method: 'GET', url })).statusCode).toBe(401);
+        expect(
+          (
+            await app.inject({
+              method: 'GET',
+              url,
+              headers: { authorization: `Bearer ${student.token}` },
+            })
+          ).statusCode,
+        ).toBe(403);
+      }
+      await db.student.delete({ where: { id: student.studentId } }).catch(() => undefined);
+    });
+
+    it('lists the queue, approves a question, and serves it', async () => {
+      const id = await makePendingQuestion('approve');
+      const token = await adminToken();
+      const auth = { authorization: `Bearer ${token}` };
+
+      const queue = (await app.inject({ method: 'GET', url: '/v1/admin/reviews', headers: auth })).json();
+      expect(queue.reviews.some((r: { id: string }) => r.id === id)).toBe(true);
+      // Admins see the correct answer (unlike the public shape).
+      const item = queue.reviews.find((r: { id: string }) => r.id === id);
+      expect(item.answer).toBeTruthy();
+
+      const approve = await app.inject({
+        method: 'POST',
+        url: `/v1/admin/reviews/${id}/approve`,
+        headers: auth,
+        payload: { notes: 'looks good' },
+      });
+      expect(approve.statusCode).toBe(200);
+      expect(approve.json().reviewStatus).toBe('approved');
+
+      // Review state persisted + audited.
+      const q = await db.question.findUnique({ where: { id } });
+      expect(q?.reviewStatus).toBe('approved');
+      expect(q?.reviewedBy).toBeTruthy();
+      const audit = await db.contentReview.findMany({ where: { contentId: id } });
+      expect(audit.length).toBe(1);
+      expect(audit[0].status).toBe('approved');
+      expect(audit[0].notes).toBe('looks good');
+
+      // Approved content is now servable.
+      const detail = (
+        await app.inject({ method: 'GET', url: `/v1/admin/reviews/${id}`, headers: auth })
+      ).json();
+      expect(detail.question.reviewStatus).toBe('approved');
+      expect(detail.history.length).toBe(1);
+    });
+
+    it('rejects a question and keeps it out of the served bank', async () => {
+      const id = await makePendingQuestion('reject');
+      const token = await adminToken();
+      const auth = { authorization: `Bearer ${token}` };
+
+      const reject = await app.inject({
+        method: 'POST',
+        url: `/v1/admin/reviews/${id}/reject`,
+        headers: auth,
+      });
+      expect(reject.statusCode).toBe(200);
+      expect(reject.json().reviewStatus).toBe('rejected');
+
+      // A rejected question is not served (404 via the usable bank).
+      const served = await app.inject({ method: 'GET', url: `/v1/questions/${id}` });
+      expect(served.statusCode).toBe(404);
+    });
+
+    it('returns 404 for an unknown review id', async () => {
+      const token = await adminToken();
+      const res = await app.inject({
+        method: 'GET',
+        url: '/v1/admin/reviews/does-not-exist',
+        headers: { authorization: `Bearer ${token}` },
+      });
+      expect(res.statusCode).toBe(404);
+    });
+
+    it('patches a question field and audits the edit', async () => {
+      const id = await makePendingQuestion('patch');
+      const token = await adminToken();
+      const auth = { authorization: `Bearer ${token}` };
+
+      const empty = await app.inject({
+        method: 'PATCH',
+        url: `/v1/admin/questions/${id}`,
+        headers: auth,
+        payload: {},
+      });
+      expect(empty.statusCode).toBe(400);
+
+      const patched = await app.inject({
+        method: 'PATCH',
+        url: `/v1/admin/questions/${id}`,
+        headers: auth,
+        payload: { questionCA: 'Edited text' },
+      });
+      expect(patched.statusCode).toBe(200);
+      expect(patched.json().question.question.ca).toBe('Edited text');
+
+      const audit = await db.contentReview.findMany({ where: { contentId: id, status: 'edited' } });
+      expect(audit.length).toBe(1);
+    });
   });
 });
