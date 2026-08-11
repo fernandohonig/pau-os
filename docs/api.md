@@ -177,12 +177,52 @@ level at each, then reports gain and gain-per-hour.
 ### `GET /v1/admin/metrics/summary`
 Cohort aggregate for the pilot (completion rate, avg study minutes, avg learning
 gain and gain/hour) plus `eventCounts` by analytics event.
-> ⚠️ Unauthenticated in dev; must be protected before deployment (see docs/privacy.md).
+**Admin only** — requires an admin bearer token (`401` without a token, `403`
+for a non-admin). See [Authentication](#authentication).
 
 ### `DELETE /v1/students/:id`
 Right to erasure (spec §23): deletes the student and cascades to all derived
 data; analytics events are anonymized.
 - `200 { "deleted": true }` · `404 { "error": "student_not_found" }`
+
+## Authentication
+
+Students are anonymous-first (spec §20/§23): no token is required for the
+diagnostic. Tokens add an **optional** persistent identity and gate admin
+access. See [auth.md](auth.md) for GCP setup and env vars.
+
+Send a session token as `Authorization: Bearer <token>`. Tokens are signed JWTs
+issued by the API (30-day TTL); the API never stores Google's ID token.
+
+### `GET /v1/auth/me`
+Return the current identity from the bearer token.
+- `200 { "role": Role, "email": string | null, "studentId": string | null }`
+- `401 { "error": "unauthorized" }`
+
+### `POST /v1/auth/google`
+Exchange a Google ID token for a pau-os session token. Verified against
+`GOOGLE_CLIENT_ID` (the OAuth Web client ID) as the audience.
+
+Body: `{ "idToken": string, "linkStudentId"?: string }`
+(`linkStudentId` links the caller's current anonymous student to the email, if
+that student has no email yet)
+
+- `200 { "token": string, "role": Role, "email": string | null, "studentId": string | null }`
+- `400 { "error": "idToken_required" }`
+- `401 { "error": "invalid_google_token" }` — includes the case where
+  `GOOGLE_CLIENT_ID` is unset (verification always fails, so Google auth is off)
+
+`role` is `admin` if the verified email is in `ADMIN_EMAILS`, else `student`.
+Admins get an email-keyed token; students get (or reuse) an anonymous student
+record keyed by email.
+
+### `POST /v1/auth/dev` (non-production only)
+Env-gated fake login for local testing — no Google setup needed. Enabled when
+`AUTH_DEV_LOGIN` is on (default outside production).
+
+Body: `{ "role"?: "student" | "admin", "email"?: string }`
+- `200 { "token": string, "role": Role, "email": string | null, "studentId": string | null }`
+- `404 { "error": "dev_login_disabled" }` when disabled
 
 ## Questions
 

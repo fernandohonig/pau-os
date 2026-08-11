@@ -38,6 +38,7 @@ Open-source academic GPS for Spanish PAU preparation.
 - [x] Full §22 analytics events; `GET /v1/admin/metrics/summary`; `GET /v1/students/:id/learning-gain`
 - [x] Right to erasure (`DELETE /v1/students/:id`); privacy posture ([docs/privacy.md](docs/privacy.md))
 - [x] MVP acceptance criteria tracked ([docs/acceptance.md](docs/acceptance.md))
+- [x] Auth: anonymous-first students, optional Google sign-in, admin email allowlist, dev login ([docs/auth.md](docs/auth.md))
 - [x] CI/CD (lint, typecheck, mobile typecheck, content validation, unit + integration tests)
 
 > ⚠️ **Provisional university data.** Degree weightings and cut-offs under
@@ -56,6 +57,14 @@ npx tsx services/api/src/server.ts       # → http://localhost:3000
 pnpm --filter @pau/mobile web            # Expo web dev server
 # API base URL: app.json → expo.extra.apiBaseUrl (default http://localhost:3000)
 ```
+
+**Test as a student and as an admin** (no Google setup needed): the sign-in
+screen shows, in dev builds, a *Developer sign-in* card:
+- **Start — no account needed** → the anonymous student journey.
+- **Dev login as admin** → the admin dashboard (pilot metrics).
+
+For real Google sign-in and the admin allowlist, see [docs/auth.md](docs/auth.md).
+Dev login is disabled in production.
 
 The screens call the API via `apps/mobile/src/api.ts`, whose endpoints are the
 same ones covered by the `@pau/api-client` integration test. The app is verified

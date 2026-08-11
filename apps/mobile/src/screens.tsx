@@ -19,6 +19,7 @@ import {
   type PublicQuestion,
   type SkillProfileItem,
   type TargetEstimate,
+  type AdminSummary,
 } from './api';
 
 export type SkillNames = Record<string, string>;
@@ -27,8 +28,26 @@ export function labelFor(names: SkillNames, id: string): string {
   return names[id] ?? id.split('.').slice(-1)[0].replace(/_/g, ' ');
 }
 
-// --- Screen 1: Welcome ----------------------------------------------------
-export function Welcome({ onStart, busy }: { onStart: () => void; busy: boolean }) {
+// --- Sign in --------------------------------------------------------------
+// Students are anonymous-first (spec §20/§23): "Start" needs no account.
+// Google sign-in is optional; dev logins are shown only in development builds.
+export function SignIn({
+  onStartAnonymous,
+  onDevStudent,
+  onDevAdmin,
+  onGoogle,
+  googleEnabled,
+  busy,
+}: {
+  onStartAnonymous: () => void;
+  onDevStudent: () => void;
+  onDevAdmin: () => void;
+  onGoogle: () => void;
+  googleEnabled: boolean;
+  busy: boolean;
+}) {
+  // __DEV__ is true in Expo dev builds and false in production bundles.
+  const showDev = typeof __DEV__ === 'undefined' ? true : __DEV__;
   return (
     <Screen>
       <View style={{ height: spacing.xl }} />
@@ -38,8 +57,18 @@ export function Welcome({ onStart, busy }: { onStart: () => void; busy: boolean 
         Matemàtiques II.
       </Body>
       <View style={{ height: spacing.md }} />
-      <Button label={busy ? 'Starting…' : 'Start'} onPress={onStart} disabled={busy} />
-      <Body muted>No account needed.</Body>
+      <Button label={busy ? 'Starting…' : 'Start — no account needed'} onPress={onStartAnonymous} disabled={busy} />
+      {googleEnabled ? (
+        <Button label="Continue with Google" variant="secondary" onPress={onGoogle} disabled={busy} />
+      ) : null}
+      {showDev ? (
+        <Card>
+          <Body muted>Developer sign-in (local testing only)</Body>
+          <Button label="Dev login as student" variant="secondary" onPress={onDevStudent} disabled={busy} />
+          <Button label="Dev login as admin" variant="secondary" onPress={onDevAdmin} disabled={busy} />
+        </Card>
+      ) : null}
+      <Body muted>Your progress is anonymous unless you choose to sign in.</Body>
     </Screen>
   );
 }
@@ -424,6 +453,76 @@ export function Practice({
       ) : (
         <Button label={index + 1 >= questions.length ? 'Finish session' : 'Next question'} onPress={() => void next()} />
       )}
+    </Screen>
+  );
+}
+
+// --- Admin dashboard (role-gated) -----------------------------------------
+export function AdminDashboard({ onSignOut }: { onSignOut: () => void }) {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState<AdminSummary | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    api
+      .adminSummary()
+      .then((d) => !cancelled && setData(d))
+      .catch((e) => !cancelled && setError(e instanceof Error ? e.message : 'error'))
+      .finally(() => !cancelled && setLoading(false));
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  if (loading) return <Screen><Loading label="Loading pilot metrics…" /></Screen>;
+
+  return (
+    <Screen>
+      <Body muted>Admin</Body>
+      <Title>Pilot metrics</Title>
+      {error ? <Body>{error}</Body> : null}
+      {data ? (
+        <>
+          <Card>
+            <Body muted>Cohort</Body>
+            <View style={styles.rowBetween}>
+              <Text style={styles.body}>Students</Text>
+              <Text style={styles.body}>{data.summary.students}</Text>
+            </View>
+            <View style={styles.rowBetween}>
+              <Text style={styles.body}>Diagnostics completed</Text>
+              <Text style={styles.body}>
+                {data.summary.diagnosticCompleted} / {data.summary.diagnosticStarted}
+              </Text>
+            </View>
+            <View style={styles.rowBetween}>
+              <Text style={styles.body}>Completion rate</Text>
+              <Text style={styles.body}>{Math.round(data.summary.diagnosticCompletionRate * 100)}%</Text>
+            </View>
+            <View style={styles.rowBetween}>
+              <Text style={styles.body}>Avg study minutes</Text>
+              <Text style={styles.body}>{data.summary.avgStudyMinutes}</Text>
+            </View>
+            <View style={styles.rowBetween}>
+              <Text style={styles.body}>Avg learning gain / hour</Text>
+              <Text style={styles.body}>{data.summary.avgLearningGainPerHour ?? '—'}</Text>
+            </View>
+          </Card>
+          <Card>
+            <Body muted>Events recorded</Body>
+            {Object.entries(data.eventCounts)
+              .sort((a, b) => a[0].localeCompare(b[0]))
+              .map(([name, count]) => (
+                <View key={name} style={styles.rowBetween}>
+                  <Text style={styles.body}>{name}</Text>
+                  <Text style={styles.body}>{count}</Text>
+                </View>
+              ))}
+          </Card>
+        </>
+      ) : null}
+      <Button label="Sign out" variant="secondary" onPress={onSignOut} />
     </Screen>
   );
 }

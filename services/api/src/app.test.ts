@@ -3,8 +3,19 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import type { FastifyInstance } from 'fastify';
 import { buildApp } from './app.js';
 import { createPrisma, type Db } from './prisma.js';
+import type { AuthConfig } from './auth.js';
 
 const DB_URL = process.env.DATABASE_URL;
+
+// Test auth config: dev login on, a known admin allowlist, and a stubbed Google
+// verifier so the OAuth path is testable without real Google tokens.
+const testAuth: AuthConfig = {
+  jwtSecret: 'test-secret',
+  adminEmails: ['admin@pau.os'],
+  devLoginEnabled: true,
+  verifyGoogleIdToken: async (t: string) =>
+    t === 'good-google-student' ? { email: 'linked@example.com' } : null,
+};
 
 // Integration test: requires a migrated, seeded database. Skips cleanly when no
 // DATABASE_URL is configured so unit-only CI stays green.
@@ -15,7 +26,7 @@ describe.skipIf(!DB_URL)('diagnostic flow (integration)', () => {
 
   beforeAll(async () => {
     db = createPrisma(DB_URL as string);
-    app = buildApp(db);
+    app = buildApp(db, testAuth);
     await app.ready();
   });
 
@@ -200,8 +211,20 @@ describe.skipIf(!DB_URL)('diagnostic flow (integration)', () => {
       expect(names.has(required)).toBe(true);
     }
 
-    // Cohort summary aggregates without error.
-    const summary = (await app.inject({ method: 'GET', url: '/v1/admin/metrics/summary' })).json();
+    // Cohort summary is admin-only: unauthenticated is rejected.
+    const noAuth = await app.inject({ method: 'GET', url: '/v1/admin/metrics/summary' });
+    expect(noAuth.statusCode).toBe(401);
+
+    const adminToken = (
+      await app.inject({ method: 'POST', url: '/v1/auth/dev', payload: { role: 'admin' } })
+    ).json().token;
+    const summary = (
+      await app.inject({
+        method: 'GET',
+        url: '/v1/admin/metrics/summary',
+        headers: { authorization: `Bearer ${adminToken}` },
+      })
+    ).json();
     expect(summary.summary.students).toBeGreaterThan(0);
     expect(typeof summary.eventCounts.diagnostic_completed).toBe('number');
 
@@ -210,5 +233,54 @@ describe.skipIf(!DB_URL)('diagnostic flow (integration)', () => {
     expect(del.statusCode).toBe(200);
     const after = await app.inject({ method: 'GET', url: `/v1/students/${sid}` });
     expect(after.statusCode).toBe(404);
+  });
+
+  it('handles auth: dev login, google sign-in, and admin gating', async () => {
+    const devStudent = (
+      await app.inject({ method: 'POST', url: '/v1/auth/dev', payload: { role: 'student' } })
+    ).json();
+    expect(devStudent.role).toBe('student');
+    expect(devStudent.studentId).toBeTruthy();
+
+    // A student token is not sufficient for admin endpoints.
+    const forbidden = await app.inject({
+      method: 'GET',
+      url: '/v1/admin/metrics/summary',
+      headers: { authorization: `Bearer ${devStudent.token}` },
+    });
+    expect(forbidden.statusCode).toBe(403);
+
+    // /v1/auth/me reflects the token.
+    const me = (
+      await app.inject({
+        method: 'GET',
+        url: '/v1/auth/me',
+        headers: { authorization: `Bearer ${devStudent.token}` },
+      })
+    ).json();
+    expect(me.role).toBe('student');
+    expect(me.studentId).toBe(devStudent.studentId);
+
+    // Google sign-in (stubbed verifier) creates/links a student by email.
+    const google = (
+      await app.inject({
+        method: 'POST',
+        url: '/v1/auth/google',
+        payload: { idToken: 'good-google-student' },
+      })
+    ).json();
+    expect(google.role).toBe('student');
+    expect(google.email).toBe('linked@example.com');
+    expect(google.studentId).toBeTruthy();
+
+    const badGoogle = await app.inject({
+      method: 'POST',
+      url: '/v1/auth/google',
+      payload: { idToken: 'nope' },
+    });
+    expect(badGoogle.statusCode).toBe(401);
+
+    await db.student.delete({ where: { id: devStudent.studentId } }).catch(() => undefined);
+    await db.student.delete({ where: { id: google.studentId } }).catch(() => undefined);
   });
 });

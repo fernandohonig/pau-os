@@ -27,6 +27,7 @@
     "services/*"
   ],
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^20.10.0",
     "@types/pg": "^8.21.0",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
@@ -42,6 +43,8 @@
     "@prisma/adapter-pg": "^7.9.1",
     "@prisma/client": "7.9.1",
     "dotenv": "^17.4.2",
+    "google-auth-library": "^11.0.1",
+    "jsonwebtoken": "^9.0.3",
     "pg": "^8.23.0",
     "prisma": "7.9.1"
   }

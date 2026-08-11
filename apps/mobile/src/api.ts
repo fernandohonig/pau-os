@@ -7,6 +7,21 @@ import Constants from 'expo-constants';
 const baseUrl =
   (Constants.expoConfig?.extra?.apiBaseUrl as string | undefined) ?? 'http://localhost:3000';
 
+/** Google OAuth web client id, if configured (enables the Google button). */
+export const googleClientId = Constants.expoConfig?.extra?.googleClientId as string | undefined;
+
+let authToken: string | null = null;
+export function setAuthToken(token: string | null): void {
+  authToken = token;
+}
+
+export interface AuthResult {
+  token: string;
+  role: 'student' | 'admin';
+  email: string | null;
+  studentId: string | null;
+}
+
 export interface LocalizedText {
   ca: string;
   es?: string;
@@ -59,9 +74,12 @@ export type TargetEstimate =
     };
 
 async function req<T>(method: string, path: string, body?: unknown): Promise<T> {
+  const headers: Record<string, string> = {};
+  if (body !== undefined) headers['content-type'] = 'application/json';
+  if (authToken) headers['authorization'] = `Bearer ${authToken}`;
   const res = await fetch(`${baseUrl}${path}`, {
     method,
-    headers: body !== undefined ? { 'content-type': 'application/json' } : undefined,
+    headers: Object.keys(headers).length ? headers : undefined,
     body: body !== undefined ? JSON.stringify(body) : undefined,
   });
   const text = await res.text();
@@ -70,7 +88,27 @@ async function req<T>(method: string, path: string, body?: unknown): Promise<T> 
   return json as T;
 }
 
+export interface AdminSummary {
+  summary: {
+    students: number;
+    diagnosticStarted: number;
+    diagnosticCompleted: number;
+    diagnosticCompletionRate: number;
+    avgStudyMinutes: number;
+    avgLearningGain: number | null;
+    avgLearningGainPerHour: number | null;
+    studentsWithGain: number;
+  };
+  eventCounts: Record<string, number>;
+}
+
 export const api = {
+  // Auth
+  devLogin: (role: 'student' | 'admin') => req<AuthResult>('POST', '/v1/auth/dev', { role }),
+  googleLogin: (idToken: string, linkStudentId?: string) =>
+    req<AuthResult>('POST', '/v1/auth/google', { idToken, linkStudentId }),
+  adminSummary: () => req<AdminSummary>('GET', '/v1/admin/metrics/summary'),
+
   createStudent: () => req<{ id: string }>('POST', '/v1/students'),
   getDegrees: () => req<{ degrees: Degree[]; provisional: boolean }>('GET', '/v1/catalog/degrees'),
   getSkillCatalog: () => req<{ skills: { id: string; name: LocalizedText }[] }>('GET', '/v1/catalog/skills'),

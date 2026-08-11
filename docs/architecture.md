@@ -347,6 +347,14 @@ contribution + `buildTargetRelevance`), DB-backed catalog + degree detail +
 The full 14-point admission score is intentionally **not** predicted (no grades
 / 2nd subject); cutoffs are context only, never required scores (spec §4/§13).
 
+Auth (post-v0.1 addition): signed-JWT sessions in `services/api/src/auth.ts`.
+Students are anonymous-first (spec §20/§23); Google sign-in is optional and
+verified server-side via `google-auth-library` against `GOOGLE_CLIENT_ID`; admin
+is granted by the `ADMIN_EMAILS` allowlist (no admin table). A dev login
+(env-gated, off in production) enables local testing without Google. `/v1/admin/*`
+is guarded by a `requireAdmin` preHandler. The app has a role-aware sign-in and
+a minimal admin metrics dashboard. See docs/auth.md.
+
 Week 6 (Adaptive Practice): `@pau/recommendation` — Next Best Action priority
 (spec §12: target_relevance × skill_gap × learning_value × exam_relevance ×
 confidence × recency × prerequisite_readiness) with machine-readable reason

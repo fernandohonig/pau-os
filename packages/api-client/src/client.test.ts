@@ -13,6 +13,7 @@ describe.skipIf(!DB_URL)('PauClient (integration)', () => {
   let db: Db;
   let app: FastifyInstance;
   let client: PauClient;
+  let injectFetch: (input: string, init?: RequestInit) => Promise<Response>;
   const createdStudents: string[] = [];
 
   beforeAll(async () => {
@@ -20,11 +21,12 @@ describe.skipIf(!DB_URL)('PauClient (integration)', () => {
     app = buildApp(db);
     await app.ready();
 
-    const injectFetch = async (input: string, init?: RequestInit): Promise<Response> => {
+    injectFetch = async (input: string, init?: RequestInit): Promise<Response> => {
       const u = new URL(input);
       const res = await app.inject({
         method: (init?.method ?? 'GET') as 'GET' | 'POST' | 'PATCH',
         url: u.pathname + u.search,
+        headers: (init?.headers as Record<string, string>) ?? undefined,
         payload: init?.body ? JSON.parse(init.body as string) : undefined,
       });
       return new Response(res.body, {
@@ -159,5 +161,14 @@ describe.skipIf(!DB_URL)('PauClient (integration)', () => {
       status: 404,
       code: 'student_not_found',
     });
+  });
+
+  it('supports dev login and sends the bearer token', async () => {
+    const authed = new PauClient({ baseUrl: 'http://localhost', fetch: injectFetch });
+    const admin = await authed.devLogin({ role: 'admin' });
+    expect(admin.role).toBe('admin');
+    authed.setToken(admin.token);
+    const me = await authed.me();
+    expect(me.role).toBe('admin');
   });
 });

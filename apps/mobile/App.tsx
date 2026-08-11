@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
+import * as Google from 'expo-auth-session/providers/google';
 import { Loading, Screen } from './src/ui';
 import { colors } from './src/theme';
 import {
-  Welcome,
+  SignIn,
   Goal,
   DiagnosticIntro,
   DiagnosticQuestion,
@@ -12,10 +14,13 @@ import {
   Home,
   Progress,
   Practice,
+  AdminDashboard,
   type SkillNames,
 } from './src/screens';
 import {
   api,
+  setAuthToken,
+  googleClientId,
   type Degree,
   type DiagnosticResults,
   type PublicQuestion,
@@ -23,18 +28,21 @@ import {
   type TargetEstimate,
 } from './src/api';
 
+WebBrowser.maybeCompleteAuthSession();
+
 type ScreenName =
-  | 'welcome'
+  | 'signin'
   | 'goal'
   | 'diagIntro'
   | 'diagnostic'
   | 'results'
   | 'home'
   | 'progress'
-  | 'practice';
+  | 'practice'
+  | 'admin';
 
 export default function App() {
-  const [screen, setScreen] = useState<ScreenName>('welcome');
+  const [screen, setScreen] = useState<ScreenName>('signin');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -52,7 +60,12 @@ export default function App() {
   const [skills, setSkills] = useState<SkillProfileItem[]>([]);
   const [target, setTarget] = useState<TargetEstimate | null>(null);
 
-  async function guard(fn: () => Promise<void>) {
+  // Optional Google sign-in (only active when a client id is configured).
+  const [, googleResponse, promptGoogle] = Google.useIdTokenAuthRequest({
+    clientId: googleClientId ?? '',
+  });
+
+  async function guard(fn: () => Promise<void>): Promise<void> {
     setBusy(true);
     setError(null);
     try {
@@ -64,20 +77,59 @@ export default function App() {
     }
   }
 
-  const begin = () =>
+  async function loadCatalog(): Promise<void> {
+    const [{ degrees: ds }, { skills: cat }] = await Promise.all([
+      api.getDegrees(),
+      api.getSkillCatalog(),
+    ]);
+    setDegrees(ds);
+    setNames(Object.fromEntries(cat.map((s) => [s.id, s.name.ca])));
+  }
+
+  async function enterAsStudent(sid: string): Promise<void> {
+    setStudentId(sid);
+    await loadCatalog();
+    setScreen('goal');
+  }
+
+  const startAnonymous = (): Promise<void> =>
     guard(async () => {
       const student = await api.createStudent();
-      setStudentId(student.id);
-      const [{ degrees: ds }, { skills: cat }] = await Promise.all([
-        api.getDegrees(),
-        api.getSkillCatalog(),
-      ]);
-      setDegrees(ds);
-      setNames(Object.fromEntries(cat.map((s) => [s.id, s.name.ca])));
-      setScreen('goal');
+      await enterAsStudent(student.id);
     });
 
-  const chooseGoal = (degreeId: string, target?: number) =>
+  const devStudent = (): Promise<void> =>
+    guard(async () => {
+      const res = await api.devLogin('student');
+      setAuthToken(res.token);
+      if (res.studentId) await enterAsStudent(res.studentId);
+    });
+
+  const devAdmin = (): Promise<void> =>
+    guard(async () => {
+      const res = await api.devLogin('admin');
+      setAuthToken(res.token);
+      setScreen('admin');
+    });
+
+  // Complete Google sign-in when the auth session returns an id token.
+  useEffect(() => {
+    if (googleResponse?.type !== 'success') return;
+    const idToken = (googleResponse.params as Record<string, string>)?.id_token;
+    if (!idToken) return;
+    void guard(async () => {
+      const res = await api.googleLogin(idToken, studentId ?? undefined);
+      setAuthToken(res.token);
+      if (res.role === 'admin') {
+        setScreen('admin');
+      } else if (res.studentId) {
+        await enterAsStudent(res.studentId);
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [googleResponse]);
+
+  const chooseGoal = (degreeId: string, target?: number): Promise<void> =>
     guard(async () => {
       if (!studentId) return;
       await api.createGoal(studentId, degreeId, target);
@@ -86,7 +138,7 @@ export default function App() {
       setScreen('diagIntro');
     });
 
-  const startDiagnostic = () =>
+  const startDiagnostic = (): Promise<void> =>
     guard(async () => {
       if (!studentId) return;
       const start = await api.startAssessment(studentId);
@@ -96,23 +148,20 @@ export default function App() {
       setScreen('diagnostic');
     });
 
-  const answer = (optionId?: string, idk?: boolean) =>
+  const answer = (optionId?: string, idk?: boolean): Promise<void> =>
     guard(async () => {
-      if (!assessmentId) return;
-      const current = question;
-      if (!current) return;
-      const res = await api.submitResponse(assessmentId, current.id, optionId, idk);
+      if (!assessmentId || !question) return;
+      const res = await api.submitResponse(assessmentId, question.id, optionId, idk);
       setAsked((n) => n + 1);
       if (res.done) {
-        const r = await api.completeAssessment(assessmentId);
-        setResults(r);
+        setResults(await api.completeAssessment(assessmentId));
         setScreen('results');
       } else {
         setQuestion(res.question);
       }
     });
 
-  const goHome = () =>
+  const goHome = (): Promise<void> =>
     guard(async () => {
       if (studentId) {
         const [{ skills: s }, est] = await Promise.all([
@@ -125,14 +174,20 @@ export default function App() {
       setScreen('home');
     });
 
-  const openProgress = () =>
+  const openProgress = (): Promise<void> =>
     guard(async () => {
-      if (studentId) {
-        const { skills: s } = await api.getSkills(studentId);
-        setSkills(s);
-      }
+      if (studentId) setSkills((await api.getSkills(studentId)).skills);
       setScreen('progress');
     });
+
+  function signOut(): void {
+    setAuthToken(null);
+    setStudentId(null);
+    setResults(null);
+    setSkills([]);
+    setTarget(null);
+    setScreen('signin');
+  }
 
   const recommendation = results?.recommendation ?? null;
 
@@ -141,8 +196,17 @@ export default function App() {
     body = <Screen><Loading /></Screen>;
   } else {
     switch (screen) {
-      case 'welcome':
-        body = <Welcome onStart={begin} busy={busy} />;
+      case 'signin':
+        body = (
+          <SignIn
+            onStartAnonymous={startAnonymous}
+            onDevStudent={devStudent}
+            onDevAdmin={devAdmin}
+            onGoogle={() => void promptGoogle()}
+            googleEnabled={Boolean(googleClientId)}
+            busy={busy}
+          />
+        );
         break;
       case 'goal':
         body = <Goal degrees={degrees} onChoose={chooseGoal} busy={busy} />;
@@ -189,6 +253,9 @@ export default function App() {
         body = studentId ? (
           <Practice studentId={studentId} names={names} onDone={goHome} />
         ) : null;
+        break;
+      case 'admin':
+        body = <AdminDashboard onSignOut={signOut} />;
         break;
     }
   }

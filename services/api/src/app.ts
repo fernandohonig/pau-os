@@ -1,4 +1,4 @@
-import Fastify, { type FastifyInstance } from 'fastify';
+import Fastify, { type FastifyInstance, type FastifyRequest, type FastifyReply } from 'fastify';
 import {
   selectNextQuestion,
   evaluateStop,
@@ -31,6 +31,15 @@ import {
   type StudentMetrics,
 } from '@pau/metrics';
 import type { Outcome } from '@pau/scoring';
+import {
+  loadAuthConfig,
+  roleForEmail,
+  signToken,
+  verifyToken,
+  bearerFromHeader,
+  type AuthConfig,
+  type AuthIdentity,
+} from './auth.js';
 import type { Db } from './prisma.js';
 import { recordEvent } from './analytics.js';
 import {
@@ -271,10 +280,94 @@ async function attemptsForAssessment(
   return attempts;
 }
 
-export function buildApp(db: Db): FastifyInstance {
+export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): FastifyInstance {
   const app = Fastify({ logger: false });
 
+  function identify(req: FastifyRequest): AuthIdentity | null {
+    const token = bearerFromHeader(req.headers.authorization);
+    return token ? verifyToken(token, authConfig) : null;
+  }
+
+  // preHandler: require an admin token (spec §24: server-side authorization).
+  async function requireAdmin(req: FastifyRequest, reply: FastifyReply): Promise<void> {
+    const id = identify(req);
+    if (!id) {
+      await reply.code(401).send({ error: 'unauthorized' });
+      return;
+    }
+    if (id.role !== 'admin') {
+      await reply.code(403).send({ error: 'forbidden' });
+      return;
+    }
+  }
+
   app.get('/health', async () => ({ status: 'ok' }));
+
+  // --- Auth ---------------------------------------------------------------
+  app.get('/v1/auth/me', async (req, reply) => {
+    const id = identify(req);
+    if (!id) return reply.code(401).send({ error: 'unauthorized' });
+    return { role: id.role, email: id.email ?? null, studentId: id.studentId ?? null };
+  });
+
+  // Dev-only login (env-gated). Lets you test as student or admin without
+  // Google Cloud setup. Never enabled in production.
+  app.post<{ Body: { role?: string; email?: string } }>('/v1/auth/dev', async (req, reply) => {
+    if (!authConfig.devLoginEnabled) return reply.code(404).send({ error: 'dev_login_disabled' });
+
+    const wantAdmin = req.body?.role === 'admin' || (req.body?.email && authConfig.adminEmails.includes(req.body.email.toLowerCase()));
+    if (wantAdmin) {
+      const email = req.body?.email ?? 'dev-admin@pau.os';
+      const token = signToken({ sub: `dev:admin:${email}`, role: 'admin', email }, authConfig);
+      return { token, role: 'admin', email, studentId: null };
+    }
+    // Student: create a fresh anonymous student and bind the token to it.
+    const student = await db.student.create({ data: {} });
+    await recordEvent(db, 'onboarding_started', student.id, { via: 'dev_login' });
+    const token = signToken(
+      { sub: `dev:student:${student.id}`, role: 'student', studentId: student.id },
+      authConfig,
+    );
+    return { token, role: 'student', email: null, studentId: student.id };
+  });
+
+  // Google sign-in: verify the ID token, map to a role via the allowlist.
+  // Students are anonymous-first — an optional link persists their progress.
+  app.post<{ Body: { idToken?: string; linkStudentId?: string } }>(
+    '/v1/auth/google',
+    async (req, reply) => {
+      const idToken = req.body?.idToken;
+      if (!idToken) return reply.code(400).send({ error: 'idToken_required' });
+
+      const verified = await authConfig.verifyGoogleIdToken(idToken).catch(() => null);
+      if (!verified) return reply.code(401).send({ error: 'invalid_google_token' });
+
+      const email = verified.email.toLowerCase();
+      const role = roleForEmail(email, authConfig.adminEmails);
+
+      if (role === 'admin') {
+        const token = signToken({ sub: email, role: 'admin', email }, authConfig);
+        return { token, role, email, studentId: null };
+      }
+
+      // Student: reuse an existing account for this email, optionally link the
+      // caller's current anonymous student, else create one.
+      let student = await db.student.findUnique({ where: { email } });
+      if (!student && req.body?.linkStudentId) {
+        const existing = await db.student.findUnique({ where: { id: req.body.linkStudentId } });
+        if (existing && !existing.email) {
+          student = await db.student.update({ where: { id: existing.id }, data: { email } });
+        }
+      }
+      if (!student) student = await db.student.create({ data: { email } });
+
+      const token = signToken(
+        { sub: email, role: 'student', email, studentId: student.id },
+        authConfig,
+      );
+      return { token, role, email, studentId: student.id };
+    },
+  );
 
   // --- Students -----------------------------------------------------------
   // Anonymous student creation (no auth required for the first diagnostic).
@@ -973,8 +1066,8 @@ export function buildApp(db: Db): FastifyInstance {
     };
   });
 
-  // Cohort summary for the pilot (spec §26 Week 7/8). Read-only aggregate.
-  app.get('/v1/admin/metrics/summary', async () => {
+  // Cohort summary for the pilot (spec §26 Week 7/8). Admin-only.
+  app.get('/v1/admin/metrics/summary', { preHandler: requireAdmin }, async () => {
     const students = await db.student.findMany({ select: { id: true } });
     const bank = await loadQuestionBank(db);
     const byId = new Map(bank.map((q) => [q.id, q] as const));

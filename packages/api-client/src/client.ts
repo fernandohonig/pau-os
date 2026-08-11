@@ -35,6 +35,15 @@ export interface PauClientOptions {
   baseUrl: string;
   /** Injectable fetch (defaults to global fetch); useful for tests/RN. */
   fetch?: FetchLike;
+  /** Optional bearer token for authenticated requests. */
+  token?: string | null;
+}
+
+export interface AuthResult {
+  token: string;
+  role: 'student' | 'admin';
+  email: string | null;
+  studentId: string | null;
 }
 
 /**
@@ -44,9 +53,11 @@ export interface PauClientOptions {
 export class PauClient {
   private readonly baseUrl: string;
   private readonly doFetch: FetchLike;
+  private token: string | null;
 
   constructor(opts: PauClientOptions) {
     this.baseUrl = opts.baseUrl.replace(/\/$/, '');
+    this.token = opts.token ?? null;
     const injected = opts.fetch;
     if (injected) {
       this.doFetch = injected;
@@ -57,10 +68,18 @@ export class PauClient {
     }
   }
 
+  /** Set (or clear) the bearer token used for subsequent requests. */
+  setToken(token: string | null): void {
+    this.token = token;
+  }
+
   private async request<T>(method: string, path: string, body?: unknown): Promise<T> {
+    const headers: Record<string, string> = {};
+    if (body !== undefined) headers['content-type'] = 'application/json';
+    if (this.token) headers['authorization'] = `Bearer ${this.token}`;
     const res = await this.doFetch(`${this.baseUrl}${path}`, {
       method,
-      headers: body !== undefined ? { 'content-type': 'application/json' } : undefined,
+      headers: Object.keys(headers).length ? headers : undefined,
       body: body !== undefined ? JSON.stringify(body) : undefined,
     });
 
@@ -70,6 +89,17 @@ export class PauClient {
       throw new ApiError(res.status, (json && json.error) || 'request_failed');
     }
     return json as T;
+  }
+
+  // Auth
+  devLogin(input: { role?: 'student' | 'admin'; email?: string }): Promise<AuthResult> {
+    return this.request('POST', '/v1/auth/dev', input);
+  }
+  googleLogin(idToken: string, linkStudentId?: string): Promise<AuthResult> {
+    return this.request('POST', '/v1/auth/google', { idToken, linkStudentId });
+  }
+  me(): Promise<{ role: 'student' | 'admin'; email: string | null; studentId: string | null }> {
+    return this.request('GET', '/v1/auth/me');
   }
 
   // Students
