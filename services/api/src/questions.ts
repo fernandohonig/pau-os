@@ -18,6 +18,7 @@ export interface QuestionRow {
   questionES: string | null;
   options: unknown;
   answer: unknown;
+  explanation: unknown;
 }
 
 /** Public question shape sent to clients — never includes answer/explanation. */
@@ -83,6 +84,18 @@ export async function loadQuestionBank(db: Db): Promise<QuestionRow[]> {
       questionES: true,
       options: true,
       answer: true,
+      explanation: true,
     },
   }) as unknown as Promise<QuestionRow[]>;
+}
+
+export interface LocalizedText {
+  ca: string;
+  es?: string;
+}
+
+/** Localized explanation for a question (revealed only in practice, not diagnostic). */
+export function explanationOf(row: QuestionRow): LocalizedText {
+  const e = (row.explanation ?? {}) as { ca?: string; es?: string };
+  return { ca: e.ca ?? '', es: e.es };
 }

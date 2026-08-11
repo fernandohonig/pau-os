@@ -10,7 +10,7 @@
     "node": true,
     "es2020": true
   },
-  "ignorePatterns": ["node_modules/", "dist/", "build/", "*.config.ts", "prisma/generated/"],
+  "ignorePatterns": ["node_modules/", "dist/", "build/", "*.config.ts", "prisma/generated/", "apps/"],
   "plugins": ["@typescript-eslint"],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",

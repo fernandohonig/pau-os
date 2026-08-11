@@ -46,3 +46,9 @@ temp/
 # Prisma
 prisma/.env
 prisma/generated/
+
+# Expo / React Native
+.expo/
+apps/*/.expo/
+apps/*/dist/
+web-build/

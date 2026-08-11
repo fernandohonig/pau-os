@@ -9,6 +9,7 @@ Open-source academic GPS for Spanish PAU preparation.
 **Week 1: Foundation** — ✅ complete
 **Week 2: Knowledge Model** — ✅ complete
 **Week 3: Assessment** — ✅ complete
+**Week 4: Student Experience** — ✅ complete
 
 - [x] Repository structure (pnpm workspaces + Turbo)
 - [x] Content schema & validation (Zod)
@@ -21,16 +22,28 @@ Open-source academic GPS for Spanish PAU preparation.
 - [x] Adaptive diagnostic (`@pau/assessment`)
 - [x] Diagnostic REST API (`@pau/api`) with analytics events — see [docs/api.md](docs/api.md)
 - [x] 30 practice questions (≥2 per core skill) for a meaningful diagnostic
-- [x] CI/CD (lint, typecheck, content validation, tests)
-- [ ] Student UI (Week 4)
+- [x] Typed API client (`@pau/api-client`), integration-tested against the live API
+- [x] Expo app (`@pau/mobile`): Welcome → Goal → Diagnostic → Results → Home → Practice → Progress
+- [x] Minimal practice flow (immediate feedback + explanation) + goals/catalog endpoints
+- [x] CI/CD (lint, typecheck, mobile typecheck, content validation, unit + integration tests)
+- [ ] University goal engine — degrees/weightings/cutoffs (Week 5)
 
-### Run the API locally
+### Run the full stack locally
 
 ```bash
+# 1. Database + API
 docker compose up -d && pnpm db:migrate:dev && pnpm db:seed
-pnpm --filter @pau/api start   # or: npx tsx services/api/src/server.ts
-# → PAU OS API listening at http://localhost:3000
+npx tsx services/api/src/server.ts       # → http://localhost:3000
+
+# 2. The app (web), in another terminal
+pnpm --filter @pau/mobile web            # Expo web dev server
+# API base URL: app.json → expo.extra.apiBaseUrl (default http://localhost:3000)
 ```
+
+The screens call the API via `apps/mobile/src/api.ts`, whose endpoints are the
+same ones covered by the `@pau/api-client` integration test. The app is verified
+to typecheck and bundle for web (Metro), and its API contract is tested
+end-to-end; on-device rendering/UX polish comes later (spec §29 step 17).
 
 ## Getting Started
 

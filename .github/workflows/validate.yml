@@ -41,6 +41,9 @@ jobs:
       - name: Typecheck
         run: pnpm typecheck
 
+      - name: Typecheck mobile app
+        run: pnpm --filter @pau/mobile typecheck
+
       - name: Validate content
         run: pnpm validate-content
 

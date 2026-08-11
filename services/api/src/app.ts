@@ -15,6 +15,7 @@ import {
   toPublicQuestion,
   outcomeFor,
   effectiveDifficulty,
+  explanationOf,
   type QuestionRow,
 } from './questions.js';
 
@@ -25,6 +26,38 @@ interface SkillStateRow {
   evidenceCount: number;
   streak: number;
 }
+
+interface GoalRow {
+  id: string;
+  studentId: string;
+  degreeId: string;
+  targetScore: number | null;
+  updatedAt: Date;
+}
+
+function toGoalDto(goal: GoalRow): {
+  id: string;
+  studentId: string;
+  degreeId: string;
+  targetScore: number | null;
+} {
+  return {
+    id: goal.id,
+    studentId: goal.studentId,
+    degreeId: goal.degreeId,
+    targetScore: goal.targetScore,
+  };
+}
+
+// Provisional degree list for goal selection (Week 5 replaces this with real,
+// sourced data). Names/universities are public facts; no cutoffs/weightings.
+const STUB_DEGREES = [
+  { id: 'upc-enginyeria-informatica', university: 'UPC', name: { ca: 'Enginyeria Informàtica', es: 'Ingeniería Informática' } },
+  { id: 'ub-matematiques', university: 'UB', name: { ca: 'Matemàtiques', es: 'Matemáticas' } },
+  { id: 'upc-enginyeria-industrial', university: 'UPC', name: { ca: 'Enginyeria en Tecnologies Industrials', es: 'Ingeniería en Tecnologías Industriales' } },
+  { id: 'ub-fisica', university: 'UB', name: { ca: 'Física', es: 'Física' } },
+  { id: 'uab-enginyeria-informatica', university: 'UAB', name: { ca: 'Enginyeria Informàtica', es: 'Ingeniería Informática' } },
+] as const;
 
 async function loadSkillStateRows(db: Db, studentId: string): Promise<Map<string, SkillStateRow>> {
   const rows = await db.studentSkillState.findMany({
@@ -77,6 +110,95 @@ export function buildApp(db: Db): FastifyInstance {
     }));
     return { skills };
   });
+
+  // Latest active recommendations for the student (most recent first).
+  app.get<{ Params: { id: string } }>('/v1/students/:id/recommendations', async (req, reply) => {
+    const student = await db.student.findUnique({ where: { id: req.params.id } });
+    if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+    const rows = await db.recommendation.findMany({
+      where: { studentId: req.params.id, isActive: true },
+      orderBy: { createdAt: 'desc' },
+      take: 5,
+    });
+    return {
+      recommendations: rows.map((r) => ({
+        id: r.id,
+        skillId: r.skillId,
+        reasonCodes: r.reasonCodes,
+        explanation: r.explanation,
+        createdAt: r.createdAt,
+      })),
+    };
+  });
+
+  // Current goal (most recently updated), or null if none set yet.
+  app.get<{ Params: { id: string } }>('/v1/students/:id/goal', async (req, reply) => {
+    const student = await db.student.findUnique({ where: { id: req.params.id } });
+    if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+    const goal = await db.studentGoal.findFirst({
+      where: { studentId: req.params.id },
+      orderBy: { updatedAt: 'desc' },
+    });
+    return { goal: goal ? toGoalDto(goal) : null };
+  });
+
+  // --- Catalog ------------------------------------------------------------
+  // Provisional degree list for goal selection. Real degrees/weightings/cutoffs
+  // arrive with the university goal engine in Week 5; this carries no cutoff or
+  // official exam data (spec §35: do not invent official data).
+  app.get('/v1/catalog/degrees', async () => ({ degrees: STUB_DEGREES, provisional: true }));
+
+  // Skill catalog (id → localized name) so clients can render human labels.
+  app.get('/v1/catalog/skills', async () => {
+    const rows = await db.skill.findMany({
+      where: { subject: 'mathematics-ii' },
+      select: { id: true, nameCA: true, nameES: true },
+    });
+    return {
+      skills: rows.map((r) => ({ id: r.id, name: { ca: r.nameCA, es: r.nameES ?? undefined } })),
+    };
+  });
+
+  // --- Goals --------------------------------------------------------------
+  app.post<{ Body: { studentId?: string; degreeId?: string; targetScore?: number } }>(
+    '/v1/goals',
+    async (req, reply) => {
+      const { studentId, degreeId, targetScore } = req.body ?? {};
+      if (!studentId || !degreeId) {
+        return reply.code(400).send({ error: 'studentId_and_degreeId_required' });
+      }
+      const student = await db.student.findUnique({ where: { id: studentId } });
+      if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+      const goal = await db.studentGoal.upsert({
+        where: { studentId_degreeId: { studentId, degreeId } },
+        create: { studentId, degreeId, targetScore: targetScore ?? null },
+        update: { targetScore: targetScore ?? null },
+      });
+      return reply.code(201).send({ goal: toGoalDto(goal) });
+    },
+  );
+
+  app.get<{ Params: { id: string } }>('/v1/goals/:id', async (req, reply) => {
+    const goal = await db.studentGoal.findUnique({ where: { id: req.params.id } });
+    if (!goal) return reply.code(404).send({ error: 'goal_not_found' });
+    return { goal: toGoalDto(goal) };
+  });
+
+  app.patch<{ Params: { id: string }; Body: { targetScore?: number | null } }>(
+    '/v1/goals/:id',
+    async (req, reply) => {
+      const existing = await db.studentGoal.findUnique({ where: { id: req.params.id } });
+      if (!existing) return reply.code(404).send({ error: 'goal_not_found' });
+      const goal = await db.studentGoal.update({
+        where: { id: req.params.id },
+        data: { targetScore: req.body?.targetScore ?? null },
+      });
+      return { goal: toGoalDto(goal) };
+    },
+  );
 
   // --- Assessments (diagnostic) ------------------------------------------
   app.post<{ Body: { studentId?: string } }>('/v1/assessments', async (req, reply) => {
@@ -286,6 +408,99 @@ export function buildApp(db: Db): FastifyInstance {
       recommendation,
     };
   });
+
+  // --- Practice -----------------------------------------------------------
+  // Minimal practice (spec Screen 7): serve a question for the student's
+  // weakest assessed skill; the adaptive session composition arrives in Week 6.
+  app.get<{ Params: { id: string } }>('/v1/students/:id/practice/next', async (req, reply) => {
+    const student = await db.student.findUnique({ where: { id: req.params.id } });
+    if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+    const bank = await loadQuestionBank(db);
+    const rows = await loadSkillStateRows(db, req.params.id);
+
+    // Prefer the weakest assessed skill; fall back to any skill in the bank.
+    const assessed = [...rows.values()].filter((r) => r.evidenceCount > 0);
+    assessed.sort((a, b) => a.masteryProbability - b.masteryProbability);
+    const targetSkill = assessed[0]?.skillId ?? bank[0]?.skills[0];
+    if (!targetSkill) return { done: true };
+
+    const answered = await db.assessmentResponse.findMany({
+      where: { assessment: { studentId: req.params.id } },
+      select: { questionId: true },
+    });
+    const answeredIds = new Set(answered.map((a) => a.questionId));
+
+    const forSkill = bank.filter((q) => q.skills.includes(targetSkill));
+    const fresh = forSkill.filter((q) => !answeredIds.has(q.id));
+    const chosen = (fresh[0] ?? forSkill[0]) as QuestionRow | undefined;
+    if (!chosen) return { done: true };
+
+    return { skillId: targetSkill, question: toPublicQuestion(chosen) };
+  });
+
+  // Answer a practice question — unlike the diagnostic, this reveals
+  // correctness and the explanation (Screen 7) and updates mastery.
+  app.post<{ Body: { studentId?: string; questionId?: string; answer?: string; idk?: boolean } }>(
+    '/v1/practice/answer',
+    async (req, reply) => {
+      const { studentId, questionId, answer, idk } = req.body ?? {};
+      if (!studentId || !questionId) {
+        return reply.code(400).send({ error: 'studentId_and_questionId_required' });
+      }
+      if (!answer && !idk) return reply.code(400).send({ error: 'answer_or_idk_required' });
+
+      const student = await db.student.findUnique({ where: { id: studentId } });
+      if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+      const bank = await loadQuestionBank(db);
+      const question = bank.find((q) => q.id === questionId);
+      if (!question) return reply.code(404).send({ error: 'question_not_found' });
+
+      const outcome = outcomeFor(question, answer, Boolean(idk));
+      const now = new Date();
+      const stateRows = await loadSkillStateRows(db, studentId);
+      const updated: Array<{ skillId: string; band: ReturnType<typeof masteryBand> }> = [];
+
+      for (const skillId of question.skills) {
+        const prevRow = stateRows.get(skillId);
+        const next = updateMastery(toMasteryState(prevRow), outcome, effectiveDifficulty(question));
+        const streak = outcome === 'correct' ? (prevRow?.streak ?? 0) + 1 : 0;
+        await db.studentSkillState.upsert({
+          where: { studentId_skillId: { studentId, skillId } },
+          create: {
+            studentId,
+            skillId,
+            masteryProbability: next.masteryProbability,
+            confidence: next.confidence,
+            evidenceCount: next.evidenceCount,
+            lastAssessedAt: now,
+            lastCorrectAt: outcome === 'correct' ? now : null,
+            lastIncorrectAt: outcome === 'correct' ? null : now,
+            streak,
+          },
+          update: {
+            masteryProbability: next.masteryProbability,
+            confidence: next.confidence,
+            evidenceCount: next.evidenceCount,
+            lastAssessedAt: now,
+            ...(outcome === 'correct' ? { lastCorrectAt: now } : { lastIncorrectAt: now }),
+            streak,
+          },
+        });
+        updated.push({ skillId, band: masteryBand(next) });
+      }
+
+      await recordEvent(db, 'question_answered', studentId, { questionId, outcome, mode: 'practice' });
+
+      return {
+        correct: outcome === 'correct',
+        outcome,
+        explanation: explanationOf(question),
+        skills: updated,
+      };
+    },
+  );
 
   // --- Questions ----------------------------------------------------------
   app.get<{ Params: { id: string } }>('/v1/questions/:id', async (req, reply) => {
