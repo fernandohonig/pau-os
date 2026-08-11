@@ -1,6 +1,14 @@
-import 'dotenv/config';
+import { config } from 'dotenv';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
 import { buildApp } from './app.js';
 import { createPrisma } from './prisma.js';
+
+// Config lives in the monorepo-root .env. Load that first, then let a local
+// services/api/.env (if any) override — neither call overwrites already-set vars.
+const here = dirname(fileURLToPath(import.meta.url));
+config({ path: resolve(here, '../../../.env') });
+config();
 
 const connectionString = process.env.DATABASE_URL;
 if (!connectionString) {

@@ -9,6 +9,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@fastify/cors": "^9",
     "@pau/assessment": "workspace:*",
     "@pau/knowledge-model": "workspace:*",
     "@pau/metrics": "workspace:*",

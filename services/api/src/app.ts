@@ -1,4 +1,5 @@
 import Fastify, { type FastifyInstance, type FastifyRequest, type FastifyReply } from 'fastify';
+import cors from '@fastify/cors';
 import {
   selectNextQuestion,
   evaluateStop,
@@ -282,6 +283,21 @@ async function attemptsForAssessment(
 
 export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): FastifyInstance {
   const app = Fastify({ logger: false });
+
+  // CORS: the web client runs on a different origin (e.g. Expo web on :8081)
+  // than the API (:3000), so browsers require explicit cross-origin allowance.
+  // Allowed origins come from CORS_ORIGINS (comma-separated); dev defaults cover
+  // the Expo web / Metro ports.
+  const corsOrigins = (process.env.CORS_ORIGINS ??
+    'http://localhost:8081,http://localhost:19006,http://localhost:19000')
+    .split(',')
+    .map((o) => o.trim())
+    .filter(Boolean);
+  app.register(cors, {
+    origin: corsOrigins,
+    methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  });
 
   function identify(req: FastifyRequest): AuthIdentity | null {
     const token = bearerFromHeader(req.headers.authorization);

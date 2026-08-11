@@ -54,17 +54,25 @@ Console → APIs & Services → OAuth consent screen:
 ### 3. Web OAuth client → this is `GOOGLE_CLIENT_ID`
 Console → APIs & Services → Credentials → Create credentials → OAuth client ID:
 - Application type: **Web application**
-- For Expo dev with `expo-auth-session`, add its redirect URI
-  (e.g. `https://auth.expo.io/@<expo-username>/pau-os`, or your proxy URI)
 - The generated **Client ID** is both `GOOGLE_CLIENT_ID` and
   `extra.googleClientId`. No client secret is required for this flow.
 
-### 4. (Native builds only) iOS / Android OAuth clients
-If you ship standalone builds via `@react-native-google-signin`, also create
-**iOS** and **Android** OAuth client IDs (Android needs your SHA-1 signing
-fingerprint + package name). Still pass the **Web** client ID as `webClientId`
-so the ID token's `aud` matches the server. These platform client IDs do **not**
-go into pau-os env — they only let Google issue the token.
+**Redirect URI — use the native app scheme.** The app registers a custom scheme
+(`scheme: "pauos"` in `apps/mobile/app.json`). With `expo-auth-session`, call
+`makeRedirectUri()` to generate the redirect at runtime rather than hard-coding
+it; it resolves to the scheme in dev-client / standalone builds. This is the
+current, non-deprecated flow and works in both Expo Go and standalone builds.
+
+> The legacy `https://auth.expo.io/@<expo-username>/pau-os` proxy URL is
+> deprecated in recent Expo SDKs — avoid it for new setups.
+
+### 4. (Standalone builds) iOS / Android OAuth clients
+For standalone builds via `@react-native-google-signin`, also create **iOS** and
+**Android** OAuth client IDs (Android needs your SHA-1 signing fingerprint +
+package name; iOS uses the reversed-client-id redirect). Still pass the **Web**
+client ID as `webClientId` so the ID token's `aud` matches the server. These
+platform client IDs do **not** go into pau-os env — they only let Google issue
+the token.
 
 ## Wiring it up
 

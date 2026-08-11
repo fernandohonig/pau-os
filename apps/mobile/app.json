@@ -2,6 +2,7 @@
   "expo": {
     "name": "PAU OS",
     "slug": "pau-os",
+    "scheme": "pauos",
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
@@ -11,7 +12,7 @@
     },
     "extra": {
       "apiBaseUrl": "http://localhost:3000",
-      "googleClientId": ""
+      "googleClientId": "1083016220865-bbdeulma51p2t9a1pjof34s8ae5puk2m.apps.googleusercontent.com"
     }
   }
 }
