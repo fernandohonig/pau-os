@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  # prisma.config.ts resolves env('DATABASE_URL') eagerly; a dummy value lets
+  # `prisma generate` run without a real database (generate does not connect).
+  DATABASE_URL: 'postgresql://user:pass@localhost:5432/pau_os_ci'
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -15,18 +20,24 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version-file: '.nvmrc'
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
           version: 9
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Generate Prisma client
+        run: pnpm prisma generate
+
       - name: Lint
         run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
 
       - name: Validate content
         run: pnpm validate-content

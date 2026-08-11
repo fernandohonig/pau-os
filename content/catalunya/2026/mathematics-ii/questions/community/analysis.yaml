@@ -1,0 +1,131 @@
+# Community-authored practice questions — Anàlisi block.
+# NOT official exam content. Provenance: community, pending human review.
+- id: mat2-c-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.analysis.derivative_rules]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.4
+    calibrated: null
+  question:
+    ca: "Quina és la derivada de f(x) = x³?"
+    es: "¿Cuál es la derivada de f(x) = x³?"
+  options:
+    - { id: A, ca: "3x²", es: "3x²" }
+    - { id: B, ca: "x²", es: "x²" }
+    - { id: C, ca: "3x", es: "3x" }
+    - { id: D, ca: "x⁴/4", es: "x⁴/4" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "Aplicant la regla de la potència, la derivada de xⁿ és n·xⁿ⁻¹, per tant (x³)' = 3x²."
+    es: "Aplicando la regla de la potencia, la derivada de xⁿ es n·xⁿ⁻¹, por tanto (x³)' = 3x²."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.analysis.limits]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.55
+    calibrated: null
+  question:
+    ca: "Calcula el límit: lim(x→2) (x² - 4)/(x - 2)"
+    es: "Calcula el límite: lim(x→2) (x² - 4)/(x - 2)"
+  options:
+    - { id: A, ca: "0", es: "0" }
+    - { id: B, ca: "4", es: "4" }
+    - { id: C, ca: "No existeix", es: "No existe" }
+    - { id: D, ca: "2", es: "2" }
+  answer: { type: single, correct: B }
+  explanation:
+    ca: "Factoritzem: (x²-4)/(x-2) = (x-2)(x+2)/(x-2) = x+2. Substituint x=2 obtenim 4."
+    es: "Factorizamos: (x²-4)/(x-2) = (x-2)(x+2)/(x-2) = x+2. Sustituyendo x=2 obtenemos 4."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.calculus.integrals]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.45
+    calibrated: null
+  question:
+    ca: "Quina és la integral indefinida ∫ 2x dx?"
+    es: "¿Cuál es la integral indefinida ∫ 2x dx?"
+  options:
+    - { id: A, ca: "x² + C", es: "x² + C" }
+    - { id: B, ca: "2 + C", es: "2 + C" }
+    - { id: C, ca: "2x² + C", es: "2x² + C" }
+    - { id: D, ca: "x²/2 + C", es: "x²/2 + C" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "∫ 2x dx = 2·(x²/2) + C = x² + C."
+    es: "∫ 2x dx = 2·(x²/2) + C = x² + C."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.functions]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.4
+    calibrated: null
+  question:
+    ca: "Quin és el domini de la funció f(x) = ln(x - 1)?"
+    es: "¿Cuál es el dominio de la función f(x) = ln(x - 1)?"
+  options:
+    - { id: A, ca: "x > 1", es: "x > 1" }
+    - { id: B, ca: "x ≥ 1", es: "x ≥ 1" }
+    - { id: C, ca: "x ≠ 1", es: "x ≠ 1" }
+    - { id: D, ca: "Tots els reals", es: "Todos los reales" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El logaritme només està definit per a arguments positius: x - 1 > 0, és a dir x > 1."
+    es: "El logaritmo solo está definido para argumentos positivos: x - 1 > 0, es decir x > 1."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.analysis.optimization]
+  competencies: [reasoning, problem_solving, critical_thinking]
+  difficulty:
+    initial: 0.6
+    calibrated: null
+  question:
+    ca: "En quin punt té un mínim la funció f(x) = x² - 4x + 1?"
+    es: "¿En qué punto tiene un mínimo la función f(x) = x² - 4x + 1?"
+  options:
+    - { id: A, ca: "x = 2", es: "x = 2" }
+    - { id: B, ca: "x = -2", es: "x = -2" }
+    - { id: C, ca: "x = 4", es: "x = 4" }
+    - { id: D, ca: "x = 0", es: "x = 0" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "f'(x) = 2x - 4 = 0 → x = 2. Com que f''(x) = 2 > 0, és un mínim."
+    es: "f'(x) = 2x - 4 = 0 → x = 2. Como f''(x) = 2 > 0, es un mínimo."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }

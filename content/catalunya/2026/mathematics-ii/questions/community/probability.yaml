@@ -1,0 +1,53 @@
+# Community-authored practice questions — Probabilitat block.
+# NOT official exam content. Provenance: community, pending human review.
+- id: mat2-c-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.probability.basic]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.3
+    calibrated: null
+  question:
+    ca: "En llançar un dau de sis cares, quina és la probabilitat d'obtenir un nombre parell?"
+    es: "Al lanzar un dado de seis caras, ¿cuál es la probabilidad de obtener un número par?"
+  options:
+    - { id: A, ca: "1/2", es: "1/2" }
+    - { id: B, ca: "1/3", es: "1/3" }
+    - { id: C, ca: "1/6", es: "1/6" }
+    - { id: D, ca: "2/3", es: "2/3" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "Els resultats parells són {2, 4, 6}: 3 de 6 casos. P = 3/6 = 1/2."
+    es: "Los resultados pares son {2, 4, 6}: 3 de 6 casos. P = 3/6 = 1/2."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.probability.conditional]
+  competencies: [reasoning, problem_solving, critical_thinking]
+  difficulty:
+    initial: 0.5
+    calibrated: null
+  question:
+    ca: "Es llancen dues monedes justes. Quina és la probabilitat d'obtenir dues cares?"
+    es: "Se lanzan dos monedas justas. ¿Cuál es la probabilidad de obtener dos caras?"
+  options:
+    - { id: A, ca: "1/4", es: "1/4" }
+    - { id: B, ca: "1/2", es: "1/2" }
+    - { id: C, ca: "1/3", es: "1/3" }
+    - { id: D, ca: "3/4", es: "3/4" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "Els resultats són {CC, CX, XC, XX}, tots equiprobables. Només CC dona dues cares: P = 1/4."
+    es: "Los resultados son {CC, CX, XC, XX}, todos equiprobables. Solo CC da dos caras: P = 1/4."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }

@@ -165,6 +165,90 @@ describe('Content Validation', () => {
       expect(errors.length).toBeGreaterThan(0);
       expect(errors[0].error).toContain('Circular');
     });
+
+    it('should detect a pure prerequisite cycle across three skills', () => {
+      const mk = (id: string, prereq: string): [string, Skill] => [
+        id,
+        {
+          id,
+          version: 1,
+          subject: 'mathematics-ii',
+          region: 'catalunya' as const,
+          academic_year: 2026,
+          name: { ca: id },
+          prerequisites: [prereq],
+          status: 'published',
+        } as Skill,
+      ];
+      // a -> b -> c -> a (prerequisites only, no parents)
+      const skills = new Map<string, Skill>([
+        mk('math.a', 'math.b'),
+        mk('math.b', 'math.c'),
+        mk('math.c', 'math.a'),
+      ]);
+
+      const errors = validateSkillReferences(skills);
+      expect(errors.some((e) => e.error.includes('Circular'))).toBe(true);
+    });
+
+    it('should accept a valid DAG with shared prerequisites', () => {
+      const skills = new Map<string, Skill>([
+        [
+          'math.root',
+          {
+            id: 'math.root',
+            version: 1,
+            subject: 'mathematics-ii',
+            region: 'catalunya' as const,
+            academic_year: 2026,
+            name: { ca: 'root' },
+            status: 'published',
+          } as Skill,
+        ],
+        [
+          'math.left',
+          {
+            id: 'math.left',
+            version: 1,
+            subject: 'mathematics-ii',
+            region: 'catalunya' as const,
+            academic_year: 2026,
+            name: { ca: 'left' },
+            prerequisites: ['math.root'],
+            status: 'published',
+          } as Skill,
+        ],
+        [
+          'math.right',
+          {
+            id: 'math.right',
+            version: 1,
+            subject: 'mathematics-ii',
+            region: 'catalunya' as const,
+            academic_year: 2026,
+            name: { ca: 'right' },
+            prerequisites: ['math.root'],
+            status: 'published',
+          } as Skill,
+        ],
+        [
+          'math.join',
+          {
+            id: 'math.join',
+            version: 1,
+            subject: 'mathematics-ii',
+            region: 'catalunya' as const,
+            academic_year: 2026,
+            name: { ca: 'join' },
+            prerequisites: ['math.left', 'math.right'],
+            status: 'published',
+          } as Skill,
+        ],
+      ]);
+
+      const errors = validateSkillReferences(skills);
+      expect(errors).toHaveLength(0);
+    });
   });
 
   describe('validateQuestionReferences', () => {

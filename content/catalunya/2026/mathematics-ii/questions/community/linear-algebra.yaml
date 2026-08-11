@@ -1,0 +1,53 @@
+# Community-authored practice questions — Àlgebra lineal block.
+# NOT official exam content. Provenance: community, pending human review.
+- id: mat2-c-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.linear_algebra.determinants]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.4
+    calibrated: null
+  question:
+    ca: "Quin és el determinant de la matriu [[1, 2], [3, 4]]?"
+    es: "¿Cuál es el determinante de la matriz [[1, 2], [3, 4]]?"
+  options:
+    - { id: A, ca: "-2", es: "-2" }
+    - { id: B, ca: "2", es: "2" }
+    - { id: C, ca: "10", es: "10" }
+    - { id: D, ca: "-10", es: "-10" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El determinant d'una matriu 2×2 [[a,b],[c,d]] és ad - bc = 1·4 - 2·3 = 4 - 6 = -2."
+    es: "El determinante de una matriz 2×2 [[a,b],[c,d]] es ad - bc = 1·4 - 2·3 = 4 - 6 = -2."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.linear_algebra.matrix_operations]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.35
+    calibrated: null
+  question:
+    ca: "Quina és la dimensió del producte d'una matriu 2×3 per una matriu 3×4?"
+    es: "¿Cuál es la dimensión del producto de una matriz 2×3 por una matriz 3×4?"
+  options:
+    - { id: A, ca: "2×4", es: "2×4" }
+    - { id: B, ca: "3×3", es: "3×3" }
+    - { id: C, ca: "2×3", es: "2×3" }
+    - { id: D, ca: "No es pot multiplicar", es: "No se puede multiplicar" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El producte (m×n)·(n×p) té dimensió m×p. Aquí (2×3)·(3×4) = 2×4. Les dimensions interiors (3) coincideixen."
+    es: "El producto (m×n)·(n×p) tiene dimensión m×p. Aquí (2×3)·(3×4) = 2×4. Las dimensiones interiores (3) coinciden."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }

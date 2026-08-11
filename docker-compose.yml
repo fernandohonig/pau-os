@@ -1,0 +1,18 @@
+# Local development services for PAU OS.
+# Postgres is exposed on 5433 (not the default 5432) to avoid colliding with
+# other local Postgres instances.
+services:
+  postgres:
+    image: postgres:16
+    container_name: pau-os-postgres
+    environment:
+      POSTGRES_USER: pau
+      POSTGRES_PASSWORD: pau_dev_password
+      POSTGRES_DB: pau_os_dev
+    ports:
+      - '5433:5432'
+    volumes:
+      - pau_os_pgdata:/var/lib/postgresql/data
+
+volumes:
+  pau_os_pgdata:

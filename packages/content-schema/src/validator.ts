@@ -116,7 +116,7 @@ export function validateUniversity(data: unknown, file: string): { university: U
 export function validateSkillReferences(skills: Map<string, Skill>): ValidationError[] {
   const errors: ValidationError[] = [];
 
-  for (const [_id, skill] of skills) {
+  for (const [, skill] of skills) {
     // Check parent exists
     if (skill.parent && !skills.has(skill.parent)) {
       errors.push({
@@ -134,35 +134,69 @@ export function validateSkillReferences(skills: Map<string, Skill>): ValidationE
         });
       }
     }
-
-    // Check no circular dependencies
-    if (skill.parent && wouldCreateCycle(skill.id, skill.parent, skills)) {
-      errors.push({
-        file: skill.id,
-        error: `Circular prerequisite detected`,
-      });
-    }
   }
+
+  // Detect any cycle across the combined dependency graph. Both `parent` and
+  // `prerequisites` are treated as "must exist before" edges — a cycle in
+  // either (or a mix) makes the skill graph impossible to order.
+  errors.push(...detectSkillCycles(skills));
 
   return errors;
 }
 
-function wouldCreateCycle(skillId: string, targetId: string, skills: Map<string, Skill>): boolean {
-  const visited = new Set<string>();
-  const stack = [targetId];
+/**
+ * Returns one error per skill that participates in a dependency cycle, using a
+ * three-color DFS over parent + prerequisite edges. Missing references are
+ * ignored here (reported separately) so we never traverse into unknown nodes.
+ */
+function detectSkillCycles(skills: Map<string, Skill>): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const WHITE = 0;
+  const GRAY = 1;
+  const BLACK = 2;
+  const color = new Map<string, number>();
+  const reported = new Set<string>();
 
-  while (stack.length > 0) {
-    const current = stack.pop()!;
-    if (current === skillId) return true;
-    if (visited.has(current)) continue;
-
-    visited.add(current);
-    const skill = skills.get(current);
-    if (skill?.parent) stack.push(skill.parent);
-    if (skill?.prerequisites) stack.push(...skill.prerequisites);
+  function edges(id: string): string[] {
+    const skill = skills.get(id);
+    if (!skill) return [];
+    const out: string[] = [];
+    if (skill.parent && skills.has(skill.parent)) out.push(skill.parent);
+    for (const p of skill.prerequisites || []) {
+      if (skills.has(p)) out.push(p);
+    }
+    return out;
   }
 
-  return false;
+  function visit(id: string, path: string[]): void {
+    color.set(id, GRAY);
+    path.push(id);
+
+    for (const next of edges(id)) {
+      const c = color.get(next) ?? WHITE;
+      if (c === GRAY) {
+        // Back-edge: everything from `next` onward in `path` is on the cycle.
+        const start = path.indexOf(next);
+        for (const node of path.slice(start)) {
+          if (!reported.has(node)) {
+            reported.add(node);
+            errors.push({ file: node, error: `Circular prerequisite detected` });
+          }
+        }
+      } else if (c === WHITE) {
+        visit(next, path);
+      }
+    }
+
+    path.pop();
+    color.set(id, BLACK);
+  }
+
+  for (const id of skills.keys()) {
+    if ((color.get(id) ?? WHITE) === WHITE) visit(id, []);
+  }
+
+  return errors;
 }
 
 export function validateQuestionReferences(questions: Question[], skills: Map<string, Skill>): ValidationError[] {

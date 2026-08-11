@@ -1,0 +1,49 @@
+# Controlled Source Registry
+# ---------------------------------------------------------------------------
+# Every imported artifact MUST reference a source defined here. Questions,
+# cutoffs, weightings and curricula carry a `source` block whose `authority`
+# and (where applicable) `url`/`exam_id` must resolve to an entry below.
+#
+# IMPORTANT (spec §35): the coding agent must NOT invent official educational
+# data or fabricate source URLs. Entries below are placeholders describing
+# WHERE official data will be ingested from during real ingestion. URLs are
+# left empty until a maintainer confirms the exact, licensed source. No
+# question in this repo is marked `official` until it has been imported from a
+# verified artifact and human-reviewed.
+# ===========================================================================
+
+sources:
+  - id: canal-universitats
+    name: Canal Universitats (Generalitat de Catalunya)
+    authority: Canal Universitats
+    description:
+      ca: Portal oficial de les PAU a Catalunya
+      es: Portal oficial de las PAU en Cataluña
+    # Official landing page for PAU information. Confirm exact deep links and
+    # reusability/licensing before ingesting exam papers or cutoff tables.
+    url: null
+    license_status: pending_review
+    covers:
+      - pau_structure
+      - subject_specifications
+      - exam_papers
+      - correction_criteria
+      - weighting_tables
+      - degree_catalogue
+      - cutoff_data
+
+  - id: pau-os-community
+    name: PAU OS community-authored content
+    authority: PAU OS
+    description:
+      ca: Preguntes redactades per la comunitat, pendents de revisió humana
+      es: Preguntas redactadas por la comunidad, pendientes de revisión humana
+    url: null
+    license_status: open
+    covers:
+      - practice_questions
+
+open_questions:
+  - "Confirm legal basis for redistributing Canal Universitats exam papers and correction criteria."
+  - "Determine exact stable URLs for 2026 Matemàtiques II exam and weighting tables."
+  - "Confirm attribution requirements for cutoff data reuse."

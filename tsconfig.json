@@ -21,5 +21,7 @@
       "@pau/content-schema": ["packages/content-schema/src"],
       "@pau/api-client": ["packages/api-client/src"]
     }
-  }
+  },
+  "include": ["packages", "scripts", "services", "prisma.config.ts"],
+  "exclude": ["node_modules", "dist", "build", "**/*.test.ts", "prisma/generated"]
 }

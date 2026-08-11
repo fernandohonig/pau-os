@@ -1,0 +1,53 @@
+# Community-authored practice questions — Geometria block.
+# NOT official exam content. Provenance: community, pending human review.
+- id: mat2-c-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.geometry.vectors]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.35
+    calibrated: null
+  question:
+    ca: "Quin és el mòdul del vector v = (3, 4, 0)?"
+    es: "¿Cuál es el módulo del vector v = (3, 4, 0)?"
+  options:
+    - { id: A, ca: "5", es: "5" }
+    - { id: B, ca: "7", es: "7" }
+    - { id: C, ca: "12", es: "12" }
+    - { id: D, ca: "25", es: "25" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El mòdul és √(3² + 4² + 0²) = √(9 + 16) = √25 = 5."
+    es: "El módulo es √(3² + 4² + 0²) = √(9 + 16) = √25 = 5."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.geometry.dot_product]
+  competencies: [reasoning, problem_solving]
+  difficulty:
+    initial: 0.45
+    calibrated: null
+  question:
+    ca: "Quant val el producte escalar (1, 0, 0)·(0, 1, 0)?"
+    es: "¿Cuánto vale el producto escalar (1, 0, 0)·(0, 1, 0)?"
+  options:
+    - { id: A, ca: "0", es: "0" }
+    - { id: B, ca: "1", es: "1" }
+    - { id: C, ca: "-1", es: "-1" }
+    - { id: D, ca: "3", es: "3" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El producte escalar és 1·0 + 0·1 + 0·0 = 0. Els vectors són perpendiculars."
+    es: "El producto escalar es 1·0 + 0·1 + 0·0 = 0. Los vectores son perpendiculares."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }

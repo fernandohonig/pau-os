@@ -6,58 +6,53 @@ Open-source academic GPS for Spanish PAU preparation.
 
 ## Development Status
 
-**Week 1: Foundation** — In progress
+**Week 1: Foundation** — ✅ complete
+**Week 2: Knowledge Model** — ✅ complete
 
-- [x] Repository structure
-- [x] Content schema & validation
-- [x] Prisma schema
-- [x] Seed data (stub)
-- [ ] CI/CD setup
-- [ ] API scaffold
-- [ ] Testing infrastructure
-- [ ] First full vertical slice
+- [x] Repository structure (pnpm workspaces + Turbo)
+- [x] Content schema & validation (Zod)
+- [x] Prisma 7 schema + PostgreSQL migrations
+- [x] 44-skill Matemàtiques II graph (4 PAU blocks), DAG-validated
+- [x] Content importer (YAML → PostgreSQL), idempotent
+- [x] Controlled source registry
+- [x] CI/CD (lint, typecheck, content validation, tests)
+- [ ] Assessment engine + diagnostic API (Week 3)
+- [ ] Student UI (Week 4)
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 20+
-- pnpm 9+
-- PostgreSQL 14+
+- Node.js 22+ (see `.nvmrc`; `nvm use`)
+- pnpm 9+ (via `corepack enable`)
+- Docker (for the local Postgres in `docker-compose.yml`)
 
 ### Setup
 
 ```bash
-# Clone and install
+# Use the pinned Node version and install deps
+nvm use
 pnpm install
 
-# Copy environment template (create .env with DATABASE_URL)
+# Environment
 cp .env.example .env
 
-# Create database
-createdb pau_os_dev
+# Start local Postgres (port 5433) and generate the Prisma client
+docker compose up -d
+pnpm db:generate
 
-# Run migrations
-pnpm db:migrate
-
-# Seed with sample data
-pnpm db:seed
+# Apply migrations and seed content from Git
+pnpm db:migrate:dev
+pnpm db:seed        # imports validated YAML content into Postgres
 ```
 
 ### Development
 
 ```bash
-# Validate all content
-pnpm validate-content
-
-# Run tests
-pnpm test
-
-# Lint
-pnpm lint
-
-# Start dev server (TBD)
-pnpm dev
+pnpm validate-content   # validate all YAML content + references
+pnpm typecheck          # TypeScript project-wide
+pnpm test               # unit tests
+pnpm lint               # ESLint
 ```
 
 ## Directory Structure

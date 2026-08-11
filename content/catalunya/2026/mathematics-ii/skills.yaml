@@ -1,0 +1,640 @@
+# Matemàtiques II — Catalunya PAU skill graph
+# ---------------------------------------------------------------------------
+# Organised around the four exam blocks: Anàlisi (Analysis), Àlgebra lineal
+# (Linear Algebra), Geometria (Geometry), Probabilitat i Estadística.
+# Each block has a root skill (no prerequisites) with more specific skills
+# hanging off it. `parent` is taxonomic; `prerequisites` is pedagogical order.
+# All IDs use dot notation. Prerequisites and parents must form a DAG.
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# Foundations — Àlgebra (feeds every block)
+# ---------------------------------------------------------------------------
+- id: mathematics.algebra
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Àlgebra
+    es: Álgebra
+  description:
+    ca: Fonaments algebraics necessaris per a la resta de blocs
+    es: Fundamentos algebraicos necesarios para el resto de bloques
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.algebra.polynomials
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Polinomis
+    es: Polinomios
+  parent: mathematics.algebra
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.algebra.equations
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Equacions i sistemes
+    es: Ecuaciones y sistemas
+  parent: mathematics.algebra
+  prerequisites: [mathematics.algebra.polynomials]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.algebra.inequalities
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Inequacions
+    es: Inecuaciones
+  parent: mathematics.algebra
+  prerequisites: [mathematics.algebra.polynomials]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ---------------------------------------------------------------------------
+# Block 1 — Anàlisi (Analysis / Calculus)
+# ---------------------------------------------------------------------------
+- id: mathematics.analysis
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Anàlisi
+    es: Análisis
+  description:
+    ca: Funcions, límits, derivades i integrals
+    es: Funciones, límites, derivadas e integrales
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.functions
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Funcions
+    es: Funciones
+  description:
+    ca: Dominis, recorregut i gràfiques de funcions
+    es: Dominios, recorrido y gráficas de funciones
+  parent: mathematics.analysis
+  prerequisites: [mathematics.algebra.equations]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.function_types
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Tipus de funcions
+    es: Tipos de funciones
+  description:
+    ca: Funcions polinòmiques, racionals, exponencials, logarítmiques i trigonomètriques
+    es: Funciones polinómicas, racionales, exponenciales, logarítmicas y trigonométricas
+  parent: mathematics.functions
+  prerequisites: [mathematics.functions]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.limits
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Límits
+    es: Límites
+  parent: mathematics.analysis
+  prerequisites: [mathematics.functions]
+  related: [mathematics.analysis.continuity]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.continuity
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Continuïtat
+    es: Continuidad
+  parent: mathematics.analysis
+  prerequisites: [mathematics.analysis.limits]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.asymptotes
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Asímptotes
+    es: Asíntotas
+  parent: mathematics.analysis
+  prerequisites: [mathematics.analysis.limits]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.calculus.derivatives
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Derivades
+    es: Derivadas
+  description:
+    ca: Concepte de derivada i interpretació geomètrica
+    es: Concepto de derivada e interpretación geométrica
+  parent: mathematics.analysis
+  prerequisites: [mathematics.analysis.continuity]
+  related: [mathematics.calculus.integrals]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.derivative_rules
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Regles de derivació
+    es: Reglas de derivación
+  parent: mathematics.calculus.derivatives
+  prerequisites: [mathematics.calculus.derivatives]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.monotonicity
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Monotonia i extrems
+    es: Monotonía y extremos
+  parent: mathematics.analysis
+  prerequisites: [mathematics.analysis.derivative_rules]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.concavity
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Concavitat i punts d'inflexió
+    es: Concavidad y puntos de inflexión
+  parent: mathematics.analysis
+  prerequisites: [mathematics.analysis.derivative_rules]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.optimization
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Optimització
+    es: Optimización
+  description:
+    ca: Problemes de màxims i mínims aplicats
+    es: Problemas de máximos y mínimos aplicados
+  parent: mathematics.analysis
+  prerequisites: [mathematics.analysis.monotonicity]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+- id: mathematics.analysis.curve_sketching
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Representació de funcions
+    es: Representación de funciones
+  parent: mathematics.analysis
+  prerequisites:
+    - mathematics.analysis.asymptotes
+    - mathematics.analysis.monotonicity
+    - mathematics.analysis.concavity
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.calculus.integrals
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Integrals
+    es: Integrales
+  description:
+    ca: Integral indefinida i primitives
+    es: Integral indefinida y primitivas
+  parent: mathematics.analysis
+  prerequisites: [mathematics.analysis.derivative_rules]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.integration_techniques
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Tècniques d'integració
+    es: Técnicas de integración
+  description:
+    ca: Integració per parts, substitució i fraccions parcials
+    es: Integración por partes, sustitución y fracciones parciales
+  parent: mathematics.calculus.integrals
+  prerequisites: [mathematics.calculus.integrals]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.definite_integral
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Integral definida
+    es: Integral definida
+  description:
+    ca: Teorema fonamental del càlcul i regla de Barrow
+    es: Teorema fundamental del cálculo y regla de Barrow
+  parent: mathematics.analysis
+  prerequisites: [mathematics.calculus.integrals]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.analysis.area_between_curves
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Àrees entre corbes
+    es: Áreas entre curvas
+  parent: mathematics.analysis
+  prerequisites:
+    - mathematics.analysis.definite_integral
+    - mathematics.analysis.integration_techniques
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ---------------------------------------------------------------------------
+# Block 2 — Àlgebra lineal (Linear Algebra)
+# ---------------------------------------------------------------------------
+- id: mathematics.linear_algebra
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Àlgebra lineal
+    es: Álgebra lineal
+  description:
+    ca: Matrius, determinants i sistemes lineals
+    es: Matrices, determinantes y sistemas lineales
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.matrices
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Matrius
+    es: Matrices
+  parent: mathematics.linear_algebra
+  prerequisites: [mathematics.algebra]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.linear_algebra.matrix_operations
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Operacions amb matrius
+    es: Operaciones con matrices
+  parent: mathematics.matrices
+  prerequisites: [mathematics.matrices]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.linear_algebra.determinants
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Determinants
+    es: Determinantes
+  parent: mathematics.linear_algebra
+  prerequisites: [mathematics.linear_algebra.matrix_operations]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.linear_algebra.inverse_matrix
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Matriu inversa
+    es: Matriz inversa
+  parent: mathematics.linear_algebra
+  prerequisites: [mathematics.linear_algebra.determinants]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.linear_algebra.rank
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Rang d'una matriu
+    es: Rango de una matriz
+  parent: mathematics.linear_algebra
+  prerequisites: [mathematics.linear_algebra.determinants]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.linear_algebra.linear_systems
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Sistemes d'equacions lineals
+    es: Sistemas de ecuaciones lineales
+  parent: mathematics.linear_algebra
+  prerequisites:
+    - mathematics.matrices
+    - mathematics.algebra.equations
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.linear_algebra.gauss
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Mètode de Gauss
+    es: Método de Gauss
+  parent: mathematics.linear_algebra
+  prerequisites: [mathematics.linear_algebra.linear_systems]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.linear_algebra.rouche_frobenius
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Teorema de Rouché-Frobenius
+    es: Teorema de Rouché-Frobenius
+  description:
+    ca: Discussió de sistemes segons el rang
+    es: Discusión de sistemas según el rango
+  parent: mathematics.linear_algebra
+  prerequisites:
+    - mathematics.linear_algebra.rank
+    - mathematics.linear_algebra.linear_systems
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+# ---------------------------------------------------------------------------
+# Block 3 — Geometria (Analytic geometry in space)
+# ---------------------------------------------------------------------------
+- id: mathematics.geometry
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Geometria
+    es: Geometría
+  description:
+    ca: Geometria analítica a l'espai
+    es: Geometría analítica en el espacio
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.geometry.vectors
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Vectors a l'espai
+    es: Vectores en el espacio
+  parent: mathematics.geometry
+  prerequisites: [mathematics.algebra]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.geometry.dot_product
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Producte escalar
+    es: Producto escalar
+  parent: mathematics.geometry
+  prerequisites: [mathematics.geometry.vectors]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.geometry.cross_product
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Producte vectorial
+    es: Producto vectorial
+  parent: mathematics.geometry
+  prerequisites: [mathematics.geometry.vectors]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.geometry.lines_planes
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Rectes i plans
+    es: Rectas y planos
+  parent: mathematics.geometry
+  prerequisites: [mathematics.geometry.vectors]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.geometry.relative_positions
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Posicions relatives
+    es: Posiciones relativas
+  parent: mathematics.geometry
+  prerequisites: [mathematics.geometry.lines_planes]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.geometry.distances
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Distàncies
+    es: Distancias
+  parent: mathematics.geometry
+  prerequisites:
+    - mathematics.geometry.dot_product
+    - mathematics.geometry.lines_planes
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.geometry.angles
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Angles entre rectes i plans
+    es: Ángulos entre rectas y planos
+  parent: mathematics.geometry
+  prerequisites:
+    - mathematics.geometry.dot_product
+    - mathematics.geometry.lines_planes
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ---------------------------------------------------------------------------
+# Block 4 — Probabilitat i Estadística
+# ---------------------------------------------------------------------------
+- id: mathematics.probability
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Probabilitat
+    es: Probabilidad
+  description:
+    ca: Probabilitat i distribucions
+    es: Probabilidad y distribuciones
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+- id: mathematics.probability.basic
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Probabilitat bàsica
+    es: Probabilidad básica
+  description:
+    ca: Espais mostrals, successos i regla de Laplace
+    es: Espacios muestrales, sucesos y regla de Laplace
+  parent: mathematics.probability
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.probability.conditional
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Probabilitat condicionada
+    es: Probabilidad condicionada
+  parent: mathematics.probability
+  prerequisites: [mathematics.probability.basic]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.probability.total_and_bayes
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Probabilitat total i teorema de Bayes
+    es: Probabilidad total y teorema de Bayes
+  parent: mathematics.probability
+  prerequisites: [mathematics.probability.conditional]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+- id: mathematics.statistics.random_variables
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Variables aleatòries
+    es: Variables aleatorias
+  parent: mathematics.probability
+  prerequisites: [mathematics.probability.basic]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.statistics.binomial
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Distribució binomial
+    es: Distribución binomial
+  parent: mathematics.probability
+  prerequisites: [mathematics.statistics.random_variables]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: mathematics.statistics.normal
+  version: 1
+  subject: mathematics-ii
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Distribució normal
+    es: Distribución normal
+  parent: mathematics.probability
+  prerequisites: [mathematics.statistics.random_variables]
+  status: published
+  competencies: [reasoning, problem_solving]
