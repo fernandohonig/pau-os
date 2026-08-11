@@ -128,6 +128,29 @@ describe.skipIf(!DB_URL)('PauClient (integration)', () => {
       expect(practiceResult.explanation).toBeTruthy();
       expect(practiceResult.skills.length).toBeGreaterThan(0);
     }
+
+    // Adaptive session: composed mix, answered end-to-end, then completed.
+    const session = await client.startSession(student.id);
+    expect(session.questions.length).toBeGreaterThan(0);
+    expect(session.progress.total).toBe(session.questions.length);
+    // Session questions carry no answer key.
+    expect((session.questions[0] as unknown as { answer?: unknown }).answer).toBeUndefined();
+    for (const q of session.questions) {
+      const r = await client.submitSessionResponse(session.sessionId, {
+        questionId: q.id,
+        answer: q.options[0]?.id ?? 'A',
+      });
+      expect(r.explanation).toBeTruthy();
+    }
+    const sessionSummary = await client.completeSession(session.sessionId);
+    expect(sessionSummary.level.range).toHaveLength(2);
+    expect(sessionSummary.skills.length).toBeGreaterThan(0);
+
+    // Recommendations are now live NBA with reason codes.
+    const rec2 = await client.getRecommendations(student.id);
+    for (const r of rec2.recommendations) {
+      expect(Array.isArray(r.reasonCodes)).toBe(true);
+    }
   });
 
   it('surfaces API errors as ApiError with a code', async () => {

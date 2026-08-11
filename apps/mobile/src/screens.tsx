@@ -325,7 +325,7 @@ export function Progress({
   );
 }
 
-// --- Screen 7: Practice (self-contained loop) -----------------------------
+// --- Screen 7: Practice (adaptive composed session) -----------------------
 export function Practice({
   studentId,
   names,
@@ -336,47 +336,52 @@ export function Practice({
   onDone: () => void;
 }) {
   const [loading, setLoading] = useState(true);
-  const [question, setQuestion] = useState<PublicQuestion | null>(null);
-  const [skillId, setSkillId] = useState<string | null>(null);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [questions, setQuestions] = useState<PublicQuestion[]>([]);
+  const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<{ correct: boolean; explanation: string } | null>(null);
   const [finished, setFinished] = useState(false);
 
-  async function loadNext() {
-    setLoading(true);
-    setFeedback(null);
-    setSelected(null);
-    try {
-      const next = await api.getPracticeNext(studentId);
-      if ('done' in next && next.done) {
-        setFinished(true);
-        setQuestion(null);
-      } else if ('question' in next) {
-        setQuestion(next.question);
-        setSkillId(next.skillId);
-      }
-    } finally {
-      setLoading(false);
-    }
-  }
-
   useEffect(() => {
-    void loadNext();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    let cancelled = false;
+    (async () => {
+      const session = await api.startSession(studentId);
+      if (cancelled) return;
+      setSessionId(session.sessionId);
+      setQuestions(session.questions);
+      setLoading(false);
+    })().catch(() => setLoading(false));
+    return () => {
+      cancelled = true;
+    };
+  }, [studentId]);
+
+  const question = questions[index];
 
   async function submit(optionId?: string, idk?: boolean) {
-    if (!question) return;
-    const res = await api.submitPracticeAnswer(studentId, question.id, optionId, idk);
+    if (!question || !sessionId) return;
+    const res = await api.submitSessionResponse(sessionId, question.id, optionId, idk);
     setFeedback({ correct: res.correct, explanation: res.explanation.ca });
   }
 
-  if (loading) return <Screen><Loading label="Finding a good question…" /></Screen>;
+  async function next() {
+    setFeedback(null);
+    setSelected(null);
+    if (index + 1 >= questions.length) {
+      if (sessionId) await api.completeSession(sessionId).catch(() => undefined);
+      setFinished(true);
+    } else {
+      setIndex((i) => i + 1);
+    }
+  }
+
+  if (loading) return <Screen><Loading label="Building your session…" /></Screen>;
   if (finished || !question) {
     return (
       <Screen>
-        <Title>Nice work</Title>
-        <Body muted>No more fresh practice questions for now.</Body>
+        <Title>Session complete</Title>
+        <Body muted>Nice work — your progress has been updated.</Body>
         <Button label="Back to home" onPress={onDone} />
       </Screen>
     );
@@ -384,7 +389,11 @@ export function Practice({
 
   return (
     <Screen>
-      <Body muted>Practice · {skillId ? labelFor(names, skillId) : ''}</Body>
+      <Body muted>
+        Session · {index + 1} of {questions.length} ·{' '}
+        {question.skills[0] ? labelFor(names, question.skills[0]) : ''}
+      </Body>
+      <ProgressBar value={(index + (feedback ? 1 : 0)) / Math.max(1, questions.length)} />
       <Heading>{question.question.ca}</Heading>
       {question.options.map((o) => {
         const active = selected === o.id;
@@ -413,10 +422,7 @@ export function Practice({
           <Button label="I don’t know" variant="secondary" onPress={() => submit(undefined, true)} />
         </>
       ) : (
-        <>
-          <Button label="Next question" onPress={() => void loadNext()} />
-          <Button label="Finish" variant="secondary" onPress={onDone} />
-        </>
+        <Button label={index + 1 >= questions.length ? 'Finish session' : 'Next question'} onPress={() => void next()} />
       )}
     </Screen>
   );

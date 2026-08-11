@@ -14,6 +14,13 @@ import {
   type MasteryState,
 } from '@pau/scoring';
 import { estimateLevel, topGaps, topStrengths, recommendFromGaps } from '@pau/knowledge-model';
+import {
+  nextBestActions,
+  prerequisiteReadinessFrom,
+  composeSession,
+  type SkillSnapshot,
+  type NbaItem,
+} from '@pau/recommendation';
 import type { Db } from './prisma.js';
 import { recordEvent } from './analytics.js';
 import {
@@ -115,6 +122,123 @@ function toMasteryState(row: SkillStateRow | undefined): MasteryState {
   };
 }
 
+interface NbaContext {
+  nba: NbaItem[];
+  states: Map<string, SkillSnapshot>;
+  skillName: Map<string, string>;
+}
+
+/**
+ * Compute the Next Best Action ranking for a student over every skill present
+ * in the question bank, wiring in target relevance (goal), prerequisite
+ * readiness (skill DAG) and recency (recent session answers).
+ */
+async function computeNba(db: Db, studentId: string, bank: QuestionRow[]): Promise<NbaContext> {
+  const skillRows = await db.skill.findMany({
+    select: { id: true, prerequisites: true, nameCA: true },
+  });
+  const prereqOf = new Map(skillRows.map((s) => [s.id, s.prerequisites ?? []]));
+  const skillName = new Map(skillRows.map((s) => [s.id, s.nameCA]));
+
+  const stateRows = await loadSkillStateRows(db, studentId);
+  const states = new Map<string, SkillSnapshot>();
+  for (const [id, r] of stateRows) {
+    states.set(id, {
+      skillId: id,
+      masteryProbability: r.masteryProbability,
+      confidence: r.confidence,
+      evidenceCount: r.evidenceCount,
+    });
+  }
+
+  // Recency from the student's recent practice answers.
+  const recent = await db.sessionResponse.findMany({
+    where: { session: { studentId } },
+    select: { questionId: true },
+    orderBy: { createdAt: 'desc' },
+    take: 30,
+  });
+  const skillsByQuestion = new Map(bank.map((q) => [q.id, q.skills]));
+  const recentCounts = new Map<string, number>();
+  for (const r of recent) {
+    for (const s of skillsByQuestion.get(r.questionId) ?? []) {
+      recentCounts.set(s, (recentCounts.get(s) ?? 0) + 1);
+    }
+  }
+
+  const targetRelevance = await loadTargetRelevance(db, studentId);
+  const prerequisiteReadiness = prerequisiteReadinessFrom(states, (id) => prereqOf.get(id) ?? []);
+
+  const bankSkills = new Set<string>();
+  for (const q of bank) for (const s of q.skills) bankSkills.add(s);
+  const snapshots: SkillSnapshot[] = [...bankSkills].map(
+    (id) => states.get(id) ?? { skillId: id, masteryProbability: 0.5, confidence: 0, evidenceCount: 0 },
+  );
+
+  const nba = nextBestActions(snapshots, { targetRelevance, recentCounts, prerequisiteReadiness });
+  return { nba, states, skillName };
+}
+
+/** Human-readable rationale for a recommendation (spec: explain recommendations). */
+function explainNba(item: NbaItem, label: string): string {
+  if (item.reasonCodes.includes('NEEDS_EVIDENCE')) {
+    return `We don't have enough evidence on ${label} yet — a few questions will calibrate it.`;
+  }
+  if (item.reasonCodes.includes('LOW_MASTERY')) {
+    return `${label} is one of your weakest areas, so working on it now has the highest value.`;
+  }
+  if (item.reasonCodes.includes('DEVELOPING_MASTERY')) {
+    return `${label} is developing; a focused session can push it toward mastery.`;
+  }
+  return `${label} is a good next step based on your current profile.`;
+}
+
+/**
+ * Apply an answer outcome to every skill a question trains, persisting the
+ * updated mastery state. Returns the new band per skill. Shared by practice and
+ * session responses.
+ */
+async function applyOutcome(
+  db: Db,
+  studentId: string,
+  question: QuestionRow,
+  outcome: 'correct' | 'incorrect' | 'idk',
+): Promise<Array<{ skillId: string; band: ReturnType<typeof masteryBand> }>> {
+  const now = new Date();
+  const stateRows = await loadSkillStateRows(db, studentId);
+  const updated: Array<{ skillId: string; band: ReturnType<typeof masteryBand> }> = [];
+
+  for (const skillId of question.skills) {
+    const prevRow = stateRows.get(skillId);
+    const next = updateMastery(toMasteryState(prevRow), outcome, effectiveDifficulty(question));
+    const streak = outcome === 'correct' ? (prevRow?.streak ?? 0) + 1 : 0;
+    await db.studentSkillState.upsert({
+      where: { studentId_skillId: { studentId, skillId } },
+      create: {
+        studentId,
+        skillId,
+        masteryProbability: next.masteryProbability,
+        confidence: next.confidence,
+        evidenceCount: next.evidenceCount,
+        lastAssessedAt: now,
+        lastCorrectAt: outcome === 'correct' ? now : null,
+        lastIncorrectAt: outcome === 'correct' ? null : now,
+        streak,
+      },
+      update: {
+        masteryProbability: next.masteryProbability,
+        confidence: next.confidence,
+        evidenceCount: next.evidenceCount,
+        lastAssessedAt: now,
+        ...(outcome === 'correct' ? { lastCorrectAt: now } : { lastIncorrectAt: now }),
+        streak,
+      },
+    });
+    updated.push({ skillId, band: masteryBand(next) });
+  }
+  return updated;
+}
+
 export function buildApp(db: Db): FastifyInstance {
   const app = Fastify({ logger: false });
 
@@ -149,23 +273,27 @@ export function buildApp(db: Db): FastifyInstance {
   });
 
   // Latest active recommendations for the student (most recent first).
+  // Live Next Best Action ranking (spec §12), recomputed from current state so
+  // it reflects the latest practice and any goal change.
   app.get<{ Params: { id: string } }>('/v1/students/:id/recommendations', async (req, reply) => {
     const student = await db.student.findUnique({ where: { id: req.params.id } });
     if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
-    const rows = await db.recommendation.findMany({
-      where: { studentId: req.params.id, isActive: true },
-      orderBy: { createdAt: 'desc' },
-      take: 5,
-    });
+    const bank = await loadQuestionBank(db);
+    const { nba, skillName } = await computeNba(db, req.params.id, bank);
+    const top = nba.filter((n) => n.priority > 0).slice(0, 3);
+
     return {
-      recommendations: rows.map((r) => ({
-        id: r.id,
-        skillId: r.skillId,
-        reasonCodes: r.reasonCodes,
-        explanation: r.explanation,
-        createdAt: r.createdAt,
-      })),
+      recommendations: top.map((n) => {
+        const label = skillName.get(n.skillId) ?? n.skillId;
+        return {
+          skillId: n.skillId,
+          skillName: label,
+          priority: Math.round(n.priority * 1000) / 1000,
+          reasonCodes: n.reasonCodes,
+          explanation: explainNba(n, label),
+        };
+      }),
     };
   });
 
@@ -598,39 +726,7 @@ export function buildApp(db: Db): FastifyInstance {
       if (!question) return reply.code(404).send({ error: 'question_not_found' });
 
       const outcome = outcomeFor(question, answer, Boolean(idk));
-      const now = new Date();
-      const stateRows = await loadSkillStateRows(db, studentId);
-      const updated: Array<{ skillId: string; band: ReturnType<typeof masteryBand> }> = [];
-
-      for (const skillId of question.skills) {
-        const prevRow = stateRows.get(skillId);
-        const next = updateMastery(toMasteryState(prevRow), outcome, effectiveDifficulty(question));
-        const streak = outcome === 'correct' ? (prevRow?.streak ?? 0) + 1 : 0;
-        await db.studentSkillState.upsert({
-          where: { studentId_skillId: { studentId, skillId } },
-          create: {
-            studentId,
-            skillId,
-            masteryProbability: next.masteryProbability,
-            confidence: next.confidence,
-            evidenceCount: next.evidenceCount,
-            lastAssessedAt: now,
-            lastCorrectAt: outcome === 'correct' ? now : null,
-            lastIncorrectAt: outcome === 'correct' ? null : now,
-            streak,
-          },
-          update: {
-            masteryProbability: next.masteryProbability,
-            confidence: next.confidence,
-            evidenceCount: next.evidenceCount,
-            lastAssessedAt: now,
-            ...(outcome === 'correct' ? { lastCorrectAt: now } : { lastIncorrectAt: now }),
-            streak,
-          },
-        });
-        updated.push({ skillId, band: masteryBand(next) });
-      }
-
+      const updated = await applyOutcome(db, studentId, question, outcome);
       await recordEvent(db, 'question_answered', studentId, { questionId, outcome, mode: 'practice' });
 
       return {
@@ -641,6 +737,146 @@ export function buildApp(db: Db): FastifyInstance {
       };
     },
   );
+
+  // --- Adaptive practice sessions (Next Best Action, spec §12/§14) --------
+  app.post<{ Params: { id: string } }>('/v1/students/:id/sessions', async (req, reply) => {
+    const student = await db.student.findUnique({ where: { id: req.params.id } });
+    if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+    const bank = await loadQuestionBank(db);
+    if (bank.length === 0) return reply.code(503).send({ error: 'no_questions_available' });
+
+    const { nba } = await computeNba(db, req.params.id, bank);
+
+    const [aResp, sResp] = await Promise.all([
+      db.assessmentResponse.findMany({
+        where: { assessment: { studentId: req.params.id } },
+        select: { questionId: true },
+      }),
+      db.sessionResponse.findMany({
+        where: { session: { studentId: req.params.id } },
+        select: { questionId: true },
+      }),
+    ]);
+    const answered = new Set([...aResp, ...sResp].map((r) => r.questionId));
+
+    const metas = bank.map((q) => ({
+      id: q.id,
+      skills: q.skills,
+      difficulty: effectiveDifficulty(q),
+      provenance: q.sourceType,
+    }));
+    const composed = composeSession(nba, metas, { answeredRecently: answered });
+
+    const session = await db.practiceSession.create({
+      data: { studentId: req.params.id, status: 'in_progress' },
+    });
+    await recordEvent(db, 'practice_started', req.params.id, {
+      sessionId: session.id,
+      questionIds: composed.questionIds,
+      recommendedSkills: composed.recommendedSkills,
+      expectedLearningGain: composed.expectedLearningGain, // internal estimate (spec §14)
+    });
+    const top = composed.items[0];
+    if (top) {
+      await recordEvent(db, 'recommendation_presented', req.params.id, {
+        sessionId: session.id,
+        skillId: top.skillId,
+      });
+    }
+
+    const byId = new Map(bank.map((q) => [q.id, q] as const));
+    const questions = composed.questionIds
+      .map((id) => byId.get(id))
+      .filter((q): q is QuestionRow => Boolean(q))
+      .map((q) => toPublicQuestion(q));
+
+    return reply.code(201).send({
+      sessionId: session.id,
+      recommendedSkills: composed.recommendedSkills,
+      questions,
+      progress: { answered: 0, total: questions.length },
+    });
+  });
+
+  app.post<{
+    Params: { id: string };
+    Body: { questionId?: string; answer?: string; idk?: boolean };
+  }>('/v1/sessions/:id/responses', async (req, reply) => {
+    const { questionId, answer, idk } = req.body ?? {};
+    if (!questionId) return reply.code(400).send({ error: 'questionId_required' });
+    if (!answer && !idk) return reply.code(400).send({ error: 'answer_or_idk_required' });
+
+    const session = await db.practiceSession.findUnique({ where: { id: req.params.id } });
+    if (!session) return reply.code(404).send({ error: 'session_not_found' });
+    if (session.status !== 'in_progress') {
+      return reply.code(409).send({ error: 'session_not_in_progress' });
+    }
+
+    const bank = await loadQuestionBank(db);
+    const question = bank.find((q) => q.id === questionId);
+    if (!question) return reply.code(404).send({ error: 'question_not_found' });
+
+    const dup = await db.sessionResponse.findFirst({
+      where: { sessionId: session.id, questionId },
+    });
+    if (dup) return reply.code(409).send({ error: 'question_already_answered' });
+
+    const outcome = outcomeFor(question, answer, Boolean(idk));
+    await db.sessionResponse.create({
+      data: {
+        sessionId: session.id,
+        questionId,
+        answerGiven: idk ? '__IDK__' : (answer as string),
+        isCorrect: outcome === 'correct',
+      },
+    });
+    const updated = await applyOutcome(db, session.studentId, question, outcome);
+    await recordEvent(db, 'question_answered', session.studentId, {
+      sessionId: session.id,
+      questionId,
+      outcome,
+      mode: 'session',
+    });
+
+    const answeredCount = await db.sessionResponse.count({ where: { sessionId: session.id } });
+    return {
+      correct: outcome === 'correct',
+      outcome,
+      explanation: explanationOf(question),
+      skills: updated,
+      progress: { answered: answeredCount },
+    };
+  });
+
+  app.post<{ Params: { id: string } }>('/v1/sessions/:id/complete', async (req, reply) => {
+    const session = await db.practiceSession.findUnique({ where: { id: req.params.id } });
+    if (!session) return reply.code(404).send({ error: 'session_not_found' });
+
+    if (session.status === 'in_progress') {
+      const durationMinutes = Math.max(
+        1,
+        Math.round((Date.now() - session.startedAt.getTime()) / 60000),
+      );
+      await db.practiceSession.update({
+        where: { id: session.id },
+        data: { status: 'completed', completedAt: new Date(), durationMinutes },
+      });
+      await recordEvent(db, 'practice_completed', session.studentId, { sessionId: session.id });
+    }
+
+    // Progress recalculation from the updated skill states.
+    const stateRows = await loadSkillStateRows(db, session.studentId);
+    const entries = [...stateRows.values()].map((r) => ({ skillId: r.skillId, state: toMasteryState(r) }));
+    const level = estimateLevel(entries);
+    return {
+      level: { level: level.level, range: level.range, confidence: level.confidence },
+      skills: [...stateRows.values()].map((r) => ({
+        skillId: r.skillId,
+        band: masteryBand(toMasteryState(r)),
+      })),
+    };
+  });
 
   // --- Questions ----------------------------------------------------------
   app.get<{ Params: { id: string } }>('/v1/questions/:id', async (req, reply) => {

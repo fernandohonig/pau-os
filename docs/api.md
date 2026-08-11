@@ -131,15 +131,40 @@ does **not** predict the full 14-point admission score.
   }
   ```
 
-## Practice (Week 4)
+## Recommendations (Next Best Action, Week 6)
 
-### `GET /v1/students/:id/practice/next`
-- `200 { "skillId": string, "question": PublicQuestion }` or `{ "done": true }`
+### `GET /v1/students/:id/recommendations`
+Live NBA ranking (spec §12), recomputed from current state (reflects latest
+practice and goal changes).
+- `200 { "recommendations": [{ "skillId", "skillName", "priority", "reasonCodes": [...], "explanation" }] }`
 
-### `POST /v1/practice/answer`
-Body: `{ "studentId", "questionId", "answer"?, "idk"? }`. Unlike the diagnostic,
-this reveals correctness and the explanation.
-- `200 { "correct": boolean, "outcome": "correct"|"incorrect"|"idk", "explanation": {ca,es}, "skills": [{skillId, band}] }`
+Reason codes: `LOW_MASTERY`, `DEVELOPING_MASTERY`, `HIGH_LEARNING_VALUE`,
+`LOW_CONFIDENCE`, `NEEDS_EVIDENCE`, `HIGH_TARGET_RELEVANCE`,
+`HIGH_EXAM_RELEVANCE`, `PREREQUISITES_WEAK`, `RECENTLY_PRACTICED`.
+
+## Practice
+
+### Adaptive session (Week 6, spec §14)
+
+`POST /v1/students/:id/sessions` — compose a mixed ~15-min session (retrieval /
+confidence / challenge / spaced / exam-style) from the NBA ranking.
+- `201 { "sessionId", "recommendedSkills": [...], "questions": [PublicQuestion], "progress": { "answered": 0, "total": n } }`
+- `expected_learning_gain` is computed but kept internal (spec §14), emitted only to analytics.
+
+`POST /v1/sessions/:id/responses` — Body `{ "questionId", "answer"?, "idk"? }`.
+Reveals correctness + explanation and updates mastery.
+- `200 { "correct", "outcome", "explanation": {ca,es}, "skills": [{skillId,band}], "progress": { "answered" } }`
+- `404 session_not_found | question_not_found` · `409 session_not_in_progress | question_already_answered`
+
+`POST /v1/sessions/:id/complete` — finalize + recompute progress.
+- `200 { "level": {...}, "skills": [{skillId, band}] }`
+
+### Single-item practice (Week 4)
+
+`GET /v1/students/:id/practice/next` → `{ "skillId", "question": PublicQuestion }` or `{ "done": true }`
+
+`POST /v1/practice/answer` — Body `{ "studentId", "questionId", "answer"?, "idk"? }`; reveals correctness + explanation.
+- `200 { "correct", "outcome", "explanation": {ca,es}, "skills": [{skillId, band}] }`
 
 ## Questions
 

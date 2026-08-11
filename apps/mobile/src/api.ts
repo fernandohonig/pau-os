@@ -110,4 +110,24 @@ export const api = {
       explanation: LocalizedText;
       skills: ProfileBandItem[];
     }>('POST', '/v1/practice/answer', { studentId, questionId, answer, idk }),
+  startSession: (studentId: string) =>
+    req<{
+      sessionId: string;
+      recommendedSkills: string[];
+      questions: PublicQuestion[];
+      progress: { answered: number; total: number };
+    }>('POST', `/v1/students/${studentId}/sessions`),
+  submitSessionResponse: (sessionId: string, questionId: string, answer?: string, idk?: boolean) =>
+    req<{
+      correct: boolean;
+      outcome: string;
+      explanation: LocalizedText;
+      skills: ProfileBandItem[];
+      progress: { answered: number };
+    }>('POST', `/v1/sessions/${sessionId}/responses`, { questionId, answer, idk }),
+  completeSession: (sessionId: string) =>
+    req<{ level: { level: number; range: [number, number]; confidence: number }; skills: ProfileBandItem[] }>(
+      'POST',
+      `/v1/sessions/${sessionId}/complete`,
+    ),
 };

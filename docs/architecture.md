@@ -347,6 +347,16 @@ contribution + `buildTargetRelevance`), DB-backed catalog + degree detail +
 The full 14-point admission score is intentionally **not** predicted (no grades
 / 2nd subject); cutoffs are context only, never required scores (spec §4/§13).
 
+Week 6 (Adaptive Practice): `@pau/recommendation` — Next Best Action priority
+(spec §12: target_relevance × skill_gap × learning_value × exam_relevance ×
+confidence × recency × prerequisite_readiness) with machine-readable reason
+codes, and a session composer (spec §14: retrieval / confidence / challenge /
+spaced / exam-style). API: `POST /v1/students/:id/sessions`,
+`/sessions/:id/responses`, `/sessions/:id/complete`, and live NBA-backed
+`/recommendations`. NBA wires target relevance (goal), prerequisite readiness
+(skill DAG) and recency (recent answers). The app's Practice screen now runs a
+composed session. `expected_learning_gain` stays internal (analytics only).
+
 ---
 
 ## 7a. Toolchain / ORM Addendum (2026-08-11)

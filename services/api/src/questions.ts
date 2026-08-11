@@ -19,6 +19,7 @@ export interface QuestionRow {
   options: unknown;
   answer: unknown;
   explanation: unknown;
+  sourceType: string;
 }
 
 /** Public question shape sent to clients — never includes answer/explanation. */
@@ -85,6 +86,7 @@ export async function loadQuestionBank(db: Db): Promise<QuestionRow[]> {
       options: true,
       answer: true,
       explanation: true,
+      sourceType: true,
     },
   }) as unknown as Promise<QuestionRow[]>;
 }

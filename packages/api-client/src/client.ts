@@ -13,6 +13,9 @@ import type {
   University,
   CutoffInfo,
   TargetEstimate,
+  SessionStart,
+  SessionAnswerResult,
+  SessionComplete,
 } from './types.js';
 
 export class ApiError extends Error {
@@ -137,5 +140,19 @@ export class PauClient {
     idk?: boolean;
   }): Promise<PracticeAnswerResult> {
     return this.request('POST', '/v1/practice/answer', input);
+  }
+
+  // Adaptive practice sessions (Next Best Action)
+  startSession(studentId: string): Promise<SessionStart> {
+    return this.request('POST', `/v1/students/${studentId}/sessions`);
+  }
+  submitSessionResponse(
+    sessionId: string,
+    input: { questionId: string; answer?: string; idk?: boolean },
+  ): Promise<SessionAnswerResult> {
+    return this.request('POST', `/v1/sessions/${sessionId}/responses`, input);
+  }
+  completeSession(sessionId: string): Promise<SessionComplete> {
+    return this.request('POST', `/v1/sessions/${sessionId}/complete`);
   }
 }

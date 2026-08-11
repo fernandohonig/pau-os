@@ -54,8 +54,30 @@ export interface ProfileBandItem {
 
 export interface Recommendation {
   skillId: string;
+  skillName?: string;
+  priority?: number;
   reasonCodes: string[];
   explanation: string;
+}
+
+export interface SessionStart {
+  sessionId: string;
+  recommendedSkills: string[];
+  questions: PublicQuestion[];
+  progress: { answered: number; total: number };
+}
+
+export interface SessionAnswerResult {
+  correct: boolean;
+  outcome: 'correct' | 'incorrect' | 'idk';
+  explanation: LocalizedText;
+  skills: ProfileBandItem[];
+  progress: { answered: number };
+}
+
+export interface SessionComplete {
+  level: LevelEstimate;
+  skills: ProfileBandItem[];
 }
 
 export interface DiagnosticResults {

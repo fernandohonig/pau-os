@@ -9,7 +9,10 @@ export type EventName =
   | 'question_presented'
   | 'question_answered'
   | 'diagnostic_completed'
-  | 'skill_state_changed';
+  | 'skill_state_changed'
+  | 'recommendation_presented'
+  | 'practice_started'
+  | 'practice_completed';
 
 /**
  * Record a learning event. Analytics must never break the primary flow, so
