@@ -291,8 +291,11 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   // than the API (:3000), so browsers require explicit cross-origin allowance.
   // Allowed origins come from CORS_ORIGINS (comma-separated); dev defaults cover
   // the Expo web / Metro ports.
+  // CORS_ORIGINS (comma-separated) overrides this default. The default covers
+  // local Vite dev plus the known production web origin so a fresh deploy works
+  // even before the env var is set.
   const corsOrigins = (process.env.CORS_ORIGINS ??
-    'http://localhost:5173,http://localhost:4173')
+    'http://localhost:5173,http://localhost:4173,https://pau-os.vercel.app')
     .split(',')
     .map((o) => o.trim())
     .filter(Boolean);
