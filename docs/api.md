@@ -91,6 +91,56 @@ confidence is low (spec §13 — no false precision).
 
 ---
 
+## Catalog & Goals (Week 5)
+
+### `GET /v1/catalog/degrees`
+- `200 { "degrees": [{ "id", "university", "name": {ca,es}, "weightings": [{subject,coefficient}] }], "provisional": true }`
+
+`provisional: true` flags that weightings/cutoffs are placeholders pending
+verified official import (spec §35).
+
+### `GET /v1/catalog/universities`
+- `200 { "universities": [{ "id", "name": {ca,es}, "region" }] }`
+
+### `GET /v1/catalog/degrees/:id`
+- `200 { "degree": {...}, "cutoffs": [{ "academicYear", "assignment", "score", "sourceType", "sourceAuthority" }] }`
+- `404 { "error": "degree_not_found" }`
+
+Cutoffs are historical/estimated observations, **not required scores** (spec §4).
+
+### `GET /v1/catalog/skills`
+- `200 { "skills": [{ "id", "name": {ca,es} }] }`
+
+### `POST /v1/goals`  ·  `GET /v1/goals/:id`  ·  `PATCH /v1/goals/:id`  ·  `GET /v1/students/:id/goal`
+Create/read/update a target degree goal (optional `targetScore` 0–14).
+
+### `GET /v1/students/:id/target-estimate`
+Honest goal estimate: the **Matemàtiques II subject level** and its
+specific-phase contribution for the target degree's weighting. It deliberately
+does **not** predict the full 14-point admission score.
+
+- `200 { "goal": null }` when no goal is set, else:
+  ```json
+  {
+    "goal": { "degreeId": "ub-matematiques", "targetScore": 12 },
+    "degreeName": "Matemàtiques",
+    "subjectLevel": { "level": 7.7, "range": [6.4, 9], "confidence": 0.3, "assessedSkillCount": 12 },
+    "contribution": { "subject": "mathematics-ii", "coefficient": 0.2, "points": 1.54, "range": [1.28, 1.8] },
+    "cutoff": { "score": 12, "assignment": "first", "academicYear": 2026, "sourceType": "estimated", "sourceAuthority": "PLACEHOLDER — not official" },
+    "disclaimer": "Estimate for Matemàtiques II only. ... not a required score."
+  }
+  ```
+
+## Practice (Week 4)
+
+### `GET /v1/students/:id/practice/next`
+- `200 { "skillId": string, "question": PublicQuestion }` or `{ "done": true }`
+
+### `POST /v1/practice/answer`
+Body: `{ "studentId", "questionId", "answer"?, "idk"? }`. Unlike the diagnostic,
+this reveals correctness and the explanation.
+- `200 { "correct": boolean, "outcome": "correct"|"incorrect"|"idk", "explanation": {ca,es}, "skills": [{skillId, band}] }`
+
 ## Questions
 
 ### `GET /v1/questions/:id`

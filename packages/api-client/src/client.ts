@@ -10,6 +10,9 @@ import type {
   PublicQuestion,
   PracticeNext,
   PracticeAnswerResult,
+  University,
+  CutoffInfo,
+  TargetEstimate,
 } from './types.js';
 
 export class ApiError extends Error {
@@ -86,6 +89,15 @@ export class PauClient {
   // Catalog & goals
   getDegrees(): Promise<{ degrees: Degree[]; provisional: boolean }> {
     return this.request('GET', '/v1/catalog/degrees');
+  }
+  getUniversities(): Promise<{ universities: University[] }> {
+    return this.request('GET', '/v1/catalog/universities');
+  }
+  getDegree(id: string): Promise<{ degree: Degree; cutoffs: CutoffInfo[] }> {
+    return this.request('GET', `/v1/catalog/degrees/${id}`);
+  }
+  getTargetEstimate(studentId: string): Promise<TargetEstimate> {
+    return this.request('GET', `/v1/students/${studentId}/target-estimate`);
   }
   createGoal(input: { studentId: string; degreeId: string; targetScore?: number }): Promise<{ goal: Goal }> {
     return this.request('POST', '/v1/goals', input);

@@ -1,0 +1,17 @@
+# Catalan universities (public facts: names + region). No official exam/cutoff
+# data here. Referenced by degrees via university_id.
+- id: upc
+  region: catalunya
+  name:
+    ca: Universitat Politècnica de Catalunya
+    es: Universidad Politécnica de Cataluña
+- id: ub
+  region: catalunya
+  name:
+    ca: Universitat de Barcelona
+    es: Universidad de Barcelona
+- id: uab
+  region: catalunya
+  name:
+    ca: Universitat Autònoma de Barcelona
+    es: Universidad Autónoma de Barcelona

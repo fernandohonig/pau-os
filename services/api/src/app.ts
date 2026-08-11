@@ -5,7 +5,14 @@ import {
   DEFAULT_DIAGNOSTIC_CONFIG,
   type QuestionMeta,
 } from '@pau/assessment';
-import { updateMastery, INITIAL_MASTERY, masteryBand, type MasteryState } from '@pau/scoring';
+import {
+  updateMastery,
+  INITIAL_MASTERY,
+  masteryBand,
+  buildTargetRelevance,
+  estimateSubjectContribution,
+  type MasteryState,
+} from '@pau/scoring';
 import { estimateLevel, topGaps, topStrengths, recommendFromGaps } from '@pau/knowledge-model';
 import type { Db } from './prisma.js';
 import { recordEvent } from './analytics.js';
@@ -49,15 +56,45 @@ function toGoalDto(goal: GoalRow): {
   };
 }
 
-// Provisional degree list for goal selection (Week 5 replaces this with real,
-// sourced data). Names/universities are public facts; no cutoffs/weightings.
-const STUB_DEGREES = [
-  { id: 'upc-enginyeria-informatica', university: 'UPC', name: { ca: 'Enginyeria Informàtica', es: 'Ingeniería Informática' } },
-  { id: 'ub-matematiques', university: 'UB', name: { ca: 'Matemàtiques', es: 'Matemáticas' } },
-  { id: 'upc-enginyeria-industrial', university: 'UPC', name: { ca: 'Enginyeria en Tecnologies Industrials', es: 'Ingeniería en Tecnologías Industriales' } },
-  { id: 'ub-fisica', university: 'UB', name: { ca: 'Física', es: 'Física' } },
-  { id: 'uab-enginyeria-informatica', university: 'UAB', name: { ca: 'Enginyeria Informàtica', es: 'Ingeniería Informática' } },
-] as const;
+interface DegreeRow {
+  id: string;
+  universityId: string;
+  nameCA: string;
+  nameES: string | null;
+  admissionScoreMax: number;
+  weightings: unknown;
+}
+
+function degreeWeightings(row: DegreeRow): { subject: string; coefficient: number }[] {
+  return Array.isArray(row.weightings)
+    ? (row.weightings as { subject: string; coefficient: number }[])
+    : [];
+}
+
+/**
+ * Build a target-relevance function (spec §12) from the student's current goal:
+ * the target degree's subject weightings mapped over each skill's subject.
+ * Returns undefined when the student has no goal. In the single-subject MVP the
+ * result is uniform, but the hook is wired for multi-subject targets.
+ */
+async function loadTargetRelevance(
+  db: Db,
+  studentId: string,
+): Promise<((skillId: string) => number) | undefined> {
+  const goal = await db.studentGoal.findFirst({
+    where: { studentId },
+    orderBy: { updatedAt: 'desc' },
+  });
+  if (!goal) return undefined;
+  const degree = (await db.degree.findUnique({ where: { id: goal.degreeId } })) as DegreeRow | null;
+  if (!degree) return undefined;
+  const weightings = degreeWeightings(degree);
+  if (weightings.length === 0) return undefined;
+
+  const skills = await db.skill.findMany({ select: { id: true, subject: true } });
+  const subjectMap = new Map(skills.map((s) => [s.id, s.subject]));
+  return buildTargetRelevance(weightings, (id) => subjectMap.get(id));
+}
 
 async function loadSkillStateRows(db: Db, studentId: string): Promise<Map<string, SkillStateRow>> {
   const rows = await db.studentSkillState.findMany({
@@ -144,11 +181,112 @@ export function buildApp(db: Db): FastifyInstance {
     return { goal: goal ? toGoalDto(goal) : null };
   });
 
+  // Honest goal estimate: the Matemàtiques II subject level and its
+  // specific-phase contribution for the target degree. We deliberately do NOT
+  // predict the full 14-point admission score (needs grades + a 2nd subject),
+  // and cutoffs are shown as context only, never as a required score (spec §4/§13).
+  app.get<{ Params: { id: string } }>('/v1/students/:id/target-estimate', async (req, reply) => {
+    const student = await db.student.findUnique({ where: { id: req.params.id } });
+    if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+    const goal = await db.studentGoal.findFirst({
+      where: { studentId: req.params.id },
+      orderBy: { updatedAt: 'desc' },
+    });
+    if (!goal) return { goal: null };
+
+    const degree = (await db.degree.findUnique({ where: { id: goal.degreeId } })) as DegreeRow | null;
+    const rows = await loadSkillStateRows(db, req.params.id);
+    const entries = [...rows.values()].map((r) => ({ skillId: r.skillId, state: toMasteryState(r) }));
+    const level = estimateLevel(entries);
+    const weightings = degree ? degreeWeightings(degree) : [];
+    const contribution = estimateSubjectContribution(
+      { level: level.level, range: level.range },
+      weightings,
+      'mathematics-ii',
+    );
+    const cutoff = await db.cutoff.findFirst({
+      where: { degreeId: goal.degreeId },
+      orderBy: { academicYear: 'desc' },
+    });
+
+    return {
+      goal: { degreeId: goal.degreeId, targetScore: goal.targetScore },
+      degreeName: degree ? degree.nameCA : goal.degreeId,
+      subjectLevel: {
+        level: level.level,
+        range: level.range,
+        confidence: level.confidence,
+        assessedSkillCount: level.assessedSkillCount,
+      },
+      contribution,
+      cutoff: cutoff
+        ? {
+            score: cutoff.score,
+            assignment: cutoff.assignment,
+            academicYear: cutoff.academicYear,
+            sourceType: cutoff.sourceType,
+            sourceAuthority: cutoff.sourceAuthority,
+          }
+        : null,
+      disclaimer:
+        'Estimate for Matemàtiques II only. The full admission score (up to 14) also depends on your general-phase grades and a second weighted subject. Any cutoff shown is a historical/estimated observation, not a required score.',
+    };
+  });
+
   // --- Catalog ------------------------------------------------------------
-  // Provisional degree list for goal selection. Real degrees/weightings/cutoffs
-  // arrive with the university goal engine in Week 5; this carries no cutoff or
-  // official exam data (spec §35: do not invent official data).
-  app.get('/v1/catalog/degrees', async () => ({ degrees: STUB_DEGREES, provisional: true }));
+  // Degrees for goal selection, from imported content. `provisional` flags that
+  // the weightings/cutoffs are placeholders pending verified official import.
+  app.get('/v1/catalog/degrees', async () => {
+    const [degrees, universities] = await Promise.all([db.degree.findMany(), db.university.findMany()]);
+    const uni = new Map(universities.map((u) => [u.id, u.nameCA]));
+    return {
+      degrees: (degrees as DegreeRow[]).map((d) => ({
+        id: d.id,
+        university: uni.get(d.universityId) ?? d.universityId,
+        name: { ca: d.nameCA, es: d.nameES ?? undefined },
+        weightings: degreeWeightings(d),
+      })),
+      provisional: true,
+    };
+  });
+
+  app.get('/v1/catalog/universities', async () => {
+    const rows = await db.university.findMany();
+    return {
+      universities: rows.map((u) => ({
+        id: u.id,
+        name: { ca: u.nameCA, es: u.nameES ?? undefined },
+        region: u.region,
+      })),
+    };
+  });
+
+  app.get<{ Params: { id: string } }>('/v1/catalog/degrees/:id', async (req, reply) => {
+    const d = (await db.degree.findUnique({ where: { id: req.params.id } })) as DegreeRow | null;
+    if (!d) return reply.code(404).send({ error: 'degree_not_found' });
+    const cutoffs = await db.cutoff.findMany({
+      where: { degreeId: d.id },
+      orderBy: { academicYear: 'desc' },
+    });
+    return {
+      degree: {
+        id: d.id,
+        universityId: d.universityId,
+        name: { ca: d.nameCA, es: d.nameES ?? undefined },
+        admissionScoreMax: d.admissionScoreMax,
+        weightings: degreeWeightings(d),
+      },
+      // Cutoffs are historical observations, not required scores (spec §4).
+      cutoffs: cutoffs.map((c) => ({
+        academicYear: c.academicYear,
+        assignment: c.assignment,
+        score: c.score,
+        sourceType: c.sourceType,
+        sourceAuthority: c.sourceAuthority,
+      })),
+    };
+  });
 
   // Skill catalog (id → localized name) so clients can render human labels.
   app.get('/v1/catalog/skills', async () => {
@@ -221,7 +359,8 @@ export function buildApp(db: Db): FastifyInstance {
     for (const [id, r] of states) stateMap.set(id, toMasteryState(r));
 
     const metas: QuestionMeta[] = bank.map(toQuestionMeta);
-    const nextId = selectNextQuestion(metas, stateMap, new Set());
+    const targetRelevance = await loadTargetRelevance(db, studentId);
+    const nextId = selectNextQuestion(metas, stateMap, new Set(), DEFAULT_DIAGNOSTIC_CONFIG, targetRelevance);
     const nextRow = bank.find((q) => q.id === nextId);
     if (!nextRow) return reply.code(503).send({ error: 'no_questions_available' });
 
@@ -351,7 +490,8 @@ export function buildApp(db: Db): FastifyInstance {
       return { done: true, stopReason, progress: { asked: askedIds.size } };
     }
 
-    const nextId = selectNextQuestion(metas, stateMap, askedIds, DEFAULT_DIAGNOSTIC_CONFIG);
+    const targetRelevance = await loadTargetRelevance(db, assessment.studentId);
+    const nextId = selectNextQuestion(metas, stateMap, askedIds, DEFAULT_DIAGNOSTIC_CONFIG, targetRelevance);
     const nextRow = nextId ? bankById.get(nextId) : undefined;
     if (!nextRow) {
       return { done: true, stopReason: 'exhausted', progress: { asked: askedIds.size } };

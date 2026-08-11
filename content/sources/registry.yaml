@@ -43,7 +43,25 @@ sources:
     covers:
       - practice_questions
 
+  - id: pau-os-provisional-university-data
+    name: PAU OS provisional university dataset
+    authority: PAU OS
+    description:
+      ca: Graus, ponderacions i notes de tall PROVISIONALS, no oficials
+      es: Grados, ponderaciones y notas de corte PROVISIONALES, no oficiales
+    url: null
+    license_status: provisional
+    covers:
+      - degrees
+      - weightings
+      - cutoffs
+    # The values under content/universities/ are placeholders (weightings) and
+    # `estimated` cutoffs, NOT official. Replace with verified Canal Universitats
+    # data before production. Cutoffs must never be presented as required scores.
+
 open_questions:
   - "Confirm legal basis for redistributing Canal Universitats exam papers and correction criteria."
   - "Determine exact stable URLs for 2026 Matemàtiques II exam and weighting tables."
   - "Confirm attribution requirements for cutoff data reuse."
+  - "Import official degree weighting tables (replace provisional coefficients)."
+  - "Import official 2025/2026 cutoff data (replace placeholder cutoffs)."

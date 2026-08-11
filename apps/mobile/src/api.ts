@@ -47,6 +47,16 @@ export interface SkillProfileItem {
   confidence: number;
   evidenceCount: number;
 }
+export type TargetEstimate =
+  | { goal: null }
+  | {
+      goal: { degreeId: string; targetScore: number | null };
+      degreeName: string;
+      subjectLevel: { level: number; range: [number, number]; confidence: number; assessedSkillCount: number };
+      contribution: { subject: string; coefficient: number; points: number; range: [number, number] } | null;
+      cutoff: { score: number; assignment: string; academicYear: number; sourceType: string } | null;
+      disclaimer: string;
+    };
 
 async function req<T>(method: string, path: string, body?: unknown): Promise<T> {
   const res = await fetch(`${baseUrl}${path}`, {
@@ -86,6 +96,8 @@ export const api = {
       'GET',
       `/v1/students/${studentId}/recommendations`,
     ),
+  getTargetEstimate: (studentId: string) =>
+    req<TargetEstimate>('GET', `/v1/students/${studentId}/target-estimate`),
   getPracticeNext: (studentId: string) =>
     req<{ done: true } | { skillId: string; question: PublicQuestion }>(
       'GET',

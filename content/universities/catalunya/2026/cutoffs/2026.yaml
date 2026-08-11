@@ -1,0 +1,52 @@
+# ⚠️ PLACEHOLDER CUTOFFS — NOT OFFICIAL DATA ⚠️
+#
+# These values are illustrative placeholders so the goal-feasibility feature can
+# be demonstrated end-to-end. They are NOT real Canal Universitats cutoffs and
+# MUST be replaced by verified official data before any production use (spec
+# §35). Provenance is marked `estimated`; the API/UI must label them as
+# estimates and never present a cutoff as a required score (spec §4: cutoffs are
+# historical observations that vary with demand and places).
+- degree_id: upc-enginyeria-informatica
+  academic_year: 2026
+  assignment: first
+  score: 11.5
+  source:
+    authority: "PLACEHOLDER — not official"
+    type: estimated
+    retrieved_at: "2026-07-01T00:00:00.000Z"
+
+- degree_id: upc-enginyeria-industrial
+  academic_year: 2026
+  assignment: first
+  score: 11.0
+  source:
+    authority: "PLACEHOLDER — not official"
+    type: estimated
+    retrieved_at: "2026-07-01T00:00:00.000Z"
+
+- degree_id: ub-matematiques
+  academic_year: 2026
+  assignment: first
+  score: 12.0
+  source:
+    authority: "PLACEHOLDER — not official"
+    type: estimated
+    retrieved_at: "2026-07-01T00:00:00.000Z"
+
+- degree_id: ub-fisica
+  academic_year: 2026
+  assignment: first
+  score: 11.2
+  source:
+    authority: "PLACEHOLDER — not official"
+    type: estimated
+    retrieved_at: "2026-07-01T00:00:00.000Z"
+
+- degree_id: uab-enginyeria-informatica
+  academic_year: 2026
+  assignment: first
+  score: 10.8
+  source:
+    authority: "PLACEHOLDER — not official"
+    type: estimated
+    retrieved_at: "2026-07-01T00:00:00.000Z"

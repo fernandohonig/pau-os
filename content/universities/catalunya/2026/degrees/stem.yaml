@@ -1,0 +1,57 @@
+# STEM degrees for goal selection.
+#
+# PROVISIONAL DATA — degree names and universities are public facts, but the
+# `weightings` coefficients below are PLACEHOLDERS pending verification against
+# the official Canal Universitats weighting tables (spec §35: do not invent
+# official data). The admission_score_max of 14 is the fixed system maximum.
+# The UI marks this dataset as provisional; do not present coefficients as
+# official until they are imported from a verified source.
+- id: upc-enginyeria-informatica
+  university_id: upc
+  name:
+    ca: Enginyeria Informàtica
+    es: Ingeniería Informática
+  admission_score_max: 14
+  weightings:
+    - subject: mathematics-ii
+      coefficient: 0.2
+
+- id: upc-enginyeria-industrial
+  university_id: upc
+  name:
+    ca: Enginyeria en Tecnologies Industrials
+    es: Ingeniería en Tecnologías Industriales
+  admission_score_max: 14
+  weightings:
+    - subject: mathematics-ii
+      coefficient: 0.2
+
+- id: ub-matematiques
+  university_id: ub
+  name:
+    ca: Matemàtiques
+    es: Matemáticas
+  admission_score_max: 14
+  weightings:
+    - subject: mathematics-ii
+      coefficient: 0.2
+
+- id: ub-fisica
+  university_id: ub
+  name:
+    ca: Física
+    es: Física
+  admission_score_max: 14
+  weightings:
+    - subject: mathematics-ii
+      coefficient: 0.2
+
+- id: uab-enginyeria-informatica
+  university_id: uab
+  name:
+    ca: Enginyeria Informàtica
+    es: Ingeniería Informática
+  admission_score_max: 14
+  weightings:
+    - subject: mathematics-ii
+      coefficient: 0.2

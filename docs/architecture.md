@@ -333,6 +333,20 @@ Week 2 (Knowledge Model):
 - [x] Content importer verified end-to-end against Postgres (idempotent)
 - [x] 12 honestly-provenanced community practice questions
 
+Week 3 (Assessment): `@pau/scoring` (Bayesian mastery), `@pau/knowledge-model`
+(profile/level/recommendation), `@pau/assessment` (adaptive diagnostic),
+`@pau/api` diagnostic endpoints + analytics; 30 questions.
+
+Week 4 (Student Experience): `@pau/api-client`, Expo app (`@pau/mobile`) with the
+full screen flow, minimal practice with feedback, goals/catalog endpoints.
+
+Week 5 (University Goal Engine): universities/degrees/weightings/cutoffs content
+(provisional, non-official), `@pau/scoring` admission module (specific-phase
+contribution + `buildTargetRelevance`), DB-backed catalog + degree detail +
+`/target-estimate`, and `target_relevance` wired into diagnostic selection.
+The full 14-point admission score is intentionally **not** predicted (no grades
+/ 2nd subject); cutoffs are context only, never required scores (spec §4/§13).
+
 ---
 
 ## 7a. Toolchain / ORM Addendum (2026-08-11)

@@ -73,11 +73,49 @@ export interface SkillProfileItem {
   evidenceCount: number;
 }
 
+export interface Weighting {
+  subject: string;
+  coefficient: number;
+}
+
 export interface Degree {
   id: string;
   university: string;
   name: LocalizedText;
+  weightings?: Weighting[];
 }
+
+export interface University {
+  id: string;
+  name: LocalizedText;
+  region: string;
+}
+
+export interface CutoffInfo {
+  academicYear: number;
+  assignment: string;
+  score: number;
+  sourceType: string;
+  sourceAuthority: string | null;
+}
+
+export interface SubjectContribution {
+  subject: string;
+  coefficient: number;
+  points: number;
+  range: [number, number];
+}
+
+export type TargetEstimate =
+  | { goal: null }
+  | {
+      goal: { degreeId: string; targetScore: number | null };
+      degreeName: string;
+      subjectLevel: { level: number; range: [number, number]; confidence: number; assessedSkillCount: number };
+      contribution: SubjectContribution | null;
+      cutoff: CutoffInfo | null;
+      disclaimer: string;
+    };
 
 export interface Goal {
   id: string;

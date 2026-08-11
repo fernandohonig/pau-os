@@ -91,6 +91,23 @@ describe.skipIf(!DB_URL)('PauClient (integration)', () => {
     expect(results.level.range).toHaveLength(2);
     expect(results.assessedSkillCount).toBeGreaterThan(0);
 
+    // Goal engine: target estimate reflects the chosen degree's weighting and
+    // never predicts the full admission score.
+    const estimate = await client.getTargetEstimate(student.id);
+    if ('degreeName' in estimate) {
+      expect(estimate.subjectLevel.range).toHaveLength(2);
+      // The chosen STEM degree weights mathematics-ii, so a contribution exists.
+      expect(estimate.contribution).not.toBeNull();
+      expect(estimate.disclaimer).toContain('Matemàtiques II');
+    }
+
+    // Degree detail exposes provisional cutoffs, clearly non-official.
+    const detail = await client.getDegree(degrees[0].id);
+    expect(Array.isArray(detail.cutoffs)).toBe(true);
+    for (const c of detail.cutoffs) {
+      expect(c.sourceType).not.toBe('official');
+    }
+
     // Profile + recommendations reflect the completed diagnostic.
     const { skills } = await client.getSkills(student.id);
     expect(skills.length).toBeGreaterThan(0);

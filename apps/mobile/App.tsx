@@ -20,6 +20,7 @@ import {
   type DiagnosticResults,
   type PublicQuestion,
   type SkillProfileItem,
+  type TargetEstimate,
 } from './src/api';
 
 type ScreenName =
@@ -49,6 +50,7 @@ export default function App() {
 
   const [results, setResults] = useState<DiagnosticResults | null>(null);
   const [skills, setSkills] = useState<SkillProfileItem[]>([]);
+  const [target, setTarget] = useState<TargetEstimate | null>(null);
 
   async function guard(fn: () => Promise<void>) {
     setBusy(true);
@@ -113,8 +115,12 @@ export default function App() {
   const goHome = () =>
     guard(async () => {
       if (studentId) {
-        const { skills: s } = await api.getSkills(studentId);
+        const [{ skills: s }, est] = await Promise.all([
+          api.getSkills(studentId),
+          api.getTargetEstimate(studentId),
+        ]);
         setSkills(s);
+        setTarget(est);
       }
       setScreen('home');
     });
@@ -169,6 +175,7 @@ export default function App() {
             level={results?.level}
             targetScore={targetScore}
             recommendation={recommendation}
+            target={target}
             names={names}
             onTrain={() => setScreen('practice')}
             onProgress={openProgress}

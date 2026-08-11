@@ -18,6 +18,7 @@ import {
   type DiagnosticResults,
   type PublicQuestion,
   type SkillProfileItem,
+  type TargetEstimate,
 } from './api';
 
 export type SkillNames = Record<string, string>;
@@ -228,6 +229,7 @@ export function Home({
   level,
   targetScore,
   recommendation,
+  target,
   names,
   onTrain,
   onProgress,
@@ -236,6 +238,7 @@ export function Home({
   level?: DiagnosticResults['level'];
   targetScore?: number;
   recommendation?: { skillId: string; explanation: string } | null;
+  target?: TargetEstimate | null;
   names: SkillNames;
   onTrain: () => void;
   onProgress: () => void;
@@ -259,11 +262,29 @@ export function Home({
 
       {level ? (
         <Card>
-          <Body muted>Estimated level</Body>
+          <Body muted>Estimated Matemàtiques II level</Body>
           <Text style={styles.big}>
             {level.range[0]} – {level.range[1]} <Text style={styles.bigUnit}>/ 10</Text>
           </Text>
-          {targetScore ? <Body muted>Target: {targetScore} / 14</Body> : null}
+          {targetScore ? <Body muted>Your target: {targetScore} / 14</Body> : null}
+        </Card>
+      ) : null}
+
+      {target && 'degreeName' in target && target.contribution ? (
+        <Card>
+          <Body muted>Toward your target</Body>
+          <Body>
+            For {target.degreeName}, Matemàtiques II is weighted ×{target.contribution.coefficient}.
+            Your level contributes about {target.contribution.range[0]}–{target.contribution.range[1]}{' '}
+            of the specific-phase points.
+          </Body>
+          {target.cutoff ? (
+            <Body muted>
+              Recent cut-off ≈ {target.cutoff.score}/14 ({target.cutoff.sourceType}). This is not a
+              required score.
+            </Body>
+          ) : null}
+          <Body muted>{target.disclaimer}</Body>
         </Card>
       ) : null}
 
