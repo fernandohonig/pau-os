@@ -21,6 +21,16 @@ import {
   type SkillSnapshot,
   type NbaItem,
 } from '@pau/recommendation';
+import {
+  levelFromAttempts,
+  learningGain,
+  learningGainPerHour,
+  studyMinutes,
+  summarizeCohort,
+  type AttemptRecord,
+  type StudentMetrics,
+} from '@pau/metrics';
+import type { Outcome } from '@pau/scoring';
 import type { Db } from './prisma.js';
 import { recordEvent } from './analytics.js';
 import {
@@ -239,6 +249,28 @@ async function applyOutcome(
   return updated;
 }
 
+/** Reconstruct per-skill attempts for one assessment (for level replay). */
+async function attemptsForAssessment(
+  db: Db,
+  assessmentId: string,
+  byId: Map<string, QuestionRow>,
+): Promise<AttemptRecord[]> {
+  const responses = await db.assessmentResponse.findMany({
+    where: { assessmentId },
+    select: { questionId: true, isCorrect: true, answerGiven: true },
+  });
+  const attempts: AttemptRecord[] = [];
+  for (const r of responses) {
+    const q = byId.get(r.questionId);
+    if (!q) continue;
+    const outcome: Outcome = r.isCorrect ? 'correct' : r.answerGiven === '__IDK__' ? 'idk' : 'incorrect';
+    for (const skillId of q.skills) {
+      attempts.push({ skillId, difficulty: effectiveDifficulty(q), outcome });
+    }
+  }
+  return attempts;
+}
+
 export function buildApp(db: Db): FastifyInstance {
   const app = Fastify({ logger: false });
 
@@ -248,7 +280,18 @@ export function buildApp(db: Db): FastifyInstance {
   // Anonymous student creation (no auth required for the first diagnostic).
   app.post('/v1/students', async (_req, reply) => {
     const student = await db.student.create({ data: {} });
+    await recordEvent(db, 'onboarding_started', student.id, {});
     return reply.code(201).send({ id: student.id });
+  });
+
+  // Right to erasure (spec §23): delete a student and all derived data. The
+  // schema cascades to goals, assessments, responses, skill states, sessions
+  // and recommendations; learning events are anonymized (studentId set null).
+  app.delete<{ Params: { id: string } }>('/v1/students/:id', async (req, reply) => {
+    const student = await db.student.findUnique({ where: { id: req.params.id } });
+    if (!student) return reply.code(404).send({ error: 'student_not_found' });
+    await db.student.delete({ where: { id: req.params.id } });
+    return reply.code(200).send({ deleted: true });
   });
 
   app.get<{ Params: { id: string } }>('/v1/students/:id', async (req, reply) => {
@@ -443,6 +486,7 @@ export function buildApp(db: Db): FastifyInstance {
         create: { studentId, degreeId, targetScore: targetScore ?? null },
         update: { targetScore: targetScore ?? null },
       });
+      await recordEvent(db, 'goal_selected', studentId, { goalId: goal.id, degreeId });
       return reply.code(201).send({ goal: toGoalDto(goal) });
     },
   );
@@ -462,6 +506,7 @@ export function buildApp(db: Db): FastifyInstance {
         where: { id: req.params.id },
         data: { targetScore: req.body?.targetScore ?? null },
       });
+      await recordEvent(db, 'goal_changed', existing.studentId, { goalId: goal.id });
       return { goal: toGoalDto(goal) };
     },
   );
@@ -783,6 +828,11 @@ export function buildApp(db: Db): FastifyInstance {
         sessionId: session.id,
         skillId: top.skillId,
       });
+      // Starting the session is the student acting on the recommendation.
+      await recordEvent(db, 'recommendation_started', req.params.id, {
+        sessionId: session.id,
+        skillId: top.skillId,
+      });
     }
 
     const byId = new Map(bank.map((q) => [q.id, q] as const));
@@ -863,6 +913,7 @@ export function buildApp(db: Db): FastifyInstance {
         data: { status: 'completed', completedAt: new Date(), durationMinutes },
       });
       await recordEvent(db, 'practice_completed', session.studentId, { sessionId: session.id });
+      await recordEvent(db, 'recommendation_completed', session.studentId, { sessionId: session.id });
     }
 
     // Progress recalculation from the updated skill states.
@@ -876,6 +927,98 @@ export function buildApp(db: Db): FastifyInstance {
         band: masteryBand(toMasteryState(r)),
       })),
     };
+  });
+
+  // --- Learning validation (Weeks 7–8) -----------------------------------
+  // Per-student learning gain: replay the first (pre) and latest (post)
+  // completed diagnostics to estimate the level at each, then gain / gain-per-hour.
+  app.get<{ Params: { id: string } }>('/v1/students/:id/learning-gain', async (req, reply) => {
+    const student = await db.student.findUnique({ where: { id: req.params.id } });
+    if (!student) return reply.code(404).send({ error: 'student_not_found' });
+
+    const diagnostics = await db.assessment.findMany({
+      where: { studentId: req.params.id, type: 'diagnostic', status: 'completed' },
+      orderBy: { completedAt: 'asc' },
+      select: { id: true },
+    });
+    if (diagnostics.length < 2) {
+      return {
+        gain: null,
+        diagnosticsCompleted: diagnostics.length,
+        note: 'Two completed diagnostics (pre and post) are needed to measure learning gain.',
+      };
+    }
+
+    const bank = await loadQuestionBank(db);
+    const byId = new Map(bank.map((q) => [q.id, q] as const));
+    const pre = levelFromAttempts(await attemptsForAssessment(db, diagnostics[0].id, byId));
+    const post = levelFromAttempts(
+      await attemptsForAssessment(db, diagnostics[diagnostics.length - 1].id, byId),
+    );
+    const gain = learningGain(pre, post);
+
+    const sessions = await db.practiceSession.findMany({
+      where: { studentId: req.params.id, status: 'completed' },
+      select: { durationMinutes: true },
+    });
+    const minutes = studyMinutes(sessions.map((s) => s.durationMinutes));
+
+    return {
+      preLevel: gain.preLevel,
+      postLevel: gain.postLevel,
+      gain: gain.gain,
+      studyMinutes: minutes,
+      learningGainPerHour: learningGainPerHour(gain.gain, minutes),
+      diagnosticsCompleted: diagnostics.length,
+    };
+  });
+
+  // Cohort summary for the pilot (spec §26 Week 7/8). Read-only aggregate.
+  app.get('/v1/admin/metrics/summary', async () => {
+    const students = await db.student.findMany({ select: { id: true } });
+    const bank = await loadQuestionBank(db);
+    const byId = new Map(bank.map((q) => [q.id, q] as const));
+
+    const perStudent: StudentMetrics[] = [];
+    for (const s of students) {
+      const diags = await db.assessment.findMany({
+        where: { studentId: s.id, type: 'diagnostic' },
+        orderBy: { completedAt: 'asc' },
+        select: { id: true, status: true },
+      });
+      const completed = diags.filter((d) => d.status === 'completed');
+      const sessions = await db.practiceSession.findMany({
+        where: { studentId: s.id, status: 'completed' },
+        select: { durationMinutes: true },
+      });
+      const minutes = studyMinutes(sessions.map((x) => x.durationMinutes));
+
+      let gain: number | null = null;
+      let gainPerHour: number | null = null;
+      if (completed.length >= 2) {
+        const pre = levelFromAttempts(await attemptsForAssessment(db, completed[0].id, byId));
+        const post = levelFromAttempts(
+          await attemptsForAssessment(db, completed[completed.length - 1].id, byId),
+        );
+        gain = learningGain(pre, post).gain;
+        gainPerHour = learningGainPerHour(gain, minutes);
+      }
+
+      perStudent.push({
+        startedDiagnostic: diags.length > 0,
+        completedDiagnostic: completed.length > 0,
+        gain,
+        gainPerHour,
+        studyMinutes: minutes,
+        completedSessions: sessions.length,
+      });
+    }
+
+    const events = await db.learningEvent.groupBy({ by: ['event'], _count: { event: true } });
+    const eventCounts: Record<string, number> = {};
+    for (const e of events) eventCounts[e.event] = e._count.event;
+
+    return { summary: summarizeCohort(perStudent), eventCounts };
   });
 
   // --- Questions ----------------------------------------------------------

@@ -12,6 +12,7 @@ Open-source academic GPS for Spanish PAU preparation.
 **Week 4: Student Experience** — ✅ complete
 **Week 5: University Goal Engine** — ✅ complete
 **Week 6: Adaptive Practice** — ✅ complete
+**Weeks 7–8: Pilot & Learning Validation** — ✅ complete (code); pilot is operational
 
 - [x] Repository structure (pnpm workspaces + Turbo)
 - [x] Content schema & validation (Zod)
@@ -33,8 +34,11 @@ Open-source academic GPS for Spanish PAU preparation.
 - [x] Next Best Action engine (`@pau/recommendation`): §12 priority + reason codes
 - [x] Session composer (§14): mixed 15-min sessions; adaptive practice sessions API
 - [x] Live NBA recommendations; app Practice now runs composed sessions
+- [x] Learning-gain metrics (`@pau/metrics`): gain, **Gain/Hour** (primary metric), retention, cohort summary
+- [x] Full §22 analytics events; `GET /v1/admin/metrics/summary`; `GET /v1/students/:id/learning-gain`
+- [x] Right to erasure (`DELETE /v1/students/:id`); privacy posture ([docs/privacy.md](docs/privacy.md))
+- [x] MVP acceptance criteria tracked ([docs/acceptance.md](docs/acceptance.md))
 - [x] CI/CD (lint, typecheck, mobile typecheck, content validation, unit + integration tests)
-- [ ] Pilot instrumentation & learning-gain measurement (Weeks 7–8)
 
 > ⚠️ **Provisional university data.** Degree weightings and cut-offs under
 > `content/universities/` are **placeholders**, not official Canal Universitats

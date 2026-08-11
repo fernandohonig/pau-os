@@ -139,4 +139,76 @@ describe.skipIf(!DB_URL)('diagnostic flow (integration)', () => {
 
     await db.student.delete({ where: { id: sid } }).catch(() => undefined);
   });
+
+  it('measures learning gain across pre/post diagnostics and reports cohort metrics', async () => {
+    const sid = (await app.inject({ method: 'POST', url: '/v1/students' })).json().id;
+
+    // Helper: run a diagnostic to completion, answering a fixed option.
+    async function runDiagnostic(): Promise<void> {
+      const start = (
+        await app.inject({ method: 'POST', url: '/v1/assessments', payload: { studentId: sid } })
+      ).json();
+      let q = start.question;
+      let done = false;
+      let guard = 0;
+      while (!done) {
+        const res = (
+          await app.inject({
+            method: 'POST',
+            url: `/v1/assessments/${start.assessmentId}/responses`,
+            payload: { questionId: q.id, answer: q.options[0].id },
+          })
+        ).json();
+        if (res.done) done = true;
+        else q = res.question;
+        if (++guard > 40) throw new Error('did not terminate');
+      }
+      await app.inject({ method: 'POST', url: `/v1/assessments/${start.assessmentId}/complete` });
+    }
+
+    // Pre diagnostic, a practice session, then a post diagnostic.
+    await runDiagnostic();
+    const session = (await app.inject({ method: 'POST', url: `/v1/students/${sid}/sessions` })).json();
+    for (const q of session.questions) {
+      await app.inject({
+        method: 'POST',
+        url: `/v1/sessions/${session.sessionId}/responses`,
+        payload: { questionId: q.id, answer: q.options[0].id },
+      });
+    }
+    await app.inject({ method: 'POST', url: `/v1/sessions/${session.sessionId}/complete` });
+    await runDiagnostic();
+
+    const lg = (await app.inject({ method: 'GET', url: `/v1/students/${sid}/learning-gain` })).json();
+    expect(lg.diagnosticsCompleted).toBe(2);
+    expect(typeof lg.preLevel).toBe('number');
+    expect(typeof lg.postLevel).toBe('number');
+    expect(typeof lg.gain).toBe('number');
+
+    // Required analytics events are recorded (spec §22).
+    const events = await db.learningEvent.findMany({ where: { studentId: sid } });
+    const names = new Set(events.map((e) => e.event));
+    for (const required of [
+      'onboarding_started',
+      'diagnostic_started',
+      'diagnostic_completed',
+      'practice_started',
+      'practice_completed',
+      'recommendation_started',
+      'recommendation_completed',
+    ]) {
+      expect(names.has(required)).toBe(true);
+    }
+
+    // Cohort summary aggregates without error.
+    const summary = (await app.inject({ method: 'GET', url: '/v1/admin/metrics/summary' })).json();
+    expect(summary.summary.students).toBeGreaterThan(0);
+    expect(typeof summary.eventCounts.diagnostic_completed).toBe('number');
+
+    // Right to erasure removes the student.
+    const del = await app.inject({ method: 'DELETE', url: `/v1/students/${sid}` });
+    expect(del.statusCode).toBe(200);
+    const after = await app.inject({ method: 'GET', url: `/v1/students/${sid}` });
+    expect(after.statusCode).toBe(404);
+  });
 });

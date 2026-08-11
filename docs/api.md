@@ -166,6 +166,24 @@ Reveals correctness + explanation and updates mastery.
 `POST /v1/practice/answer` — Body `{ "studentId", "questionId", "answer"?, "idk"? }`; reveals correctness + explanation.
 - `200 { "correct", "outcome", "explanation": {ca,es}, "skills": [{skillId, band}] }`
 
+## Learning validation & admin (Weeks 7–8)
+
+### `GET /v1/students/:id/learning-gain`
+Replays the first (pre) and latest (post) completed diagnostics to estimate the
+level at each, then reports gain and gain-per-hour.
+- `200 { "preLevel", "postLevel", "gain", "studyMinutes", "learningGainPerHour", "diagnosticsCompleted" }`
+- `200 { "gain": null, "diagnosticsCompleted": n, "note": "..." }` when fewer than 2 diagnostics.
+
+### `GET /v1/admin/metrics/summary`
+Cohort aggregate for the pilot (completion rate, avg study minutes, avg learning
+gain and gain/hour) plus `eventCounts` by analytics event.
+> ⚠️ Unauthenticated in dev; must be protected before deployment (see docs/privacy.md).
+
+### `DELETE /v1/students/:id`
+Right to erasure (spec §23): deletes the student and cascades to all derived
+data; analytics events are anonymized.
+- `200 { "deleted": true }` · `404 { "error": "student_not_found" }`
+
 ## Questions
 
 ### `GET /v1/questions/:id`

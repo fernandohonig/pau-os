@@ -5,12 +5,17 @@ import type { Db } from './prisma.js';
  * flow are listed here; more are added as their features land.
  */
 export type EventName =
+  | 'onboarding_started'
+  | 'goal_selected'
+  | 'goal_changed'
   | 'diagnostic_started'
   | 'question_presented'
   | 'question_answered'
   | 'diagnostic_completed'
   | 'skill_state_changed'
   | 'recommendation_presented'
+  | 'recommendation_started'
+  | 'recommendation_completed'
   | 'practice_started'
   | 'practice_completed';
 

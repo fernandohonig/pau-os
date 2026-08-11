@@ -133,6 +133,19 @@ importers:
         specifier: ^1.0.4
         version: 1.6.1(@types/node@20.19.43)(lightningcss@1.27.0)(terser@5.49.2)
 
+  packages/metrics:
+    dependencies:
+      '@pau/knowledge-model':
+        specifier: workspace:*
+        version: link:../knowledge-model
+      '@pau/scoring':
+        specifier: workspace:*
+        version: link:../scoring
+    devDependencies:
+      vitest:
+        specifier: ^1.0.4
+        version: 1.6.1(@types/node@20.19.43)(lightningcss@1.27.0)(terser@5.49.2)
+
   packages/recommendation:
     dependencies:
       '@pau/scoring':
@@ -157,6 +170,9 @@ importers:
       '@pau/knowledge-model':
         specifier: workspace:*
         version: link:../../packages/knowledge-model
+      '@pau/metrics':
+        specifier: workspace:*
+        version: link:../../packages/metrics
       '@pau/recommendation':
         specifier: workspace:*
         version: link:../../packages/recommendation
