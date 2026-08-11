@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@pau/domain": ["packages/domain/src"],
+      "@pau/assessment": ["packages/assessment/src"],
+      "@pau/knowledge-model": ["packages/knowledge-model/src"],
+      "@pau/recommendation": ["packages/recommendation/src"],
+      "@pau/scoring": ["packages/scoring/src"],
+      "@pau/content-schema": ["packages/content-schema/src"],
+      "@pau/api-client": ["packages/api-client/src"]
+    }
+  }
+}

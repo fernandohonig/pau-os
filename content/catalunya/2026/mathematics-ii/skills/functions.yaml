@@ -1,0 +1,22 @@
+id: mathematics.functions
+version: 1
+subject: mathematics-ii
+region: catalunya
+academic_year: 2026
+
+name:
+  ca: Funcions
+  es: Funciones
+
+description:
+  ca: Dominis, continuïtat, límits, i gràfiques de funcions
+  es: Dominios, continuidad, límites, y gráficas de funciones
+
+prerequisites:
+  - mathematics.algebra
+
+status: published
+
+competencies:
+  - reasoning
+  - problem_solving

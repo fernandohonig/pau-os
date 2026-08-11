@@ -1,0 +1,25 @@
+id: mathematics.calculus.derivatives
+version: 1
+subject: mathematics-ii
+region: catalunya
+academic_year: 2026
+
+name:
+  ca: Derivades
+  es: Derivadas
+
+description:
+  ca: Concepte de derivada, regles de derivació, i aplicacions
+  es: Concepto de derivada, reglas de derivación, y aplicaciones
+
+prerequisites:
+  - mathematics.functions
+
+related:
+  - mathematics.calculus.integrals
+
+status: published
+
+competencies:
+  - reasoning
+  - problem_solving

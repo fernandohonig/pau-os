@@ -1,0 +1,22 @@
+id: mathematics.calculus.integrals
+version: 1
+subject: mathematics-ii
+region: catalunya
+academic_year: 2026
+
+name:
+  ca: Integrals
+  es: Integrales
+
+description:
+  ca: Concepte d'integral indefinida i definida, teorema fonamental
+  es: Concepto de integral indefinida y definida, teorema fundamental
+
+prerequisites:
+  - mathematics.calculus.derivatives
+
+status: published
+
+competencies:
+  - reasoning
+  - problem_solving

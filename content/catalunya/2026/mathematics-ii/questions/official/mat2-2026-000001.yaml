@@ -1,0 +1,56 @@
+id: mat2-2026-000001
+version: 1
+
+region: catalunya
+academic_year: 2026
+subject: mathematics-ii
+
+type: multiple_choice
+skills:
+  - mathematics.algebra
+
+competencies:
+  - reasoning
+  - problem_solving
+
+difficulty:
+  initial: 0.55
+  calibrated: null
+
+question:
+  ca: "Factoritza el polinomi x² - 5x + 6"
+  es: "Factoriza el polinomio x² - 5x + 6"
+
+options:
+  - id: A
+    ca: "(x - 2)(x - 3)"
+    es: "(x - 2)(x - 3)"
+  - id: B
+    ca: "(x + 2)(x + 3)"
+    es: "(x + 2)(x + 3)"
+  - id: C
+    ca: "(x - 1)(x - 6)"
+    es: "(x - 1)(x - 6)"
+  - id: D
+    ca: "(x - 2)(x + 3)"
+    es: "(x - 2)(x + 3)"
+
+answer:
+  type: single
+  correct: A
+
+explanation:
+  ca: "Busquem dos números que multipliquin 6 i que sumin -5. Aquests són -2 i -3. Per tant, x² - 5x + 6 = (x - 2)(x - 3)."
+  es: "Buscamos dos números que multipliquen 6 y que sumen -5. Estos son -2 y -3. Por tanto, x² - 5x + 6 = (x - 2)(x - 3)."
+
+source:
+  type: official
+  authority: Canal Universitats
+  exam_year: 2026
+  exam_id: mathematics-2026-june
+  url: null
+
+review:
+  status: approved
+  reviewed_by: null
+  reviewed_at: null
