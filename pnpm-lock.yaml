@@ -29,6 +29,9 @@ importers:
       prisma:
         specifier: 7.9.1
         version: 7.9.1(@types/react-dom@18.3.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)
+      tsx:
+        specifier: ^4.23.12
+        version: 4.23.12
     devDependencies:
       '@types/jsonwebtoken':
         specifier: ^9.0.10
@@ -48,9 +51,6 @@ importers:
       eslint:
         specifier: ^8.54.0
         version: 8.57.1
-      tsx:
-        specifier: ^4.23.12
-        version: 4.23.12
       turbo:
         specifier: ^1.10.16
         version: 1.13.4
