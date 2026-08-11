@@ -1,0 +1,198 @@
+# Additional Anàlisi practice items to give the diagnostic depth (>=2 evidence
+# per core skill). Community-authored, NOT official, pending human review.
+
+# --- Derivades (derivative_rules) ---
+- id: mat2-c-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.analysis.derivative_rules]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.3, calibrated: null }
+  question:
+    ca: "Quina és la derivada de f(x) = 5x²?"
+    es: "¿Cuál es la derivada de f(x) = 5x²?"
+  options:
+    - { id: A, ca: "10x", es: "10x" }
+    - { id: B, ca: "5x", es: "5x" }
+    - { id: C, ca: "10", es: "10" }
+    - { id: D, ca: "5x²", es: "5x²" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "(5x²)' = 5·2x = 10x."
+    es: "(5x²)' = 5·2x = 10x."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.analysis.derivative_rules]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.6, calibrated: null }
+  question:
+    ca: "Quina és la derivada de f(x) = sin(x)?"
+    es: "¿Cuál es la derivada de f(x) = sin(x)?"
+  options:
+    - { id: A, ca: "cos(x)", es: "cos(x)" }
+    - { id: B, ca: "-cos(x)", es: "-cos(x)" }
+    - { id: C, ca: "-sin(x)", es: "-sin(x)" }
+    - { id: D, ca: "tan(x)", es: "tan(x)" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "La derivada de sin(x) és cos(x)."
+    es: "La derivada de sin(x) es cos(x)."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+# --- Límits (limits) ---
+- id: mat2-c-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.analysis.limits]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.55, calibrated: null }
+  question:
+    ca: "Calcula lim(x→∞) (3x² + 1)/x²"
+    es: "Calcula lim(x→∞) (3x² + 1)/x²"
+  options:
+    - { id: A, ca: "3", es: "3" }
+    - { id: B, ca: "∞", es: "∞" }
+    - { id: C, ca: "1", es: "1" }
+    - { id: D, ca: "0", es: "0" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El grau del numerador i del denominador és igual (2); el límit és el quocient dels coeficients principals: 3/1 = 3."
+    es: "El grado del numerador y del denominador es igual (2); el límite es el cociente de los coeficientes principales: 3/1 = 3."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.analysis.limits]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.7, calibrated: null }
+  question:
+    ca: "Calcula lim(x→0) sin(x)/x"
+    es: "Calcula lim(x→0) sin(x)/x"
+  options:
+    - { id: A, ca: "1", es: "1" }
+    - { id: B, ca: "0", es: "0" }
+    - { id: C, ca: "∞", es: "∞" }
+    - { id: D, ca: "No existeix", es: "No existe" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "És un límit notable: lim(x→0) sin(x)/x = 1."
+    es: "Es un límite notable: lim(x→0) sin(x)/x = 1."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+# --- Integrals (integrals) ---
+- id: mat2-c-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.calculus.integrals]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.4, calibrated: null }
+  question:
+    ca: "Quina és la integral indefinida ∫ x² dx?"
+    es: "¿Cuál es la integral indefinida ∫ x² dx?"
+  options:
+    - { id: A, ca: "x³/3 + C", es: "x³/3 + C" }
+    - { id: B, ca: "2x + C", es: "2x + C" }
+    - { id: C, ca: "x³ + C", es: "x³ + C" }
+    - { id: D, ca: "3x² + C", es: "3x² + C" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "∫ xⁿ dx = xⁿ⁺¹/(n+1) + C; per n=2: x³/3 + C."
+    es: "∫ xⁿ dx = xⁿ⁺¹/(n+1) + C; para n=2: x³/3 + C."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.calculus.integrals]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.5, calibrated: null }
+  question:
+    ca: "Quina és la integral indefinida ∫ cos(x) dx?"
+    es: "¿Cuál es la integral indefinida ∫ cos(x) dx?"
+  options:
+    - { id: A, ca: "sin(x) + C", es: "sin(x) + C" }
+    - { id: B, ca: "-sin(x) + C", es: "-sin(x) + C" }
+    - { id: C, ca: "-cos(x) + C", es: "-cos(x) + C" }
+    - { id: D, ca: "tan(x) + C", es: "tan(x) + C" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "∫ cos(x) dx = sin(x) + C."
+    es: "∫ cos(x) dx = sin(x) + C."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+# --- Funcions (functions) ---
+- id: mat2-c-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.functions]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.35, calibrated: null }
+  question:
+    ca: "Quin és el domini de f(x) = √(x - 2)?"
+    es: "¿Cuál es el dominio de f(x) = √(x - 2)?"
+  options:
+    - { id: A, ca: "x ≥ 2", es: "x ≥ 2" }
+    - { id: B, ca: "x > 2", es: "x > 2" }
+    - { id: C, ca: "x ≤ 2", es: "x ≤ 2" }
+    - { id: D, ca: "Tots els reals", es: "Todos los reales" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "L'arrel quadrada exigeix radicand no negatiu: x - 2 ≥ 0, és a dir x ≥ 2."
+    es: "La raíz cuadrada exige radicando no negativo: x - 2 ≥ 0, es decir x ≥ 2."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.functions]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.3, calibrated: null }
+  question:
+    ca: "Quin és el domini de f(x) = 1/(x - 3)?"
+    es: "¿Cuál es el dominio de f(x) = 1/(x - 3)?"
+  options:
+    - { id: A, ca: "x ≠ 3", es: "x ≠ 3" }
+    - { id: B, ca: "x > 3", es: "x > 3" }
+    - { id: C, ca: "x ≠ 0", es: "x ≠ 0" }
+    - { id: D, ca: "Tots els reals", es: "Todos los reales" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El denominador no pot ser zero: x - 3 ≠ 0, és a dir x ≠ 3."
+    es: "El denominador no puede ser cero: x - 3 ≠ 0, es decir x ≠ 3."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }

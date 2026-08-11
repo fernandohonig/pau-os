@@ -6,12 +6,9 @@ on:
   pull_request:
     branches: [main]
 
-env:
-  # prisma.config.ts resolves env('DATABASE_URL') eagerly; a dummy value lets
-  # `prisma generate` run without a real database (generate does not connect).
-  DATABASE_URL: 'postgresql://user:pass@localhost:5432/pau_os_ci'
-
 jobs:
+  # Fast, database-free checks. The API integration test skips itself when
+  # DATABASE_URL is unset (see services/api/src/app.test.ts).
   validate:
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +28,12 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Generate Prisma client
+        # prisma.config.ts resolves env('DATABASE_URL') eagerly; a dummy value
+        # lets `prisma generate` run (it does not connect). Scoped to this step
+        # so the unit test job has no DATABASE_URL and skips the DB test.
         run: pnpm prisma generate
+        env:
+          DATABASE_URL: 'postgresql://user:pass@localhost:5432/pau_os_ci'
 
       - name: Lint
         run: pnpm lint
@@ -43,4 +45,49 @@ jobs:
         run: pnpm validate-content
 
       - name: Run tests
+        run: pnpm test
+
+  # Full diagnostic flow against a real Postgres.
+  integration:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: pau
+          POSTGRES_PASSWORD: pau_dev_password
+          POSTGRES_DB: pau_os_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U pau" --health-interval 5s
+          --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: 'postgresql://pau:pau_dev_password@localhost:5432/pau_os_test'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm prisma generate
+
+      - name: Apply migrations
+        run: pnpm db:migrate
+
+      - name: Seed content
+        run: pnpm db:seed
+
+      - name: Run tests (incl. diagnostic integration)
         run: pnpm test

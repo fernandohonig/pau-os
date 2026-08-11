@@ -1,0 +1,21 @@
+{
+  "name": "@pau/api",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@pau/assessment": "workspace:*",
+    "@pau/knowledge-model": "workspace:*",
+    "@pau/scoring": "workspace:*",
+    "@prisma/adapter-pg": "^7.9.1",
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.4"
+  }
+}

@@ -1,0 +1,51 @@
+# Additional Probabilitat practice items for diagnostic depth.
+# Community-authored, NOT official, pending human review.
+
+# --- Probabilitat bàsica (basic) ---
+- id: mat2-c-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.probability.basic]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.45, calibrated: null }
+  question:
+    ca: "En una baralla de 52 cartes, quina és la probabilitat de treure un rei?"
+    es: "En una baraja de 52 cartas, ¿cuál es la probabilidad de sacar un rey?"
+  options:
+    - { id: A, ca: "1/13", es: "1/13" }
+    - { id: B, ca: "1/52", es: "1/52" }
+    - { id: C, ca: "1/4", es: "1/4" }
+    - { id: D, ca: "4/13", es: "4/13" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "Hi ha 4 reis entre 52 cartes: 4/52 = 1/13."
+    es: "Hay 4 reyes entre 52 cartas: 4/52 = 1/13."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.probability.basic]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.3, calibrated: null }
+  question:
+    ca: "En una baralla de 52 cartes, quina és la probabilitat de treure una carta vermella?"
+    es: "En una baraja de 52 cartas, ¿cuál es la probabilidad de sacar una carta roja?"
+  options:
+    - { id: A, ca: "1/2", es: "1/2" }
+    - { id: B, ca: "1/4", es: "1/4" }
+    - { id: C, ca: "1/13", es: "1/13" }
+    - { id: D, ca: "13/52", es: "13/52" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "Hi ha 26 cartes vermelles (cors i diamants) de 52: 26/52 = 1/2."
+    es: "Hay 26 cartas rojas (corazones y diamantes) de 52: 26/52 = 1/2."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }

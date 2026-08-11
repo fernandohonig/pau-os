@@ -1,0 +1,16 @@
+{
+  "name": "@pau/assessment",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@pau/scoring": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.4"
+  }
+}

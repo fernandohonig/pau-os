@@ -1,0 +1,100 @@
+# Additional Àlgebra lineal practice items for diagnostic depth.
+# Community-authored, NOT official, pending human review.
+
+# --- Determinants ---
+- id: mat2-c-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.linear_algebra.determinants]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.3, calibrated: null }
+  question:
+    ca: "Quin és el determinant de la matriu identitat 2×2?"
+    es: "¿Cuál es el determinante de la matriz identidad 2×2?"
+  options:
+    - { id: A, ca: "1", es: "1" }
+    - { id: B, ca: "0", es: "0" }
+    - { id: C, ca: "2", es: "2" }
+    - { id: D, ca: "-1", es: "-1" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "det([[1,0],[0,1]]) = 1·1 - 0·0 = 1."
+    es: "det([[1,0],[0,1]]) = 1·1 - 0·0 = 1."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.linear_algebra.determinants]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.4, calibrated: null }
+  question:
+    ca: "Quin és el determinant de [[2, 0], [0, 3]]?"
+    es: "¿Cuál es el determinante de [[2, 0], [0, 3]]?"
+  options:
+    - { id: A, ca: "6", es: "6" }
+    - { id: B, ca: "5", es: "5" }
+    - { id: C, ca: "0", es: "0" }
+    - { id: D, ca: "1", es: "1" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "det([[2,0],[0,3]]) = 2·3 - 0·0 = 6."
+    es: "det([[2,0],[0,3]]) = 2·3 - 0·0 = 6."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+# --- Operacions amb matrius (matrix_operations) ---
+- id: mat2-c-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.linear_algebra.matrix_operations]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.3, calibrated: null }
+  question:
+    ca: "Quant val 2·[[1, 2], [0, 1]]?"
+    es: "¿Cuánto vale 2·[[1, 2], [0, 1]]?"
+  options:
+    - { id: A, ca: "[[2, 4], [0, 2]]", es: "[[2, 4], [0, 2]]" }
+    - { id: B, ca: "[[2, 2], [0, 2]]", es: "[[2, 2], [0, 2]]" }
+    - { id: C, ca: "[[1, 2], [0, 1]]", es: "[[1, 2], [0, 1]]" }
+    - { id: D, ca: "[[2, 4], [2, 2]]", es: "[[2, 4], [2, 2]]" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "El producte per un escalar multiplica cada element: cada entrada per 2."
+    es: "El producto por un escalar multiplica cada elemento: cada entrada por 2."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.linear_algebra.matrix_operations]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.4, calibrated: null }
+  question:
+    ca: "Quina és la dimensió de la transposada d'una matriu 2×3?"
+    es: "¿Cuál es la dimensión de la traspuesta de una matriz 2×3?"
+  options:
+    - { id: A, ca: "3×2", es: "3×2" }
+    - { id: B, ca: "2×3", es: "2×3" }
+    - { id: C, ca: "3×3", es: "3×3" }
+    - { id: D, ca: "2×2", es: "2×2" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "En transposar s'intercanvien files i columnes: 2×3 → 3×2."
+    es: "Al trasponer se intercambian filas y columnas: 2×3 → 3×2."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }

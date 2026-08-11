@@ -8,6 +8,7 @@ Open-source academic GPS for Spanish PAU preparation.
 
 **Week 1: Foundation** — ✅ complete
 **Week 2: Knowledge Model** — ✅ complete
+**Week 3: Assessment** — ✅ complete
 
 - [x] Repository structure (pnpm workspaces + Turbo)
 - [x] Content schema & validation (Zod)
@@ -15,9 +16,21 @@ Open-source academic GPS for Spanish PAU preparation.
 - [x] 44-skill Matemàtiques II graph (4 PAU blocks), DAG-validated
 - [x] Content importer (YAML → PostgreSQL), idempotent
 - [x] Controlled source registry
+- [x] Bayesian mastery engine (`@pau/scoring`)
+- [x] Knowledge model: profile, gaps/strengths, level estimate (`@pau/knowledge-model`)
+- [x] Adaptive diagnostic (`@pau/assessment`)
+- [x] Diagnostic REST API (`@pau/api`) with analytics events — see [docs/api.md](docs/api.md)
+- [x] 30 practice questions (≥2 per core skill) for a meaningful diagnostic
 - [x] CI/CD (lint, typecheck, content validation, tests)
-- [ ] Assessment engine + diagnostic API (Week 3)
 - [ ] Student UI (Week 4)
+
+### Run the API locally
+
+```bash
+docker compose up -d && pnpm db:migrate:dev && pnpm db:seed
+pnpm --filter @pau/api start   # or: npx tsx services/api/src/server.ts
+# → PAU OS API listening at http://localhost:3000
+```
 
 ## Getting Started
 

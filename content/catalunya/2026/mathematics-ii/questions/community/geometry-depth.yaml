@@ -1,0 +1,100 @@
+# Additional Geometria practice items for diagnostic depth.
+# Community-authored, NOT official, pending human review.
+
+# --- Vectors ---
+- id: mat2-c-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.geometry.vectors]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.4, calibrated: null }
+  question:
+    ca: "Quin és el mòdul del vector (1, 2, 2)?"
+    es: "¿Cuál es el módulo del vector (1, 2, 2)?"
+  options:
+    - { id: A, ca: "3", es: "3" }
+    - { id: B, ca: "5", es: "5" }
+    - { id: C, ca: "√5", es: "√5" }
+    - { id: D, ca: "9", es: "9" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "|(1,2,2)| = √(1 + 4 + 4) = √9 = 3."
+    es: "|(1,2,2)| = √(1 + 4 + 4) = √9 = 3."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.geometry.vectors]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.3, calibrated: null }
+  question:
+    ca: "Quant val la suma (1, 0, 0) + (0, 1, 0)?"
+    es: "¿Cuánto vale la suma (1, 0, 0) + (0, 1, 0)?"
+  options:
+    - { id: A, ca: "(1, 1, 0)", es: "(1, 1, 0)" }
+    - { id: B, ca: "(0, 0, 0)", es: "(0, 0, 0)" }
+    - { id: C, ca: "(1, 0, 0)", es: "(1, 0, 0)" }
+    - { id: D, ca: "(1, 1, 1)", es: "(1, 1, 1)" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "Se sumen component a component: (1+0, 0+1, 0+0) = (1, 1, 0)."
+    es: "Se suman componente a componente: (1+0, 0+1, 0+0) = (1, 1, 0)."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+# --- Producte escalar (dot_product) ---
+- id: mat2-c-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.geometry.dot_product]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.45, calibrated: null }
+  question:
+    ca: "Quant val el producte escalar (1, 2, 3)·(1, 1, 1)?"
+    es: "¿Cuánto vale el producto escalar (1, 2, 3)·(1, 1, 1)?"
+  options:
+    - { id: A, ca: "6", es: "6" }
+    - { id: B, ca: "3", es: "3" }
+    - { id: C, ca: "0", es: "0" }
+    - { id: D, ca: "1", es: "1" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "1·1 + 2·1 + 3·1 = 1 + 2 + 3 = 6."
+    es: "1·1 + 2·1 + 3·1 = 1 + 2 + 3 = 6."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
+
+- id: mat2-c-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ii
+  type: multiple_choice
+  skills: [mathematics.geometry.dot_product]
+  competencies: [reasoning, problem_solving]
+  difficulty: { initial: 0.35, calibrated: null }
+  question:
+    ca: "Quant val el producte escalar (2, 0, 0)·(0, 3, 0)?"
+    es: "¿Cuánto vale el producto escalar (2, 0, 0)·(0, 3, 0)?"
+  options:
+    - { id: A, ca: "0", es: "0" }
+    - { id: B, ca: "6", es: "6" }
+    - { id: C, ca: "5", es: "5" }
+    - { id: D, ca: "1", es: "1" }
+  answer: { type: single, correct: A }
+  explanation:
+    ca: "2·0 + 0·3 + 0·0 = 0. Els vectors són perpendiculars."
+    es: "2·0 + 0·3 + 0·0 = 0. Los vectores son perpendiculares."
+  source: { type: community, authority: PAU OS, url: null }
+  review: { status: pending_review, reviewed_by: null, reviewed_at: null }
