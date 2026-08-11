@@ -9,6 +9,13 @@ const baseUrl =
 
 /** Google OAuth web client id, if configured (enables the Google button). */
 export const googleClientId = Constants.expoConfig?.extra?.googleClientId as string | undefined;
+/** Platform client ids for native builds; the audience differs per platform. */
+export const googleIosClientId = Constants.expoConfig?.extra?.googleIosClientId as
+  | string
+  | undefined;
+export const googleAndroidClientId = Constants.expoConfig?.extra?.googleAndroidClientId as
+  | string
+  | undefined;
 
 let authToken: string | null = null;
 export function setAuthToken(token: string | null): void {

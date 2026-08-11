@@ -21,6 +21,8 @@ import {
   api,
   setAuthToken,
   googleClientId,
+  googleIosClientId,
+  googleAndroidClientId,
   type Degree,
   type DiagnosticResults,
   type PublicQuestion,
@@ -63,6 +65,8 @@ export default function App() {
   // Optional Google sign-in (only active when a client id is configured).
   const [, googleResponse, promptGoogle] = Google.useIdTokenAuthRequest({
     clientId: googleClientId ?? '',
+    iosClientId: googleIosClientId,
+    androidClientId: googleAndroidClientId,
   });
 
   async function guard(fn: () => Promise<void>): Promise<void> {

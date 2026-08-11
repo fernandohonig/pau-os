@@ -7,26 +7,32 @@ Cloud (GCP) project.
 
 ## The flow
 
-1. The mobile app obtains a Google **ID token** using the OAuth Web client ID.
+1. The app obtains a Google **ID token** using the platform's OAuth client ID
+   (Web on web, iOS/Android client ID in native builds).
 2. It calls `POST /v1/auth/google` with that token.
-3. The API verifies the token with `audience: GOOGLE_CLIENT_ID`
+3. The API verifies the token against the set of configured audiences
    (`services/api/src/auth.ts`) — public-key based, so no client *secret* is
    needed.
 4. The API issues its own signed session JWT (`JWT_SECRET`, 30-day TTL). Google's
    ID token is never stored.
 
-Because the API verifies against a **single** audience, the app's client ID and
-the server's `GOOGLE_CLIENT_ID` must be the **same value** — the **Web OAuth
-client ID**. Native SDKs mint ID tokens whose `aud` is the Web client ID (Expo's
-`expo-auth-session` and `@react-native-google-signin`'s `webClientId`), so one
-value covers every platform.
+A Google ID token's `aud` claim is the client ID that requested it, which
+**differs per platform**: web tokens carry the Web client ID, native tokens
+carry the iOS/Android client ID. The API therefore accepts any configured client
+ID as a valid audience (`GOOGLE_CLIENT_ID` + `GOOGLE_IOS_CLIENT_ID` +
+`GOOGLE_ANDROID_CLIENT_ID`). For web-only testing, `GOOGLE_CLIENT_ID` alone is
+enough.
 
 ## Variables
 
 | Variable | Where | Source |
 |---|---|---|
 | `GOOGLE_CLIENT_ID` | API env | OAuth **Web** client ID from GCP |
+| `GOOGLE_IOS_CLIENT_ID` | API env | OAuth **iOS** client ID (native builds) |
+| `GOOGLE_ANDROID_CLIENT_ID` | API env | OAuth **Android** client ID (native builds) |
 | `extra.googleClientId` | mobile `apps/mobile/app.json` | same Web client ID |
+| `extra.googleIosClientId` | mobile `apps/mobile/app.json` | same iOS client ID |
+| `extra.googleAndroidClientId` | mobile `apps/mobile/app.json` | same Android client ID |
 | `JWT_SECRET` | API env | `openssl rand -hex 32` (not from GCP) |
 | `ADMIN_EMAILS` | API env | comma-separated admin allowlist (not from GCP) |
 | `AUTH_DEV_LOGIN` | API env | `true`/`false`; off in production |
@@ -57,38 +63,56 @@ Console → APIs & Services → Credentials → Create credentials → OAuth cli
 - The generated **Client ID** is both `GOOGLE_CLIENT_ID` and
   `extra.googleClientId`. No client secret is required for this flow.
 
-**Redirect URI — use the native app scheme.** The app registers a custom scheme
-(`scheme: "pauos"` in `apps/mobile/app.json`). With `expo-auth-session`, call
-`makeRedirectUri()` to generate the redirect at runtime rather than hard-coding
-it; it resolves to the scheme in dev-client / standalone builds. This is the
-current, non-deprecated flow and works in both Expo Go and standalone builds.
+**Redirect URIs (web).** On web, `expo-auth-session` redirects back to the page
+origin, so register the exact origin under **Authorized redirect URIs** *and*
+**Authorized JavaScript origins**. For local dev that is `http://localhost:8081`
+(the Expo web / Metro port — match whatever Metro prints). Google matches
+exactly: no trailing-slash or port mismatch. A `redirect_uri_mismatch` error
+means the value the app sent isn't registered here — copy the `redirect_uri=`
+param from the browser URL and add it verbatim.
 
 > The legacy `https://auth.expo.io/@<expo-username>/pau-os` proxy URL is
 > deprecated in recent Expo SDKs — avoid it for new setups.
 
-### 4. (Standalone builds) iOS / Android OAuth clients
-For standalone builds via `@react-native-google-signin`, also create **iOS** and
-**Android** OAuth client IDs (Android needs your SHA-1 signing fingerprint +
-package name; iOS uses the reversed-client-id redirect). Still pass the **Web**
-client ID as `webClientId` so the ID token's `aud` matches the server. These
-platform client IDs do **not** go into pau-os env — they only let Google issue
-the token.
+### 4. iOS / Android OAuth clients (native builds)
+Native `expo-auth-session` uses a platform client ID, and its ID token's `aud`
+is that client ID — which is why the API accepts iOS/Android audiences (step 3
+of "The flow"). The app's identifiers are `bundleIdentifier` / `package` =
+`app.pauos.mobile` (`apps/mobile/app.json`).
+
+Create two more OAuth clients (Credentials → Create credentials → OAuth client
+ID):
+- **iOS**: bundle ID `app.pauos.mobile`. No secret; the redirect is the
+  reversed-client-id URL scheme, which Expo configures from this client during
+  prebuild. → `GOOGLE_IOS_CLIENT_ID` + `extra.googleIosClientId`.
+- **Android**: package `app.pauos.mobile` + the **SHA-1** signing fingerprint of
+  your build (`eas credentials`, or `keytool -list` on the keystore). →
+  `GOOGLE_ANDROID_CLIENT_ID` + `extra.googleAndroidClientId`.
+
+Native Google sign-in needs a **dev client / prebuild** (`npx expo prebuild`),
+not Expo Go — the custom scheme must be compiled into the app. Add the platform
+client IDs to both the API env (so their tokens verify) and `app.json` (so the
+app requests them).
 
 ## Wiring it up
 
 API env (`.env`, see `.env.example`):
 ```bash
-GOOGLE_CLIENT_ID=1234567890-abcdef.apps.googleusercontent.com
+GOOGLE_CLIENT_ID=1234567890-web.apps.googleusercontent.com
+GOOGLE_IOS_CLIENT_ID=1234567890-ios.apps.googleusercontent.com          # native only
+GOOGLE_ANDROID_CLIENT_ID=1234567890-android.apps.googleusercontent.com  # native only
 JWT_SECRET=$(openssl rand -hex 32)
 ADMIN_EMAILS=you@example.com,other-admin@example.com
 AUTH_DEV_LOGIN=false            # in production; leave unset in dev
 ```
 
-Mobile (`apps/mobile/app.json`, same Web client ID):
+Mobile (`apps/mobile/app.json`):
 ```json
 "extra": {
   "apiBaseUrl": "http://localhost:3000",
-  "googleClientId": "1234567890-abcdef.apps.googleusercontent.com"
+  "googleClientId": "1234567890-web.apps.googleusercontent.com",
+  "googleIosClientId": "1234567890-ios.apps.googleusercontent.com",
+  "googleAndroidClientId": "1234567890-android.apps.googleusercontent.com"
 }
 ```
 

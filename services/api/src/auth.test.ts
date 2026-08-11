@@ -64,4 +64,14 @@ describe('loadAuthConfig', () => {
     const cfg = loadAuthConfig({ ADMIN_EMAILS: 'a@x.com, B@x.com' });
     expect(cfg.adminEmails).toEqual(['a@x.com', 'b@x.com']);
   });
+  it('disables Google verification when no client id is configured', async () => {
+    const cfg = loadAuthConfig({});
+    expect(cfg.googleClientId).toBeUndefined();
+    await expect(cfg.verifyGoogleIdToken('any-token')).resolves.toBeNull();
+  });
+  it('enables Google verification when any platform client id is set', () => {
+    // No web client id, only a native one — Google auth should still be active.
+    const cfg = loadAuthConfig({ GOOGLE_ANDROID_CLIENT_ID: 'android.apps.googleusercontent.com' });
+    expect(typeof cfg.verifyGoogleIdToken).toBe('function');
+  });
 });

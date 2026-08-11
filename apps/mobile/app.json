@@ -7,12 +7,20 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "platforms": ["ios", "android", "web"],
+    "ios": {
+      "bundleIdentifier": "app.pauos.mobile"
+    },
+    "android": {
+      "package": "app.pauos.mobile"
+    },
     "web": {
       "bundler": "metro"
     },
     "extra": {
       "apiBaseUrl": "http://localhost:3000",
-      "googleClientId": "1083016220865-bbdeulma51p2t9a1pjof34s8ae5puk2m.apps.googleusercontent.com"
+      "googleClientId": "1083016220865-bbdeulma51p2t9a1pjof34s8ae5puk2m.apps.googleusercontent.com",
+      "googleIosClientId": "",
+      "googleAndroidClientId": ""
     }
   }
 }
