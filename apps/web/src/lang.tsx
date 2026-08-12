@@ -13,8 +13,9 @@ interface LangValue {
   lang: Lang;
   setLang: (l: Lang) => void;
   toggle: () => void;
-  /** Pick the current language from a bilingual field, falling back to ca. */
-  t: (text: Localized | undefined | null) => string;
+  /** Pick the current language from a bilingual field, falling back to ca.
+   *  Tolerates a plain string (e.g. an older API shape). */
+  t: (text: Localized | string | undefined | null) => string;
 }
 
 const LangContext = createContext<LangValue | null>(null);
@@ -44,8 +45,9 @@ export function LangProvider({ children }: { children: ReactNode }) {
   const toggle = useCallback(() => setLang(lang === 'ca' ? 'es' : 'ca'), [lang, setLang]);
 
   const t = useCallback(
-    (text: Localized | undefined | null): string => {
+    (text: Localized | string | undefined | null): string => {
       if (!text) return '';
+      if (typeof text === 'string') return text;
       return lang === 'es' && text.es ? text.es : text.ca;
     },
     [lang],
