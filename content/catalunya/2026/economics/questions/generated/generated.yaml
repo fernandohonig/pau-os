@@ -1,0 +1,4144 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: eco-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina és una característica pròpia de l'empresari individual (autònom)?
+    es: ¿Cuál es una característica propia del empresario individual (autónomo)?
+  options:
+    - id: A
+      ca: Respon dels deutes de l'empresa amb tot el seu patrimoni present i futur
+        (responsabilitat il·limitada).
+      es: Responde de las deudas de la empresa con todo su patrimonio presente y
+        futuro (responsabilidad ilimitada).
+    - id: B
+      ca: La seva responsabilitat es limita al capital aportat a l'empresa.
+      es: Su responsabilidad se limita al capital aportado a la empresa.
+    - id: C
+      ca: Necessita un capital mínim legal de 3.000 € per constituir-se.
+      es: Necesita un capital mínimo legal de 3.000 € para constituirse.
+    - id: D
+      ca: El seu capital es divideix en accions transmissibles lliurement.
+      es: Su capital se divide en acciones libremente transmisibles.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'empresari individual no té separació entre el patrimoni personal i el de
+      l'empresa: respon dels deutes de manera il·limitada amb tots els seus béns
+      presents i futurs. Per això B és falsa (la responsabilitat limitada és
+      pròpia de SL i SA). No li exigeix cap capital mínim legal (C falsa) i no
+      emet accions, que són pròpies de la SA (D falsa)."
+    es: "El empresario individual no separa el patrimonio personal del de la
+      empresa: responde de las deudas de forma ilimitada con todos sus bienes
+      presentes y futuros. Por eso B es falsa (la responsabilidad limitada es
+      propia de SL y SA). No se le exige capital mínimo legal (C falsa) y no
+      emite acciones, que son propias de la SA (D falsa)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Una societat anònima (SA) es constitueix amb el capital social mínim legal.
+      Quina quantitat, com a mínim, s'ha de tenir desemborsada en el moment de
+      la constitució?
+    es: Una sociedad anónima (SA) se constituye con el capital social mínimo legal.
+      ¿Qué cantidad, como mínimo, debe estar desembolsada en el momento de la
+      constitución?
+  options:
+    - id: A
+      ca: 15.000 €
+      es: 15.000 €
+    - id: B
+      ca: 60.000 €
+      es: 60.000 €
+    - id: C
+      ca: 3.000 €
+      es: 3.000 €
+    - id: D
+      ca: 6.000 €
+      es: 6.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El capital mínim d'una SA és de 60.000 € i la llei exigeix que estigui
+      desemborsat com a mínim el 25% en el moment de la constitució: 0,25 ×
+      60.000 = 15.000 €. B seria el desemborsament total (no el mínim); C confon
+      amb el capital d'una SL; D aplica malament el 10%."
+    es: "El capital mínimo de una SA es de 60.000 € y la ley exige que esté
+      desembolsado al menos el 25% en el momento de la constitución: 0,25 ×
+      60.000 = 15.000 €. B sería el desembolso total (no el mínimo); C confunde
+      con el capital de una SL; D aplica erróneamente el 10%."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En quin tipus de societat mercantil el capital social es divideix en
+      participacions (i no en accions)?
+    es: ¿En qué tipo de sociedad mercantil el capital social se divide en
+      participaciones (y no en acciones)?
+  options:
+    - id: A
+      ca: Societat de responsabilitat limitada (SL).
+      es: Sociedad de responsabilidad limitada (SL).
+    - id: B
+      ca: Societat anònima (SA).
+      es: Sociedad anónima (SA).
+    - id: C
+      ca: Societat comanditària per accions.
+      es: Sociedad comanditaria por acciones.
+    - id: D
+      ca: Societat anònima laboral.
+      es: Sociedad anónima laboral.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A la SL el capital es divideix en participacions, que no són títols
+      negociables lliurement i tenen restriccions a la transmissió. En canvi, a
+      la SA, a la comanditària per accions i a la SA laboral el capital es
+      divideix en accions.
+    es: En la SL el capital se divide en participaciones, que no son títulos
+      libremente negociables y tienen restricciones a su transmisión. En cambio,
+      en la SA, en la comanditaria por acciones y en la SA laboral el capital se
+      divide en acciones.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: L'Estat participa en el 40% del capital d'una empresa i el 60% restant
+      pertany a inversors privats. Segons la titularitat del capital, com es
+      classifica aquesta empresa?
+    es: El Estado participa en el 40% del capital de una empresa y el 60% restante
+      pertenece a inversores privados. Según la titularidad del capital, ¿cómo
+      se clasifica esta empresa?
+  options:
+    - id: A
+      ca: Empresa mixta.
+      es: Empresa mixta.
+    - id: B
+      ca: Empresa pública.
+      es: Empresa pública.
+    - id: C
+      ca: Empresa privada.
+      es: Empresa privada.
+    - id: D
+      ca: Cooperativa.
+      es: Cooperativa.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Segons la titularitat del capital, l'empresa és mixta quan conviuen capital
+      públic i privat. Seria pública si el capital fos majoritàriament o
+      totalment del sector públic i privada si tot el capital fos de
+      particulars. La cooperativa és una forma jurídica concreta, no una
+      categoria segons la titularitat.
+    es: Según la titularidad del capital, la empresa es mixta cuando conviven
+      capital público y privado. Sería pública si el capital fuera mayoritaria o
+      totalmente del sector público, y privada si todo el capital fuera de
+      particulares. La cooperativa es una forma jurídica concreta, no una
+      categoría según la titularidad.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quina afirmació sobre una societat cooperativa és correcta?
+    es: ¿Qué afirmación sobre una sociedad cooperativa es correcta?
+  options:
+    - id: A
+      ca: Cada soci té un vot, amb independència del capital aportat (gestió
+        democràtica).
+      es: Cada socio tiene un voto, con independencia del capital aportado (gestión
+        democrática).
+    - id: B
+      ca: El vot de cada soci és proporcional al capital que ha aportat.
+      es: El voto de cada socio es proporcional al capital que ha aportado.
+    - id: C
+      ca: El seu objectiu principal és maximitzar el benefici d'accionistes externs.
+      es: Su objetivo principal es maximizar el beneficio de accionistas externos.
+    - id: D
+      ca: Els socis responen dels deutes de manera il·limitada amb el seu patrimoni
+        personal.
+      es: Los socios responden de las deudas de forma ilimitada con su patrimonio
+        personal.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La cooperativa es regeix pel principi de gestió democràtica: cada soci té
+      un vot, independentment del capital aportat (per això B és falsa). La seva
+      finalitat és satisfer les necessitats dels socis, no maximitzar el
+      benefici d'inversors externs (C falsa), i la responsabilitat dels socis és
+      limitada (D falsa)."
+    es: "La cooperativa se rige por el principio de gestión democrática: cada socio
+      tiene un voto, independientemente del capital aportado (por eso B es
+      falsa). Su finalidad es satisfacer las necesidades de los socios, no
+      maximizar el beneficio de inversores externos (C falsa), y la
+      responsabilidad de los socios es limitada (D falsa)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: En una societat laboral amb un capital social de 90.000 €, i sense
+      participació d'entitats públiques, quina és la quantitat màxima de capital
+      que pot posseir un únic soci?
+    es: En una sociedad laboral con un capital social de 90.000 €, y sin
+      participación de entidades públicas, ¿cuál es la cantidad máxima de
+      capital que puede poseer un único socio?
+  options:
+    - id: A
+      ca: 30.000 €
+      es: 30.000 €
+    - id: B
+      ca: 45.000 €
+      es: 45.000 €
+    - id: C
+      ca: 60.000 €
+      es: 60.000 €
+    - id: D
+      ca: 90.000 €
+      es: 90.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "A les societats laborals, cap soci pot tenir accions o participacions que
+      representin més d'una tercera part del capital social (excepte entitats
+      públiques, que poden arribar al 50%). Com que no hi ha participació
+      pública: 90.000 / 3 = 30.000 €. B correspon a la meitat (50%), que només
+      s'aplicaria a un ens públic, i C i D superen el límit legal."
+    es: "En las sociedades laborales, ningún socio puede poseer acciones o
+      participaciones que representen más de una tercera parte del capital
+      social (salvo las entidades públicas, que pueden alcanzar el 50%). Como no
+      hay participación pública: 90.000 / 3 = 30.000 €. B corresponde a la mitad
+      (50%), que solo se aplicaría a un ente público, y C y D superan el límite
+      legal."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.entrepreneurship
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Segons Joseph Schumpeter, quina és la funció essencial que defineix
+      l'emprenedor dins del sistema econòmic?
+    es: Según Joseph Schumpeter, ¿cuál es la función esencial que define al
+      emprendedor dentro del sistema económico?
+  options:
+    - id: A
+      ca: Innovar, és a dir, introduir noves combinacions productives (nous productes,
+        mètodes o mercats).
+      es: Innovar, es decir, introducir nuevas combinaciones productivas (nuevos
+        productos, métodos o mercados).
+    - id: B
+      ca: Assumir el risc i la incertesa de l'activitat econòmica.
+      es: Asumir el riesgo y la incertidumbre de la actividad económica.
+    - id: C
+      ca: Coordinar i combinar els factors de producció de manera eficient.
+      es: Coordinar y combinar los factores de producción de manera eficiente.
+    - id: D
+      ca: Aportar el capital necessari per finançar l'empresa.
+      es: Aportar el capital necesario para financiar la empresa.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per a Schumpeter, l'emprenedor és fonamentalment un innovador que impulsa la
+      'destrucció creadora' introduint noves combinacions productives. Assumir
+      el risc és la visió de Knight (B), la coordinació de factors correspon a
+      la visió clàssica (C) i aportar capital és la funció del capitalista (D),
+      no necessàriament de l'emprenedor.
+    es: Para Schumpeter, el emprendedor es fundamentalmente un innovador que impulsa
+      la 'destrucción creadora' introduciendo nuevas combinaciones productivas.
+      Asumir el riesgo es la visión de Knight (B), la coordinación de factores
+      corresponde a la visión clásica (C) y aportar capital es la función del
+      capitalista (D), no necesariamente del emprendedor.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.entrepreneurship
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "En una anàlisi DAFO (DAFO/SWOT) d'un projecte emprenedor, la forta
+      dependència d'un únic proveïdor de matèria primera s'ha de classificar com
+      a:"
+    es: "En un análisis DAFO (DAFO/SWOT) de un proyecto emprendedor, la fuerte
+      dependencia de un único proveedor de materia prima debe clasificarse
+      como:"
+  options:
+    - id: A
+      ca: Una debilitat (factor intern negatiu).
+      es: Una debilidad (factor interno negativo).
+    - id: B
+      ca: Una amenaça (factor extern negatiu).
+      es: Una amenaza (factor externo negativo).
+    - id: C
+      ca: Una oportunitat (factor extern positiu).
+      es: Una oportunidad (factor externo positivo).
+    - id: D
+      ca: Una fortalesa (factor intern positiu).
+      es: Una fortaleza (factor interno positivo).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El DAFO separa factors interns (debilitats i fortaleses) de factors externs
+      (amenaces i oportunitats). La dependència d'un sol proveïdor és una
+      característica pròpia de l'organització (interna) que la perjudica, per
+      tant és una debilitat. No és externa (B i C) ni positiva (C i D).
+    es: El DAFO separa factores internos (debilidades y fortalezas) de factores
+      externos (amenazas y oportunidades). La dependencia de un solo proveedor
+      es una característica propia de la organización (interna) que la
+      perjudica, por tanto es una debilidad. No es externa (B y C) ni positiva
+      (C y D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.entrepreneurship
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Una emprenedora obre una cafeteria amb costos fixos de 30.000 €/any. Cada
+      consumició es ven a 25 € i té un cost variable de 15 €. Quantes
+      consumicions ha de vendre a l'any per assolir el punt mort (llindar de
+      rendibilitat)?
+    es: Una emprendedora abre una cafetería con costes fijos de 30.000 €/año. Cada
+      consumición se vende a 25 € y tiene un coste variable de 15 €. ¿Cuántas
+      consumiciones debe vender al año para alcanzar el punto muerto (umbral de
+      rentabilidad)?
+  options:
+    - id: A
+      ca: 3.000 consumicions.
+      es: 3.000 consumiciones.
+    - id: B
+      ca: 1.200 consumicions.
+      es: 1.200 consumiciones.
+    - id: C
+      ca: 2.000 consumicions.
+      es: 2.000 consumiciones.
+    - id: D
+      ca: 750 consumicions.
+      es: 750 consumiciones.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El punt mort = Costos fixos / (Preu - Cost variable unitari) = 30.000 / (25
+      - 15) = 30.000 / 10 = 3.000 unitats. L'error B divideix pel preu
+      (30.000/25), l'error C divideix pel cost variable (30.000/15) i l'error D
+      divideix per la suma preu+cost variable (30.000/40).
+    es: El punto muerto = Costes fijos / (Precio - Coste variable unitario) = 30.000
+      / (25 - 15) = 30.000 / 10 = 3.000 unidades. El error B divide por el
+      precio (30.000/25), el error C divide por el coste variable (30.000/15) y
+      el error D divide por la suma precio+coste variable (30.000/40).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.entrepreneurship
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "Un projecte emprenedor requereix una inversió inicial de 20.000 € i genera
+      aquests fluxos nets de caixa: any 1 = 6.000 €, any 2 = 8.000 €, any 3 =
+      9.000 €, any 4 = 5.000 €. Quin és el termini de recuperació (payback),
+      sense actualitzar?"
+    es: "Un proyecto emprendedor requiere una inversión inicial de 20.000 € y genera
+      estos flujos netos de caja: año 1 = 6.000 €, año 2 = 8.000 €, año 3 =
+      9.000 €, año 4 = 5.000 €. ¿Cuál es el plazo de recuperación (payback), sin
+      actualizar?"
+  options:
+    - id: A
+      ca: 2 anys i 8 mesos.
+      es: 2 años y 8 meses.
+    - id: B
+      ca: 3 anys exactes.
+      es: 3 años exactos.
+    - id: C
+      ca: 2 anys i 6 mesos.
+      es: 2 años y 6 meses.
+    - id: D
+      ca: 2 anys i 4 mesos.
+      es: 2 años y 4 meses.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Fluxos acumulats: any 1 = 6.000; any 2 = 14.000; any 3 = 23.000. Es
+      recupera durant l'any 3. Falten 20.000 - 14.000 = 6.000 € que s'obtenen
+      del flux de 9.000 € del tercer any: 6.000/9.000 = 0,667 anys ≈ 8 mesos.
+      Total: 2 anys i 8 mesos. Arrodonir a 3 anys (B) ignora la fracció; les
+      altres usen fraccions incorrectes."
+    es: "Flujos acumulados: año 1 = 6.000; año 2 = 14.000; año 3 = 23.000. Se
+      recupera durante el año 3. Faltan 20.000 - 14.000 = 6.000 € que se
+      obtienen del flujo de 9.000 € del tercer año: 6.000/9.000 = 0,667 años ≈ 8
+      meses. Total: 2 años y 8 meses. Redondear a 3 años (B) ignora la fracción;
+      las demás usan fracciones incorrectas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.entrepreneurship
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un emprenedor vol obtenir un benefici anual de 20.000 €. El preu de venda
+      unitari és 40 €, el cost variable unitari és 24 € i els costos fixos
+      anuals són 60.000 €. Quantes unitats ha de vendre per assolir aquest
+      objectiu de benefici?
+    es: Un emprendedor quiere obtener un beneficio anual de 20.000 €. El precio de
+      venta unitario es 40 €, el coste variable unitario es 24 € y los costes
+      fijos anuales son 60.000 €. ¿Cuántas unidades debe vender para alcanzar
+      ese objetivo de beneficio?
+  options:
+    - id: A
+      ca: 5.000 unitats.
+      es: 5.000 unidades.
+    - id: B
+      ca: 3.750 unitats.
+      es: 3.750 unidades.
+    - id: C
+      ca: 2.000 unitats.
+      es: 2.000 unidades.
+    - id: D
+      ca: 3.333 unitats.
+      es: 3.333 unidades.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Unitats = (Costos fixos + Benefici objectiu) / (Preu - Cost variable
+      unitari) = (60.000 + 20.000) / (40 - 24) = 80.000 / 16 = 5.000 unitats.
+      L'error B calcula només el punt mort oblidant el benefici (60.000/16 =
+      3.750), C divideix pel preu (80.000/40) i D divideix pel cost variable
+      (80.000/24).
+    es: Unidades = (Costes fijos + Beneficio objetivo) / (Precio - Coste variable
+      unitario) = (60.000 + 20.000) / (40 - 24) = 80.000 / 16 = 5.000 unidades.
+      El error B calcula solo el punto muerto olvidando el beneficio (60.000/16
+      = 3.750), C divide por el precio (80.000/40) y D divide por el coste
+      variable (80.000/24).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.firm.entrepreneurship
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Un projecte de nova empresa exigeix una inversió inicial de 10.000 € i
+      preveu fluxos nets de caixa de 4.000 € (any 1), 5.000 € (any 2) i 6.000 €
+      (any 3). Amb una taxa d'actualització del 10% anual, quin és el Valor
+      Actual Net (VAN) aproximat?
+    es: Un proyecto de nueva empresa exige una inversión inicial de 10.000 € y prevé
+      flujos netos de caja de 4.000 € (año 1), 5.000 € (año 2) y 6.000 € (año
+      3). Con una tasa de actualización del 10% anual, ¿cuál es el Valor Actual
+      Neto (VAN) aproximado?
+  options:
+    - id: A
+      ca: ≈ 2.276 € (projecte viable).
+      es: ≈ 2.276 € (proyecto viable).
+    - id: B
+      ca: ≈ 12.276 €.
+      es: ≈ 12.276 €.
+    - id: C
+      ca: 5.000 €.
+      es: 5.000 €.
+    - id: D
+      ca: ≈ -2.276 € (projecte no viable).
+      es: ≈ -2.276 € (proyecto no viable).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: VAN = -10.000 + 4.000/1,1 + 5.000/1,1^2 + 6.000/1,1^3 = -10.000 + 3.636,4 +
+      4.132,2 + 4.507,9 ≈ 2.276 €. Com que és positiu, el projecte és viable.
+      L'error B oblida restar la inversió inicial (12.276), C no actualitza els
+      fluxos (-10.000 + 15.000 = 5.000) i D inverteix el signe del resultat.
+    es: VAN = -10.000 + 4.000/1,1 + 5.000/1,1^2 + 6.000/1,1^3 = -10.000 + 3.636,4 +
+      4.132,2 + 4.507,9 ≈ 2.276 €. Como es positivo, el proyecto es viable. El
+      error B olvida restar la inversión inicial (12.276), C no actualiza los
+      flujos (-10.000 + 15.000 = 5.000) y D invierte el signo del resultado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.organization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Segons l'enfocament clàssic del procés de direcció (H. Fayol), quines són
+      les quatre funcions bàsiques que ha de dur a terme la direcció d'una
+      empresa?
+    es: Según el enfoque clásico del proceso de dirección (H. Fayol), ¿cuáles son
+      las cuatro funciones básicas que debe llevar a cabo la dirección de una
+      empresa?
+  options:
+    - id: A
+      ca: Planificar, organitzar, gestionar (dirigir) i controlar
+      es: Planificar, organizar, gestionar (dirigir) y controlar
+    - id: B
+      ca: Produir, vendre, finançar i invertir
+      es: Producir, vender, financiar e invertir
+    - id: C
+      ca: Comprar, emmagatzemar, distribuir i cobrar
+      es: Comprar, almacenar, distribuir y cobrar
+    - id: D
+      ca: Contractar, formar, motivar i acomiadar
+      es: Contratar, formar, motivar y despedir
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El procés de direcció es descompon en quatre funcions encadenades:
+      planificar (fixar objectius i camins), organitzar (assignar recursos i
+      tasques), gestionar o dirigir (liderar i motivar les persones) i controlar
+      (comparar resultats amb objectius). Les altres opcions barregen àrees
+      funcionals de l'empresa (producció, comercial, financera, RH), no les
+      funcions del procés directiu."
+    es: "El proceso de dirección se descompone en cuatro funciones encadenadas:
+      planificar (fijar objetivos y caminos), organizar (asignar recursos y
+      tareas), gestionar o dirigir (liderar y motivar a las personas) y
+      controlar (comparar resultados con objetivos). Las demás opciones mezclan
+      áreas funcionales de la empresa (producción, comercial, financiera, RRHH),
+      no las funciones del proceso directivo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.organization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En una estructura organitzativa un treballador rep ordres únicament del seu
+      superior immediat i, a més, l'empresa disposa d'un departament d'assessors
+      experts que informen la direcció però no tenen autoritat per donar ordres
+      directes. De quin tipus d'estructura es tracta?
+    es: En una estructura organizativa un trabajador recibe órdenes únicamente de su
+      superior inmediato y, además, la empresa dispone de un departamento de
+      asesores expertos que informan a la dirección pero no tienen autoridad
+      para dar órdenes directas. ¿De qué tipo de estructura se trata?
+  options:
+    - id: A
+      ca: Estructura en línia i staff (lineal-funcional amb assessorament)
+      es: Estructura en línea y staff (lineal-funcional con asesoramiento)
+    - id: B
+      ca: Estructura funcional pura de Taylor
+      es: Estructura funcional pura de Taylor
+    - id: C
+      ca: Estructura matricial
+      es: Estructura matricial
+    - id: D
+      ca: Estructura en comitè
+      es: Estructura en comité
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Es respecta la unitat de comandament (cada empleat té un sol cap de línia)
+      i s'hi afegeixen òrgans d'staff que assessoren sense autoritat jeràrquica
+      directa: això defineix l'estructura en línia i staff. La funcional de
+      Taylor trencaria la unitat de comandament (diversos caps); la matricial
+      combina doble dependència (funcional i per projecte); el comitè és un
+      òrgan de decisió col·lectiva."
+    es: "Se respeta la unidad de mando (cada empleado tiene un solo jefe de línea) y
+      se añaden órganos de staff que asesoran sin autoridad jerárquica directa:
+      eso define la estructura en línea y staff. La funcional de Taylor rompería
+      la unidad de mando (varios jefes); la matricial combina doble dependencia
+      (funcional y por proyecto); el comité es un órgano de decisión colectiva."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.organization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: L'organigrama d'una empresa té 4 nivells jeràrquics. Al nivell 1 hi ha 1
+      director general i cada comandament té un àmbit de control de 3
+      subordinats directes. Quants llocs de treball hi ha al nivell operatiu de
+      base (nivell 4)?
+    es: El organigrama de una empresa tiene 4 niveles jerárquicos. En el nivel 1 hay
+      1 director general y cada mando tiene un ámbito de control de 3
+      subordinados directos. ¿Cuántos puestos de trabajo hay en el nivel
+      operativo de base (nivel 4)?
+  options:
+    - id: A
+      ca: 27 llocs
+      es: 27 puestos
+    - id: B
+      ca: 12 llocs
+      es: 12 puestos
+    - id: C
+      ca: 9 llocs
+      es: 9 puestos
+    - id: D
+      ca: 81 llocs
+      es: 81 puestos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Amb un àmbit de control de 3, cada nivell multiplica per 3 l'anterior:
+      nivell 1 = 1; nivell 2 = 1×3 = 3; nivell 3 = 3×3 = 9; nivell 4 = 9×3 = 27
+      = 3^3. L'error de 12 surt de multiplicar 3×4 (nivells); el 9 és el nivell
+      3; el 81 = 3^4 seria un cinquè nivell."
+    es: "Con un ámbito de control de 3, cada nivel multiplica por 3 al anterior:
+      nivel 1 = 1; nivel 2 = 1×3 = 3; nivel 3 = 3×3 = 9; nivel 4 = 9×3 = 27 =
+      3^3. El error de 12 surge de multiplicar 3×4 (niveles); el 9 es el nivel
+      3; el 81 = 3^4 correspondería a un quinto nivel."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.organization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quina de les afirmacions següents descriu correctament una organització
+      DESCENTRALITZADA respecte d'una de centralitzada?
+    es: ¿Cuál de las siguientes afirmaciones describe correctamente una organización
+      DESCENTRALIZADA respecto de una centralizada?
+  options:
+    - id: A
+      ca: La capacitat de prendre decisions es delega cap als nivells inferiors de la
+        jerarquia
+      es: La capacidad de tomar decisiones se delega hacia los niveles inferiores de
+        la jerarquía
+    - id: B
+      ca: Totes les decisions importants es concentren en la direcció general
+      es: Todas las decisiones importantes se concentran en la dirección general
+    - id: C
+      ca: Desapareix la jerarquia i tots els llocs tenen la mateixa autoritat
+      es: Desaparece la jerarquía y todos los puestos tienen la misma autoridad
+    - id: D
+      ca: S'elimina la funció de control perquè ja no cal supervisar
+      es: Se elimina la función de control porque ya no hace falta supervisar
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Descentralitzar significa delegar autoritat i capacitat de decisió cap als
+      nivells inferiors, apropant les decisions al lloc on es genera la
+      informació. L'opció B descriu la centralització; la C confon
+      descentralització amb absència de jerarquia (falsa: segueix existint); la
+      D és errònia perquè, precisament, en delegar cal reforçar el control per
+      assegurar la coordinació."
+    es: "Descentralizar significa delegar autoridad y capacidad de decisión hacia
+      los niveles inferiores, acercando las decisiones al lugar donde se genera
+      la información. La opción B describe la centralización; la C confunde
+      descentralización con ausencia de jerarquía (falsa: sigue existiendo); la
+      D es errónea porque, precisamente, al delegar hay que reforzar el control
+      para asegurar la coordinación."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.organization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En l'estructura organitzativa FUNCIONAL proposada per F. W. Taylor, un
+      mateix operari pot rebre instruccions de diversos caps especialistes
+      alhora. Quin principi clàssic de l'organització vulnera aquest model?
+    es: En la estructura organizativa FUNCIONAL propuesta por F. W. Taylor, un mismo
+      operario puede recibir instrucciones de varios jefes especialistas a la
+      vez. ¿Qué principio clásico de la organización vulnera este modelo?
+  options:
+    - id: A
+      ca: El principi d'unitat de comandament
+      es: El principio de unidad de mando
+    - id: B
+      ca: El principi de divisió del treball
+      es: El principio de división del trabajo
+    - id: C
+      ca: El principi de jerarquia o cadena escalar
+      es: El principio de jerarquía o cadena escalar
+    - id: D
+      ca: El principi d'especialització
+      es: El principio de especialización
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La unitat de comandament (Fayol) estableix que cada subordinat ha de rebre
+      ordres d'un únic superior. En el model funcional de Taylor l'operari depèn
+      de diversos caps especialistes simultàniament, de manera que es trenca
+      aquesta unitat de comandament (risc d'ordres contradictòries). En canvi,
+      el model sí que respecta i potencia la divisió del treball i
+      l'especialització, que no són vulnerats.
+    es: La unidad de mando (Fayol) establece que cada subordinado debe recibir
+      órdenes de un único superior. En el modelo funcional de Taylor el operario
+      depende de varios jefes especialistas simultáneamente, de modo que se
+      rompe esa unidad de mando (riesgo de órdenes contradictorias). En cambio,
+      el modelo sí respeta y potencia la división del trabajo y la
+      especialización, que no se vulneran.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.organization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una empresa organitza la seva jerarquia amb un únic director general al
+      capdamunt i un àmbit de control constant de 5 subordinats per comandament.
+      Al nivell operatiu de base hi ha 125 treballadors. Quants nivells
+      jeràrquics té l'organigrama?
+    es: Una empresa organiza su jerarquía con un único director general en la
+      cúspide y un ámbito de control constante de 5 subordinados por mando. En
+      el nivel operativo de base hay 125 trabajadores. ¿Cuántos niveles
+      jerárquicos tiene el organigrama?
+  options:
+    - id: A
+      ca: 4 nivells
+      es: 4 niveles
+    - id: B
+      ca: 3 nivells
+      es: 3 niveles
+    - id: C
+      ca: 5 nivells
+      es: 5 niveles
+    - id: D
+      ca: 25 nivells
+      es: 25 niveles
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El nombre de llocs per nivell segueix la progressió 5^k: nivell 1 = 1
+      (5^0), nivell 2 = 5, nivell 3 = 25, nivell 4 = 125 (5^3). Com que la base
+      té 125 = 5^3 treballadors, cal comptar el nivell del director més els 3
+      salts, és a dir 4 nivells. L'error de 3 confon l'exponent (3) amb el
+      nombre de nivells; el 5 és l'àmbit de control; el 25 és el nombre de llocs
+      del nivell intermedi."
+    es: "El número de puestos por nivel sigue la progresión 5^k: nivel 1 = 1 (5^0),
+      nivel 2 = 5, nivel 3 = 25, nivel 4 = 125 (5^3). Como la base tiene 125 =
+      5^3 trabajadores, hay que contar el nivel del director más los 3 saltos,
+      es decir 4 niveles. El error de 3 confunde el exponente (3) con el número
+      de niveles; el 5 es el ámbito de control; el 25 es el número de puestos
+      del nivel intermedio."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.hr
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Segons la piràmide de necessitats de Maslow, quin tipus de necessitats se
+      situa a la base i, per tant, ha de satisfer-se en primer lloc?
+    es: Según la pirámide de necesidades de Maslow, ¿qué tipo de necesidades se
+      sitúa en la base y, por tanto, debe satisfacerse en primer lugar?
+  options:
+    - id: A
+      ca: Les necessitats fisiològiques (menjar, beure, dormir).
+      es: Las necesidades fisiológicas (comer, beber, dormir).
+    - id: B
+      ca: Les necessitats de seguretat (estabilitat laboral, protecció).
+      es: Las necesidades de seguridad (estabilidad laboral, protección).
+    - id: C
+      ca: Les necessitats socials (afiliació, pertinença a un grup).
+      es: Las necesidades sociales (afiliación, pertenencia a un grupo).
+    - id: D
+      ca: Les necessitats d'autorealització (desenvolupament del potencial propi).
+      es: Las necesidades de autorrealización (desarrollo del potencial propio).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Maslow ordena les necessitats en una piràmide que es cobreix de baix a
+      dalt: fisiològiques → seguretat → socials → estima → autorealització. Les
+      fisiològiques són les més bàsiques i s'han de satisfer primer;
+      l'autorealització és al cim."
+    es: "Maslow ordena las necesidades en una pirámide que se cubre de abajo hacia
+      arriba: fisiológicas → seguridad → sociales → estima → autorrealización.
+      Las fisiológicas son las más básicas y deben satisfacerse primero; la
+      autorrealización está en la cima."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.hr
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Una empresa té una plantilla de 50 treballadors amb una jornada mensual
+      prevista de 160 hores cadascun. Durant el mes s'han perdut 400 hores per
+      absentisme. Quina és la taxa d'absentisme mensual?
+    es: Una empresa tiene una plantilla de 50 trabajadores con una jornada mensual
+      prevista de 160 horas cada uno. Durante el mes se han perdido 400 horas
+      por absentismo. ¿Cuál es la tasa de absentismo mensual?
+  options:
+    - id: A
+      ca: 5 %
+      es: 5 %
+    - id: B
+      ca: 0,5 %
+      es: 0,5 %
+    - id: C
+      ca: 8 %
+      es: 8 %
+    - id: D
+      ca: 2,5 %
+      es: 2,5 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Hores previstes = 50 × 160 = 8.000 h. Taxa d'absentisme = hores perdudes /
+      hores previstes × 100 = 400 / 8.000 × 100 = 5 %. (0,5 % oblida multiplicar
+      per 100; 8 % divideix les hores pels treballadors; 2,5 % duplica les hores
+      previstes.)
+    es: Horas previstas = 50 × 160 = 8.000 h. Tasa de absentismo = horas perdidas /
+      horas previstas × 100 = 400 / 8.000 × 100 = 5 %. (0,5 % olvida multiplicar
+      por 100; 8 % divide las horas entre los trabajadores; 2,5 % duplica las
+      horas previstas.)
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.hr
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Durant un any, una empresa amb una plantilla mitjana de 200 treballadors ha
+      registrat 24 baixes (persones que han deixat l'empresa) i 30 altes. Quina
+      és la taxa de rotació de personal (basada en les baixes)?
+    es: Durante un año, una empresa con una plantilla media de 200 trabajadores ha
+      registrado 24 bajas (personas que han dejado la empresa) y 30 altas. ¿Cuál
+      es la tasa de rotación de personal (basada en las bajas)?
+  options:
+    - id: A
+      ca: 12 %
+      es: 12 %
+    - id: B
+      ca: 15 %
+      es: 15 %
+    - id: C
+      ca: 27 %
+      es: 27 %
+    - id: D
+      ca: 13,5 %
+      es: 13,5 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Taxa de rotació = baixes / plantilla mitjana × 100 = 24 / 200 × 100 = 12 %.
+      (15 % fa servir les altes; 27 % suma altes i baixes; 13,5 % fa la mitjana
+      d'altes i baixes.)
+    es: Tasa de rotación = bajas / plantilla media × 100 = 24 / 200 × 100 = 12 %.
+      (15 % usa las altas; 27 % suma altas y bajas; 13,5 % hace la media de
+      altas y bajas.)
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.hr
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Un treballador té un salari brut mensual de 2.000 €. A la nòmina se li
+      apliquen una cotització a la Seguretat Social a càrrec del treballador del
+      6,35 % i una retenció d'IRPF del 15 %, totes dues calculades sobre el
+      salari brut. Quin és el salari net?
+    es: Un trabajador tiene un salario bruto mensual de 2.000 €. En la nómina se le
+      aplican una cotización a la Seguridad Social a cargo del trabajador del
+      6,35 % y una retención de IRPF del 15 %, ambas calculadas sobre el salario
+      bruto. ¿Cuál es el salario neto?
+  options:
+    - id: A
+      ca: 1.573 €
+      es: 1.573 €
+    - id: B
+      ca: 1.700 €
+      es: 1.700 €
+    - id: C
+      ca: 1.873 €
+      es: 1.873 €
+    - id: D
+      ca: 1.592,05 €
+      es: 1.592,05 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Deduccions sobre el brut: SS = 2.000 × 6,35 % = 127 €; IRPF = 2.000 × 15 %
+      = 300 €. Salari net = 2.000 − 127 − 300 = 1.573 €. (1.700 € oblida la SS;
+      1.873 € oblida l'IRPF; 1.592,05 € aplica malament l'IRPF sobre el brut ja
+      descomptada la SS.)"
+    es: "Deducciones sobre el bruto: SS = 2.000 × 6,35 % = 127 €; IRPF = 2.000 × 15
+      % = 300 €. Salario neto = 2.000 − 127 − 300 = 1.573 €. (1.700 € olvida la
+      SS; 1.873 € olvida el IRPF; 1.592,05 € aplica mal el IRPF sobre el bruto
+      ya descontada la SS.)"
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.hr
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Una empresa va produir 12.000 unitats amb 8 treballadors l'any 1 i 15.400
+      unitats amb 10 treballadors l'any 2. Quina va ser la variació de la
+      productivitat del treball (unitats per treballador) entre els dos anys?
+    es: Una empresa produjo 12.000 unidades con 8 trabajadores en el año 1 y 15.400
+      unidades con 10 trabajadores en el año 2. ¿Cuál fue la variación de la
+      productividad del trabajo (unidades por trabajador) entre los dos años?
+  options:
+    - id: A
+      ca: +2,67 %
+      es: +2,67 %
+    - id: B
+      ca: +28,33 %
+      es: +28,33 %
+    - id: C
+      ca: +25 %
+      es: +25 %
+    - id: D
+      ca: +2,60 %
+      es: +2,60 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Productivitat any 1 = 12.000 / 8 = 1.500 u/treballador. Any 2 = 15.400 / 10
+      = 1.540 u/treballador. Variació = (1.540 − 1.500) / 1.500 × 100 = 40/1.500
+      × 100 = 2,67 %. (28,33 % només compara la producció total; 25 % és
+      l'augment de treballadors; 2,60 % divideix per la productivitat de l'any
+      2.)
+    es: Productividad año 1 = 12.000 / 8 = 1.500 u/trabajador. Año 2 = 15.400 / 10 =
+      1.540 u/trabajador. Variación = (1.540 − 1.500) / 1.500 × 100 = 40/1.500 ×
+      100 = 2,67 %. (28,33 % solo compara la producción total; 25 % es el
+      aumento de trabajadores; 2,60 % divide entre la productividad del año 2.)
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.management.hr
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Segons la teoria dels dos factors de Herzberg, quin dels següents elements
+      és un factor MOTIVADOR (capaç de generar satisfacció i millorar el
+      rendiment) i no un simple factor d'higiene?
+    es: Según la teoría de los dos factores de Herzberg, ¿cuál de los siguientes
+      elementos es un factor MOTIVADOR (capaz de generar satisfacción y mejorar
+      el rendimiento) y no un simple factor de higiene?
+  options:
+    - id: A
+      ca: El reconeixement de la feina ben feta i la promoció professional.
+      es: El reconocimiento del trabajo bien hecho y la promoción profesional.
+    - id: B
+      ca: El salari i les retribucions econòmiques.
+      es: El salario y las retribuciones económicas.
+    - id: C
+      ca: Les condicions físiques i de seguretat del lloc de treball.
+      es: Las condiciones físicas y de seguridad del puesto de trabajo.
+    - id: D
+      ca: Les relacions amb els superiors i la política de l'empresa.
+      es: Las relaciones con los superiores y la política de la empresa.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Herzberg distingeix els factors motivadors (relacionats amb el contingut de
+      la feina: reconeixement, responsabilitat, promoció, assoliment), que
+      generen satisfacció, dels factors d'higiene (salari, condicions de
+      treball, relacions, política de l'empresa), que si falten produeixen
+      insatisfacció però no motiven. El reconeixement i la promoció són
+      motivadors."
+    es: "Herzberg distingue los factores motivadores (relacionados con el contenido
+      del trabajo: reconocimiento, responsabilidad, promoción, logro), que
+      generan satisfacción, de los factores de higiene (salario, condiciones de
+      trabajo, relaciones, política de la empresa), que si faltan producen
+      insatisfacción pero no motivan. El reconocimiento y la promoción son
+      motivadores."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.productivity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Un taller fabrica 3.600 unitats de producte al mes amb una plantilla de 15
+      treballadors. Quina és la productivitat mitjana del treball (per
+      treballador i mes)?
+    es: Un taller fabrica 3.600 unidades de producto al mes con una plantilla de 15
+      trabajadores. ¿Cuál es la productividad media del trabajo (por trabajador
+      y mes)?
+  options:
+    - id: A
+      ca: 240 unitats/treballador
+      es: 240 unidades/trabajador
+    - id: B
+      ca: 0,0042 treballadors/unitat
+      es: 0,0042 trabajadores/unidad
+    - id: C
+      ca: 3.600 unitats/treballador
+      es: 3.600 unidades/trabajador
+    - id: D
+      ca: 54.000 unitats/treballador
+      es: 54.000 unidades/trabajador
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La productivitat del treball és producció obtinguda dividida pel factor
+      treball: 3.600 / 15 = 240 unitats per treballador i mes. L'opció B
+      inverteix el quocient (15/3.600), C oblida dividir per la plantilla i D
+      multiplica en lloc de dividir (3.600 × 15)."
+    es: "La productividad del trabajo es la producción obtenida dividida por el
+      factor trabajo: 3.600 / 15 = 240 unidades por trabajador y mes. La opción
+      B invierte el cociente (15/3.600), C olvida dividir por la plantilla y D
+      multiplica en vez de dividir (3.600 × 15)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.productivity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: La productivitat del treball d'una empresa va ser de 500 unitats/treballador
+      el 2024 i de 560 unitats/treballador el 2025. Quina és la taxa de variació
+      de la productivitat entre els dos anys?
+    es: La productividad del trabajo de una empresa fue de 500 unidades/trabajador
+      en 2024 y de 560 unidades/trabajador en 2025. ¿Cuál es la tasa de
+      variación de la productividad entre ambos años?
+  options:
+    - id: A
+      ca: +12%
+      es: +12%
+    - id: B
+      ca: +60%
+      es: +60%
+    - id: C
+      ca: +10,7%
+      es: +10,7%
+    - id: D
+      ca: +112%
+      es: +112%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La taxa de variació és (valor final − valor inicial) / valor inicial × 100 =
+      (560 − 500) / 500 × 100 = 60/500 × 100 = 12%. L'opció B confon la
+      diferència absoluta (60) amb el percentatge, C divideix per l'any final
+      (60/560) i D calcula 560/500 sense restar la unitat.
+    es: La tasa de variación es (valor final − valor inicial) / valor inicial × 100
+      = (560 − 500) / 500 × 100 = 60/500 × 100 = 12%. La opción B confunde la
+      diferencia absoluta (60) con el porcentaje, C divide por el año final
+      (60/560) y D calcula 560/500 sin restar la unidad.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.productivity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "Una empresa produeix i ven 10.000 unitats a 5 € cadascuna. Per
+      aconseguir-ho utilitza factors valorats en: mà d'obra 12.000 €, materials
+      20.000 € i capital 8.000 €. Quina és la productivitat global (total) de
+      l'empresa?"
+    es: "Una empresa produce y vende 10.000 unidades a 5 € cada una. Para lograrlo
+      utiliza factores valorados en: mano de obra 12.000 €, materiales 20.000 €
+      y capital 8.000 €. ¿Cuál es la productividad global (total) de la
+      empresa?"
+  options:
+    - id: A
+      ca: 1,25
+      es: 1,25
+    - id: B
+      ca: 0,80
+      es: 0,80
+    - id: C
+      ca: 4,17
+      es: 4,17
+    - id: D
+      ca: 0,25
+      es: 0,25
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La productivitat global es mesura en termes monetaris: valor de la
+      producció / valor dels factors emprats. Producció = 10.000 × 5 = 50.000 €;
+      factors = 12.000 + 20.000 + 8.000 = 40.000 €. Productivitat = 50.000 /
+      40.000 = 1,25. L'opció B inverteix el quocient (40.000/50.000), C divideix
+      només per la mà d'obra (50.000/12.000) i D pren la diferència relativa
+      (10.000/40.000)."
+    es: "La productividad global se mide en términos monetarios: valor de la
+      producción / valor de los factores empleados. Producción = 10.000 × 5 =
+      50.000 €; factores = 12.000 + 20.000 + 8.000 = 40.000 €. Productividad =
+      50.000 / 40.000 = 1,25. La opción B invierte el cociente (40.000/50.000),
+      C divide solo por la mano de obra (50.000/12.000) y D toma la diferencia
+      relativa (10.000/40.000)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.productivity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "Per fabricar 100 unitats d'un producte hi ha dues tècniques disponibles.
+      Tècnica X: 5 treballadors i 10 màquines. Tècnica Y: 5 treballadors i 12
+      màquines. Quina afirmació és correcta segons el criteri d'eficiència
+      tècnica?"
+    es: "Para fabricar 100 unidades de un producto existen dos técnicas disponibles.
+      Técnica X: 5 trabajadores y 10 máquinas. Técnica Y: 5 trabajadores y 12
+      máquinas. ¿Qué afirmación es correcta según el criterio de eficiencia
+      técnica?"
+  options:
+    - id: A
+      ca: X és tècnicament eficient i Y no ho és, perquè X obté la mateixa producció
+        sense utilitzar més quantitat de cap factor i menys d'un d'ells.
+      es: X es técnicamente eficiente e Y no lo es, porque X obtiene la misma
+        producción sin usar más cantidad de ningún factor y menos de uno de
+        ellos.
+    - id: B
+      ca: Y és tècnicament eficient perquè utilitza més màquines i, per tant, més
+        tecnologia.
+      es: Y es técnicamente eficiente porque utiliza más máquinas y, por tanto, más
+        tecnología.
+    - id: C
+      ca: Cap de les dues és eficient perquè no coneixem els preus dels factors.
+      es: Ninguna de las dos es eficiente porque no conocemos los precios de los
+        factores.
+    - id: D
+      ca: Totes dues són igualment eficients perquè fabriquen les mateixes 100
+        unitats.
+      es: Ambas son igualmente eficientes porque fabrican las mismas 100 unidades.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'eficiència tècnica compara quantitats físiques de factors: una tècnica és
+      eficient si no n'existeix una altra que obtingui la mateixa producció
+      usant menys d'algun factor sense usar-ne més de cap altre. X i Y fan
+      servir els mateixos 5 treballadors, però X només necessita 10 màquines
+      davant de les 12 de Y; per tant X domina Y i Y no és tècnicament eficient.
+      Els preus (opció C) només calen per a l'eficiència econòmica, no per a la
+      tècnica."
+    es: "La eficiencia técnica compara cantidades físicas de factores: una técnica
+      es eficiente si no existe otra que obtenga la misma producción usando
+      menos de algún factor sin usar más de ningún otro. X e Y emplean los
+      mismos 5 trabajadores, pero X solo necesita 10 máquinas frente a las 12 de
+      Y; por tanto X domina a Y e Y no es técnicamente eficiente. Los precios
+      (opción C) solo hacen falta para la eficiencia económica, no para la
+      técnica."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.productivity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "Dues tècniques són totes dues tècnicament eficients per produir un mateix
+      lot. Tècnica A: 4 treballadors i 2 màquines. Tècnica B: 6 treballadors i 1
+      màquina. El cost per treballador és 1.000 € i el cost per màquina és 3.000
+      €. Quina tècnica és econòmicament eficient?"
+    es: "Dos técnicas son ambas técnicamente eficientes para producir un mismo lote.
+      Técnica A: 4 trabajadores y 2 máquinas. Técnica B: 6 trabajadores y 1
+      máquina. El coste por trabajador es 1.000 € y el coste por máquina es
+      3.000 €. ¿Qué técnica es económicamente eficiente?"
+  options:
+    - id: A
+      ca: La tècnica B, amb un cost total de 9.000 €.
+      es: La técnica B, con un coste total de 9.000 €.
+    - id: B
+      ca: La tècnica A, amb un cost total de 10.000 €.
+      es: La técnica A, con un coste total de 10.000 €.
+    - id: C
+      ca: La tècnica A, perquè utilitza menys treballadors.
+      es: La técnica A, porque utiliza menos trabajadores.
+    - id: D
+      ca: Les dues són igual d'eficients econòmicament.
+      es: Las dos son igual de eficientes económicamente.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Entre tècniques tècnicament eficients, l'econòmicament eficient és la de
+      menor cost total. Cost A = 4 × 1.000 + 2 × 3.000 = 4.000 + 6.000 = 10.000
+      €. Cost B = 6 × 1.000 + 1 × 3.000 = 6.000 + 3.000 = 9.000 €. Com que B
+      costa menys (9.000 € < 10.000 €), B és l'econòmicament eficient. L'opció C
+      es fixa només en el nombre de treballadors i ignora el cost del capital.
+    es: Entre técnicas técnicamente eficientes, la económicamente eficiente es la de
+      menor coste total. Coste A = 4 × 1.000 + 2 × 3.000 = 4.000 + 6.000 =
+      10.000 €. Coste B = 6 × 1.000 + 1 × 3.000 = 6.000 + 3.000 = 9.000 €. Como
+      B cuesta menos (9.000 € < 10.000 €), B es la económicamente eficiente. La
+      opción C solo mira el número de trabajadores e ignora el coste del
+      capital.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.productivity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Una empresa té 6 treballadors que fan jornades de 8 hores durant 20 dies al
+      mes i, en conjunt, produeixen 5.760 unitats al mes. Quina és la
+      productivitat del treball per hora treballada?
+    es: Una empresa tiene 6 trabajadores que realizan jornadas de 8 horas durante 20
+      días al mes y, en conjunto, producen 5.760 unidades al mes. ¿Cuál es la
+      productividad del trabajo por hora trabajada?
+  options:
+    - id: A
+      ca: 6 unitats/hora
+      es: 6 unidades/hora
+    - id: B
+      ca: 960 unitats/hora
+      es: 960 unidades/hora
+    - id: C
+      ca: 120 unitats/hora
+      es: 120 unidades/hora
+    - id: D
+      ca: 36 unitats/hora
+      es: 36 unidades/hora
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Cal dividir la producció pel total d'hores treballades. Hores totals = 6
+      treballadors × 8 h/dia × 20 dies = 960 hores. Productivitat = 5.760 / 960
+      = 6 unitats/hora. L'opció B divideix només pel nombre de treballadors
+      (producció per treballador i mes, 5.760/6), C divideix per 6 × 8 = 48
+      (hores d'un sol dia de tota la plantilla) i D divideix per 8 × 20 = 160
+      (oblidant multiplicar pels 6 treballadors).
+    es: Hay que dividir la producción por el total de horas trabajadas. Horas
+      totales = 6 trabajadores × 8 h/día × 20 días = 960 horas. Productividad =
+      5.760 / 960 = 6 unidades/hora. La opción B divide solo por el número de
+      trabajadores (producción por trabajador y mes, 5.760/6), C divide por 6 ×
+      8 = 48 (horas de un solo día de toda la plantilla) y D divide por 8 × 20 =
+      160 (olvidando multiplicar por los 6 trabajadores).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.costs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Una empresa presenta uns costos fixos de 30.000 €, ven el seu producte a 25
+      €/unitat i té un cost variable unitari de 10 €/unitat. Quin és el llindar
+      de rendibilitat (punt mort), en unitats?
+    es: Una empresa presenta unos costes fijos de 30.000 €, vende su producto a 25
+      €/unidad y tiene un coste variable unitario de 10 €/unidad. ¿Cuál es el
+      umbral de rentabilidad (punto muerto), en unidades?
+  options:
+    - id: A
+      ca: 2.000 unitats
+      es: 2.000 unidades
+    - id: B
+      ca: 1.200 unitats
+      es: 1.200 unidades
+    - id: C
+      ca: 3.000 unitats
+      es: 3.000 unidades
+    - id: D
+      ca: 857 unitats
+      es: 857 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El llindar de rendibilitat es calcula com Q* = CF / (P - CVu). Aquí Q* =
+      30.000 / (25 - 10) = 30.000 / 15 = 2.000 unitats. L'error B surt de
+      dividir pel preu (30.000/25 = 1.200), el C de dividir pel cost variable
+      unitari (30.000/10 = 3.000) i el D de dividir per la suma P + CVu
+      (30.000/35 ≈ 857).
+    es: El umbral de rentabilidad se calcula como Q* = CF / (P - CVu). Aquí Q* =
+      30.000 / (25 - 10) = 30.000 / 15 = 2.000 unidades. El error B resulta de
+      dividir por el precio (30.000/25 = 1.200), el C de dividir por el coste
+      variable unitario (30.000/10 = 3.000) y el D de dividir por la suma P +
+      CVu (30.000/35 ≈ 857).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.costs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Què representa el llindar de rendibilitat (punt mort) d'una empresa?
+    es: ¿Qué representa el umbral de rentabilidad (punto muerto) de una empresa?
+  options:
+    - id: A
+      ca: El nivell de producció i vendes en què el benefici és nul, és a dir, en què
+        els ingressos totals igualen els costos totals.
+      es: El nivel de producción y ventas en el que el beneficio es nulo, es decir, en
+        el que los ingresos totales igualan a los costes totales.
+    - id: B
+      ca: El nivell de producció en què els costos fixos s'igualen als costos
+        variables totals.
+      es: El nivel de producción en el que los costes fijos se igualan a los costes
+        variables totales.
+    - id: C
+      ca: El nivell de vendes que fa màxim el benefici de l'empresa.
+      es: El nivel de ventas que hace máximo el beneficio de la empresa.
+    - id: D
+      ca: El nivell de producció en què el cost total mitjà assoleix el seu mínim.
+      es: El nivel de producción en el que el coste total medio alcanza su mínimo.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El punt mort és el volum de producció i vendes que iguala els ingressos
+      totals amb els costos totals (IT = CT), de manera que el benefici és zero.
+      Per sota hi ha pèrdues i per sobre, beneficis. No té a veure amb igualar
+      costos fixos i variables (B), ni amb maximitzar el benefici (C), ni amb
+      minimitzar el cost mitjà (D).
+    es: El punto muerto es el volumen de producción y ventas que iguala los ingresos
+      totales con los costes totales (IT = CT), de modo que el beneficio es
+      cero. Por debajo hay pérdidas y por encima, beneficios. No tiene que ver
+      con igualar costes fijos y variables (B), ni con maximizar el beneficio
+      (C), ni con minimizar el coste medio (D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.costs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Una empresa té uns costos fixos de 12.000 €, un cost variable unitari de 8
+      €/unitat i ven a 20 €/unitat. Si en un període ven 1.500 unitats, quin és
+      el seu benefici?
+    es: Una empresa tiene unos costes fijos de 12.000 €, un coste variable unitario
+      de 8 €/unidad y vende a 20 €/unidad. Si en un periodo vende 1.500
+      unidades, ¿cuál es su beneficio?
+  options:
+    - id: A
+      ca: 6.000 €
+      es: 6.000 €
+    - id: B
+      ca: 18.000 €
+      es: 18.000 €
+    - id: C
+      ca: -6.000 €
+      es: -6.000 €
+    - id: D
+      ca: 30.000 €
+      es: 30.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "B = (P - CVu)·Q - CF = (20 - 8)·1.500 - 12.000 = 18.000 - 12.000 = 6.000 €.
+      L'error B oblida restar els costos fixos (només el marge de contribució:
+      18.000 €), el C inverteix el signe restant el marge dels costos fixos
+      (12.000 - 18.000 = -6.000 €) i el D confon el benefici amb els ingressos
+      totals (20·1.500 = 30.000 €)."
+    es: "B = (P - CVu)·Q - CF = (20 - 8)·1.500 - 12.000 = 18.000 - 12.000 = 6.000 €.
+      El error B olvida restar los costes fijos (solo el margen de contribución:
+      18.000 €), el C invierte el signo restando el margen a los costes fijos
+      (12.000 - 18.000 = -6.000 €) y el D confunde el beneficio con los ingresos
+      totales (20·1.500 = 30.000 €)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.costs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Els costos fixos d'una empresa són 45.000 €, el preu de venda és 30 €/unitat
+      i el cost variable unitari és 18 €/unitat. Quin import de vendes (en
+      euros) necessita per assolir el llindar de rendibilitat?
+    es: Los costes fijos de una empresa son 45.000 €, el precio de venta es 30
+      €/unidad y el coste variable unitario es 18 €/unidad. ¿Qué importe de
+      ventas (en euros) necesita para alcanzar el umbral de rentabilidad?
+  options:
+    - id: A
+      ca: 112.500 €
+      es: 112.500 €
+    - id: B
+      ca: 45.000 €
+      es: 45.000 €
+    - id: C
+      ca: 75.000 €
+      es: 75.000 €
+    - id: D
+      ca: 67.500 €
+      es: 67.500 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Primer les unitats del punt mort: Q* = CF / (P - CVu) = 45.000 / (30 - 18)
+      = 3.750 unitats. L'import de vendes és Q*·P = 3.750·30 = 112.500 €.
+      L'error B divideix pel preu en lloc del marge (45.000/30 = 1.500; ×30 =
+      45.000 €), el C divideix pel cost variable (45.000/18 = 2.500; ×30 =
+      75.000 €) i el D calcula bé les unitats però les multiplica pel cost
+      variable (3.750·18 = 67.500 €) en lloc del preu."
+    es: "Primero las unidades del punto muerto: Q* = CF / (P - CVu) = 45.000 / (30 -
+      18) = 3.750 unidades. El importe de ventas es Q*·P = 3.750·30 = 112.500 €.
+      El error B divide por el precio en lugar del margen (45.000/30 = 1.500;
+      ×30 = 45.000 €), el C divide por el coste variable (45.000/18 = 2.500; ×30
+      = 75.000 €) y el D calcula bien las unidades pero las multiplica por el
+      coste variable (3.750·18 = 67.500 €) en lugar del precio."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.costs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Una empresa té costos fixos de 80.000 €, ven a 40 €/unitat i el seu cost
+      variable unitari és 24 €/unitat. Quantes unitats ha de vendre per obtenir
+      un benefici de 40.000 €?
+    es: Una empresa tiene costes fijos de 80.000 €, vende a 40 €/unidad y su coste
+      variable unitario es 24 €/unidad. ¿Cuántas unidades debe vender para
+      obtener un beneficio de 40.000 €?
+  options:
+    - id: A
+      ca: 7.500 unitats
+      es: 7.500 unidades
+    - id: B
+      ca: 5.000 unitats
+      es: 5.000 unidades
+    - id: C
+      ca: 3.000 unitats
+      es: 3.000 unidades
+    - id: D
+      ca: 2.500 unitats
+      es: 2.500 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per a un benefici objectiu B: Q = (CF + B) / (P - CVu) = (80.000 + 40.000)
+      / (40 - 24) = 120.000 / 16 = 7.500 unitats. L'error B ignora el benefici
+      objectiu (80.000/16 = 5.000), el C divideix pel preu en lloc del marge
+      (120.000/40 = 3.000) i el D considera només el benefici sobre el marge
+      (40.000/16 = 2.500)."
+    es: "Para un beneficio objetivo B: Q = (CF + B) / (P - CVu) = (80.000 + 40.000)
+      / (40 - 24) = 120.000 / 16 = 7.500 unidades. El error B ignora el
+      beneficio objetivo (80.000/16 = 5.000), el C divide por el precio en lugar
+      del margen (120.000/40 = 3.000) y el D considera solo el beneficio sobre
+      el margen (40.000/16 = 2.500)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.production.costs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una empresa preveu vendre 8.000 unitats i el seu llindar de rendibilitat se
+      situa en 6.000 unitats. Quin és el seu marge de seguretat, expressat en
+      percentatge sobre les vendes previstes?
+    es: Una empresa prevé vender 8.000 unidades y su umbral de rentabilidad se sitúa
+      en 6.000 unidades. ¿Cuál es su margen de seguridad, expresado en
+      porcentaje sobre las ventas previstas?
+  options:
+    - id: A
+      ca: 25 %
+      es: 25 %
+    - id: B
+      ca: 33,33 %
+      es: 33,33 %
+    - id: C
+      ca: 75 %
+      es: 75 %
+    - id: D
+      ca: 2.000 unitats
+      es: 2.000 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El marge de seguretat en percentatge = (Vendes previstes - Punt mort) /
+      Vendes previstes = (8.000 - 6.000) / 8.000 = 2.000 / 8.000 = 0,25 = 25 %.
+      L'error B divideix la diferència pel punt mort (2.000/6.000 = 33,33 %), el
+      C calcula la proporció punt mort/vendes (6.000/8.000 = 75 %), que no és el
+      marge, i el D dóna la diferència absoluta en unitats sense convertir-la en
+      percentatge.
+    es: El margen de seguridad en porcentaje = (Ventas previstas - Punto muerto) /
+      Ventas previstas = (8.000 - 6.000) / 8.000 = 2.000 / 8.000 = 0,25 = 25 %.
+      El error B divide la diferencia por el punto muerto (2.000/6.000 = 33,33
+      %), el C calcula la proporción punto muerto/ventas (6.000/8.000 = 75 %),
+      que no es el margen, y el D da la diferencia absoluta en unidades sin
+      convertirla en porcentaje.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.market
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin dels següents fets provoca un DESPLAÇAMENT AL LLARG de la corba de
+      demanda d'un bé (un moviment sobre la mateixa corba), i no un desplaçament
+      de tota la corba?
+    es: ¿Cuál de los siguientes hechos provoca un DESPLAZAMIENTO A LO LARGO de la
+      curva de demanda de un bien (un movimiento sobre la misma curva), y no un
+      desplazamiento de toda la curva?
+  options:
+    - id: A
+      ca: Una variació del preu del propi bé.
+      es: Una variación del precio del propio bien.
+    - id: B
+      ca: Un augment de la renda dels consumidors.
+      es: Un aumento de la renta de los consumidores.
+    - id: C
+      ca: Un canvi en el preu d'un bé substitutiu.
+      es: Un cambio en el precio de un bien sustitutivo.
+    - id: D
+      ca: Un canvi en els gustos o preferències dels consumidors.
+      es: Un cambio en los gustos o preferencias de los consumidores.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El preu del propi bé és la variable que es representa a l'eix vertical; quan
+      canvia, ens movem d'un punt a un altre AL LLARG de la mateixa corba de
+      demanda (variació de la quantitat demandada). En canvi, la renda, el preu
+      dels béns relacionats (substitutius o complementaris) i els gustos són
+      factors 'ceteris paribus' que, quan varien, DESPLACEN tota la corba de
+      demanda (variació de la demanda).
+    es: El precio del propio bien es la variable representada en el eje vertical;
+      cuando cambia, nos movemos de un punto a otro A LO LARGO de la misma curva
+      de demanda (variación de la cantidad demandada). En cambio, la renta, el
+      precio de los bienes relacionados (sustitutivos o complementarios) y los
+      gustos son factores 'ceteris paribus' que, al variar, DESPLAZAN toda la
+      curva de demanda (variación de la demanda).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.market
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: La funció de demanda d'un producte és Qd = 500 - 4P, on P és el preu en
+      euros i Qd la quantitat demandada en unitats. Quantes unitats es
+      demandaran si el preu és de 50 €?
+    es: La función de demanda de un producto es Qd = 500 - 4P, donde P es el precio
+      en euros y Qd la cantidad demandada en unidades. ¿Cuántas unidades se
+      demandarán si el precio es de 50 €?
+  options:
+    - id: A
+      ca: 300 unitats
+      es: 300 unidades
+    - id: B
+      ca: 700 unitats
+      es: 700 unidades
+    - id: C
+      ca: 500 unitats
+      es: 500 unidades
+    - id: D
+      ca: 200 unitats
+      es: 200 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Substituïm P = 50 a la funció: Qd = 500 - 4·(50) = 500 - 200 = 300 unitats.
+      L'opció B (700) prové d'equivocar-se en el signe i sumar (500 + 200);
+      l'opció D (200) confon el resultat restat amb la resta '500 - 300';
+      l'opció C ignora el terme del preu."
+    es: "Sustituimos P = 50 en la función: Qd = 500 - 4·(50) = 500 - 200 = 300
+      unidades. La opción B (700) proviene de equivocar el signo y sumar (500 +
+      200); la opción D (200) confunde el resultado; la opción C ignora el
+      término del precio."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.market
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un mercat, la demanda és Qd = 1200 - 3P i l'oferta és Qs = -300 + 2P (P
+      en euros, quantitats en unitats). Quin és el preu d'equilibri del mercat?
+    es: En un mercado, la demanda es Qd = 1200 - 3P y la oferta es Qs = -300 + 2P (P
+      en euros, cantidades en unidades). ¿Cuál es el precio de equilibrio del
+      mercado?
+  options:
+    - id: A
+      ca: P = 300 €
+      es: P = 300 €
+    - id: B
+      ca: P = 180 €
+      es: P = 180 €
+    - id: C
+      ca: P = 500 €
+      es: P = 500 €
+    - id: D
+      ca: P = 100 €
+      es: P = 100 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'equilibri es dona quan Qd = Qs: 1200 - 3P = -300 + 2P. Agrupant: 1200 +
+      300 = 2P + 3P → 1500 = 5P → P = 300 €. (La quantitat d'equilibri seria Q =
+      1200 - 3·300 = 300 unitats.) L'opció B surt d'un error d'agrupació
+      (1500/... o 900/5); les altres provenen de moure malament els termes de
+      costat."
+    es: "El equilibrio se da cuando Qd = Qs: 1200 - 3P = -300 + 2P. Agrupando: 1200
+      + 300 = 2P + 3P → 1500 = 5P → P = 300 €. (La cantidad de equilibrio sería
+      Q = 1200 - 3·300 = 300 unidades.) La opción B surge de un error al
+      agrupar; las demás provienen de pasar mal los términos de lado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.market
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quan el preu d'un bé puja de 10 € a 12 €, la quantitat demandada baixa de
+      100 a 90 unitats. Calcula l'elasticitat-preu de la demanda i indica el
+      tipus de demanda.
+    es: Cuando el precio de un bien sube de 10 € a 12 €, la cantidad demandada baja
+      de 100 a 90 unidades. Calcula la elasticidad-precio de la demanda e indica
+      el tipo de demanda.
+  options:
+    - id: A
+      ca: Ep = -0,5; demanda inelàstica (rígida).
+      es: Ep = -0,5; demanda inelástica (rígida).
+    - id: B
+      ca: Ep = -2; demanda elàstica.
+      es: Ep = -2; demanda elástica.
+    - id: C
+      ca: Ep = -1; demanda de valor unitari.
+      es: Ep = -1; demanda de valor unitario.
+    - id: D
+      ca: Ep = -5; demanda molt elàstica.
+      es: Ep = -5; demanda muy elástica.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Ep = (variació % de Q) / (variació % de P). Variació de Q = (90-100)/100 =
+      -10 %. Variació de P = (12-10)/10 = +20 %. Ep = -10 % / +20 % = -0,5. Com
+      que |Ep| < 1, la demanda és inelàstica (rígida). L'opció B inverteix la
+      fracció (20/10); la D confon les magnituds absolutes (10/2) en lloc dels
+      percentatges.
+    es: Ep = (variación % de Q) / (variación % de P). Variación de Q = (90-100)/100
+      = -10 %. Variación de P = (12-10)/10 = +20 %. Ep = -10 % / +20 % = -0,5.
+      Como |Ep| < 1, la demanda es inelástica (rígida). La opción B invierte la
+      fracción (20/10); la D confunde magnitudes absolutas (10/2) en lugar de
+      porcentajes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.market
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: El preu del cafè augmenta un 10 % i, com a conseqüència, la quantitat
+      demandada de te s'incrementa un 4 %. Quin és el valor de l'elasticitat
+      creuada de la demanda i quina relació hi ha entre els dos béns?
+    es: El precio del café aumenta un 10 % y, como consecuencia, la cantidad
+      demandada de té se incrementa un 4 %. ¿Cuál es el valor de la elasticidad
+      cruzada de la demanda y qué relación existe entre ambos bienes?
+  options:
+    - id: A
+      ca: Exy = +0,4; són béns substitutius.
+      es: Exy = +0,4; son bienes sustitutivos.
+    - id: B
+      ca: Exy = -0,4; són béns complementaris.
+      es: Exy = -0,4; son bienes complementarios.
+    - id: C
+      ca: Exy = +2,5; són béns substitutius.
+      es: Exy = +2,5; son bienes sustitutivos.
+    - id: D
+      ca: Exy = +0,4; són béns complementaris.
+      es: Exy = +0,4; son bienes complementarios.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'elasticitat creuada = (variació % de la quantitat de te) / (variació %
+      del preu del cafè) = +4 % / +10 % = +0,4. Com que és POSITIVA, els béns
+      són substitutius: en encarir-se el cafè, els consumidors compren més te.
+      L'opció C inverteix la fracció (10/4); la B posa un signe negatiu erroni;
+      la D encerta el valor però contradiu que un signe positiu implica
+      substitutius, no complementaris."
+    es: "La elasticidad cruzada = (variación % de la cantidad de té) / (variación %
+      del precio del café) = +4 % / +10 % = +0,4. Como es POSITIVA, los bienes
+      son sustitutivos: al encarecerse el café, los consumidores compran más té.
+      La opción C invierte la fracción (10/4); la B pone un signo negativo
+      erróneo; la D acierta el valor pero contradice que un signo positivo
+      implica sustitutivos, no complementarios."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.market
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Una empresa ven un producte amb una demanda inelàstica (|Ep| < 1). Si
+      l'empresa DECIDEIX apujar el preu del producte, què li passarà a l'ingrés
+      total (ingressos = preu × quantitat venuda)?
+    es: Una empresa vende un producto con una demanda inelástica (|Ep| < 1). Si la
+      empresa DECIDE subir el precio del producto, ¿qué le ocurrirá al ingreso
+      total (ingresos = precio × cantidad vendida)?
+  options:
+    - id: A
+      ca: Augmentarà, perquè la quantitat venuda baixa proporcionalment menys del que
+        puja el preu.
+      es: Aumentará, porque la cantidad vendida baja proporcionalmente menos de lo que
+        sube el precio.
+    - id: B
+      ca: Disminuirà, perquè la quantitat venuda cau més que proporcionalment respecte
+        al preu.
+      es: Disminuirá, porque la cantidad vendida cae más que proporcionalmente
+        respecto al precio.
+    - id: C
+      ca: No variarà, perquè l'efecte del preu i el de la quantitat sempre es
+        compensen exactament.
+      es: No variará, porque el efecto del precio y el de la cantidad siempre se
+        compensan exactamente.
+    - id: D
+      ca: Disminuirà, perquè en una demanda inelàstica els consumidors deixen de
+        comprar el producte.
+      es: Disminuirá, porque en una demanda inelástica los consumidores dejan de
+        comprar el producto.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Amb demanda inelàstica (|Ep| < 1), una pujada de preu provoca una caiguda de
+      la quantitat demandada MENYS que proporcional. Com que l'ingrés total és
+      preu × quantitat, l'efecte positiu de l'augment de preu supera l'efecte
+      negatiu de la lleugera baixada de quantitat, i l'ingrés total AUGMENTA.
+      L'opció B descriu el cas de demanda elàstica; la C correspon només al
+      valor unitari (|Ep| = 1); la D exagera i confon inelàstica amb absència de
+      compra.
+    es: Con demanda inelástica (|Ep| < 1), una subida de precio provoca una caída de
+      la cantidad demandada MENOS que proporcional. Como el ingreso total es
+      precio × cantidad, el efecto positivo del aumento de precio supera al
+      efecto negativo de la ligera bajada de cantidad, y el ingreso total
+      AUMENTA. La opción B describe el caso de demanda elástica; la C
+      corresponde solo al valor unitario (|Ep| = 1); la D exagera y confunde
+      inelástica con ausencia de compra.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.mix
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Els elements del màrqueting mix (les 4 P) combinen diferents variables
+      comercials. Quin dels següents NO és un element del màrqueting mix?
+    es: Los elementos del marketing mix (las 4 P) combinan diferentes variables
+      comerciales. ¿Cuál de los siguientes NO es un elemento del marketing mix?
+  options:
+    - id: A
+      ca: Producte
+      es: Producto
+    - id: B
+      ca: Distribució
+      es: Distribución
+    - id: C
+      ca: Producció
+      es: Producción
+    - id: D
+      ca: Preu
+      es: Precio
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "El màrqueting mix es compon de quatre variables (les 4 P): producte
+      (product), preu (price), distribució (place) i comunicació o promoció
+      (promotion). La producció és una funció de l'àrea productiva de l'empresa,
+      no una variable comercial del màrqueting mix. Per tant, la resposta
+      correcta és C."
+    es: "El marketing mix se compone de cuatro variables (las 4 P): producto
+      (product), precio (price), distribución (place) y comunicación o promoción
+      (promotion). La producción es una función del área productiva de la
+      empresa, no una variable comercial del marketing mix. Por tanto, la
+      respuesta correcta es C."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.mix
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En quina etapa del cicle de vida del producte les vendes creixen ràpidament,
+      apareixen nous competidors atrets pel mercat i el producte comença a
+      generar beneficis?
+    es: ¿En qué etapa del ciclo de vida del producto las ventas crecen rápidamente,
+      aparecen nuevos competidores atraídos por el mercado y el producto empieza
+      a generar beneficios?
+  options:
+    - id: A
+      ca: Introducció
+      es: Introducción
+    - id: B
+      ca: Creixement
+      es: Crecimiento
+    - id: C
+      ca: Maduresa
+      es: Madurez
+    - id: D
+      ca: Declivi
+      es: Declive
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: A la introducció les vendes són baixes i hi ha pèrdues per les fortes
+      despeses de llançament. A la maduresa les vendes s'estabilitzen i la
+      competència és màxima. Al declivi les vendes cauen. El creixement es
+      caracteritza precisament per un fort augment de vendes, l'entrada de
+      competidors i l'inici dels beneficis. La resposta correcta és B.
+    es: En la introducción las ventas son bajas y hay pérdidas por los fuertes
+      gastos de lanzamiento. En la madurez las ventas se estabilizan y la
+      competencia es máxima. En el declive las ventas caen. El crecimiento se
+      caracteriza precisamente por un fuerte aumento de ventas, la entrada de
+      competidores y el inicio de los beneficios. La respuesta correcta es B.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.mix
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Una empresa fabrica un producte amb un cost unitari de 40 €. Vol fixar el
+      preu aplicant un marge del 30% sobre el cost. Quin ha de ser el preu de
+      venda (sense IVA)?
+    es: Una empresa fabrica un producto con un coste unitario de 40 €. Quiere fijar
+      el precio aplicando un margen del 30% sobre el coste. ¿Cuál debe ser el
+      precio de venta (sin IVA)?
+  options:
+    - id: A
+      ca: 52,00 €
+      es: 52,00 €
+    - id: B
+      ca: 57,14 €
+      es: 57,14 €
+    - id: C
+      ca: 28,00 €
+      es: 28,00 €
+    - id: D
+      ca: 70,00 €
+      es: 70,00 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Amb un marge sobre el cost, el preu és P = Cost × (1 + marge) = 40 × (1 +
+      0,30) = 40 × 1,30 = 52 €. L'opció B (57,14 €) surt d'aplicar erròniament
+      el marge sobre el preu de venda: 40 / (1 − 0,30). L'opció C resta el marge
+      (40 × 0,70 = 28). L'opció D suma 30 unitats en lloc del 30%. La resposta
+      correcta és A."
+    es: "Con un margen sobre el coste, el precio es P = Coste × (1 + margen) = 40 ×
+      (1 + 0,30) = 40 × 1,30 = 52 €. La opción B (57,14 €) resulta de aplicar
+      erróneamente el margen sobre el precio de venta: 40 / (1 − 0,30). La
+      opción C resta el margen (40 × 0,70 = 28). La opción D suma 30 unidades en
+      lugar del 30%. La respuesta correcta es A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.mix
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: El cost complet d'un producte és de 60 €. L'empresa vol obtenir un marge del
+      25% sobre el preu de venda. Quin ha de ser el preu de venda (sense IVA)?
+    es: El coste completo de un producto es de 60 €. La empresa quiere obtener un
+      margen del 25% sobre el precio de venta. ¿Cuál debe ser el precio de venta
+      (sin IVA)?
+  options:
+    - id: A
+      ca: 80,00 €
+      es: 80,00 €
+    - id: B
+      ca: 75,00 €
+      es: 75,00 €
+    - id: C
+      ca: 48,00 €
+      es: 48,00 €
+    - id: D
+      ca: 15,00 €
+      es: 15,00 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Si el marge és sobre el preu de venda P, aleshores Cost = P − 0,25·P = P·(1
+      − 0,25) = 0,75·P. Per tant P = 60 / 0,75 = 80 €. L'opció B (75 €) aplica
+      el marge sobre el cost (60 × 1,25). L'opció C (48 €) resta el 25% al cost.
+      L'opció D només calcula l'import del marge. La resposta correcta és A.
+    es: Si el margen es sobre el precio de venta P, entonces Coste = P − 0,25·P =
+      P·(1 − 0,25) = 0,75·P. Por tanto P = 60 / 0,75 = 80 €. La opción B (75 €)
+      aplica el margen sobre el coste (60 × 1,25). La opción C (48 €) resta el
+      25% al coste. La opción D solo calcula el importe del margen. La respuesta
+      correcta es A.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.mix
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Dins del canal de distribució, un fabricant ven un producte a un majorista
+      per 20 €. El majorista aplica un marge del 25% sobre el seu preu de compra
+      i el detallista, un marge del 40% sobre el seu propi preu de compra. Quin
+      és el preu final de venda al públic (sense IVA)?
+    es: Dentro del canal de distribución, un fabricante vende un producto a un
+      mayorista por 20 €. El mayorista aplica un margen del 25% sobre su precio
+      de compra y el minorista, un margen del 40% sobre su propio precio de
+      compra. ¿Cuál es el precio final de venta al público (sin IVA)?
+  options:
+    - id: A
+      ca: 35,00 €
+      es: 35,00 €
+    - id: B
+      ca: 33,00 €
+      es: 33,00 €
+    - id: C
+      ca: 26,67 €
+      es: 26,67 €
+    - id: D
+      ca: 44,44 €
+      es: 44,44 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cada intermediari aplica el seu marge sobre el preu al qual compra.
+      Majorista: 20 × 1,25 = 25 €. Detallista: 25 × 1,40 = 35 €. L'opció B (33
+      €) surt de sumar els marges (25%+40% = 65%) i aplicar-los al preu inicial:
+      20 × 1,65. L'opció C aplica només el marge del majorista com si fos sobre
+      el preu de venda (20/0,75). L'opció D tracta els dos marges com a marges
+      sobre el preu de venda. La resposta correcta és A."
+    es: "Cada intermediario aplica su margen sobre el precio al que compra.
+      Mayorista: 20 × 1,25 = 25 €. Minorista: 25 × 1,40 = 35 €. La opción B (33
+      €) resulta de sumar los márgenes (25%+40% = 65%) y aplicarlos al precio
+      inicial: 20 × 1,65. La opción C aplica solo el margen del mayorista como
+      si fuera sobre el precio de venta (20/0,75). La opción D trata ambos
+      márgenes como márgenes sobre el precio de venta. La respuesta correcta es
+      A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.marketing.mix
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Com a decisió de la variable preu, una empresa ven un producte a 25 € i en
+      ven 1.000 unitats, amb un cost variable unitari de 12 €. Es planteja
+      baixar el preu a 20 €, cosa que incrementaria les vendes fins a 1.400
+      unitats. Des del punt de vista del marge de contribució total, què li
+      convé?
+    es: Como decisión de la variable precio, una empresa vende un producto a 25 € y
+      vende 1.000 unidades, con un coste variable unitario de 12 €. Se plantea
+      bajar el precio a 20 €, lo que incrementaría las ventas hasta 1.400
+      unidades. Desde el punto de vista del margen de contribución total, ¿qué
+      le conviene?
+  options:
+    - id: A
+      ca: Baixar a 20 €, perquè obté un marge de contribució de 11.200 €
+      es: Bajar a 20 €, porque obtiene un margen de contribución de 11.200 €
+    - id: B
+      ca: Mantenir 25 €, perquè el seu marge (13.000 €) supera el de baixar el preu
+        (11.200 €)
+      es: Mantener 25 €, porque su margen (13.000 €) supera el de bajar el precio
+        (11.200 €)
+    - id: C
+      ca: És indiferent, perquè el marge de contribució total és el mateix en tots dos
+        casos
+      es: Es indiferente, porque el margen de contribución total es el mismo en ambos
+        casos
+    - id: D
+      ca: Baixar a 20 €, perquè ven 400 unitats més
+      es: Bajar a 20 €, porque vende 400 unidades más
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "El marge de contribució total = (preu − cost variable unitari) × quantitat.
+      A 25 €: (25 − 12) × 1.000 = 13 × 1.000 = 13.000 €. A 20 €: (20 − 12) ×
+      1.400 = 8 × 1.400 = 11.200 €. Encara que baixar el preu augmenti les
+      unitats venudes (400 més), el marge unitari cau de 13 € a 8 € i el marge
+      total disminueix. Per tant convé mantenir el preu de 25 € (13.000 € >
+      11.200 €). La resposta correcta és B."
+    es: "El margen de contribución total = (precio − coste variable unitario) ×
+      cantidad. A 25 €: (25 − 12) × 1.000 = 13 × 1.000 = 13.000 €. A 20 €: (20 −
+      12) × 1.400 = 8 × 1.400 = 11.200 €. Aunque bajar el precio aumente las
+      unidades vendidas (400 más), el margen unitario cae de 13 € a 8 € y el
+      margen total disminuye. Por tanto conviene mantener el precio de 25 €
+      (13.000 € > 11.200 €). La respuesta correcta es B."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.sources
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina de les següents opcions és una font de finançament INTERN
+      (autofinançament) de l'empresa?
+    es: ¿Cuál de las siguientes opciones es una fuente de financiación INTERNA
+      (autofinanciación) de la empresa?
+  options:
+    - id: A
+      ca: El capital social aportat pels socis en la constitució
+      es: El capital social aportado por los socios en la constitución
+    - id: B
+      ca: Un préstec bancari a llarg termini
+      es: Un préstamo bancario a largo plazo
+    - id: C
+      ca: Les reserves generades amb els beneficis no distribuïts
+      es: Las reservas generadas con los beneficios no distribuidos
+    - id: D
+      ca: El crèdit concedit pels proveïdors
+      es: El crédito concedido por los proveedores
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: L'autofinançament (finançament intern) són els recursos que genera la
+      mateixa empresa, bàsicament les reserves (beneficis no distribuïts) i les
+      amortitzacions/provisions. El capital social és finançament propi però
+      EXTERN (ve dels socis). El préstec i el crèdit de proveïdors són
+      finançament aliè i extern. Per tant, la resposta correcta és C.
+    es: La autofinanciación (financiación interna) son los recursos que genera la
+      propia empresa, básicamente las reservas (beneficios no distribuidos) y
+      las amortizaciones/provisiones. El capital social es financiación propia
+      pero EXTERNA (procede de los socios). El préstamo y el crédito de
+      proveedores son financiación ajena y externa. Por tanto, la respuesta
+      correcta es C.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.sources
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Les quotes d'amortització de l'immobilitzat i les provisions que dota
+      l'empresa constitueixen...
+    es: Las cuotas de amortización del inmovilizado y las provisiones que dota la
+      empresa constituyen...
+  options:
+    - id: A
+      ca: Autofinançament d'enriquiment (o d'expansió)
+      es: Autofinanciación de enriquecimiento (o de expansión)
+    - id: B
+      ca: Autofinançament de manteniment
+      es: Autofinanciación de mantenimiento
+    - id: C
+      ca: Finançament aliè a curt termini
+      es: Financiación ajena a corto plazo
+    - id: D
+      ca: Finançament propi extern
+      es: Financiación propia externa
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "L'autofinançament de manteniment té com a objectiu conservar la capacitat
+      productiva de l'empresa: hi entren les amortitzacions (recuperen el valor
+      perdut de l'immobilitzat) i les provisions (cobreixen possibles pèrdues).
+      L'autofinançament d'enriquiment són les reserves, que permeten créixer.
+      Per tant, la resposta correcta és B."
+    es: "La autofinanciación de mantenimiento tiene como objetivo conservar la
+      capacidad productiva de la empresa: incluye las amortizaciones (recuperan
+      el valor perdido del inmovilizado) y las provisiones (cubren posibles
+      pérdidas). La autofinanciación de enriquecimiento son las reservas, que
+      permiten crecer. Por tanto, la respuesta correcta es B."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.sources
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Una empresa descompta al banc una lletra de canvi de nominal 10.000 € que
+      venç d'aquí a 90 dies. El tipus de descompte anual és del 6% (base 360
+      dies) i el banc cobra una comissió del 0,5% sobre el nominal. Quant diner
+      rep efectivament l'empresa?
+    es: Una empresa descuenta en el banco una letra de cambio de nominal 10.000 €
+      que vence dentro de 90 días. El tipo de descuento anual es del 6% (base
+      360 días) y el banco cobra una comisión del 0,5% sobre el nominal. ¿Cuánto
+      dinero recibe efectivamente la empresa?
+  options:
+    - id: A
+      ca: 9.800 €
+      es: 9.800 €
+    - id: B
+      ca: 9.850 €
+      es: 9.850 €
+    - id: C
+      ca: 9.350 €
+      es: 9.350 €
+    - id: D
+      ca: 10.150 €
+      es: 10.150 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Descompte = Nominal × i × t = 10.000 × 0,06 × 90/360 = 150 €. Comissió =
+      10.000 × 0,005 = 50 €. Efectiu = 10.000 − 150 − 50 = 9.800 €. L'opció B
+      oblida la comissió; la C aplica el 6% sobre tot l'any (600 €) en lloc de
+      prorratejar 90 dies; la D suma el descompte en lloc de restar-lo. Resposta
+      correcta: A."
+    es: "Descuento = Nominal × i × t = 10.000 × 0,06 × 90/360 = 150 €. Comisión =
+      10.000 × 0,005 = 50 €. Efectivo = 10.000 − 150 − 50 = 9.800 €. La opción B
+      olvida la comisión; la C aplica el 6% sobre todo el año (600 €) en lugar
+      de prorratear 90 días; la D suma el descuento en vez de restarlo.
+      Respuesta correcta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.sources
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "Assenyala l'afirmació CORRECTA sobre el leasing financer com a font de
+      finançament:"
+    es: "Señala la afirmación CORRECTA sobre el leasing financiero como fuente de
+      financiación:"
+  options:
+    - id: A
+      ca: En finalitzar el contracte l'arrendatari té una opció de compra del bé
+      es: Al finalizar el contrato el arrendatario tiene una opción de compra del bien
+    - id: B
+      ca: És una font de finançament interna (autofinançament)
+      es: Es una fuente de financiación interna (autofinanciación)
+    - id: C
+      ca: La propietat del bé és de l'empresa arrendatària des de l'inici del
+        contracte
+      es: La propiedad del bien es de la empresa arrendataria desde el inicio del
+        contrato
+    - id: D
+      ca: No genera cap obligació de pagament periòdic per a l'empresa
+      es: No genera ninguna obligación de pago periódico para la empresa
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El leasing financer és un contracte d'arrendament amb OPCIÓ DE COMPRA en
+      finalitzar (opció que el diferencia del renting). És finançament aliè i
+      extern, no autofinançament (B falsa). Durant el contracte la propietat és
+      de l'entitat de leasing, no de l'arrendatari (C falsa), i s'hi paguen
+      quotes periòdiques (D falsa). Resposta correcta: A."
+    es: "El leasing financiero es un contrato de arrendamiento con OPCIÓN DE COMPRA
+      al finalizar (opción que lo diferencia del renting). Es financiación ajena
+      y externa, no autofinanciación (B falsa). Durante el contrato la propiedad
+      es de la entidad de leasing, no del arrendatario (C falsa), y se pagan
+      cuotas periódicas (D falsa). Respuesta correcta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.sources
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una societat té 100.000 accions que cotitzen a 8 € cadascuna. Fa una
+      ampliació de capital emetent 1 acció nova per cada 4 antigues, a un preu
+      d'emissió de 5 €. Quin és el valor teòric del dret de subscripció
+      preferent?
+    es: Una sociedad tiene 100.000 acciones que cotizan a 8 € cada una. Realiza una
+      ampliación de capital emitiendo 1 acción nueva por cada 4 antiguas, a un
+      precio de emisión de 5 €. ¿Cuál es el valor teórico del derecho de
+      suscripción preferente?
+  options:
+    - id: A
+      ca: 0,60 €
+      es: 0,60 €
+    - id: B
+      ca: 3,00 €
+      es: 3,00 €
+    - id: C
+      ca: 0,75 €
+      es: 0,75 €
+    - id: D
+      ca: 2,40 €
+      es: 2,40 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cotització després de l'ampliació (ex-dret) = (4×8 + 1×5)/(4+1) = 37/5 =
+      7,40 €. Valor del dret = cotització abans − cotització ex-dret = 8 − 7,40
+      = 0,60 €. Equival a [accions noves/(antigues+noves)]×(cotització − preu
+      emissió) = (1/5)×3 = 0,60 €. La B és la simple diferència de preus (8−5);
+      la C usa 1/4 en comptes de 1/5; la D usa 4/5. Resposta correcta: A."
+    es: "Cotización tras la ampliación (ex-derecho) = (4×8 + 1×5)/(4+1) = 37/5 =
+      7,40 €. Valor del derecho = cotización antes − cotización ex-derecho = 8 −
+      7,40 = 0,60 €. Equivale a [acciones nuevas/(antiguas+nuevas)]×(cotización
+      − precio emisión) = (1/5)×3 = 0,60 €. La B es la simple diferencia de
+      precios (8−5); la C usa 1/4 en vez de 1/5; la D usa 4/5. Respuesta
+      correcta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.sources
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Un proveïdor ofereix un descompte per pagament immediat del 3% si es paga
+      als 10 dies; en cas contrari cal pagar als 60 dies sense descompte. Quin
+      és, aproximadament, el cost efectiu anual (base 360 dies) de renunciar al
+      descompte i pagar als 60 dies?
+    es: Un proveedor ofrece un descuento por pronto pago del 3% si se paga a los 10
+      días; en caso contrario se paga a los 60 días sin descuento. ¿Cuál es,
+      aproximadamente, el coste efectivo anual (base 360 días) de renunciar al
+      descuento y pagar a los 60 días?
+  options:
+    - id: A
+      ca: ≈ 22,3%
+      es: ≈ 22,3%
+    - id: B
+      ca: ≈ 21,6%
+      es: ≈ 21,6%
+    - id: C
+      ca: ≈ 18,6%
+      es: ≈ 18,6%
+    - id: D
+      ca: ≈ 3%
+      es: ≈ 3%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Renunciar al descompte equival a finançar-se durant 60 − 10 = 50 dies
+      pagant un 3% sobre l'import net. Cost = [d/(1−d)] × [360/(dies)] =
+      [0,03/0,97] × [360/50] = 0,03093 × 7,2 ≈ 0,223 → 22,3%. La B no ajusta la
+      base (0,03×360/50 = 21,6%); la C usa 60 dies en lloc de 50; la D confon el
+      descompte puntual amb el cost anualitzat. Resposta correcta: A."
+    es: "Renunciar al descuento equivale a financiarse durante 60 − 10 = 50 días
+      pagando un 3% sobre el importe neto. Coste = [d/(1−d)] × [360/(días)] =
+      [0,03/0,97] × [360/50] = 0,03093 × 7,2 ≈ 0,223 → 22,3%. La B no ajusta la
+      base (0,03×360/50 = 21,6%); la C usa 60 días en lugar de 50; la D confunde
+      el descuento puntual con el coste anualizado. Respuesta correcta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.investment
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Segons el criteri del Valor Actual Net (VAN), quan s'ha d'acceptar un
+      projecte d'inversió?
+    es: Según el criterio del Valor Actual Neto (VAN), ¿cuándo debe aceptarse un
+      proyecto de inversión?
+  options:
+    - id: A
+      ca: Quan el VAN és positiu (VAN > 0).
+      es: Cuando el VAN es positivo (VAN > 0).
+    - id: B
+      ca: Quan el VAN és negatiu (VAN < 0).
+      es: Cuando el VAN es negativo (VAN < 0).
+    - id: C
+      ca: Quan el VAN és exactament zero.
+      es: Cuando el VAN es exactamente cero.
+    - id: D
+      ca: Sempre, amb independència del signe del VAN.
+      es: Siempre, con independencia del signo del VAN.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El VAN mesura la riquesa neta que genera el projecte en valor d'avui, un cop
+      recuperat el desemborsament inicial i remunerat el capital al tipus de
+      descompte. Si VAN > 0, el projecte crea valor i s'accepta; si VAN < 0, es
+      rebutja; si VAN = 0, és indiferent.
+    es: El VAN mide la riqueza neta que genera el proyecto en valor de hoy, una vez
+      recuperado el desembolso inicial y remunerado el capital al tipo de
+      descuento. Si VAN > 0, el proyecto crea valor y se acepta; si VAN < 0, se
+      rechaza; si VAN = 0, es indiferente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.investment
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Una inversió exigeix un desemborsament inicial de 10.000 € i genera fluxos
+      nets de caixa constants de 2.500 € cada any. Quin és el període de
+      recuperació (pay-back)?
+    es: Una inversión exige un desembolso inicial de 10.000 € y genera flujos netos
+      de caja constantes de 2.500 € cada año. ¿Cuál es el plazo de recuperación
+      (pay-back)?
+  options:
+    - id: A
+      ca: 2,5 anys.
+      es: 2,5 años.
+    - id: B
+      ca: 4 anys.
+      es: 4 años.
+    - id: C
+      ca: 5 anys.
+      es: 5 años.
+    - id: D
+      ca: 0,25 anys.
+      es: 0,25 años.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Amb fluxos constants, el pay-back = desemborsament / flux anual = 10.000 /
+      2.500 = 4 anys. El projecte recupera la inversió inicial al cap de 4 anys.
+    es: Con flujos constantes, el pay-back = desembolso / flujo anual = 10.000 /
+      2.500 = 4 años. El proyecto recupera la inversión inicial al cabo de 4
+      años.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.investment
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Un projecte requereix un desemborsament inicial de 5.000 € i genera fluxos
+      nets de 3.000 € el primer any i 3.630 € el segon any. Amb un tipus de
+      descompte del 10 %, quin és el VAN?
+    es: Un proyecto requiere un desembolso inicial de 5.000 € y genera flujos netos
+      de 3.000 € el primer año y 3.630 € el segundo año. Con un tipo de
+      descuento del 10 %, ¿cuál es el VAN?
+  options:
+    - id: A
+      ca: 1.630 €.
+      es: 1.630 €.
+    - id: B
+      ca: 727,27 €.
+      es: 727,27 €.
+    - id: C
+      ca: -727,27 €.
+      es: -727,27 €.
+    - id: D
+      ca: 5.727,27 €.
+      es: 5.727,27 €.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: VAN = -5.000 + 3.000/(1,1) + 3.630/(1,1)^2 = -5.000 + 2.727,27 + 3.000 =
+      727,27 €. L'opció A oblida descomptar els fluxos; la D no resta el
+      desemborsament inicial.
+    es: VAN = -5.000 + 3.000/(1,1) + 3.630/(1,1)^2 = -5.000 + 2.727,27 + 3.000 =
+      727,27 €. La opción A olvida descontar los flujos; la D no resta el
+      desembolso inicial.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.investment
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un projecte té un desemborsament inicial de 2.000 € i genera fluxos nets de
+      1.100 € el primer any i 1.210 € el segon any. Quina és la seva TIR?
+    es: Un proyecto tiene un desembolso inicial de 2.000 € y genera flujos netos de
+      1.100 € el primer año y 1.210 € el segundo año. ¿Cuál es su TIR?
+  options:
+    - id: A
+      ca: 5 %.
+      es: 5 %.
+    - id: B
+      ca: 10 %.
+      es: 10 %.
+    - id: C
+      ca: 15 %.
+      es: 15 %.
+    - id: D
+      ca: 20 %.
+      es: 20 %.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La TIR és el tipus r que fa VAN = 0: 2.000 = 1.100/(1+r) + 1.210/(1+r)^2.
+      Amb r = 10 %: 1.100/1,1 + 1.210/1,21 = 1.000 + 1.000 = 2.000. Per tant TIR
+      = 10 %."
+    es: "La TIR es el tipo r que hace VAN = 0: 2.000 = 1.100/(1+r) + 1.210/(1+r)^2.
+      Con r = 10 %: 1.100/1,1 + 1.210/1,21 = 1.000 + 1.000 = 2.000. Por tanto
+      TIR = 10 %."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.investment
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quin és el principal inconvenient del criteri del pay-back (període de
+      recuperació) com a mètode de selecció d'inversions?
+    es: ¿Cuál es el principal inconveniente del criterio del pay-back (plazo de
+      recuperación) como método de selección de inversiones?
+  options:
+    - id: A
+      ca: Ignora els fluxos de caixa posteriors al moment de la recuperació i, en la
+        seva versió simple, no té en compte el valor del diner en el temps.
+      es: Ignora los flujos de caja posteriores al momento de la recuperación y, en su
+        versión simple, no tiene en cuenta el valor del dinero en el tiempo.
+    - id: B
+      ca: Exigeix conèixer el tipus de descompte, cosa que sovint es desconeix.
+      es: Exige conocer el tipo de descuento, que a menudo se desconoce.
+    - id: C
+      ca: Només es pot aplicar a projectes amb fluxos de caixa negatius.
+      es: Solo puede aplicarse a proyectos con flujos de caja negativos.
+    - id: D
+      ca: Dona sempre el mateix resultat de selecció que el VAN i la TIR.
+      es: Da siempre el mismo resultado de selección que el VAN y la TIR.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El pay-back prioritza la liquiditat i mesura el temps de recuperació, però
+      ignora tots els fluxos generats després de recuperar la inversió i, en la
+      seva versió simple, no descompta els fluxos (no considera el valor del
+      diner en el temps). Justament per no exigir tipus de descompte és fàcil
+      d'aplicar (B és fals).
+    es: El pay-back prioriza la liquidez y mide el tiempo de recuperación, pero
+      ignora todos los flujos generados tras recuperar la inversión y, en su
+      versión simple, no descuenta los flujos (no considera el valor del dinero
+      en el tiempo). Precisamente por no exigir tipo de descuento es fácil de
+      aplicar (B es falso).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.finance.investment
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Un projecte exigeix un desemborsament inicial de 12.000 € i genera fluxos
+      nets de caixa de 4.000 € el primer any, 5.000 € el segon i 6.000 € el
+      tercer. Quin és el període de recuperació (pay-back)?
+    es: Un proyecto exige un desembolso inicial de 12.000 € y genera flujos netos de
+      caja de 4.000 € el primer año, 5.000 € el segundo y 6.000 € el tercero.
+      ¿Cuál es el plazo de recuperación (pay-back)?
+  options:
+    - id: A
+      ca: 2 anys.
+      es: 2 años.
+    - id: B
+      ca: 2,5 anys.
+      es: 2,5 años.
+    - id: C
+      ca: 3 anys.
+      es: 3 años.
+    - id: D
+      ca: 2,25 anys.
+      es: 2,25 años.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Fluxos acumulats: any 1 = 4.000; any 2 = 9.000; falten 3.000 per arribar
+      als 12.000. Durant l'any 3 entren 6.000, així que cal 3.000/6.000 = 0,5
+      anys. Pay-back = 2 + 0,5 = 2,5 anys."
+    es: "Flujos acumulados: año 1 = 4.000; año 2 = 9.000; faltan 3.000 para llegar a
+      12.000. Durante el año 3 entran 6.000, por lo que se necesita 3.000/6.000
+      = 0,5 años. Pay-back = 2 + 0,5 = 2,5 años."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.balance
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Una empresa presenta un actiu total de 150.000 € i un passiu total
+      (exigible) de 90.000 €. Aplicant l'equació fonamental del patrimoni, quin
+      és el valor del patrimoni net?
+    es: Una empresa presenta un activo total de 150.000 € y un pasivo total
+      (exigible) de 90.000 €. Aplicando la ecuación fundamental del patrimonio,
+      ¿cuál es el valor del patrimonio neto?
+  options:
+    - id: A
+      ca: 60.000 €
+      es: 60.000 €
+    - id: B
+      ca: 240.000 €
+      es: 240.000 €
+    - id: C
+      ca: 90.000 €
+      es: 90.000 €
+    - id: D
+      ca: -60.000 €
+      es: -60.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'equació fonamental és Actiu = Patrimoni net + Passiu, d'on Patrimoni net =
+      Actiu - Passiu = 150.000 - 90.000 = 60.000 €. L'opció 240.000 suma actiu i
+      passiu; 90.000 confon el passiu amb el net; -60.000 inverteix el signe de
+      la resta.
+    es: La ecuación fundamental es Activo = Patrimonio neto + Pasivo, de donde
+      Patrimonio neto = Activo - Pasivo = 150.000 - 90.000 = 60.000 €. La opción
+      240.000 suma activo y pasivo; 90.000 confunde el pasivo con el neto;
+      -60.000 invierte el signo de la resta.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.balance
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Quin dels elements patrimonials següents s'ha de classificar dins l'actiu no
+      corrent del balanç de situació?
+    es: ¿Cuál de los siguientes elementos patrimoniales debe clasificarse dentro del
+      activo no corriente del balance de situación?
+  options:
+    - id: A
+      ca: Clients (deutes de clients a curt termini)
+      es: Clientes (deudas de clientes a corto plazo)
+    - id: B
+      ca: Existències de mercaderies
+      es: Existencias de mercaderías
+    - id: C
+      ca: Maquinària
+      es: Maquinaria
+    - id: D
+      ca: Proveïdors
+      es: Proveedores
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: La maquinària és immobilitzat material, un bé destinat a romandre a
+      l'empresa més d'un exercici, per tant actiu no corrent. Clients i
+      existències són actiu corrent (es converteixen en liquiditat dins l'any) i
+      proveïdors és passiu corrent (deute a curt termini).
+    es: La maquinaria es inmovilizado material, un bien destinado a permanecer en la
+      empresa más de un ejercicio, por tanto activo no corriente. Clientes y
+      existencias son activo corriente (se convierten en liquidez dentro del
+      año) y proveedores es pasivo corriente (deuda a corto plazo).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.balance
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "Una empresa disposa dels elements següents (en €): Construccions 200.000;
+      Mercaderies 30.000; Clients 20.000; Tresoreria 10.000; Préstec a llarg
+      termini 80.000; Proveïdors 25.000. Quin és el seu patrimoni net?"
+    es: "Una empresa dispone de los siguientes elementos (en €): Construcciones
+      200.000; Mercaderías 30.000; Clientes 20.000; Tesorería 10.000; Préstamo a
+      largo plazo 80.000; Proveedores 25.000. ¿Cuál es su patrimonio neto?"
+  options:
+    - id: A
+      ca: 155.000 €
+      es: 155.000 €
+    - id: B
+      ca: 365.000 €
+      es: 365.000 €
+    - id: C
+      ca: 105.000 €
+      es: 105.000 €
+    - id: D
+      ca: 260.000 €
+      es: 260.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Actiu total = 200.000 + 30.000 + 20.000 + 10.000 = 260.000 €. Passiu
+      (exigible) = 80.000 + 25.000 = 105.000 €. Patrimoni net = Actiu - Passiu =
+      260.000 - 105.000 = 155.000 €. L'opció 365.000 suma tots els elements;
+      105.000 és només el passiu; 260.000 és només l'actiu total.
+    es: Activo total = 200.000 + 30.000 + 20.000 + 10.000 = 260.000 €. Pasivo
+      (exigible) = 80.000 + 25.000 = 105.000 €. Patrimonio neto = Activo -
+      Pasivo = 260.000 - 105.000 = 155.000 €. La opción 365.000 suma todos los
+      elementos; 105.000 es solo el pasivo; 260.000 es solo el activo total.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.balance
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: El balanç d'una empresa mostra un actiu corrent de 80.000 € i un passiu
+      corrent de 50.000 €. Quin és el fons de maniobra (capital corrent)?
+    es: El balance de una empresa muestra un activo corriente de 80.000 € y un
+      pasivo corriente de 50.000 €. ¿Cuál es el fondo de maniobra (capital
+      corriente)?
+  options:
+    - id: A
+      ca: 30.000 €
+      es: 30.000 €
+    - id: B
+      ca: -30.000 €
+      es: -30.000 €
+    - id: C
+      ca: 130.000 €
+      es: 130.000 €
+    - id: D
+      ca: 1,6
+      es: 1,6
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Fons de maniobra = Actiu corrent - Passiu corrent = 80.000 - 50.000 = 30.000
+      €. En ser positiu, part de l'actiu corrent es finança amb recursos
+      permanents, senyal d'equilibri financer. L'opció -30.000 inverteix la
+      resta; 130.000 suma en lloc de restar; 1,6 és la ràtio de liquiditat
+      (80.000/50.000), no el fons de maniobra.
+    es: Fondo de maniobra = Activo corriente - Pasivo corriente = 80.000 - 50.000 =
+      30.000 €. Al ser positivo, parte del activo corriente se financia con
+      recursos permanentes, señal de equilibrio financiero. La opción -30.000
+      invierte la resta; 130.000 suma en lugar de restar; 1,6 es el ratio de
+      liquidez (80.000/50.000), no el fondo de maniobra.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.balance
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: "D'un balanç es coneixen aquestes masses (en €): actiu no corrent 120.000;
+      patrimoni net 90.000; passiu no corrent 50.000. Calcula el fons de
+      maniobra a partir de l'estructura de finançament."
+    es: "De un balance se conocen estas masas (en €): activo no corriente 120.000;
+      patrimonio neto 90.000; pasivo no corriente 50.000. Calcula el fondo de
+      maniobra a partir de la estructura de financiación."
+  options:
+    - id: A
+      ca: 20.000 €
+      es: 20.000 €
+    - id: B
+      ca: -20.000 €
+      es: -20.000 €
+    - id: C
+      ca: 140.000 €
+      es: 140.000 €
+    - id: D
+      ca: 30.000 €
+      es: 30.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El fons de maniobra també és Recursos permanents - Actiu no corrent =
+      (Patrimoni net + Passiu no corrent) - Actiu no corrent = (90.000 + 50.000)
+      - 120.000 = 140.000 - 120.000 = 20.000 €. L'opció -20.000 inverteix la
+      resta; 140.000 oblida restar l'actiu no corrent; 30.000 confon amb (ANC -
+      PN).
+    es: El fondo de maniobra también es Recursos permanentes - Activo no corriente =
+      (Patrimonio neto + Pasivo no corriente) - Activo no corriente = (90.000 +
+      50.000) - 120.000 = 140.000 - 120.000 = 20.000 €. La opción -20.000
+      invierte la resta; 140.000 olvida restar el activo no corriente; 30.000
+      confunde con (ANC - PN).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.balance
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Una empresa paga un deute amb un proveïdor de 5.000 € mitjançant una
+      transferència des del compte corrent bancari. Quin efecte té aquesta
+      operació sobre el fons de maniobra?
+    es: Una empresa paga una deuda con un proveedor de 5.000 € mediante una
+      transferencia desde la cuenta corriente bancaria. ¿Qué efecto tiene esta
+      operación sobre el fondo de maniobra?
+  options:
+    - id: A
+      ca: "No varia: disminueixen per igual l'actiu corrent i el passiu corrent."
+      es: "No varía: disminuyen por igual el activo corriente y el pasivo corriente."
+    - id: B
+      ca: Augmenta en 5.000 € perquè es cancel·la un deute.
+      es: Aumenta en 5.000 € porque se cancela una deuda.
+    - id: C
+      ca: Disminueix en 5.000 € perquè surt diner de tresoreria.
+      es: Disminuye en 5.000 € porque sale dinero de tesorería.
+    - id: D
+      ca: Disminueix en 10.000 € perquè baixen tresoreria i proveïdors.
+      es: Disminuye en 10.000 € porque bajan tesorería y proveedores.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El fons de maniobra = Actiu corrent - Passiu corrent. El pagament redueix
+      la tresoreria (actiu corrent) en 5.000 € i alhora cancel·la el deute amb
+      proveïdors (passiu corrent) en 5.000 €. Com que ambdues masses corrents
+      baixen la mateixa quantitat, la diferència no canvia: el fons de maniobra
+      queda igual. Els errors habituals només compten una de les dues variacions
+      (B i C) o les sumen en valor absolut (D)."
+    es: "El fondo de maniobra = Activo corriente - Pasivo corriente. El pago reduce
+      la tesorería (activo corriente) en 5.000 € y a la vez cancela la deuda con
+      proveedores (pasivo corriente) en 5.000 €. Como ambas masas corrientes
+      bajan la misma cantidad, la diferencia no cambia: el fondo de maniobra
+      permanece igual. Los errores habituales solo cuentan una de las dos
+      variaciones (B y C) o las suman en valor absoluto (D)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.statements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: En el balanç de situació d'una empresa, l'actiu total és de 500.000 € i el
+      passiu total (exigible) és de 320.000 €. Quin és l'import del patrimoni
+      net?
+    es: En el balance de situación de una empresa, el activo total es de 500.000 € y
+      el pasivo total (exigible) es de 320.000 €. ¿Cuál es el importe del
+      patrimonio neto?
+  options:
+    - id: A
+      ca: 180.000 €
+      es: 180.000 €
+    - id: B
+      ca: 820.000 €
+      es: 820.000 €
+    - id: C
+      ca: 320.000 €
+      es: 320.000 €
+    - id: D
+      ca: 500.000 €
+      es: 500.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'equació fonamental del balanç és Actiu = Patrimoni net + Passiu. Aïllant:
+      Patrimoni net = Actiu - Passiu = 500.000 - 320.000 = 180.000 €. L'error
+      habitual és sumar (820.000 €) en lloc de restar."
+    es: "La ecuación fundamental del balance es Activo = Patrimonio neto + Pasivo.
+      Despejando: Patrimonio neto = Activo - Pasivo = 500.000 - 320.000 =
+      180.000 €. El error habitual es sumar (820.000 €) en lugar de restar."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.statements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Durant l'exercici, una empresa ha registrat uns ingressos totals de 850.000
+      € i uns despeses totals de 790.000 €. Quin és el resultat de l'exercici?
+    es: Durante el ejercicio, una empresa ha registrado unos ingresos totales de
+      850.000 € y unos gastos totales de 790.000 €. ¿Cuál es el resultado del
+      ejercicio?
+  options:
+    - id: A
+      ca: Benefici de 60.000 €
+      es: Beneficio de 60.000 €
+    - id: B
+      ca: Pèrdua de 60.000 €
+      es: Pérdida de 60.000 €
+    - id: C
+      ca: Benefici de 1.640.000 €
+      es: Beneficio de 1.640.000 €
+    - id: D
+      ca: Benefici de 850.000 €
+      es: Beneficio de 850.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El resultat de l'exercici és la diferència entre ingressos i despeses:
+      850.000 - 790.000 = 60.000 €. Com que és positiu, hi ha benefici. Sumar
+      els dos imports (1.640.000 €) o invertir el signe són errors freqüents."
+    es: "El resultado del ejercicio es la diferencia entre ingresos y gastos:
+      850.000 - 790.000 = 60.000 €. Al ser positivo, hay beneficio. Sumar ambos
+      importes (1.640.000 €) o invertir el signo son errores frecuentes."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.statements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "Els ingressos i despeses financers d'una empresa han estat: ingressos
+      financers 5.000 € i despeses financeres (interessos de deutes) 18.000 €.
+      Quin és el resultat financer?"
+    es: "Los ingresos y gastos financieros de una empresa han sido: ingresos
+      financieros 5.000 € y gastos financieros (intereses de deudas) 18.000 €.
+      ¿Cuál es el resultado financiero?"
+  options:
+    - id: A
+      ca: -13.000 €
+      es: -13.000 €
+    - id: B
+      ca: +13.000 €
+      es: +13.000 €
+    - id: C
+      ca: -23.000 €
+      es: -23.000 €
+    - id: D
+      ca: -18.000 €
+      es: -18.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El resultat financer = ingressos financers - despeses financeres = 5.000 -
+      18.000 = -13.000 €. És negatiu perquè les despeses superen els ingressos.
+      Confondre el signe (+13.000) o sumar (-23.000) són errors típics.
+    es: El resultado financiero = ingresos financieros - gastos financieros = 5.000
+      - 18.000 = -13.000 €. Es negativo porque los gastos superan a los
+      ingresos. Confundir el signo (+13.000) o sumar (-23.000) son errores
+      típicos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.statements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "Una empresa presenta les següents partides d'explotació: import net de la
+      xifra de negocis 400.000 €, aprovisionaments 180.000 €, despeses de
+      personal 120.000 €, amortització de l'immobilitzat 30.000 € i altres
+      despeses d'explotació 20.000 €. Quin és el resultat d'explotació (BAII)?"
+    es: "Una empresa presenta las siguientes partidas de explotación: importe neto
+      de la cifra de negocios 400.000 €, aprovisionamientos 180.000 €, gastos de
+      personal 120.000 €, amortización del inmovilizado 30.000 € y otros gastos
+      de explotación 20.000 €. ¿Cuál es el resultado de explotación (BAII)?"
+  options:
+    - id: A
+      ca: 50.000 €
+      es: 50.000 €
+    - id: B
+      ca: 80.000 €
+      es: 80.000 €
+    - id: C
+      ca: 220.000 €
+      es: 220.000 €
+    - id: D
+      ca: 20.000 €
+      es: 20.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El resultat d'explotació resta totes les despeses d'explotació dels
+      ingressos d'explotació: 400.000 - 180.000 - 120.000 - 30.000 - 20.000 =
+      50.000 €. Oblidar l'amortització dona 80.000 € (error freqüent); restar
+      només els aprovisionaments (marge brut) dona 220.000 €."
+    es: "El resultado de explotación resta todos los gastos de explotación de los
+      ingresos de explotación: 400.000 - 180.000 - 120.000 - 30.000 - 20.000 =
+      50.000 €. Olvidar la amortización da 80.000 € (error frecuente); restar
+      solo los aprovisionamientos (margen bruto) da 220.000 €."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.statements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "Una empresa presenta un balanç amb: actiu no corrent 300.000 €, actiu
+      corrent 150.000 €, patrimoni net 200.000 €, passiu no corrent 180.000 € i
+      passiu corrent 70.000 €. Quin és el fons de maniobra?"
+    es: "Una empresa presenta un balance con: activo no corriente 300.000 €, activo
+      corriente 150.000 €, patrimonio neto 200.000 €, pasivo no corriente
+      180.000 € y pasivo corriente 70.000 €. ¿Cuál es el fondo de maniobra?"
+  options:
+    - id: A
+      ca: 80.000 €
+      es: 80.000 €
+    - id: B
+      ca: -80.000 €
+      es: -80.000 €
+    - id: C
+      ca: -100.000 €
+      es: -100.000 €
+    - id: D
+      ca: 380.000 €
+      es: 380.000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Fons de maniobra = Actiu corrent - Passiu corrent = 150.000 - 70.000 =
+      80.000 €. Es pot comprovar per l'altra via: (Patrimoni net + Passiu no
+      corrent) - Actiu no corrent = 380.000 - 300.000 = 80.000 €. Invertir la
+      resta dona -80.000 €; restar tot el passiu de l'actiu corrent dona
+      -100.000 €; 380.000 € són només els recursos permanents."
+    es: "Fondo de maniobra = Activo corriente - Pasivo corriente = 150.000 - 70.000
+      = 80.000 €. Se comprueba por la otra vía: (Patrimonio neto + Pasivo no
+      corriente) - Activo no corriente = 380.000 - 300.000 = 80.000 €. Invertir
+      la resta da -80.000 €; restar todo el pasivo del activo corriente da
+      -100.000 €; 380.000 € son solo los recursos permanentes."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.statements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Una empresa té un resultat d'explotació (BAII) de 50.000 € i un resultat
+      financer de -13.000 €. El tipus de l'impost de societats és del 25 %. Quin
+      és el resultat de l'exercici (després d'impostos)?
+    es: Una empresa tiene un resultado de explotación (BAII) de 50.000 € y un
+      resultado financiero de -13.000 €. El tipo del impuesto de sociedades es
+      del 25 %. ¿Cuál es el resultado del ejercicio (después de impuestos)?
+  options:
+    - id: A
+      ca: 27.750 €
+      es: 27.750 €
+    - id: B
+      ca: 37.000 €
+      es: 37.000 €
+    - id: C
+      ca: 37.500 €
+      es: 37.500 €
+    - id: D
+      ca: 47.250 €
+      es: 47.250 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Primer, el resultat abans d'impostos (BAI) = BAII + resultat financer =
+      50.000 + (-13.000) = 37.000 €. L'impost = 25 % de 37.000 = 9.250 €.
+      Resultat de l'exercici = 37.000 - 9.250 = 27.750 €. No aplicar l'impost
+      dona 37.000 € (B); ignorar el resultat financer dona 50.000 × 0,75 =
+      37.500 € (C); sumar amb signe erroni el resultat financer dona 47.250 €
+      (D).
+    es: Primero, el resultado antes de impuestos (BAI) = BAII + resultado financiero
+      = 50.000 + (-13.000) = 37.000 €. El impuesto = 25 % de 37.000 = 9.250 €.
+      Resultado del ejercicio = 37.000 - 9.250 = 27.750 €. No aplicar el
+      impuesto da 37.000 € (B); ignorar el resultado financiero da 50.000 × 0,75
+      = 37.500 € (C); sumar con signo erróneo el resultado financiero da 47.250
+      € (D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Una empresa presenta un actiu corrent de 90.000 € i un passiu corrent de
+      50.000 €. Quin és el valor de la ràtio de liquiditat (solvència a curt
+      termini)?
+    es: Una empresa presenta un activo corriente de 90.000 € y un pasivo corriente
+      de 50.000 €. ¿Cuál es el valor de la ratio de liquidez (solvencia a corto
+      plazo)?
+  options:
+    - id: A
+      ca: 1,8
+      es: 1,8
+    - id: B
+      ca: 0,56
+      es: 0,56
+    - id: C
+      ca: 40.000 €
+      es: 40.000 €
+    - id: D
+      ca: 1,4
+      es: 1,4
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La ràtio de liquiditat = Actiu corrent / Passiu corrent = 90.000 / 50.000 =
+      1,8. L'opció 0,56 inverteix la divisió (50.000/90.000); 40.000 € és el
+      fons de maniobra (diferència, no ràtio); 1,4 no correspon a cap càlcul
+      correcte.
+    es: La ratio de liquidez = Activo corriente / Pasivo corriente = 90.000 / 50.000
+      = 1,8. La opción 0,56 invierte la división (50.000/90.000); 40.000 € es el
+      fondo de maniobra (diferencia, no ratio); 1,4 no corresponde a ningún
+      cálculo correcto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: El balanç d'una empresa mostra un patrimoni net de 150.000 € i un passiu
+      exigible total de 90.000 €. Calcula la ràtio d'endeutament total, definida
+      com Passiu exigible / (Patrimoni net + Passiu exigible).
+    es: El balance de una empresa muestra un patrimonio neto de 150.000 € y un
+      pasivo exigible total de 90.000 €. Calcula la ratio de endeudamiento
+      total, definida como Pasivo exigible / (Patrimonio neto + Pasivo
+      exigible).
+  options:
+    - id: A
+      ca: 0,375
+      es: 0,375
+    - id: B
+      ca: 0,60
+      es: 0,60
+    - id: C
+      ca: 0,625
+      es: 0,625
+    - id: D
+      ca: 2,67
+      es: 2,67
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El total del finançament (net + passiu) = 150.000 + 90.000 = 240.000 €.
+      Endeutament = 90.000 / 240.000 = 0,375. L'error 0,60 divideix Passiu/Net
+      (90.000/150.000); 0,625 és la ràtio d'autonomia Net/Total
+      (150.000/240.000); 2,67 és Total/Passiu (ràtio de garantia).
+    es: El total de financiación (neto + pasivo) = 150.000 + 90.000 = 240.000 €.
+      Endeudamiento = 90.000 / 240.000 = 0,375. El error 0,60 divide Pasivo/Neto
+      (90.000/150.000); 0,625 es la ratio de autonomía Neto/Total
+      (150.000/240.000); 2,67 es Total/Pasivo (ratio de garantía).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Una empresa té un patrimoni net de 150.000 €, un passiu exigible de 50.000 €
+      (per tant, un actiu total de 200.000 €) i ha obtingut un benefici net de
+      30.000 €. Quina és la rendibilitat financera (ROE)?
+    es: Una empresa tiene un patrimonio neto de 150.000 €, un pasivo exigible de
+      50.000 € (por tanto, un activo total de 200.000 €) y ha obtenido un
+      beneficio neto de 30.000 €. ¿Cuál es la rentabilidad financiera (ROE)?
+  options:
+    - id: A
+      ca: 20 %
+      es: 20 %
+    - id: B
+      ca: 15 %
+      es: 15 %
+    - id: C
+      ca: 60 %
+      es: 60 %
+    - id: D
+      ca: 10 %
+      es: 10 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: ROE = Benefici net / Patrimoni net × 100 = 30.000 / 150.000 × 100 = 20 %.
+      L'error 15 % divideix pel total de l'actiu (30.000/200.000), que és la
+      rendibilitat econòmica amb benefici net; 60 % divideix pel passiu
+      (30.000/50.000); 10 % no correspon a cap base correcta.
+    es: ROE = Beneficio neto / Patrimonio neto × 100 = 30.000 / 150.000 × 100 = 20
+      %. El error 15 % divide por el total del activo (30.000/200.000); 60 %
+      divide por el pasivo (30.000/50.000); 10 % no corresponde a ninguna base
+      correcta.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Una empresa presenta un BAII (benefici abans d'interessos i impostos) de
+      44.000 €, un benefici net de 33.000 €, un actiu total de 220.000 € i un
+      patrimoni net de 120.000 €. Quina és la rendibilitat econòmica (ROA)?
+    es: Una empresa presenta un BAII (beneficio antes de intereses e impuestos) de
+      44.000 €, un beneficio neto de 33.000 €, un activo total de 220.000 € y un
+      patrimonio neto de 120.000 €. ¿Cuál es la rentabilidad económica (ROA)?
+  options:
+    - id: A
+      ca: 20 %
+      es: 20 %
+    - id: B
+      ca: 15 %
+      es: 15 %
+    - id: C
+      ca: 36,67 %
+      es: 36,67 %
+    - id: D
+      ca: 27,5 %
+      es: 27,5 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La rendibilitat econòmica = BAII / Actiu total × 100 = 44.000 / 220.000 ×
+      100 = 20 %. L'error 15 % fa servir el benefici net en lloc del BAII
+      (33.000/220.000); 36,67 % divideix el BAII pel patrimoni net
+      (44.000/120.000), que barreja ROA i ROE; 27,5 % divideix el BAII pel net
+      més un error de base.
+    es: La rentabilidad económica = BAII / Activo total × 100 = 44.000 / 220.000 ×
+      100 = 20 %. El error 15 % usa el beneficio neto en lugar del BAII
+      (33.000/220.000); 36,67 % divide el BAII por el patrimonio neto
+      (44.000/120.000), mezclando ROA y ROE; 27,5 % procede de una base
+      incorrecta.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: L'actiu corrent d'una empresa és de 120.000 €, dels quals 45.000 € són
+      existències. El passiu corrent és de 60.000 €. Calcula la ràtio de
+      tresoreria (prova de l'àcid o acid test).
+    es: El activo corriente de una empresa es de 120.000 €, de los cuales 45.000 €
+      son existencias. El pasivo corriente es de 60.000 €. Calcula la ratio de
+      tesorería (prueba del ácido o acid test).
+  options:
+    - id: A
+      ca: 1,25
+      es: 1,25
+    - id: B
+      ca: 2,0
+      es: 2,0
+    - id: C
+      ca: 0,75
+      es: 0,75
+    - id: D
+      ca: 0,50
+      es: 0,50
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Acid test = (Actiu corrent − Existències) / Passiu corrent = (120.000 −
+      45.000) / 60.000 = 75.000 / 60.000 = 1,25. L'error 2,0 no resta les
+      existències (120.000/60.000, que és la liquiditat general); 0,75 divideix
+      només les existències (45.000/60.000); 0,50 confon numerador i
+      denominador.
+    es: Acid test = (Activo corriente − Existencias) / Pasivo corriente = (120.000 −
+      45.000) / 60.000 = 75.000 / 60.000 = 1,25. El error 2,0 no resta las
+      existencias (120.000/60.000, que es la liquidez general); 0,75 divide solo
+      las existencias (45.000/60.000); 0,50 confunde numerador y denominador.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: eco-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: economics
+  type: multiple_choice
+  skills:
+    - economics.accounting.ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Una empresa té un actiu total (real) de 500.000 € i un passiu exigible total
+      de 400.000 €. Calcula la ràtio de garantia (Actiu total / Passiu exigible)
+      i interpreta-la correctament.
+    es: Una empresa tiene un activo total (real) de 500.000 € y un pasivo exigible
+      total de 400.000 €. Calcula la ratio de garantía (Activo total / Pasivo
+      exigible) e interprétala correctamente.
+  options:
+    - id: A
+      ca: "1,25: per cada euro de deute té 1,25 € d'actiu; és solvent (>1), però amb
+        marge escàs."
+      es: "1,25: por cada euro de deuda tiene 1,25 € de activo; es solvente (>1), pero
+        con margen escaso."
+    - id: B
+      ca: "0,80: està tècnicament en fallida perquè el resultat és inferior a 1."
+      es: "0,80: está técnicamente en quiebra porque el resultado es inferior a 1."
+    - id: C
+      ca: "1,25: està en fallida tècnica perquè la ràtio hauria de superar 2."
+      es: "1,25: está en quiebra técnica porque la ratio debería superar 2."
+    - id: D
+      ca: "0,25: l'empresa només pot cobrir el 25 % dels seus deutes."
+      es: "0,25: la empresa solo puede cubrir el 25 % de sus deudas."
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Ràtio de garantia = Actiu total / Passiu exigible = 500.000 / 400.000 =
+      1,25. Com que és superior a 1, l'empresa NO està en fallida tècnica (la
+      fallida es dóna quan és <1), però un valor tan proper a 1 (l'ideal se
+      situa entre 1,5 i 2,5) indica poca garantia davant els creditors. L'opció
+      0,80 inverteix la divisió; 0,25 resta i divideix erròniament; l'opció C
+      interpreta malament el llindar de fallida.
+    es: Ratio de garantía = Activo total / Pasivo exigible = 500.000 / 400.000 =
+      1,25. Como es superior a 1, la empresa NO está en quiebra técnica (la
+      quiebra se da cuando es <1), pero un valor tan cercano a 1 (lo ideal está
+      entre 1,5 y 2,5) indica poca garantía frente a los acreedores. La opción
+      0,80 invierte la división; 0,25 resta y divide erróneamente; la opción C
+      interpreta mal el umbral de quiebra.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

@@ -30,6 +30,10 @@ const ROOT_CFG: Record<string, { subject: string; prefix: string; dir: string }>
   physics: { subject: 'physics', prefix: 'fis-g', dir: 'physics' },
   chemistry: { subject: 'chemistry', prefix: 'qui-g', dir: 'chemistry' },
   mathematics: { subject: 'mathematics-ii', prefix: 'mat-g', dir: 'mathematics-ii' },
+  matccss: { subject: 'mathematics-ccss', prefix: 'matccss-g', dir: 'mathematics-ccss' },
+  biology: { subject: 'biology', prefix: 'bio-g', dir: 'biology' },
+  economics: { subject: 'economics', prefix: 'eco-g', dir: 'economics' },
+  history: { subject: 'history', prefix: 'his-g', dir: 'history' },
 };
 
 const here = path.dirname(fileURLToPath(import.meta.url));

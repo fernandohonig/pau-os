@@ -1,0 +1,4777 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: his-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.old_regime_crisis
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: L'any 1808, mitjançant les anomenades abdicacions de Baiona, Carles IV i
+      Ferran VII van cedir els drets a la corona espanyola. A favor de qui i qui
+      va acabar ocupant el tron?
+    es: En 1808, mediante las llamadas abdicaciones de Bayona, Carlos IV y Fernando
+      VII cedieron los derechos a la corona española. ¿A favor de quién y quién
+      acabó ocupando el trono?
+  options:
+    - id: A
+      ca: A favor de Napoleó Bonaparte, que va imposar com a rei el seu germà Josep I
+        (Josep Bonaparte).
+      es: A favor de Napoleón Bonaparte, que impuso como rey a su hermano José I (José
+        Bonaparte).
+    - id: B
+      ca: A favor del duc d'Angulema, que va governar com a regent fins al 1814.
+      es: A favor del duque de Angulema, que gobernó como regente hasta 1814.
+    - id: C
+      ca: A favor de Manuel Godoy, que es va proclamar rei amb el suport de les Corts.
+      es: A favor de Manuel Godoy, que se proclamó rey con el apoyo de las Cortes.
+    - id: D
+      ca: A favor de la Junta Suprema Central, que va assumir la sobirania nacional.
+      es: A favor de la Junta Suprema Central, que asumió la soberanía nacional.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A Baiona (1808) Napoleó va forçar Carles IV i Ferran VII a renunciar als
+      seus drets dinàstics a favor seu; tot seguit va atorgar la corona al seu
+      germà Josep Bonaparte (Josep I). Godoy ja havia caigut amb el motí
+      d'Aranjuez; el duc d'Angulema comandà els Cent Mil Fills de Sant Lluís el
+      1823; la Junta Central es formà com a resistència patriòtica, no per
+      cessió reial.
+    es: En Bayona (1808) Napoleón forzó a Carlos IV y Fernando VII a renunciar a sus
+      derechos dinásticos en su favor; después entregó la corona a su hermano
+      José Bonaparte (José I). Godoy ya había caído con el motín de Aranjuez; el
+      duque de Angulema mandó los Cien Mil Hijos de San Luis en 1823; la Junta
+      Central se formó como resistencia patriótica, no por cesión real.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.old_regime_crisis
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: La Constitució de 1812 ("La Pepa"), aprovada per les Corts de Cadis, es
+      caracteritzava per un principi bàsic i per la seva posició en matèria
+      religiosa. Quina afirmació és correcta?
+    es: La Constitución de 1812 ("La Pepa"), aprobada por las Cortes de Cádiz, se
+      caracterizaba por un principio básico y por su posición en materia
+      religiosa. ¿Qué afirmación es correcta?
+  options:
+    - id: A
+      ca: Proclamava la sobirania nacional i la divisió de poders, però establia la
+        religió catòlica com a única de la nació.
+      es: Proclamaba la soberanía nacional y la división de poderes, pero establecía
+        la religión católica como única de la nación.
+    - id: B
+      ca: Proclamava la sobirania nacional i, de manera pionera, la llibertat de
+        cultes i la separació Església-Estat.
+      es: Proclamaba la soberanía nacional y, de manera pionera, la libertad de cultos
+        y la separación Iglesia-Estado.
+    - id: C
+      ca: Mantenia la sobirania compartida entre el rei i les Corts i la
+        confessionalitat catòlica.
+      es: Mantenía la soberanía compartida entre el rey y las Cortes y la
+        confesionalidad católica.
+    - id: D
+      ca: Establia la sobirania reial absoluta però reconeixia la llibertat de premsa
+        i de cultes.
+      es: Establecía la soberanía real absoluta pero reconocía la libertad de prensa y
+        de cultos.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La Constitució de 1812 consagrava la sobirania nacional (el poder resideix
+      en la nació, no en el rei) i la divisió de poders, però era confessional:
+      reconeixia la religió catòlica com a única i verdadera de la nació, sense
+      tolerància d'altres cultes. Per això B i D són falses. La sobirania no era
+      compartida (C), sinó nacional."
+    es: "La Constitución de 1812 consagraba la soberanía nacional (el poder reside
+      en la nación, no en el rey) y la división de poderes, pero era
+      confesional: reconocía la religión católica como única y verdadera de la
+      nación, sin tolerancia de otros cultos. Por eso B y D son falsas. La
+      soberanía no era compartida (C), sino nacional."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.old_regime_crisis
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: El Trienni Liberal (1820-1823) es va iniciar arran d'un pronunciament
+      militar. Qui el va encapçalar, on i quina conseqüència immediata va tenir
+      sobre Ferran VII?
+    es: El Trienio Liberal (1820-1823) se inició a raíz de un pronunciamiento
+      militar. ¿Quién lo encabezó, dónde y qué consecuencia inmediata tuvo sobre
+      Fernando VII?
+  options:
+    - id: A
+      ca: El coronel Rafael de Riego, a Cabezas de San Juan (Sevilla), i va obligar
+        Ferran VII a jurar la Constitució de 1812.
+      es: El coronel Rafael de Riego, en Cabezas de San Juan (Sevilla), y obligó a
+        Fernando VII a jurar la Constitución de 1812.
+    - id: B
+      ca: El general Riego, a Aranjuez, i va provocar la caiguda de Godoy i
+        l'abdicació de Carles IV.
+      es: El general Riego, en Aranjuez, y provocó la caída de Godoy y la abdicación
+        de Carlos IV.
+    - id: C
+      ca: El duc d'Angulema, a Cadis, i va restaurar l'absolutisme de Ferran VII.
+      es: El duque de Angulema, en Cádiz, y restauró el absolutismo de Fernando VII.
+    - id: D
+      ca: El general Espartero, a Vitòria, i va imposar la regència a Maria Cristina.
+      es: El general Espartero, en Vitoria, e impuso la regencia a María Cristina.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El gener de 1820 el coronel Rafael de Riego es va pronunciar a Cabezas de
+      San Juan (Sevilla). L'èxit del moviment obligà Ferran VII a jurar la
+      Constitució de 1812, iniciant el Trienni Liberal. El motí d'Aranjuez
+      (1808) és anterior i sense Riego; Angulema dirigí la repressió absolutista
+      de 1823; Espartero i Maria Cristina pertanyen al regnat posterior d'Isabel
+      II.
+    es: En enero de 1820 el coronel Rafael de Riego se pronunció en Cabezas de San
+      Juan (Sevilla). El éxito del movimiento obligó a Fernando VII a jurar la
+      Constitución de 1812, iniciando el Trienio Liberal. El motín de Aranjuez
+      (1808) es anterior y sin Riego; Angulema dirigió la represión absolutista
+      de 1823; Espartero y María Cristina pertenecen al reinado posterior de
+      Isabel II.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.old_regime_crisis
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: El 1823, els "Cent Mil Fills de Sant Lluís" van entrar a Espanya per posar
+      fi al Trienni Liberal. Quin organisme els va enviar i quin període es va
+      obrir després?
+    es: En 1823, los "Cien Mil Hijos de San Luis" entraron en España para poner fin
+      al Trienio Liberal. ¿Qué organismo los envió y qué período se abrió
+      después?
+  options:
+    - id: A
+      ca: La Santa Aliança (decisió del Congrés de Verona); es va obrir la Dècada
+        Ominosa (1823-1833).
+      es: La Santa Alianza (decisión del Congreso de Verona); se abrió la Década
+        Ominosa (1823-1833).
+    - id: B
+      ca: Les Corts de Cadis; es va restaurar la Constitució de 1812.
+      es: Las Cortes de Cádiz; se restauró la Constitución de 1812.
+    - id: C
+      ca: La Junta Suprema Central; es va iniciar la Guerra del Francès.
+      es: La Junta Suprema Central; se inició la Guerra de la Independencia.
+    - id: D
+      ca: El Regne Unit (Aliança liberal); es va consolidar el règim constitucional.
+      es: El Reino Unido (Alianza liberal); se consolidó el régimen constitucional.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Santa Aliança, en el Congrés de Verona (1822), acordà intervenir per
+      restaurar l'absolutisme de Ferran VII. L'exèrcit francès dels Cent Mil
+      Fills de Sant Lluís, comandat pel duc d'Angulema, entrà el 1823 i acabà
+      amb el Trienni, obrint la Dècada Ominosa (1823-1833). El Regne Unit era
+      contrari a la intervenció; les altres institucions són d'etapes diferents.
+    es: La Santa Alianza, en el Congreso de Verona (1822), acordó intervenir para
+      restaurar el absolutismo de Fernando VII. El ejército francés de los Cien
+      Mil Hijos de San Luis, mandado por el duque de Angulema, entró en 1823 y
+      acabó con el Trienio, abriendo la Década Ominosa (1823-1833). El Reino
+      Unido era contrario a la intervención; las demás instituciones son de
+      etapas distintas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.old_regime_crisis
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: La crisi successòria al final del regnat de Ferran VII s'origina en la
+      Pragmàtica Sanció de 1830. Què establia i quin conflicte va desencadenar?
+    es: La crisis sucesoria al final del reinado de Fernando VII se origina en la
+      Pragmática Sanción de 1830. ¿Qué establecía y qué conflicto desencadenó?
+  options:
+    - id: A
+      ca: Derogava la Llei Sàlica i permetia regnar la seva filla Isabel, cosa que
+        enfrontà els partidaris d'Isabel amb els de l'infant Carles Maria Isidre
+        (carlins).
+      es: Derogaba la Ley Sálica y permitía reinar a su hija Isabel, lo que enfrentó a
+        los partidarios de Isabel con los del infante Carlos María Isidro
+        (carlistas).
+    - id: B
+      ca: Restablia la Llei Sàlica per excloure les dones del tron, cosa que donà la
+        corona a Carles Maria Isidre.
+      es: Restablecía la Ley Sálica para excluir a las mujeres del trono, lo que dio
+        la corona a Carlos María Isidro.
+    - id: C
+      ca: Reconeixia la independència de les colònies americanes per evitar una guerra
+        dinàstica.
+      es: Reconocía la independencia de las colonias americanas para evitar una guerra
+        dinástica.
+    - id: D
+      ca: Instaurava una monarquia constitucional que atorgava la successió a les
+        Corts.
+      es: Instauraba una monarquía constitucional que otorgaba la sucesión a las
+        Cortes.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Pragmàtica Sanció (1830) derogava l'Auto Acordat de 1713 (Llei Sàlica)
+      que impedia regnar les dones, obrint el tron a Isabel, filla de Ferran
+      VII. Això deixava sense drets successoris l'infant Carles Maria Isidre,
+      germà del rei, i enfrontà isabelins (liberals) i carlins (absolutistes),
+      origen de les guerres carlines. B inverteix el sentit de la mesura; C i D
+      no tenen relació amb la successió.
+    es: La Pragmática Sanción (1830) derogaba el Auto Acordado de 1713 (Ley Sálica)
+      que impedía reinar a las mujeres, abriendo el trono a Isabel, hija de
+      Fernando VII. Ello dejaba sin derechos sucesorios al infante Carlos María
+      Isidro, hermano del rey, y enfrentó a isabelinos (liberales) y carlistas
+      (absolutistas), origen de las guerras carlistas. B invierte el sentido de
+      la medida; C y D no guardan relación con la sucesión.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.old_regime_crisis
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "El regnat de Ferran VII (1814-1833) se sol dividir en tres etapes: la
+      Restauració absolutista, el Trienni Liberal i la Dècada Ominosa.
+      Ordenant-les i calculant-ne la durada, quantes anys va durar l'etapa MÉS
+      llarga?"
+    es: "El reinado de Fernando VII (1814-1833) suele dividirse en tres etapas: la
+      Restauración absolutista, el Trienio Liberal y la Década Ominosa.
+      Ordenándolas y calculando su duración, ¿cuántos años duró la etapa MÁS
+      larga?"
+  options:
+    - id: A
+      ca: 10 anys (la Dècada Ominosa, 1823-1833).
+      es: 10 años (la Década Ominosa, 1823-1833).
+    - id: B
+      ca: 6 anys (la Restauració absolutista, 1814-1820).
+      es: 6 años (la Restauración absolutista, 1814-1820).
+    - id: C
+      ca: 3 anys (el Trienni Liberal, 1820-1823).
+      es: 3 años (el Trienio Liberal, 1820-1823).
+    - id: D
+      ca: 19 anys (tot el regnat, sense etapes diferenciades).
+      es: 19 años (todo el reinado, sin etapas diferenciadas).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Restauració absolutista: 1814-1820 = 6 anys. Trienni Liberal: 1820-1823 = 3
+      anys. Dècada Ominosa: 1823-1833 = 10 anys. L'etapa més llarga és la Dècada
+      Ominosa, amb 10 anys. La D descriu el regnat sencer (19 anys), no una
+      etapa."
+    es: "Restauración absolutista: 1814-1820 = 6 años. Trienio Liberal: 1820-1823 =
+      3 años. Década Ominosa: 1823-1833 = 10 años. La etapa más larga es la
+      Década Ominosa, con 10 años. La D describe el reinado entero (19 años), no
+      una etapa."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.liberalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: La primera Constitució espanyola, coneguda popularment com 'La Pepa' perquè
+      es va promulgar el dia de Sant Josep (19 de març), va marcar l'inici de la
+      implantació del liberalisme a Espanya. En quin any es va aprovar a les
+      Corts de Cadis?
+    es: La primera Constitución española, conocida popularmente como 'La Pepa'
+      porque se promulgó el día de San José (19 de marzo), marcó el inicio de la
+      implantación del liberalismo en España. ¿En qué año se aprobó en las
+      Cortes de Cádiz?
+  options:
+    - id: A
+      ca: "1808"
+      es: "1808"
+    - id: B
+      ca: "1812"
+      es: "1812"
+    - id: C
+      ca: "1820"
+      es: "1820"
+    - id: D
+      ca: "1837"
+      es: "1837"
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: La Constitució de Cadis es va promulgar el 19 de març de 1812 (Sant Josep,
+      d'aquí el sobrenom 'La Pepa'). El 1808 correspon a l'inici de la Guerra
+      del Francès i a l'Estatut de Baiona atorgat per Josep I; el 1820 és
+      l'inici del Trienni Liberal (quan es restaura la Constitució de 1812); i
+      el 1837 és la següent constitució liberal progressista.
+    es: La Constitución de Cádiz se promulgó el 19 de marzo de 1812 (San José, de
+      ahí el apodo 'La Pepa'). 1808 corresponde al inicio de la Guerra de la
+      Independencia y al Estatuto de Bayona otorgado por José I; 1820 es el
+      inicio del Trienio Liberal (cuando se restaura la Constitución de 1812); y
+      1837 es la siguiente constitución liberal progresista.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.liberalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Durant el regnat de Ferran VII, un pronunciament militar va obligar el rei a
+      jurar la Constitució de 1812 i va obrir un període de govern liberal. Com
+      es coneix aquest període i quins anys abraça?
+    es: Durante el reinado de Fernando VII, un pronunciamiento militar obligó al rey
+      a jurar la Constitución de 1812 y abrió un período de gobierno liberal.
+      ¿Cómo se conoce este período y qué años abarca?
+  options:
+    - id: A
+      ca: El Sexenni Absolutista (1814-1820)
+      es: El Sexenio Absolutista (1814-1820)
+    - id: B
+      ca: El Trienni Liberal (1820-1823)
+      es: El Trienio Liberal (1820-1823)
+    - id: C
+      ca: La Dècada Ominosa (1823-1833)
+      es: La Década Ominosa (1823-1833)
+    - id: D
+      ca: La Regència de Maria Cristina (1833-1840)
+      es: La Regencia de María Cristina (1833-1840)
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El Trienni Liberal (1820-1823) s'inicià amb el pronunciament del coronel
+      Rafael de Riego el gener de 1820, que forçà Ferran VII a jurar la
+      Constitució de 1812. Acabà el 1823 amb la intervenció dels Cent Mil Fills
+      de Sant Lluís. El Sexenni Absolutista (1814-1820) i la Dècada Ominosa
+      (1823-1833) són, en canvi, etapes de restauració de l'absolutisme.
+    es: El Trienio Liberal (1820-1823) se inició con el pronunciamiento del coronel
+      Rafael de Riego en enero de 1820, que forzó a Fernando VII a jurar la
+      Constitución de 1812. Terminó en 1823 con la intervención de los Cien Mil
+      Hijos de San Luis. El Sexenio Absolutista (1814-1820) y la Década Ominosa
+      (1823-1833) son, en cambio, etapas de restauración del absolutismo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.liberalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "La desamortització impulsada per Juan Álvarez Mendizábal el 1836, peça clau
+      en la consolidació de l'Estat liberal, va tenir com a objectiu principal
+      la venda en subhasta pública de:"
+    es: "La desamortización impulsada por Juan Álvarez Mendizábal en 1836, pieza
+      clave en la consolidación del Estado liberal, tuvo como objetivo principal
+      la venta en subasta pública de:"
+  options:
+    - id: A
+      ca: els béns comunals i de propis dels ajuntaments
+      es: los bienes comunales y de propios de los ayuntamientos
+    - id: B
+      ca: les terres de l'Església, sobretot del clergat regular (ordes religiosos)
+      es: las tierras de la Iglesia, sobre todo del clero regular (órdenes religiosas)
+    - id: C
+      ca: els latifundis de la noblesa titulada
+      es: los latifundios de la nobleza titulada
+    - id: D
+      ca: les propietats de la Corona i del patrimoni reial
+      es: las propiedades de la Corona y del patrimonio real
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: La desamortització de Mendizábal (1836) va nacionalitzar i vendre els béns
+      del clergat regular per finançar la guerra carlina, guanyar suports
+      burgesos i sanejar el deute. La venda dels béns comunals i civils
+      correspon a la desamortització de Madoz (1855). Els béns de la noblesa no
+      eren desamortitzats, sinó afectats per l'abolició dels senyorius; el
+      patrimoni reial no era l'objectiu.
+    es: La desamortización de Mendizábal (1836) nacionalizó y vendió los bienes del
+      clero regular para financiar la guerra carlista, ganar apoyos burgueses y
+      sanear la deuda. La venta de los bienes comunales y civiles corresponde a
+      la desamortización de Madoz (1855). Los bienes de la nobleza no se
+      desamortizaban, sino que se vieron afectados por la abolición de los
+      señoríos; el patrimonio real no era el objetivo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.liberalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Les constitucions de 1837 i 1845 reflecteixen les dues grans famílies del
+      liberalisme espanyol. Quina afirmació distingeix correctament el principi
+      de sobirania de cadascuna?
+    es: Las constituciones de 1837 y 1845 reflejan las dos grandes familias del
+      liberalismo español. ¿Qué afirmación distingue correctamente el principio
+      de soberanía de cada una?
+  options:
+    - id: A
+      ca: La de 1837 (progressista) es basa en la sobirania nacional; la de 1845
+        (moderada) en la sobirania compartida entre les Corts i la Corona
+      es: La de 1837 (progresista) se basa en la soberanía nacional; la de 1845
+        (moderada) en la soberanía compartida entre las Cortes y la Corona
+    - id: B
+      ca: La de 1837 (moderada) es basa en la sobirania compartida; la de 1845
+        (progressista) en la sobirania nacional
+      es: La de 1837 (moderada) se basa en la soberanía compartida; la de 1845
+        (progresista) en la soberanía nacional
+    - id: C
+      ca: Totes dues es basen en la sobirania popular i el sufragi universal masculí
+      es: Ambas se basan en la soberanía popular y el sufragio universal masculino
+    - id: D
+      ca: Totes dues atorguen la sobirania en exclusiva al rei, com en l'Estatut Reial
+        de 1834
+      es: Ambas otorgan la soberanía en exclusiva al rey, como en el Estatuto Real de
+        1834
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Constitució de 1837, d'inspiració progressista, recull la sobirania
+      nacional (resideix en la nació) i amplia drets. La de 1845, moderada,
+      substitueix aquest principi per la sobirania compartida entre les Corts i
+      la Corona, reforça el poder reial i restringeix el sufragi. Cap de les
+      dues establí el sufragi universal masculí (això arriba amb el Sexenni
+      Democràtic, 1868-1874), i l'Estatut Reial de 1834 no era una constitució
+      sinó una carta atorgada.
+    es: La Constitución de 1837, de inspiración progresista, recoge la soberanía
+      nacional (reside en la nación) y amplía derechos. La de 1845, moderada,
+      sustituye ese principio por la soberanía compartida entre las Cortes y la
+      Corona, refuerza el poder real y restringe el sufragio. Ninguna de las dos
+      estableció el sufragio universal masculino (eso llega con el Sexenio
+      Democrático, 1868-1874), y el Estatuto Real de 1834 no era una
+      constitución sino una carta otorgada.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.liberal_state.liberalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "L'Estat liberal es basava en el sufragi censatari: només votaven els homes
+      que superaven un cert nivell de riquesa o contribució. Si sota la llei
+      electoral moderada de mitjan segle XIX el cos electoral era d'uns 150.000
+      electors i la població espanyola era d'uns 15 milions d'habitants, quin
+      percentatge aproximat de la població tenia dret a vot?"
+    es: "El Estado liberal se basaba en el sufragio censitario: solo votaban los
+      hombres que superaban cierto nivel de riqueza o contribución. Si bajo la
+      ley electoral moderada de mediados del siglo XIX el cuerpo electoral era
+      de unos 150.000 electores y la población española era de unos 15 millones
+      de habitantes, ¿qué porcentaje aproximado de la población tenía derecho a
+      voto?"
+  options:
+    - id: A
+      ca: Aproximadament l'1%
+      es: Aproximadamente el 1%
+    - id: B
+      ca: Aproximadament el 10%
+      es: Aproximadamente el 10%
+    - id: C
+      ca: Aproximadament el 25%
+      es: Aproximadamente el 25%
+    - id: D
+      ca: Aproximadament el 50%
+      es: Aproximadamente el 50%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El càlcul és 150.000 / 15.000.000 = 0,01 = 1%. Aquest resultat il·lustra el
+      caràcter oligàrquic del liberalisme censatari moderat, en què només una
+      petita minoria propietària podia votar. Les respostes del 10%, 25% o 50%
+      són errors habituals per confondre el sufragi censatari amb el sufragi
+      universal o per una mala col·locació de la coma decimal (per exemple,
+      1.500.000 en lloc de 150.000 donaria el 10%).
+    es: El cálculo es 150.000 / 15.000.000 = 0,01 = 1%. Este resultado ilustra el
+      carácter oligárquico del liberalismo censitario moderado, en el que solo
+      una pequeña minoría propietaria podía votar. Las respuestas del 10%, 25% o
+      50% son errores habituales por confundir el sufragio censitario con el
+      universal o por una mala colocación de la coma decimal (por ejemplo,
+      1.500.000 en lugar de 150.000 daría el 10%).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.economy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: La primera línia de ferrocarril de la península Ibèrica es va inaugurar
+      l'octubre de 1848. Quines dues localitats unia?
+    es: La primera línea de ferrocarril de la península Ibérica se inauguró en
+      octubre de 1848. ¿Qué dos localidades unía?
+  options:
+    - id: A
+      ca: Barcelona i Mataró
+      es: Barcelona y Mataró
+    - id: B
+      ca: Barcelona i Girona
+      es: Barcelona y Girona
+    - id: C
+      ca: Barcelona i Tarragona
+      es: Barcelona y Tarragona
+    - id: D
+      ca: Barcelona i Sabadell
+      es: Barcelona y Sabadell
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El primer ferrocarril de l'Estat espanyol i de la península es va obrir el
+      28 d'octubre de 1848 entre Barcelona i Mataró (uns 28 km), impulsat per
+      Miquel Biada. La línia amb Girona, la de Tarragona i les xarxes cap al
+      Vallès (Sabadell) són posteriors.
+    es: El primer ferrocarril del Estado español y de la península se abrió el 28 de
+      octubre de 1848 entre Barcelona y Mataró (unos 28 km), impulsado por
+      Miquel Biada. La línea con Girona, la de Tarragona y las redes hacia el
+      Vallès (Sabadell) son posteriores.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.economy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Quina fou la primera gran fàbrica moguda per una màquina de vapor a
+      Catalunya, inaugurada el 1832 a Barcelona i incendiada durant els
+      aldarulls de 1835?
+    es: ¿Cuál fue la primera gran fábrica movida por una máquina de vapor en
+      Cataluña, inaugurada en 1832 en Barcelona e incendiada durante los
+      disturbios de 1835?
+  options:
+    - id: A
+      ca: El Vapor Bonaplata
+      es: El Vapor Bonaplata
+    - id: B
+      ca: La España Industrial
+      es: La España Industrial
+    - id: C
+      ca: La Colònia Güell
+      es: La Colonia Güell
+    - id: D
+      ca: Fabra i Coats
+      es: Fabra i Coats
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Vapor Bonaplata (1832) fou la primera fàbrica tèxtil catalana moguda per
+      vapor; fou cremada el 1835 en un context de conflictivitat social i rebuig
+      a la mecanització. La España Industrial es fundà el 1847, la Colònia Güell
+      i Fabra i Coats són de finals del segle XIX.
+    es: El Vapor Bonaplata (1832) fue la primera fábrica textil catalana movida por
+      vapor; fue quemada en 1835 en un contexto de conflictividad social y
+      rechazo a la mecanización. La España Industrial se fundó en 1847, y la
+      Colonia Güell y Fabra i Coats son de finales del siglo XIX.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.economy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Per què moltes colònies industrials catalanes de la segona meitat del segle
+      XIX es van instal·lar al llarg de rius com el Llobregat i el Ter?
+    es: ¿Por qué muchas colonias industriales catalanas de la segunda mitad del
+      siglo XIX se instalaron a lo largo de ríos como el Llobregat y el Ter?
+  options:
+    - id: A
+      ca: Per aprofitar l'energia hidràulica, davant l'escassetat i el cost del carbó
+      es: Para aprovechar la energía hidráulica, ante la escasez y el coste del carbón
+    - id: B
+      ca: Perquè al costat d'aquests rius hi havia grans jaciments de carbó català
+      es: Porque junto a esos ríos había grandes yacimientos de carbón catalán
+    - id: C
+      ca: Per poder exportar la producció directament per via marítima
+      es: Para poder exportar la producción directamente por vía marítima
+    - id: D
+      ca: Perquè una llei prohibia instal·lar fàbriques dins de les ciutats
+      es: Porque una ley prohibía instalar fábricas dentro de las ciudades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Catalunya patia una manca crònica de carbó de qualitat, que s'havia
+      d'importar (sobretot britànic) i encaria l'energia. Instal·lar-se al
+      costat dels rius permetia moure turbines amb l'energia hidràulica del salt
+      d'aigua. No hi havia grans jaciments de carbó vora aquests rius (B), la
+      ubicació fluvial no facilitava l'exportació marítima (C) i no existia tal
+      prohibició legal (D).
+    es: Cataluña sufría una carencia crónica de carbón de calidad, que debía
+      importarse (sobre todo británico) y encarecía la energía. Instalarse junto
+      a los ríos permitía mover turbinas con la energía hidráulica del salto de
+      agua. No había grandes yacimientos de carbón junto a esos ríos (B), la
+      ubicación fluvial no facilitaba la exportación marítima (C) ni existía tal
+      prohibición legal (D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.economy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Cap al 1861, Catalunya concentrava uns 800.000 fusos de filar cotó d'un
+      total aproximat d'1.000.000 de fusos de tot l'Estat espanyol. Quin
+      percentatge del total espanyol representava Catalunya?
+    es: Hacia 1861, Cataluña concentraba unos 800.000 husos de hilar algodón de un
+      total aproximado de 1.000.000 de husos de todo el Estado español. ¿Qué
+      porcentaje del total español representaba Cataluña?
+  options:
+    - id: A
+      ca: 80%
+      es: 80%
+    - id: B
+      ca: 20%
+      es: 20%
+    - id: C
+      ca: 125%
+      es: 125%
+    - id: D
+      ca: 12,5%
+      es: 12,5%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Percentatge = (part/total)×100 = (800.000/1.000.000)×100 = 80%. Això
+      reflecteix la forta concentració de la indústria cotonera a Catalunya. El
+      20% és la part de la resta de l'Estat (complement); el 125% surt
+      d'invertir la fracció (1.000.000/800.000); el 12,5% és un error de coma
+      decimal.
+    es: Porcentaje = (parte/total)×100 = (800.000/1.000.000)×100 = 80%. Esto refleja
+      la fuerte concentración de la industria algodonera en Cataluña. El 20% es
+      la parte del resto del Estado (complemento); el 125% resulta de invertir
+      la fracción (1.000.000/800.000); el 12,5% es un error de coma decimal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.labor_movement
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En quin any i per iniciativa de quina figura es va fundar el PSOE (Partit
+      Socialista Obrer Espanyol)?
+    es: ¿En qué año y por iniciativa de qué figura se fundó el PSOE (Partido
+      Socialista Obrero Español)?
+  options:
+    - id: A
+      ca: 1879, per Pablo Iglesias
+      es: 1879, por Pablo Iglesias
+    - id: B
+      ca: 1888, per Pablo Iglesias
+      es: 1888, por Pablo Iglesias
+    - id: C
+      ca: 1879, per Francesc Layret
+      es: 1879, por Francesc Layret
+    - id: D
+      ca: 1910, per Anselmo Lorenzo
+      es: 1910, por Anselmo Lorenzo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El PSOE es va fundar clandestinament a Madrid el 1879, liderat pel tipògraf
+      Pablo Iglesias, com a partit obrer d'orientació marxista. L'error habitual
+      és confondre aquesta data amb el 1888, any de fundació del sindicat
+      vinculat, la UGT. Layret era un advocat republicà posterior i Anselmo
+      Lorenzo era una figura anarquista, no socialista.
+    es: El PSOE se fundó clandestinamente en Madrid en 1879, liderado por el
+      tipógrafo Pablo Iglesias, como partido obrero de orientación marxista. El
+      error habitual es confundir esta fecha con 1888, año de fundación del
+      sindicato vinculado, la UGT. Layret era un abogado republicano posterior y
+      Anselmo Lorenzo era una figura anarquista, no socialista.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.labor_movement
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: On i en quin any es va fundar la Unió General de Treballadors (UGT), el
+      sindicat d'orientació socialista?
+    es: ¿Dónde y en qué año se fundó la Unión General de Trabajadores (UGT), el
+      sindicato de orientación socialista?
+  options:
+    - id: A
+      ca: A Barcelona, el 1888
+      es: En Barcelona, en 1888
+    - id: B
+      ca: A Madrid, el 1879
+      es: En Madrid, en 1879
+    - id: C
+      ca: A Barcelona, el 1910
+      es: En Barcelona, en 1910
+    - id: D
+      ca: A Madrid, el 1888
+      es: En Madrid, en 1888
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La UGT es va fundar a Barcelona el 1888, el mateix any i ciutat del congrés
+      fundacional del PSOE renovat, tot i que la seu es traslladaria després a
+      Madrid. Els errors freqüents són atribuir-li la data del PSOE (1879), la
+      de la CNT (1910) o situar-la des de l'inici a Madrid.
+    es: La UGT se fundó en Barcelona en 1888, el mismo año y ciudad del congreso
+      fundacional del PSOE renovado, aunque la sede se trasladaría después a
+      Madrid. Los errores frecuentes son atribuirle la fecha del PSOE (1879), la
+      de la CNT (1910) o situarla desde el inicio en Madrid.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.labor_movement
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Després del Congrés de Barcelona de 1870 es va constituir la Federació
+      Regional Espanyola de l'AIT (Primera Internacional). Quina tendència
+      ideològica hi va acabar predominant?
+    es: Tras el Congreso de Barcelona de 1870 se constituyó la Federación Regional
+      Española de la AIT (Primera Internacional). ¿Qué tendencia ideológica
+      acabó predominando en ella?
+  options:
+    - id: A
+      ca: L'anarquisme bakuninista (col·lectivista)
+      es: El anarquismo bakuninista (colectivista)
+    - id: B
+      ca: El socialisme marxista
+      es: El socialismo marxista
+    - id: C
+      ca: El sindicalisme catòlic
+      es: El sindicalismo católico
+    - id: D
+      ca: El republicanisme federal
+      es: El republicanismo federal
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La difusió de la Primera Internacional a Espanya (des de 1868, amb la
+      vinguda de Giuseppe Fanelli) i el Congrés de Barcelona de 1870 van
+      consolidar el predomini de les tesis anarquistes de Bakunin, especialment
+      a Catalunya i Andalusia. El corrent marxista fou minoritari i acabaria
+      escindint-se cap al socialisme (PSOE, 1879). El sindicalisme catòlic i el
+      republicanisme federal són corrents aliens a l'AIT.
+    es: La difusión de la Primera Internacional en España (desde 1868, con la
+      llegada de Giuseppe Fanelli) y el Congreso de Barcelona de 1870
+      consolidaron el predominio de las tesis anarquistas de Bakunin,
+      especialmente en Cataluña y Andalucía. La corriente marxista fue
+      minoritaria y acabaría escindiéndose hacia el socialismo (PSOE, 1879). El
+      sindicalismo católico y el republicanismo federal son corrientes ajenas a
+      la AIT.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.labor_movement
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: L'incendi de la fàbrica Bonaplata de Barcelona, primer establiment amb
+      màquina de vapor de Catalunya, és l'episodi ludista més conegut de la
+      industrialització catalana. En quin any va tenir lloc?
+    es: El incendio de la fábrica Bonaplata de Barcelona, primer establecimiento con
+      máquina de vapor de Cataluña, es el episodio ludita más conocido de la
+      industrialización catalana. ¿En qué año tuvo lugar?
+  options:
+    - id: A
+      ca: "1835"
+      es: "1835"
+    - id: B
+      ca: "1855"
+      es: "1855"
+    - id: C
+      ca: "1888"
+      es: "1888"
+    - id: D
+      ca: "1909"
+      es: "1909"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La fàbrica Bonaplata fou incendiada el 1835, en el context de les
+      bullangues, com a reacció ludista dels treballadors que veien en les
+      màquines la causa de l'atur. Distractors: 1855 correspon a la primera vaga
+      general d'Espanya, a Catalunya, amb el lema \"Associació o mort\"; 1888 és
+      la fundació de la UGT; i 1909 és la Setmana Tràgica."
+    es: 'La fábrica Bonaplata fue incendiada en 1835, en el contexto de las
+      bullangas, como reacción ludita de los trabajadores que veían en las
+      máquinas la causa del paro. Distractores: 1855 corresponde a la primera
+      huelga general de España, en Cataluña, con el lema "Asociación o muerte";
+      1888 es la fundación de la UGT; y 1909 es la Semana Trágica.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.labor_movement
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: La vaga de La Canadenca (Barcelona, 1919), dirigida per la CNT i que va
+      paralitzar el subministrament elèctric durant unes sis setmanes, va forçar
+      una conquesta laboral pionera a Europa. Quina fou?
+    es: La huelga de La Canadiense (Barcelona, 1919), dirigida por la CNT y que
+      paralizó el suministro eléctrico durante unas seis semanas, forzó una
+      conquista laboral pionera en Europa. ¿Cuál fue?
+  options:
+    - id: A
+      ca: La jornada laboral de 8 hores (setmana de 48 hores)
+      es: La jornada laboral de 8 horas (semana de 48 horas)
+    - id: B
+      ca: La jornada laboral de 10 hores
+      es: La jornada laboral de 10 horas
+    - id: C
+      ca: El sufragi universal masculí
+      es: El sufragio universal masculino
+    - id: D
+      ca: L'abolició del treball nocturn de les dones
+      es: La abolición del trabajo nocturno de las mujeres
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'èxit de la vaga de La Canadenca va portar el govern a decretar, el 3
+      d'abril de 1919, la jornada màxima de 8 hores diàries: 8 h/dia × 6 dies =
+      48 hores setmanals, convertint Espanya en un dels primers estats a
+      establir-la per llei. La jornada de 10 hores era una reivindicació
+      anterior ja superada; el sufragi universal masculí (1890) i la protecció
+      del treball nocturn femení (Llei de 1912) són qüestions diferents i
+      cronològicament prèvies."
+    es: "El éxito de la huelga de La Canadiense llevó al gobierno a decretar, el 3
+      de abril de 1919, la jornada máxima de 8 horas diarias: 8 h/día × 6 días =
+      48 horas semanales, convirtiendo a España en uno de los primeros estados
+      en establecerla por ley. La jornada de 10 horas era una reivindicación
+      anterior ya superada; el sufragio universal masculino (1890) y la
+      protección del trabajo nocturno femenino (Ley de 1912) son cuestiones
+      distintas y cronológicamente previas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.industrialization.labor_movement
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: La CNT (Confederació Nacional del Treball) va néixer a Barcelona a partir de
+      l'organització Solidaritat Obrera. En quin any es va fundar i quina
+      orientació ideològica la caracteritzava?
+    es: La CNT (Confederación Nacional del Trabajo) nació en Barcelona a partir de
+      la organización Solidaridad Obrera. ¿En qué año se fundó y qué orientación
+      ideológica la caracterizaba?
+  options:
+    - id: A
+      ca: 1910, anarcosindicalista
+      es: 1910, anarcosindicalista
+    - id: B
+      ca: 1888, socialista
+      es: 1888, socialista
+    - id: C
+      ca: 1907, comunista
+      es: 1907, comunista
+    - id: D
+      ca: 1921, marxista-leninista
+      es: 1921, marxista-leninista
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La CNT es va fundar a Barcelona el 1910, sorgida de Solidaritat Obrera
+      (creada el 1907), amb una orientació anarcosindicalista que apostava per
+      l'acció directa i la vaga general. Distractors: 1888 i el socialisme
+      corresponen a la UGT; 1907 és la data de Solidaritat Obrera, no de la CNT;
+      i 1921 amb el marxisme-leninisme correspon a la fundació del PCE."
+    es: "La CNT se fundó en Barcelona en 1910, surgida de Solidaridad Obrera (creada
+      en 1907), con una orientación anarcosindicalista que apostaba por la
+      acción directa y la huelga general. Distractores: 1888 y el socialismo
+      corresponden a la UGT; 1907 es la fecha de Solidaridad Obrera, no de la
+      CNT; y 1921 con el marxismo-leninismo corresponde a la fundación del PCE."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Qui va ser el principal ideòleg i arquitecte del sistema polític de la
+      Restauració iniciat el 1874-1875?
+    es: ¿Quién fue el principal ideólogo y arquitecto del sistema político de la
+      Restauración iniciado en 1874-1875?
+  options:
+    - id: A
+      ca: Antonio Cánovas del Castillo
+      es: Antonio Cánovas del Castillo
+    - id: B
+      ca: Práxedes Mateo Sagasta
+      es: Práxedes Mateo Sagasta
+    - id: C
+      ca: El general Arsenio Martínez Campos
+      es: El general Arsenio Martínez Campos
+    - id: D
+      ca: Manuel Ruiz Zorrilla
+      es: Manuel Ruiz Zorrilla
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cánovas del Castillo va dissenyar el sistema: va preparar el retorn dels
+      Borbó amb Alfons XII (Manifest de Sandhurst, 1874), va inspirar la
+      Constitució de 1876 i va idear el bipartidisme (torn pacífic). Sagasta era
+      el cap del Partit Liberal, l'altra peça del torn, però no l'ideòleg del
+      sistema. Martínez Campos només va protagonitzar el pronunciament de Sagunt
+      (desembre de 1874). Ruiz Zorrilla era líder republicà, exclòs del
+      sistema."
+    es: "Cánovas del Castillo diseñó el sistema: preparó el retorno de los Borbón
+      con Alfonso XII (Manifiesto de Sandhurst, 1874), inspiró la Constitución
+      de 1876 e ideó el bipartidismo (turno pacífico). Sagasta era el jefe del
+      Partido Liberal, la otra pieza del turno, pero no el ideólogo del sistema.
+      Martínez Campos solo protagonizó el pronunciamiento de Sagunto (diciembre
+      de 1874). Ruiz Zorrilla era líder republicano, excluido del sistema."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Segons la Constitució de 1876, on residia la sobirania?
+    es: Según la Constitución de 1876, ¿dónde residía la soberanía?
+  options:
+    - id: A
+      ca: Era compartida entre el rei i les Corts (sobirania compartida)
+      es: Era compartida entre el rey y las Cortes (soberanía compartida)
+    - id: B
+      ca: Residia exclusivament en la nació, representada per les Corts
+      es: Residía exclusivamente en la nación, representada por las Cortes
+    - id: C
+      ca: Residia únicament en el rei per dret diví
+      es: Residía únicamente en el rey por derecho divino
+    - id: D
+      ca: Residia en el poble mitjançant sufragi universal
+      es: Residía en el pueblo mediante sufragio universal
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Constitució de 1876, de caràcter conservador i molt flexible, establia la
+      sobirania compartida entre el rei i les Corts (fórmula 'el rei amb les
+      Corts'), reforçant el paper de la Corona. La sobirania nacional exclusiva
+      de les Corts era propia de les constitucions progressistes (1812, 1869,
+      1931). La sobirania per dret diví o popular pura no hi apareixen.
+    es: La Constitución de 1876, de carácter conservador y muy flexible, establecía
+      la soberanía compartida entre el rey y las Cortes (fórmula 'el rey con las
+      Cortes'), reforzando el papel de la Corona. La soberanía nacional
+      exclusiva de las Cortes era propia de las constituciones progresistas
+      (1812, 1869, 1931). La soberanía por derecho divino o popular pura no
+      aparecen.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Després de la mort d'Alfons XII (1885), quin acord entre Cánovas i Sagasta
+      va garantir l'alternança pacífica en el poder dels dos partits dinàstics
+      per donar estabilitat a la regència?
+    es: Tras la muerte de Alfonso XII (1885), ¿qué acuerdo entre Cánovas y Sagasta
+      garantizó la alternancia pacífica en el poder de los dos partidos
+      dinásticos para dar estabilidad a la regencia?
+  options:
+    - id: A
+      ca: El Pacte del Pardo (1885)
+      es: El Pacto de El Pardo (1885)
+    - id: B
+      ca: El Pacte d'Ostende (1866)
+      es: El Pacto de Ostende (1866)
+    - id: C
+      ca: El Manifest de Sandhurst (1874)
+      es: El Manifiesto de Sandhurst (1874)
+    - id: D
+      ca: El Pacte de Sant Sebastià (1930)
+      es: El Pacto de San Sebastián (1930)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Pacte del Pardo (1885) fou l'acord entre Cánovas (conservadors) i Sagasta
+      (liberals) per torn-se pacíficament al govern i sostenir la regència de
+      Maria Cristina davant l'inestabilitat. El Pacte d'Ostende (1866) preparava
+      la revolució de 1868. El Manifest de Sandhurst (1874) era el programa
+      d'Alfons XII per tornar al tron. El Pacte de Sant Sebastià (1930) unia les
+      forces contra la monarquia d'Alfons XIII.
+    es: El Pacto de El Pardo (1885) fue el acuerdo entre Cánovas (conservadores) y
+      Sagasta (liberales) para turnarse pacíficamente en el gobierno y sostener
+      la regencia de María Cristina ante la inestabilidad. El Pacto de Ostende
+      (1866) preparaba la revolución de 1868. El Manifiesto de Sandhurst (1874)
+      era el programa de Alfonso XII para volver al trono. El Pacto de San
+      Sebastián (1930) unía a las fuerzas contra la monarquía de Alfonso XIII.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En el sistema de la Restauració, què designava el terme 'encasellat'
+      (encasillado)?
+    es: En el sistema de la Restauración, ¿qué designaba el término 'encasillado'?
+  options:
+    - id: A
+      ca: El repartiment previ dels escons pactat pel govern i el ministre de
+        Governació abans de les eleccions
+      es: El reparto previo de los escaños pactado por el gobierno y el ministro de
+        Gobernación antes de las elecciones
+    - id: B
+      ca: El frau que consistia a manipular físicament les urnes i les actes el dia de
+        la votació
+      es: El fraude que consistía en manipular físicamente las urnas y las actas el
+        día de la votación
+    - id: C
+      ca: L'exèrcit de votants morts o inexistents que apareixien al cens
+      es: El ejército de votantes muertos o inexistentes que aparecían en el censo
+    - id: D
+      ca: El poder informal dels cacics locals sobre els seus clients
+      es: El poder informal de los caciques locales sobre sus clientes
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'encasellat era la distribució prèvia dels escons: el govern i el ministre
+      de Governació decidien qui guanyaria cada districte abans de votar, i
+      després els cacics ho feien complir. El frau material de les urnes és el
+      'pucheraso' (pucherazo). Els votants morts són el 'lázaros'. El poder
+      informal dels notables locals és el caciquisme en general; l'encasellat
+      n'és l'engranatge concret des de dalt."
+    es: "El encasillado era la distribución previa de los escaños: el gobierno y el
+      ministro de Gobernación decidían quién ganaría cada distrito antes de
+      votar, y luego los caciques lo hacían cumplir. El fraude material de las
+      urnas es el 'pucherazo'. Los votantes muertos son los 'lázaros'. El poder
+      informal de los notables locales es el caciquismo en general; el
+      encasillado es su engranaje concreto desde arriba."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "La Constitució de 1876 no fixava el tipus de sufragi. El sufragi universal
+      masculí es va (re)implantar durant la Restauració l'any:"
+    es: "La Constitución de 1876 no fijaba el tipo de sufragio. El sufragio
+      universal masculino se (re)implantó durante la Restauración en el año:"
+  options:
+    - id: A
+      ca: 1890, per un govern liberal de Sagasta
+      es: 1890, por un gobierno liberal de Sagasta
+    - id: B
+      ca: 1876, alhora que la promulgació de la Constitució
+      es: 1876, a la vez que la promulgación de la Constitución
+    - id: C
+      ca: 1878, per un govern conservador de Cánovas
+      es: 1878, por un gobierno conservador de Cánovas
+    - id: D
+      ca: 1907, amb la Llei electoral de Maura
+      es: 1907, con la Ley electoral de Maura
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El sufragi universal masculí (homes majors de 25 anys) es va aprovar el 1890
+      sota un govern liberal de Sagasta. El 1878, en canvi, Cánovas havia
+      establert el sufragi censatari (només grans contribuents). La Constitució
+      de 1876 deixava el tema a lleis posteriors. La Llei electoral de Maura de
+      1907 va introduir el vot obligatori i l'article 29, però no va crear el
+      sufragi universal.
+    es: El sufragio universal masculino (varones mayores de 25 años) se aprobó en
+      1890 bajo un gobierno liberal de Sagasta. En 1878, en cambio, Cánovas
+      había establecido el sufragio censitario (solo grandes contribuyentes). La
+      Constitución de 1876 dejaba el tema a leyes posteriores. La Ley electoral
+      de Maura de 1907 introdujo el voto obligatorio y el artículo 29, pero no
+      creó el sufragio universal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Alfons XII va morir el novembre de 1885. S'obrí llavors la regència de Maria
+      Cristina d'Habsburg, que va acabar el maig de 1902 quan Alfons XIII fou
+      declarat major d'edat. Quants anys va durar, aproximadament, aquesta
+      regència?
+    es: Alfonso XII murió en noviembre de 1885. Se abrió entonces la regencia de
+      María Cristina de Habsburgo, que terminó en mayo de 1902 cuando Alfonso
+      XIII fue declarado mayor de edad. ¿Cuántos años duró, aproximadamente, esa
+      regencia?
+  options:
+    - id: A
+      ca: Uns 17 anys
+      es: Unos 17 años
+    - id: B
+      ca: Uns 27 anys
+      es: Unos 27 años
+    - id: C
+      ca: Uns 10 anys
+      es: Unos 10 años
+    - id: D
+      ca: Uns 23 anys
+      es: Unos 23 años
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: 1902 − 1885 = 17 anys. La regència va cobrir el període crític de crisi del
+      sistema, incloent-hi el desastre de 1898. L'error de 27 anys surt de
+      comptar des de 1875 (inici del regnat d'Alfons XII, no de la regència). 23
+      anys correspondria a 1925 i 10 anys infravalora el període.
+    es: 1902 − 1885 = 17 años. La regencia cubrió el periodo crítico de crisis del
+      sistema, incluido el desastre de 1898. El error de 27 años sale de contar
+      desde 1875 (inicio del reinado de Alfonso XII, no de la regencia). 23 años
+      correspondería a 1925 y 10 años infravalora el periodo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.catalanism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Qui és considerat l'iniciador del catalanisme polític, autor de l'obra 'Lo
+      Catalanisme' (1886) i fundador del Centre Català (1882)?
+    es: ¿Quién es considerado el iniciador del catalanismo político, autor de la
+      obra 'Lo Catalanisme' (1886) y fundador del Centre Català (1882)?
+  options:
+    - id: A
+      ca: Valentí Almirall
+      es: Valentí Almirall
+    - id: B
+      ca: Enric Prat de la Riba
+      es: Enric Prat de la Riba
+    - id: C
+      ca: Francesc Cambó
+      es: Francesc Cambó
+    - id: D
+      ca: Sabino Arana
+      es: Sabino Arana
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Valentí Almirall, procedent del federalisme republicà, va donar el pas del
+      catalanisme cultural (Renaixença) al catalanisme polític: va fundar el
+      Centre Català (1882) i va sistematitzar la doctrina a 'Lo Catalanisme'
+      (1886). Prat de la Riba (autor de 'La nacionalitat catalana', 1906) i
+      Cambó pertanyen a la generació posterior de la Lliga; Sabino Arana és el
+      pare del nacionalisme basc."
+    es: "Valentí Almirall, procedente del federalismo republicano, dio el paso del
+      catalanismo cultural (Renaixença) al catalanismo político: fundó el Centre
+      Català (1882) y sistematizó la doctrina en 'Lo Catalanisme' (1886). Prat
+      de la Riba (autor de 'La nacionalitat catalana', 1906) y Cambó pertenecen
+      a la generación posterior de la Lliga; Sabino Arana es el padre del
+      nacionalismo vasco."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.catalanism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Les Bases de Manresa (1892), primer projecte de constitució regional per a
+      Catalunya que reclamava un ampli autogovern, van ser aprovades per quina
+      organització?
+    es: Las Bases de Manresa (1892), primer proyecto de constitución regional para
+      Cataluña que reclamaba un amplio autogobierno, ¿fueron aprobadas por qué
+      organización?
+  options:
+    - id: A
+      ca: La Unió Catalanista
+      es: La Unió Catalanista
+    - id: B
+      ca: La Lliga Regionalista
+      es: La Lliga Regionalista
+    - id: C
+      ca: El Centre Català
+      es: El Centre Català
+    - id: D
+      ca: Solidaritat Catalana
+      es: Solidaritat Catalana
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Les Bases per a la Constitució Regional Catalana es van aprovar el 1892 a
+      l'assemblea de la Unió Catalanista (entitat de tendència conservadora i
+      tradicionalista). La Lliga Regionalista es va fundar més tard (1901), el
+      Centre Català d'Almirall era anterior (1882) i Solidaritat Catalana és una
+      coalició de 1906.
+    es: Las Bases para la Constitución Regional Catalana se aprobaron en 1892 en la
+      asamblea de la Unió Catalanista (entidad de tendencia conservadora y
+      tradicionalista). La Lliga Regionalista se fundó después (1901), el Centre
+      Català de Almirall era anterior (1882) y Solidaritat Catalana es una
+      coalición de 1906.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.catalanism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: La Lliga Regionalista, fundada el 1901, va ser el primer partit catalanista
+      modern amb força electoral. Quins dos dirigents la van encapçalar?
+    es: La Lliga Regionalista, fundada en 1901, fue el primer partido catalanista
+      moderno con fuerza electoral. ¿Qué dos dirigentes la encabezaron?
+  options:
+    - id: A
+      ca: Enric Prat de la Riba i Francesc Cambó
+      es: Enric Prat de la Riba y Francesc Cambó
+    - id: B
+      ca: Valentí Almirall i Àngel Guimerà
+      es: Valentí Almirall y Àngel Guimerà
+    - id: C
+      ca: Francesc Macià i Lluís Companys
+      es: Francesc Macià y Lluís Companys
+    - id: D
+      ca: Sabino Arana i Ramón de la Sota
+      es: Sabino Arana y Ramón de la Sota
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Lliga Regionalista (1901), de caràcter conservador i burgès, va tenir com
+      a principals dirigents l'ideòleg Enric Prat de la Riba i el polític
+      Francesc Cambó. Almirall i Guimerà pertanyen a l'etapa anterior; Macià i
+      Companys lideraran Esquerra Republicana de Catalunya (1931), el
+      catalanisme d'esquerres; Arana i De la Sota són figures del nacionalisme
+      basc.
+    es: La Lliga Regionalista (1901), de carácter conservador y burgués, tuvo como
+      principales dirigentes al ideólogo Enric Prat de la Riba y al político
+      Francesc Cambó. Almirall y Guimerà pertenecen a la etapa anterior; Macià y
+      Companys liderarán Esquerra Republicana de Catalunya (1931), el
+      catalanismo de izquierdas; Arana y De la Sota son figuras del nacionalismo
+      vasco.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.catalanism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quin fet va desencadenar l'aprovació de la Llei de Jurisdiccions (1906) i,
+      com a reacció, la formació de la coalició Solidaritat Catalana?
+    es: ¿Qué hecho desencadenó la aprobación de la Ley de Jurisdicciones (1906) y,
+      como reacción, la formación de la coalición Solidaritat Catalana?
+  options:
+    - id: A
+      ca: L'assalt de militars a la redacció del setmanari satíric Cu-Cut! i del diari
+        La Veu de Catalunya (1905)
+      es: El asalto de militares a la redacción del semanario satírico Cu-Cut! y del
+        diario La Veu de Catalunya (1905)
+    - id: B
+      ca: La Setmana Tràgica de Barcelona (1909)
+      es: La Semana Trágica de Barcelona (1909)
+    - id: C
+      ca: El desastre colonial i la pèrdua de Cuba i Filipines (1898)
+      es: El desastre colonial y la pérdida de Cuba y Filipinas (1898)
+    - id: D
+      ca: La dissolució de la Mancomunitat de Catalunya
+      es: La disolución de la Mancomunidad de Cataluña
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El novembre de 1905 oficials de l'exèrcit van assaltar les redaccions del
+      Cu-Cut! i de La Veu de Catalunya per una vinyeta considerada ofensiva. El
+      govern va respondre amb la Llei de Jurisdiccions (1906), que sotmetia a la
+      jurisdicció militar els delictes contra l'exèrcit i la pàtria. Aquesta
+      afronta va unir gairebé totes les forces catalanes en Solidaritat
+      Catalana. La Setmana Tràgica (1909) i la dissolució de la Mancomunitat
+      (1925) són posteriors, i el desastre del 98 no en va ser la causa directa.
+    es: En noviembre de 1905 oficiales del ejército asaltaron las redacciones del
+      Cu-Cut! y de La Veu de Catalunya por una viñeta considerada ofensiva. El
+      gobierno respondió con la Ley de Jurisdicciones (1906), que sometía a la
+      jurisdicción militar los delitos contra el ejército y la patria. Esta
+      afrenta unió a casi todas las fuerzas catalanas en Solidaritat Catalana.
+      La Semana Trágica (1909) y la disolución de la Mancomunidad (1925) son
+      posteriores, y el desastre del 98 no fue la causa directa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.catalanism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: La Mancomunitat de Catalunya va agrupar les quatre diputacions provincials.
+      Indica correctament l'any de creació, el seu primer president i l'any de
+      dissolució.
+    es: La Mancomunidad de Cataluña agrupó a las cuatro diputaciones provinciales.
+      Indica correctamente el año de creación, su primer presidente y el año de
+      disolución.
+  options:
+    - id: A
+      ca: Creada el 1914, presidida inicialment per Enric Prat de la Riba i dissolta
+        el 1925 per la dictadura de Primo de Rivera
+      es: Creada en 1914, presidida inicialmente por Enric Prat de la Riba y disuelta
+        en 1925 por la dictadura de Primo de Rivera
+    - id: B
+      ca: Creada el 1914, presidida inicialment per Josep Puig i Cadafalch i dissolta
+        el 1923
+      es: Creada en 1914, presidida inicialmente por Josep Puig i Cadafalch y disuelta
+        en 1923
+    - id: C
+      ca: Creada el 1901, presidida per Francesc Cambó i dissolta el 1931
+      es: Creada en 1901, presidida por Francesc Cambó y disuelta en 1931
+    - id: D
+      ca: Creada el 1914, presidida per Francesc Macià i dissolta el 1939
+      es: Creada en 1914, presidida por Francesc Macià y disuelta en 1939
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Mancomunitat es va constituir el 1914 sota la presidència d'Enric Prat de
+      la Riba (fins a la seva mort el 1917, quan el va succeir Puig i
+      Cadafalch). Tot i que Primo de Rivera va donar el cop d'estat el 1923, la
+      Mancomunitat no va ser abolida fins al 1925. Puig i Cadafalch en va ser el
+      segon president, no el primer; el 1901 és l'any de la Lliga, no de la
+      Mancomunitat.
+    es: La Mancomunidad se constituyó en 1914 bajo la presidencia de Enric Prat de
+      la Riba (hasta su muerte en 1917, cuando le sucedió Puig i Cadafalch).
+      Aunque Primo de Rivera dio el golpe de Estado en 1923, la Mancomunidad no
+      fue abolida hasta 1925. Puig i Cadafalch fue el segundo presidente, no el
+      primero; 1901 es el año de la Lliga, no de la Mancomunidad.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.catalanism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El nacionalisme basc modern va néixer amb la fundació del Partit
+      Nacionalista Basc (PNB/EAJ-PNV) per Sabino Arana. Quina combinació d'any i
+      tret ideològic distintiu, en comparació amb el primer catalanisme, és
+      correcta?
+    es: El nacionalismo vasco moderno nació con la fundación del Partido
+      Nacionalista Vasco (PNV/EAJ-PNV) por Sabino Arana. ¿Qué combinación de año
+      y rasgo ideológico distintivo, en comparación con el primer catalanismo,
+      es correcta?
+  options:
+    - id: A
+      ca: 1895; un nacionalisme de base ètnica i racial, fortament catòlic i
+        antiliberal, més radical en la reivindicació independentista en el seu
+        origen
+      es: 1895; un nacionalismo de base étnica y racial, fuertemente católico y
+        antiliberal, más radical en la reivindicación independentista en su
+        origen
+    - id: B
+      ca: 1892; un nacionalisme fonamentalment federalista i laic, centrat en la
+        modernització econòmica
+      es: 1892; un nacionalismo fundamentalmente federalista y laico, centrado en la
+        modernización económica
+    - id: C
+      ca: 1901; un moviment exclusivament cultural i literari, sense organització de
+        partit
+      es: 1901; un movimiento exclusivamente cultural y literario, sin organización de
+        partido
+    - id: D
+      ca: 1906; un nacionalisme d'arrel liberal, burgès i autonomista, molt semblant a
+        la Lliga Regionalista
+      es: 1906; un nacionalismo de raíz liberal, burgués y autonomista, muy parecido a
+        la Lliga Regionalista
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Sabino Arana va fundar el PNB el 1895. A diferència del catalanisme, que
+      tenia una base cultural i lingüística i una àmplia franja
+      liberal-autonomista (com la Lliga), el primer nacionalisme basc partia
+      d'una concepció ètnica i racial (defensa de la raça i els furs), amb un
+      catolicisme integrista i un origen més obertament independentista. Les
+      altres opcions confonen dates (1892 Bases de Manresa, 1901 Lliga, 1906
+      diverses obres) i atributs propis del catalanisme.
+    es: Sabino Arana fundó el PNV en 1895. A diferencia del catalanismo, que tenía
+      una base cultural y lingüística y una amplia franja liberal-autonomista
+      (como la Lliga), el primer nacionalismo vasco partía de una concepción
+      étnica y racial (defensa de la raza y los fueros), con un catolicismo
+      integrista y un origen más abiertamente independentista. Las demás
+      opciones confunden fechas (1892 Bases de Manresa, 1901 Lliga, 1906
+      diversas obras) y atributos propios del catalanismo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.crisis_1898
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: El Tractat de París (desembre de 1898), que va posar fi a la guerra
+      hispano-nord-americana, va obligar Espanya a cedir als Estats Units un
+      conjunt de territoris. Quins?
+    es: El Tratado de París (diciembre de 1898), que puso fin a la guerra
+      hispano-estadounidense, obligó a España a ceder a Estados Unidos un
+      conjunto de territorios. ¿Cuáles?
+  options:
+    - id: A
+      ca: Cuba, Puerto Rico i les Filipines, mantenint Espanya Guinea Equatorial
+      es: Cuba, Puerto Rico y Filipinas, manteniendo España Guinea Ecuatorial
+    - id: B
+      ca: Puerto Rico, Guam i les Filipines, i la independència de Cuba
+      es: Puerto Rico, Guam y Filipinas, y la independencia de Cuba
+    - id: C
+      ca: Cuba, Puerto Rico, Guam i les Filipines com a colònies dels EUA
+      es: Cuba, Puerto Rico, Guam y Filipinas como colonias de EE.UU.
+    - id: D
+      ca: Només les Filipines i Guam, conservant Espanya Cuba i Puerto Rico
+      es: Solo Filipinas y Guam, conservando España Cuba y Puerto Rico
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Pel Tractat de París, Espanya va cedir als EUA Puerto Rico, l'illa de Guam
+      (Marianes) i les Filipines (aquestes últimes a canvi de 20 milions de
+      dòlars). Cuba no va passar a ser colònia dels EUA: es va declarar
+      formalment independent (tot i quedar sota tutela nord-americana, com
+      mostraria després l'esmena Platt). Per tant, Cuba no es 'cedeix' als EUA
+      sinó que assoleix la independència."
+    es: "Por el Tratado de París, España cedió a EE.UU. Puerto Rico, la isla de Guam
+      (Marianas) y Filipinas (estas últimas a cambio de 20 millones de dólares).
+      Cuba no pasó a ser colonia de EE.UU.: se declaró formalmente independiente
+      (aunque bajo tutela estadounidense, como mostraría luego la enmienda
+      Platt). Por ello Cuba no se 'cede' a EE.UU. sino que alcanza la
+      independencia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.crisis_1898
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: El terme 'Desastre del 98' fa referència sobretot a l'impacte psicològic i
+      ideològic de la pèrdua colonial. Quina afirmació descriu millor la reacció
+      regeneracionista immediata?
+    es: El término 'Desastre del 98' se refiere sobre todo al impacto psicológico e
+      ideológico de la pérdida colonial. ¿Qué afirmación describe mejor la
+      reacción regeneracionista inmediata?
+  options:
+    - id: A
+      ca: Un corrent crític amb el sistema de la Restauració que reclamava modernitzar
+        el país i acabar amb el caciquisme, resumit en el lema 'escola i rebost'
+      es: Una corriente crítica con el sistema de la Restauración que reclamaba
+        modernizar el país y acabar con el caciquismo, resumida en el lema
+        'despensa y escuela'
+    - id: B
+      ca: Un moviment que defensava mantenir intacte el torn de partits i el sufragi
+        censatari com a garantia d'estabilitat
+      es: Un movimiento que defendía mantener intacto el turno de partidos y el
+        sufragio censitario como garantía de estabilidad
+    - id: C
+      ca: Una proposta de recuperar militarment les colònies perdudes mitjançant una
+        aliança amb Alemanya
+      es: Una propuesta de recuperar militarmente las colonias perdidas mediante una
+        alianza con Alemania
+    - id: D
+      ca: Un programa exclusivament literari sense cap crítica política ni social al
+        sistema
+      es: Un programa exclusivamente literario sin ninguna crítica política ni social
+        al sistema
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El regeneracionisme (Joaquín Costa com a figura central) va ser un corrent
+      crític que denunciava l'endarreriment, el caciquisme i l'oligarquia de la
+      Restauració, i proposava modernitzar Espanya prioritzant l'educació i el
+      desenvolupament econòmic ('escola i rebost', a més d'una 'cirurgia de
+      ferro'). No defensava el sistema existent (B), ni la reconquesta colonial
+      (C), ni era només literari: la Generació del 98 tenia vessant literària,
+      però el regeneracionisme tenia clara dimensió política i social (D)."
+    es: "El regeneracionismo (Joaquín Costa como figura central) fue una corriente
+      crítica que denunciaba el atraso, el caciquismo y la oligarquía de la
+      Restauración, y proponía modernizar España priorizando la educación y el
+      desarrollo económico ('despensa y escuela', además de una 'cirugía de
+      hierro'). No defendía el sistema existente (B), ni la reconquista colonial
+      (C), ni era solo literario: la Generación del 98 tenía vertiente
+      literaria, pero el regeneracionismo tenía clara dimensión política y
+      social (D)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.crisis_1898
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Segons dades habituals dels manuals, en la guerra de Cuba i les Filipines
+      (1895-1898) van morir prop de 55.000 soldats espanyols, dels quals
+      aproximadament el 90% van morir per malalties tropicals (febre groga,
+      malària, disenteria) i la resta en combat. Aproximadament quants soldats
+      van morir en combat?
+    es: Según datos habituales de los manuales, en la guerra de Cuba y Filipinas
+      (1895-1898) murieron cerca de 55.000 soldados españoles, de los cuales
+      aproximadamente el 90% murieron por enfermedades tropicales (fiebre
+      amarilla, malaria, disentería) y el resto en combate. ¿Aproximadamente
+      cuántos soldados murieron en combate?
+  options:
+    - id: A
+      ca: Uns 49.500 soldats
+      es: Unos 49.500 soldados
+    - id: B
+      ca: Uns 5.500 soldats
+      es: Unos 5.500 soldados
+    - id: C
+      ca: Uns 27.500 soldats
+      es: Unos 27.500 soldados
+    - id: D
+      ca: Uns 550 soldats
+      es: Unos 550 soldados
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Si el 90% van morir per malalties, en combat va morir el 10% restant:
+      55.000 × 0,10 = 5.500 soldats. L'opció A (49.500) és el 90% (els morts per
+      malaltia, no per combat); C és el 50% (confondre 'la resta' amb la
+      meitat); D aplica un 1% per error de factor 10. La dada il·lustra la
+      insalubritat com a factor decisiu del desastre."
+    es: "Si el 90% murió por enfermedades, en combate murió el 10% restante: 55.000
+      × 0,10 = 5.500 soldados. La opción A (49.500) es el 90% (los muertos por
+      enfermedad, no por combate); C es el 50% (confundir 'el resto' con la
+      mitad); D aplica un 1% por error de factor 10. El dato ilustra la
+      insalubridad como factor decisivo del desastre."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.crisis_1898
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quina de les següents afirmacions sobre les conseqüències polítiques del 98
+      a Catalunya és correcta?
+    es: ¿Cuál de las siguientes afirmaciones sobre las consecuencias políticas del
+      98 en Cataluña es correcta?
+  options:
+    - id: A
+      ca: La pèrdua del mercat colonial i la crítica al sistema van impulsar el
+        catalanisme polític, amb la fundació de la Lliga Regionalista el 1901
+      es: La pérdida del mercado colonial y la crítica al sistema impulsaron el
+        catalanismo político, con la fundación de la Lliga Regionalista en 1901
+    - id: B
+      ca: El 98 va provocar la immediata desaparició de tot moviment nacionalista
+        català fins a la Segona República
+      es: El 98 provocó la inmediata desaparición de todo movimiento nacionalista
+        catalán hasta la Segunda República
+    - id: C
+      ca: La burgesia catalana va donar suport unànime al lliurecanvisme i a
+        l'abandonament de les colònies abans de 1898
+      es: La burguesía catalana apoyó unánimemente el librecambismo y el abandono de
+        las colonias antes de 1898
+    - id: D
+      ca: El catalanisme sorgit del 98 va renunciar a qualsevol reivindicació
+        econòmica i es va limitar a qüestions lingüístiques
+      es: El catalanismo surgido del 98 renunció a cualquier reivindicación económica
+        y se limitó a cuestiones lingüísticas
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La pèrdua de Cuba (mercat clau per als teixits catalans) i el descrèdit del
+      sistema de la Restauració van reforçar el catalanisme polític conservador:
+      la Lliga Regionalista es va fundar el 1901 (Prat de la Riba, Cambó), en
+      part hereva del regeneracionisme i de plataformes com la Unió Catalanista
+      i el programa de les Bases de Manresa (1892). B és falsa (el catalanisme
+      creix, no desapareix); C és incorrecta perquè la burgesia catalana era
+      proteccionista i no volia perdre les colònies; D nega la forta component
+      econòmica i institucional del catalanisme."
+    es: "La pérdida de Cuba (mercado clave para los tejidos catalanes) y el
+      descrédito del sistema de la Restauración reforzaron el catalanismo
+      político conservador: la Lliga Regionalista se fundó en 1901 (Prat de la
+      Riba, Cambó), en parte heredera del regeneracionismo y de plataformas como
+      la Unió Catalanista y el programa de las Bases de Manresa (1892). B es
+      falsa (el catalanismo crece, no desaparece); C es incorrecta porque la
+      burguesía catalana era proteccionista y no quería perder las colonias; D
+      niega la fuerte componente económica e institucional del catalanismo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.restoration.crisis_1898
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: "Un historiador compara dos indicadors del comerç exterior espanyol: el 1894
+      les colònies antillanes absorbien al voltant del 25% de les exportacions
+      espanyoles; el 1900, després del Desastre, aquest percentatge havia caigut
+      fins a aproximadament el 5%. Quina lectura és la més rigorosa d'aquesta
+      variació?"
+    es: "Un historiador compara dos indicadores del comercio exterior español: en
+      1894 las colonias antillanas absorbían alrededor del 25% de las
+      exportaciones españolas; en 1900, tras el Desastre, ese porcentaje había
+      caído hasta aproximadamente el 5%. ¿Cuál es la lectura más rigurosa de esa
+      variación?"
+  options:
+    - id: A
+      ca: La quota colonial es va reduir en 20 punts percentuals, una caiguda relativa
+        del 80%, que va perjudicar especialment la indústria tèxtil catalana i
+        la farinera castellana
+      es: La cuota colonial se redujo en 20 puntos porcentuales, una caída relativa
+        del 80%, que perjudicó especialmente a la industria textil catalana y a
+        la harinera castellana
+    - id: B
+      ca: La quota colonial va baixar un 20%, cosa que amb prou feines va afectar
+        l'economia peninsular
+      es: La cuota colonial bajó un 20%, lo que apenas afectó a la economía peninsular
+    - id: C
+      ca: La quota colonial es va multiplicar per cinc, senyal de la recuperació
+        comercial posterior al 98
+      es: La cuota colonial se multiplicó por cinco, señal de la recuperación
+        comercial posterior al 98
+    - id: D
+      ca: La caiguda de 20 punts equival a una reducció relativa del 20%, sense
+        repercussions sectorials rellevants
+      es: La caída de 20 puntos equivale a una reducción relativa del 20%, sin
+        repercusiones sectoriales relevantes
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La variació absoluta és 25% − 5% = 20 punts percentuals. La variació
+      relativa és (25−5)/25 = 20/25 = 0,80, és a dir una caiguda del 80%
+      respecte del valor inicial. Aquest col·lapse del mercat protegit va
+      afectar sectors com el tèxtil català i la farinera castellana, que hi
+      tenien mercats captius. B confon punts amb percentatge relatiu i minimitza
+      l'impacte; C inverteix el sentit de la variació (baixa, no puja); D
+      calcula malament la reducció relativa (seria 20/100, no 20/25) i nega les
+      repercussions.
+    es: La variación absoluta es 25% − 5% = 20 puntos porcentuales. La variación
+      relativa es (25−5)/25 = 20/25 = 0,80, es decir una caída del 80% respecto
+      del valor inicial. Ese colapso del mercado protegido afectó a sectores
+      como el textil catalán y el harinero castellano, que tenían allí mercados
+      cautivos. B confunde puntos con porcentaje relativo y minimiza el impacto;
+      C invierte el sentido de la variación (baja, no sube); D calcula mal la
+      reducción relativa (sería 20/100, no 20/25) y niega las repercusiones.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.primo_rivera
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: "El cop d'estat que va instaurar la Dictadura de Primo de Rivera es va
+      produir el:"
+    es: "El golpe de Estado que instauró la Dictadura de Primo de Rivera se produjo
+      el:"
+  options:
+    - id: A
+      ca: 13 de setembre de 1923
+      es: 13 de septiembre de 1923
+    - id: B
+      ca: 14 d'abril de 1931
+      es: 14 de abril de 1931
+    - id: C
+      ca: 28 de gener de 1930
+      es: 28 de enero de 1930
+    - id: D
+      ca: 18 de juliol de 1936
+      es: 18 de julio de 1936
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Miguel Primo de Rivera, capità general de Catalunya, va donar el cop el 13
+      de setembre de 1923. El 14 d'abril de 1931 és la proclamació de la Segona
+      República; el 28 de gener de 1930 és la dimissió de Primo de Rivera; el 18
+      de juliol de 1936 és l'inici de la Guerra Civil.
+    es: Miguel Primo de Rivera, capitán general de Cataluña, dio el golpe el 13 de
+      septiembre de 1923. El 14 de abril de 1931 es la proclamación de la
+      Segunda República; el 28 de enero de 1930 es la dimisión de Primo de
+      Rivera; el 18 de julio de 1936 es el inicio de la Guerra Civil.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.primo_rivera
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Quin monarca va acceptar i legitimar el cop d'estat de Primo de Rivera,
+      encarregant-li la formació d'un govern?
+    es: ¿Qué monarca aceptó y legitimó el golpe de Estado de Primo de Rivera,
+      encargándole la formación de un gobierno?
+  options:
+    - id: A
+      ca: Alfons XIII
+      es: Alfonso XIII
+    - id: B
+      ca: Alfons XII
+      es: Alfonso XII
+    - id: C
+      ca: Amadeu I de Savoia
+      es: Amadeo I de Saboya
+    - id: D
+      ca: Isabel II
+      es: Isabel II
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El rei Alfons XIII (regnat 1902-1931) va acceptar el cop i va nomenar Primo
+      de Rivera cap del Directori, fet que va comprometre la Corona amb la
+      Dictadura. Alfons XII va morir el 1885; Amadeu I va regnar 1871-1873;
+      Isabel II fou destronada el 1868.
+    es: El rey Alfonso XIII (reinado 1902-1931) aceptó el golpe y nombró a Primo de
+      Rivera jefe del Directorio, lo que comprometió a la Corona con la
+      Dictadura. Alfonso XII murió en 1885; Amadeo I reinó 1871-1873; Isabel II
+      fue destronada en 1868.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.primo_rivera
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: "L'operació militar de setembre de 1925 que, en coordinació amb França, va
+      suposar el gir decisiu per posar fi a la Guerra del Rif al Marroc fou:"
+    es: "La operación militar de septiembre de 1925 que, en coordinación con
+      Francia, supuso el giro decisivo para poner fin a la Guerra del Rif en
+      Marruecos fue:"
+  options:
+    - id: A
+      ca: El desembarcament d'Alhucemas
+      es: El desembarco de Alhucemas
+    - id: B
+      ca: El desastre d'Annual
+      es: El desastre de Annual
+    - id: C
+      ca: La Setmana Tràgica
+      es: La Semana Trágica
+    - id: D
+      ca: El desastre del Barranco del Lobo
+      es: El desastre del Barranco del Lobo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El desembarcament d'Alhucemas (setembre 1925), operació hispanofrancesa, va
+      derrotar Abd el-Krim i encaminà la fi de la guerra (1927), donant enorme
+      prestigi a Primo de Rivera. Annual (1921) fou la gran derrota espanyola
+      prèvia; la Setmana Tràgica (1909) i el Barranco del Lobo (1909) són fets
+      anteriors a la Dictadura.
+    es: El desembarco de Alhucemas (septiembre 1925), operación hispanofrancesa,
+      derrotó a Abd el-Krim y encaminó el fin de la guerra (1927), dando enorme
+      prestigio a Primo de Rivera. Annual (1921) fue la gran derrota española
+      previa; la Semana Trágica (1909) y el Barranco del Lobo (1909) son hechos
+      anteriores a la Dictadura.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.primo_rivera
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "La Dictadura de Primo de Rivera es divideix en dues etapes. Indica-les en
+      l'ordre cronològic correcte i els anys aproximats:"
+    es: "La Dictadura de Primo de Rivera se divide en dos etapas. Indica cuáles son
+      en el orden cronológico correcto y sus años aproximados:"
+  options:
+    - id: A
+      ca: Directori Militar (1923-1925) i Directori Civil (1925-1930)
+      es: Directorio Militar (1923-1925) y Directorio Civil (1925-1930)
+    - id: B
+      ca: Directori Civil (1923-1925) i Directori Militar (1925-1930)
+      es: Directorio Civil (1923-1925) y Directorio Militar (1925-1930)
+    - id: C
+      ca: Directori Militar (1923-1927) i Bienni Reformista (1927-1930)
+      es: Directorio Militar (1923-1927) y Bienio Reformista (1927-1930)
+    - id: D
+      ca: Directori Provisional (1923-1926) i Directori Nacional (1926-1930)
+      es: Directorio Provisional (1923-1926) y Directorio Nacional (1926-1930)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Primer hi hagué el Directori Militar (1923-1925), integrat només per
+      militars i de caràcter provisional; el desembre de 1925 es passà al
+      Directori Civil (1925-1930), amb ministres civils i voluntat
+      d'institucionalitzar el règim (Unión Patriótica, Assemblea Nacional
+      Consultiva de 1927). L'ordre invers (B) i els noms i dates de C i D són
+      incorrectes.
+    es: Primero hubo el Directorio Militar (1923-1925), integrado solo por militares
+      y de carácter provisional; en diciembre de 1925 se pasó al Directorio
+      Civil (1925-1930), con ministros civiles y voluntad de institucionalizar
+      el régimen (Unión Patriótica, Asamblea Nacional Consultiva de 1927). El
+      orden inverso (B) y los nombres y fechas de C y D son incorrectos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.primo_rivera
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Pel que fa a la política social i laboral del Directori Civil, quina
+      afirmació és correcta?
+    es: En cuanto a la política social y laboral del Directorio Civil, ¿qué
+      afirmación es correcta?
+  options:
+    - id: A
+      ca: Es creà l'Organització Corporativa Nacional amb comitès paritaris (patrons i
+        obrers), d'inspiració feixista italiana, i comptà amb la col·laboració
+        de la UGT i el PSOE
+      es: Se creó la Organización Corporativa Nacional con comités paritarios
+        (patronos y obreros), de inspiración fascista italiana, y contó con la
+        colaboración de la UGT y el PSOE
+    - id: B
+      ca: Es va legalitzar la CNT anarquista com a sindicat de referència del règim
+      es: Se legalizó la CNT anarquista como sindicato de referencia del régimen
+    - id: C
+      ca: Es va implantar la jornada de 6 hores i el sufragi universal masculí i
+        femení
+      es: Se implantó la jornada de 6 horas y el sufragio universal masculino y
+        femenino
+    - id: D
+      ca: Es van suprimir totes les obres públiques per equilibrar el pressupost
+      es: Se suprimieron todas las obras públicas para equilibrar el presupuesto
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El ministre Eduardo Aunós impulsà l'Organització Corporativa Nacional amb
+      comitès paritaris que arbitraven entre patrons i obrers, model
+      d'inspiració feixista italiana; la UGT i el PSOE hi col·laboraren (Largo
+      Caballero fou conseller d'Estat), mentre la CNT era reprimida. El règim
+      promogué obres públiques i monopolis (CAMPSA, Confederacions
+      Hidrogràfiques), no les suprimí, i no hi hagué sufragi universal ni
+      jornada de 6 hores.
+    es: El ministro Eduardo Aunós impulsó la Organización Corporativa Nacional con
+      comités paritarios que arbitraban entre patronos y obreros, modelo de
+      inspiración fascista italiana; la UGT y el PSOE colaboraron (Largo
+      Caballero fue consejero de Estado), mientras la CNT era reprimida. El
+      régimen promovió obras públicas y monopolios (CAMPSA, Confederaciones
+      Hidrográficas), no los suprimió, y no hubo sufragio universal ni jornada
+      de 6 horas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.second_republic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: La Segona República espanyola es va proclamar oficialment el 14 d'abril de
+      1931. Quin esdeveniment immediatament anterior en va precipitar la
+      proclamació?
+    es: La Segunda República española se proclamó oficialmente el 14 de abril de
+      1931. ¿Qué acontecimiento inmediatamente anterior precipitó su
+      proclamación?
+  options:
+    - id: A
+      ca: Les eleccions municipals del 12 d'abril de 1931, en què les candidatures
+        republicanes van triomfar a les grans ciutats
+      es: Las elecciones municipales del 12 de abril de 1931, en las que las
+        candidaturas republicanas triunfaron en las grandes ciudades
+    - id: B
+      ca: Les eleccions generals a Corts constituents del juny de 1931
+      es: Las elecciones generales a Cortes constituyentes de junio de 1931
+    - id: C
+      ca: El Pacte de Sant Sebastià signat l'agost de 1930
+      es: El Pacto de San Sebastián firmado en agosto de 1930
+    - id: D
+      ca: La dimissió del general Primo de Rivera el gener de 1930
+      es: La dimisión del general Primo de Rivera en enero de 1930
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Les eleccions municipals del 12 d'abril de 1931 van donar la victòria a les
+      candidatures republicanes a la majoria de capitals de província. Davant
+      d'aquest resultat, el rei Alfons XIII va marxar del país i el 14 d'abril
+      es va proclamar la República. El Pacte de Sant Sebastià (1930) i la
+      dimissió de Primo de Rivera (1930) són antecedents més llunyans, i les
+      Corts constituents es van triar després, el juny de 1931.
+    es: Las elecciones municipales del 12 de abril de 1931 dieron la victoria a las
+      candidaturas republicanas en la mayoría de capitales de provincia. Ante
+      ese resultado, el rey Alfonso XIII abandonó el país y el 14 de abril se
+      proclamó la República. El Pacto de San Sebastián (1930) y la dimisión de
+      Primo de Rivera (1930) son antecedentes más lejanos, y las Cortes
+      constituyentes se eligieron después, en junio de 1931.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.second_republic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: La Constitució de 1931 va reconèixer el sufragi femení. En quines eleccions
+      generals van poder votar per primera vegada les dones a Espanya?
+    es: La Constitución de 1931 reconoció el sufragio femenino. ¿En qué elecciones
+      generales pudieron votar por primera vez las mujeres en España?
+  options:
+    - id: A
+      ca: En les eleccions generals del novembre de 1933
+      es: En las elecciones generales de noviembre de 1933
+    - id: B
+      ca: En les eleccions a Corts constituents del juny de 1931
+      es: En las elecciones a Cortes constituyentes de junio de 1931
+    - id: C
+      ca: En les eleccions municipals del 12 d'abril de 1931
+      es: En las elecciones municipales del 12 de abril de 1931
+    - id: D
+      ca: En les eleccions del Front Popular del febrer de 1936
+      es: En las elecciones del Frente Popular de febrero de 1936
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Constitució es va aprovar el desembre de 1931 i el seu article 36 va
+      reconèixer el dret de vot a les dones. Com que les eleccions constituents
+      del juny de 1931 i les municipals de l'abril de 1931 van ser anteriors a
+      aquest reconeixement, la primera vegada que les dones van exercir el vot
+      va ser en les eleccions generals del novembre de 1933. Les del febrer de
+      1936 ja no van ser les primeres.
+    es: La Constitución se aprobó en diciembre de 1931 y su artículo 36 reconoció el
+      derecho de voto a las mujeres. Como las elecciones constituyentes de junio
+      de 1931 y las municipales de abril de 1931 fueron anteriores a ese
+      reconocimiento, la primera vez que las mujeres ejercieron el voto fue en
+      las elecciones generales de noviembre de 1933. Las de febrero de 1936 ya
+      no fueron las primeras.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.second_republic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: L'Estatut d'autonomia de Catalunya, conegut com a Estatut de Núria, va ser
+      sotmès a referèndum popular el 2 d'agost de 1931 amb un suport superior al
+      99% dels vots. Quan va ser aprovat definitivament (de manera retallada)
+      per les Corts espanyoles?
+    es: El Estatuto de autonomía de Cataluña, conocido como Estatuto de Núria, fue
+      sometido a referéndum popular el 2 de agosto de 1931 con un apoyo superior
+      al 99% de los votos. ¿Cuándo fue aprobado definitivamente (de forma
+      recortada) por las Cortes españolas?
+  options:
+    - id: A
+      ca: El setembre de 1932
+      es: En septiembre de 1932
+    - id: B
+      ca: El mateix agost de 1931, immediatament després del referèndum
+      es: En el mismo agosto de 1931, inmediatamente después del referéndum
+    - id: C
+      ca: El desembre de 1931, junt amb la Constitució
+      es: En diciembre de 1931, junto con la Constitución
+    - id: D
+      ca: El febrer de 1936, amb la victòria del Front Popular
+      es: En febrero de 1936, con la victoria del Frente Popular
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Tot i que el text va ser ratificat pel poble català l'agost de 1931, va
+      haver d'esperar el debat a les Corts espanyoles, que el van aprovar de
+      manera retallada el setembre de 1932, després dels fets del 10 d'agost de
+      1932 (el cop de Sanjurjo). No es va aprovar immediatament ni el 1931, ni
+      tampoc el 1936.
+    es: Aunque el texto fue ratificado por el pueblo catalán en agosto de 1931, tuvo
+      que esperar el debate en las Cortes españolas, que lo aprobaron de forma
+      recortada en septiembre de 1932, tras los sucesos del 10 de agosto de 1932
+      (el golpe de Sanjurjo). No se aprobó de inmediato en 1931, ni tampoco en
+      1936.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.second_republic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Durant el bienni reformista (1931-1933), el govern d'Azaña va impulsar la
+      reforma agrària. Quina llei i quin organisme en van ser els instruments
+      principals?
+    es: Durante el bienio reformista (1931-1933), el gobierno de Azaña impulsó la
+      reforma agraria. ¿Qué ley y qué organismo fueron sus instrumentos
+      principales?
+  options:
+    - id: A
+      ca: La Llei de Bases de la Reforma Agrària (1932) i l'Institut de Reforma
+        Agrària (IRA)
+      es: La Ley de Bases de la Reforma Agraria (1932) y el Instituto de Reforma
+        Agraria (IRA)
+    - id: B
+      ca: La Llei de Termes Municipals i el Banc d'Espanya
+      es: La Ley de Términos Municipales y el Banco de España
+    - id: C
+      ca: La Llei de Contrarreforma Agrària (1935) i el Servei Nacional del Blat
+      es: La Ley de Contrarreforma Agraria (1935) y el Servicio Nacional del Trigo
+    - id: D
+      ca: La Llei de Confessions i Congregacions Religioses i la CNT
+      es: La Ley de Confesiones y Congregaciones Religiosas y la CNT
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Llei de Bases de la Reforma Agrària, aprovada el setembre de 1932, va
+      crear l'Institut de Reforma Agrària (IRA) per gestionar l'expropiació i el
+      repartiment de terres, especialment els latifundis del sud. La Llei de
+      Contrarreforma Agrària és de 1935 (bienni conservador) i va desfer part de
+      la reforma; la Llei de Confessions i Congregacions afectava l'Església, no
+      el camp.
+    es: La Ley de Bases de la Reforma Agraria, aprobada en septiembre de 1932, creó
+      el Instituto de Reforma Agraria (IRA) para gestionar la expropiación y el
+      reparto de tierras, especialmente los latifundios del sur. La Ley de
+      Contrarreforma Agraria es de 1935 (bienio conservador) y deshizo parte de
+      la reforma; la Ley de Confesiones y Congregaciones afectaba a la Iglesia,
+      no al campo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.second_republic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: "Ordena cronològicament les tres etapes polítiques de la Segona República
+      abans de la guerra: (1) bienni conservador o 'negre', (2) bienni
+      reformista, (3) govern del Front Popular. Quina és la seqüència correcta
+      amb els anys?"
+    es: "Ordena cronológicamente las tres etapas políticas de la Segunda República
+      antes de la guerra: (1) bienio conservador o 'negro', (2) bienio
+      reformista, (3) gobierno del Frente Popular. ¿Cuál es la secuencia
+      correcta con los años?"
+  options:
+    - id: A
+      ca: Bienni reformista (1931-1933) → bienni conservador (1933-1936) → Front
+        Popular (febrer de 1936)
+      es: Bienio reformista (1931-1933) → bienio conservador (1933-1936) → Frente
+        Popular (febrero de 1936)
+    - id: B
+      ca: Bienni conservador (1931-1933) → bienni reformista (1933-1936) → Front
+        Popular (1936)
+      es: Bienio conservador (1931-1933) → bienio reformista (1933-1936) → Frente
+        Popular (1936)
+    - id: C
+      ca: Front Popular (1931) → bienni reformista (1932-1934) → bienni conservador
+        (1934-1936)
+      es: Frente Popular (1931) → bienio reformista (1932-1934) → bienio conservador
+        (1934-1936)
+    - id: D
+      ca: Bienni reformista (1931-1934) → Front Popular (1934-1935) → bienni
+        conservador (1935-1936)
+      es: Bienio reformista (1931-1934) → Frente Popular (1934-1935) → bienio
+        conservador (1935-1936)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La República s'inicia amb el bienni reformista (1931-1933), governat per
+      republicans d'esquerra i socialistes amb Azaña. Les eleccions del novembre
+      de 1933 donen pas al bienni conservador o 'negre' (1933-1936), amb el
+      Partit Radical i la CEDA. Finalment, les eleccions del 16 de febrer de
+      1936 porten al poder el Front Popular. Les altres opcions inverteixen
+      l'ordre o desplacen les dates.
+    es: La República comienza con el bienio reformista (1931-1933), gobernado por
+      republicanos de izquierda y socialistas con Azaña. Las elecciones de
+      noviembre de 1933 dan paso al bienio conservador o 'negro' (1933-1936),
+      con el Partido Radical y la CEDA. Finalmente, las elecciones del 16 de
+      febrero de 1936 llevan al poder al Frente Popular. Las demás opciones
+      invierten el orden o desplazan las fechas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.second_republic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Els Fets d'Octubre de 1934 van tenir a Catalunya una dimensió política
+      pròpia. Què va proclamar Lluís Companys, president de la Generalitat, el 6
+      d'octubre de 1934, i quina en va ser la conseqüència immediata?
+    es: Los Hechos de Octubre de 1934 tuvieron en Cataluña una dimensión política
+      propia. ¿Qué proclamó Lluís Companys, presidente de la Generalitat, el 6
+      de octubre de 1934, y cuál fue su consecuencia inmediata?
+  options:
+    - id: A
+      ca: L''Estat Català dins la República Federal Espanyola'; el govern va suspendre
+        l'Estatut i va empresonar el govern de la Generalitat
+      es: El 'Estat Català dentro de la República Federal Española'; el gobierno
+        suspendió el Estatuto y encarceló al gobierno de la Generalitat
+    - id: B
+      ca: La independència total de Catalunya; el govern central va reconèixer un
+        Estat català sobirà
+      es: La independencia total de Cataluña; el gobierno central reconoció un Estado
+        catalán soberano
+    - id: C
+      ca: La República Catalana proclamada per Macià el 1931; es va restablir
+        immediatament la Mancomunitat
+      es: La República Catalana proclamada por Macià en 1931; se restableció de
+        inmediato la Mancomunidad
+    - id: D
+      ca: L'adhesió de Catalunya al Front Popular; es va convocar un nou referèndum
+        d'autonomia
+      es: La adhesión de Cataluña al Frente Popular; se convocó un nuevo referéndum de
+        autonomía
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El 6 d'octubre de 1934, en resposta a l'entrada de ministres de la CEDA al
+      govern, Companys va proclamar l'Estat Català 'dins la República Federal
+      Espanyola', no la independència. La revolta va ser sufocada per l'exèrcit
+      en poques hores: el govern de la Generalitat va ser detingut i empresonat,
+      i l'Estatut d'autonomia va quedar suspès fins al triomf del Front Popular
+      el 1936."
+    es: "El 6 de octubre de 1934, en respuesta a la entrada de ministros de la CEDA
+      en el gobierno, Companys proclamó el Estat Català 'dentro de la República
+      Federal Española', no la independencia. La revuelta fue sofocada por el
+      ejército en pocas horas: el gobierno de la Generalitat fue detenido y
+      encarcelado, y el Estatuto de autonomía quedó suspendido hasta el triunfo
+      del Frente Popular en 1936."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.civil_war
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: La sublevació militar que va donar inici a la Guerra Civil espanyola es va
+      produir primer al Protectorat del Marroc i, l'endemà, a la península. En
+      quines dates va tenir lloc?
+    es: La sublevación militar que dio inicio a la Guerra Civil española se produjo
+      primero en el Protectorado de Marruecos y, al día siguiente, en la
+      península. ¿En qué fechas tuvo lugar?
+  options:
+    - id: A
+      ca: 17-18 de juliol de 1936
+      es: 17-18 de julio de 1936
+    - id: B
+      ca: 14 d'abril de 1931
+      es: 14 de abril de 1931
+    - id: C
+      ca: 6 d'octubre de 1934
+      es: 6 de octubre de 1934
+    - id: D
+      ca: 1 d'abril de 1939
+      es: 1 de abril de 1939
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El cop d'estat va començar el 17 de juliol de 1936 al Marroc espanyol i es
+      va estendre a la península el 18 de juliol, iniciant la guerra. El 14
+      d'abril de 1931 és la proclamació de la Segona República; el 6 d'octubre
+      de 1934 són els Fets d'Octubre (Companys proclama l'Estat Català); l'1
+      d'abril de 1939 és el final de la guerra.
+    es: El golpe de Estado comenzó el 17 de julio de 1936 en el Marruecos español y
+      se extendió a la península el 18 de julio, iniciando la guerra. El 14 de
+      abril de 1931 es la proclamación de la Segunda República; el 6 de octubre
+      de 1934 son los Hechos de Octubre (Companys proclama el Estado Catalán);
+      el 1 de abril de 1939 es el final de la guerra.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.civil_war
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "La batalla més llarga i sagnant de la Guerra Civil, considerada decisiva
+      perquè va exhaurir l'exèrcit republicà i va obrir el camí a la conquesta
+      de Catalunya, va ser:"
+    es: "La batalla más larga y sangrienta de la Guerra Civil, considerada decisiva
+      porque agotó al ejército republicano y abrió el camino a la conquista de
+      Cataluña, fue:"
+  options:
+    - id: A
+      ca: La batalla de l'Ebre (juliol-novembre de 1938)
+      es: La batalla del Ebro (julio-noviembre de 1938)
+    - id: B
+      ca: La batalla de Guadalajara (març de 1937)
+      es: La batalla de Guadalajara (marzo de 1937)
+    - id: C
+      ca: La batalla del Jarama (febrer de 1937)
+      es: La batalla del Jarama (febrero de 1937)
+    - id: D
+      ca: La batalla de Brunete (juliol de 1937)
+      es: La batalla de Brunete (julio de 1937)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La batalla de l'Ebre (25 de juliol - 16 de novembre de 1938, uns 115 dies)
+      va ser la més llarga i mortífera; la derrota republicana va deixar
+      l'exèrcit sense capacitat de resistència i va permetre l'ofensiva
+      franquista sobre Catalunya. Guadalajara (derrota italiana), Jarama i
+      Brunete foren batalles anteriors al voltant de Madrid, de menor abast
+      decisiu.
+    es: La batalla del Ebro (25 de julio - 16 de noviembre de 1938, unos 115 días)
+      fue la más larga y mortífera; la derrota republicana dejó al ejército sin
+      capacidad de resistencia y permitió la ofensiva franquista sobre Cataluña.
+      Guadalajara (derrota italiana), Jarama y Brunete fueron batallas
+      anteriores en torno a Madrid, de menor alcance decisivo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.civil_war
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: El 26 d'abril de 1937, durant la campanya del Nord, l'aviació alemanya
+      (Legió Còndor) amb suport italià va bombardejar sistemàticament una
+      població basca, convertint-la en símbol internacional de l'horror de la
+      guerra. De quina localitat es tracta i quina força en va ser la principal
+      responsable?
+    es: El 26 de abril de 1937, durante la campaña del Norte, la aviación alemana
+      (Legión Cóndor) con apoyo italiano bombardeó sistemáticamente una
+      población vasca, convirtiéndola en símbolo internacional del horror de la
+      guerra. ¿De qué localidad se trata y qué fuerza fue la principal
+      responsable?
+  options:
+    - id: A
+      ca: Gernika, bombardejada per la Legió Còndor alemanya
+      es: Gernika, bombardeada por la Legión Cóndor alemana
+    - id: B
+      ca: Gernika, bombardejada per les Brigades Internacionals
+      es: Gernika, bombardeada por las Brigadas Internacionales
+    - id: C
+      ca: Bilbao, bombardejada per l'aviació soviètica
+      es: Bilbao, bombardeada por la aviación soviética
+    - id: D
+      ca: Gernika, bombardejada exclusivament pel CTV italià
+      es: Gernika, bombardeada exclusivamente por el CTV italiano
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El 26 d'abril de 1937 la Legió Còndor alemanya (amb suport de l'aviació
+      italiana) va bombardejar Gernika, símbol foral basc, causant una gran
+      destrucció. Les Brigades Internacionals i l'URSS ajudaven la República, no
+      els sublevats; el CTV italià era una força terrestre i no en fou el
+      responsable principal del bombardeig.
+    es: El 26 de abril de 1937 la Legión Cóndor alemana (con apoyo de la aviación
+      italiana) bombardeó Gernika, símbolo foral vasco, causando una gran
+      destrucción. Las Brigadas Internacionales y la URSS ayudaban a la
+      República, no a los sublevados; el CTV italiano era una fuerza terrestre y
+      no fue el responsable principal del bombardeo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.civil_war
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "Els Fets de Maig de 1937 a Barcelona van consistir en:"
+    es: "Los Hechos de Mayo de 1937 en Barcelona consistieron en:"
+  options:
+    - id: A
+      ca: Enfrontaments armats entre la CNT-FAI i el POUM, d'una banda, i les forces
+        del govern de la Generalitat i el PSUC-PCE, de l'altra, arran del
+        control de l'edifici de Telefònica
+      es: Enfrentamientos armados entre la CNT-FAI y el POUM, por un lado, y las
+        fuerzas del gobierno de la Generalitat y el PSUC-PCE, por otro, a raíz
+        del control del edificio de Telefónica
+    - id: B
+      ca: Un aixecament feixista dins la ciutat que va estar a punt de fer caure la
+        Generalitat
+      es: Un levantamiento fascista dentro de la ciudad que estuvo a punto de derribar
+        la Generalitat
+    - id: C
+      ca: Una vaga general convocada contra el govern de Negrín per haver dissolt les
+        col·lectivitzacions
+      es: Una huelga general convocada contra el gobierno de Negrín por haber disuelto
+        las colectivizaciones
+    - id: D
+      ca: El bombardeig de Barcelona per l'aviació italiana amb base a Mallorca
+      es: El bombardeo de Barcelona por la aviación italiana con base en Mallorca
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els Fets de Maig (3-8 de maig de 1937) van ser un conflicte intern al
+      bàndol republicà: la CNT-FAI i el POUM (partidaris de prioritzar la
+      revolució) s'enfrontaren a les forces del govern i del PSUC-PCE
+      (partidaris de prioritzar la guerra i l'ordre), desencadenat per l'intent
+      d'ocupar la Telefònica. El resultat afeblí els anarquistes i el POUM (que
+      fou il·legalitzat) i precipità la caiguda de Largo Caballero."
+    es: "Los Hechos de Mayo (3-8 de mayo de 1937) fueron un conflicto interno en el
+      bando republicano: la CNT-FAI y el POUM (partidarios de priorizar la
+      revolución) se enfrentaron a las fuerzas del gobierno y del PSUC-PCE
+      (partidarios de priorizar la guerra y el orden), desencadenado por el
+      intento de ocupar la Telefónica. El resultado debilitó a los anarquistas y
+      al POUM (que fue ilegalizado) y precipitó la caída de Largo Caballero."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.civil_war
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: "Ordenats cronològicament, els presidents del govern (Consell de Ministres)
+      de la República durant la guerra van ser:"
+    es: "Ordenados cronológicamente, los presidentes del gobierno (Consejo de
+      Ministros) de la República durante la guerra fueron:"
+  options:
+    - id: A
+      ca: José Giral → Francisco Largo Caballero → Juan Negrín
+      es: José Giral → Francisco Largo Caballero → Juan Negrín
+    - id: B
+      ca: Manuel Azaña → Juan Negrín → Francisco Largo Caballero
+      es: Manuel Azaña → Juan Negrín → Francisco Largo Caballero
+    - id: C
+      ca: Francisco Largo Caballero → José Giral → Juan Negrín
+      es: Francisco Largo Caballero → José Giral → Juan Negrín
+    - id: D
+      ca: Juan Negrín → José Giral → Manuel Azaña
+      es: Juan Negrín → José Giral → Manuel Azaña
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En esclatar la guerra, José Giral presidí el govern (juliol de 1936); el
+      setembre de 1936 el succeí Francisco Largo Caballero, que caigué després
+      dels Fets de Maig de 1937; el maig de 1937 Juan Negrín formà govern i el
+      mantingué fins al final. Manuel Azaña era el President de la República
+      (cap d'Estat), no del govern, per la qual cosa les altres seqüències són
+      incorrectes.
+    es: Al estallar la guerra, José Giral presidió el gobierno (julio de 1936); en
+      septiembre de 1936 le sucedió Francisco Largo Caballero, que cayó tras los
+      Hechos de Mayo de 1937; en mayo de 1937 Juan Negrín formó gobierno y lo
+      mantuvo hasta el final. Manuel Azaña era el Presidente de la República
+      (jefe de Estado), no del gobierno, por lo que las demás secuencias son
+      incorrectas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.twentieth.civil_war
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: El Comitè de No-Intervenció, creat el setembre de 1936 i integrat per una
+      vintena llarga d'estats europeus, tenia com a objectiu declarat impedir
+      l'arribada d'armes a Espanya. A la pràctica, quin efecte va tenir sobre
+      els dos bàndols?
+    es: El Comité de No Intervención, creado en septiembre de 1936 e integrado por
+      una veintena larga de estados europeos, tenía como objetivo declarado
+      impedir la llegada de armas a España. En la práctica, ¿qué efecto tuvo
+      sobre los dos bandos?
+  options:
+    - id: A
+      ca: Va perjudicar sobretot la República, que va veure bloquejat el
+        subministrament de les democràcies, mentre Alemanya i Itàlia continuaven
+        ajudant obertament els sublevats
+      es: Perjudicó sobre todo a la República, que vio bloqueado el suministro de las
+        democracias, mientras Alemania e Italia seguían ayudando abiertamente a
+        los sublevados
+    - id: B
+      ca: Va bloquejar de manera efectiva l'ajuda a tots dos bàndols, que hagueren de
+        combatre només amb recursos propis
+      es: Bloqueó de manera efectiva la ayuda a ambos bandos, que tuvieron que
+        combatir solo con recursos propios
+    - id: C
+      ca: Va afavorir la República, que va rebre armament de França i el Regne Unit
+        gràcies al Comitè
+      es: Favoreció a la República, que recibió armamento de Francia y el Reino Unido
+        gracias al Comité
+    - id: D
+      ca: Va impedir la intervenció d'Alemanya i Itàlia, però va permetre l'ajuda
+        soviètica als sublevats
+      es: Impidió la intervención de Alemania e Italia, pero permitió la ayuda
+        soviética a los sublevados
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El Comitè de No-Intervenció fou un fracàs pràctic que perjudicà la
+      República: França i el Regne Unit respectaren el bloqueig i li negaren
+      armes, mentre Alemanya (Legió Còndor) i Itàlia (CTV) violaven l'acord i
+      ajudaven massivament Franco. La República només pogué comprar armament a
+      l'URSS (i, en part, amb les Brigades Internacionals). Per tant, ni
+      bloquejà tots dos bàndols, ni la afavorí, ni l'URSS ajudava els
+      sublevats."
+    es: "El Comité de No Intervención fue un fracaso práctico que perjudicó a la
+      República: Francia y el Reino Unido respetaron el bloqueo y le negaron
+      armas, mientras Alemania (Legión Cóndor) e Italia (CTV) violaban el
+      acuerdo y ayudaban masivamente a Franco. La República solo pudo comprar
+      armamento a la URSS (y, en parte, con las Brigadas Internacionales). Por
+      tanto, ni bloqueó a ambos bandos, ni la favoreció, ni la URSS ayudaba a
+      los sublevados."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.regime
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En quina data va morir el general Francisco Franco, fet que va posar fi a la
+      seva dictadura?
+    es: ¿En qué fecha murió el general Francisco Franco, hecho que puso fin a su
+      dictadura?
+  options:
+    - id: A
+      ca: 20 de novembre de 1975
+      es: 20 de noviembre de 1975
+    - id: B
+      ca: 20 de novembre de 1936
+      es: 20 de noviembre de 1936
+    - id: C
+      ca: 1 d'abril de 1975
+      es: 1 de abril de 1975
+    - id: D
+      ca: 22 de novembre de 1975
+      es: 22 de noviembre de 1975
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Franco va morir el 20 de novembre de 1975. El 20 de novembre de 1936 és la
+      data de l'afusellament de José Antonio Primo de Rivera (error habitual).
+      L'1 d'abril és l'aniversari del final de la Guerra Civil (1939), no de la
+      mort. El 22 de novembre de 1975 Joan Carles I va ser proclamat rei davant
+      les Corts, dos dies després.
+    es: Franco murió el 20 de noviembre de 1975. El 20 de noviembre de 1936 es la
+      fecha del fusilamiento de José Antonio Primo de Rivera (error habitual).
+      El 1 de abril es el aniversario del final de la Guerra Civil (1939), no de
+      la muerte. El 22 de noviembre de 1975 Juan Carlos I fue proclamado rey
+      ante las Cortes, dos días después.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.regime
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "El Pla d'Estabilització, que va posar fi a l'autarquia i va obrir
+      l'economia espanyola a l'exterior sota l'impuls dels tecnòcrates, es va
+      aprovar l'any:"
+    es: "El Plan de Estabilización, que puso fin a la autarquía y abrió la economía
+      española al exterior bajo el impulso de los tecnócratas, se aprobó en el
+      año:"
+  options:
+    - id: A
+      ca: "1959"
+      es: "1959"
+    - id: B
+      ca: "1953"
+      es: "1953"
+    - id: C
+      ca: "1964"
+      es: "1964"
+    - id: D
+      ca: "1957"
+      es: "1957"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Pla d'Estabilització i Liberalització és de 1959. El 1953 correspon als
+      Pactes de Madrid i el Concordat. El 1957 és l'any de l'entrada dels
+      ministres tecnòcrates de l'Opus Dei al govern (que van preparar el pla).
+      El 1964 s'inicia el I Pla de Desenvolupament, ja dins el desarrollismo
+      posterior a l'estabilització.
+    es: El Plan de Estabilización y Liberalización es de 1959. 1953 corresponde a
+      los Pactos de Madrid y el Concordato. 1957 es el año de la entrada de los
+      ministros tecnócratas del Opus Dei en el gobierno (que prepararon el
+      plan). 1964 inicia el I Plan de Desarrollo, ya dentro del desarrollismo
+      posterior a la estabilización.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.regime
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: El 1953 el règim franquista va aconseguir dues fites diplomàtiques que van
+      trencar l'aïllament internacional. Quines?
+    es: En 1953 el régimen franquista logró dos hitos diplomáticos que rompieron el
+      aislamiento internacional. ¿Cuáles?
+  options:
+    - id: A
+      ca: El Concordat amb la Santa Seu i els Pactes de Madrid amb els Estats Units
+        (bases militars a canvi d'ajuda econòmica)
+      es: El Concordato con la Santa Sede y los Pactos de Madrid con Estados Unidos
+        (bases militares a cambio de ayuda económica)
+    - id: B
+      ca: L'ingrés a l'ONU i l'ingrés a l'OTAN
+      es: El ingreso en la ONU y el ingreso en la OTAN
+    - id: C
+      ca: L'ingrés a la CEE i el Pla Marshall
+      es: El ingreso en la CEE y el Plan Marshall
+    - id: D
+      ca: El Concordat amb la Santa Seu i l'ingrés a l'ONU
+      es: El Concordato con la Santa Sede y el ingreso en la ONU
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El 1953 se signen el Concordat amb el Vaticà i els Pactes de Madrid amb els
+      EUA (bases a canvi d'ajuda). L'ingrés a l'ONU no arriba fins al 1955 (per
+      això D és incorrecta, barreja anys). Espanya mai no va entrar a l'OTAN
+      durant el franquisme (ho farà el 1982) ni va rebre el Pla Marshall, i
+      l'ingrés a la CEE és de 1986: opcions B i C són falses."
+    es: "En 1953 se firman el Concordato con el Vaticano y los Pactos de Madrid con
+      EE. UU. (bases a cambio de ayuda). El ingreso en la ONU no llega hasta
+      1955 (por eso D es incorrecta, mezcla años). España nunca entró en la OTAN
+      durante el franquismo (lo hará en 1982) ni recibió el Plan Marshall, y el
+      ingreso en la CEE es de 1986: opciones B y C son falsas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.regime
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quina Llei Fonamental de 1947, sotmesa a referèndum, va definir Espanya com
+      un «regne» i va facultar Franco per proposar el seu successor a títol de
+      rei?
+    es: ¿Qué Ley Fundamental de 1947, sometida a referéndum, definió España como un
+      «reino» y facultó a Franco para proponer a su sucesor a título de rey?
+  options:
+    - id: A
+      ca: La Llei de Successió en la Prefectura de l'Estat
+      es: La Ley de Sucesión en la Jefatura del Estado
+    - id: B
+      ca: El Fur dels Espanyols
+      es: El Fuero de los Españoles
+    - id: C
+      ca: La Llei de Principis del Moviment Nacional
+      es: La Ley de Principios del Movimiento Nacional
+    - id: D
+      ca: La Llei Orgànica de l'Estat
+      es: La Ley Orgánica del Estado
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Llei de Successió en la Prefectura de l'Estat (1947) declarava Espanya
+      «regne» i permetia a Franco designar successor a títol de rei (ho farà amb
+      Joan Carles el 1969). El Fur dels Espanyols és de 1945 (declaració de
+      drets), la Llei de Principis del Moviment Nacional de 1958 i la Llei
+      Orgànica de l'Estat de 1967.
+    es: La Ley de Sucesión en la Jefatura del Estado (1947) declaraba España «reino»
+      y permitía a Franco designar sucesor a título de rey (lo hará con Juan
+      Carlos en 1969). El Fuero de los Españoles es de 1945 (declaración de
+      derechos), la Ley de Principios del Movimiento Nacional de 1958 y la Ley
+      Orgánica del Estado de 1967.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.regime
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "Durant el desarrollismo (aproximadament 1961-1973), l'economia espanyola va
+      créixer a un ritme mitjà anual excepcionalment alt, només superat pel del
+      Japó a escala mundial. Aquest creixement mitjà del PIB se situava al
+      voltant del:"
+    es: "Durante el desarrollismo (aproximadamente 1961-1973), la economía española
+      creció a un ritmo medio anual excepcionalmente alto, solo superado por el
+      de Japón a escala mundial. Este crecimiento medio del PIB se situaba en
+      torno al:"
+  options:
+    - id: A
+      ca: 7% anual
+      es: 7% anual
+    - id: B
+      ca: 2% anual
+      es: 2% anual
+    - id: C
+      ca: 25% anual
+      es: 25% anual
+    - id: D
+      ca: 0,5% anual
+      es: 0,5% anual
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El PIB va créixer de mitjana prop del 7% anual entre 1961 i 1973, el segon
+      ritme més alt del món després del Japó (el «miracle espanyol»). Un 2%
+      seria un creixement modest, propi d'economies madures o de l'etapa
+      autàrquica estancada; un 25% és irreal per a una economia nacional; un
+      0,5% equivaldria pràcticament a estancament, incompatible amb el
+      desarrollismo.
+    es: El PIB creció de media cerca del 7% anual entre 1961 y 1973, el segundo
+      ritmo más alto del mundo tras Japón (el «milagro español»). Un 2% sería un
+      crecimiento modesto, propio de economías maduras o de la etapa autárquica
+      estancada; un 25% es irreal para una economía nacional; un 0,5%
+      equivaldría prácticamente a estancamiento, incompatible con el
+      desarrollismo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.regime
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: "L'almirall Luis Carrero Blanco, nomenat president del govern el juny de
+      1973 i considerat garant de la continuïtat del règim, va morir el desembre
+      de 1973 a causa de:"
+    es: "El almirante Luis Carrero Blanco, nombrado presidente del gobierno en junio
+      de 1973 y considerado garante de la continuidad del régimen, murió en
+      diciembre de 1973 a causa de:"
+  options:
+    - id: A
+      ca: Un atemptat d'ETA (Operació Ogre) amb una càrrega explosiva a Madrid
+      es: Un atentado de ETA (Operación Ogro) con una carga explosiva en Madrid
+    - id: B
+      ca: Una malaltia natural, com el mateix Franco
+      es: Una enfermedad natural, como el propio Franco
+    - id: C
+      ca: Un atemptat del FRAP en una manifestació
+      es: Un atentado del FRAP en una manifestación
+    - id: D
+      ca: Un accident d'aviació militar
+      es: Un accidente de aviación militar
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Carrero Blanco va ser assassinat per ETA el 20 de desembre de 1973 en un
+      atemptat amb explosius (Operació Ogre) al carrer Claudio Coello de Madrid.
+      No va morir de malaltia (això va ser Franco, el 1975) ni en accident aeri;
+      el FRAP va cometre altres atemptats però no aquest. La seva mort va
+      accelerar la crisi final del règim.
+    es: Carrero Blanco fue asesinado por ETA el 20 de diciembre de 1973 en un
+      atentado con explosivos (Operación Ogro) en la calle Claudio Coello de
+      Madrid. No murió de enfermedad (eso fue Franco, en 1975) ni en accidente
+      aéreo; el FRAP cometió otros atentados pero no este. Su muerte aceleró la
+      crisis final del régimen.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.opposition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: El 20 de desembre de 1973, l'organització ETA va dur a terme l'atemptat
+      conegut com a 'Operació Ogre'. Quina figura política del règim franquista,
+      president del govern des del juny d'aquell mateix any, hi va morir?
+    es: El 20 de diciembre de 1973, la organización ETA llevó a cabo el atentado
+      conocido como 'Operación Ogro'. ¿Qué figura política del régimen
+      franquista, presidente del gobierno desde junio de ese mismo año, murió en
+      él?
+  options:
+    - id: A
+      ca: Luis Carrero Blanco
+      es: Luis Carrero Blanco
+    - id: B
+      ca: Carlos Arias Navarro
+      es: Carlos Arias Navarro
+    - id: C
+      ca: Manuel Fraga Iribarne
+      es: Manuel Fraga Iribarne
+    - id: D
+      ca: Torcuato Fernández-Miranda
+      es: Torcuato Fernández-Miranda
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'almirall Luis Carrero Blanco, nomenat president del govern el juny de 1973
+      i considerat el continuador del règim ('el franquisme sense Franco'), va
+      ser assassinat per ETA a Madrid el 20-12-1973. Arias Navarro el va succeir
+      precisament arran d'aquesta mort; Fraga era ministre reformista i
+      Fernández-Miranda va ser president interí immediat però no la víctima.
+    es: El almirante Luis Carrero Blanco, nombrado presidente del gobierno en junio
+      de 1973 y considerado el continuador del régimen ('el franquismo sin
+      Franco'), fue asesinado por ETA en Madrid el 20-12-1973. Arias Navarro le
+      sucedió precisamente a raíz de esa muerte; Fraga era ministro reformista y
+      Fernández-Miranda fue presidente interino inmediato pero no la víctima.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.opposition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: L'Assemblea de Catalunya, creada el novembre de 1971 com a plataforma
+      unitària de l'oposició antifranquista a Catalunya, va sintetitzar les
+      seves reivindicacions en un lema que resumia el seu programa. Quin era
+      aquest lema?
+    es: La Asamblea de Cataluña, creada en noviembre de 1971 como plataforma
+      unitaria de la oposición antifranquista en Cataluña, sintetizó sus
+      reivindicaciones en un lema que resumía su programa. ¿Cuál era ese lema?
+  options:
+    - id: A
+      ca: "'Llibertat, amnistia i Estatut d'Autonomia'"
+      es: "'Libertad, amnistía y Estatuto de Autonomía'"
+    - id: B
+      ca: "'Pa, pau i llibertat'"
+      es: "'Pan, paz y libertad'"
+    - id: C
+      ca: "'Terra, treball i república'"
+      es: "'Tierra, trabajo y república'"
+    - id: D
+      ca: "'Volem l'Estatut de Núria'"
+      es: "'Queremos el Estatuto de Núria'"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'Assemblea de Catalunya (1971) va aplegar partits, sindicats i entitats
+      sota el lema 'Llibertat, amnistia i Estatut d'Autonomia', que reclamava
+      llibertats democràtiques, l'amnistia dels presos polítics i el
+      restabliment de l'autogovern. La resta són consignes d'altres contextos o
+      inventades; l'Estatut de Núria remet a 1931-32, no al programa de
+      l'Assemblea.
+    es: La Asamblea de Cataluña (1971) reunió partidos, sindicatos y entidades bajo
+      el lema 'Libertad, amnistía y Estatuto de Autonomía', que reclamaba
+      libertades democráticas, la amnistía de los presos políticos y la
+      recuperación del autogobierno. El resto son consignas de otros contextos o
+      inventadas; el Estatuto de Núria remite a 1931-32, no al programa de la
+      Asamblea.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.opposition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Durant els darrers anys del franquisme es van formar dues grans plataformes
+      unitàries de l'oposició. Quina afirmació descriu correctament la Junta
+      Democrática de España (1974) i la Plataforma de Convergencia Democrática
+      (1975)?
+    es: Durante los últimos años del franquismo se formaron dos grandes plataformas
+      unitarias de la oposición. ¿Qué afirmación describe correctamente la Junta
+      Democrática de España (1974) y la Plataforma de Convergencia Democrática
+      (1975)?
+  options:
+    - id: A
+      ca: La Junta Democrática (1974) va ser impulsada sobretot pel PCE, i la
+        Plataforma de Convergencia (1975), pel PSOE; el 1976 es van fusionar en
+        la 'Platajunta'.
+      es: La Junta Democrática (1974) fue impulsada sobre todo por el PCE, y la
+        Plataforma de Convergencia (1975), por el PSOE; en 1976 se fusionaron en
+        la 'Platajunta'.
+    - id: B
+      ca: La Junta Democrática (1974) va ser impulsada pel PSOE, i la Plataforma de
+        Convergencia (1975), pel PCE.
+      es: La Junta Democrática (1974) fue impulsada por el PSOE, y la Plataforma de
+        Convergencia (1975), por el PCE.
+    - id: C
+      ca: Totes dues van ser creades pel govern franquista per canalitzar una oposició
+        controlada.
+      es: Ambas fueron creadas por el gobierno franquista para canalizar una oposición
+        controlada.
+    - id: D
+      ca: Van ser organitzacions armades sorgides d'ETA i el FRAP el 1974-1975.
+      es: Fueron organizaciones armadas surgidas de ETA y el FRAP en 1974-1975.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Junta Democrática de España (juliol de 1974) va ser impulsada
+      principalment pel PCE de Santiago Carrillo, mentre que la Plataforma de
+      Convergencia Democrática (juny de 1975) tenia el PSOE de Felipe González
+      com a força central. El març de 1976 es van unir en Coordinación
+      Democrática, coneguda popularment com la 'Platajunta'. No eren organismes
+      del règim ni grups armats.
+    es: La Junta Democrática de España (julio de 1974) fue impulsada principalmente
+      por el PCE de Santiago Carrillo, mientras que la Plataforma de
+      Convergencia Democrática (junio de 1975) tenía al PSOE de Felipe González
+      como fuerza central. En marzo de 1976 se unieron en Coordinación
+      Democrática, conocida popularmente como la 'Platajunta'. No eran
+      organismos del régimen ni grupos armados.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.opposition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: El desembre de 1970 va tenir lloc a Burgos un consell de guerra molt polèmic
+      contra militants d'ETA. Quina va ser la característica i el desenllaç
+      principal del anomenat 'Procés de Burgos'?
+    es: En diciembre de 1970 tuvo lugar en Burgos un consejo de guerra muy polémico
+      contra militantes de ETA. ¿Cuál fue la característica y el desenlace
+      principal del llamado 'Proceso de Burgos'?
+  options:
+    - id: A
+      ca: Un tribunal militar va dictar diverses penes de mort que Franco va commutar
+        davant la forta pressió interna i internacional.
+      es: Un tribunal militar dictó varias penas de muerte que Franco conmutó ante la
+        fuerte presión interna e internacional.
+    - id: B
+      ca: Un tribunal civil ordinari va absoldre tots els acusats per manca de proves.
+      es: Un tribunal civil ordinario absolvió a todos los acusados por falta de
+        pruebas.
+    - id: C
+      ca: Totes les penes de mort dictades es van executar immediatament sense recurs.
+      es: Todas las penas de muerte dictadas se ejecutaron inmediatamente sin recurso.
+    - id: D
+      ca: Va ser un judici contra dirigents del PCE que va acabar amb
+        l'il·legalització del partit.
+      es: Fue un juicio contra dirigentes del PCE que acabó con la ilegalización del
+        partido.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Procés de Burgos (desembre de 1970) va ser un consell de guerra
+      (jurisdicció militar, no civil) contra 16 militants d'ETA; el tribunal va
+      dictar diverses penes de mort. La mobilització dins d'Espanya i la
+      condemna internacional van forçar Franco a commutar-les. Va evidenciar la
+      debilitat i l'aïllament del règim, però no va suposar execucions
+      immediates ni afectava el PCE.
+    es: El Proceso de Burgos (diciembre de 1970) fue un consejo de guerra
+      (jurisdicción militar, no civil) contra 16 militantes de ETA; el tribunal
+      dictó varias penas de muerte. La movilización dentro de España y la
+      condena internacional forzaron a Franco a conmutarlas. Evidenció la
+      debilidad y el aislamiento del régimen, pero no supuso ejecuciones
+      inmediatas ni afectaba al PCE.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.opposition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: El 27 de setembre de 1975, poques setmanes abans de la mort de Franco, es
+      van dur a terme les darreres execucions del franquisme, que van provocar
+      una onada de protestes internacionals. Quants condemnats van ser executats
+      i a quines organitzacions pertanyien?
+    es: El 27 de septiembre de 1975, pocas semanas antes de la muerte de Franco, se
+      llevaron a cabo las últimas ejecuciones del franquismo, que provocaron una
+      ola de protestas internacionales. ¿Cuántos condenados fueron ejecutados y
+      a qué organizaciones pertenecían?
+  options:
+    - id: A
+      ca: 5 (3 militants del FRAP i 2 d'ETA).
+      es: 5 (3 militantes del FRAP y 2 de ETA).
+    - id: B
+      ca: 2 (tots dos d'ETA).
+      es: 2 (ambos de ETA).
+    - id: C
+      ca: 5 (tots del PCE).
+      es: 5 (todos del PCE).
+    - id: D
+      ca: 3 (tots del GRAPO).
+      es: 3 (todos del GRAPO).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El 27 de setembre de 1975 van ser afusellats 5 condemnats a mort per
+      l'assassinat d'agents policials: 3 militants del FRAP i 2 d'ETA. Les
+      execucions van provocar la retirada d'ambaixadors i protestes a tot
+      Europa. El GRAPO tot just s'estava formant i el PCE, tot i ser il·legal,
+      no hi estava implicat en aquests fets."
+    es: "El 27 de septiembre de 1975 fueron fusilados 5 condenados a muerte por el
+      asesinato de agentes policiales: 3 militantes del FRAP y 2 de ETA. Las
+      ejecuciones provocaron la retirada de embajadores y protestas en toda
+      Europa. El GRAPO apenas se estaba formando y el PCE, aunque ilegal, no
+      estaba implicado en estos hechos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.francoism.opposition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: L'octubre de 1974, en un congrés celebrat a la localitat francesa de
+      Suresnes (a prop de París), el PSOE va renovar profundament la seva
+      direcció. Quin dirigent en va sortir escollit primer secretari, impulsant
+      la modernització del partit dins de l'oposició antifranquista?
+    es: En octubre de 1974, en un congreso celebrado en la localidad francesa de
+      Suresnes (cerca de París), el PSOE renovó profundamente su dirección. ¿Qué
+      dirigente salió elegido primer secretario, impulsando la modernización del
+      partido dentro de la oposición antifranquista?
+  options:
+    - id: A
+      ca: Felipe González
+      es: Felipe González
+    - id: B
+      ca: Santiago Carrillo
+      es: Santiago Carrillo
+    - id: C
+      ca: Rodolfo Llopis
+      es: Rodolfo Llopis
+    - id: D
+      ca: Marcelino Camacho
+      es: Marcelino Camacho
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Al Congrés de Suresnes (1974) es va imposar el sector interior i renovador
+      del PSOE i Felipe González va ser escollit primer secretari, desplaçant la
+      vella direcció a l'exili de Rodolfo Llopis. Carrillo dirigia el PCE i
+      Camacho encapçalava el sindicat CCOO; cap dels dos no era del PSOE.
+    es: En el Congreso de Suresnes (1974) se impuso el sector interior y renovador
+      del PSOE y Felipe González fue elegido primer secretario, desplazando a la
+      vieja dirección en el exilio de Rodolfo Llopis. Carrillo dirigía el PCE y
+      Camacho encabezaba el sindicato CCOO; ninguno de los dos era del PSOE.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.transition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Després de la mort de Francisco Franco (20 de novembre de 1975) i la
+      coronació de Joan Carles I, el president del govern Carlos Arias Navarro
+      va dimitir el juliol de 1976. Qui va ser nomenat aleshores president del
+      govern amb l'encàrrec de dirigir la reforma política cap a la democràcia?
+    es: Tras la muerte de Francisco Franco (20 de noviembre de 1975) y la coronación
+      de Juan Carlos I, el presidente del gobierno Carlos Arias Navarro dimitió
+      en julio de 1976. ¿Quién fue nombrado entonces presidente del gobierno con
+      el encargo de dirigir la reforma política hacia la democracia?
+  options:
+    - id: A
+      ca: Adolfo Suárez
+      es: Adolfo Suárez
+    - id: B
+      ca: Leopoldo Calvo-Sotelo
+      es: Leopoldo Calvo-Sotelo
+    - id: C
+      ca: Torcuato Fernández Miranda
+      es: Torcuato Fernández Miranda
+    - id: D
+      ca: Manuel Fraga Iribarne
+      es: Manuel Fraga Iribarne
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El rei Joan Carles I va nomenar Adolfo Suárez president del govern el juliol
+      de 1976. Suárez va liderar la reforma i va aprovar la Llei per a la
+      Reforma Política. Fernández Miranda era president de les Corts i peça clau
+      del procés, però no president del govern; Calvo-Sotelo va succeir Suárez
+      el 1981; Fraga liderava el sector reformista des de dins però no va ser
+      nomenat president.
+    es: El rey Juan Carlos I nombró a Adolfo Suárez presidente del gobierno en julio
+      de 1976. Suárez lideró la reforma y sacó adelante la Ley para la Reforma
+      Política. Fernández Miranda era presidente de las Cortes y pieza clave del
+      proceso, pero no presidente del gobierno; Calvo-Sotelo sucedió a Suárez en
+      1981; Fraga encabezaba el sector reformista pero no fue nombrado
+      presidente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.transition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: La Llei per a la Reforma Política, que obria la porta al desmantellament de
+      les institucions franquistes, va ser ratificada per referèndum popular. En
+      quina data es va celebrar aquest referèndum?
+    es: La Ley para la Reforma Política, que abría la puerta al desmantelamiento de
+      las instituciones franquistas, fue ratificada mediante referéndum popular.
+      ¿En qué fecha se celebró dicho referéndum?
+  options:
+    - id: A
+      ca: 15 de desembre de 1976
+      es: 15 de diciembre de 1976
+    - id: B
+      ca: 6 de desembre de 1978
+      es: 6 de diciembre de 1978
+    - id: C
+      ca: 15 de juny de 1977
+      es: 15 de junio de 1977
+    - id: D
+      ca: 25 d'octubre de 1979
+      es: 25 de octubre de 1979
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Llei per a la Reforma Política, aprovada per les Corts franquistes el
+      novembre de 1976, es va sotmetre a referèndum el 15 de desembre de 1976,
+      amb una àmplia victòria del 'sí' (prop del 94%). El 6 de desembre de 1978
+      correspon al referèndum de la Constitució; el 15 de juny de 1977 a les
+      primeres eleccions democràtiques; el 25 d'octubre de 1979 al referèndum de
+      l'Estatut d'Autonomia de Catalunya.
+    es: La Ley para la Reforma Política, aprobada por las Cortes franquistas en
+      noviembre de 1976, se sometió a referéndum el 15 de diciembre de 1976, con
+      amplia victoria del 'sí' (cerca del 94%). El 6 de diciembre de 1978
+      corresponde al referéndum de la Constitución; el 15 de junio de 1977 a las
+      primeras elecciones democráticas; el 25 de octubre de 1979 al referéndum
+      del Estatuto de Autonomía de Cataluña.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.transition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Un dels moments més delicats de la Transició va ser la legalització del
+      Partit Comunista d'Espanya (PCE), decidida pel govern de Suárez en plena
+      Setmana Santa per evitar la reacció de l'exèrcit. En quina data es va
+      produir?
+    es: Uno de los momentos más delicados de la Transición fue la legalización del
+      Partido Comunista de España (PCE), decidida por el gobierno de Suárez en
+      plena Semana Santa para evitar la reacción del ejército. ¿En qué fecha se
+      produjo?
+  options:
+    - id: A
+      ca: 9 d'abril de 1977 (Dissabte Sant)
+      es: 9 de abril de 1977 (Sábado Santo)
+    - id: B
+      ca: 15 de juny de 1977
+      es: 15 de junio de 1977
+    - id: C
+      ca: 20 de novembre de 1975
+      es: 20 de noviembre de 1975
+    - id: D
+      ca: 23 de febrer de 1981
+      es: 23 de febrero de 1981
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El PCE, dirigit per Santiago Carrillo, va ser legalitzat el 9 d'abril de
+      1977, Dissabte Sant, aprofitant les vacances per minimitzar la reacció
+      dels sectors militars. Això va permetre la seva participació en les
+      eleccions del 15 de juny de 1977. El 20 de novembre de 1975 va morir
+      Franco; el 23 de febrer de 1981 fou l'intent de cop d'estat.
+    es: El PCE, dirigido por Santiago Carrillo, fue legalizado el 9 de abril de
+      1977, Sábado Santo, aprovechando las vacaciones para minimizar la reacción
+      de los sectores militares. Ello permitió su participación en las
+      elecciones del 15 de junio de 1977. El 20 de noviembre de 1975 murió
+      Franco; el 23 de febrero de 1981 fue el intento de golpe de Estado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.transition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: A les primeres eleccions generals democràtiques del 15 de juny de 1977,
+      quina formació política va obtenir la victòria i va formar govern?
+    es: En las primeras elecciones generales democráticas del 15 de junio de 1977,
+      ¿qué formación política obtuvo la victoria y formó gobierno?
+  options:
+    - id: A
+      ca: Unión de Centro Democrático (UCD), d'Adolfo Suárez
+      es: Unión de Centro Democrático (UCD), de Adolfo Suárez
+    - id: B
+      ca: PSOE, de Felipe González
+      es: PSOE, de Felipe González
+    - id: C
+      ca: Alianza Popular (AP), de Manuel Fraga
+      es: Alianza Popular (AP), de Manuel Fraga
+    - id: D
+      ca: PCE, de Santiago Carrillo
+      es: PCE, de Santiago Carrillo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Les eleccions del 15 de juny de 1977 les va guanyar la UCD d'Adolfo Suárez,
+      coalició de centre, sense majoria absoluta. El PSOE de Felipe González va
+      quedar segon i esdevingué la principal força d'oposició; AP i PCE van
+      obtenir resultats molt inferiors. El PSOE no va guanyar unes generals fins
+      al 1982.
+    es: Las elecciones del 15 de junio de 1977 las ganó la UCD de Adolfo Suárez,
+      coalición de centro, sin mayoría absoluta. El PSOE de Felipe González
+      quedó segundo y se convirtió en la principal fuerza de oposición; AP y PCE
+      obtuvieron resultados muy inferiores. El PSOE no ganó unas generales hasta
+      1982.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.transition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: La Constitució espanyola es va sotmetre a referèndum el 6 de desembre de
+      1978. Sobre els vots emesos, el 'sí' va obtenir aproximadament el 88% i el
+      'no' al voltant del 8%. Si en una circumscripció es van emetre 500.000
+      vots vàlids amb aquests mateixos percentatges, quants vots afirmatius es
+      van comptabilitzar aproximadament?
+    es: La Constitución española se sometió a referéndum el 6 de diciembre de 1978.
+      Sobre los votos emitidos, el 'sí' obtuvo aproximadamente el 88% y el 'no'
+      alrededor del 8%. Si en una circunscripción se emitieron 500.000 votos
+      válidos con esos mismos porcentajes, ¿cuántos votos afirmativos se
+      contabilizaron aproximadamente?
+  options:
+    - id: A
+      ca: 440.000 vots
+      es: 440.000 votos
+    - id: B
+      ca: 400.000 vots
+      es: 400.000 votos
+    - id: C
+      ca: 88.000 vots
+      es: 88.000 votos
+    - id: D
+      ca: 40.000 vots
+      es: 40.000 votos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El 88% de 500.000 = 0,88 × 500.000 = 440.000 vots afirmatius. L'opció de
+      400.000 correspon erròniament al 80%; 88.000 confon el percentatge amb el
+      nombre absolut (0,88 × 100.000); 40.000 correspon al 8% (els vots
+      negatius). La Constitució fou aprovada amb ampli suport i va entrar en
+      vigor el 29 de desembre de 1978.
+    es: El 88% de 500.000 = 0,88 × 500.000 = 440.000 votos afirmativos. La opción de
+      400.000 corresponde erróneamente al 80%; 88.000 confunde el porcentaje con
+      el número absoluto (0,88 × 100.000); 40.000 corresponde al 8% (los votos
+      negativos). La Constitución fue aprobada con amplio respaldo y entró en
+      vigor el 29 de diciembre de 1978.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.transition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: >-
+      Pel que fa a la recuperació de l'autogovern a Catalunya durant la
+      Transició, ordena correctament aquests fets. Quina és la seqüència
+      cronològica correcta?
+
+      1) Retorn de Josep Tarradellas i restabliment provisional de la
+      Generalitat.
+
+      2) Aprovació de l'Estatut d'Autonomia (Estatut de Sau) en referèndum.
+
+      3) Primeres eleccions al Parlament de Catalunya, amb victòria de CiU i
+      Jordi Pujol president.
+    es: >-
+      En cuanto a la recuperación del autogobierno en Cataluña durante la
+      Transición, ordena correctamente estos hechos. ¿Cuál es la secuencia
+      cronológica correcta?
+
+      1) Regreso de Josep Tarradellas y restablecimiento provisional de la
+      Generalitat.
+
+      2) Aprobación del Estatuto de Autonomía (Estatuto de Sau) en referéndum.
+
+      3) Primeras elecciones al Parlamento de Cataluña, con victoria de CiU y
+      Jordi Pujol como presidente.
+  options:
+    - id: A
+      ca: 1 (1977) → 2 (1979) → 3 (1980)
+      es: 1 (1977) → 2 (1979) → 3 (1980)
+    - id: B
+      ca: 2 (1977) → 1 (1979) → 3 (1980)
+      es: 2 (1977) → 1 (1979) → 3 (1980)
+    - id: C
+      ca: 1 (1977) → 3 (1979) → 2 (1980)
+      es: 1 (1977) → 3 (1979) → 2 (1980)
+    - id: D
+      ca: 3 (1977) → 2 (1979) → 1 (1982)
+      es: 3 (1977) → 2 (1979) → 1 (1982)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La seqüència correcta és: (1) el retorn de Josep Tarradellas i el
+      restabliment provisional de la Generalitat l'octubre de 1977 ('Ja sóc
+      aquí'); (2) l'aprovació de l'Estatut de Sau en referèndum el 25 d'octubre
+      de 1979; i (3) les primeres eleccions al Parlament de Catalunya el 20 de
+      març de 1980, guanyades per CiU, amb Jordi Pujol com a president. El
+      restabliment de la Generalitat va precedir l'Estatut, i les eleccions
+      autonòmiques van ser posteriors a l'Estatut."
+    es: "La secuencia correcta es: (1) el regreso de Josep Tarradellas y el
+      restablecimiento provisional de la Generalitat en octubre de 1977 ('Ja sóc
+      aquí'); (2) la aprobación del Estatuto de Sau en referéndum el 25 de
+      octubre de 1979; y (3) las primeras elecciones al Parlamento de Cataluña
+      el 20 de marzo de 1980, ganadas por CiU, con Jordi Pujol como presidente.
+      El restablecimiento de la Generalitat precedió al Estatuto, y las
+      elecciones autonómicas fueron posteriores al Estatuto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.constitution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En quina data es va ratificar la Constitució espanyola mitjançant referèndum
+      popular?
+    es: ¿En qué fecha se ratificó la Constitución española mediante referéndum
+      popular?
+  options:
+    - id: A
+      ca: 6 de desembre de 1978
+      es: 6 de diciembre de 1978
+    - id: B
+      ca: 15 de juny de 1977
+      es: 15 de junio de 1977
+    - id: C
+      ca: 27 de desembre de 1978
+      es: 27 de diciembre de 1978
+    - id: D
+      ca: 25 d'octubre de 1979
+      es: 25 de octubre de 1979
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El referèndum constitucional es va celebrar el 6 de desembre de 1978. El 15
+      de juny de 1977 van ser les primeres eleccions democràtiques; el 27 de
+      desembre de 1978 el rei va sancionar el text (publicat al BOE el 29); i el
+      25 d'octubre de 1979 es va aprovar l'Estatut de Sau de Catalunya.
+    es: El referéndum constitucional se celebró el 6 de diciembre de 1978. El 15 de
+      junio de 1977 fueron las primeras elecciones democráticas; el 27 de
+      diciembre de 1978 el rey sancionó el texto (publicado en el BOE el 29); y
+      el 25 de octubre de 1979 se aprobó el Estatut de Sau de Cataluña.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.constitution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Segons l'article 1.3 de la Constitució de 1978, quina és la forma política
+      de l'Estat espanyol?
+    es: Según el artículo 1.3 de la Constitución de 1978, ¿cuál es la forma política
+      del Estado español?
+  options:
+    - id: A
+      ca: La monarquia parlamentària
+      es: La monarquía parlamentaria
+    - id: B
+      ca: La república federal
+      es: La república federal
+    - id: C
+      ca: La monarquia constitucional amb poder executiu reial
+      es: La monarquía constitucional con poder ejecutivo real
+    - id: D
+      ca: L'Estat federal de nacionalitats
+      es: El Estado federal de nacionalidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'article 1.3 estableix literalment que «la forma política de l'Estat
+      espanyol és la monarquia parlamentària». El rei és el cap de l'Estat però
+      no governa (regna però no governa); el poder executiu recau en el Govern.
+      No és una república ni un estat federal, i el rei no exerceix el poder
+      executiu.
+    es: El artículo 1.3 establece literalmente que «la forma política del Estado
+      español es la monarquía parlamentaria». El rey es el jefe del Estado pero
+      no gobierna (reina pero no gobierna); el poder ejecutivo recae en el
+      Gobierno. No es una república ni un estado federal, y el rey no ejerce el
+      poder ejecutivo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.constitution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: L'article 2 de la Constitució de 1978 fonamenta l'organització territorial.
+      Quina afirmació el descriu correctament?
+    es: El artículo 2 de la Constitución de 1978 fundamenta la organización
+      territorial. ¿Qué afirmación lo describe correctamente?
+  options:
+    - id: A
+      ca: Es fonamenta en la unitat indissoluble de la Nació espanyola i reconeix el
+        dret a l'autonomia de les nacionalitats i regions
+      es: Se fundamenta en la unidad indisoluble de la Nación española y reconoce el
+        derecho a la autonomía de las nacionalidades y regiones
+    - id: B
+      ca: Reconeix el dret d'autodeterminació i eventual independència de les
+        nacionalitats
+      es: Reconoce el derecho de autodeterminación y eventual independencia de las
+        nacionalidades
+    - id: C
+      ca: Estableix un Estat federal format per estats sobirans associats
+      es: Establece un Estado federal formado por estados soberanos asociados
+    - id: D
+      ca: Declara un Estat unitari i centralista sense autonomies
+      es: Declara un Estado unitario y centralista sin autonomías
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'article 2 combina dos principis: la «indissoluble unitat de la Nació
+      espanyola, pàtria comuna i indivisible de tots els espanyols» i alhora
+      «reconeix i garanteix el dret a l'autonomia de les nacionalitats i
+      regions». No reconeix autodeterminació ni independència, no crea un Estat
+      federal de sobirania compartida ni un Estat centralista."
+    es: "El artículo 2 combina dos principios: la «indisoluble unidad de la Nación
+      española, patria común e indivisible de todos los españoles» y a la vez
+      «reconoce y garantiza el derecho a la autonomía de las nacionalidades y
+      regiones». No reconoce autodeterminación ni independencia, no crea un
+      Estado federal de soberanía compartida ni un Estado centralista."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.constitution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: L'Estatut d'Autonomia de Catalunya de 1979 (Estatut de Sau) va restablir la
+      Generalitat. Quina dada n'és correcta?
+    es: El Estatuto de Autonomía de Cataluña de 1979 (Estatut de Sau) restableció la
+      Generalitat. ¿Qué dato es correcto?
+  options:
+    - id: A
+      ca: Es va aprovar per referèndum el 25 d'octubre de 1979 i les primeres
+        eleccions al Parlament (1980) van fer president Jordi Pujol
+      es: Se aprobó por referéndum el 25 de octubre de 1979 y las primeras elecciones
+        al Parlament (1980) hicieron presidente a Jordi Pujol
+    - id: B
+      ca: Es va aprovar el 1932 i va fer president Josep Tarradellas
+      es: Se aprobó en 1932 e hizo presidente a Josep Tarradellas
+    - id: C
+      ca: Es va aprovar el 6 de desembre de 1978, el mateix dia que la Constitució
+      es: Se aprobó el 6 de diciembre de 1978, el mismo día que la Constitución
+    - id: D
+      ca: Es va aprovar per referèndum el 1979 i va fer president Lluís Companys
+      es: Se aprobó por referéndum en 1979 e hizo presidente a Lluís Companys
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'Estatut de Sau es va aprovar en referèndum el 25 d'octubre de 1979; a les
+      primeres eleccions al Parlament de Catalunya (març de 1980) va guanyar CiU
+      i Jordi Pujol va ser investit president. L'Estatut de 1932 (Núria) i
+      Companys pertanyen a la Segona República; Tarradellas va presidir la
+      Generalitat provisional restaurada el 1977, abans de l'Estatut.
+    es: El Estatut de Sau se aprobó en referéndum el 25 de octubre de 1979; en las
+      primeras elecciones al Parlament de Catalunya (marzo de 1980) ganó CiU y
+      Jordi Pujol fue investido presidente. El Estatuto de 1932 (Núria) y
+      Companys pertenecen a la Segunda República; Tarradellas presidió la
+      Generalitat provisional restaurada en 1977, antes del Estatuto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.constitution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En el referèndum constitucional del 6 de desembre de 1978, quins van ser
+      aproximadament la participació i el percentatge de vots afirmatius al
+      conjunt d'Espanya?
+    es: En el referéndum constitucional del 6 de diciembre de 1978, ¿cuáles fueron
+      aproximadamente la participación y el porcentaje de votos afirmativos en
+      el conjunto de España?
+  options:
+    - id: A
+      ca: Participació ~67% i «sí» ~88% dels vots emesos
+      es: Participación ~67% y «sí» ~88% de los votos emitidos
+    - id: B
+      ca: Participació ~91% i «sí» ~67% dels vots emesos
+      es: Participación ~91% y «sí» ~67% de los votos emitidos
+    - id: C
+      ca: Participació ~50% i «sí» ~99% dels vots emesos
+      es: Participación ~50% y «sí» ~99% de los votos emitidos
+    - id: D
+      ca: Participació ~80% i «sí» ~55% dels vots emesos
+      es: Participación ~80% y «sí» ~55% de los votos emitidos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La participació va ser al voltant del 67% del cens i el «sí» va superar el
+      87-88% dels vots emesos (amb un «no» inferior al 8%). L'opció B inverteix
+      les dues xifres; les opcions C i D donen valors que no es corresponen amb
+      els resultats reals.
+    es: La participación fue alrededor del 67% del censo y el «sí» superó el 87-88%
+      de los votos emitidos (con un «no» inferior al 8%). La opción B invierte
+      ambas cifras; las opciones C y D dan valores que no se corresponden con
+      los resultados reales.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.constitution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El Títol VIII de la Constitució preveia dues vies d'accés a l'autonomia.
+      Quina diferència entre l'article 143 (via lenta) i l'article 151 (via
+      ràpida) és correcta?
+    es: El Título VIII de la Constitución preveía dos vías de acceso a la autonomía.
+      ¿Qué diferencia entre el artículo 143 (vía lenta) y el artículo 151 (vía
+      rápida) es correcta?
+  options:
+    - id: A
+      ca: Per la via de l'art. 151 es podia assumir de seguida el sostre màxim de
+        competències; per l'art. 143 s'assumien menys competències inicials i
+        calia esperar 5 anys per ampliar-les
+      es: Por la vía del art. 151 se podía asumir de inmediato el techo máximo de
+        competencias; por el art. 143 se asumían menos competencias iniciales y
+        había que esperar 5 años para ampliarlas
+    - id: B
+      ca: Per la via de l'art. 143 s'assumia de seguida el màxim de competències,
+        mentre que l'art. 151 obligava a esperar 5 anys
+      es: Por la vía del art. 143 se asumía de inmediato el máximo de competencias,
+        mientras que el art. 151 obligaba a esperar 5 años
+    - id: C
+      ca: L'art. 151 només s'aplicava a Ceuta i Melilla; la resta van anar per l'art.
+        143
+      es: El art. 151 solo se aplicaba a Ceuta y Melilla; el resto fueron por el art.
+        143
+    - id: D
+      ca: Totes les comunitats van accedir a l'autonomia exclusivament per l'art. 151
+      es: Todas las comunidades accedieron a la autonomía exclusivamente por el art.
+        151
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La via ràpida (art. 151), emprada per Andalusia via referèndum i, per la
+      disposició transitòria segona, per les nacionalitats històriques
+      (Catalunya, País Basc, Galícia), permetia assumir immediatament el màxim
+      de competències. La via lenta (art. 143) donava un sostre competencial
+      inicial menor i exigia esperar 5 anys per ampliar-lo. L'opció B inverteix
+      les vies; C i D són falses (Ceuta i Melilla van ser ciutats autònomes el
+      1995 i no totes van seguir l'art. 151).
+    es: La vía rápida (art. 151), empleada por Andalucía vía referéndum y, por la
+      disposición transitoria segunda, por las nacionalidades históricas
+      (Cataluña, País Vasco, Galicia), permitía asumir de inmediato el máximo de
+      competencias. La vía lenta (art. 143) daba un techo competencial inicial
+      menor y exigía esperar 5 años para ampliarlo. La opción B invierte las
+      vías; C y D son falsas (Ceuta y Melilla fueron ciudades autónomas en 1995
+      y no todas siguieron el art. 151).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.catalonia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Amb quin acte polític es va restablir provisionalment la Generalitat de
+      Catalunya, abans i tot de l'aprovació de la Constitució de 1978?
+    es: ¿Con qué acto político se restableció provisionalmente la Generalitat de
+      Cataluña, incluso antes de la aprobación de la Constitución de 1978?
+  options:
+    - id: A
+      ca: El Reial decret llei de setembre de 1977 que restablia la Generalitat
+        provisional i el retorn de Josep Tarradellas de l'exili ("Ja sóc aquí",
+        octubre de 1977).
+      es: El Real decreto-ley de septiembre de 1977 que restablecía la Generalitat
+        provisional y el regreso de Josep Tarradellas del exilio ("Ja sóc aquí",
+        octubre de 1977).
+    - id: B
+      ca: L'aprovació de l'Estatut de Sau en referèndum el 1979.
+      es: La aprobación del Estatuto de Sau en referéndum en 1979.
+    - id: C
+      ca: Les primeres eleccions autonòmiques del març de 1980, guanyades per CiU.
+      es: Las primeras elecciones autonómicas de marzo de 1980, ganadas por CiU.
+    - id: D
+      ca: La signatura dels Pactes de la Moncloa a l'octubre de 1977.
+      es: La firma de los Pactos de la Moncloa en octubre de 1977.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Generalitat provisional es va restablir per Reial decret llei el setembre
+      de 1977 i Josep Tarradellas, president a l'exili, va tornar l'octubre de
+      1977 pronunciant el famós "Ja sóc aquí". Tot això és previ a la
+      Constitució (desembre de 1978). L'Estatut de Sau (1979) i les eleccions de
+      1980 són posteriors; els Pactes de la Moncloa eren acords
+      economicopolítics, no la restauració de la Generalitat.
+    es: La Generalitat provisional se restableció por Real decreto-ley en septiembre
+      de 1977 y Josep Tarradellas, presidente en el exilio, regresó en octubre
+      de 1977 con su famoso "Ja sóc aquí". Todo ello es anterior a la
+      Constitución (diciembre de 1978). El Estatuto de Sau (1979) y las
+      elecciones de 1980 son posteriores; los Pactos de la Moncloa eran acuerdos
+      económico-políticos, no la restauración de la Generalitat.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.catalonia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "L'anomenat Estatut de Sau, primer Estatut d'autonomia de Catalunya del
+      període democràtic, va ser aprovat en referèndum l'any:"
+    es: "El llamado Estatuto de Sau, primer Estatuto de autonomía de Cataluña del
+      periodo democrático, fue aprobado en referéndum en el año:"
+  options:
+    - id: A
+      ca: "1979"
+      es: "1979"
+    - id: B
+      ca: "1978"
+      es: "1978"
+    - id: C
+      ca: "1980"
+      es: "1980"
+    - id: D
+      ca: "1977"
+      es: "1977"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'Estatut de Sau va ser ratificat en referèndum el 25 d'octubre de 1979. El
+      1978 correspon a la Constitució espanyola; el 1980 a les primeres
+      eleccions al Parlament de Catalunya (que van donar la presidència a Jordi
+      Pujol); i el 1977 al restabliment provisional de la Generalitat.
+    es: El Estatuto de Sau fue ratificado en referéndum el 25 de octubre de 1979.
+      1978 corresponde a la Constitución española; 1980 a las primeras
+      elecciones al Parlamento de Cataluña (que dieron la presidencia a Jordi
+      Pujol); y 1977 al restablecimiento provisional de la Generalitat.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.catalonia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Jordi Pujol (CiU) va presidir la Generalitat durant un llarg període
+      ininterromput. Aproximadament quants anys va estar al capdavant del govern
+      català i qui el va succeir?
+    es: Jordi Pujol (CiU) presidió la Generalitat durante un largo periodo
+      ininterrumpido. ¿Aproximadamente cuántos años estuvo al frente del
+      gobierno catalán y quién le sucedió?
+  options:
+    - id: A
+      ca: Uns 23 anys (1980-2003); el va succeir Pasqual Maragall (PSC), al capdavant
+        d'un govern tripartit.
+      es: Unos 23 años (1980-2003); le sucedió Pasqual Maragall (PSC), al frente de un
+        gobierno tripartito.
+    - id: B
+      ca: Uns 12 anys (1980-1992); el va succeir Pasqual Maragall (PSC).
+      es: Unos 12 años (1980-1992); le sucedió Pasqual Maragall (PSC).
+    - id: C
+      ca: Uns 23 anys (1980-2003); el va succeir Artur Mas (CiU).
+      es: Unos 23 años (1980-2003); le sucedió Artur Mas (CiU).
+    - id: D
+      ca: Uns 30 anys (1980-2010); el va succeir José Montilla (PSC).
+      es: Unos 30 años (1980-2010); le sucedió José Montilla (PSC).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Pujol va governar des de les eleccions de 1980 fins al 2003 (sis
+      legislatures consecutives), és a dir, uns 23 anys. El va succeir Pasqual
+      Maragall (PSC), que va formar el primer govern tripartit (PSC-ERC-ICV).
+      Artur Mas va ser candidat de CiU el 2003 però no va arribar a la
+      presidència fins al 2010; José Montilla va presidir el segon tripartit
+      (2006-2010).
+    es: Pujol gobernó desde las elecciones de 1980 hasta 2003 (seis legislaturas
+      consecutivas), es decir, unos 23 años. Le sucedió Pasqual Maragall (PSC),
+      que formó el primer gobierno tripartito (PSC-ERC-ICV). Artur Mas fue
+      candidato de CiU en 2003 pero no llegó a la presidencia hasta 2010; José
+      Montilla presidió el segundo tripartito (2006-2010).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.catalonia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: El nou Estatut d'autonomia de Catalunya es va sotmetre a referèndum el 18 de
+      juny de 2006. Quin va ser el resultat aproximat?
+    es: El nuevo Estatuto de autonomía de Cataluña se sometió a referéndum el 18 de
+      junio de 2006. ¿Cuál fue el resultado aproximado?
+  options:
+    - id: A
+      ca: Aprovat, amb prop del 74% de vots afirmatius però una participació baixa, al
+        voltant del 49%.
+      es: Aprobado, con cerca del 74% de votos afirmativos pero una participación
+        baja, en torno al 49%.
+    - id: B
+      ca: Rebutjat, ja que el "no" va superar el 60% dels vots.
+      es: Rechazado, ya que el "no" superó el 60% de los votos.
+    - id: C
+      ca: Aprovat, amb prop del 90% de vots afirmatius i una participació superior al
+        80%.
+      es: Aprobado, con cerca del 90% de votos afirmativos y una participación
+        superior al 80%.
+    - id: D
+      ca: Aprovat per una majoria ajustada, amb el 52% de "sí" i el 48% de "no".
+      es: Aprobado por una mayoría ajustada, con el 52% de "sí" y el 48% de "no".
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'Estatut de 2006 va ser aprovat amb aproximadament un 74% de vots
+      afirmatius, però destaca la baixa participació, al voltant del 49%. No va
+      ser rebutjat (opció B), ni va tenir l'adhesió gairebé unànime i alta
+      participació del referèndum constitucional de 1978 (opció C), ni va ser
+      una victòria ajustada (opció D).
+    es: El Estatuto de 2006 fue aprobado con aproximadamente un 74% de votos
+      afirmativos, pero destaca la baja participación, en torno al 49%. No fue
+      rechazado (opción B), ni tuvo la adhesión casi unánime y alta
+      participación del referéndum constitucional de 1978 (opción C), ni fue una
+      victoria ajustada (opción D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000084
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.catalonia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: La sentència 31/2010 del Tribunal Constitucional, del 28 de juny de 2010,
+      sobre l'Estatut de 2006, va tenir una conseqüència política immediata a
+      Catalunya. Quina?
+    es: La sentencia 31/2010 del Tribunal Constitucional, de 28 de junio de 2010,
+      sobre el Estatuto de 2006, tuvo una consecuencia política inmediata en
+      Cataluña. ¿Cuál?
+  options:
+    - id: A
+      ca: Una gran manifestació el 10 de juliol de 2010 sota el lema "Som una nació.
+        Nosaltres decidim", que va impulsar el creixement del sobiranisme.
+      es: Una gran manifestación el 10 de julio de 2010 bajo el lema "Som una nació.
+        Nosaltres decidim", que impulsó el crecimiento del soberanismo.
+    - id: B
+      ca: La convocatòria immediata d'un referèndum d'independència vinculant
+        l'octubre de 2010.
+      es: La convocatoria inmediata de un referéndum de independencia vinculante en
+        octubre de 2010.
+    - id: C
+      ca: La dissolució del Parlament i la suspensió de l'autonomia mitjançant
+        l'article 155.
+      es: La disolución del Parlamento y la suspensión de la autonomía mediante el
+        artículo 155.
+    - id: D
+      ca: La derogació completa de l'Estatut i el retorn al text de 1979.
+      es: La derogación completa del Estatuto y el retorno al texto de 1979.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La STC 31/2010 va declarar inconstitucionals o va reinterpretar diversos
+      articles de l'Estatut (com l'ús del terme \"nació\" al preàmbul). La
+      resposta immediata va ser la manifestació multitudinària del 10 de juliol
+      de 2010 amb el lema \"Som una nació. Nosaltres decidim\", que marca
+      l'inici de l'auge del procés sobiranista. No es va convocar cap referèndum
+      vinculant el 2010 (B), ni es va aplicar el 155 —que va arribar el 2017
+      (C)—, ni es va derogar tot l'Estatut (D): la major part del text va
+      continuar vigent."
+    es: 'La STC 31/2010 declaró inconstitucionales o reinterpretó varios artículos
+      del Estatuto (como el uso del término "nación" en el preámbulo). La
+      respuesta inmediata fue la manifestación multitudinaria del 10 de julio de
+      2010 con el lema "Som una nació. Nosaltres decidim", que marca el inicio
+      del auge del proceso soberanista. No se convocó ningún referéndum
+      vinculante en 2010 (B), ni se aplicó el 155 —que llegó en 2017 (C)—, ni se
+      derogó todo el Estatuto (D): la mayor parte del texto siguió vigente.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: his-g-000085
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: history
+  type: multiple_choice
+  skills:
+    - history.democracy.catalonia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En el referèndum de la Constitució espanyola del 6 de desembre de 1978,
+      quina va ser la resposta de l'electorat català en comparació amb el
+      conjunt d'Espanya?
+    es: En el referéndum de la Constitución española del 6 de diciembre de 1978,
+      ¿cuál fue la respuesta del electorado catalán en comparación con el
+      conjunto de España?
+  options:
+    - id: A
+      ca: A Catalunya el "sí" va superar el 90% dels vots, un suport fins i tot
+        lleugerament superior a la mitjana espanyola (al voltant del 88-92%).
+      es: En Cataluña el "sí" superó el 90% de los votos, un apoyo incluso ligeramente
+        superior a la media española (en torno al 88-92%).
+    - id: B
+      ca: A Catalunya va guanyar el "no", en rebuig al marc autonòmic proposat.
+      es: En Cataluña ganó el "no", en rechazo al marco autonómico propuesto.
+    - id: C
+      ca: A Catalunya el "sí" amb prou feines va arribar al 50%, molt per sota de la
+        mitjana espanyola.
+      es: En Cataluña el "sí" apenas alcanzó el 50%, muy por debajo de la media
+        española.
+    - id: D
+      ca: A Catalunya no es va celebrar el referèndum perquè encara no tenia Estatut
+        d'autonomia.
+      es: En Cataluña no se celebró el referéndum porque aún no tenía Estatuto de
+        autonomía.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El 6 de desembre de 1978 la Constitució es va aprovar amb un "sí" massiu
+      tant a Espanya (prop del 92%) com a Catalunya (superior al 90%), on el
+      suport va ser molt ampli. No va guanyar el "no" (B), ni el suport va ser
+      feble (C). El referèndum es va celebrar a tot l'Estat, també a Catalunya,
+      amb independència que l'Estatut català encara no existís (arribaria el
+      1979) (D).
+    es: El 6 de diciembre de 1978 la Constitución se aprobó con un "sí" masivo tanto
+      en España (cerca del 92%) como en Cataluña (superior al 90%), donde el
+      apoyo fue muy amplio. No ganó el "no" (B), ni el apoyo fue débil (C). El
+      referéndum se celebró en todo el Estado, también en Cataluña, con
+      independencia de que el Estatuto catalán aún no existiera (llegaría en
+      1979) (D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

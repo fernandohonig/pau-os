@@ -76,10 +76,17 @@ const esNames: Record<string, string> = fs.existsSync(esNamesPath)
   ? JSON.parse(fs.readFileSync(esNamesPath, 'utf8'))
   : {};
 
+// Note: Història (contemporary) is a general-phase subject with NO specific-phase
+// ponderació, so it has no weightings here (correct — it doesn't add específica
+// points). The distinct "Història de l'Art" column exists but is a different
+// subject and is not wired to our contemporary-history content.
 const SUBJECT_PONDERACIONS: Array<{ subject: string; weights: Map<string, number> }> = [
   { subject: 'mathematics-ii', weights: loadPond('ponderacions-mates-2026.json', 'mathematics-ii') },
   { subject: 'physics', weights: loadPond('ponderacions-fisica-2026.json', 'physics') },
   { subject: 'chemistry', weights: loadPond('ponderacions-quimica-2026.json', 'chemistry') },
+  { subject: 'biology', weights: loadPond('ponderacions-biologia-2026.json', 'biology') },
+  { subject: 'mathematics-ccss', weights: loadPond('ponderacions-matccss-2026.json', 'mathematics-ccss') },
+  { subject: 'economics', weights: loadPond('ponderacions-economia-2026.json', 'economics') },
 ];
 
 async function main(): Promise<void> {

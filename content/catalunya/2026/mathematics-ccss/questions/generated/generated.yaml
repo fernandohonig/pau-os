@@ -1,0 +1,3303 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: matccss-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.matrices
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Donades les matrius A = [[2, -1], [3, 0]] i B = [[1, 4], [-2, 5]] (files
+      entre claudàtors), quina és la matriu A + B?
+    es: Dadas las matrices A = [[2, -1], [3, 0]] y B = [[1, 4], [-2, 5]] (filas
+      entre corchetes), ¿cuál es la matriz A + B?
+  options:
+    - id: A
+      ca: "[[3, 3], [1, 5]]"
+      es: "[[3, 3], [1, 5]]"
+    - id: B
+      ca: "[[3, 3], [1, -5]]"
+      es: "[[3, 3], [1, -5]]"
+    - id: C
+      ca: "[[1, -5], [5, -5]]"
+      es: "[[1, -5], [5, -5]]"
+    - id: D
+      ca: "[[2, -4], [-6, 0]]"
+      es: "[[2, -4], [-6, 0]]"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La suma de matrius es fa element a element (mateixa posició): 2+1=3,
+      -1+4=3, 3+(-2)=1, 0+5=5. Per tant A + B = [[3, 3], [1, 5]]."
+    es: "La suma de matrices se hace elemento a elemento (misma posición): 2+1=3,
+      -1+4=3, 3+(-2)=1, 0+5=5. Por tanto A + B = [[3, 3], [1, 5]]."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.matrices
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Sigui A una matriu d'ordre 3×2 i B una matriu d'ordre 2×4. Quin producte
+      està definit i quin és el seu ordre?
+    es: Sea A una matriz de orden 3×2 y B una matriz de orden 2×4. ¿Qué producto
+      está definido y cuál es su orden?
+  options:
+    - id: A
+      ca: AB, d'ordre 3×4
+      es: AB, de orden 3×4
+    - id: B
+      ca: BA, d'ordre 4×3
+      es: BA, de orden 4×3
+    - id: C
+      ca: AB, d'ordre 2×2
+      es: AB, de orden 2×2
+    - id: D
+      ca: Ni AB ni BA estan definits
+      es: Ni AB ni BA están definidos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Un producte està definit si el nombre de columnes del primer factor
+      coincideix amb el nombre de files del segon. Per a AB: A és 3×2 i B és
+      2×4; com que 2 = 2, AB existeix i té l'ordre (files de A)×(columnes de B)
+      = 3×4. En canvi BA seria 2×4 per 3×2, i 4 ≠ 3, així que BA no està
+      definit."
+    es: "Un producto está definido si el número de columnas del primer factor
+      coincide con el número de filas del segundo. Para AB: A es 3×2 y B es 2×4;
+      como 2 = 2, AB existe y tiene orden (filas de A)×(columnas de B) = 3×4. En
+      cambio BA sería 2×4 por 3×2, y 4 ≠ 3, así que BA no está definido."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.matrices
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Donades A = [[1, 2], [3, -1]] i B = [[0, 1], [2, 4]], calcula el producte
+      A·B.
+    es: Dadas A = [[1, 2], [3, -1]] y B = [[0, 1], [2, 4]], calcula el producto A·B.
+  options:
+    - id: A
+      ca: "[[4, 9], [-2, -1]]"
+      es: "[[4, 9], [-2, -1]]"
+    - id: B
+      ca: "[[3, -1], [14, 0]]"
+      es: "[[3, -1], [14, 0]]"
+    - id: C
+      ca: "[[0, 2], [6, -4]]"
+      es: "[[0, 2], [6, -4]]"
+    - id: D
+      ca: "[[4, 9], [2, 7]]"
+      es: "[[4, 9], [2, 7]]"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cada element és el producte escalar d'una fila de A per una columna de B.
+      (1,1): 1·0+2·2 = 4. (1,2): 1·1+2·4 = 9. (2,1): 3·0+(-1)·2 = -2. (2,2):
+      3·1+(-1)·4 = -1. Així A·B = [[4, 9], [-2, -1]]. L'opció B és B·A (el
+      producte no és commutatiu) i la C és el producte element a element
+      (incorrecte)."
+    es: "Cada elemento es el producto escalar de una fila de A por una columna de B.
+      (1,1): 1·0+2·2 = 4. (1,2): 1·1+2·4 = 9. (2,1): 3·0+(-1)·2 = -2. (2,2):
+      3·1+(-1)·4 = -1. Así A·B = [[4, 9], [-2, -1]]. La opción B es B·A (el
+      producto no es conmutativo) y la C es el producto elemento a elemento
+      (incorrecto)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.matrices
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Donades A = [[3, -2], [1, 4]] i B = [[1, 0], [-2, 2]], calcula 2A - 3B.
+    es: Dadas A = [[3, -2], [1, 4]] y B = [[1, 0], [-2, 2]], calcula 2A - 3B.
+  options:
+    - id: A
+      ca: "[[3, -4], [8, 2]]"
+      es: "[[3, -4], [8, 2]]"
+    - id: B
+      ca: "[[3, -4], [-4, 2]]"
+      es: "[[3, -4], [-4, 2]]"
+    - id: C
+      ca: "[[9, -4], [-4, 14]]"
+      es: "[[9, -4], [-4, 14]]"
+    - id: D
+      ca: "[[2, -2], [3, 2]]"
+      es: "[[2, -2], [3, 2]]"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Primer multipliquem per l'escalar: 2A = [[6, -4], [2, 8]] i 3B = [[3, 0],
+      [-6, 6]]. Després restem element a element: 6-3=3, -4-0=-4, 2-(-6)=8,
+      8-6=2. Per tant 2A - 3B = [[3, -4], [8, 2]]. L'opció B prové d'errar el
+      signe a 2-(-6) i la C de sumar en lloc de restar."
+    es: "Primero multiplicamos por el escalar: 2A = [[6, -4], [2, 8]] y 3B = [[3,
+      0], [-6, 6]]. Después restamos elemento a elemento: 6-3=3, -4-0=-4,
+      2-(-6)=8, 8-6=2. Por tanto 2A - 3B = [[3, -4], [8, 2]]. La opción B surge
+      de errar el signo en 2-(-6) y la C de sumar en lugar de restar."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.matrices
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Sigui A = [[2, 1], [-1, 3]]. Quina és la matriu A^2 (és a dir, A·A)?
+    es: Sea A = [[2, 1], [-1, 3]]. ¿Cuál es la matriz A^2 (es decir, A·A)?
+  options:
+    - id: A
+      ca: "[[3, 5], [-5, 8]]"
+      es: "[[3, 5], [-5, 8]]"
+    - id: B
+      ca: "[[4, 1], [1, 9]]"
+      es: "[[4, 1], [1, 9]]"
+    - id: C
+      ca: "[[4, 2], [-2, 6]]"
+      es: "[[4, 2], [-2, 6]]"
+    - id: D
+      ca: "[[5, 5], [-5, 8]]"
+      es: "[[5, 5], [-5, 8]]"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "A^2 = A·A, no és elevar cada element al quadrat. (1,1): 2·2+1·(-1) = 3.
+      (1,2): 2·1+1·3 = 5. (2,1): -1·2+3·(-1) = -5. (2,2): -1·1+3·3 = 8. Així A^2
+      = [[3, 5], [-5, 8]]. L'opció B eleva cada element al quadrat (error) i la
+      C és 2A (A+A element a element)."
+    es: "A^2 = A·A, no es elevar cada elemento al cuadrado. (1,1): 2·2+1·(-1) = 3.
+      (1,2): 2·1+1·3 = 5. (2,1): -1·2+3·(-1) = -5. (2,2): -1·1+3·3 = 8. Así A^2
+      = [[3, 5], [-5, 8]]. La opción B eleva cada elemento al cuadrado (error) y
+      la C es 2A (A+A elemento a elemento)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.matrices
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "Una fleca ven croissants i barres de pa en dues botigues. Les unitats
+      venudes són (croissants, barres): botiga 1 → [40, 20]; botiga 2 → [30,
+      50]. Els preus són 1,20 € el croissant i 0,90 € la barra. Si escrivim les
+      vendes com a matriu V = [[40, 20], [30, 50]] i els preus com a vector
+      columna p = [1,20; 0,90], quin és el vector d'ingressos V·p (en €) de cada
+      botiga?"
+    es: "Una panadería vende croissants y barras de pan en dos tiendas. Las unidades
+      vendidas son (croissants, barras): tienda 1 → [40, 20]; tienda 2 → [30,
+      50]. Los precios son 1,20 € el croissant y 0,90 € la barra. Si escribimos
+      las ventas como matriz V = [[40, 20], [30, 50]] y los precios como vector
+      columna p = [1,20; 0,90], ¿cuál es el vector de ingresos V·p (en €) de
+      cada tienda?"
+  options:
+    - id: A
+      ca: "[66; 81]"
+      es: "[66; 81]"
+    - id: B
+      ca: "[60; 87]"
+      es: "[60; 87]"
+    - id: C
+      ca: "[60; 80]"
+      es: "[60; 80]"
+    - id: D
+      ca: "[72; 96]"
+      es: "[72; 96]"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Multipliquem cada fila de V pel vector de preus p. Botiga 1: 40·1,20 +
+      20·0,90 = 48 + 18 = 66 €. Botiga 2: 30·1,20 + 50·0,90 = 36 + 45 = 81 €.
+      Per tant V·p = [66; 81]. L'opció C només suma unitats (sense preus), la B
+      intercanvia els preus i la D aplica 1,20 € a tots dos productes."
+    es: "Multiplicamos cada fila de V por el vector de precios p. Tienda 1: 40·1,20
+      + 20·0,90 = 48 + 18 = 66 €. Tienda 2: 30·1,20 + 50·0,90 = 36 + 45 = 81 €.
+      Por tanto V·p = [66; 81]. La opción C solo suma unidades (sin precios), la
+      B intercambia los precios y la D aplica 1,20 € a ambos productos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: |-
+      Resol el sistema d'equacions lineals:
+      2x + y = 7
+      x − y = 2
+      Quina és la solució (x, y)?
+    es: |-
+      Resuelve el sistema de ecuaciones lineales:
+      2x + y = 7
+      x − y = 2
+      ¿Cuál es la solución (x, y)?
+  options:
+    - id: A
+      ca: (3, 1)
+      es: (3, 1)
+    - id: B
+      ca: (1, 3)
+      es: (1, 3)
+    - id: C
+      ca: (3, −1)
+      es: (3, −1)
+    - id: D
+      ca: (2, 3)
+      es: (2, 3)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Sumant les dues equacions s'elimina y: (2x + y) + (x − y) = 7 + 2, és a dir
+      3x = 9, d'on x = 3. Substituint a x − y = 2: 3 − y = 2, per tant y = 1. La
+      solució és (3, 1)."
+    es: "Sumando las dos ecuaciones se elimina y: (2x + y) + (x − y) = 7 + 2, es
+      decir 3x = 9, de donde x = 3. Sustituyendo en x − y = 2: 3 − y = 2, por
+      tanto y = 1. La solución es (3, 1)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.32
+  question:
+    ca: En una sessió de cinema es venen 200 entrades i es recapten 1360 €.
+      L'entrada d'adult val 8 € i la infantil 5 €. Quantes entrades d'adult i
+      quantes infantils s'han venut?
+    es: En una sesión de cine se venden 200 entradas y se recaudan 1360 €. La
+      entrada de adulto cuesta 8 € y la infantil 5 €. ¿Cuántas entradas de
+      adulto y cuántas infantiles se han vendido?
+  options:
+    - id: A
+      ca: 120 d'adult i 80 infantils
+      es: 120 de adulto y 80 infantiles
+    - id: B
+      ca: 80 d'adult i 120 infantils
+      es: 80 de adulto y 120 infantiles
+    - id: C
+      ca: 100 d'adult i 100 infantils
+      es: 100 de adulto y 100 infantiles
+    - id: D
+      ca: 140 d'adult i 60 infantils
+      es: 140 de adulto y 60 infantiles
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Sigui a el nombre d'adults i c el d'infantils: a + c = 200 i 8a + 5c =
+      1360. Aïllant c = 200 − a i substituint: 8a + 5(200 − a) = 1360 → 8a +
+      1000 − 5a = 1360 → 3a = 360 → a = 120. Aleshores c = 80."
+    es: "Sea a el número de adultos y c el de infantiles: a + c = 200 y 8a + 5c =
+      1360. Despejando c = 200 − a y sustituyendo: 8a + 5(200 − a) = 1360 → 8a +
+      1000 − 5a = 1360 → 3a = 360 → a = 120. Entonces c = 80."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.48
+  question:
+    ca: |-
+      Classifica el següent sistema segons el nombre de solucions:
+      2x − 3y = 4
+      −4x + 6y = 1
+    es: |-
+      Clasifica el siguiente sistema según su número de soluciones:
+      2x − 3y = 4
+      −4x + 6y = 1
+  options:
+    - id: A
+      ca: "Incompatible: no té cap solució"
+      es: "Incompatible: no tiene solución"
+    - id: B
+      ca: "Compatible determinat: té una única solució"
+      es: "Compatible determinado: tiene una única solución"
+    - id: C
+      ca: "Compatible indeterminat: té infinites solucions"
+      es: "Compatible indeterminado: tiene infinitas soluciones"
+    - id: D
+      ca: Compatible determinat amb solució (0, 0)
+      es: Compatible determinado con solución (0, 0)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El determinant de la matriu de coeficients és 2·6 − (−3)·(−4) = 12 − 12 = 0,
+      així que no hi ha solució única. La segona equació té els coeficients
+      proporcionals a la primera (multiplicant per −2 s'obté −4x + 6y = −8),
+      però el terme independent seria −8, no 1. Els rangs no coincideixen (rang
+      coeficients = 1, rang ampliada = 2), per tant el sistema és incompatible.
+    es: El determinante de la matriz de coeficientes es 2·6 − (−3)·(−4) = 12 − 12 =
+      0, así que no hay solución única. La segunda ecuación tiene los
+      coeficientes proporcionales a la primera (multiplicando por −2 se obtiene
+      −4x + 6y = −8), pero el término independiente sería −8, no 1. Los rangos
+      no coinciden (rango coeficientes = 1, rango ampliada = 2), por tanto el
+      sistema es incompatible.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: |-
+      Donat el sistema
+      x + 2y = 3
+      2x + my = 6
+      per a quin valor de m el sistema té infinites solucions?
+    es: |-
+      Dado el sistema
+      x + 2y = 3
+      2x + my = 6
+      ¿para qué valor de m el sistema tiene infinitas soluciones?
+  options:
+    - id: A
+      ca: m = 4
+      es: m = 4
+    - id: B
+      ca: m = 2
+      es: m = 2
+    - id: C
+      ca: m = −4
+      es: m = −4
+    - id: D
+      ca: m = 1
+      es: m = 1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Perquè hi hagi infinites solucions, les dues equacions han de ser
+      proporcionals: 1/2 = 2/m = 3/6. De 1/2 = 3/6 es confirma la proporció dels
+      termes independents. De 1/2 = 2/m surt m = 4. Amb m = 4, la segona equació
+      2x + 4y = 6 és exactament el doble de la primera, de manera que el sistema
+      és compatible indeterminat."
+    es: "Para que haya infinitas soluciones, las dos ecuaciones deben ser
+      proporcionales: 1/2 = 2/m = 3/6. De 1/2 = 3/6 se confirma la proporción de
+      los términos independientes. De 1/2 = 2/m sale m = 4. Con m = 4, la
+      segunda ecuación 2x + 4y = 6 es exactamente el doble de la primera, de
+      modo que el sistema es compatible indeterminado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: |-
+      Resol el sistema de tres equacions amb tres incògnites:
+      x + y + z = 6
+      x − y + z = 2
+      2x + y − z = 1
+      Quina és la solució (x, y, z)?
+    es: |-
+      Resuelve el sistema de tres ecuaciones con tres incógnitas:
+      x + y + z = 6
+      x − y + z = 2
+      2x + y − z = 1
+      ¿Cuál es la solución (x, y, z)?
+  options:
+    - id: A
+      ca: (1, 2, 3)
+      es: (1, 2, 3)
+    - id: B
+      ca: (3, 2, 1)
+      es: (3, 2, 1)
+    - id: C
+      ca: (2, 2, 2)
+      es: (2, 2, 2)
+    - id: D
+      ca: (1, 3, 2)
+      es: (1, 3, 2)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Restant la 2a equació de la 1a: (x + y + z) − (x − y + z) = 6 − 2 → 2y = 4
+      → y = 2. De la 1a: x + z = 4. La 3a queda 2x + 2 − z = 1 → 2x − z = −1.
+      Sumant x + z = 4 i 2x − z = −1: 3x = 3 → x = 1, i z = 4 − 1 = 3. Solució
+      (1, 2, 3)."
+    es: "Restando la 2ª ecuación de la 1ª: (x + y + z) − (x − y + z) = 6 − 2 → 2y =
+      4 → y = 2. De la 1ª: x + z = 4. La 3ª queda 2x + 2 − z = 1 → 2x − z = −1.
+      Sumando x + z = 4 y 2x − z = −1: 3x = 3 → x = 1, y z = 4 − 1 = 3. Solución
+      (1, 2, 3)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: |-
+      Considera el sistema dependent del paràmetre k:
+      kx + y = 1
+      x + ky = 1
+      Per a quin valor de k el sistema és incompatible (no té solució)?
+    es: |-
+      Considera el sistema dependiente del parámetro k:
+      kx + y = 1
+      x + ky = 1
+      ¿Para qué valor de k el sistema es incompatible (no tiene solución)?
+  options:
+    - id: A
+      ca: k = −1
+      es: k = −1
+    - id: B
+      ca: k = 1
+      es: k = 1
+    - id: C
+      ca: k = 1 i k = −1
+      es: k = 1 y k = −1
+    - id: D
+      ca: "Cap valor: sempre és compatible"
+      es: "Ningún valor: siempre es compatible"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El determinant de la matriu de coeficients és k·k − 1·1 = k² − 1, que
+      s'anul·la per a k = 1 i k = −1. Cal analitzar cada cas. Si k = 1: les dues
+      equacions són x + y = 1, idèntiques → infinites solucions (compatible
+      indeterminat). Si k = −1: queda −x + y = 1 i x − y = 1; sumant-les s'obté
+      0 = 2, una contradicció → incompatible. Per tant el sistema no té solució
+      només quan k = −1."
+    es: "El determinante de la matriz de coeficientes es k·k − 1·1 = k² − 1, que se
+      anula para k = 1 y k = −1. Hay que analizar cada caso. Si k = 1: las dos
+      ecuaciones son x + y = 1, idénticas → infinitas soluciones (compatible
+      indeterminado). Si k = −1: queda −x + y = 1 y x − y = 1; sumándolas se
+      obtiene 0 = 2, una contradicción → incompatible. Por tanto el sistema no
+      tiene solución solo cuando k = −1."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.linear_programming
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Es vol maximitzar la funció objectiu f(x, y) = 40x + 30y sobre una regió
+      factible que és un polígon amb vèrtexs (0, 0), (0, 20), (30, 0) i (20,
+      10). Quin és el valor màxim de f?
+    es: Se quiere maximizar la función objetivo f(x, y) = 40x + 30y sobre una región
+      factible que es un polígono con vértices (0, 0), (0, 20), (30, 0) y (20,
+      10). ¿Cuál es el valor máximo de f?
+  options:
+    - id: A
+      ca: "600"
+      es: "600"
+    - id: B
+      ca: "1100"
+      es: "1100"
+    - id: C
+      ca: "1200"
+      es: "1200"
+    - id: D
+      ca: "900"
+      es: "900"
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "En programació lineal l'òptim s'assoleix en un vèrtex. Avaluem f a
+      cadascun: f(0,0)=0; f(0,20)=30·20=600; f(30,0)=40·30=1200;
+      f(20,10)=40·20+30·10=800+300=1100. El màxim és 1200, al vèrtex (30, 0)."
+    es: "En programación lineal el óptimo se alcanza en un vértice. Evaluamos f en
+      cada uno: f(0,0)=0; f(0,20)=30·20=600; f(30,0)=40·30=1200;
+      f(20,10)=40·20+30·10=800+300=1100. El máximo es 1200, en el vértice (30,
+      0)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.linear_programming
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Un taller fabrica taules (x) i cadires (y). Cada taula requereix 4 hores de
+      fusteria i cada cadira 2 hores, i es disposa com a màxim de 60 hores de
+      fusteria. Quina inequació expressa correctament aquesta restricció?
+    es: Un taller fabrica mesas (x) y sillas (y). Cada mesa requiere 4 horas de
+      carpintería y cada silla 2 horas, y se dispone como máximo de 60 horas de
+      carpintería. ¿Qué inecuación expresa correctamente esta restricción?
+  options:
+    - id: A
+      ca: 4x + 2y ≤ 60
+      es: 4x + 2y ≤ 60
+    - id: B
+      ca: 4x + 2y ≥ 60
+      es: 4x + 2y ≥ 60
+    - id: C
+      ca: 2x + 4y ≤ 60
+      es: 2x + 4y ≤ 60
+    - id: D
+      ca: 6(x + y) ≤ 60
+      es: 6(x + y) ≤ 60
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Les hores de fusteria emprades són 4 per taula i 2 per cadira, és a dir 4x +
+      2y. Com que no es poden superar les 60 hores disponibles, la restricció és
+      4x + 2y ≤ 60. L'opció B inverteix el sentit (≥), la C intercanvia els
+      coeficients i la D suma les hores unitàries en lloc d'associar-les a cada
+      producte.
+    es: Las horas de carpintería empleadas son 4 por mesa y 2 por silla, es decir 4x
+      + 2y. Como no se pueden superar las 60 horas disponibles, la restricción
+      es 4x + 2y ≤ 60. La opción B invierte el sentido (≥), la C intercambia los
+      coeficientes y la D suma las horas unitarias en lugar de asociarlas a cada
+      producto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.linear_programming
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Maximitza P = 5x + 4y subjecte a 6x + 4y ≤ 24, x + 2y ≤ 6, x ≥ 0, y ≥ 0.
+      Quin és el valor màxim de P?
+    es: Maximiza P = 5x + 4y sujeto a 6x + 4y ≤ 24, x + 2y ≤ 6, x ≥ 0, y ≥ 0. ¿Cuál
+      es el valor máximo de P?
+  options:
+    - id: A
+      ca: "20"
+      es: "20"
+    - id: B
+      ca: "21"
+      es: "21"
+    - id: C
+      ca: "12"
+      es: "12"
+    - id: D
+      ca: "24"
+      es: "24"
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Vèrtexs de la regió: (0,0), (4,0) (de 6x=24), (0,3) (de 2y=6) i la
+      intersecció de 6x+4y=24 amb x+2y=6, que dona x=3, y=1,5. Avaluem P:
+      (0,0)→0; (4,0)→20; (0,3)→12; (3, 1,5)→15+6=21. El màxim és 21 a (3, 1,5).
+      L'error típic és quedar-se a (4,0) amb P=20 sense comprovar el vèrtex
+      interior."
+    es: "Vértices de la región: (0,0), (4,0) (de 6x=24), (0,3) (de 2y=6) y la
+      intersección de 6x+4y=24 con x+2y=6, que da x=3, y=1,5. Evaluamos P:
+      (0,0)→0; (4,0)→20; (0,3)→12; (3, 1,5)→15+6=21. El máximo es 21 en (3,
+      1,5). El error típico es quedarse en (4,0) con P=20 sin comprobar el
+      vértice interior."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.linear_programming
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Minimitza el cost C = 3x + 2y subjecte a x + y ≥ 10, 2x + y ≥ 12, x ≥ 0, y ≥
+      0. Quin és el cost mínim?
+    es: Minimiza el coste C = 3x + 2y sujeto a x + y ≥ 10, 2x + y ≥ 12, x ≥ 0, y ≥
+      0. ¿Cuál es el coste mínimo?
+  options:
+    - id: A
+      ca: "24"
+      es: "24"
+    - id: B
+      ca: "30"
+      es: "30"
+    - id: C
+      ca: "22"
+      es: "22"
+    - id: D
+      ca: "20"
+      es: "20"
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "La regió factible (no acotada) té els vèrtexs (0,12), (2,8) i (10,0). La
+      intersecció de x+y=10 i 2x+y=12 dona x=2, y=8. Avaluem C=3x+2y: (0,12)→24;
+      (2,8)→6+16=22; (10,0)→30. El mínim és 22 al vèrtex (2, 8)."
+    es: "La región factible (no acotada) tiene los vértices (0,12), (2,8) y (10,0).
+      La intersección de x+y=10 y 2x+y=12 da x=2, y=8. Evaluamos C=3x+2y:
+      (0,12)→24; (2,8)→6+16=22; (10,0)→30. El mínimo es 22 en el vértice (2,
+      8)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.linear_programming
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "Un inversor disposa de 30000 € per repartir entre dos fons: A (rendiment
+      8%) i B (rendiment 12%). Per política de risc, la quantitat en A ha de ser
+      com a mínim el doble de la quantitat en B. Quin és el rendiment anual
+      màxim que pot obtenir?"
+    es: "Un inversor dispone de 30000 € para repartir entre dos fondos: A
+      (rendimiento 8%) y B (rendimiento 12%). Por política de riesgo, la
+      cantidad en A debe ser al menos el doble de la cantidad en B. ¿Cuál es el
+      rendimiento anual máximo que puede obtener?"
+  options:
+    - id: A
+      ca: 2400 €
+      es: 2400 €
+    - id: B
+      ca: 2800 €
+      es: 2800 €
+    - id: C
+      ca: 3600 €
+      es: 3600 €
+    - id: D
+      ca: 3000 €
+      es: 3000 €
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Sigui x l'invertit en A i y en B. Restriccions: x + y ≤ 30000, x ≥ 2y, x ≥
+      0, y ≥ 0. Maximitzem R = 0,08x + 0,12y. Com que B rendeix més, interessa
+      maximitzar y, però x ≥ 2y ho limita: amb x + y = 30000 i x = 2y surt y =
+      10000, x = 20000. R = 0,08·20000 + 0,12·10000 = 1600 + 1200 = 2800 €.
+      Posar-ho tot en B (3600 €) o tot en A (2400 €) incompleix les restriccions
+      o no és òptim."
+    es: "Sea x lo invertido en A e y en B. Restricciones: x + y ≤ 30000, x ≥ 2y, x ≥
+      0, y ≥ 0. Maximizamos R = 0,08x + 0,12y. Como B rinde más, interesa
+      maximizar y, pero x ≥ 2y lo limita: con x + y = 30000 y x = 2y sale y =
+      10000, x = 20000. R = 0,08·20000 + 0,12·10000 = 1600 + 1200 = 2800 €.
+      Poner todo en B (3600 €) o todo en A (2400 €) incumple las restricciones o
+      no es óptimo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.algebra.linear_programming
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Es vol maximitzar f(x, y) = x + y sobre una regió factible amb vèrtexs (0,
+      0), (0, 6) i (6, 0), on l'aresta que uneix (0, 6) i (6, 0) està sobre la
+      recta x + y = 6. Què es pot afirmar de la solució òptima?
+    es: Se quiere maximizar f(x, y) = x + y sobre una región factible con vértices
+      (0, 0), (0, 6) y (6, 0), donde la arista que une (0, 6) y (6, 0) está
+      sobre la recta x + y = 6. ¿Qué se puede afirmar de la solución óptima?
+  options:
+    - id: A
+      ca: Hi ha un únic òptim, al vèrtex (0, 6), amb valor 6.
+      es: Hay un único óptimo, en el vértice (0, 6), con valor 6.
+    - id: B
+      ca: Hi ha infinites solucions òptimes, tot el segment de (0, 6) a (6, 0), totes
+        amb valor 6.
+      es: Hay infinitas soluciones óptimas, todo el segmento de (0, 6) a (6, 0), todas
+        con valor 6.
+    - id: C
+      ca: L'únic òptim és (0, 0), amb valor 0.
+      es: El único óptimo es (0, 0), con valor 0.
+    - id: D
+      ca: El problema és no acotat i no té màxim.
+      es: El problema es no acotado y no tiene máximo.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Les rectes de nivell de f, x + y = k, són paral·leles a l'aresta x + y = 6.
+      Als vèrtexs (0,6) i (6,0) el valor és 6, i (0,0) dona 0. Com que
+      l'objectiu és paral·lel a l'aresta òptima, tots els punts del segment que
+      uneix (0,6) i (6,0) donen el mateix valor màxim 6: hi ha infinites
+      solucions òptimes. La regió és acotada, per tant no és no acotat."
+    es: "Las rectas de nivel de f, x + y = k, son paralelas a la arista x + y = 6.
+      En los vértices (0,6) y (6,0) el valor es 6, y (0,0) da 0. Como el
+      objetivo es paralelo a la arista óptima, todos los puntos del segmento que
+      une (0,6) y (6,0) dan el mismo valor máximo 6: hay infinitas soluciones
+      óptimas. La región es acotada, por lo que no es no acotado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.18
+  question:
+    ca: Una empresa té uns costos fixos de 500 € i un cost variable de 8 € per
+      unitat produïda. El cost total ve donat per C(x) = 500 + 8x, on x és el
+      nombre d'unitats. Quin és el cost total de produir 30 unitats?
+    es: Una empresa tiene unos costes fijos de 500 € y un coste variable de 8 € por
+      unidad producida. El coste total viene dado por C(x) = 500 + 8x, donde x
+      es el número de unidades. ¿Cuál es el coste total de producir 30 unidades?
+  options:
+    - id: A
+      ca: 740 €
+      es: 740 €
+    - id: B
+      ca: 240 €
+      es: 240 €
+    - id: C
+      ca: 530 €
+      es: 530 €
+    - id: D
+      ca: 15000 €
+      es: 15000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Substituïm x = 30: C(30) = 500 + 8·30 = 500 + 240 = 740 €. L'error de 240 €
+      oblida el cost fix; el de 530 € suma 30 en lloc de 8·30; el de 15000 €
+      multiplica 500·30."
+    es: "Sustituimos x = 30: C(30) = 500 + 8·30 = 500 + 240 = 740 €. El error de 240
+      € olvida el coste fijo; el de 530 € suma 30 en lugar de 8·30; el de 15000
+      € multiplica 500·30."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.38
+  question:
+    ca: Una població de 2000 habitants creix a un ritme del 3 % anual, seguint el
+      model P(t) = 2000·1,03^t, on t són els anys. Quina serà la població al cap
+      de 5 anys (arrodonida a l'enter)?
+    es: Una población de 2000 habitantes crece a un ritmo del 3 % anual, siguiendo
+      el modelo P(t) = 2000·1,03^t, donde t son los años. ¿Cuál será la
+      población al cabo de 5 años (redondeada al entero)?
+  options:
+    - id: A
+      ca: 2319 habitants
+      es: 2319 habitantes
+    - id: B
+      ca: 2300 habitants
+      es: 2300 habitantes
+    - id: C
+      ca: 2060 habitants
+      es: 2060 habitantes
+    - id: D
+      ca: 2150 habitants
+      es: 2150 habitantes
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: P(5) = 2000·1,03^5 = 2000·1,159274 ≈ 2318,5 ≈ 2319. El valor 2300 correspon
+      a interès simple (2000 + 2000·0,03·5); 2060 només aplica un any
+      (2000·1,03); 2150 aplica el 3 % sobre un valor incorrecte.
+    es: P(5) = 2000·1,03^5 = 2000·1,159274 ≈ 2318,5 ≈ 2319. El valor 2300
+      corresponde a interés simple (2000 + 2000·0,03·5); 2060 solo aplica un año
+      (2000·1,03); 2150 aplica el 3 % sobre un valor incorrecto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Determina el domini de la funció f(x) = √(x − 1) / (x − 4).
+    es: Determina el dominio de la función f(x) = √(x − 1) / (x − 4).
+  options:
+    - id: A
+      ca: "[1, 4) ∪ (4, +∞)"
+      es: "[1, 4) ∪ (4, +∞)"
+    - id: B
+      ca: "[1, +∞)"
+      es: "[1, +∞)"
+    - id: C
+      ca: (1, 4) ∪ (4, +∞)
+      es: (1, 4) ∪ (4, +∞)
+    - id: D
+      ca: Tots els reals excepte x = 4
+      es: Todos los reales excepto x = 4
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'arrel exigeix x − 1 ≥ 0, és a dir x ≥ 1 (l'1 s'inclou perquè √0 = 0). El
+      denominador exigeix x − 4 ≠ 0, és a dir x ≠ 4. Per tant el domini és [1,
+      4) ∪ (4, +∞). B oblida excloure el 4; C exclou l'1 erròniament; D oblida
+      la condició de l'arrel.
+    es: La raíz exige x − 1 ≥ 0, es decir x ≥ 1 (el 1 se incluye porque √0 = 0). El
+      denominador exige x − 4 ≠ 0, es decir x ≠ 4. Por tanto el dominio es [1,
+      4) ∪ (4, +∞). B olvida excluir el 4; C excluye el 1 erróneamente; D olvida
+      la condición de la raíz.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Els ingressos d'una empresa són R(x) = 15x € i els costos són C(x) = 500 +
+      8x €, on x és el nombre d'unitats venudes. Quantes unitats cal vendre com
+      a mínim per no tenir pèrdues (punt d'equilibri, arrodonint a l'enter
+      superior)?
+    es: Los ingresos de una empresa son R(x) = 15x € y los costes son C(x) = 500 +
+      8x €, donde x es el número de unidades vendidas. ¿Cuántas unidades hay que
+      vender como mínimo para no tener pérdidas (punto de equilibrio,
+      redondeando al entero superior)?
+  options:
+    - id: A
+      ca: 72 unitats
+      es: 72 unidades
+    - id: B
+      ca: 71 unitats
+      es: 71 unidades
+    - id: C
+      ca: 22 unitats
+      es: 22 unidades
+    - id: D
+      ca: 63 unitats
+      es: 63 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El punt d'equilibri és R(x) = C(x): 15x = 500 + 8x → 7x = 500 → x = 71,43.
+      Com que no es poden vendre fraccions i cal cobrir el cost, cal arrodonir
+      cap amunt: 72 unitats. B trunca a 71 (encara hi ha pèrdues); C divideix
+      per 15 + 8 = 23; D divideix 500/8 ignorant els ingressos."
+    es: "El punto de equilibrio es R(x) = C(x): 15x = 500 + 8x → 7x = 500 → x =
+      71,43. Como no se pueden vender fracciones y hay que cubrir el coste, se
+      redondea hacia arriba: 72 unidades. B trunca a 71 (aún hay pérdidas); C
+      divide por 15 + 8 = 23; D divide 500/8 ignorando los ingresos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.62
+  question:
+    ca: El benefici (en euros) d'un producte segons el nombre d'unitats x és B(x) =
+      −2x² + 120x − 800. Quantes unitats maximitzen el benefici?
+    es: El beneficio (en euros) de un producto según el número de unidades x es B(x)
+      = −2x² + 120x − 800. ¿Cuántas unidades maximizan el beneficio?
+  options:
+    - id: A
+      ca: 30 unitats
+      es: 30 unidades
+    - id: B
+      ca: 60 unitats
+      es: 60 unidades
+    - id: C
+      ca: 40 unitats
+      es: 40 unidades
+    - id: D
+      ca: 20 unitats
+      es: 20 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Com que a = −2 < 0, la paràbola té un màxim al vèrtex: x = −b/(2a) =
+      −120/(2·(−2)) = −120/(−4) = 30 unitats. L'error de 60 oblida dividir per 2
+      (usa −b/a); els altres valors no compleixen la fórmula del vèrtex."
+    es: "Como a = −2 < 0, la parábola tiene un máximo en el vértice: x = −b/(2a) =
+      −120/(2·(−2)) = −120/(−4) = 30 unidades. El error de 60 olvida dividir
+      entre 2 (usa −b/a); los otros valores no cumplen la fórmula del vértice."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.78
+  question:
+    ca: Es diposita un capital de 3000 € en un compte que dona un interès compost
+      del 4 % anual, seguint C(t) = 3000·1,04^t. Al cap de quants anys
+      (aproximadament) el capital arribarà a 4500 €?
+    es: Se deposita un capital de 3000 € en una cuenta que da un interés compuesto
+      del 4 % anual, siguiendo C(t) = 3000·1,04^t. ¿Al cabo de cuántos años
+      (aproximadamente) el capital llegará a 4500 €?
+  options:
+    - id: A
+      ca: 10,3 anys
+      es: 10,3 años
+    - id: B
+      ca: 12,5 anys
+      es: 12,5 años
+    - id: C
+      ca: 15,0 anys
+      es: 15,0 años
+    - id: D
+      ca: 0,41 anys
+      es: 0,41 años
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: 3000·1,04^t = 4500 → 1,04^t = 1,5 → t = ln(1,5)/ln(1,04) = 0,4055/0,0392 ≈
+      10,3 anys. El valor 12,5 correspon a interès simple (1500/(3000·0,04)); D
+      pren només ln(1,5) oblidant dividir pel denominador.
+    es: 3000·1,04^t = 4500 → 1,04^t = 1,5 → t = ln(1,5)/ln(1,04) = 0,4055/0,0392 ≈
+      10,3 años. El valor 12,5 corresponde a interés simple (1500/(3000·0,04));
+      D toma solo ln(1,5) olvidando dividir por el denominador.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.limits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: "Calcula el límit: lim (x→2) (x^2 − 4)/(x − 2)."
+    es: "Calcula el límite: lim (x→2) (x^2 − 4)/(x − 2)."
+  options:
+    - id: A
+      ca: "4"
+      es: "4"
+    - id: B
+      ca: "0"
+      es: "0"
+    - id: C
+      ca: "2"
+      es: "2"
+    - id: D
+      ca: No existeix
+      es: No existe
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En substituir x = 2 apareix la indeterminació 0/0. Factoritzem el
+      numerador: x^2 − 4 = (x − 2)(x + 2). Simplifiquem (x − 2): queda x + 2.
+      Ara lim (x→2) (x + 2) = 2 + 2 = 4."
+    es: "Al sustituir x = 2 aparece la indeterminación 0/0. Factorizamos el
+      numerador: x^2 − 4 = (x − 2)(x + 2). Simplificamos (x − 2): queda x + 2.
+      Ahora lim (x→2) (x + 2) = 2 + 2 = 4."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.limits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Calcula lim (x→+∞) (2x^2 − 3x + 1)/(5x^2 + 4).
+    es: Calcula lim (x→+∞) (2x^2 − 3x + 1)/(5x^2 + 4).
+  options:
+    - id: A
+      ca: 2/5
+      es: 2/5
+    - id: B
+      ca: "0"
+      es: "0"
+    - id: C
+      ca: +∞
+      es: +∞
+    - id: D
+      ca: −3/4
+      es: −3/4
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El numerador i el denominador tenen el mateix grau (grau 2). Quan x→+∞, el
+      límit d'un quocient de polinomis del mateix grau és el quocient dels
+      coeficients dels termes de grau més alt: 2/5."
+    es: "El numerador y el denominador tienen el mismo grado (grado 2). Cuando x→+∞,
+      el límite de un cociente de polinomios del mismo grado es el cociente de
+      los coeficientes de los términos de mayor grado: 2/5."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.limits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Es defineix f(x) = 2x + a si x < 3, i f(x) = x^2 − 1 si x ≥ 3. Quin valor de
+      a fa que f sigui contínua a x = 3?
+    es: Se define f(x) = 2x + a si x < 3, y f(x) = x^2 − 1 si x ≥ 3. ¿Qué valor de a
+      hace que f sea continua en x = 3?
+  options:
+    - id: A
+      ca: a = 2
+      es: a = 2
+    - id: B
+      ca: a = −2
+      es: a = −2
+    - id: C
+      ca: a = 8
+      es: a = 8
+    - id: D
+      ca: a = 14
+      es: a = 14
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per continuïtat a x = 3 cal que el límit per l'esquerra iguali el valor (i
+      límit) per la dreta. Esquerra: lim (x→3−) (2x + a) = 6 + a. Dreta: f(3) =
+      3^2 − 1 = 8. Igualem: 6 + a = 8 ⇒ a = 2."
+    es: "Para la continuidad en x = 3 el límite por la izquierda debe igualar el
+      valor (y límite) por la derecha. Izquierda: lim (x→3−) (2x + a) = 6 + a.
+      Derecha: f(3) = 3^2 − 1 = 8. Igualamos: 6 + a = 8 ⇒ a = 2."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.limits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quin tipus de discontinuïtat presenta f(x) = (x^2 − 9)/(x − 3) a x = 3?
+    es: ¿Qué tipo de discontinuidad presenta f(x) = (x^2 − 9)/(x − 3) en x = 3?
+  options:
+    - id: A
+      ca: Evitable (el límit existeix però f no està definida a x = 3)
+      es: Evitable (el límite existe pero f no está definida en x = 3)
+    - id: B
+      ca: De salt finit
+      es: De salto finito
+    - id: C
+      ca: Asimptòtica (de salt infinit)
+      es: Asintótica (de salto infinito)
+    - id: D
+      ca: No hi ha discontinuïtat; f és contínua a x = 3
+      es: No hay discontinuidad; f es continua en x = 3
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A x = 3 el denominador s'anul·la, per tant f(3) no existeix. Però lim (x→3)
+      (x^2 − 9)/(x − 3) = lim (x→3) (x + 3) = 6, un valor finit. Com que el
+      límit existeix i és finit però la funció no hi està definida, la
+      discontinuïtat és evitable.
+    es: En x = 3 el denominador se anula, por lo que f(3) no existe. Pero lim (x→3)
+      (x^2 − 9)/(x − 3) = lim (x→3) (x + 3) = 6, un valor finito. Como el límite
+      existe y es finito pero la función no está definida ahí, la discontinuidad
+      es evitable.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.limits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Calcula lim (x→2+) (x + 1)/(x − 2).
+    es: Calcula lim (x→2+) (x + 1)/(x − 2).
+  options:
+    - id: A
+      ca: +∞
+      es: +∞
+    - id: B
+      ca: −∞
+      es: −∞
+    - id: C
+      ca: "3"
+      es: "3"
+    - id: D
+      ca: "0"
+      es: "0"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Quan x→2+ el numerador tendeix a 2 + 1 = 3 (positiu) i el denominador x − 2
+      tendeix a 0 però amb valors positius (x > 2). Un nombre positiu dividit
+      per un positiu que tendeix a 0 dóna +∞. Per l'esquerra (x→2−) donaria −∞,
+      però aquí demanem només el límit per la dreta.
+    es: Cuando x→2+ el numerador tiende a 2 + 1 = 3 (positivo) y el denominador x −
+      2 tiende a 0 pero con valores positivos (x > 2). Un número positivo
+      dividido por un positivo que tiende a 0 da +∞. Por la izquierda (x→2−)
+      daría −∞, pero aquí se pide solo el límite por la derecha.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.limits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Calcula lim (x→+∞) (√(x^2 + 3x) − x).
+    es: Calcula lim (x→+∞) (√(x^2 + 3x) − x).
+  options:
+    - id: A
+      ca: 3/2
+      es: 3/2
+    - id: B
+      ca: "0"
+      es: "0"
+    - id: C
+      ca: +∞
+      es: +∞
+    - id: D
+      ca: "3"
+      es: "3"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "És una indeterminació ∞ − ∞. Multipliquem i dividim pel conjugat: (√(x^2 +
+      3x) − x)·(√(x^2 + 3x) + x)/(√(x^2 + 3x) + x) = (x^2 + 3x − x^2)/(√(x^2 +
+      3x) + x) = 3x/(√(x^2 + 3x) + x). Dividint dalt i baix per x (amb x→+∞,
+      √(x^2 + 3x) ≈ x): 3/(1 + 1) = 3/2."
+    es: "Es una indeterminación ∞ − ∞. Multiplicamos y dividimos por el conjugado:
+      (√(x^2 + 3x) − x)·(√(x^2 + 3x) + x)/(√(x^2 + 3x) + x) = (x^2 + 3x −
+      x^2)/(√(x^2 + 3x) + x) = 3x/(√(x^2 + 3x) + x). Dividiendo arriba y abajo
+      por x (con x→+∞, √(x^2 + 3x) ≈ x): 3/(1 + 1) = 3/2."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.derivatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Sigui la funció f(x) = 3x^2 - 5x + 7. Quin és el valor de la derivada f'(2)?
+    es: Sea la función f(x) = 3x^2 - 5x + 7. ¿Cuál es el valor de la derivada f'(2)?
+  options:
+    - id: A
+      ca: f'(2) = 7
+      es: f'(2) = 7
+    - id: B
+      ca: f'(2) = 9
+      es: f'(2) = 9
+    - id: C
+      ca: f'(2) = 17
+      es: f'(2) = 17
+    - id: D
+      ca: f'(2) = 12
+      es: f'(2) = 12
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Derivem terme a terme: f'(x) = 6x - 5 (la constant 7 s'anul·la).
+      Substituint x = 2: f'(2) = 6·2 - 5 = 12 - 5 = 7. B correspon a calcular
+      f(2) = 9 en comptes de la derivada; C a un error de signe (6x + 5); D a
+      oblidar el terme -5."
+    es: "Derivamos término a término: f'(x) = 6x - 5 (la constante 7 se anula).
+      Sustituyendo x = 2: f'(2) = 6·2 - 5 = 12 - 5 = 7. B corresponde a calcular
+      f(2) = 9 en vez de la derivada; C a un error de signo (6x + 5); D a
+      olvidar el término -5."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.derivatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: El cost total (en euros) de produir x unitats d'un producte és C(x) =
+      0,01x^2 + 2x + 500. Quin és el cost marginal quan es produeixen 50
+      unitats?
+    es: El coste total (en euros) de producir x unidades de un producto es C(x) =
+      0,01x^2 + 2x + 500. ¿Cuál es el coste marginal cuando se producen 50
+      unidades?
+  options:
+    - id: A
+      ca: 3 €/unitat
+      es: 3 €/unidad
+    - id: B
+      ca: 1 €/unitat
+      es: 1 €/unidad
+    - id: C
+      ca: 12,5 €/unitat
+      es: 12,5 €/unidad
+    - id: D
+      ca: 2,5 €/unitat
+      es: 2,5 €/unidad
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El cost marginal és la derivada del cost: C'(x) = 0,02x + 2. A x = 50:
+      C'(50) = 0,02·50 + 2 = 1 + 2 = 3 €/unitat. B oblida el terme +2; C calcula
+      el cost mitjà C(50)/50 = 625/50 = 12,5; D aplica malament la regla de la
+      potència (0,01x en lloc de 0,02x)."
+    es: "El coste marginal es la derivada del coste: C'(x) = 0,02x + 2. En x = 50:
+      C'(50) = 0,02·50 + 2 = 1 + 2 = 3 €/unidad. B olvida el término +2; C
+      calcula el coste medio C(50)/50 = 625/50 = 12,5; D aplica mal la regla de
+      la potencia (0,01x en lugar de 0,02x)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.derivatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Per a la funció f(x) = x^3 - 3x^2, indica l'interval on la funció és
+      creixent.
+    es: Para la función f(x) = x^3 - 3x^2, indica el intervalo donde la función es
+      creciente.
+  options:
+    - id: A
+      ca: (-∞, 0) ∪ (2, +∞)
+      es: (-∞, 0) ∪ (2, +∞)
+    - id: B
+      ca: (0, 2)
+      es: (0, 2)
+    - id: C
+      ca: (-∞, 0) ∪ (3, +∞)
+      es: (-∞, 0) ∪ (3, +∞)
+    - id: D
+      ca: (2, +∞)
+      es: (2, +∞)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "f'(x) = 3x^2 - 6x = 3x(x - 2), que s'anul·la a x = 0 i x = 2. Estudiant el
+      signe: f'(x) > 0 per x < 0 i per x > 2, de manera que f creix a (-∞, 0) ∪
+      (2, +∞). B és precisament l'interval decreixent; C usa erròniament les
+      arrels de f(x) = x^2(x - 3); D oblida la branca creixent de l'esquerra."
+    es: "f'(x) = 3x^2 - 6x = 3x(x - 2), que se anula en x = 0 y x = 2. Estudiando el
+      signo: f'(x) > 0 para x < 0 y para x > 2, por lo que f crece en (-∞, 0) ∪
+      (2, +∞). B es precisamente el intervalo decreciente; C usa erróneamente
+      las raíces de f(x) = x^2(x - 3); D olvida la rama creciente de la
+      izquierda."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.derivatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: El benefici (en milers d'euros) d'una empresa segons les unitats venudes x
+      és B(x) = -2x^2 + 120x - 800. Quantes unitats cal vendre per maximitzar el
+      benefici?
+    es: El beneficio (en miles de euros) de una empresa según las unidades vendidas
+      x es B(x) = -2x^2 + 120x - 800. ¿Cuántas unidades hay que vender para
+      maximizar el beneficio?
+  options:
+    - id: A
+      ca: 30 unitats
+      es: 30 unidades
+    - id: B
+      ca: 60 unitats
+      es: 60 unidades
+    - id: C
+      ca: 15 unitats
+      es: 15 unidades
+    - id: D
+      ca: -30 unitats
+      es: -30 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El màxim s'assoleix on B'(x) = 0. B'(x) = -4x + 120 = 0 → x = 120/4 = 30
+      unitats (i com B''(x) = -4 < 0, és un màxim). B surt de derivar malament
+      -2x^2 com -2x (obtenint -2x + 120 = 0 → 60); C de dividir 120 entre 8; D
+      d'un error de signe en aïllar x.
+    es: El máximo se alcanza donde B'(x) = 0. B'(x) = -4x + 120 = 0 → x = 120/4 = 30
+      unidades (y como B''(x) = -4 < 0, es un máximo). B sale de derivar mal
+      -2x^2 como -2x (obteniendo -2x + 120 = 0 → 60); C de dividir 120 entre 8;
+      D de un error de signo al despejar x.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.derivatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Determina l'equació de la recta tangent a la gràfica de f(x) = x^2 - 4x + 3
+      en el punt d'abscissa x = 1.
+    es: Determina la ecuación de la recta tangente a la gráfica de f(x) = x^2 - 4x +
+      3 en el punto de abscisa x = 1.
+  options:
+    - id: A
+      ca: y = -2x + 2
+      es: y = -2x + 2
+    - id: B
+      ca: y = 2x - 2
+      es: y = 2x - 2
+    - id: C
+      ca: y = -2x
+      es: y = -2x
+    - id: D
+      ca: y = -2x + 3
+      es: y = -2x + 3
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El pendent és f'(1): f'(x) = 2x - 4, així f'(1) = -2. El punt de tangència
+      és (1, f(1)) amb f(1) = 1 - 4 + 3 = 0. Recta: y - 0 = -2(x - 1) → y = -2x
+      + 2. B inverteix el signe del pendent; C oblida el terme independent; D
+      usa la constant 3 de la funció com a ordenada a l'origen."
+    es: "La pendiente es f'(1): f'(x) = 2x - 4, así f'(1) = -2. El punto de
+      tangencia es (1, f(1)) con f(1) = 1 - 4 + 3 = 0. Recta: y - 0 = -2(x - 1)
+      → y = -2x + 2. B invierte el signo de la pendiente; C olvida el término
+      independiente; D usa la constante 3 de la función como ordenada en el
+      origen."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.derivatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: El cost total (en euros) de produir x unitats és C(x) = 0,5x^2 + 10x + 200.
+      Quantes unitats minimitzen el cost mitjà per unitat?
+    es: El coste total (en euros) de producir x unidades es C(x) = 0,5x^2 + 10x +
+      200. ¿Cuántas unidades minimizan el coste medio por unidad?
+  options:
+    - id: A
+      ca: 20 unitats
+      es: 20 unidades
+    - id: B
+      ca: 10 unitats
+      es: 10 unidades
+    - id: C
+      ca: ≈ 14,1 unitats
+      es: ≈ 14,1 unidades
+    - id: D
+      ca: 40 unitats
+      es: 40 unidades
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El cost mitjà és A(x) = C(x)/x = 0,5x + 10 + 200/x. Derivem: A'(x) = 0,5 -
+      200/x^2 = 0 → 200/x^2 = 0,5 → x^2 = 200/0,5 = 400 → x = 20 unitats. B
+      multiplica en lloc de dividir (x^2 = 200·0,5 = 100); C ignora el
+      coeficient 0,5 (x^2 = 200); D planteja bé x^2 = 400 però calcula malament
+      l'arrel quadrada."
+    es: "El coste medio es A(x) = C(x)/x = 0,5x + 10 + 200/x. Derivamos: A'(x) = 0,5
+      - 200/x^2 = 0 → 200/x^2 = 0,5 → x^2 = 200/0,5 = 400 → x = 20 unidades. B
+      multiplica en lugar de dividir (x^2 = 200·0,5 = 100); C ignora el
+      coeficiente 0,5 (x^2 = 200); D plantea bien x^2 = 400 pero calcula mal la
+      raíz cuadrada."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.integrals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Calcula la integral definida ∫ des de 0 fins a 2 de 3x^2 dx.
+    es: Calcula la integral definida ∫ desde 0 hasta 2 de 3x^2 dx.
+  options:
+    - id: A
+      ca: "8"
+      es: "8"
+    - id: B
+      ca: "24"
+      es: "24"
+    - id: C
+      ca: "12"
+      es: "12"
+    - id: D
+      ca: "4"
+      es: "4"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Una primitiva de 3x^2 és x^3 (perquè 3·x^3/3 = x^3). Avaluem: F(2) − F(0) =
+      2^3 − 0^3 = 8 − 0 = 8. L'error 24 surt d'integrar com a 3x^3 sense dividir
+      per l'exponent; el 12 surt d'avaluar l'integrand 3x^2 a x=2 en lloc de la
+      primitiva."
+    es: "Una primitiva de 3x^2 es x^3 (porque 3·x^3/3 = x^3). Evaluamos: F(2) − F(0)
+      = 2^3 − 0^3 = 8 − 0 = 8. El error 24 surge de integrar como 3x^3 sin
+      dividir por el exponente; el 12 surge de evaluar el integrando 3x^2 en x=2
+      en lugar de la primitiva."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.integrals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Troba l'àrea de la regió limitada per la recta f(x) = 2x + 1, l'eix
+      d'abscisses i les rectes verticals x = 1 i x = 3.
+    es: Halla el área de la región limitada por la recta f(x) = 2x + 1, el eje de
+      abscisas y las rectas verticales x = 1 y x = 3.
+  options:
+    - id: A
+      ca: 10 u^2
+      es: 10 u^2
+    - id: B
+      ca: 12 u^2
+      es: 12 u^2
+    - id: C
+      ca: −10 u^2
+      es: −10 u^2
+    - id: D
+      ca: 20 u^2
+      es: 20 u^2
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Com que f(x) > 0 en [1, 3], l'àrea és ∫ d'1 a 3 de (2x+1) dx. Una primitiva
+      és x^2 + x. Avaluem: (3^2 + 3) − (1^2 + 1) = 12 − 2 = 10 u^2. El 12 oblida
+      restar el límit inferior; el −10 inverteix l'ordre de la resta."
+    es: "Como f(x) > 0 en [1, 3], el área es ∫ de 1 a 3 de (2x+1) dx. Una primitiva
+      es x^2 + x. Evaluamos: (3^2 + 3) − (1^2 + 1) = 12 − 2 = 10 u^2. El 12
+      olvida restar el límite inferior; el −10 invierte el orden de la resta."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.integrals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Calcula el valor de la integral definida ∫ des de 0 fins a 3 de (x^2 − 4)
+      dx.
+    es: Calcula el valor de la integral definida ∫ desde 0 hasta 3 de (x^2 − 4) dx.
+  options:
+    - id: A
+      ca: −3
+      es: −3
+    - id: B
+      ca: "3"
+      es: "3"
+    - id: C
+      ca: −12
+      es: −12
+    - id: D
+      ca: "21"
+      es: "21"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Una primitiva és x^3/3 − 4x. Avaluem: (27/3 − 12) − (0 − 0) = (9 − 12) =
+      −3. El resultat és negatiu perquè la funció és sota l'eix en gran part de
+      l'interval. El 3 confon la integral amb l'àrea (valor absolut); el −12
+      oblida el terme x^3/3; el 21 posa el signe canviat al terme −4x."
+    es: "Una primitiva es x^3/3 − 4x. Evaluamos: (27/3 − 12) − (0 − 0) = (9 − 12) =
+      −3. El resultado es negativo porque la función está bajo el eje en gran
+      parte del intervalo. El 3 confunde la integral con el área (valor
+      absoluto); el −12 olvida el término x^3/3; el 21 cambia el signo del
+      término −4x."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.integrals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Se sap que ∫ d'1 a 4 de f(x) dx = 10 i que ∫ d'1 a 2 de f(x) dx = 3. Quant
+      val ∫ de 2 a 4 de f(x) dx?
+    es: Se sabe que ∫ de 1 a 4 de f(x) dx = 10 y que ∫ de 1 a 2 de f(x) dx = 3.
+      ¿Cuánto vale ∫ de 2 a 4 de f(x) dx?
+  options:
+    - id: A
+      ca: "7"
+      es: "7"
+    - id: B
+      ca: "13"
+      es: "13"
+    - id: C
+      ca: "30"
+      es: "30"
+    - id: D
+      ca: −7
+      es: −7
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per la propietat d'additivitat respecte de l'interval: ∫ d'1 a 4 = ∫ d'1 a
+      2 + ∫ de 2 a 4. Aïllant: ∫ de 2 a 4 = 10 − 3 = 7. El 13 suma en lloc de
+      restar; el 30 multiplica; el −7 inverteix el signe de la resta."
+    es: "Por la propiedad de aditividad respecto del intervalo: ∫ de 1 a 4 = ∫ de 1
+      a 2 + ∫ de 2 a 4. Despejando: ∫ de 2 a 4 = 10 − 3 = 7. El 13 suma en lugar
+      de restar; el 30 multiplica; el −7 invierte el signo de la resta."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.integrals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Calcula l'àrea de la regió tancada entre les corbes f(x) = x^2 i g(x) = 2x.
+    es: Calcula el área de la región encerrada entre las curvas f(x) = x^2 y g(x) =
+      2x.
+  options:
+    - id: A
+      ca: 4/3 u^2
+      es: 4/3 u^2
+    - id: B
+      ca: 8/3 u^2
+      es: 8/3 u^2
+    - id: C
+      ca: −4/3 u^2
+      es: −4/3 u^2
+    - id: D
+      ca: 20/3 u^2
+      es: 20/3 u^2
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Punts de tall: x^2 = 2x → x(x−2)=0 → x=0 i x=2. En (0,2) la recta 2x està
+      per sobre de la paràbola x^2, per tant l'àrea és ∫ de 0 a 2 de (2x − x^2)
+      dx = [x^2 − x^3/3] de 0 a 2 = (4 − 8/3) = 12/3 − 8/3 = 4/3 u^2. El −4/3
+      resulta de restar en l'ordre equivocat (x^2 − 2x); el 8/3 oblida un dels
+      dos termes."
+    es: "Puntos de corte: x^2 = 2x → x(x−2)=0 → x=0 y x=2. En (0,2) la recta 2x está
+      por encima de la parábola x^2, así que el área es ∫ de 0 a 2 de (2x − x^2)
+      dx = [x^2 − x^3/3] de 0 a 2 = (4 − 8/3) = 12/3 − 8/3 = 4/3 u^2. El −4/3
+      resulta de restar en el orden equivocado (x^2 − 2x); el 8/3 olvida uno de
+      los dos términos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.analysis.integrals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: El cost marginal de producció d'una empresa és C'(x) = 3x^2 − 2x + 5 (euros
+      per unitat), on x són les unitats produïdes. Quin és l'increment de cost
+      total en passar de produir 0 a 10 unitats?
+    es: El coste marginal de producción de una empresa es C'(x) = 3x^2 − 2x + 5
+      (euros por unidad), donde x son las unidades producidas. ¿Cuál es el
+      incremento de coste total al pasar de producir 0 a 10 unidades?
+  options:
+    - id: A
+      ca: 950 €
+      es: 950 €
+    - id: B
+      ca: 900 €
+      es: 900 €
+    - id: C
+      ca: 1150 €
+      es: 1150 €
+    - id: D
+      ca: 1000 €
+      es: 1000 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'increment de cost és ∫ de 0 a 10 de (3x^2 − 2x + 5) dx. Primitiva: x^3 −
+      x^2 + 5x. Avaluem a 10: 1000 − 100 + 50 = 950 €; a 0 dóna 0. Per tant 950
+      €. El 900 oblida el terme +5x; el 1150 posa el signe canviat a −x^2
+      (1000+100+50); el 1000 només integra el terme 3x^2."
+    es: "El incremento de coste es ∫ de 0 a 10 de (3x^2 − 2x + 5) dx. Primitiva: x^3
+      − x^2 + 5x. Evaluamos en 10: 1000 − 100 + 50 = 950 €; en 0 da 0. Por tanto
+      950 €. El 900 olvida el término +5x; el 1150 cambia el signo de −x^2
+      (1000+100+50); el 1000 solo integra el término 3x^2."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.probability
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Es llança un dau equilibrat de sis cares. Sigui A = 'sortir un nombre
+      parell' i B = 'sortir un nombre més gran que 4'. Quina és la probabilitat
+      de A ∪ B?
+    es: Se lanza un dado equilibrado de seis caras. Sea A = 'salir un número par' y
+      B = 'salir un número mayor que 4'. ¿Cuál es la probabilidad de A ∪ B?
+  options:
+    - id: A
+      ca: 2/3
+      es: 2/3
+    - id: B
+      ca: 5/6
+      es: 5/6
+    - id: C
+      ca: 1/6
+      es: 1/6
+    - id: D
+      ca: 1/2
+      es: 1/2
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "A = {2,4,6}, B = {5,6}, per tant A ∩ B = {6}. Amb la regla de la unió: P(A
+      ∪ B) = P(A) + P(B) − P(A ∩ B) = 3/6 + 2/6 − 1/6 = 4/6 = 2/3. També es veu
+      directament que A ∪ B = {2,4,5,6}, és a dir 4 casos favorables de 6."
+    es: "A = {2,4,6}, B = {5,6}, por tanto A ∩ B = {6}. Con la regla de la unión:
+      P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 3/6 + 2/6 − 1/6 = 4/6 = 2/3. También
+      se ve directamente que A ∪ B = {2,4,5,6}, es decir 4 casos favorables de
+      6."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.probability
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En un experiment aleatori, P(A ∩ B) = 0,2 i P(B) = 0,5. Quina és la
+      probabilitat condicionada P(A | B)?
+    es: En un experimento aleatorio, P(A ∩ B) = 0,2 y P(B) = 0,5. ¿Cuál es la
+      probabilidad condicionada P(A | B)?
+  options:
+    - id: A
+      ca: 0,10
+      es: 0,10
+    - id: B
+      ca: 0,40
+      es: 0,40
+    - id: C
+      ca: 0,70
+      es: 0,70
+    - id: D
+      ca: 2,50
+      es: 2,50
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Per definició, P(A | B) = P(A ∩ B) / P(B) = 0,2 / 0,5 = 0,40. L'error de
+      multiplicar (0,2·0,5 = 0,10) confon la intersecció d'esdeveniments
+      independents amb la condicionada; dividir al revés (0,5/0,2 = 2,5)
+      inverteix la fórmula.
+    es: Por definición, P(A | B) = P(A ∩ B) / P(B) = 0,2 / 0,5 = 0,40. El error de
+      multiplicar (0,2·0,5 = 0,10) confunde la intersección de sucesos
+      independientes con la condicionada; dividir al revés (0,5/0,2 = 2,5)
+      invierte la fórmula.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.probability
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En una enquesta a 200 persones hi ha 120 homes i 80 dones. Tenen carnet de
+      conduir 90 homes i 50 dones. Si es tria una persona a l'atzar i resulta
+      ser dona, quina és la probabilitat que tingui carnet de conduir?
+    es: En una encuesta a 200 personas hay 120 hombres y 80 mujeres. Tienen carné de
+      conducir 90 hombres y 50 mujeres. Si se elige una persona al azar y
+      resulta ser mujer, ¿cuál es la probabilidad de que tenga carné de
+      conducir?
+  options:
+    - id: A
+      ca: 0,250
+      es: 0,250
+    - id: B
+      ca: 0,357
+      es: 0,357
+    - id: C
+      ca: 0,625
+      es: 0,625
+    - id: D
+      ca: 0,400
+      es: 0,400
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: Ens restringim a les dones (l'espai mostral ja és 'ser dona'). P(carnet |
+      dona) = dones amb carnet / total dones = 50/80 = 0,625. Dividir per 200
+      (50/200 = 0,25) ignora la condició; dividir pel total de carnets (50/140 ≈
+      0,357) canvia el condicionament.
+    es: Nos restringimos a las mujeres (el espacio muestral ya es 'ser mujer').
+      P(carné | mujer) = mujeres con carné / total mujeres = 50/80 = 0,625.
+      Dividir entre 200 (50/200 = 0,25) ignora la condición; dividir entre el
+      total de carnés (50/140 ≈ 0,357) cambia el condicionamiento.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.probability
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Dos esdeveniments A i B són independents, amb P(A) = 0,3 i P(B) = 0,4. Quina
+      és la probabilitat de A ∪ B?
+    es: Dos sucesos A y B son independientes, con P(A) = 0,3 y P(B) = 0,4. ¿Cuál es
+      la probabilidad de A ∪ B?
+  options:
+    - id: A
+      ca: 0,70
+      es: 0,70
+    - id: B
+      ca: 0,12
+      es: 0,12
+    - id: C
+      ca: 0,58
+      es: 0,58
+    - id: D
+      ca: 0,42
+      es: 0,42
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: Com que són independents, P(A ∩ B) = P(A)·P(B) = 0,3·0,4 = 0,12. Aleshores
+      P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 0,3 + 0,4 − 0,12 = 0,58. Oblidar de
+      restar la intersecció dóna 0,70 (vàlid només si fossin incompatibles).
+    es: Como son independientes, P(A ∩ B) = P(A)·P(B) = 0,3·0,4 = 0,12. Entonces P(A
+      ∪ B) = P(A) + P(B) − P(A ∩ B) = 0,3 + 0,4 − 0,12 = 0,58. Olvidar restar la
+      intersección da 0,70 (válido solo si fueran incompatibles).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.probability
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Una urna conté 4 boles blanques i 6 boles negres. S'extreuen 2 boles
+      seguides SENSE reposició. Quina és la probabilitat que totes dues siguin
+      blanques?
+    es: Una urna contiene 4 bolas blancas y 6 bolas negras. Se extraen 2 bolas
+      seguidas SIN reposición. ¿Cuál es la probabilidad de que ambas sean
+      blancas?
+  options:
+    - id: A
+      ca: 4/25
+      es: 4/25
+    - id: B
+      ca: 2/15
+      es: 2/15
+    - id: C
+      ca: 2/5
+      es: 2/5
+    - id: D
+      ca: 1/15
+      es: 1/15
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Sense reposició, la segona extracció depèn de la primera: P(1a blanca) =
+      4/10 i P(2a blanca | 1a blanca) = 3/9. Per la probabilitat composta: P =
+      (4/10)·(3/9) = 12/90 = 2/15. Fer (4/10)·(4/10) = 4/25 correspondria a
+      extreure AMB reposició."
+    es: "Sin reposición, la segunda extracción depende de la primera: P(1ª blanca) =
+      4/10 y P(2ª blanca | 1ª blanca) = 3/9. Por la probabilidad compuesta: P =
+      (4/10)·(3/9) = 12/90 = 2/15. Hacer (4/10)·(4/10) = 4/25 correspondería a
+      extraer CON reposición."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.probability
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Una fàbrica produeix cargols amb dues màquines. La màquina A fabrica el 60%
+      de la producció i la B el 40%. El 3% dels cargols de A són defectuosos i
+      el 5% dels de B també ho són. Es tria un cargol a l'atzar i resulta
+      defectuós. Quina és la probabilitat que l'hagi fabricat la màquina A?
+      (arrodoneix a 3 decimals)
+    es: Una fábrica produce tornillos con dos máquinas. La máquina A fabrica el 60%
+      de la producción y la B el 40%. El 3% de los tornillos de A son
+      defectuosos y el 5% de los de B también lo son. Se elige un tornillo al
+      azar y resulta defectuoso. ¿Cuál es la probabilidad de que lo haya
+      fabricado la máquina A? (redondea a 3 decimales)
+  options:
+    - id: A
+      ca: 0,474
+      es: 0,474
+    - id: B
+      ca: 0,600
+      es: 0,600
+    - id: C
+      ca: 0,030
+      es: 0,030
+    - id: D
+      ca: 0,526
+      es: 0,526
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Probabilitat total del defecte: P(D) = P(A)·P(D|A) + P(B)·P(D|B) =
+      0,60·0,03 + 0,40·0,05 = 0,018 + 0,020 = 0,038. Per Bayes: P(A|D) =
+      P(A)·P(D|A) / P(D) = 0,018 / 0,038 ≈ 0,474. Respondre 0,60 confon la
+      probabilitat a priori amb la a posteriori; 0,526 és P(B|D)."
+    es: "Probabilidad total del defecto: P(D) = P(A)·P(D|A) + P(B)·P(D|B) =
+      0,60·0,03 + 0,40·0,05 = 0,018 + 0,020 = 0,038. Por Bayes: P(A|D) =
+      P(A)·P(D|A) / P(D) = 0,018 / 0,038 ≈ 0,474. Responder 0,60 confunde la
+      probabilidad a priori con la a posteriori; 0,526 es P(B|D)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.binomial
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quina de les següents variables aleatòries segueix una distribució binomial?
+    es: ¿Cuál de las siguientes variables aleatorias sigue una distribución
+      binomial?
+  options:
+    - id: A
+      ca: El nombre de cares obtingudes en llançar 20 vegades una moneda equilibrada.
+      es: El número de caras obtenidas al lanzar 20 veces una moneda equilibrada.
+    - id: B
+      ca: El temps (en minuts) que triga una màquina a espatllar-se.
+      es: El tiempo (en minutos) que tarda una máquina en averiarse.
+    - id: C
+      ca: El nombre de clients que arriben a una botiga durant una hora, sense límit
+        prefixat.
+      es: El número de clientes que llegan a una tienda durante una hora, sin límite
+        prefijado.
+    - id: D
+      ca: L'alçada, en cm, dels alumnes d'una classe.
+      es: La altura, en cm, de los alumnos de una clase.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Una binomial B(n,p) compta el nombre d'èxits en n proves independents,
+      cadascuna amb dos resultats i probabilitat d'èxit p constant. Llançar 20
+      cops la moneda compleix tot: n=20 fix, èxits/fracassos (cara/creu), p=0,5
+      constant i proves independents. El temps i l'alçada són variables
+      contínues, i el nombre de clients per hora no té un n fix (és de tipus
+      Poisson)."
+    es: "Una binomial B(n,p) cuenta el número de éxitos en n pruebas independientes,
+      cada una con dos resultados y probabilidad de éxito p constante. Lanzar 20
+      veces la moneda lo cumple todo: n=20 fijo, éxitos/fracasos (cara/cruz),
+      p=0,5 constante y pruebas independientes. El tiempo y la altura son
+      variables continuas, y el número de clientes por hora no tiene n fijo (es
+      de tipo Poisson)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.binomial
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Sigui X una variable B(5; 0,2). Calcula P(X = 2).
+    es: Sea X una variable B(5; 0,2). Calcula P(X = 2).
+  options:
+    - id: A
+      ca: 0,2048
+      es: 0,2048
+    - id: B
+      ca: 0,0205
+      es: 0,0205
+    - id: C
+      ca: 0,0512
+      es: 0,0512
+    - id: D
+      ca: 0,1024
+      es: 0,1024
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: P(X=2) = C(5,2)·0,2^2·0,8^3 = 10·0,04·0,512 = 0,2048. L'error 0,0205 oblida
+      el coeficient C(5,2)=10; 0,0512 intercanvia els exponents de p i q; 0,1024
+      fa servir n=5 en lloc de C(5,2)=10.
+    es: P(X=2) = C(5,2)·0,2^2·0,8^3 = 10·0,04·0,512 = 0,2048. El error 0,0205 olvida
+      el coeficiente C(5,2)=10; 0,0512 intercambia los exponentes de p y q;
+      0,1024 usa n=5 en lugar de C(5,2)=10.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.binomial
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En una fàbrica, el 10% de les peces són defectuoses. S'agafen 8 peces a
+      l'atzar. Quina és la probabilitat que almenys una sigui defectuosa?
+    es: En una fábrica, el 10% de las piezas son defectuosas. Se toman 8 piezas al
+      azar. ¿Cuál es la probabilidad de que al menos una sea defectuosa?
+  options:
+    - id: A
+      ca: 0,5695
+      es: 0,5695
+    - id: B
+      ca: 0,4305
+      es: 0,4305
+    - id: C
+      ca: 0,3826
+      es: 0,3826
+    - id: D
+      ca: 0,1000
+      es: 0,1000
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: X ~ B(8; 0,1). P(X≥1) = 1 − P(X=0) = 1 − 0,9^8 = 1 − 0,4305 = 0,5695. El
+      valor 0,4305 és P(X=0); 0,3826 és P(X=1) (exactament una); 0,10 és només
+      p.
+    es: X ~ B(8; 0,1). P(X≥1) = 1 − P(X=0) = 1 − 0,9^8 = 1 − 0,4305 = 0,5695. El
+      valor 0,4305 es P(X=0); 0,3826 es P(X=1) (exactamente una); 0,10 es solo
+      p.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.binomial
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Una variable segueix una distribució B(20; 0,3). Quins són la mitjana i la
+      desviació típica?
+    es: Una variable sigue una distribución B(20; 0,3). ¿Cuáles son la media y la
+      desviación típica?
+  options:
+    - id: A
+      ca: Mitjana 6 i desviació típica ≈ 2,05.
+      es: Media 6 y desviación típica ≈ 2,05.
+    - id: B
+      ca: Mitjana 6 i desviació típica 4,2.
+      es: Media 6 y desviación típica 4,2.
+    - id: C
+      ca: Mitjana 6 i desviació típica ≈ 2,45.
+      es: Media 6 y desviación típica ≈ 2,45.
+    - id: D
+      ca: Mitjana 14 i desviació típica ≈ 2,05.
+      es: Media 14 y desviación típica ≈ 2,05.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Mitjana = n·p = 20·0,3 = 6. Variància = n·p·(1−p) = 20·0,3·0,7 = 4,2, i
+      desviació típica = √4,2 ≈ 2,05. L'opció B confon variància amb desviació
+      típica; C oblida el factor (1−p) i fa √6; D calcula la mitjana amb q=0,7.
+    es: Media = n·p = 20·0,3 = 6. Varianza = n·p·(1−p) = 20·0,3·0,7 = 4,2, y
+      desviación típica = √4,2 ≈ 2,05. La opción B confunde varianza con
+      desviación típica; C olvida el factor (1−p) y hace √6; D calcula la media
+      con q=0,7.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.binomial
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Sigui X ~ B(10; 0,2). Calcula P(X ≤ 2).
+    es: Sea X ~ B(10; 0,2). Calcula P(X ≤ 2).
+  options:
+    - id: A
+      ca: 0,678
+      es: 0,678
+    - id: B
+      ca: 0,376
+      es: 0,376
+    - id: C
+      ca: 0,302
+      es: 0,302
+    - id: D
+      ca: 0,322
+      es: 0,322
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: P(X≤2) = P(0)+P(1)+P(2). P(0)=0,8^10=0,1074; P(1)=10·0,2·0,8^9=0,2684;
+      P(2)=C(10,2)·0,2^2·0,8^8=45·0,04·0,1678=0,3020. Suma = 0,678. El 0,376
+      oblida P(2) (només X≤1); 0,302 és només P(X=2); 0,322 és el complementari
+      P(X≥3).
+    es: P(X≤2) = P(0)+P(1)+P(2). P(0)=0,8^10=0,1074; P(1)=10·0,2·0,8^9=0,2684;
+      P(2)=C(10,2)·0,2^2·0,8^8=45·0,04·0,1678=0,3020. Suma = 0,678. El 0,376
+      olvida P(2) (solo X≤1); 0,302 es solo P(X=2); 0,322 es el complementario
+      P(X≥3).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.binomial
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Un test té 10 preguntes, cadascuna amb 4 respostes (només una correcta). Un
+      alumne respon totalment a l'atzar. Quina és la probabilitat d'encertar-ne
+      exactament 4?
+    es: Un test tiene 10 preguntas, cada una con 4 respuestas (solo una correcta).
+      Un alumno responde totalmente al azar. ¿Cuál es la probabilidad de acertar
+      exactamente 4?
+  options:
+    - id: A
+      ca: 0,146
+      es: 0,146
+    - id: B
+      ca: 0,205
+      es: 0,205
+    - id: C
+      ca: 0,016
+      es: 0,016
+    - id: D
+      ca: 0,0007
+      es: 0,0007
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: X ~ B(10; 0,25) amb p=1/4. P(X=4) = C(10,4)·0,25^4·0,75^6 =
+      210·0,003906·0,17798 ≈ 0,146. El 0,205 fa servir p=0,5 erròniament; 0,016
+      intercanvia p i q (usa 0,75 com a èxit); 0,0007 oblida el coeficient
+      C(10,4)=210.
+    es: X ~ B(10; 0,25) con p=1/4. P(X=4) = C(10,4)·0,25^4·0,75^6 =
+      210·0,003906·0,17798 ≈ 0,146. El 0,205 usa p=0,5 erróneamente; 0,016
+      intercambia p y q (usa 0,75 como éxito); 0,0007 olvida el coeficiente
+      C(10,4)=210.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.normal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Sigui Z una variable amb distribució normal estàndard, Z ~ N(0, 1).
+      Consultant la taula, quant val P(Z ≤ 1,5)?
+    es: Sea Z una variable con distribución normal estándar, Z ~ N(0, 1).
+      Consultando la tabla, ¿cuánto vale P(Z ≤ 1,5)?
+  options:
+    - id: A
+      ca: 0,9332
+      es: 0,9332
+    - id: B
+      ca: 0,0668
+      es: 0,0668
+    - id: C
+      ca: 0,4332
+      es: 0,4332
+    - id: D
+      ca: 0,5000
+      es: 0,5000
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La taula de la normal estàndard dóna directament P(Z ≤ 1,5) = Φ(1,5) =
+      0,9332. L'opció 0,0668 és la cua superior P(Z > 1,5) = 1 − 0,9332; 0,4332
+      és Φ(1,5) − 0,5 (probabilitat entre 0 i 1,5).
+    es: La tabla de la normal estándar da directamente P(Z ≤ 1,5) = Φ(1,5) = 0,9332.
+      La opción 0,0668 es la cola superior P(Z > 1,5) = 1 − 0,9332; 0,4332 es
+      Φ(1,5) − 0,5 (probabilidad entre 0 y 1,5).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.normal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: L'alçada dels alumnes d'un centre segueix una distribució normal de mitjana
+      170 cm i desviació típica 8 cm, X ~ N(170, 8). Quina és la probabilitat
+      que un alumne triat a l'atzar mesuri com a màxim 178 cm? (Φ(1) = 0,8413)
+    es: La altura de los alumnos de un centro sigue una distribución normal de media
+      170 cm y desviación típica 8 cm, X ~ N(170, 8). ¿Cuál es la probabilidad
+      de que un alumno elegido al azar mida como máximo 178 cm? (Φ(1) = 0,8413)
+  options:
+    - id: A
+      ca: 0,8413
+      es: 0,8413
+    - id: B
+      ca: 0,1587
+      es: 0,1587
+    - id: C
+      ca: 0,3413
+      es: 0,3413
+    - id: D
+      ca: 0,5000
+      es: 0,5000
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Es tipifica: Z = (178 − 170)/8 = 1. Aleshores P(X ≤ 178) = P(Z ≤ 1) = Φ(1)
+      = 0,8413. L'opció 0,1587 és la cua superior P(Z > 1); 0,3413 és Φ(1) −
+      0,5."
+    es: "Se tipifica: Z = (178 − 170)/8 = 1. Entonces P(X ≤ 178) = P(Z ≤ 1) = Φ(1) =
+      0,8413. La opción 0,1587 es la cola superior P(Z > 1); 0,3413 es Φ(1) −
+      0,5."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.normal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Una variable segueix X ~ N(50, 5). Calcula P(45 ≤ X ≤ 60). (Φ(1) = 0,8413;
+      Φ(2) = 0,9772)
+    es: Una variable sigue X ~ N(50, 5). Calcula P(45 ≤ X ≤ 60). (Φ(1) = 0,8413;
+      Φ(2) = 0,9772)
+  options:
+    - id: A
+      ca: 0,8185
+      es: 0,8185
+    - id: B
+      ca: 0,1359
+      es: 0,1359
+    - id: C
+      ca: 0,9772
+      es: 0,9772
+    - id: D
+      ca: 0,8413
+      es: 0,8413
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Es tipifiquen els extrems: Z1 = (45 − 50)/5 = −1 i Z2 = (60 − 50)/5 = 2.
+      P(45 ≤ X ≤ 60) = Φ(2) − Φ(−1) = Φ(2) − (1 − Φ(1)) = 0,9772 − 0,1587 =
+      0,8185. L'error 0,1359 surt de fer Φ(2) − Φ(1) oblidant el signe negatiu
+      de Z1."
+    es: "Se tipifican los extremos: Z1 = (45 − 50)/5 = −1 y Z2 = (60 − 50)/5 = 2.
+      P(45 ≤ X ≤ 60) = Φ(2) − Φ(−1) = Φ(2) − (1 − Φ(1)) = 0,9772 − 0,1587 =
+      0,8185. El error 0,1359 sale de hacer Φ(2) − Φ(1) olvidando el signo
+      negativo de Z1."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.normal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Les puntuacions d'un test segueixen X ~ N(500, 100). Es vol determinar la
+      nota x que deixa per sota el 90% dels examinats (percentil 90). Sabent que
+      el valor z tal que Φ(z) = 0,90 és z = 1,28, quant val x?
+    es: Las puntuaciones de un test siguen X ~ N(500, 100). Se quiere determinar la
+      nota x que deja por debajo al 90% de los examinados (percentil 90).
+      Sabiendo que el valor z tal que Φ(z) = 0,90 es z = 1,28, ¿cuánto vale x?
+  options:
+    - id: A
+      ca: "628"
+      es: "628"
+    - id: B
+      ca: "372"
+      es: "372"
+    - id: C
+      ca: 664,5
+      es: 664,5
+    - id: D
+      ca: "590"
+      es: "590"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "De la tipificació, z = (x − μ)/σ, es desfà: x = μ + z·σ = 500 + 1,28·100 =
+      628. L'opció 372 correspon a restar (error de signe), 664,5 a usar z =
+      1,645 (percentil 95) i 590 a usar z = 0,90 directament."
+    es: "De la tipificación, z = (x − μ)/σ, se despeja: x = μ + z·σ = 500 + 1,28·100
+      = 628. La opción 372 corresponde a restar (error de signo), 664,5 a usar z
+      = 1,645 (percentil 95) y 590 a usar z = 0,90 directamente."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.normal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Per a la normal estàndard Z ~ N(0, 1), quin és el valor de k > 0 tal que
+      P(−k ≤ Z ≤ k) = 0,95?
+    es: Para la normal estándar Z ~ N(0, 1), ¿cuál es el valor de k > 0 tal que P(−k
+      ≤ Z ≤ k) = 0,95?
+  options:
+    - id: A
+      ca: 1,96
+      es: 1,96
+    - id: B
+      ca: 1,645
+      es: 1,645
+    - id: C
+      ca: 2,575
+      es: 2,575
+    - id: D
+      ca: 1,28
+      es: 1,28
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per simetria, si P(−k ≤ Z ≤ k) = 0,95, cada cua té 0,025, així que Φ(k) =
+      0,975. A la taula, Φ(1,96) = 0,975, d'on k = 1,96. L'error 1,645 correspon
+      a Φ(k) = 0,95 (interval del 90%) i 2,575 al 99%.
+    es: Por simetría, si P(−k ≤ Z ≤ k) = 0,95, cada cola tiene 0,025, de modo que
+      Φ(k) = 0,975. En la tabla, Φ(1,96) = 0,975, de donde k = 1,96. El error
+      1,645 corresponde a Φ(k) = 0,95 (intervalo del 90%) y 2,575 al 99%.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.normal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: El contingut d'unes ampolles segueix una distribució normal de mitjana 1000
+      mL i desviació típica σ desconeguda, X ~ N(1000, σ). Se sap que P(X < 940)
+      = 0,0668. Quant val σ? (Φ(1,5) = 0,9332)
+    es: El contenido de unas botellas sigue una distribución normal de media 1000 mL
+      y desviación típica σ desconocida, X ~ N(1000, σ). Se sabe que P(X < 940)
+      = 0,0668. ¿Cuánto vale σ? (Φ(1,5) = 0,9332)
+  options:
+    - id: A
+      ca: 40 mL
+      es: 40 mL
+    - id: B
+      ca: 60 mL
+      es: 60 mL
+    - id: C
+      ca: 30 mL
+      es: 30 mL
+    - id: D
+      ca: 90 mL
+      es: 90 mL
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Com que P(X < 940) = 0,0668 < 0,5, el valor tipificat és negatiu: Φ(z) =
+      0,0668 = 1 − 0,9332 dóna z = −1,5. Aleshores z = (940 − 1000)/σ = −1,5, és
+      a dir −60/σ = −1,5, d'on σ = 60/1,5 = 40 mL. L'opció 60 surt d'usar z = 1
+      i 30 d'usar z = 2."
+    es: "Como P(X < 940) = 0,0668 < 0,5, el valor tipificado es negativo: Φ(z) =
+      0,0668 = 1 − 0,9332 da z = −1,5. Entonces z = (940 − 1000)/σ = −1,5, es
+      decir −60/σ = −1,5, de donde σ = 60/1,5 = 40 mL. La opción 60 sale de usar
+      z = 1 y 30 de usar z = 2."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En una població la desviació típica de la variable és σ = 15. Es prenen
+      mostres aleatòries de mida n = 25. Quin és l'error típic (desviació
+      típica) de la mitjana mostral?
+    es: En una población la desviación típica de la variable es σ = 15. Se toman
+      muestras aleatorias de tamaño n = 25. ¿Cuál es el error típico (desviación
+      típica) de la media muestral?
+  options:
+    - id: A
+      ca: "3"
+      es: "3"
+    - id: B
+      ca: 0,6
+      es: 0,6
+    - id: C
+      ca: "15"
+      es: "15"
+    - id: D
+      ca: 0,775
+      es: 0,775
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'error típic de la mitjana mostral és σ/√n = 15/√25 = 15/5 = 3. Dividir per
+      n (15/25 = 0,6) o no dividir (15) són errors habituals; √(σ/n) = √0,6 ≈
+      0,775 també és incorrecte.
+    es: El error típico de la media muestral es σ/√n = 15/√25 = 15/5 = 3. Dividir
+      entre n (15/25 = 0,6) o no dividir (15) son errores habituales; √(σ/n) =
+      √0,6 ≈ 0,775 también es incorrecto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: El pes dels sacs de pinso segueix una distribució normal amb σ = 30 g. En
+      una mostra de n = 36 sacs s'obté una mitjana de 200 g. Quin és l'interval
+      de confiança del 90% per a la mitjana poblacional? (z = 1,645)
+    es: El peso de los sacos de pienso sigue una distribución normal con σ = 30 g.
+      En una muestra de n = 36 sacos se obtiene una media de 200 g. ¿Cuál es el
+      intervalo de confianza al 90% para la media poblacional? (z = 1,645)
+  options:
+    - id: A
+      ca: (191,8 ; 208,2)
+      es: (191,8 ; 208,2)
+    - id: B
+      ca: (190,2 ; 209,8)
+      es: (190,2 ; 209,8)
+    - id: C
+      ca: (198,6 ; 201,4)
+      es: (198,6 ; 201,4)
+    - id: D
+      ca: (150,7 ; 249,3)
+      es: (150,7 ; 249,3)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Marge d'error = z·σ/√n = 1,645·30/√36 = 1,645·5 = 8,225. Interval: 200 ±
+      8,225 = (191,8 ; 208,2). Usar z = 1,96 dona (190,2 ; 209,8); dividir per n
+      en lloc de √n dona (198,6 ; 201,4); no dividir per √n dona (150,7 ;
+      249,3)."
+    es: "Margen de error = z·σ/√n = 1,645·30/√36 = 1,645·5 = 8,225. Intervalo: 200 ±
+      8,225 = (191,8 ; 208,2). Usar z = 1,96 da (190,2 ; 209,8); dividir entre n
+      en lugar de √n da (198,6 ; 201,4); no dividir entre √n da (150,7 ;
+      249,3)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Per estudiar l'opinió dels estudiants d'un institut, es divideix la població
+      segons el curs (1r ESO, 2n ESO, ...) i, dins de cada curs, s'escullen
+      alumnes a l'atzar de forma proporcional a la mida del curs. Quin tipus de
+      mostreig s'ha utilitzat?
+    es: Para estudiar la opinión de los estudiantes de un instituto, se divide la
+      población según el curso (1º ESO, 2º ESO, ...) y, dentro de cada curso, se
+      escogen alumnos al azar de forma proporcional al tamaño del curso. ¿Qué
+      tipo de muestreo se ha utilizado?
+  options:
+    - id: A
+      ca: Mostreig aleatori estratificat
+      es: Muestreo aleatorio estratificado
+    - id: B
+      ca: Mostreig sistemàtic
+      es: Muestreo sistemático
+    - id: C
+      ca: Mostreig per conglomerats
+      es: Muestreo por conglomerados
+    - id: D
+      ca: Mostreig aleatori simple
+      es: Muestreo aleatorio simple
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En dividir la població en grups homogenis (estrats) i mostrejar dins de
+      cadascun de manera proporcional, és mostreig estratificat. El sistemàtic
+      tria cada k-èsim element; el de conglomerats selecciona grups sencers a
+      l'atzar; el simple no fa cap divisió prèvia.
+    es: Al dividir la población en grupos homogéneos (estratos) y muestrear dentro
+      de cada uno de forma proporcional, es muestreo estratificado. El
+      sistemático elige cada k-ésimo elemento; el de conglomerados selecciona
+      grupos enteros al azar; el simple no hace ninguna división previa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En una enquesta a n = 196 persones, el 30% (p̂ = 0,3) diu que reciclarà més
+      l'any vinent. Quin és l'interval de confiança del 95% per a la proporció
+      poblacional? (z = 1,96)
+    es: En una encuesta a n = 196 personas, el 30% (p̂ = 0,3) dice que reciclará más
+      el próximo año. ¿Cuál es el intervalo de confianza al 95% para la
+      proporción poblacional? (z = 1,96)
+  options:
+    - id: A
+      ca: (0,236 ; 0,364)
+      es: (0,236 ; 0,364)
+    - id: B
+      ca: (0,246 ; 0,354)
+      es: (0,246 ; 0,354)
+    - id: C
+      ca: (0,298 ; 0,302)
+      es: (0,298 ; 0,302)
+    - id: D
+      ca: (0,230 ; 0,370)
+      es: (0,230 ; 0,370)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Error típic = √(p̂(1−p̂)/n) = √(0,3·0,7/196) = √0,0010714 = 0,0327. Marge =
+      1,96·0,0327 = 0,064. Interval: 0,3 ± 0,064 = (0,236 ; 0,364). Usar z =
+      1,645 dona (0,246 ; 0,354); oblidar l'arrel quadrada dona (0,298 ; 0,302);
+      usar p = 0,5 (cas pitjor) dona (0,230 ; 0,370)."
+    es: "Error típico = √(p̂(1−p̂)/n) = √(0,3·0,7/196) = √0,0010714 = 0,0327. Margen
+      = 1,96·0,0327 = 0,064. Intervalo: 0,3 ± 0,064 = (0,236 ; 0,364). Usar z =
+      1,645 da (0,246 ; 0,354); olvidar la raíz cuadrada da (0,298 ; 0,302);
+      usar p = 0,5 (caso peor) da (0,230 ; 0,370)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Es vol estimar amb un 95% de confiança la proporció de votants a favor d'una
+      mesura, amb un marge d'error màxim de 0,02 (2%). Sense informació prèvia
+      sobre la proporció, quina és la mida mínima de la mostra? (z = 1,96)
+    es: Se quiere estimar con un 95% de confianza la proporción de votantes a favor
+      de una medida, con un margen de error máximo de 0,02 (2%). Sin información
+      previa sobre la proporción, ¿cuál es el tamaño mínimo de la muestra? (z =
+      1,96)
+  options:
+    - id: A
+      ca: "2401"
+      es: "2401"
+    - id: B
+      ca: "9604"
+      es: "9604"
+    - id: C
+      ca: "1691"
+      es: "1691"
+    - id: D
+      ca: "49"
+      es: "49"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Sense informació prèvia s'usa el cas més desfavorable p = 0,5, així p(1−p) =
+      0,25. n ≥ (z/E)²·p(1−p) = (1,96/0,02)²·0,25 = 98²·0,25 = 9604·0,25 = 2401.
+      Ometre el factor 0,25 dona 9604; usar z = 1,645 dona 1691; no elevar al
+      quadrat dona 49.
+    es: Sin información previa se usa el caso más desfavorable p = 0,5, así p(1−p) =
+      0,25. n ≥ (z/E)²·p(1−p) = (1,96/0,02)²·0,25 = 98²·0,25 = 9604·0,25 = 2401.
+      Omitir el factor 0,25 da 9604; usar z = 1,645 da 1691; no elevar al
+      cuadrado da 49.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: matccss-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: mathematics-ccss
+  type: multiple_choice
+  skills:
+    - matccss.statistics.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Amb una mostra de mida n s'ha obtingut un interval de confiança del 95% per
+      a la mitjana amb un marge d'error de 4. Si es vol reduir el marge a 2
+      mantenint el mateix nivell de confiança i la mateixa σ, per quant s'ha de
+      multiplicar la mida de la mostra?
+    es: Con una muestra de tamaño n se ha obtenido un intervalo de confianza al 95%
+      para la media con un margen de error de 4. Si se quiere reducir el margen
+      a 2 manteniendo el mismo nivel de confianza y la misma σ, ¿por cuánto hay
+      que multiplicar el tamaño de la muestra?
+  options:
+    - id: A
+      ca: Per 4
+      es: Por 4
+    - id: B
+      ca: Per 2
+      es: Por 2
+    - id: C
+      ca: Per 16
+      es: Por 16
+    - id: D
+      ca: Cal dividir-la per 2
+      es: Hay que dividirla por 2
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El marge és E = z·σ/√n, per tant E és inversament proporcional a √n. Per
+      reduir E a la meitat cal duplicar √n, és a dir multiplicar n per 2² = 4.
+      Multiplicar per 2 només reduiria E en factor √2; per 16 el reduiria a la
+      quarta part; dividir n augmentaria el marge.
+    es: El margen es E = z·σ/√n, por tanto E es inversamente proporcional a √n. Para
+      reducir E a la mitad hay que duplicar √n, es decir multiplicar n por 2² =
+      4. Multiplicar por 2 solo reduciría E en factor √2; por 16 lo reduciría a
+      la cuarta parte; dividir n aumentaría el margen.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
