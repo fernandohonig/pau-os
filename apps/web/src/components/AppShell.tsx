@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../lib/useTheme';
 import { useSession } from '../session';
+import { useLang } from '../lang';
 import { Button } from './ui';
 
 function Logo() {
@@ -20,6 +21,7 @@ function Logo() {
 
 export function AppShell({ children }: { children: ReactNode }) {
   const { theme, toggle } = useTheme();
+  const { lang, toggle: toggleLang } = useLang();
   const { token, role, signOut } = useSession();
   const navigate = useNavigate();
 
@@ -40,6 +42,14 @@ export function AppShell({ children }: { children: ReactNode }) {
                 Admin
               </Button>
             ) : null}
+            <button
+              onClick={toggleLang}
+              aria-label={`Switch language to ${lang === 'ca' ? 'Castellà' : 'Català'}`}
+              title="Català / Castellà"
+              className="grid h-9 min-w-9 place-items-center rounded-full border border-line px-2.5 text-xs font-semibold text-ink-secondary transition hover:bg-surface-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              {lang === 'ca' ? 'CA' : 'ES'}
+            </button>
             <button
               onClick={toggle}
               aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}

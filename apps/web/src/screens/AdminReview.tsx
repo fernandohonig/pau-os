@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api, type AdminQuestion, type ReviewHistoryItem } from '../api';
 import { useAction } from '../lib/useAction';
+import { useLang } from '../lang';
 import { Badge, Button, Card, Container, ErrorBanner, PageTitle, Spinner, type Tone } from '../components/ui';
 import { skillLabel } from '../lib/format';
 
@@ -13,6 +14,7 @@ function statusTone(status: string): Tone {
 
 export function AdminReview() {
   const navigate = useNavigate();
+  const { t } = useLang();
   const { busy, error, run } = useAction();
   const [reviews, setReviews] = useState<AdminQuestion[] | null>(null);
   const [selected, setSelected] = useState<AdminQuestion | null>(null);
@@ -59,7 +61,7 @@ export function AdminReview() {
             <Badge text={selected.reviewStatus} tone={statusTone(selected.reviewStatus)} />
             <Badge text={selected.source.type} tone="muted" />
           </div>
-          <p className="mt-4 text-lg font-medium text-ink">{selected.question.ca}</p>
+          <p className="mt-4 text-lg font-medium text-ink">{t(selected.question)}</p>
           <ul className="mt-4 space-y-2">
             {selected.options.map((o) => {
               const isCorrect = Array.isArray(correct) ? correct.includes(o.id) : correct === o.id;
@@ -71,7 +73,7 @@ export function AdminReview() {
                   }`}
                 >
                   <span className="text-sm text-ink">
-                    <span className="font-semibold">{o.id}.</span> {o.ca}
+                    <span className="font-semibold">{o.id}.</span> {t(o)}
                   </span>
                   {isCorrect ? <Badge text="correct" tone="good" /> : null}
                 </li>
@@ -82,7 +84,7 @@ export function AdminReview() {
 
         <Card className="mt-4">
           <h3 className="font-semibold text-ink">Explanation</h3>
-          <p className="mt-2 text-sm text-ink-secondary">{selected.explanation.ca || '—'}</p>
+          <p className="mt-2 text-sm text-ink-secondary">{t(selected.explanation) || '—'}</p>
         </Card>
 
         {history.length ? (
@@ -148,7 +150,7 @@ export function AdminReview() {
                   <Badge text={q.reviewStatus} tone={statusTone(q.reviewStatus)} />
                   <Badge text={q.source.type} tone="muted" />
                 </div>
-                <p className="mt-3 line-clamp-2 text-sm text-ink">{q.question.ca}</p>
+                <p className="mt-3 line-clamp-2 text-sm text-ink">{t(q.question)}</p>
                 <p className="mt-2 text-xs text-muted">
                   {q.skills.map((s) => skillLabel(s)).join(', ')}
                 </p>

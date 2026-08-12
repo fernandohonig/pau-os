@@ -65,7 +65,7 @@ export interface DiagnosticResults {
 }
 export interface Degree {
   id: string;
-  university: string;
+  university: LocalizedText;
   name: LocalizedText;
 }
 export interface SkillProfileItem {

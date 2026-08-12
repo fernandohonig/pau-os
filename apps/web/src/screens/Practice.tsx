@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api, type LocalizedText, type PublicQuestion } from '../api';
 import { useSession } from '../session';
+import { useLang } from '../lang';
 import { useAction } from '../lib/useAction';
 import { Badge, Button, Card, Container, ErrorBanner, PageTitle, ProgressBar, Spinner } from '../components/ui';
 import { skillLabel } from '../lib/format';
@@ -14,6 +15,7 @@ interface Feedback {
 export function Practice() {
   const navigate = useNavigate();
   const { studentId } = useSession();
+  const { t } = useLang();
   const { busy, error, run } = useAction();
 
   const [sessionId, setSessionId] = useState<string | null>(null);
@@ -92,7 +94,7 @@ export function Practice() {
 
       {error ? <div className="mb-4"><ErrorBanner message={error} /></div> : null}
 
-      <h2 className="text-xl font-semibold leading-snug text-ink">{question.question.ca}</h2>
+      <h2 className="text-xl font-semibold leading-snug text-ink">{t(question.question)}</h2>
       <ul className="mt-5 space-y-2.5">
         {question.options.map((o) => {
           const active = choice === o.id;
@@ -115,7 +117,7 @@ export function Practice() {
                 >
                   {o.id}
                 </span>
-                <span className="text-ink">{o.ca}</span>
+                <span className="text-ink">{t(o)}</span>
               </button>
             </li>
           );
@@ -128,7 +130,7 @@ export function Practice() {
             text={feedback.correct ? 'Correct' : 'Not quite'}
             tone={feedback.correct ? 'good' : 'serious'}
           />
-          <p className="mt-3 text-sm text-ink-secondary">{feedback.explanation.ca}</p>
+          <p className="mt-3 text-sm text-ink-secondary">{t(feedback.explanation)}</p>
         </Card>
       ) : null}
 

@@ -525,11 +525,13 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   // the weightings/cutoffs are placeholders pending verified official import.
   app.get('/v1/catalog/degrees', async () => {
     const [degrees, universities] = await Promise.all([db.degree.findMany(), db.university.findMany()]);
-    const uni = new Map(universities.map((u) => [u.id, u.nameCA]));
+    const uni = new Map(
+      universities.map((u) => [u.id, { ca: u.nameCA, es: u.nameES ?? undefined }] as const),
+    );
     return {
       degrees: (degrees as DegreeRow[]).map((d) => ({
         id: d.id,
-        university: uni.get(d.universityId) ?? d.universityId,
+        university: uni.get(d.universityId) ?? { ca: d.universityId, es: undefined },
         name: { ca: d.nameCA, es: d.nameES ?? undefined },
         weightings: degreeWeightings(d),
       })),

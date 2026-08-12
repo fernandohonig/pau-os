@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api, type PublicQuestion } from '../api';
 import { useSession } from '../session';
+import { useLang } from '../lang';
 import { useAction } from '../lib/useAction';
 import { Button, Card, Container, ErrorBanner, PageTitle, ProgressBar } from '../components/ui';
 
@@ -10,6 +11,7 @@ const TARGET_QUESTIONS = 20;
 export function Diagnostic() {
   const navigate = useNavigate();
   const { studentId, setResults } = useSession();
+  const { t } = useLang();
   const { busy, error, run } = useAction();
 
   const [phase, setPhase] = useState<'intro' | 'running'>('intro');
@@ -83,7 +85,7 @@ export function Diagnostic() {
 
       {question ? (
         <>
-          <h2 className="text-xl font-semibold leading-snug text-ink">{question.question.ca}</h2>
+          <h2 className="text-xl font-semibold leading-snug text-ink">{t(question.question)}</h2>
           <ul className="mt-5 space-y-2.5">
             {question.options.map((o) => {
               const active = choice === o.id;
@@ -104,7 +106,7 @@ export function Diagnostic() {
                     >
                       {o.id}
                     </span>
-                    <span className="text-ink">{o.ca}</span>
+                    <span className="text-ink">{t(o)}</span>
                   </button>
                 </li>
               );

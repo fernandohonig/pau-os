@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api, type Degree } from '../api';
 import { useSession } from '../session';
+import { useLang } from '../lang';
 import { useAction } from '../lib/useAction';
 import { Button, Card, Container, ErrorBanner, PageTitle, Spinner } from '../components/ui';
 
@@ -10,6 +11,7 @@ const TARGETS = [11, 12, 13, 14];
 export function Goal() {
   const navigate = useNavigate();
   const { studentId } = useSession();
+  const { t } = useLang();
   const { busy, error, run } = useAction();
   const [degrees, setDegrees] = useState<Degree[] | null>(null);
   const [query, setQuery] = useState('');
@@ -28,8 +30,10 @@ export function Goal() {
     if (!degrees) return [];
     const q = query.trim().toLowerCase();
     if (!q) return degrees;
-    return degrees.filter(
-      (d) => d.name.ca.toLowerCase().includes(q) || d.university.toLowerCase().includes(q),
+    return degrees.filter((d) =>
+      [d.name.ca, d.name.es, d.university.ca, d.university.es]
+        .filter(Boolean)
+        .some((s) => s!.toLowerCase().includes(q)),
     );
   }, [degrees, query]);
 
@@ -68,8 +72,8 @@ export function Goal() {
                     : 'border-line bg-surface hover:bg-surface-2'
                 }`}
               >
-                <span className="block font-semibold text-ink">{d.name.ca}</span>
-                <span className="mt-0.5 block text-sm text-muted">{d.university}</span>
+                <span className="block font-semibold text-ink">{t(d.name)}</span>
+                <span className="mt-0.5 block text-sm text-muted">{t(d.university)}</span>
               </button>
             </li>
           );
