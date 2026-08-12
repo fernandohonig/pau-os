@@ -63,10 +63,20 @@ const contentDir = path.resolve(here, '../../content/universities/catalunya/2026
 interface PondFile {
   entries: Array<{ uni: string; name: string; coef: number }>;
 }
+// Looser key: drop quoted campus/centre names and parentheticals so a degree
+// like "Administració i Direcció d'Empreses \"Centre X\" (docència en anglès)"
+// still matches the ponderació row for the base degree name.
+const stripKey = (name: string): string =>
+  norm(name.replace(/"[^"]*"/g, '').replace(/\([^)]*\)/g, '').replace(/\s+/g, ' '));
+
 function loadPond(file: string, subject: string): Map<string, number> {
   const pond = JSON.parse(fs.readFileSync(path.join(here, file), 'utf8')) as PondFile;
   const m = new Map<string, number>();
-  for (const e of pond.entries) m.set(`${e.uni}|${norm(e.name)}`, e.coef);
+  for (const e of pond.entries) {
+    m.set(`${e.uni}|${norm(e.name)}`, e.coef); // exact
+    const sk = `${e.uni}|s|${stripKey(e.name)}`; // stripped fallback
+    if (!m.has(sk)) m.set(sk, e.coef);
+  }
   void subject;
   return m;
 }
@@ -147,8 +157,9 @@ async function main(): Promise<void> {
     usedUnis.add(uni.id);
     const id = `cat-${row.codi_oferta}`;
     const key = `${uni.id}|${norm(row.nom_de_l_oferta)}`;
+    const skey = `${uni.id}|s|${stripKey(row.nom_de_l_oferta)}`;
     const weightings = SUBJECT_PONDERACIONS.flatMap(({ subject, weights }) => {
-      const coef = weights.get(key);
+      const coef = weights.get(key) ?? weights.get(skey);
       return coef ? [{ subject, coefficient: coef }] : [];
     });
     if (weightings.length > 0) weighted += 1;
