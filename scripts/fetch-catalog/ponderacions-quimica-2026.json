@@ -2,11 +2,11 @@
   "_source": {
     "authority": "Generalitat de Catalunya — Consell Interuniversitari de Catalunya",
     "title": "Ponderacions Catalunya 2026",
-    "subject": "Física — fase específica",
+    "subject": "Química — fase específica",
     "url": "https://universitats.gencat.cat/ca/preinscripcions/ponderacions/",
     "method": "coordinate-based extraction of the official PDF; joined to degrees by university+name",
     "retrieved_at": "2026-08-12",
-    "note": "Coefficients are official (0.10/0.20), read verbatim from the Física column of the Generalitat/CIC PDF (source copy: udg.edu Ponderacions_2026_Catalunya.pdf). Degrees whose value in this column is \"-\" are not weighted by this subject and are omitted. Only the 7 public universities are included (code first digit 1=UB,2=UAB,3=UPC,4=UPF,6=UdL,7=URV,8=UdG); codes beginning with 9 (private) are skipped. Names are reconstructed by assigning each name line to its nearest 5-digit code centre; a minority of multi-degree agrupació/PARS/simultaneïtat rows carry provisional names pending 1:1 reconciliation, but their coefficients are correct."
+    "note": "Coefficients are official (0.10/0.20), read verbatim from the Química column of the Generalitat/CIC PDF (source copy: udg.edu Ponderacions_2026_Catalunya.pdf). Degrees whose value in this column is \"-\" are not weighted by this subject and are omitted. Only the 7 public universities are included (code first digit 1=UB,2=UAB,3=UPC,4=UPF,6=UdL,7=URV,8=UdG); codes beginning with 9 (private) are skipped. Names are reconstructed by assigning each name line to its nearest 5-digit code centre; a minority of multi-degree agrupació/PARS/simultaneïtat rows carry provisional names pending 1:1 reconciliation, but their coefficients are correct."
   },
   "entries": [
     {
@@ -22,12 +22,12 @@
     {
       "uni": "ub",
       "name": "(Agrupació) Enginyeria Electrònica de Telecomunicació",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
       "name": "(especialitats en Telecomunicació, Audiovisuals, i Telemàtica, que inclou xarxes i internet). Grau en + Màster Universitari en Enginyeria",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "udl",
@@ -197,47 +197,22 @@
     {
       "uni": "udg",
       "name": "Arquitectura Tècnica i Edificació",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "udl",
       "name": "Arquitectura Tècnica i Edificació",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
       "name": "Arquitectura Tècnica i Edificació",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "udg",
       "name": "Arquitectura Tècnica i Edificació (Semipresencial)",
-      "coef": 0.2
-    },
-    {
-      "uni": "udg",
-      "name": "Arquitectura, Estudis d'",
-      "coef": 0.2
-    },
-    {
-      "uni": "urv",
-      "name": "Arquitectura, Estudis d'",
-      "coef": 0.2
-    },
-    {
-      "uni": "upc",
-      "name": "Arquitectura, Estudis d' (Barcelona)",
-      "coef": 0.2
-    },
-    {
-      "uni": "upc",
-      "name": "Arquitectura, Estudis d' (Sant Cugat del Vallès)",
-      "coef": 0.2
-    },
-    {
-      "uni": "uab",
-      "name": "Arts i Disseny \"Massana\"",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
@@ -340,16 +315,6 @@
       "coef": 0.2
     },
     {
-      "uni": "ub",
-      "name": "Ciberseguretat - ENTI",
-      "coef": 0.2
-    },
-    {
-      "uni": "ub",
-      "name": "Cinematografia \"ESCAC\"",
-      "coef": 0.2
-    },
-    {
       "uni": "uab",
       "name": "Ciència Política i Gestió Pública / Sociologia (Simultaneïtat)",
       "coef": 0.2
@@ -357,7 +322,7 @@
     {
       "uni": "upc",
       "name": "Ciència i Enginyeria de Dades",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "udl",
@@ -530,21 +495,6 @@
       "coef": 0.1
     },
     {
-      "uni": "udg",
-      "name": "Comunicació Audiovisual i Multimèdia \"ERAM\"",
-      "coef": 0.2
-    },
-    {
-      "uni": "udg",
-      "name": "Comunicació Audiovisual i Multimèdia \"ERAM\" (docència en anglès)",
-      "coef": 0.2
-    },
-    {
-      "uni": "uab",
-      "name": "Comunicació Interactiva",
-      "coef": 0.2
-    },
-    {
       "uni": "udl",
       "name": "Conservació de la Natura / Enginyeria Forestal (Simultaneïtat)",
       "coef": 0.2
@@ -570,59 +520,9 @@
       "coef": 0.2
     },
     {
-      "uni": "ub",
-      "name": "Disseny",
-      "coef": 0.2
-    },
-    {
-      "uni": "uab",
-      "name": "Disseny \"EINA\"",
-      "coef": 0.2
-    },
-    {
-      "uni": "udl",
-      "name": "Disseny Digital i Tecnologies Creatives",
-      "coef": 0.2
-    },
-    {
-      "uni": "upc",
-      "name": "Disseny Digital i Tecnologies Multimèdia",
-      "coef": 0.2
-    },
-    {
-      "uni": "udg",
-      "name": "Disseny i Desenvolupament de Videojocs",
-      "coef": 0.2
-    },
-    {
-      "uni": "upc",
-      "name": "Disseny i Desenvolupament de Videojocs (Campus Terrassa)",
-      "coef": 0.2
-    },
-    {
-      "uni": "upc",
-      "name": "Disseny i Desenvolupament de Videojocs (Docència en Anglès) (Campus Barcelona)",
-      "coef": 0.2
-    },
-    {
-      "uni": "ub",
-      "name": "Disseny i Desenvolupament de Videojocs i Jocs Aplicats \"ENTI\"",
-      "coef": 0.2
-    },
-    {
-      "uni": "upf",
-      "name": "Disseny i Producció de Videojocs \"Tecnocampus\"",
-      "coef": 0.2
-    },
-    {
       "uni": "upf",
       "name": "Disseny i Producció de Videojocs / Enginyeria Informàtica de Gestió i Sistemes d'Informació \"Tecnocampus\" (Simultaneïtat)",
-      "coef": 0.2
-    },
-    {
-      "uni": "upc",
-      "name": "Disseny, Animació i Art Digital",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "uab",
@@ -942,7 +842,7 @@
     {
       "uni": "upf",
       "name": "Eng. Informàtica de Gestió i Sistemes d'Informació \"Tecnocampus\"",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
@@ -972,7 +872,7 @@
     {
       "uni": "upc",
       "name": "Eng. Telemàtica (Inclou Xarxes i Internet) / Eng. de Sistemes de Telecomunicació (Agrupació)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
@@ -1022,7 +922,7 @@
     {
       "uni": "upf",
       "name": "Enginyeria Audiovisual Computacional",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "ub",
@@ -1087,7 +987,7 @@
     {
       "uni": "upc",
       "name": "Enginyeria Electrònica de Telecomunicació",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "uab",
@@ -1097,7 +997,7 @@
     {
       "uni": "uab",
       "name": "Enginyeria Electrònica de Telecomunicació / Enginyeria de Sistemes de Telecomunicació (Agrupació)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "udg",
@@ -1197,7 +1097,7 @@
     {
       "uni": "upf",
       "name": "Enginyeria Informàtica de Gestió i Sistemes d'Informació / Disseny i Producció de Videojocs \"Tecnocampus\" (Simultaneïtat)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "udl",
@@ -1212,7 +1112,7 @@
     {
       "uni": "upf",
       "name": "Enginyeria Matemàtica en Ciència de Dades",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "urv",
@@ -1287,12 +1187,12 @@
     {
       "uni": "upc",
       "name": "Enginyeria Telemàtica / Enginyeria de Sistemes de Telecomunicació (inclou xarxes i Internet) (agrupació)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
       "name": "Enginyeria Telemàtica / Enginyeria de Sistemes de Telecomunicació (inclou xarxes i Internet) (febrer) (agrupació)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "uab",
@@ -1312,7 +1212,7 @@
     {
       "uni": "uab",
       "name": "Enginyeria de Dades",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
@@ -1337,7 +1237,7 @@
     {
       "uni": "upc",
       "name": "Enginyeria de Satèlꞏlits",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
@@ -1347,7 +1247,7 @@
     {
       "uni": "upc",
       "name": "Enginyeria de Sistemes Audiovisuals",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
@@ -1362,7 +1262,7 @@
     {
       "uni": "uab",
       "name": "Enginyeria de Sistemes de Telecomunicació / Enginyeria Electrònica de Telecomunicació (Agrupació)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "uab",
@@ -1372,12 +1272,12 @@
     {
       "uni": "upc",
       "name": "Enginyeria de Sistemes de Telecomunicació / Enginyeria Telemàtica (Inclou Xarxes i Internet) (Febrer) (Agrupació)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "urv",
       "name": "Enginyeria de Sistemes i Serveis de Telecomunicacions",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "urv",
@@ -1387,12 +1287,12 @@
     {
       "uni": "upc",
       "name": "Enginyeria de Tecnologies i Serveis de Telecomunicació (especialitats en Telecomunicació, Audiovisuals, i Telemàtica, que inclou xarxes i internet)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upf",
       "name": "Enginyeria de Xarxes de Telecomunicació",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
@@ -1422,21 +1322,11 @@
     {
       "uni": "uab",
       "name": "Enginyeria en Energies Renovables i Eficiència Energètica \"EU Salesiana de Sarrià\"",
-      "coef": 0.2
-    },
-    {
-      "uni": "upc",
-      "name": "Enginyeria en Geoinformació i Geomàtica",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upf",
       "name": "Enginyeria en Informàtica",
-      "coef": 0.2
-    },
-    {
-      "uni": "uab",
-      "name": "Enginyeria en Organització Industrial \"EU Salesiana de Sarrià\"",
       "coef": 0.2
     },
     {
@@ -1525,11 +1415,6 @@
       "coef": 0.2
     },
     {
-      "uni": "upf",
-      "name": "Filosofia, Política i Economia",
-      "coef": 0.2
-    },
-    {
       "uni": "urv",
       "name": "Finances i Comptabilitat",
       "coef": 0.2
@@ -1537,41 +1422,6 @@
     {
       "uni": "urv",
       "name": "Finances i Comptabilitat / Administració i Direcció d'Empreses (Simultaneïtat)",
-      "coef": 0.2
-    },
-    {
-      "uni": "uab",
-      "name": "Fisioteràpia",
-      "coef": 0.2
-    },
-    {
-      "uni": "udl",
-      "name": "Fisioteràpia",
-      "coef": 0.2
-    },
-    {
-      "uni": "udg",
-      "name": "Fisioteràpia \"EUSES\"",
-      "coef": 0.2
-    },
-    {
-      "uni": "uab",
-      "name": "Fisioteràpia \"Gimbernat\"",
-      "coef": 0.2
-    },
-    {
-      "uni": "upf",
-      "name": "Fisioteràpia \"Tecnocampus\"",
-      "coef": 0.2
-    },
-    {
-      "uni": "urv",
-      "name": "Fisioteràpia (Reus)",
-      "coef": 0.2
-    },
-    {
-      "uni": "urv",
-      "name": "Fisioteràpia (Tortosa)",
       "coef": 0.2
     },
     {
@@ -1705,13 +1555,88 @@
       "coef": 0.2
     },
     {
+      "uni": "uab",
+      "name": "Infermeria",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Infermeria",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Infermeria",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Infermeria",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Infermeria \"Escola Superior d'Infermeria del Mar\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Infermeria \"Gimbernat\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Infermeria \"Sant Pau\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Infermeria \"Tecnocampus\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Infermeria (Campus Bellvitge)",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Infermeria (Campus Clínic)",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Infermeria (El Vendrell)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Infermeria (Igualada)",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Infermeria (Tortosa)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Infermeria (Tremp)",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Infermeria (Vilafranca del Penedès)",
+      "coef": 0.2
+    },
+    {
       "uni": "udl",
       "name": "Infermeria / Fisioteràpia (Simultaneïtat)",
       "coef": 0.2
     },
     {
       "uni": "uab",
-      "name": "Informàtica i Serveis",
+      "name": "Infermeria EUIT de Terrassa",
       "coef": 0.2
     },
     {
@@ -1722,12 +1647,12 @@
     {
       "uni": "upc",
       "name": "Intelꞏligència Artificial",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "uab",
       "name": "Intelꞏligència Artificial / Artificial Intelligence (docència en anglès)",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "ub",
@@ -1737,7 +1662,7 @@
     {
       "uni": "uab",
       "name": "Matemàtica Computacional i Analítica de Dades",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "uab",
@@ -1747,17 +1672,17 @@
     {
       "uni": "uab",
       "name": "Matemàtiques",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "ub",
       "name": "Matemàtiques",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "upc",
       "name": "Matemàtiques",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "ub",
@@ -1817,11 +1742,6 @@
     {
       "uni": "uab",
       "name": "Microbiologia",
-      "coef": 0.2
-    },
-    {
-      "uni": "upf",
-      "name": "Mitjans Audiovisuals \"Tecnocampus\"",
       "coef": 0.2
     },
     {
@@ -1915,14 +1835,9 @@
       "coef": 0.2
     },
     {
-      "uni": "upc",
-      "name": "Paisatgisme",
-      "coef": 0.2
-    },
-    {
       "uni": "urv",
       "name": "Pilot d'Aviació Comercial i Operacions Aèries",
-      "coef": 0.2
+      "coef": 0.1
     },
     {
       "uni": "ub",
@@ -1932,11 +1847,6 @@
     {
       "uni": "upc",
       "name": "Ports) Enginyeria d'Automoció (Campus Manresa)",
-      "coef": 0.2
-    },
-    {
-      "uni": "ub",
-      "name": "Producció de Música i So per a la Indústria de l'Entreteniment",
       "coef": 0.2
     },
     {
@@ -2038,11 +1948,6 @@
       "uni": "uab",
       "name": "Sociologia / Estadística Aplicada (Simultaneïtat) Tecnologies Industrials amb Anàlisi Econòmica, Grau en + Màster",
       "coef": 0.2
-    },
-    {
-      "uni": "uab",
-      "name": "Teràpia Ocupacional EUIT de Terrassa",
-      "coef": 0.1
     },
     {
       "uni": "udl",

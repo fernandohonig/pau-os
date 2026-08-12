@@ -73,6 +73,7 @@ function loadPond(file: string, subject: string): Map<string, number> {
 const SUBJECT_PONDERACIONS: Array<{ subject: string; weights: Map<string, number> }> = [
   { subject: 'mathematics-ii', weights: loadPond('ponderacions-mates-2026.json', 'mathematics-ii') },
   { subject: 'physics', weights: loadPond('ponderacions-fisica-2026.json', 'physics') },
+  { subject: 'chemistry', weights: loadPond('ponderacions-quimica-2026.json', 'chemistry') },
 ];
 
 async function main(): Promise<void> {
