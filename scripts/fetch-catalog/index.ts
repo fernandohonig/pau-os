@@ -87,6 +87,11 @@ const SUBJECT_PONDERACIONS: Array<{ subject: string; weights: Map<string, number
   { subject: 'biology', weights: loadPond('ponderacions-biologia-2026.json', 'biology') },
   { subject: 'mathematics-ccss', weights: loadPond('ponderacions-matccss-2026.json', 'mathematics-ccss') },
   { subject: 'economics', weights: loadPond('ponderacions-economia-2026.json', 'economics') },
+  { subject: 'arthistory', weights: loadPond('ponderacions-arthistory-2026.json', 'arthistory') },
+  { subject: 'geology', weights: loadPond('ponderacions-geology-2026.json', 'geology') },
+  { subject: 'technology', weights: loadPond('ponderacions-technology-2026.json', 'technology') },
+  { subject: 'drawing', weights: loadPond('ponderacions-drawing-2026.json', 'drawing') },
+  // Anglès and Filosofia are general-phase subjects — no specific-phase ponderació column exists.
 ];
 
 async function main(): Promise<void> {

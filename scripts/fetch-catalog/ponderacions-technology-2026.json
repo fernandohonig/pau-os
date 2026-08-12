@@ -1,0 +1,1028 @@
+{
+ "_source": {
+  "authority": "Generalitat de Catalunya — Consell Interuniversitari de Catalunya",
+  "title": "Ponderacions Catalunya 2026",
+  "subject": "Tecnologia i Enginyeria — fase específica",
+  "url": "https://universitats.gencat.cat/ca/preinscripcions/ponderacions/",
+  "method": "coordinate-based extraction of the official PDF (rotated/mirrored vertical headers on a 16pt x-grid; value cells bucketed by x-centre; degree names reconstructed from 5-digit centre-study code rows by nearest y-centre); public universities only (code first digit 1=UB,2=UAB,3=UPC,4=UPF,6=UdL,7=URV,8=UdG)",
+  "retrieved_at": "2026-08-12",
+  "note": "Coefficients are official (0.10/0.20). Only degrees weighting this subject in the específica phase are listed; '-' cells are omitted. Values are provisional pending 1:1 name reconciliation for a minority of long double/campus degree names."
+ },
+ "entries": [
+  {
+   "uni": "upc",
+   "name": "\"EUNCET\" (Campus Can Dragó + Campus 22@) (presencial) (simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "(Agrupació) Enginyeria Electrònica de Telecomunicació",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "(simultaneïtat) Enginyeria Agrària i Alimentària",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Administració i Direcció d'Empreses / Enginyeria Informàtica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Administració i Direcció d'Empreses / Enginyeria en Organització Industrial i Logística (simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Administració i Direcció d'Empreses / Enginyeria en Tecnologies Industrials (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Administració i Direcció d'Empreses / Matemàtiques (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Arquitectura Tècnica i Edificació",
+   "coef": 0.1
+  },
+  {
+   "uni": "udl",
+   "name": "Arquitectura Tècnica i Edificació",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Arquitectura Tècnica i Edificació",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Arquitectura Tècnica i Edificació (Semipresencial)",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Arquitectura, Estudis d'",
+   "coef": 0.1
+  },
+  {
+   "uni": "urv",
+   "name": "Arquitectura, Estudis d'",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Arquitectura, Estudis d' (Barcelona)",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Arquitectura, Estudis d' (Sant Cugat del Vallès)",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Arts i Disseny \"Massana\"",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Automàtica / Eng. de Tecnologia i Disseny Tèxtil / Eng. Mecànica (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Biotecnologia / Enginyeria Informàtica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Ciberseguretat - ENTI",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Ciència i Enginyeria de Dades",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Ciència i Tecnologia dels Aliments",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Ciència i Tecnologia dels Aliments",
+   "coef": 0.1
+  },
+  {
+   "uni": "udl",
+   "name": "Ciència i Tecnologia dels Aliments",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Ciència, Tecnologia i Humanitats",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Ciències i Tecnologies Aplicades a l'Esport i al Fitnes \"EUNCET\"",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Comunicació Audiovisual i Multimèdia \"ERAM\"",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Comunicació Audiovisual i Multimèdia \"ERAM\" (docència en anglès)",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Comunicació Cultural",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Comunicació Interactiva",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Conservació de la Natura / Enginyeria Forestal (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Direcció i Gestió Gastronòmica \"Barcelona Culinary Hub\"",
+   "coef": 0.1
+  },
+  {
+   "uni": "urv",
+   "name": "Direcció i Gestió d'Empreses en l'Àmbit Digital \"ESIC\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Disseny",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Disseny \"EINA\"",
+   "coef": 0.1
+  },
+  {
+   "uni": "udl",
+   "name": "Disseny Digital i Tecnologies Creatives",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Disseny Digital i Tecnologies Multimèdia",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Disseny i Desenvolupament de Videojocs",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Disseny i Desenvolupament de Videojocs (Campus Terrassa)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Disseny i Desenvolupament de Videojocs (Docència en Anglès) (Campus Barcelona)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Disseny i Desenvolupament de Videojocs i Jocs Aplicats \"ENTI\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Disseny i Producció de Videojocs \"Tecnocampus\"",
+   "coef": 0.1
+  },
+  {
+   "uni": "upf",
+   "name": "Disseny i Producció de Videojocs / Enginyeria Informàtica de Gestió i Sistemes d'Informació \"Tecnocampus\" (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Disseny, Animació i Art Digital",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Economia / Matemàtica Computacional i Analítica de Dades (simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "upf",
+   "name": "Eng. Electrònica Industrial i Automàtica / Eng. d'Organització Industrial / Eng. Mecànica \"Tecnocampus\" (Agrupació) Enginyeria en Electrònica Industrial i Automàtica / Enginyeria de",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Electrònica Industrial i Automàtica / Eng. de Tecnologia i Disseny Tèxtil / Eng. Elèctrica / Eng. Mecànica / Eng. Química (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Eng. Electrònica, Industrial i Automàtica / Eng. Elèctrica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Electrònica, Industrial i Automàtica / Eng. Elèctrica i Sistemes Ferroviaris / Eng. Mecànica (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Electrònica, Industrial i Automàtica / Eng. Mecànica / Eng. Química / Eng. de Recursos Minerals i el seu Reciclatge (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Eng. Elèctrica / Eng. Electrònica, Industrial i Automàtica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Eng. Elèctrica / Eng. Electrònica, Industrial i Automàtica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Elèctrica / Eng. de Tecnologia i Disseny Tèxtil / Eng. Electrònica Industrial i Automàtica / Eng. Mecànica / Eng. Química",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Elèctrica i Sistemes Ferroviaris / Eng. Electrònica, Industrial i Automàtica / Eng. Mecànica (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Eng. Informàtica de Gestió i Sistemes d'Informació \"Tecnocampus\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Mecànica / Eng. Electrònica Industrial i Automàtica / Eng. de Tecnologia i Disseny Tèxtil / Eng. Elèctrica / Eng. Química (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Mecànica / Eng. Electrònica, Industrial i Automàtica / Eng. Elèctrica i Sistemes Ferroviaris (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Mecànica / Eng. Electrònica, Industrial i Automàtica / Eng. Química / Eng. de Recursos Minerals i el seu Reciclatge (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Eng. Mecànica / Eng. d'Organització Industrial / Eng. Electrònica Industrial i Automàtica \"Tecnocampus\" (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Química / Eng. Electrònica, Industrial i Automàtica / Eng. Mecànica / Eng. de Recursos Minerals i el seu Reciclatge (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Telemàtica (Inclou Xarxes i Internet) / Eng. de Sistemes de Telecomunicació (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. Telemàtica - Eng. de Sistemes de Telecomunicació / Eng. de Sistemes Aeroespacials (Agrupació de Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Eng. d'Organització Industrial / Eng. Electrònica Industrial i Automàtica / Eng. Mecànica \"Tecnocampus\" (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. de Recursos Minerals i el seu Reciclatge / Eng. Electrònica, Industrial i Automàtica / Eng. Mecànica / Eng. Química (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. de Sistemes Aeroespacials / Eng. de Sistemes de Telecomunicació - Eng. Telemàtica (Agrupació de Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. de Sistemes de Telecomunicació - Eng. Telemàtica / Eng. de Sistemes Aeroespacials (Agrupació de Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Eng. de Tecnologia i Disseny Tèxtil / Eng. Elèctrica / Eng. Electrònica Industrial i Automàtica / Eng. Mecànica / Eng. Química (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria Agroalimentària",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Alimentària",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Enginyeria Audiovisual Computacional",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Enginyeria Biomèdica",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria Biomèdica",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Biomèdica",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Enginyeria Biomèdica",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Biomèdica",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Biomèdica / Enginyeria de Sistemes i Serveis de Telecomunicacions (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Civil",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Civil, Grau en + Màster Universitari en Enginyeria de Camins, Canals i Ports (PARS: Enginyer/a de Camins, Canals i",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria Electrònica Industrial i Automàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Electrònica Industrial i Automàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Electrònica Industrial i Automàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Electrònica Industrial i Automàtica \"EU Salesiana de Sarrià\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Electrònica Industrial i Automàtica / Enginyeria Mecànica \"EU Salesiana de Sarrià\" (simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Electrònica de Telecomunicació",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Electrònica de Telecomunicació / Enginyeria Informàtica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Electrònica de Telecomunicació / Enginyeria de Sistemes de Telecomunicació (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria Elèctrica",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Elèctrica",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Elèctrica",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Forestal",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Forestal / Conservació de la Natura (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Informàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Enginyeria Informàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria Informàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Informàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Informàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Informàtica (Barcelona)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Informàtica (Vilanova i la Geltrú)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Informàtica / Administració i Direcció d'Empreses (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Informàtica / Biotecnologia (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Informàtica / Enginyeria Electrònica de Telecomunicació (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Informàtica / Enginyeria de Sistemes de Telecomunicació (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Enginyeria Informàtica / Matemàtiques (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Enginyeria Informàtica de Gestió i Sistemes d'Informació / Disseny i Producció de Videojocs \"Tecnocampus\" (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Informàtica, Grau en + Màster Universitari en Enginyeria Informàtica (PARS: Enginyer/a Informàtic/a)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Informàtica, Grau en + Màster Universitari en Enginyeria Informàtica (PARS: Enginyer/a Informàtic/a)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Enginyeria Matemàtica en Ciència de Dades",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Matemàtica i Física",
+   "coef": 0.1
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria Mecànica",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Mecànica",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Mecànica",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Mecànica \"EU Salesiana de Sarrià\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat (Simultaneïtat) Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat /",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat / Enginyeria en Electrònica Industrial i Automàtica (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria Química",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Enginyeria Química",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria Química",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Química",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria Química / Enginyeria en Organització Industrial i Logística (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria Química Eng. Química / Eng. Elèctrica / Eng. Electrònica Industrial i",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Telemàtica / Enginyeria de Sistemes de Telecomunicació (inclou xarxes i Internet) (agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria Telemàtica / Enginyeria de Sistemes de Telecomunicació (inclou xarxes i Internet) (febrer) (agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria d'Automoció \"EU Salesiana de Sarrià\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria de Bioprocessos Alimentaris",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Ciències Agronòmiques",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria de Dades",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Disseny Industrial i Desenvolupament del Producte (Terrassa)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Disseny Industrial i Desenvolupament del Producte (Vilanova i la Geltrú)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Enginyeria de Materials",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Materials",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Satèlꞏlits",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Sistemes Aeroespacials",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Sistemes Audiovisuals",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Sistemes Biològics",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Sistemes TIC (Àmbit d'Informàtica i Comunicacions)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria de Sistemes de Telecomunicació / Enginyeria Electrònica de Telecomunicació (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria de Sistemes de Telecomunicació / Enginyeria Informàtica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Sistemes de Telecomunicació / Enginyeria Telemàtica (Inclou Xarxes i Internet) (Febrer) (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria de Sistemes i Serveis de Telecomunicacions",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Enginyeria de Sistemes i Serveis de Telecomunicacions / Enginyeria Biomèdica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Tecnologies i Serveis de Telecomunicació (especialitats en Telecomunicació, Audiovisuals, i Telemàtica, que inclou xarxes i internet)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de Tecnologies i Serveis de Telecomunicació (especialitats en Telecomunicació, Audiovisuals, i Telemàtica, que inclou xarxes i internet). Grau en + Màster Universitari en Enginyeria",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria de l'Energia",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria de l'Energia i Sostenibilitat / Enginyeria en Electrònica Industrial i Automàtica / Enginyeria Mecànica (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria de l'Energia i Sostenibilitat / Enginyeria en Electrònica Industrial i Automàtica / Enginyeria Mecànica (agrupació) Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria en Electrònica Industrial i Automàtica / (agrupació) Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria en Electrònica Industrial i Automàtica / Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat (agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria en Energies Renovables i Eficiència Energètica \"EU Salesiana de Sarrià\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Enginyeria en Informàtica",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Enginyeria en Organització Industrial \"EU Salesiana de Sarrià\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria en Organització Industrial i Logística / Administració i Direcció d'Empreses (simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Enginyeria en Organització Industrial i Logística / Enginyeria Química (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria en Sistemes i Tecnologia Naval",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria en Tecnologies Aeroespacials, Grau en + Màster Universitari en Enginyeria Aeronàutica (PARS: Enginyer/a Aeronàutic/a)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria en Tecnologies Industrials / Administració i Direcció d'Empreses (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria en Tecnologies Industrials, Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a Industrial) (Barcelona)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Enginyeria en Tecnologies Industrials, Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a Industrial)) (Terrassa)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Enginyeria en Tecnologies Industrials, Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a en Tecnologies",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Física",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Física",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Física / Matemàtiques (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Física / Matemàtiques (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Física / Química (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Gestió de Ciutats Intelꞏligents i Sostenibles",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Gestió i Administració Pública",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Gestió i Digitalització en l'Esport \"EUNCET\" Gestió i Digitalització en l'Esport / Empresa, Innovació i Tecnologia",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Gestió i Digitalització en l'Esport / Màrqueting, Innovació i Tecnologia \"EUNCET\" (Campus Can Dragó + Campus 22@) (simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "upf",
+   "name": "Grau Obert, Programa de (Agrupació)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Grau obert en Turisme, Negoci digital i innovació en turisme, Direcció hotelera internacional i Màrqueting, esdeveniments i",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Industrial) Eng. Electrònica, Industrial i Automàtica / Eng. Elèctrica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Industrial) Enginyeria Mecànica / Enginyeria Electrònica Industrial i Automàtica \"EU Salesiana de Sarrià\" (simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "Industrial) Enginyeria de l'Energia i Sostenibilitat / Enginyeria Mecànica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Industrials) Enginyeria en Vehicles Aeroespacials",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Informàtica i Serveis",
+   "coef": 0.2
+  },
+  {
+   "uni": "udg",
+   "name": "Innovació i Seguretat Alimentària",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Intelꞏligència Artificial",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Intelꞏligència Artificial / Artificial Intelligence (docència en anglès)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Investigació Privada (Títol propi, no oficial)",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Matemàtica Computacional i Analítica de Dades",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Matemàtica Computacional i Analítica de Dades / Economia (simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Matemàtiques",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Matemàtiques",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Matemàtiques",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Matemàtiques / Administració i Direcció d'Empreses (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Matemàtiques / Enginyeria Informàtica (Simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Matemàtiques / Física (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Matemàtiques / Física (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "upf",
+   "name": "Mitjans Audiovisuals \"Tecnocampus\"",
+   "coef": 0.1
+  },
+  {
+   "uni": "upc",
+   "name": "Màrqueting, Innovació i Tecnologia / Gestió i Digitalització en l'Esport \"EUNCET\" (Campus Can Dragó + Campus 22@)",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Negoci Digital i Innovació en Turisme \"CETT\"",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Negoci Digital i Innovació en Turisme / Turisme \"CETT\" (simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Nàutica i Transport Marítim",
+   "coef": 0.2
+  },
+  {
+   "uni": "uab",
+   "name": "Periodisme",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "Periodisme",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Periodisme",
+   "coef": 0.2
+  },
+  {
+   "uni": "urv",
+   "name": "Pilot d'Aviació Comercial i Operacions Aèries",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "Ports) Enginyeria d'Automoció (Campus Manresa)",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Producció de Música i So per a la Indústria de l'Entreteniment",
+   "coef": 0.1
+  },
+  {
+   "uni": "uab",
+   "name": "Química / Física (Simultaneïtat)",
+   "coef": 0.1
+  },
+  {
+   "uni": "ub",
+   "name": "Seguretat",
+   "coef": 0.2
+  },
+  {
+   "uni": "ub",
+   "name": "Turisme / Negoci Digital i Innovació en Turisme \"CETT\" (simultaneïtat)",
+   "coef": 0.2
+  },
+  {
+   "uni": "upc",
+   "name": "amb Anàlisi Econòmica) (docència en Anglès) Tecnologies Marines",
+   "coef": 0.2
+  },
+  {
+   "uni": "upf",
+   "name": "de Telecomunicació (PARS: Enginyeria de Telecomunicació) Enginyeria de Xarxes de Telecomunicació",
+   "coef": 0.2
+  },
+  {
+   "uni": "udl",
+   "name": "l'Energia i Sostenibilitat / Enginyeria Mecànica (agrupació) Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a",
+   "coef": 0.2
+  }
+ ]
+}
