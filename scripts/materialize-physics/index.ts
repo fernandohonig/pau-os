@@ -34,6 +34,12 @@ const ROOT_CFG: Record<string, { subject: string; prefix: string; dir: string }>
   biology: { subject: 'biology', prefix: 'bio-g', dir: 'biology' },
   economics: { subject: 'economics', prefix: 'eco-g', dir: 'economics' },
   history: { subject: 'history', prefix: 'his-g', dir: 'history' },
+  philosophy: { subject: 'philosophy', prefix: 'fil-g', dir: 'philosophy' },
+  arthistory: { subject: 'arthistory', prefix: 'art-g', dir: 'arthistory' },
+  geology: { subject: 'geology', prefix: 'geo-g', dir: 'geology' },
+  technology: { subject: 'technology', prefix: 'tec-g', dir: 'technology' },
+  drawing: { subject: 'drawing', prefix: 'dib-g', dir: 'drawing' },
+  english: { subject: 'english', prefix: 'ang-g', dir: 'english' },
 };
 
 const here = path.dirname(fileURLToPath(import.meta.url));

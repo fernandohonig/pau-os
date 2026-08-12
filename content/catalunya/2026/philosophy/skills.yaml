@@ -1,0 +1,230 @@
+- id: philosophy.ancient
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Filosofia antiga, es: Filosofía antigua }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.ancient.presocratics
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Els presocràtics: physis i arché", es: "Los presocráticos: physis y arché" }
+  parent: philosophy.ancient
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.ancient.socrates_sophists
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Sòcrates i els sofistes", es: "Sócrates y los sofistas" }
+  parent: philosophy.ancient
+  prerequisites: [philosophy.ancient.presocratics]
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: philosophy.ancient.plato
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Plató: teoria de les idees", es: "Platón: teoría de las ideas" }
+  parent: philosophy.ancient
+  prerequisites: [philosophy.ancient.socrates_sophists]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.ancient.aristotle
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Aristòtil: metafísica i ètica", es: "Aristóteles: metafísica y ética" }
+  parent: philosophy.ancient
+  prerequisites: [philosophy.ancient.plato]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.medieval
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Filosofia medieval, es: Filosofía medieval }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.medieval.augustine
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Agustí d'Hipona: fe i raó", es: "Agustín de Hipona: fe y razón" }
+  parent: philosophy.medieval
+  prerequisites: [philosophy.ancient.plato]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.medieval.aquinas
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Tomàs d'Aquino: síntesi aristotèlica", es: "Tomás de Aquino: síntesis aristotélica" }
+  parent: philosophy.medieval
+  prerequisites: [philosophy.medieval.augustine, philosophy.ancient.aristotle]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.modern
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Filosofia moderna, es: Filosofía moderna }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.modern.rationalism_descartes
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Racionalisme: Descartes i el dubte metòdic", es: "Racionalismo: Descartes y la duda metódica" }
+  parent: philosophy.modern
+  prerequisites: [philosophy.medieval.aquinas]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.modern.empiricism_locke_hume
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Empirisme: Locke i Hume", es: "Empirismo: Locke y Hume" }
+  parent: philosophy.modern
+  prerequisites: [philosophy.medieval.aquinas]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.modern.kant
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Kant: criticisme i idealisme transcendental", es: "Kant: criticismo e idealismo transcendental" }
+  parent: philosophy.modern
+  prerequisites: [philosophy.modern.rationalism_descartes, philosophy.modern.empiricism_locke_hume]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.contemporary
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Filosofia contemporània, es: Filosofía contemporánea }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.contemporary.marx
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Marx: materialisme històric", es: "Marx: materialismo histórico" }
+  parent: philosophy.contemporary
+  prerequisites: [philosophy.modern.kant]
+  status: published
+  competencies: [critical_thinking, reasoning]
+
+- id: philosophy.contemporary.nietzsche
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Nietzsche: crítica de la moral", es: "Nietzsche: crítica de la moral" }
+  parent: philosophy.contemporary
+  prerequisites: [philosophy.modern.kant]
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: philosophy.contemporary.existentialism
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Existencialisme: Sartre i la llibertat", es: "Existencialismo: Sartre y la libertad" }
+  parent: philosophy.contemporary
+  prerequisites: [philosophy.contemporary.nietzsche]
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: philosophy.contemporary.analytic_wittgenstein
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Filosofia analítica: Wittgenstein i el llenguatge", es: "Filosofía analítica: Wittgenstein y el lenguaje" }
+  parent: philosophy.contemporary
+  prerequisites: [philosophy.modern.empiricism_locke_hume]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: philosophy.themes
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Eixos temàtics, es: Ejes temáticos }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.themes.epistemology
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "El coneixement: epistemologia", es: "El conocimiento: epistemología" }
+  parent: philosophy.themes
+  prerequisites: [philosophy.modern.rationalism_descartes, philosophy.modern.empiricism_locke_hume, philosophy.modern.kant]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: philosophy.themes.anthropology
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "L'ésser humà: antropologia filosòfica", es: "El ser humano: antropología filosófica" }
+  parent: philosophy.themes
+  prerequisites: [philosophy.ancient.plato, philosophy.ancient.aristotle]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: philosophy.themes.ethics
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Ètica: teories morals", es: "Ética: teorías morales" }
+  parent: philosophy.themes
+  prerequisites: [philosophy.ancient.aristotle, philosophy.modern.kant]
+  status: published
+  competencies: [critical_thinking, reasoning]
+
+- id: philosophy.themes.political
+  version: 1
+  subject: philosophy
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Filosofia política: poder i justícia", es: "Filosofía política: poder y justicia" }
+  parent: philosophy.themes
+  prerequisites: [philosophy.ancient.plato, philosophy.contemporary.marx]
+  status: published
+  competencies: [critical_thinking, communication]

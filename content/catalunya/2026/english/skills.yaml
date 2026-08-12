@@ -1,0 +1,218 @@
+# Anglès (Llengua estrangera) — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Skills-based foreign-language areas assessed at PAU: grammar, vocabulary and
+# word formation, use of English, and reading comprehension. Blocks are rooted;
+# `prerequisites` encode the learning order within and across blocks (DAG).
+# subject: english. competencies limited to [reasoning, communication].
+
+# ── Grammar ──────────────────────────────────────────────────────────────────
+- id: english.grammar
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Gramàtica, es: Gramática }
+  status: published
+  competencies: [communication]
+
+- id: english.grammar.tenses
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Temps verbals, es: Tiempos verbales }
+  parent: english.grammar
+  status: published
+  competencies: [communication]
+
+- id: english.grammar.modals
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Verbs modals, es: Verbos modales }
+  parent: english.grammar
+  prerequisites: [english.grammar.tenses]
+  status: published
+  competencies: [communication]
+
+- id: english.grammar.conditionals
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Oracions condicionals, es: Oraciones condicionales }
+  parent: english.grammar
+  prerequisites: [english.grammar.tenses, english.grammar.modals]
+  status: published
+  competencies: [communication, reasoning]
+
+- id: english.grammar.passive
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Veu passiva, es: Voz pasiva }
+  parent: english.grammar
+  prerequisites: [english.grammar.tenses]
+  status: published
+  competencies: [communication]
+
+- id: english.grammar.reported_speech
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estil indirecte, es: Estilo indirecto }
+  parent: english.grammar
+  prerequisites: [english.grammar.tenses]
+  status: published
+  competencies: [communication]
+
+- id: english.grammar.relative_clauses
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Oracions de relatiu, es: Oraciones de relativo }
+  parent: english.grammar
+  prerequisites: [english.grammar.tenses]
+  status: published
+  competencies: [communication]
+
+- id: english.grammar.comparatives
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Comparatius i superlatius, es: Comparativos y superlativos }
+  parent: english.grammar
+  status: published
+  competencies: [communication]
+
+# ── Vocabulary and word formation ────────────────────────────────────────────
+- id: english.vocabulary
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Vocabulari i formació de paraules, es: Vocabulario y formación de palabras }
+  status: published
+  competencies: [communication]
+
+- id: english.vocabulary.word_formation
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Formació de paraules: prefixos i sufixos", es: "Formación de palabras: prefijos y sufijos" }
+  parent: english.vocabulary
+  status: published
+  competencies: [communication, reasoning]
+
+- id: english.vocabulary.collocations
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Col·locacions, es: Colocaciones }
+  parent: english.vocabulary
+  prerequisites: [english.vocabulary.word_formation]
+  status: published
+  competencies: [communication]
+
+- id: english.vocabulary.phrasal_verbs
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Verbs preposicionals (phrasal verbs), es: Verbos preposicionales (phrasal verbs) }
+  parent: english.vocabulary
+  prerequisites: [english.vocabulary.collocations]
+  status: published
+  competencies: [communication]
+
+# ── Use of English ───────────────────────────────────────────────────────────
+- id: english.use_of_english
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Ús de l'anglès, es: Uso del inglés }
+  status: published
+  competencies: [communication, reasoning]
+
+- id: english.use_of_english.connectors
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Connectors i marcadors del discurs, es: Conectores y marcadores del discurso }
+  parent: english.use_of_english
+  prerequisites: [english.grammar.tenses]
+  status: published
+  competencies: [communication, reasoning]
+
+- id: english.use_of_english.prepositions
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Preposicions, es: Preposiciones }
+  parent: english.use_of_english
+  prerequisites: [english.grammar.tenses]
+  status: published
+  competencies: [communication]
+
+- id: english.use_of_english.transformation
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Transformació d'oracions, es: Transformación de oraciones }
+  parent: english.use_of_english
+  prerequisites: [english.grammar.passive, english.grammar.reported_speech, english.use_of_english.connectors]
+  status: published
+  competencies: [communication, reasoning]
+
+# ── Reading comprehension ────────────────────────────────────────────────────
+- id: english.reading
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Comprensió lectora, es: Comprensión lectora }
+  status: published
+  competencies: [reasoning, communication]
+
+- id: english.reading.main_idea
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Idea principal, es: Idea principal }
+  parent: english.reading
+  prerequisites: [english.vocabulary.collocations]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: english.reading.detail
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Comprensió del detall, es: Comprensión del detalle }
+  parent: english.reading
+  prerequisites: [english.reading.main_idea]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: english.reading.inference
+  version: 1
+  subject: english
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Inferència, es: Inferencia }
+  parent: english.reading
+  prerequisites: [english.reading.main_idea, english.reading.detail]
+  status: published
+  competencies: [reasoning, communication]

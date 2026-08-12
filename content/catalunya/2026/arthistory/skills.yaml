@@ -1,0 +1,283 @@
+# Història de l'Art — Catalunya PAU (2n batxillerat, LOMLOE)
+# Skill graph: 5 block roots + child skills. Parent + prerequisite graph is acyclic (DAG).
+
+# ── Block 1: Art clàssic ──────────────────────────────────────────────
+- id: arthistory.classical
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Art clàssic
+    es: Arte clásico
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: arthistory.classical.greek
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Art grec: arquitectura, escultura i ceràmica"
+    es: "Arte griego: arquitectura, escultura y cerámica"
+  parent: arthistory.classical
+  prerequisites: []
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.classical.greek_sculpture
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Escultura grega: arcaisme, classicisme i hel·lenisme"
+    es: "Escultura griega: arcaísmo, clasicismo y helenismo"
+  parent: arthistory.classical
+  prerequisites: [arthistory.classical.greek]
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: arthistory.classical.roman
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Art romà: arquitectura, escultura i pintura"
+    es: "Arte romano: arquitectura, escultura y pintura"
+  parent: arthistory.classical
+  prerequisites: [arthistory.classical.greek]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Block 2: Art medieval ─────────────────────────────────────────────
+- id: arthistory.medieval
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Art medieval
+    es: Arte medieval
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: arthistory.medieval.paleochristian_byzantine
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Art paleocristià i bizantí"
+    es: "Arte paleocristiano y bizantino"
+  parent: arthistory.medieval
+  prerequisites: [arthistory.classical.roman]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.medieval.romanesque
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Art romànic: arquitectura, escultura i pintura"
+    es: "Arte románico: arquitectura, escultura y pintura"
+  parent: arthistory.medieval
+  prerequisites: [arthistory.medieval.paleochristian_byzantine]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.medieval.gothic
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Art gòtic: arquitectura, escultura i pintura"
+    es: "Arte gótico: arquitectura, escultura y pintura"
+  parent: arthistory.medieval
+  prerequisites: [arthistory.medieval.romanesque]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.medieval.gothic_architecture
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Arquitectura gòtica: la catedral i el sistema d'arcs"
+    es: "Arquitectura gótica: la catedral y el sistema de arcos"
+  parent: arthistory.medieval
+  prerequisites: [arthistory.medieval.gothic]
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+# ── Block 3: Art modern ───────────────────────────────────────────────
+- id: arthistory.modern
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Art modern
+    es: Arte moderno
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: arthistory.modern.renaissance
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Renaixement: Quattrocento i Cinquecento"
+    es: "Renacimiento: Quattrocento y Cinquecento"
+  parent: arthistory.modern
+  prerequisites: [arthistory.classical.roman, arthistory.medieval.gothic]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.modern.renaissance_painting
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Pintura del Renaixement: perspectiva i llum"
+    es: "Pintura del Renacimiento: perspectiva y luz"
+  parent: arthistory.modern
+  prerequisites: [arthistory.modern.renaissance]
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: arthistory.modern.baroque
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Barroc: arquitectura, escultura i pintura"
+    es: "Barroco: arquitectura, escultura y pintura"
+  parent: arthistory.modern
+  prerequisites: [arthistory.modern.renaissance]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Block 4: Art del segle XIX ────────────────────────────────────────
+- id: arthistory.century19
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Art del segle XIX
+    es: Arte del siglo XIX
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: arthistory.century19.neoclassicism
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Neoclassicisme
+    es: Neoclasicismo
+  parent: arthistory.century19
+  prerequisites: [arthistory.classical.greek, arthistory.classical.roman]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.century19.romanticism
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Romanticisme
+    es: Romanticismo
+  parent: arthistory.century19
+  prerequisites: [arthistory.century19.neoclassicism]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.century19.realism
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Realisme
+    es: Realismo
+  parent: arthistory.century19
+  prerequisites: [arthistory.century19.romanticism]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.century19.impressionism_postimpressionism
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Impressionisme i postimpressionisme"
+    es: "Impresionismo y postimpresionismo"
+  parent: arthistory.century19
+  prerequisites: [arthistory.century19.realism]
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+# ── Block 5: Art del segle XX ─────────────────────────────────────────
+- id: arthistory.century20
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Art del segle XX
+    es: Arte del siglo XX
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: arthistory.century20.avantgardes
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Les avantguardes: fauvisme, cubisme, expressionisme i surrealisme"
+    es: "Las vanguardias: fovismo, cubismo, expresionismo y surrealismo"
+  parent: arthistory.century20
+  prerequisites: [arthistory.century19.impressionism_postimpressionism]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.century20.modern_architecture
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Arquitectura moderna: funcionalisme i moviment modern"
+    es: "Arquitectura moderna: funcionalismo y movimiento moderno"
+  parent: arthistory.century20
+  prerequisites: [arthistory.century20.avantgardes]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: arthistory.century20.contemporary
+  version: 1
+  subject: arthistory
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Art contemporani: de la postguerra a l'actualitat"
+    es: "Arte contemporáneo: de la posguerra a la actualidad"
+  parent: arthistory.century20
+  prerequisites: [arthistory.century20.avantgardes, arthistory.century20.modern_architecture]
+  status: published
+  competencies: [reasoning, critical_thinking, communication]

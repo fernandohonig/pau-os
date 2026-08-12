@@ -1,0 +1,249 @@
+# Tecnologia i Enginyeria — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Skill graph organised by the exam blocks: Màquines i mecanismes,
+# Electrotècnia, Electrònica, Sistemes automàtics i de control, Materials
+# tècnics, Sistemes pneumàtics i hidràulics. `parent` is taxonomic (block);
+# `prerequisites` is the pedagogical DAG. Names are bilingual ca/es.
+
+# ── Màquines i mecanismes ────────────────────────────────────────────────────
+- id: technology.machines
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Màquines i mecanismes, es: Máquinas y mecanismos }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.machines.mechanisms
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Mecanismes (palanques, politges, engranatges)", es: "Mecanismos (palancas, poleas, engranajes)" }
+  parent: technology.machines
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.machines.motion_transmission
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Transmissió de moviment, es: Transmisión de movimiento }
+  parent: technology.machines
+  prerequisites: [technology.machines.mechanisms]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.machines.transmission_ratios
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Relacions de transmissió, es: Relaciones de transmisión }
+  parent: technology.machines
+  prerequisites: [technology.machines.motion_transmission]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Electrotècnia ────────────────────────────────────────────────────────────
+- id: technology.electrical
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Electrotècnia, es: Electrotecnia }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.electrical.quantities
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Magnituds elèctriques (tensió, intensitat, resistència)", es: "Magnitudes eléctricas (tensión, intensidad, resistencia)" }
+  parent: technology.electrical
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.electrical.dc_circuits
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Circuits de corrent continu (lleis d'Ohm i Kirchhoff)", es: "Circuitos de corriente continua (leyes de Ohm y Kirchhoff)" }
+  parent: technology.electrical
+  prerequisites: [technology.electrical.quantities]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.electrical.ac_circuits
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Circuits de corrent altern, es: Circuitos de corriente alterna }
+  parent: technology.electrical
+  prerequisites: [technology.electrical.dc_circuits]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Electrònica analògica i digital ──────────────────────────────────────────
+- id: technology.electronics
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Electrònica, es: Electrónica }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.electronics.analog_components
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Components analògics (diodes, transistors)", es: "Componentes analógicos (diodos, transistores)" }
+  parent: technology.electronics
+  prerequisites: [technology.electrical.dc_circuits]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.electronics.digital_logic
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Lògica digital i portes lògiques", es: "Lógica digital y puertas lógicas" }
+  parent: technology.electronics
+  prerequisites: [technology.electrical.quantities]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+- id: technology.electronics.combinational
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Circuits combinacionals, es: Circuitos combinacionales }
+  parent: technology.electronics
+  prerequisites: [technology.electronics.digital_logic]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+# ── Sistemes automàtics i de control ─────────────────────────────────────────
+- id: technology.control
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistemes automàtics i de control, es: Sistemas automáticos y de control }
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+- id: technology.control.open_closed_loop
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Sistemes de llaç obert i tancat", es: "Sistemas de lazo abierto y cerrado" }
+  parent: technology.control
+  prerequisites: [technology.electronics.combinational]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+- id: technology.control.sensors_actuators
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sensors i actuadors, es: Sensores y actuadores }
+  parent: technology.control
+  prerequisites: [technology.electronics.analog_components]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.control.programmed_systems
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistemes programats i regulació, es: Sistemas programados y regulación }
+  parent: technology.control
+  prerequisites: [technology.control.open_closed_loop, technology.control.sensors_actuators]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+# ── Materials tècnics ────────────────────────────────────────────────────────
+- id: technology.materials
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Materials tècnics, es: Materiales técnicos }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: technology.materials.properties
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Propietats dels materials (mecàniques, elèctriques, tèrmiques)", es: "Propiedades de los materiales (mecánicas, eléctricas, térmicas)" }
+  parent: technology.materials
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: technology.materials.types
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Tipus de materials (metalls, polímers, ceràmics, compostos)", es: "Tipos de materiales (metales, polímeros, cerámicos, compuestos)" }
+  parent: technology.materials
+  prerequisites: [technology.materials.properties]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Sistemes pneumàtics i hidràulics ─────────────────────────────────────────
+- id: technology.fluid_power
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistemes pneumàtics i hidràulics, es: Sistemas neumáticos e hidráulicos }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.fluid_power.pneumatics
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistemes pneumàtics, es: Sistemas neumáticos }
+  parent: technology.fluid_power
+  prerequisites: [technology.electrical.quantities]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.fluid_power.hydraulics
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistemes hidràulics, es: Sistemas hidráulicos }
+  parent: technology.fluid_power
+  prerequisites: [technology.fluid_power.pneumatics]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: technology.fluid_power.circuits
+  version: 1
+  subject: technology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Circuits pneumàtics i hidràulics", es: "Circuitos neumáticos e hidráulicos" }
+  parent: technology.fluid_power
+  prerequisites: [technology.fluid_power.pneumatics, technology.fluid_power.hydraulics]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]

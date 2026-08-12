@@ -1,0 +1,209 @@
+# Dibuix Tècnic — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Skill graph organised by the exam blocks: Geometria plana (foundations),
+# Sistema dièdric, Sistema axonomètric, Perspectiva cònica, Normalització.
+# `parent` is taxonomic (block); `prerequisites` is the pedagogical DAG.
+# Names are bilingual ca/es. Provenance of questions that reference these
+# skills is tracked separately (see questions/).
+
+# ── Geometria plana (foundations; prerequisites for the systems) ─────────────
+- id: drawing.plane_geometry
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Geometria plana, es: Geometría plana }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.plane_geometry.basic_constructions
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Traçats geomètrics fonamentals, es: Trazados geométricos fundamentales }
+  parent: drawing.plane_geometry
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.plane_geometry.proportionality_scales
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Proporcionalitat i escales, es: Proporcionalidad y escalas }
+  parent: drawing.plane_geometry
+  prerequisites: [drawing.plane_geometry.basic_constructions]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.plane_geometry.tangencies
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Tangències, es: Tangencias }
+  parent: drawing.plane_geometry
+  prerequisites: [drawing.plane_geometry.basic_constructions]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.plane_geometry.conics
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Corbes còniques, es: Curvas cónicas }
+  parent: drawing.plane_geometry
+  prerequisites: [drawing.plane_geometry.tangencies]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Sistema dièdric ──────────────────────────────────────────────────────────
+- id: drawing.dihedral
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistema dièdric, es: Sistema diédrico }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.dihedral.point_line_plane
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Punt, recta i pla", es: "Punto, recta y plano" }
+  parent: drawing.dihedral
+  prerequisites: [drawing.plane_geometry.basic_constructions]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.dihedral.intersections
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Interseccions, es: Intersecciones }
+  parent: drawing.dihedral
+  prerequisites: [drawing.dihedral.point_line_plane]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.dihedral.rotations_abatiments
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Abatiments i vertaderes magnituds, es: Abatimientos y verdaderas magnitudes }
+  parent: drawing.dihedral
+  prerequisites: [drawing.dihedral.intersections]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Sistema axonomètric ──────────────────────────────────────────────────────
+- id: drawing.axonometric
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistema axonomètric, es: Sistema axonométrico }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.axonometric.isometric
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Axonometria isomètrica, es: Axonometría isométrica }
+  parent: drawing.axonometric
+  prerequisites: [drawing.dihedral.point_line_plane]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.axonometric.orthogonal
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Axonometria ortogonal (dimètrica i trimètrica), es: Axonometría ortogonal (dimétrica y trimétrica) }
+  parent: drawing.axonometric
+  prerequisites: [drawing.axonometric.isometric]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Perspectiva cònica ───────────────────────────────────────────────────────
+- id: drawing.conic_perspective
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Perspectiva cònica, es: Perspectiva cónica }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.conic_perspective.frontal
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Perspectiva cònica frontal, es: Perspectiva cónica frontal }
+  parent: drawing.conic_perspective
+  prerequisites: [drawing.plane_geometry.proportionality_scales, drawing.axonometric.isometric]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.conic_perspective.oblique
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Perspectiva cònica obliqua, es: Perspectiva cónica oblicua }
+  parent: drawing.conic_perspective
+  prerequisites: [drawing.conic_perspective.frontal]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Normalització ────────────────────────────────────────────────────────────
+- id: drawing.standardization
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Normalització, es: Normalización }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.standardization.views
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Vistes (sistema europeu), es: Vistas (sistema europeo) }
+  parent: drawing.standardization
+  prerequisites: [drawing.dihedral.point_line_plane]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.standardization.sections
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Talls i seccions, es: Cortes y secciones }
+  parent: drawing.standardization
+  prerequisites: [drawing.standardization.views]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: drawing.standardization.dimensioning
+  version: 1
+  subject: drawing
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Acotació, es: Acotación }
+  parent: drawing.standardization
+  prerequisites: [drawing.standardization.views, drawing.plane_geometry.proportionality_scales]
+  status: published
+  competencies: [reasoning, problem_solving]

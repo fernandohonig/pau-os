@@ -1,0 +1,282 @@
+# Geologia i Ciències Ambientals — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Blocks: materials terrestres, processos interns i tectònica, processos externs i
+# història de la Terra, riscos geològics, sistemes terrestres (medi ambient),
+# recursos i sostenibilitat. `parent` = block; `prerequisites` = pedagogical DAG.
+# Bilingual ca/es. subject: geology.
+
+# ── Materials terrestres ──────────────────────────────────────────────────────
+- id: geology.materials
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Materials terrestres, es: Materiales terrestres }
+  status: published
+  competencies: [reasoning]
+
+- id: geology.materials.minerals
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Minerals i propietats, es: Minerales y propiedades }
+  parent: geology.materials
+  status: published
+  competencies: [reasoning]
+
+- id: geology.materials.igneous_rocks
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Roques ígnies, es: Rocas ígneas }
+  parent: geology.materials
+  prerequisites: [geology.materials.minerals]
+  status: published
+  competencies: [reasoning]
+
+- id: geology.materials.sedimentary_rocks
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Roques sedimentàries, es: Rocas sedimentarias }
+  parent: geology.materials
+  prerequisites: [geology.materials.minerals]
+  status: published
+  competencies: [reasoning]
+
+- id: geology.materials.metamorphic_rocks
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Roques metamòrfiques, es: Rocas metamórficas }
+  parent: geology.materials
+  prerequisites: [geology.materials.igneous_rocks, geology.materials.sedimentary_rocks]
+  status: published
+  competencies: [reasoning]
+
+# ── Processos interns i tectònica de plaques ─────────────────────────────────
+- id: geology.internal
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Processos interns i tectònica, es: Procesos internos y tectónica }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: geology.internal.earth_structure
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estructura interna de la Terra, es: Estructura interna de la Tierra }
+  parent: geology.internal
+  prerequisites: [geology.materials.minerals]
+  status: published
+  competencies: [reasoning]
+
+- id: geology.internal.plate_tectonics
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Tectònica de plaques, es: Tectónica de placas }
+  parent: geology.internal
+  prerequisites: [geology.internal.earth_structure]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.internal.magmatism_seismicity
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Magmatisme, sismicitat i orogènia", es: "Magmatismo, sismicidad y orogenia" }
+  parent: geology.internal
+  prerequisites: [geology.internal.plate_tectonics, geology.materials.igneous_rocks]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Processos geològics externs i història de la Terra ───────────────────────
+- id: geology.external
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Processos geològics externs, es: Procesos geológicos externos }
+  status: published
+  competencies: [reasoning]
+
+- id: geology.external.weathering
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Meteorització, es: Meteorización }
+  parent: geology.external
+  prerequisites: [geology.materials.minerals]
+  status: published
+  competencies: [reasoning]
+
+- id: geology.external.erosion_transport
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Erosió i transport, es: Erosión y transporte }
+  parent: geology.external
+  prerequisites: [geology.external.weathering]
+  status: published
+  competencies: [reasoning]
+
+- id: geology.external.sedimentation
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sedimentació, es: Sedimentación }
+  parent: geology.external
+  prerequisites: [geology.external.erosion_transport, geology.materials.sedimentary_rocks]
+  status: published
+  competencies: [reasoning]
+
+- id: geology.external.stratigraphy
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estratigrafia i principis, es: Estratigrafía y principios }
+  parent: geology.external
+  prerequisites: [geology.external.sedimentation]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.external.geologic_time
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Temps geològic i història de la Terra, es: Tiempo geológico e historia de la Tierra }
+  parent: geology.external
+  prerequisites: [geology.external.stratigraphy]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Riscos geològics ─────────────────────────────────────────────────────────
+- id: geology.hazards
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Riscos geològics, es: Riesgos geológicos }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.hazards.internal_hazards
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Riscos interns: sismes i volcans", es: "Riesgos internos: sismos y volcanes" }
+  parent: geology.hazards
+  prerequisites: [geology.internal.magmatism_seismicity]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+- id: geology.hazards.external_hazards
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Riscos externs: inundacions i moviments de vessant", es: "Riesgos externos: inundaciones y movimientos de ladera" }
+  parent: geology.hazards
+  prerequisites: [geology.external.erosion_transport]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+# ── Medi ambient: sistemes terrestres i fluxos d'energia ─────────────────────
+- id: geology.environment
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistemes terrestres i medi ambient, es: Sistemas terrestres y medio ambiente }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.environment.atmosphere
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Atmosfera i clima, es: Atmósfera y clima }
+  parent: geology.environment
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.environment.hydrosphere
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Hidrosfera i cicle de l'aigua, es: Hidrosfera y ciclo del agua }
+  parent: geology.environment
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.environment.energy_flows
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Fluxos d'energia i matèria, es: Flujos de energía y materia }
+  parent: geology.environment
+  prerequisites: [geology.environment.atmosphere, geology.environment.hydrosphere]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]
+
+# ── Recursos, impactes ambientals i gestió/sostenibilitat ────────────────────
+- id: geology.resources
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Recursos i sostenibilitat, es: Recursos y sostenibilidad }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.resources.natural_resources
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Recursos naturals i energètics, es: Recursos naturales y energéticos }
+  parent: geology.resources
+  prerequisites: [geology.materials.minerals, geology.environment.energy_flows]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.resources.environmental_impacts
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Impactes ambientals, es: Impactos ambientales }
+  parent: geology.resources
+  prerequisites: [geology.resources.natural_resources, geology.hazards.external_hazards]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: geology.resources.management_sustainability
+  version: 1
+  subject: geology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Gestió ambiental i sostenibilitat, es: Gestión ambiental y sostenibilidad }
+  parent: geology.resources
+  prerequisites: [geology.resources.environmental_impacts]
+  status: published
+  competencies: [reasoning, problem_solving, critical_thinking]

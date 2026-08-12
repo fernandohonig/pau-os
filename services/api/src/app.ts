@@ -68,6 +68,12 @@ const SUBJECT_NAMES: Record<string, { ca: string; es: string }> = {
   biology: { ca: 'Biologia', es: 'Biología' },
   economics: { ca: "Economia de l'Empresa", es: 'Economía de la Empresa' },
   history: { ca: 'Història', es: 'Historia' },
+  philosophy: { ca: 'Història de la Filosofia', es: 'Historia de la Filosofía' },
+  arthistory: { ca: "Història de l'Art", es: 'Historia del Arte' },
+  geology: { ca: 'Geologia i Ciències Ambientals', es: 'Geología y Ciencias Ambientales' },
+  technology: { ca: 'Tecnologia i Enginyeria', es: 'Tecnología e Ingeniería' },
+  drawing: { ca: 'Dibuix Tècnic', es: 'Dibujo Técnico' },
+  english: { ca: 'Anglès', es: 'Inglés' },
 };
 const subjectDisplay = (id: string): { ca: string; es: string } =>
   SUBJECT_NAMES[id] ?? { ca: id, es: id };
