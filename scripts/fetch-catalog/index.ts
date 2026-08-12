@@ -70,6 +70,12 @@ function loadPond(file: string, subject: string): Map<string, number> {
   void subject;
   return m;
 }
+// Castilian translations of degree names (the open dataset is Catalan-only).
+const esNamesPath = path.join(here, 'degree-names-es.json');
+const esNames: Record<string, string> = fs.existsSync(esNamesPath)
+  ? JSON.parse(fs.readFileSync(esNamesPath, 'utf8'))
+  : {};
+
 const SUBJECT_PONDERACIONS: Array<{ subject: string; weights: Map<string, number> }> = [
   { subject: 'mathematics-ii', weights: loadPond('ponderacions-mates-2026.json', 'mathematics-ii') },
   { subject: 'physics', weights: loadPond('ponderacions-fisica-2026.json', 'physics') },
@@ -134,10 +140,11 @@ async function main(): Promise<void> {
       return coef ? [{ subject, coefficient: coef }] : [];
     });
     if (weightings.length > 0) weighted += 1;
+    const es = esNames[row.nom_de_l_oferta];
     degrees.push({
       id,
       university_id: uni.id,
-      name: { ca: row.nom_de_l_oferta },
+      name: es ? { ca: row.nom_de_l_oferta, es } : { ca: row.nom_de_l_oferta },
       admission_score_max: 14,
       weightings,
     });
