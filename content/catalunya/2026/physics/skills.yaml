@@ -1,0 +1,328 @@
+# Física — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Skill graph organised by the exam blocks: Mecànica (foundations), Camp
+# gravitatori, Electromagnetisme, Ones i Òptica, Física moderna. `parent` is
+# taxonomic (block); `prerequisites` is the pedagogical DAG. Names are bilingual
+# ca/es. Provenance of questions that reference these skills is tracked
+# separately (see questions/).
+
+# ── Mecànica (foundations, from 1r batxillerat; prerequisites for the rest) ──
+- id: physics.mechanics
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Mecànica, es: Mecánica }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.mechanics.kinematics
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Cinemàtica, es: Cinemática }
+  parent: physics.mechanics
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.mechanics.dynamics
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Dinàmica (lleis de Newton), es: Dinámica (leyes de Newton) }
+  parent: physics.mechanics
+  prerequisites: [physics.mechanics.kinematics]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.mechanics.energy
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Treball i energia, es: Trabajo y energía }
+  parent: physics.mechanics
+  prerequisites: [physics.mechanics.dynamics]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.mechanics.circular_motion
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Moviment circular, es: Movimiento circular }
+  parent: physics.mechanics
+  prerequisites: [physics.mechanics.dynamics]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.mechanics.oscillations
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Oscil·lacions (MHS), es: Oscilaciones (MAS) }
+  parent: physics.mechanics
+  prerequisites: [physics.mechanics.dynamics, physics.mechanics.energy]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Camp gravitatori ─────────────────────────────────────────────────────────
+- id: physics.gravitation
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Camp gravitatori, es: Campo gravitatorio }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.gravitation.universal_law
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Llei de gravitació universal, es: Ley de gravitación universal }
+  parent: physics.gravitation
+  prerequisites: [physics.mechanics.dynamics]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.gravitation.field
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Intensitat de camp gravitatori, es: Intensidad de campo gravitatorio }
+  parent: physics.gravitation
+  prerequisites: [physics.gravitation.universal_law]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.gravitation.potential
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Energia i potencial gravitatori, es: Energía y potencial gravitatorio }
+  parent: physics.gravitation
+  prerequisites: [physics.gravitation.field, physics.mechanics.energy]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.gravitation.orbits
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Òrbites i satèl·lits, es: Órbitas y satélites }
+  parent: physics.gravitation
+  prerequisites: [physics.gravitation.field, physics.mechanics.circular_motion]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Electromagnetisme ────────────────────────────────────────────────────────
+- id: physics.electromagnetism
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Electromagnetisme, es: Electromagnetismo }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.electromagnetism.electric_field
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Camp elèctric, es: Campo eléctrico }
+  parent: physics.electromagnetism
+  prerequisites: [physics.mechanics.dynamics]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.electromagnetism.electric_potential
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Potencial elèctric, es: Potencial eléctrico }
+  parent: physics.electromagnetism
+  prerequisites: [physics.electromagnetism.electric_field, physics.mechanics.energy]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.electromagnetism.magnetic_field
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Camp magnètic, es: Campo magnético }
+  parent: physics.electromagnetism
+  prerequisites: [physics.electromagnetism.electric_field]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.electromagnetism.magnetic_forces
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Forces magnètiques, es: Fuerzas magnéticas }
+  parent: physics.electromagnetism
+  prerequisites: [physics.electromagnetism.magnetic_field]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.electromagnetism.induction
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Inducció electromagnètica, es: Inducción electromagnética }
+  parent: physics.electromagnetism
+  prerequisites: [physics.electromagnetism.magnetic_field]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Ones i Òptica ────────────────────────────────────────────────────────────
+- id: physics.waves
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Ones, es: Ondas }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.waves.harmonic
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Ones harmòniques, es: Ondas armónicas }
+  parent: physics.waves
+  prerequisites: [physics.mechanics.oscillations]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.waves.sound
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: So, es: Sonido }
+  parent: physics.waves
+  prerequisites: [physics.waves.harmonic]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.waves.phenomena
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Fenòmens ondulatoris, es: Fenómenos ondulatorios }
+  parent: physics.waves
+  prerequisites: [physics.waves.harmonic]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.waves.electromagnetic
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Ones electromagnètiques, es: Ondas electromagnéticas }
+  parent: physics.waves
+  prerequisites: [physics.waves.harmonic, physics.electromagnetism.induction]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.optics
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Òptica, es: Óptica }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.optics.geometric
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Òptica geomètrica, es: Óptica geométrica }
+  parent: physics.optics
+  prerequisites: [physics.waves.phenomena]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.optics.physical
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Òptica física, es: Óptica física }
+  parent: physics.optics
+  prerequisites: [physics.waves.phenomena]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Física moderna ───────────────────────────────────────────────────────────
+- id: physics.modern
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Física moderna, es: Física moderna }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.modern.relativity
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Relativitat especial, es: Relatividad especial }
+  parent: physics.modern
+  prerequisites: [physics.mechanics.energy]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.modern.quantum
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Física quàntica, es: Física cuántica }
+  parent: physics.modern
+  prerequisites: [physics.waves.electromagnetic, physics.mechanics.energy]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.modern.atomic
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Model atòmic i espectres, es: Modelo atómico y espectros }
+  parent: physics.modern
+  prerequisites: [physics.modern.quantum]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: physics.modern.nuclear
+  version: 1
+  subject: physics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Física nuclear, es: Física nuclear }
+  parent: physics.modern
+  prerequisites: [physics.modern.atomic, physics.modern.relativity]
+  status: published
+  competencies: [reasoning, problem_solving]
