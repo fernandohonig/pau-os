@@ -25,8 +25,14 @@ interface GenItem {
   skillId: string;
 }
 
+// Map a skill-id root to its subject, question-id prefix and content folder.
+const ROOT_CFG: Record<string, { subject: string; prefix: string; dir: string }> = {
+  physics: { subject: 'physics', prefix: 'fis-g', dir: 'physics' },
+  chemistry: { subject: 'chemistry', prefix: 'qui-g', dir: 'chemistry' },
+  mathematics: { subject: 'mathematics-ii', prefix: 'mat-g', dir: 'mathematics-ii' },
+};
+
 const here = path.dirname(fileURLToPath(import.meta.url));
-const outDir = path.resolve(here, '../../content/catalunya/2026/physics/questions/generated');
 
 const inputPath = process.argv[2];
 if (!inputPath) {
@@ -36,6 +42,14 @@ if (!inputPath) {
 
 const parsed = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
 const items: GenItem[] = parsed.result?.items ?? parsed.items ?? [];
+
+const root = (items[0]?.skillId ?? '').split('.')[0];
+const cfg = ROOT_CFG[root];
+if (!cfg) {
+  process.stderr.write(`unknown subject root "${root}" (from skillId)\n`);
+  process.exit(1);
+}
+const outDir = path.resolve(here, `../../content/catalunya/2026/${cfg.dir}/questions/generated`);
 
 const clamp = (n: number): number => Math.max(0, Math.min(1, n));
 const VALID_IDS = new Set(['A', 'B', 'C', 'D']);
@@ -59,13 +73,13 @@ for (const it of items) {
     continue;
   }
   seq += 1;
-  const id = `fis-g-${String(seq).padStart(6, '0')}`;
+  const id = `${cfg.prefix}-${String(seq).padStart(6, '0')}`;
   questions.push({
     id,
     version: 1,
     region: 'catalunya',
     academic_year: 2026,
-    subject: 'physics',
+    subject: cfg.subject,
     type: 'multiple_choice',
     skills: [it.skillId],
     competencies: ['reasoning', 'problem_solving'],
