@@ -7,6 +7,8 @@ interface SessionState {
   token: string | null;
   role: Role | null;
   studentId: string | null;
+  /** The PAU subject the student is currently working on. */
+  subject: string;
   /** Latest diagnostic results, kept so Results/Home can render after navigation. */
   results: DiagnosticResults | null;
 }
@@ -14,6 +16,7 @@ interface SessionState {
 interface SessionValue extends SessionState {
   signInWith: (res: AuthResult) => void;
   setStudentId: (id: string | null) => void;
+  setSubject: (s: string) => void;
   setResults: (r: DiagnosticResults | null) => void;
   signOut: () => void;
 }
@@ -22,18 +25,22 @@ const SessionContext = createContext<SessionValue | null>(null);
 
 const ROLE_KEY = 'pau-role';
 const STUDENT_KEY = 'pau-student';
+const SUBJECT_KEY = 'pau-subject';
+const DEFAULT_SUBJECT = 'mathematics-ii';
 
 function readInitial(): SessionState {
   let role: Role | null = null;
   let studentId: string | null = null;
+  let subject = DEFAULT_SUBJECT;
   try {
     const r = localStorage.getItem(ROLE_KEY);
     role = r === 'student' || r === 'admin' ? r : null;
     studentId = localStorage.getItem(STUDENT_KEY);
+    subject = localStorage.getItem(SUBJECT_KEY) || DEFAULT_SUBJECT;
   } catch {
     /* ignore */
   }
-  return { token: getAuthToken(), role, studentId, results: null };
+  return { token: getAuthToken(), role, studentId, subject, results: null };
 }
 
 export function SessionProvider({ children }: { children: ReactNode }) {
@@ -69,6 +76,15 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [persist],
   );
 
+  const setSubject = useCallback((s: string) => {
+    try {
+      localStorage.setItem(SUBJECT_KEY, s);
+    } catch {
+      /* ignore */
+    }
+    setState((prev) => ({ ...prev, subject: s }));
+  }, []);
+
   const setResults = useCallback((r: DiagnosticResults | null) => {
     setState((s) => ({ ...s, results: r }));
   }, []);
@@ -76,12 +92,12 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const signOut = useCallback(() => {
     setAuthToken(null);
     persist(null, null);
-    setState({ token: null, role: null, studentId: null, results: null });
+    setState({ token: null, role: null, studentId: null, subject: DEFAULT_SUBJECT, results: null });
   }, [persist]);
 
   const value = useMemo<SessionValue>(
-    () => ({ ...state, signInWith, setStudentId, setResults, signOut }),
-    [state, signInWith, setStudentId, setResults, signOut],
+    () => ({ ...state, signInWith, setStudentId, setSubject, setResults, signOut }),
+    [state, signInWith, setStudentId, setSubject, setResults, signOut],
   );
 
   return <SessionContext.Provider value={value}>{children}</SessionContext.Provider>;

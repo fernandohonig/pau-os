@@ -23,7 +23,7 @@ export function Results() {
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <Card className="lg:col-span-2">
-          <p className="text-sm font-medium text-ink-secondary">Estimated Matemàtiques II level</p>
+          <p className="text-sm font-medium text-ink-secondary">Estimated level</p>
           <div className="mt-3">
             <LevelGauge
               level={level.level}

@@ -2,8 +2,9 @@ import type { QuestionMeta } from '@pau/assessment';
 import type { Outcome } from '@pau/scoring';
 import type { Db } from './prisma.js';
 
-const SUBJECT = 'mathematics-ii';
 const REGION = 'catalunya';
+/** Default subject (the MVP subject); callers pass an explicit subject now. */
+export const DEFAULT_SUBJECT = 'mathematics-ii';
 
 // Only admin-approved content is served to students. Everything else stays out
 // of diagnostics/practice until a reviewer approves it (spec §17). Review state
@@ -76,10 +77,13 @@ export function outcomeFor(row: QuestionRow, answer: string | undefined, idk: bo
   return isCorrect ? 'correct' : 'incorrect';
 }
 
-/** Load the usable question bank for the MVP subject/region. */
-export async function loadQuestionBank(db: Db): Promise<QuestionRow[]> {
+/** Load the usable (approved) question bank for a subject. */
+export async function loadQuestionBank(
+  db: Db,
+  subject: string = DEFAULT_SUBJECT,
+): Promise<QuestionRow[]> {
   return db.question.findMany({
-    where: { subject: SUBJECT, region: REGION, reviewStatus: { in: USABLE_REVIEW_STATES } },
+    where: { subject, region: REGION, reviewStatus: { in: USABLE_REVIEW_STATES } },
     select: {
       id: true,
       type: true,
@@ -189,16 +193,23 @@ export function toAdminQuestion(row: AdminQuestionRow): AdminQuestion {
   };
 }
 
-/** Load questions awaiting review (or a specific set of review states). */
+/** Load questions awaiting review (across subjects, or a specific subject). */
 export async function loadReviewQueue(
   db: Db,
   statuses: string[] = REVIEW_QUEUE_STATES,
+  subject?: string,
 ): Promise<AdminQuestionRow[]> {
   return db.question.findMany({
-    where: { subject: SUBJECT, region: REGION, reviewStatus: { in: statuses } },
+    where: { region: REGION, reviewStatus: { in: statuses }, ...(subject ? { subject } : {}) },
     orderBy: { updatedAt: 'desc' },
     select: ADMIN_QUESTION_SELECT,
   }) as unknown as Promise<AdminQuestionRow[]>;
+}
+
+/** Skill ids belonging to a subject — used to scope skill-state queries. */
+export async function skillIdsForSubject(db: Db, subject: string): Promise<string[]> {
+  const rows = await db.skill.findMany({ where: { subject }, select: { id: true } });
+  return rows.map((r) => r.id);
 }
 
 /** Load a single question with full review detail, or null if absent. */

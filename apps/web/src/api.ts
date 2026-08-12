@@ -74,26 +74,36 @@ export interface SkillProfileItem {
   confidence: number;
   evidenceCount: number;
 }
+export interface SubjectEstimate {
+  subject: string;
+  name: LocalizedText;
+  subjectLevel: {
+    level: number;
+    range: [number, number];
+    confidence: number;
+    assessedSkillCount: number;
+  };
+  contribution: {
+    subject: string;
+    coefficient: number;
+    points: number;
+    range: [number, number];
+  } | null;
+}
 export type TargetEstimate =
   | { goal: null }
   | {
       goal: { degreeId: string; targetScore: number | null };
       degreeName: string;
-      subjectLevel: {
-        level: number;
-        range: [number, number];
-        confidence: number;
-        assessedSkillCount: number;
-      };
-      contribution: {
-        subject: string;
-        coefficient: number;
-        points: number;
-        range: [number, number];
-      } | null;
+      subjects: SubjectEstimate[];
       cutoff: { score: number; assignment: string; academicYear: number; sourceType: string } | null;
       disclaimer: string;
     };
+
+export interface SubjectInfo {
+  id: string;
+  name: LocalizedText;
+}
 
 /** Auth/permission errors carry the HTTP status so the UI can react (e.g. 401). */
 export class ApiError extends Error {
@@ -187,15 +197,19 @@ export const api = {
 
   createStudent: () => req<{ id: string }>('POST', '/v1/students'),
   getDegrees: () => req<{ degrees: Degree[]; provisional: boolean }>('GET', '/v1/catalog/degrees'),
-  getSkillCatalog: () =>
-    req<{ skills: { id: string; name: LocalizedText }[] }>('GET', '/v1/catalog/skills'),
+  getSubjects: () => req<{ subjects: SubjectInfo[] }>('GET', '/v1/catalog/subjects'),
+  getSkillCatalog: (subject: string) =>
+    req<{ skills: { id: string; name: LocalizedText }[] }>(
+      'GET',
+      `/v1/catalog/skills?subject=${encodeURIComponent(subject)}`,
+    ),
   createGoal: (studentId: string, degreeId: string, targetScore?: number) =>
     req('POST', '/v1/goals', { studentId, degreeId, targetScore }),
-  startAssessment: (studentId: string) =>
+  startAssessment: (studentId: string, subject: string) =>
     req<{ assessmentId: string; question: PublicQuestion; progress: { asked: number } }>(
       'POST',
       '/v1/assessments',
-      { studentId },
+      { studentId, subject },
     ),
   submitResponse: (assessmentId: string, questionId: string, answer?: string, idk?: boolean) =>
     req<
@@ -204,34 +218,43 @@ export const api = {
     >('POST', `/v1/assessments/${assessmentId}/responses`, { questionId, answer, idk }),
   completeAssessment: (assessmentId: string) =>
     req<DiagnosticResults>('POST', `/v1/assessments/${assessmentId}/complete`),
-  getSkills: (studentId: string) =>
-    req<{ skills: SkillProfileItem[] }>('GET', `/v1/students/${studentId}/skills`),
-  getRecommendations: (studentId: string) =>
+  getSkills: (studentId: string, subject: string) =>
+    req<{ skills: SkillProfileItem[] }>(
+      'GET',
+      `/v1/students/${studentId}/skills?subject=${encodeURIComponent(subject)}`,
+    ),
+  getRecommendations: (studentId: string, subject: string) =>
     req<{ recommendations: { skillId: string; reasonCodes: string[]; explanation: string }[] }>(
       'GET',
-      `/v1/students/${studentId}/recommendations`,
+      `/v1/students/${studentId}/recommendations?subject=${encodeURIComponent(subject)}`,
     ),
   getTargetEstimate: (studentId: string) =>
     req<TargetEstimate>('GET', `/v1/students/${studentId}/target-estimate`),
-  getPracticeNext: (studentId: string) =>
+  getPracticeNext: (studentId: string, subject: string) =>
     req<{ done: true } | { skillId: string; question: PublicQuestion }>(
       'GET',
-      `/v1/students/${studentId}/practice/next`,
+      `/v1/students/${studentId}/practice/next?subject=${encodeURIComponent(subject)}`,
     ),
-  submitPracticeAnswer: (studentId: string, questionId: string, answer?: string, idk?: boolean) =>
+  submitPracticeAnswer: (
+    studentId: string,
+    questionId: string,
+    subject: string,
+    answer?: string,
+    idk?: boolean,
+  ) =>
     req<{
       correct: boolean;
       outcome: string;
       explanation: LocalizedText;
       skills: ProfileBandItem[];
-    }>('POST', '/v1/practice/answer', { studentId, questionId, answer, idk }),
-  startSession: (studentId: string) =>
+    }>('POST', '/v1/practice/answer', { studentId, questionId, subject, answer, idk }),
+  startSession: (studentId: string, subject: string) =>
     req<{
       sessionId: string;
       recommendedSkills: string[];
       questions: PublicQuestion[];
       progress: { answered: number; total: number };
-    }>('POST', `/v1/students/${studentId}/sessions`),
+    }>('POST', `/v1/students/${studentId}/sessions`, { subject }),
   submitSessionResponse: (sessionId: string, questionId: string, answer?: string, idk?: boolean) =>
     req<{
       correct: boolean;

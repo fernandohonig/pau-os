@@ -14,7 +14,7 @@ interface Feedback {
 
 export function Practice() {
   const navigate = useNavigate();
-  const { studentId } = useSession();
+  const { studentId, subject } = useSession();
   const { t } = useLang();
   const { busy, error, run } = useAction();
 
@@ -30,7 +30,7 @@ export function Practice() {
     if (!studentId) return;
     let cancelled = false;
     api
-      .startSession(studentId)
+      .startSession(studentId, subject)
       .then((s) => {
         if (cancelled) return;
         setSessionId(s.sessionId);
@@ -40,7 +40,7 @@ export function Practice() {
     return () => {
       cancelled = true;
     };
-  }, [studentId]);
+  }, [studentId, subject]);
 
   const question = questions[idx];
 

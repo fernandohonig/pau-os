@@ -10,7 +10,7 @@ const TARGET_QUESTIONS = 20;
 
 export function Diagnostic() {
   const navigate = useNavigate();
-  const { studentId, setResults } = useSession();
+  const { studentId, subject, setResults } = useSession();
   const { t } = useLang();
   const { busy, error, run } = useAction();
 
@@ -23,7 +23,7 @@ export function Diagnostic() {
   const begin = () =>
     run(async () => {
       if (!studentId) return;
-      const res = await api.startAssessment(studentId);
+      const res = await api.startAssessment(studentId, subject);
       setAssessmentId(res.assessmentId);
       setQuestion(res.question);
       setAsked(res.progress.asked);

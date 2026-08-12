@@ -53,8 +53,19 @@ import {
   loadReviewQueue,
   getQuestionForReview,
   toAdminQuestion,
+  skillIdsForSubject,
+  DEFAULT_SUBJECT,
+  USABLE_REVIEW_STATES,
   type QuestionRow,
 } from './questions.js';
+
+// Subjects we cover, with display names. Drives /v1/catalog/subjects and labels.
+const SUBJECT_NAMES: Record<string, { ca: string; es: string }> = {
+  'mathematics-ii': { ca: 'Matemàtiques II', es: 'Matemáticas II' },
+  physics: { ca: 'Física', es: 'Física' },
+};
+const subjectDisplay = (id: string): { ca: string; es: string } =>
+  SUBJECT_NAMES[id] ?? { ca: id, es: id };
 
 interface SkillStateRow {
   skillId: string;
@@ -126,9 +137,13 @@ async function loadTargetRelevance(
   return buildTargetRelevance(weightings, (id) => subjectMap.get(id));
 }
 
-async function loadSkillStateRows(db: Db, studentId: string): Promise<Map<string, SkillStateRow>> {
+async function loadSkillStateRows(
+  db: Db,
+  studentId: string,
+  allowedSkillIds?: string[],
+): Promise<Map<string, SkillStateRow>> {
   const rows = await db.studentSkillState.findMany({
-    where: { studentId },
+    where: { studentId, ...(allowedSkillIds ? { skillId: { in: allowedSkillIds } } : {}) },
     select: { skillId: true, masteryProbability: true, confidence: true, evidenceCount: true, streak: true },
   });
   const map = new Map<string, SkillStateRow>();
@@ -416,11 +431,12 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   });
 
   // Skill profile — user-facing bands only, never raw probabilities.
-  app.get<{ Params: { id: string } }>('/v1/students/:id/skills', async (req, reply) => {
+  app.get<{ Params: { id: string }; Querystring: { subject?: string } }>('/v1/students/:id/skills', async (req, reply) => {
     const student = await db.student.findUnique({ where: { id: req.params.id } });
     if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
-    const rows = await loadSkillStateRows(db, req.params.id);
+    const subject = req.query?.subject ?? DEFAULT_SUBJECT;
+    const rows = await loadSkillStateRows(db, req.params.id, await skillIdsForSubject(db, subject));
     const skills = [...rows.values()].map((r) => ({
       skillId: r.skillId,
       band: masteryBand(toMasteryState(r)),
@@ -433,11 +449,11 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   // Latest active recommendations for the student (most recent first).
   // Live Next Best Action ranking (spec §12), recomputed from current state so
   // it reflects the latest practice and any goal change.
-  app.get<{ Params: { id: string } }>('/v1/students/:id/recommendations', async (req, reply) => {
+  app.get<{ Params: { id: string }; Querystring: { subject?: string } }>('/v1/students/:id/recommendations', async (req, reply) => {
     const student = await db.student.findUnique({ where: { id: req.params.id } });
     if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
-    const bank = await loadQuestionBank(db);
+    const bank = await loadQuestionBank(db, req.query?.subject ?? DEFAULT_SUBJECT);
     const { nba, skillName } = await computeNba(db, req.params.id, bank);
     const top = nba.filter((n) => n.priority > 0).slice(0, 3);
 
@@ -482,15 +498,35 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
     if (!goal) return { goal: null };
 
     const degree = (await db.degree.findUnique({ where: { id: goal.degreeId } })) as DegreeRow | null;
-    const rows = await loadSkillStateRows(db, req.params.id);
-    const entries = [...rows.values()].map((r) => ({ skillId: r.skillId, state: toMasteryState(r) }));
-    const level = estimateLevel(entries);
     const weightings = degree ? degreeWeightings(degree) : [];
-    const contribution = estimateSubjectContribution(
-      { level: level.level, range: level.range },
-      weightings,
-      'mathematics-ii',
-    );
+
+    // One estimate per weighted subject we actually cover (have skills for),
+    // each computed over that subject's skill states only.
+    const covered = weightings.filter((w) => SUBJECT_NAMES[w.subject]);
+    const subjects = [];
+    for (const w of covered) {
+      const skillIds = await skillIdsForSubject(db, w.subject);
+      if (skillIds.length === 0) continue;
+      const rows = await loadSkillStateRows(db, req.params.id, skillIds);
+      const entries = [...rows.values()].map((r) => ({ skillId: r.skillId, state: toMasteryState(r) }));
+      const level = estimateLevel(entries);
+      subjects.push({
+        subject: w.subject,
+        name: subjectDisplay(w.subject),
+        subjectLevel: {
+          level: level.level,
+          range: level.range,
+          confidence: level.confidence,
+          assessedSkillCount: level.assessedSkillCount,
+        },
+        contribution: estimateSubjectContribution(
+          { level: level.level, range: level.range },
+          weightings,
+          w.subject,
+        ),
+      });
+    }
+
     const cutoff = await db.cutoff.findFirst({
       where: { degreeId: goal.degreeId },
       orderBy: { academicYear: 'desc' },
@@ -499,13 +535,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
     return {
       goal: { degreeId: goal.degreeId, targetScore: goal.targetScore },
       degreeName: degree ? degree.nameCA : goal.degreeId,
-      subjectLevel: {
-        level: level.level,
-        range: level.range,
-        confidence: level.confidence,
-        assessedSkillCount: level.assessedSkillCount,
-      },
-      contribution,
+      subjects,
       cutoff: cutoff
         ? {
             score: cutoff.score,
@@ -516,7 +546,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
           }
         : null,
       disclaimer:
-        'Estimate for Matemàtiques II only. The full admission score (up to 14) also depends on your general-phase grades and a second weighted subject. Any cutoff shown is a historical/estimated observation, not a required score.',
+        'Estimates for the weighted subjects we cover. The full admission score (up to 14) also depends on your general-phase grades and other weighted subjects. Any cutoff shown is a historical/estimated observation, not a required score.',
     };
   });
 
@@ -577,13 +607,23 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   });
 
   // Skill catalog (id → localized name) so clients can render human labels.
-  app.get('/v1/catalog/skills', async () => {
+  app.get<{ Querystring: { subject?: string } }>('/v1/catalog/skills', async (req) => {
     const rows = await db.skill.findMany({
-      where: { subject: 'mathematics-ii' },
+      where: { subject: req.query?.subject ?? DEFAULT_SUBJECT },
       select: { id: true, nameCA: true, nameES: true },
     });
     return {
       skills: rows.map((r) => ({ id: r.id, name: { ca: r.nameCA, es: r.nameES ?? undefined } })),
+    };
+  });
+
+  // Subjects we have content for (distinct Skill.subject), with display names.
+  app.get('/v1/catalog/subjects', async () => {
+    const rows = await db.skill.groupBy({ by: ['subject'] });
+    return {
+      subjects: rows
+        .map((r) => ({ id: r.subject, name: subjectDisplay(r.subject) }))
+        .sort((a, b) => (a.id === DEFAULT_SUBJECT ? -1 : b.id === DEFAULT_SUBJECT ? 1 : a.id.localeCompare(b.id))),
     };
   });
 
@@ -629,20 +669,21 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   );
 
   // --- Assessments (diagnostic) ------------------------------------------
-  app.post<{ Body: { studentId?: string } }>('/v1/assessments', async (req, reply) => {
+  app.post<{ Body: { studentId?: string; subject?: string } }>('/v1/assessments', async (req, reply) => {
     const studentId = req.body?.studentId;
     if (!studentId) return reply.code(400).send({ error: 'studentId_required' });
 
     const student = await db.student.findUnique({ where: { id: studentId } });
     if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
-    const bank = await loadQuestionBank(db);
+    const subject = req.body?.subject ?? DEFAULT_SUBJECT;
+    const bank = await loadQuestionBank(db, subject);
     if (bank.length === 0) return reply.code(503).send({ error: 'no_questions_available' });
 
     const assessment = await db.assessment.create({
-      data: { studentId, type: 'diagnostic', status: 'in_progress' },
+      data: { studentId, type: 'diagnostic', status: 'in_progress', subject },
     });
-    await recordEvent(db, 'diagnostic_started', studentId, { assessmentId: assessment.id });
+    await recordEvent(db, 'diagnostic_started', studentId, { assessmentId: assessment.id, subject });
 
     const states = await loadSkillStateRows(db, studentId);
     const stateMap = new Map<string, MasteryState>();
@@ -696,7 +737,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
       return reply.code(409).send({ error: 'assessment_not_in_progress' });
     }
 
-    const bank = await loadQuestionBank(db);
+    const bank = await loadQuestionBank(db, assessment.subject);
     const bankById = new Map(bank.map((q) => [q.id, q] as const));
     const question = bankById.get(questionId);
     if (!question) return reply.code(404).send({ error: 'question_not_found' });
@@ -798,7 +839,11 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
     const assessment = await db.assessment.findUnique({ where: { id: req.params.id } });
     if (!assessment) return reply.code(404).send({ error: 'assessment_not_found' });
 
-    const stateRows = await loadSkillStateRows(db, assessment.studentId);
+    const stateRows = await loadSkillStateRows(
+      db,
+      assessment.studentId,
+      await skillIdsForSubject(db, assessment.subject),
+    );
     const entries = [...stateRows.values()].map((r) => ({ skillId: r.skillId, state: toMasteryState(r) }));
 
     const level = estimateLevel(entries);
@@ -842,12 +887,13 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   // --- Practice -----------------------------------------------------------
   // Minimal practice (spec Screen 7): serve a question for the student's
   // weakest assessed skill; the adaptive session composition arrives in Week 6.
-  app.get<{ Params: { id: string } }>('/v1/students/:id/practice/next', async (req, reply) => {
+  app.get<{ Params: { id: string }; Querystring: { subject?: string } }>('/v1/students/:id/practice/next', async (req, reply) => {
     const student = await db.student.findUnique({ where: { id: req.params.id } });
     if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
-    const bank = await loadQuestionBank(db);
-    const rows = await loadSkillStateRows(db, req.params.id);
+    const subject = req.query?.subject ?? DEFAULT_SUBJECT;
+    const bank = await loadQuestionBank(db, subject);
+    const rows = await loadSkillStateRows(db, req.params.id, await skillIdsForSubject(db, subject));
 
     // Prefer the weakest assessed skill; fall back to any skill in the bank.
     const assessed = [...rows.values()].filter((r) => r.evidenceCount > 0);
@@ -871,10 +917,10 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
 
   // Answer a practice question — unlike the diagnostic, this reveals
   // correctness and the explanation (Screen 7) and updates mastery.
-  app.post<{ Body: { studentId?: string; questionId?: string; answer?: string; idk?: boolean } }>(
+  app.post<{ Body: { studentId?: string; questionId?: string; answer?: string; idk?: boolean; subject?: string } }>(
     '/v1/practice/answer',
     async (req, reply) => {
-      const { studentId, questionId, answer, idk } = req.body ?? {};
+      const { studentId, questionId, answer, idk, subject } = req.body ?? {};
       if (!studentId || !questionId) {
         return reply.code(400).send({ error: 'studentId_and_questionId_required' });
       }
@@ -883,7 +929,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
       const student = await db.student.findUnique({ where: { id: studentId } });
       if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
-      const bank = await loadQuestionBank(db);
+      const bank = await loadQuestionBank(db, subject ?? DEFAULT_SUBJECT);
       const question = bank.find((q) => q.id === questionId);
       if (!question) return reply.code(404).send({ error: 'question_not_found' });
 
@@ -901,11 +947,12 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   );
 
   // --- Adaptive practice sessions (Next Best Action, spec §12/§14) --------
-  app.post<{ Params: { id: string } }>('/v1/students/:id/sessions', async (req, reply) => {
+  app.post<{ Params: { id: string }; Body: { subject?: string } }>('/v1/students/:id/sessions', async (req, reply) => {
     const student = await db.student.findUnique({ where: { id: req.params.id } });
     if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
-    const bank = await loadQuestionBank(db);
+    const subject = req.body?.subject ?? DEFAULT_SUBJECT;
+    const bank = await loadQuestionBank(db, subject);
     if (bank.length === 0) return reply.code(503).send({ error: 'no_questions_available' });
 
     const { nba } = await computeNba(db, req.params.id, bank);
@@ -931,7 +978,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
     const composed = composeSession(nba, metas, { answeredRecently: answered });
 
     const session = await db.practiceSession.create({
-      data: { studentId: req.params.id, status: 'in_progress' },
+      data: { studentId: req.params.id, status: 'in_progress', subject },
     });
     await recordEvent(db, 'practice_started', req.params.id, {
       sessionId: session.id,
@@ -980,7 +1027,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
       return reply.code(409).send({ error: 'session_not_in_progress' });
     }
 
-    const bank = await loadQuestionBank(db);
+    const bank = await loadQuestionBank(db, session.subject);
     const question = bank.find((q) => q.id === questionId);
     if (!question) return reply.code(404).send({ error: 'question_not_found' });
 
@@ -1033,8 +1080,12 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
       await recordEvent(db, 'recommendation_completed', session.studentId, { sessionId: session.id });
     }
 
-    // Progress recalculation from the updated skill states.
-    const stateRows = await loadSkillStateRows(db, session.studentId);
+    // Progress recalculation from the updated skill states (scoped to subject).
+    const stateRows = await loadSkillStateRows(
+      db,
+      session.studentId,
+      await skillIdsForSubject(db, session.subject),
+    );
     const entries = [...stateRows.values()].map((r) => ({ skillId: r.skillId, state: toMasteryState(r) }));
     const level = estimateLevel(entries);
     return {
@@ -1049,12 +1100,13 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
   // --- Learning validation (Weeks 7–8) -----------------------------------
   // Per-student learning gain: replay the first (pre) and latest (post)
   // completed diagnostics to estimate the level at each, then gain / gain-per-hour.
-  app.get<{ Params: { id: string } }>('/v1/students/:id/learning-gain', async (req, reply) => {
+  app.get<{ Params: { id: string }; Querystring: { subject?: string } }>('/v1/students/:id/learning-gain', async (req, reply) => {
     const student = await db.student.findUnique({ where: { id: req.params.id } });
     if (!student) return reply.code(404).send({ error: 'student_not_found' });
 
+    const subject = req.query?.subject ?? DEFAULT_SUBJECT;
     const diagnostics = await db.assessment.findMany({
-      where: { studentId: req.params.id, type: 'diagnostic', status: 'completed' },
+      where: { studentId: req.params.id, type: 'diagnostic', status: 'completed', subject },
       orderBy: { completedAt: 'asc' },
       select: { id: true },
     });
@@ -1066,7 +1118,7 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
       };
     }
 
-    const bank = await loadQuestionBank(db);
+    const bank = await loadQuestionBank(db, subject);
     const byId = new Map(bank.map((q) => [q.id, q] as const));
     const pre = levelFromAttempts(await attemptsForAssessment(db, diagnostics[0].id, byId));
     const post = levelFromAttempts(
@@ -1285,8 +1337,23 @@ export function buildApp(db: Db, authConfig: AuthConfig = loadAuthConfig()): Fas
 
   // --- Questions ----------------------------------------------------------
   app.get<{ Params: { id: string } }>('/v1/questions/:id', async (req, reply) => {
-    const bank = await loadQuestionBank(db);
-    const row = bank.find((q) => q.id === req.params.id) as QuestionRow | undefined;
+    // Any subject; only approved/published content is public.
+    const row = (await db.question.findFirst({
+      where: { id: req.params.id, reviewStatus: { in: USABLE_REVIEW_STATES } },
+      select: {
+        id: true,
+        type: true,
+        skills: true,
+        difficultyInitial: true,
+        difficultyCali: true,
+        questionCA: true,
+        questionES: true,
+        options: true,
+        answer: true,
+        explanation: true,
+        sourceType: true,
+      },
+    })) as QuestionRow | null;
     if (!row) return reply.code(404).send({ error: 'question_not_found' });
     return toPublicQuestion(row);
   });

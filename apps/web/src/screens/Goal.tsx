@@ -41,7 +41,7 @@ export function Goal() {
     run(async () => {
       if (!studentId || !selected) return;
       await api.createGoal(studentId, selected, target ?? undefined);
-      navigate('/diagnostic');
+      navigate('/subject');
     });
 
   if (!degrees) return <Container><Spinner label="Loading degrees…" /></Container>;
@@ -93,7 +93,7 @@ export function Goal() {
 
       <div className="mt-6">
         <Button size="lg" disabled={!selected || busy} onClick={submit}>
-          Continue to diagnostic
+          Continue
         </Button>
       </div>
     </Container>

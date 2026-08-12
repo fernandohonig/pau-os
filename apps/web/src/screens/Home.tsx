@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api, type TargetEstimate } from '../api';
 import { useSession } from '../session';
+import { useLang } from '../lang';
 import { Button, Card, Container, PageTitle, Spinner, StatTile } from '../components/ui';
 import { LevelGauge } from '../charts/LevelGauge';
 import { reasonLabel, round, skillLabel } from '../lib/format';
@@ -14,7 +15,8 @@ interface Reco {
 
 export function Home() {
   const navigate = useNavigate();
-  const { studentId } = useSession();
+  const { studentId, subject } = useSession();
+  const { t } = useLang();
   const [target, setTarget] = useState<TargetEstimate | null>(null);
   const [reco, setReco] = useState<Reco | null>(null);
   const [loading, setLoading] = useState(true);
@@ -22,25 +24,32 @@ export function Home() {
   useEffect(() => {
     if (!studentId) return;
     let cancelled = false;
-    Promise.all([api.getTargetEstimate(studentId), api.getRecommendations(studentId)])
-      .then(([t, r]) => {
+    Promise.all([api.getTargetEstimate(studentId), api.getRecommendations(studentId, subject)])
+      .then(([tg, r]) => {
         if (cancelled) return;
-        setTarget(t);
+        setTarget(tg);
         setReco(r.recommendations[0] ?? null);
       })
       .finally(() => !cancelled && setLoading(false));
     return () => {
       cancelled = true;
     };
-  }, [studentId]);
+  }, [studentId, subject]);
 
   if (loading) return <Container><Spinner label="Loading your dashboard…" /></Container>;
 
-  const hasGoal = target && 'goal' in target && target.goal !== null;
+  const withGoal = target && 'goal' in target && target.goal !== null ? target : null;
+  const active = withGoal?.subjects.find((s) => s.subject === subject) ?? null;
+  const activeName = active ? t(active.name) : null;
 
   return (
     <Container size="lg">
-      <PageTitle kicker="Home" title="What should I do now?" />
+      <div className="mb-6 flex items-center justify-between gap-3">
+        <PageTitle kicker="Home" title="What should I do now?" />
+        <Button variant="secondary" onClick={() => navigate('/subject')}>
+          {activeName ? `Subject: ${activeName}` : 'Choose subject'}
+        </Button>
+      </div>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         {reco ? (
@@ -74,51 +83,68 @@ export function Home() {
           </Card>
         )}
 
-        {hasGoal && target && 'subjectLevel' in target ? (
+        {active ? (
           <Card>
-            <p className="text-sm font-medium text-ink-secondary">Estimated level</p>
+            <p className="text-sm font-medium text-ink-secondary">Estimated level · {activeName}</p>
             <div className="mt-3">
               <LevelGauge
-                level={target.subjectLevel.level}
-                range={target.subjectLevel.range}
-                confidence={target.subjectLevel.confidence}
+                level={active.subjectLevel.level}
+                range={active.subjectLevel.range}
+                confidence={active.subjectLevel.confidence}
               />
             </div>
           </Card>
         ) : null}
       </div>
 
-      {hasGoal && target && 'contribution' in target ? (
+      {withGoal ? (
         <Card className="mt-4">
           <div className="flex items-center justify-between">
-            <h3 className="font-semibold text-ink">Toward {target.degreeName}</h3>
+            <h3 className="font-semibold text-ink">Toward {withGoal.degreeName}</h3>
             <Button variant="ghost" onClick={() => navigate('/progress')}>
               See progress →
             </Button>
           </div>
+
+          {withGoal.subjects.length > 0 ? (
+            <div className="mt-4 space-y-3">
+              {withGoal.subjects.map((s) => (
+                <div key={s.subject} className="grid grid-cols-2 gap-3 lg:grid-cols-3">
+                  <StatTile label="Subject" value={t(s.name)} />
+                  {s.contribution ? (
+                    <>
+                      <StatTile label="Weighting" value={`×${s.contribution.coefficient}`} />
+                      <StatTile
+                        label="Contributed points"
+                        value={`${round(s.contribution.range[0])}–${round(s.contribution.range[1])}`}
+                        hint="specific phase"
+                      />
+                    </>
+                  ) : (
+                    <StatTile label="Weighting" value="—" hint="not weighted / unknown" />
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-3 text-sm text-ink-secondary">
+              We don't yet cover a subject this degree weights. Matemàtiques II is available.
+            </p>
+          )}
+
           <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
-            {target.contribution ? (
-              <>
-                <StatTile label="Weighting" value={`×${target.contribution.coefficient}`} />
-                <StatTile
-                  label="Contributed points"
-                  value={`${round(target.contribution.range[0])}–${round(target.contribution.range[1])}`}
-                  hint="of the specific phase"
-                />
-              </>
-            ) : null}
-            {target.cutoff ? (
+            {withGoal.cutoff ? (
               <StatTile
-                label={`Cutoff ${target.cutoff.academicYear}`}
-                value={round(target.cutoff.score, 2)}
-                hint={target.cutoff.sourceType}
+                label={`Cutoff ${withGoal.cutoff.academicYear}`}
+                value={round(withGoal.cutoff.score, 2)}
+                hint={withGoal.cutoff.sourceType}
               />
             ) : null}
-            {target.goal.targetScore != null ? (
-              <StatTile label="Your target" value={`${target.goal.targetScore}/14`} />
+            {withGoal.goal.targetScore != null ? (
+              <StatTile label="Your target" value={`${withGoal.goal.targetScore}/14`} />
             ) : null}
           </div>
-          <p className="mt-4 text-xs text-muted">{target.disclaimer}</p>
+          <p className="mt-4 text-xs text-muted">{withGoal.disclaimer}</p>
         </Card>
       ) : null}
 

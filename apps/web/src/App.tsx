@@ -4,6 +4,7 @@ import { AppShell } from './components/AppShell';
 import { useSession } from './session';
 import { SignIn } from './screens/SignIn';
 import { Goal } from './screens/Goal';
+import { SubjectPicker } from './screens/SubjectPicker';
 import { Diagnostic } from './screens/Diagnostic';
 import { Results } from './screens/Results';
 import { Home } from './screens/Home';
@@ -30,6 +31,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/goal" element={<RequireStudent><Goal /></RequireStudent>} />
+        <Route path="/subject" element={<RequireStudent><SubjectPicker /></RequireStudent>} />
         <Route path="/diagnostic" element={<RequireStudent><Diagnostic /></RequireStudent>} />
         <Route path="/results" element={<RequireStudent><Results /></RequireStudent>} />
         <Route path="/home" element={<RequireStudent><Home /></RequireStudent>} />

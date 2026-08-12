@@ -67,7 +67,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </header>
       <main className="flex-1 py-8 sm:py-10">{children}</main>
       <footer className="border-t border-line py-6 text-center text-xs text-muted">
-        PAU OS · Catalunya · Matemàtiques II · estimates, not guarantees
+        PAU OS · Catalunya · estimates, not guarantees
       </footer>
     </div>
   );

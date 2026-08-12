@@ -55,7 +55,7 @@ export function SignIn() {
           Where do you want to go?
         </h1>
         <p className="mt-4 max-w-md text-lg text-ink-secondary">
-          Pick a degree, take a short Matemàtiques II diagnostic, and get one clear next step —
+          Pick a degree, take a short diagnostic, and get one clear next step —
           no account needed.
         </p>
 

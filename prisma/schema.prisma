@@ -59,6 +59,7 @@ model Assessment {
 
   type      String   @default("diagnostic") // diagnostic, practice
   status    String   @default("in_progress") // in_progress, completed
+  subject   String   @default("mathematics-ii") // PAU subject this assessment covers
 
   startedAt DateTime @default(now())
   completedAt DateTime?
@@ -127,6 +128,7 @@ model PracticeSession {
   student   Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
 
   status    String   @default("in_progress") // in_progress, completed
+  subject   String   @default("mathematics-ii") // PAU subject this session covers
 
   durationMinutes Int?
   startedAt       DateTime @default(now())

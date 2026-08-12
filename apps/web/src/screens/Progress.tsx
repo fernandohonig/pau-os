@@ -7,14 +7,14 @@ import { MasterySkillMap } from '../charts/MasterySkillMap';
 
 export function Progress() {
   const navigate = useNavigate();
-  const { studentId } = useSession();
+  const { studentId, subject } = useSession();
   const [skills, setSkills] = useState<SkillProfileItem[] | null>(null);
   const [names, setNames] = useState<Record<string, string>>({});
 
   useEffect(() => {
     if (!studentId) return;
     let cancelled = false;
-    Promise.all([api.getSkills(studentId), api.getSkillCatalog()]).then(([s, cat]) => {
+    Promise.all([api.getSkills(studentId, subject), api.getSkillCatalog(subject)]).then(([s, cat]) => {
       if (cancelled) return;
       setSkills(s.skills);
       setNames(Object.fromEntries(cat.skills.map((k) => [k.id, k.name.ca])));
@@ -22,7 +22,7 @@ export function Progress() {
     return () => {
       cancelled = true;
     };
-  }, [studentId]);
+  }, [studentId, subject]);
 
   if (!skills) return <Container><Spinner label="Loading your skill map…" /></Container>;
 
