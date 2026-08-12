@@ -58,16 +58,22 @@ const norm = (s: string): string =>
 const here = path.dirname(fileURLToPath(import.meta.url));
 const contentDir = path.resolve(here, '../../content/universities/catalunya/2026');
 
-// Official Matemàtiques II ponderació coefficients, extracted from the Generalitat
-// PDF and keyed for a university+name join (see ponderacions-mates-2026.json).
+// Official ponderació coefficients per subject, extracted from the Generalitat
+// PDF and keyed for a university+name join. A degree may weight several subjects.
 interface PondFile {
   entries: Array<{ uni: string; name: string; coef: number }>;
 }
-const pond = JSON.parse(
-  fs.readFileSync(path.join(here, 'ponderacions-mates-2026.json'), 'utf8'),
-) as PondFile;
-const mathWeight = new Map<string, number>();
-for (const e of pond.entries) mathWeight.set(`${e.uni}|${norm(e.name)}`, e.coef);
+function loadPond(file: string, subject: string): Map<string, number> {
+  const pond = JSON.parse(fs.readFileSync(path.join(here, file), 'utf8')) as PondFile;
+  const m = new Map<string, number>();
+  for (const e of pond.entries) m.set(`${e.uni}|${norm(e.name)}`, e.coef);
+  void subject;
+  return m;
+}
+const SUBJECT_PONDERACIONS: Array<{ subject: string; weights: Map<string, number> }> = [
+  { subject: 'mathematics-ii', weights: loadPond('ponderacions-mates-2026.json', 'mathematics-ii') },
+  { subject: 'physics', weights: loadPond('ponderacions-fisica-2026.json', 'physics') },
+];
 
 async function main(): Promise<void> {
   process.stdout.write(`Fetching ${DATA_URL}\n`);
@@ -121,14 +127,18 @@ async function main(): Promise<void> {
     const uni = UNIVERSITIES[row.sigles_universitat_responsable];
     usedUnis.add(uni.id);
     const id = `cat-${row.codi_oferta}`;
-    const coef = mathWeight.get(`${uni.id}|${norm(row.nom_de_l_oferta)}`);
-    if (coef) weighted += 1;
+    const key = `${uni.id}|${norm(row.nom_de_l_oferta)}`;
+    const weightings = SUBJECT_PONDERACIONS.flatMap(({ subject, weights }) => {
+      const coef = weights.get(key);
+      return coef ? [{ subject, coefficient: coef }] : [];
+    });
+    if (weightings.length > 0) weighted += 1;
     degrees.push({
       id,
       university_id: uni.id,
       name: { ca: row.nom_de_l_oferta },
       admission_score_max: 14,
-      weightings: coef ? [{ subject: 'mathematics-ii', coefficient: coef }] : [],
+      weightings,
     });
     cutoffs.push({
       degree_id: id,
