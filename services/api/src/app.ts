@@ -62,8 +62,12 @@ import {
 // Subjects we cover, with display names. Drives /v1/catalog/subjects and labels.
 const SUBJECT_NAMES: Record<string, { ca: string; es: string }> = {
   'mathematics-ii': { ca: 'Matemàtiques II', es: 'Matemáticas II' },
+  'mathematics-ccss': { ca: 'Matemàtiques aplicades a les CCSS', es: 'Matemáticas aplicadas a las CCSS' },
   physics: { ca: 'Física', es: 'Física' },
   chemistry: { ca: 'Química', es: 'Química' },
+  biology: { ca: 'Biologia', es: 'Biología' },
+  economics: { ca: "Economia de l'Empresa", es: 'Economía de la Empresa' },
+  history: { ca: 'Història', es: 'Historia' },
 };
 const subjectDisplay = (id: string): { ca: string; es: string } =>
   SUBJECT_NAMES[id] ?? { ca: id, es: id };

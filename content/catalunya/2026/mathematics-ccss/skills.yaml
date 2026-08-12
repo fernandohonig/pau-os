@@ -1,0 +1,152 @@
+# Matemàtiques aplicades a les Ciències Socials II — 2n de Batxillerat, Catalunya
+# (PAU / LOMLOE). Blocks: àlgebra (matrius, sistemes, programació lineal),
+# anàlisi (funcions, límits, derivades, integrals aplicades), probabilitat i
+# estadística (probabilitat, distribucions, inferència). subject: mathematics-ccss.
+
+# ── Àlgebra ──────────────────────────────────────────────────────────────────
+- id: matccss.algebra
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Àlgebra, es: Álgebra }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.algebra.matrices
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Matrius i operacions, es: Matrices y operaciones }
+  parent: matccss.algebra
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.algebra.systems
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistemes d'equacions lineals, es: Sistemas de ecuaciones lineales }
+  parent: matccss.algebra
+  prerequisites: [matccss.algebra.matrices]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.algebra.linear_programming
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Programació lineal, es: Programación lineal }
+  parent: matccss.algebra
+  prerequisites: [matccss.algebra.systems]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Anàlisi ──────────────────────────────────────────────────────────────────
+- id: matccss.analysis
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Anàlisi, es: Análisis }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.analysis.functions
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Funcions i models, es: Funciones y modelos }
+  parent: matccss.analysis
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.analysis.limits
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Límits i continuïtat, es: Límites y continuidad }
+  parent: matccss.analysis
+  prerequisites: [matccss.analysis.functions]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.analysis.derivatives
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Derivades i aplicacions, es: Derivadas y aplicaciones }
+  parent: matccss.analysis
+  prerequisites: [matccss.analysis.limits]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.analysis.integrals
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Integrals i àrea, es: Integrales y área }
+  parent: matccss.analysis
+  prerequisites: [matccss.analysis.derivatives]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Probabilitat i estadística ───────────────────────────────────────────────
+- id: matccss.statistics
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Probabilitat i estadística, es: Probabilidad y estadística }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.statistics.probability
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Probabilitat i condicionada, es: Probabilidad y condicionada }
+  parent: matccss.statistics
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.statistics.binomial
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Distribució binomial, es: Distribución binomial }
+  parent: matccss.statistics
+  prerequisites: [matccss.statistics.probability]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.statistics.normal
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Distribució normal, es: Distribución normal }
+  parent: matccss.statistics
+  prerequisites: [matccss.statistics.probability]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: matccss.statistics.inference
+  version: 1
+  subject: mathematics-ccss
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Mostreig i inferència, es: Muestreo e inferencia }
+  parent: matccss.statistics
+  prerequisites: [matccss.statistics.normal]
+  status: published
+  competencies: [reasoning, problem_solving]

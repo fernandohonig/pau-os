@@ -1,0 +1,227 @@
+# Història — 2n de Batxillerat, Catalunya (PAU / LOMLOE). Història contemporània
+# d'Espanya i Catalunya (segle XIX–actualitat). Blocks are chronological;
+# `prerequisites` encode the chronological/thematic order. subject: history.
+
+# ── Construcció de l'estat liberal (s. XIX) ──────────────────────────────────
+- id: history.liberal_state
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Construcció de l'estat liberal, es: Construcción del estado liberal }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.liberal_state.old_regime_crisis
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Crisi de l'Antic Règim (1808-1833), es: Crisis del Antiguo Régimen (1808-1833) }
+  parent: history.liberal_state
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.liberal_state.liberalism
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Implantació del liberalisme, es: Implantación del liberalismo }
+  parent: history.liberal_state
+  prerequisites: [history.liberal_state.old_regime_crisis]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Transformacions econòmiques i socials ────────────────────────────────────
+- id: history.industrialization
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Industrialització i canvis socials, es: Industrialización y cambios sociales }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.industrialization.economy
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Industrialització a Catalunya, es: Industrialización en Cataluña }
+  parent: history.industrialization
+  prerequisites: [history.liberal_state.liberalism]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.industrialization.labor_movement
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Moviment obrer, es: Movimiento obrero }
+  parent: history.industrialization
+  prerequisites: [history.industrialization.economy]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Restauració i catalanisme ────────────────────────────────────────────────
+- id: history.restoration
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: La Restauració, es: La Restauración }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.restoration.system
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistema polític de la Restauració, es: Sistema político de la Restauración }
+  parent: history.restoration
+  prerequisites: [history.liberal_state.liberalism]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.restoration.catalanism
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Catalanisme i nacionalismes, es: Catalanismo y nacionalismos }
+  parent: history.restoration
+  prerequisites: [history.restoration.system]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.restoration.crisis_1898
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Crisi del 98 i regeneracionisme, es: Crisis del 98 y regeneracionismo }
+  parent: history.restoration
+  prerequisites: [history.restoration.system]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Crisi del segle XX ───────────────────────────────────────────────────────
+- id: history.twentieth
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Crisi i conflictes del segle XX, es: Crisis y conflictos del siglo XX }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.twentieth.primo_rivera
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Dictadura de Primo de Rivera, es: Dictadura de Primo de Rivera }
+  parent: history.twentieth
+  prerequisites: [history.restoration.crisis_1898]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.twentieth.second_republic
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Segona República, es: Segunda República }
+  parent: history.twentieth
+  prerequisites: [history.twentieth.primo_rivera]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.twentieth.civil_war
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Guerra Civil (1936-1939), es: Guerra Civil (1936-1939) }
+  parent: history.twentieth
+  prerequisites: [history.twentieth.second_republic]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Franquisme ───────────────────────────────────────────────────────────────
+- id: history.francoism
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: El franquisme, es: El franquismo }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.francoism.regime
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Règim i evolució del franquisme, es: Régimen y evolución del franquismo }
+  parent: history.francoism
+  prerequisites: [history.twentieth.civil_war]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.francoism.opposition
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Oposició i final del franquisme, es: Oposición y final del franquismo }
+  parent: history.francoism
+  prerequisites: [history.francoism.regime]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Transició i democràcia ───────────────────────────────────────────────────
+- id: history.democracy
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Transició i democràcia, es: Transición y democracia }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.democracy.transition
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: La Transició, es: La Transición }
+  parent: history.democracy
+  prerequisites: [history.francoism.opposition]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.democracy.constitution
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Constitució de 1978 i autonomies, es: Constitución de 1978 y autonomías }
+  parent: history.democracy
+  prerequisites: [history.democracy.transition]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: history.democracy.catalonia
+  version: 1
+  subject: history
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Catalunya autonòmica i actualitat, es: Cataluña autonómica y actualidad }
+  parent: history.democracy
+  prerequisites: [history.democracy.constitution]
+  status: published
+  competencies: [reasoning, critical_thinking]

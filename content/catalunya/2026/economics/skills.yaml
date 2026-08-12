@@ -1,0 +1,200 @@
+# Economia de l'Empresa — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Blocks: l'empresa i el seu entorn, direcció i organització, producció,
+# àrea comercial (màrqueting), àrea financera, comptabilitat. subject: economics.
+
+# ── L'empresa i el seu entorn ────────────────────────────────────────────────
+- id: economics.firm
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: L'empresa i el seu entorn, es: La empresa y su entorno }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: economics.firm.types
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Tipus d'empresa i formes jurídiques, es: Tipos de empresa y formas jurídicas }
+  parent: economics.firm
+  status: published
+  competencies: [reasoning]
+
+- id: economics.firm.entrepreneurship
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Emprenedoria i creació d'empresa, es: Emprendimiento y creación de empresa }
+  parent: economics.firm
+  prerequisites: [economics.firm.types]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Direcció i organització ──────────────────────────────────────────────────
+- id: economics.management
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Direcció i organització, es: Dirección y organización }
+  status: published
+  competencies: [reasoning]
+
+- id: economics.management.organization
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Organització i funcions de direcció, es: Organización y funciones de dirección }
+  parent: economics.management
+  status: published
+  competencies: [reasoning]
+
+- id: economics.management.hr
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Recursos humans, es: Recursos humanos }
+  parent: economics.management
+  prerequisites: [economics.management.organization]
+  status: published
+  competencies: [reasoning]
+
+# ── Àrea de producció ────────────────────────────────────────────────────────
+- id: economics.production
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Àrea de producció, es: Área de producción }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: economics.production.productivity
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Productivitat i eficiència, es: Productividad y eficiencia }
+  parent: economics.production
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: economics.production.costs
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Costos i llindar de rendibilitat, es: Costes y umbral de rentabilidad }
+  parent: economics.production
+  prerequisites: [economics.production.productivity]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Àrea comercial (màrqueting) ──────────────────────────────────────────────
+- id: economics.marketing
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Àrea comercial, es: Área comercial }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: economics.marketing.market
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Mercat i demanda, es: Mercado y demanda }
+  parent: economics.marketing
+  status: published
+  competencies: [reasoning]
+
+- id: economics.marketing.mix
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Màrqueting mix, es: Marketing mix }
+  parent: economics.marketing
+  prerequisites: [economics.marketing.market]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# ── Àrea financera ───────────────────────────────────────────────────────────
+- id: economics.finance
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Àrea financera, es: Área financiera }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: economics.finance.sources
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Fonts de finançament, es: Fuentes de financiación }
+  parent: economics.finance
+  status: published
+  competencies: [reasoning]
+
+- id: economics.finance.investment
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Selecció d'inversions (VAN, TIR, pay-back)", es: "Selección de inversiones (VAN, TIR, pay-back)" }
+  parent: economics.finance
+  prerequisites: [economics.finance.sources]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Comptabilitat ────────────────────────────────────────────────────────────
+- id: economics.accounting
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Comptabilitat, es: Contabilidad }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: economics.accounting.balance
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Patrimoni i balanç de situació, es: Patrimonio y balance de situación }
+  parent: economics.accounting
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: economics.accounting.statements
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Comptes anuals i resultat, es: Cuentas anuales y resultado }
+  parent: economics.accounting
+  prerequisites: [economics.accounting.balance]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: economics.accounting.ratios
+  version: 1
+  subject: economics
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Anàlisi mitjançant ràtios, es: Análisis mediante ratios }
+  parent: economics.accounting
+  prerequisites: [economics.accounting.balance, economics.accounting.statements]
+  status: published
+  competencies: [reasoning, problem_solving]

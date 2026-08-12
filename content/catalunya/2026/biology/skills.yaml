@@ -1,0 +1,245 @@
+# Biologia — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Blocks: base molecular (biomolècules), la cèl·lula, metabolisme, genètica,
+# microbiologia i immunologia, biotecnologia. `parent` = block; `prerequisites`
+# = pedagogical DAG. Bilingual ca/es. subject: biology.
+
+# ── Base molecular (biomolècules) ────────────────────────────────────────────
+- id: biology.biomolecules
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Biomolècules, es: Biomoléculas }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.biomolecules.water_salts
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Aigua i sals minerals, es: Agua y sales minerales }
+  parent: biology.biomolecules
+  status: published
+  competencies: [reasoning]
+
+- id: biology.biomolecules.carbohydrates
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Glúcids, es: Glúcidos }
+  parent: biology.biomolecules
+  status: published
+  competencies: [reasoning]
+
+- id: biology.biomolecules.lipids
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Lípids, es: Lípidos }
+  parent: biology.biomolecules
+  status: published
+  competencies: [reasoning]
+
+- id: biology.biomolecules.proteins
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Proteïnes i enzims, es: Proteínas y enzimas }
+  parent: biology.biomolecules
+  prerequisites: [biology.biomolecules.water_salts]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.biomolecules.nucleic_acids
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Àcids nucleics, es: Ácidos nucleicos }
+  parent: biology.biomolecules
+  status: published
+  competencies: [reasoning]
+
+# ── La cèl·lula ──────────────────────────────────────────────────────────────
+- id: biology.cell
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: La cèl·lula, es: La célula }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.cell.structure
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estructura cel·lular i orgànuls, es: Estructura celular y orgánulos }
+  parent: biology.cell
+  prerequisites: [biology.biomolecules.proteins]
+  status: published
+  competencies: [reasoning]
+
+- id: biology.cell.membrane
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Membrana i transport, es: Membrana y transporte }
+  parent: biology.cell
+  prerequisites: [biology.cell.structure, biology.biomolecules.lipids]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.cell.cycle
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Cicle cel·lular (mitosi i meiosi), es: Ciclo celular (mitosis y meiosis) }
+  parent: biology.cell
+  prerequisites: [biology.cell.structure]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Metabolisme ──────────────────────────────────────────────────────────────
+- id: biology.metabolism
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Metabolisme, es: Metabolismo }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.metabolism.catabolism
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Catabolisme (respiració cel·lular), es: Catabolismo (respiración celular) }
+  parent: biology.metabolism
+  prerequisites: [biology.biomolecules.proteins, biology.cell.structure]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.metabolism.anabolism
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Anabolisme (fotosíntesi), es: Anabolismo (fotosíntesis) }
+  parent: biology.metabolism
+  prerequisites: [biology.metabolism.catabolism]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Genètica ─────────────────────────────────────────────────────────────────
+- id: biology.genetics
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Genètica, es: Genética }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.genetics.mendelian
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Herència mendeliana, es: Herencia mendeliana }
+  parent: biology.genetics
+  prerequisites: [biology.cell.cycle]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.genetics.molecular
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Genètica molecular (replicació i expressió), es: Genética molecular (replicación y expresión) }
+  parent: biology.genetics
+  prerequisites: [biology.biomolecules.nucleic_acids, biology.cell.cycle]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.genetics.mutations
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Mutacions, es: Mutaciones }
+  parent: biology.genetics
+  prerequisites: [biology.genetics.molecular]
+  status: published
+  competencies: [reasoning]
+
+# ── Microbiologia i immunologia ──────────────────────────────────────────────
+- id: biology.microbiology
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Microbiologia, es: Microbiología }
+  status: published
+  competencies: [reasoning]
+
+- id: biology.microbiology.microorganisms
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Microorganismes i el seu metabolisme, es: Microorganismos y su metabolismo }
+  parent: biology.microbiology
+  prerequisites: [biology.cell.structure]
+  status: published
+  competencies: [reasoning]
+
+- id: biology.immunology
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Immunologia, es: Inmunología }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: biology.immunology.immune_system
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sistema immunitari i resposta immune, es: Sistema inmunitario y respuesta inmune }
+  parent: biology.immunology
+  prerequisites: [biology.microbiology.microorganisms]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Biotecnologia ────────────────────────────────────────────────────────────
+- id: biology.biotechnology
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Biotecnologia, es: Biotecnología }
+  status: published
+  competencies: [reasoning]
+
+- id: biology.biotechnology.genetic_engineering
+  version: 1
+  subject: biology
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Enginyeria genètica i aplicacions, es: Ingeniería genética y aplicaciones }
+  parent: biology.biotechnology
+  prerequisites: [biology.genetics.molecular, biology.microbiology.microorganisms]
+  status: published
+  competencies: [reasoning, critical_thinking]
