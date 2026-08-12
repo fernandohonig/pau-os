@@ -58,6 +58,17 @@ const norm = (s: string): string =>
 const here = path.dirname(fileURLToPath(import.meta.url));
 const contentDir = path.resolve(here, '../../content/universities/catalunya/2026');
 
+// Official Matemàtiques II ponderació coefficients, extracted from the Generalitat
+// PDF and keyed for a university+name join (see ponderacions-mates-2026.json).
+interface PondFile {
+  entries: Array<{ uni: string; name: string; coef: number }>;
+}
+const pond = JSON.parse(
+  fs.readFileSync(path.join(here, 'ponderacions-mates-2026.json'), 'utf8'),
+) as PondFile;
+const mathWeight = new Map<string, number>();
+for (const e of pond.entries) mathWeight.set(`${e.uni}|${norm(e.name)}`, e.coef);
+
 async function main(): Promise<void> {
   process.stdout.write(`Fetching ${DATA_URL}\n`);
   const res = await fetch(DATA_URL);
@@ -102,6 +113,7 @@ async function main(): Promise<void> {
   const degrees: unknown[] = [];
   const cutoffs: unknown[] = [];
   const retrievedAt = new Date().toISOString();
+  let weighted = 0;
 
   for (const { row, year, score } of [...byKey.values()].sort((a, b) =>
     a.row.nom_de_l_oferta.localeCompare(b.row.nom_de_l_oferta),
@@ -109,12 +121,14 @@ async function main(): Promise<void> {
     const uni = UNIVERSITIES[row.sigles_universitat_responsable];
     usedUnis.add(uni.id);
     const id = `cat-${row.codi_oferta}`;
+    const coef = mathWeight.get(`${uni.id}|${norm(row.nom_de_l_oferta)}`);
+    if (coef) weighted += 1;
     degrees.push({
       id,
       university_id: uni.id,
       name: { ca: row.nom_de_l_oferta },
       admission_score_max: 14,
-      weightings: [],
+      weightings: coef ? [{ subject: 'mathematics-ii', coefficient: coef }] : [],
     });
     cutoffs.push({
       degree_id: id,
@@ -155,7 +169,8 @@ async function main(): Promise<void> {
   );
 
   process.stdout.write(
-    `✅ Wrote ${universities.length} universities, ${degrees.length} degrees, ${cutoffs.length} cut-offs.\n`,
+    `✅ Wrote ${universities.length} universities, ${degrees.length} degrees, ` +
+      `${cutoffs.length} cut-offs, ${weighted} with a Matemàtiques II weighting.\n`,
   );
 }
 
