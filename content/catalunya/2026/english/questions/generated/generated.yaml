@@ -1,0 +1,5068 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: ang-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "Look at those dark clouds! I think it ______ soon."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "Look at those dark clouds! I think it ______ soon."
+  options:
+    - id: A
+      ca: is going to rain
+      es: is going to rain
+    - id: B
+      ca: rains
+      es: rains
+    - id: C
+      ca: will have rained
+      es: will have rained
+    - id: D
+      ca: rained
+      es: rained
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Quan fem una predicció basada en una evidència present (els núvols foscos
+      que veiem ara), fem servir 'be going to' + infinitiu: 'it is going to
+      rain'. El present simple (B) s'usa per a fets habituals o veritats
+      generals, no per a prediccions concretes. 'Will have rained' (C) és futur
+      perfet i indica una acció acabada abans d'un moment futur. El passat
+      simple (D) no encaixa amb 'soon'."
+    es: "Cuando hacemos una predicción basada en una evidencia presente (las nubes
+      oscuras que vemos ahora), usamos 'be going to' + infinitivo: 'it is going
+      to rain'. El presente simple (B) se usa para hechos habituales o verdades
+      generales, no para predicciones concretas. 'Will have rained' (C) es
+      futuro perfecto e indica una acción acabada antes de un momento futuro. El
+      pasado simple (D) no encaja con 'soon'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "She ______ in Girona for ten years before she moved to Barcelona."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "She ______ in Girona for ten years before she moved to Barcelona."
+  options:
+    - id: A
+      ca: has lived
+      es: has lived
+    - id: B
+      ca: had lived
+      es: had lived
+    - id: C
+      ca: lives
+      es: lives
+    - id: D
+      ca: is living
+      es: is living
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Hi ha dues accions passades: viure a Girona i mudar-se a Barcelona
+      ('moved', passat simple). L'acció que passa ABANS de l'altra acció passada
+      s'expressa amb el past perfect: 'had lived'. El present perfect (A)
+      connecta el passat amb el present, però aquí tot passa al passat. El
+      present simple (C) i el present continu (D) no serveixen per a un context
+      clarament passat."
+    es: "Hay dos acciones pasadas: vivir en Girona y mudarse a Barcelona ('moved',
+      pasado simple). La acción que ocurre ANTES de la otra acción pasada se
+      expresa con el past perfect: 'had lived'. El present perfect (A) conecta
+      el pasado con el presente, pero aquí todo ocurre en el pasado. El presente
+      simple (C) y el presente continuo (D) no sirven para un contexto
+      claramente pasado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Identify the sentence that is grammatically CORRECT.
+    es: Identify the sentence that is grammatically CORRECT.
+  options:
+    - id: A
+      ca: I have seen her yesterday at the library.
+      es: I have seen her yesterday at the library.
+    - id: B
+      ca: I saw her yesterday at the library.
+      es: I saw her yesterday at the library.
+    - id: C
+      ca: I have saw her yesterday at the library.
+      es: I have saw her yesterday at the library.
+    - id: D
+      ca: I am seeing her yesterday at the library.
+      es: I am seeing her yesterday at the library.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "L'adverbi 'yesterday' indica un moment concret i acabat del passat, així
+      que cal el past simple: 'I saw her'. El present perfect (A) mai es fa
+      servir amb marcadors de temps passat acabat com 'yesterday' — és un error
+      molt comú d'influència del català/castellà. (C) barreja present perfect
+      amb el passat 'saw' en lloc del participi 'seen'. (D) usa el present
+      continu, incompatible amb 'yesterday'."
+    es: "El adverbio 'yesterday' indica un momento concreto y terminado del pasado,
+      así que se necesita el past simple: 'I saw her'. El present perfect (A)
+      nunca se usa con marcadores de tiempo pasado acabado como 'yesterday' — es
+      un error muy común por influencia del catalán/castellano. (C) mezcla
+      present perfect con el pasado 'saw' en lugar del participio 'seen'. (D)
+      usa el presente continuo, incompatible con 'yesterday'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: >-
+      Choose the correct option to complete the sentence:
+
+
+      "By the time the concert ends tonight, the band ______ for more than three
+      hours."
+    es: >-
+      Choose the correct option to complete the sentence:
+
+
+      "By the time the concert ends tonight, the band ______ for more than three
+      hours."
+  options:
+    - id: A
+      ca: will play
+      es: will play
+    - id: B
+      ca: will be playing
+      es: will be playing
+    - id: C
+      ca: will have been playing
+      es: will have been playing
+    - id: D
+      ca: has been playing
+      es: has been playing
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "L'expressió 'By the time... ends' fixa un punt futur, i 'for more than
+      three hours' indica la durada d'una acció que continua fins a aquest punt.
+      Això demana el future perfect continuous: 'will have been playing'. El
+      future simple (A) i el future continuous (B) no expressen la durada
+      completada fins a un moment futur. El present perfect continuous (D) es
+      refereix a la durada fins al present, no fins a un moment futur."
+    es: "La expresión 'By the time... ends' fija un punto futuro, y 'for more than
+      three hours' indica la duración de una acción que continúa hasta ese
+      punto. Esto requiere el future perfect continuous: 'will have been
+      playing'. El future simple (A) y el future continuous (B) no expresan la
+      duración completada hasta un momento futuro. El present perfect continuous
+      (D) se refiere a la duración hasta el presente, no hasta un momento
+      futuro."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.modals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: This is a public library. You ___ talk loudly here — it disturbs the other
+      readers.
+    es: This is a public library. You ___ talk loudly here — it disturbs the other
+      readers.
+  options:
+    - id: A
+      ca: mustn't
+      es: mustn't
+    - id: B
+      ca: don't have to
+      es: don't have to
+    - id: C
+      ca: can
+      es: can
+    - id: D
+      ca: wouldn't
+      es: wouldn't
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El context ('disturbs the other readers') indica una PROHIBICIÓ, i per
+      prohibir es fa servir 'mustn't' (= està prohibit). L'error típic és triar
+      'don't have to', que no és prohibició sinó absència d'obligació (no cal,
+      però pots). 'Can' donaria permís, i 'wouldn't' no expressa prohibició.
+      Resposta: A."
+    es: "El contexto ('disturbs the other readers') indica una PROHIBICIÓN, y para
+      prohibir se usa 'mustn't' (= está prohibido). El error típico es elegir
+      'don't have to', que no es prohibición sino ausencia de obligación (no
+      hace falta, pero puedes). 'Can' daría permiso y 'wouldn't' no expresa
+      prohibición. Respuesta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.modals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: By the age of five, Anna ___ already read and write without any help.
+    es: By the age of five, Anna ___ already read and write without any help.
+  options:
+    - id: A
+      ca: could
+      es: could
+    - id: B
+      ca: can
+      es: can
+    - id: C
+      ca: must
+      es: must
+    - id: D
+      ca: would can
+      es: would can
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Es parla d'una capacitat en el PASSAT ('By the age of five'), i la
+      habilitat passada s'expressa amb 'could'. 'Can' és present. 'Must' és
+      obligació/deducció, no habilitat. 'Would can' és impossible: dos modals no
+      es poden combinar. Resposta: A."
+    es: "Se habla de una capacidad en el PASADO ('By the age of five'), y la
+      habilidad pasada se expresa con 'could'. 'Can' es presente. 'Must' es
+      obligación/deducción, no habilidad. 'Would can' es imposible: no se pueden
+      combinar dos modales. Respuesta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.modals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: The office is completely dark and the main door is locked. They ___ be
+      working at this hour.
+    es: The office is completely dark and the main door is locked. They ___ be
+      working at this hour.
+  options:
+    - id: A
+      ca: can't
+      es: can't
+    - id: B
+      ca: mustn't
+      es: mustn't
+    - id: C
+      ca: haven't to
+      es: haven't to
+    - id: D
+      ca: don't have to
+      es: don't have to
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Hi ha evidència (foscor, porta tancada) que porta a una deducció negativa
+      de certesa: 'no és possible que...'. En anglès la deducció negativa és
+      'can't' (o 'couldn't'), no 'mustn't'. L'error més comú és usar 'mustn't',
+      que significa prohibició. 'Haven't to' és agramatical i 'don't have to'
+      indica manca d'obligació. Resposta: A."
+    es: "Hay evidencia (oscuridad, puerta cerrada) que lleva a una deducción
+      negativa de certeza: 'no es posible que...'. En inglés la deducción
+      negativa es 'can't' (o 'couldn't'), no 'mustn't'. El error más común es
+      usar 'mustn't', que significa prohibición. 'Haven't to' es agramatical y
+      'don't have to' indica falta de obligación. Respuesta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.modals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Tom failed the exam although he had studied a lot. Looking back, he ___
+      really nervous during the test.
+    es: Tom failed the exam although he had studied a lot. Looking back, he ___
+      really nervous during the test.
+  options:
+    - id: A
+      ca: must have been
+      es: must have been
+    - id: B
+      ca: must be
+      es: must be
+    - id: C
+      ca: had to be
+      es: had to be
+    - id: D
+      ca: should have been
+      es: should have been
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Fem una deducció lògica sobre el PASSAT (el context 'during the test' i
+      'Looking back'). La deducció de certesa en passat és 'must have +
+      participi' → 'must have been'. 'Must be' és deducció en present. 'Had to
+      be' seria obligació. 'Should have been' expressa retret/expectativa no
+      complerta, no una deducció. Resposta: A."
+    es: "Hacemos una deducción lógica sobre el PASADO (el contexto 'during the test'
+      y 'Looking back'). La deducción de certeza en pasado es 'must have +
+      participio' → 'must have been'. 'Must be' es deducción en presente. 'Had
+      to be' sería obligación. 'Should have been' expresa reproche/expectativa
+      incumplida, no una deducción. Respuesta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.modals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: You ___ me before deleting those files! Now I have lost a whole week of
+      work.
+    es: You ___ me before deleting those files! Now I have lost a whole week of
+      work.
+  options:
+    - id: A
+      ca: should have told
+      es: should have told
+    - id: B
+      ca: should tell
+      es: should tell
+    - id: C
+      ca: must have told
+      es: must have told
+    - id: D
+      ca: had to tell
+      es: had to tell
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "És una crítica sobre una acció passada que no es va fer (l'error que ara té
+      conseqüències). Es fa amb 'should have + participi' → 'should have told'.
+      'Should tell' és present/futur, no encaixa amb 'before deleting'. 'Must
+      have told' seria una deducció ('segur que ho vas dir'), no un retret. 'Had
+      to tell' és obligació complerta. Resposta: A."
+    es: "Es una crítica sobre una acción pasada que no se hizo (el error que ahora
+      tiene consecuencias). Se hace con 'should have + participio' → 'should
+      have told'. 'Should tell' es presente/futuro y no encaja con 'before
+      deleting'. 'Must have told' sería una deducción ('seguro que lo dijiste'),
+      no un reproche. 'Had to tell' es obligación cumplida. Respuesta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.modals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.85
+  question:
+    ca: "Choose the sentence that is CLOSEST in meaning to: \"I'm certain Maria
+      didn't get my message, because she never replied.\""
+    es: "Choose the sentence that is CLOSEST in meaning to: \"I'm certain Maria
+      didn't get my message, because she never replied.\""
+  options:
+    - id: A
+      ca: Maria can't have got my message.
+      es: Maria can't have got my message.
+    - id: B
+      ca: Maria mustn't have got my message.
+      es: Maria mustn't have got my message.
+    - id: C
+      ca: Maria may not have got my message.
+      es: Maria may not have got my message.
+    - id: D
+      ca: Maria didn't have to get my message.
+      es: Maria didn't have to get my message.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'I'm certain ... didn't' expressa una deducció negativa de CERTESA sobre el
+      passat, que en anglès es fa amb 'can't have + participi' → 'can't have
+      got'. 'Mustn't have' no s'usa per a deduccions (i sona a prohibició). 'May
+      not have' només indica possibilitat ('potser no'), no certesa. 'Didn't
+      have to' vol dir que no calia, cosa diferent. Resposta: A."
+    es: "'I'm certain ... didn't' expresa una deducción negativa de CERTEZA sobre el
+      pasado, que en inglés se hace con 'can't have + participio' → 'can't have
+      got'. 'Mustn't have' no se usa para deducciones (suena a prohibición).
+      'May not have' solo indica posibilidad ('quizás no'), no certeza. 'Didn't
+      have to' significa que no hacía falta, algo distinto. Respuesta: A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.conditionals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "If it ______ tomorrow, we will cancel the picnic."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "If it ______ tomorrow, we will cancel the picnic."
+  options:
+    - id: A
+      ca: rains
+      es: rains
+    - id: B
+      ca: will rain
+      es: will rain
+    - id: C
+      ca: would rain
+      es: would rain
+    - id: D
+      ca: rained
+      es: rained
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "És una condicional de tipus 1 (situació real i probable en el futur).
+      L'estructura és: If + present simple, ... will + infinitiu. Per tant, a la
+      clàusula amb 'if' cal el present simple 'rains', mai 'will' després de
+      'if'. 'will rain' (B) és l'error més típic dels estudiants; 'would rain'
+      (C) seria de tipus 2 i 'rained' (D) també correspon a la irreal."
+    es: "Es una condicional de tipo 1 (situación real y probable en el futuro). La
+      estructura es: If + present simple, ... will + infinitivo. Por tanto, en
+      la cláusula con 'if' se necesita el presente simple 'rains', nunca 'will'
+      tras 'if'. 'will rain' (B) es el error más típico; 'would rain' (C) sería
+      de tipo 2 y 'rained' (D) también corresponde a la irreal."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.conditionals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "If I ______ you, I would apologise to her immediately."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "If I ______ you, I would apologise to her immediately."
+  options:
+    - id: A
+      ca: am
+      es: am
+    - id: B
+      ca: was
+      es: was
+    - id: C
+      ca: were
+      es: were
+    - id: D
+      ca: would be
+      es: would be
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "És una condicional de tipus 2 (hipotètica, irreal en el present).
+      L'estructura és: If + past simple, ... would + infinitiu. Amb el verb 'to
+      be' en aquest tipus s'usa 'were' per a totes les persones ('If I were you'
+      és una fórmula fixa de consell). 'am' (A) barreja el present real; 'was'
+      (B) és col·loquial però incorrecte en examen formal; 'would be' (D) no pot
+      anar mai dins la clàusula 'if'."
+    es: "Es una condicional de tipo 2 (hipotética, irreal en el presente). La
+      estructura es: If + past simple, ... would + infinitivo. Con el verbo 'to
+      be' en este tipo se usa 'were' para todas las personas ('If I were you' es
+      una fórmula fija de consejo). 'am' (A) mezcla el presente real; 'was' (B)
+      es coloquial pero incorrecto en un examen formal; 'would be' (D) nunca
+      puede ir dentro de la cláusula 'if'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.conditionals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "If she ______ harder, she would have passed the exam last June."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "If she ______ harder, she would have passed the exam last June."
+  options:
+    - id: A
+      ca: studied
+      es: studied
+    - id: B
+      ca: had studied
+      es: had studied
+    - id: C
+      ca: would study
+      es: would study
+    - id: D
+      ca: has studied
+      es: has studied
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La clàusula principal ('would have passed') i la referència al passat
+      ('last June') indiquen una condicional de tipus 3 (irreal en el passat).
+      L'estructura és: If + past perfect (had + participi), ... would have +
+      participi. Per tant cal 'had studied'. 'studied' (A) seria tipus 2; 'would
+      study' (C) no pot anar amb 'if'; 'has studied' (D) és present perfect,
+      incorrecte aquí."
+    es: "La cláusula principal ('would have passed') y la referencia al pasado
+      ('last June') indican una condicional de tipo 3 (irreal en el pasado). La
+      estructura es: If + past perfect (had + participio), ... would have +
+      participio. Por tanto se necesita 'had studied'. 'studied' (A) sería tipo
+      2; 'would study' (C) no puede ir con 'if'; 'has studied' (D) es presente
+      perfecto, incorrecto aquí."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.conditionals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: >-
+      One of the underlined parts contains an error. Identify the INCORRECT
+      part:
+
+
+      "If you (A) will heat ice to 0 °C, it (B) melts and (C) turns into water
+      at (D) normal pressure."
+    es: >-
+      One of the underlined parts contains an error. Identify the INCORRECT
+      part:
+
+
+      "If you (A) will heat ice to 0 °C, it (B) melts and (C) turns into water
+      at (D) normal pressure."
+  options:
+    - id: A
+      ca: (A) will heat
+      es: (A) will heat
+    - id: B
+      ca: (B) melts
+      es: (B) melts
+    - id: C
+      ca: (C) turns
+      es: (C) turns
+    - id: D
+      ca: (D) normal pressure
+      es: (D) normal pressure
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "És una condicional de tipus 0 (fets científics sempre certs): If + present
+      simple, ... present simple. La frase enuncia una veritat general (el gel
+      es fon a 0 °C), així que la clàusula amb 'if' ha de dur present simple:
+      'If you heat', no 'will heat'. L'error és A. 'melts' (B) i 'turns' (C) són
+      presents simples correctes i (D) és una frase preposicional correcta."
+    es: "Es una condicional de tipo 0 (hechos científicos siempre verdaderos): If +
+      present simple, ... present simple. La frase enuncia una verdad general
+      (el hielo se funde a 0 °C), así que la cláusula con 'if' debe llevar
+      presente simple: 'If you heat', no 'will heat'. El error es A. 'melts' (B)
+      y 'turns' (C) son presentes simples correctos y (D) es una frase
+      preposicional correcta."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.conditionals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: |-
+      Complete the sentence keeping the same meaning as:
+
+      "I didn't take a taxi, so I arrived late."
+
+      "If I ______ a taxi, I wouldn't have arrived late."
+    es: |-
+      Complete the sentence keeping the same meaning as:
+
+      "I didn't take a taxi, so I arrived late."
+
+      "If I ______ a taxi, I wouldn't have arrived late."
+  options:
+    - id: A
+      ca: took
+      es: took
+    - id: B
+      ca: had taken
+      es: had taken
+    - id: C
+      ca: have taken
+      es: have taken
+    - id: D
+      ca: would take
+      es: would take
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La frase original parla d'un fet passat que no va succeir (no vaig agafar
+      taxi). Per lamentar un fet passat s'usa la condicional de tipus 3: If +
+      past perfect, ... would have + participi. La clàusula principal ja té
+      'wouldn't have arrived', així que la clàusula 'if' ha de ser 'had taken'.
+      'took' (A) és tipus 2 (present hipotètic); 'have taken' (C) i 'would take'
+      (D) no encaixen amb la seqüència del tipus 3."
+    es: "La frase original habla de un hecho pasado que no ocurrió (no cogí taxi).
+      Para lamentar un hecho pasado se usa la condicional de tipo 3: If + past
+      perfect, ... would have + participio. La cláusula principal ya tiene
+      'wouldn't have arrived', así que la cláusula 'if' debe ser 'had taken'.
+      'took' (A) es tipo 2 (presente hipotético); 'have taken' (C) y 'would
+      take' (D) no encajan con la secuencia del tipo 3."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.conditionals
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: |-
+      Choose the option that best completes this mixed conditional:
+
+      "If she ______ the medical degree years ago, she would be a doctor now."
+    es: |-
+      Choose the option that best completes this mixed conditional:
+
+      "If she ______ the medical degree years ago, she would be a doctor now."
+  options:
+    - id: A
+      ca: finished
+      es: finished
+    - id: B
+      ca: had finished
+      es: had finished
+    - id: C
+      ca: would finish
+      es: would finish
+    - id: D
+      ca: has finished
+      es: has finished
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "És una condicional mixta: una condició passada ('years ago') amb una
+      conseqüència present ('would be a doctor now'). L'estructura és: If + past
+      perfect, ... would + infinitiu. La clàusula 'if' fa referència al passat,
+      per tant cal el past perfect 'had finished'. 'finished' (A) seria past
+      simple (tipus 2, present); 'would finish' (C) no va amb 'if'; 'has
+      finished' (D) és present perfect i no expressa la hipòtesi passada
+      irreal."
+    es: "Es una condicional mixta: una condición pasada ('years ago') con una
+      consecuencia presente ('would be a doctor now'). La estructura es: If +
+      past perfect, ... would + infinitivo. La cláusula 'if' se refiere al
+      pasado, por tanto se necesita el past perfect 'had finished'. 'finished'
+      (A) sería pasado simple (tipo 2, presente); 'would finish' (C) no va con
+      'if'; 'has finished' (D) es presente perfecto y no expresa la hipótesis
+      pasada irreal."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.passive
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: |-
+      Complete the sentence with the correct passive form:
+
+      "The new library ______ by the local council last year."
+    es: |-
+      Complete the sentence with the correct passive form:
+
+      "The new library ______ by the local council last year."
+  options:
+    - id: A
+      ca: was built
+      es: was built
+    - id: B
+      ca: is built
+      es: is built
+    - id: C
+      ca: was build
+      es: was build
+    - id: D
+      ca: has built
+      es: has built
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'expressió temporal \"last year\" indica passat simple. La passiva es
+      forma amb \"was/were\" + participi passat. Com que \"library\" és
+      singular, fem servir \"was\", i el participi de \"build\" és \"built\":
+      \"was built\". \"B\" (is built) és present, no encaixa amb \"last year\".
+      \"C\" fa servir la forma base \"build\" en lloc del participi (error
+      freqüent). \"D\" (has built) és present perfet actiu, no passiu."
+    es: 'La expresión temporal "last year" indica pasado simple. La pasiva se forma
+      con "was/were" + participio pasado. Como "library" es singular, usamos
+      "was", y el participio de "build" es "built": "was built". "B" (is built)
+      es presente, no encaja con "last year". "C" usa la forma base "build" en
+      lugar del participio (error frecuente). "D" (has built) es presente
+      perfecto activo, no pasivo.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.passive
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: >-
+      Transform the active sentence into the passive without changing the
+      meaning:
+
+
+      "Someone is cleaning the offices right now."
+    es: >-
+      Transform the active sentence into the passive without changing the
+      meaning:
+
+
+      "Someone is cleaning the offices right now."
+  options:
+    - id: A
+      ca: The offices are being cleaned right now.
+      es: The offices are being cleaned right now.
+    - id: B
+      ca: The offices are cleaned right now.
+      es: The offices are cleaned right now.
+    - id: C
+      ca: The offices is being cleaned right now.
+      es: The offices is being cleaned right now.
+    - id: D
+      ca: The offices have been cleaned right now.
+      es: The offices have been cleaned right now.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La frase activa està en present continu (is cleaning). La passiva del
+      present continu es forma amb "am/is/are + being + participi". Com que
+      "offices" és plural, fem servir "are being cleaned". "B" és present simple
+      passiu (are cleaned), que perd l'aspecte continu. "C" té error de
+      concordança ("is" amb subjecte plural). "D" és present perfet passiu, que
+      canvia el significat (acció acabada, no en curs).
+    es: La frase activa está en presente continuo (is cleaning). La pasiva del
+      presente continuo se forma con "am/is/are + being + participio". Como
+      "offices" es plural, usamos "are being cleaned". "B" es presente simple
+      pasivo (are cleaned), que pierde el aspecto continuo. "C" tiene error de
+      concordancia ("is" con sujeto plural). "D" es presente perfecto pasivo,
+      que cambia el significado (acción terminada, no en curso).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.passive
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "Identify the sentence that contains a grammatical error in the passive
+      voice:"
+    es: "Identify the sentence that contains a grammatical error in the passive
+      voice:"
+  options:
+    - id: A
+      ca: The results will be announced tomorrow.
+      es: The results will be announced tomorrow.
+    - id: B
+      ca: This song was wrote by a famous composer.
+      es: This song was wrote by a famous composer.
+    - id: C
+      ca: The bridge has been repaired recently.
+      es: The bridge has been repaired recently.
+    - id: D
+      ca: The letters are delivered every morning.
+      es: The letters are delivered every morning.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: 'La frase "B" és incorrecta perquè fa servir el passat simple "wrote" en
+      lloc del participi passat "written". La passiva sempre necessita el
+      participi: "was written". És un error molt comú confondre la segona forma
+      del verb (passat) amb la tercera (participi). Les altres frases són
+      correctes: "will be announced" (futur passiu), "has been repaired"
+      (present perfet passiu) i "are delivered" (present simple passiu).'
+    es: 'La frase "B" es incorrecta porque usa el pasado simple "wrote" en lugar del
+      participio pasado "written". La pasiva siempre necesita el participio:
+      "was written". Es un error muy común confundir la segunda forma del verbo
+      (pasado) con la tercera (participio). Las demás frases son correctas:
+      "will be announced" (futuro pasivo), "has been repaired" (presente
+      perfecto pasivo) y "are delivered" (presente simple pasivo).'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.passive
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: |-
+      Choose the correct passive form:
+
+      "The report ______ before the meeting starts."
+    es: |-
+      Choose the correct passive form:
+
+      "The report ______ before the meeting starts."
+  options:
+    - id: A
+      ca: must be finished
+      es: must be finished
+    - id: B
+      ca: must finished
+      es: must finished
+    - id: C
+      ca: must be finish
+      es: must be finish
+    - id: D
+      ca: must to be finished
+      es: must to be finished
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: 'La passiva amb un verb modal es forma amb "modal + be + participi passat":
+      "must be finished". "B" omet "be", que és obligatori en la passiva modal.
+      "C" fa servir la forma base "finish" en lloc del participi "finished". "D"
+      afegeix "to" després del modal, però els modals com "must" mai van seguits
+      de "to".'
+    es: 'La pasiva con un verbo modal se forma con "modal + be + participio pasado":
+      "must be finished". "B" omite "be", que es obligatorio en la pasiva modal.
+      "C" usa la forma base "finish" en lugar del participio "finished". "D"
+      añade "to" después del modal, pero los modales como "must" nunca van
+      seguidos de "to".'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.passive
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: |-
+      Rewrite in the passive, keeping the same meaning:
+
+      "They gave the winner a medal."
+
+      Choose the option that focuses on the person.
+    es: |-
+      Rewrite in the passive, keeping the same meaning:
+
+      "They gave the winner a medal."
+
+      Choose the option that focuses on the person.
+  options:
+    - id: A
+      ca: The winner was given a medal.
+      es: The winner was given a medal.
+    - id: B
+      ca: A medal was given the winner.
+      es: A medal was given the winner.
+    - id: C
+      ca: The winner was gave a medal.
+      es: The winner was gave a medal.
+    - id: D
+      ca: The winner is given a medal.
+      es: The winner is given a medal.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Amb verbs de doble objecte com \"give\", qualsevol dels dos objectes pot
+      ser el subjecte de la passiva. Per centrar-nos en la persona, \"the
+      winner\" passa a subjecte: \"The winner was given a medal.\" \"B\" posa
+      \"a medal\" com a subjecte però deixa \"the winner\" sense la preposició
+      \"to\" (hauria de ser \"...to the winner\"), i a més no se centra en la
+      persona. \"C\" fa servir el passat \"gave\" en lloc del participi
+      \"given\". \"D\" fa servir present (is) quan l'original és passat (gave)."
+    es: 'Con verbos de doble objeto como "give", cualquiera de los dos objetos puede
+      ser el sujeto de la pasiva. Para centrarnos en la persona, "the winner"
+      pasa a sujeto: "The winner was given a medal." "B" pone "a medal" como
+      sujeto pero deja "the winner" sin la preposición "to" (debería ser "...to
+      the winner"), y además no se centra en la persona. "C" usa el pasado
+      "gave" en lugar del participio "given". "D" usa presente (is) cuando el
+      original es pasado (gave).'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.passive
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.85
+  question:
+    ca: >-
+      Read the short text and choose the best passive transformation of the
+      underlined sentence:
+
+
+      "The factory had a serious problem. People believe that pollution caused
+      the illness."
+
+
+      Underlined: "People believe that pollution caused the illness."
+    es: >-
+      Read the short text and choose the best passive transformation of the
+      underlined sentence:
+
+
+      "The factory had a serious problem. People believe that pollution caused
+      the illness."
+
+
+      Underlined: "People believe that pollution caused the illness."
+  options:
+    - id: A
+      ca: Pollution is believed to have caused the illness.
+      es: Pollution is believed to have caused the illness.
+    - id: B
+      ca: Pollution is believed to cause the illness.
+      es: Pollution is believed to cause the illness.
+    - id: C
+      ca: Pollution was believed to caused the illness.
+      es: Pollution was believed to caused the illness.
+    - id: D
+      ca: It is believed that pollution has caused the illness by people.
+      es: It is believed that pollution has caused the illness by people.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En la passiva impersonal amb verbs d'opinió (believe, think...), quan
+      l'acció de la subordinada és anterior a la del verb principal, es fa
+      servir un infinitiu perfet: \"subject + is believed + to have +
+      participi\". Com que \"believe\" està en present i \"caused\" en passat,
+      cal \"to have caused\". \"B\" fa servir infinitiu simple \"to cause\", que
+      indicaria simultaneïtat, no anterioritat. \"C\" combina malament \"to\" +
+      passat \"caused\" (hauria de ser infinitiu). \"D\" afegeix \"by people\",
+      cosa redundant i poc natural en aquesta estructura impersonal, i canvia el
+      temps."
+    es: 'En la pasiva impersonal con verbos de opinión (believe, think...), cuando
+      la acción de la subordinada es anterior a la del verbo principal, se usa
+      un infinitivo perfecto: "subject + is believed + to have + participio".
+      Como "believe" está en presente y "caused" en pasado, se necesita "to have
+      caused". "B" usa infinitivo simple "to cause", que indicaría
+      simultaneidad, no anterioridad. "C" combina mal "to" + pasado "caused"
+      (debería ser infinitivo). "D" añade "by people", algo redundante y poco
+      natural en esta estructura impersonal, y cambia el tiempo.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.reported_speech
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Choose the correct reported speech. Tom said, "I don't like coffee."
+    es: Choose the correct reported speech. Tom said, "I don't like coffee."
+  options:
+    - id: A
+      ca: Tom said that he doesn't like coffee.
+      es: Tom said that he doesn't like coffee.
+    - id: B
+      ca: Tom said that he didn't like coffee.
+      es: Tom said that he didn't like coffee.
+    - id: C
+      ca: Tom said that I didn't like coffee.
+      es: Tom said that I didn't like coffee.
+    - id: D
+      ca: Tom said that he don't like coffee.
+      es: Tom said that he don't like coffee.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "En estil indirecte amb 'said' (verb introductori en passat) el present
+      simple fa el desplaçament ('backshift') al past simple: 'don't like' →
+      'didn't like'. A més, el subjecte 'I' del discurs directe (que és el
+      mateix Tom) passa a 'he'. Per tant la resposta correcta és B. A no fa el
+      backshift; C canvia malament el subjecte a 'I'; D barreja 'he' amb 'don't'
+      (concordança incorrecta)."
+    es: "En estilo indirecto con 'said' (verbo introductorio en pasado) el presente
+      simple retrocede ('backshift') al pasado simple: 'don't like' → 'didn't
+      like'. Además, el sujeto 'I' del discurso directo (que es el propio Tom)
+      pasa a 'he'. Por eso la correcta es B. A no aplica el backshift; C cambia
+      mal el sujeto a 'I'; D mezcla 'he' con 'don't' (concordancia incorrecta)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.reported_speech
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Report the question. She asked me, "Where are you going?"
+    es: Report the question. She asked me, "Where are you going?"
+  options:
+    - id: A
+      ca: She asked me where was I going.
+      es: She asked me where was I going.
+    - id: B
+      ca: She asked me where I was going.
+      es: She asked me where I was going.
+    - id: C
+      ca: She asked me where I am going.
+      es: She asked me where I am going.
+    - id: D
+      ca: She asked me where are you going.
+      es: She asked me where are you going.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "En les preguntes en estil indirecte l'ordre torna a ser el d'una oració
+      afirmativa (subjecte + verb), no hi ha inversió ni signe d'interrogació. A
+      més, amb verb introductori en passat cal el backshift: 'are going' → 'was
+      going', i 'you' → 'I'. Per tant B. A manté la inversió 'was I'; C no fa
+      backshift ('am'); D copia la pregunta directa amb inversió i sense canviar
+      'you'."
+    es: "En las preguntas en estilo indirecto el orden vuelve a ser el de una
+      oración afirmativa (sujeto + verbo), sin inversión ni signo de
+      interrogación. Además, con verbo introductorio en pasado hay backshift:
+      'are going' → 'was going', y 'you' → 'I'. Por eso B. A mantiene la
+      inversión 'was I'; C no hace backshift ('am'); D copia la pregunta directa
+      con inversión y sin cambiar 'you'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.reported_speech
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "\"Please don't wait for me,\" Julia said to me. Choose the correct report."
+    es: "\"Please don't wait for me,\" Julia said to me. Choose the correct report."
+  options:
+    - id: A
+      ca: Julia said me not to wait for her.
+      es: Julia said me not to wait for her.
+    - id: B
+      ca: Julia told me to don't wait for her.
+      es: Julia told me to don't wait for her.
+    - id: C
+      ca: Julia asked me not to wait for her.
+      es: Julia asked me not to wait for her.
+    - id: D
+      ca: Julia asked me to not waiting for her.
+      es: Julia asked me to not waiting for her.
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "Les ordres i peticions es reporten amb 'told/asked + complement + (not) to
+      + infinitiu'. La forma negativa és 'not to + infinitiu': 'asked me not to
+      wait'. També canvia 'me' → 'her'. Per tant C. A usa 'said me' (incorrecte:
+      'say' no porta complement directe de persona sense 'to'); B usa 'to don't'
+      (impossible); D usa 'to not waiting' (mai gerundi després de 'to' aquí)."
+    es: "Las órdenes y peticiones se reportan con 'told/asked + complemento + (not)
+      to + infinitivo'. La forma negativa es 'not to + infinitivo': 'asked me
+      not to wait'. También cambia 'me' → 'her'. Por eso C. A usa 'said me'
+      (incorrecto: 'say' no lleva complemento de persona sin 'to'); B usa 'to
+      don't' (imposible); D usa 'to not waiting' (nunca gerundio tras 'to'
+      aquí)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.reported_speech
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: 'Spoken the following week: "I will call you here tomorrow," Mark told Anna.
+      Choose the correct report.'
+    es: 'Spoken the following week: "I will call you here tomorrow," Mark told Anna.
+      Choose the correct report.'
+  options:
+    - id: A
+      ca: Mark told Anna that he will call her here tomorrow.
+      es: Mark told Anna that he will call her here tomorrow.
+    - id: B
+      ca: Mark told Anna that he would call her there the next day.
+      es: Mark told Anna that he would call her there the next day.
+    - id: C
+      ca: Mark told Anna that he would call me here the following day.
+      es: Mark told Anna that he would call me here the following day.
+    - id: D
+      ca: Mark said Anna that he would call her there the day after.
+      es: Mark said Anna that he would call her there the day after.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Cal fer tres canvis: (1) backshift 'will' → 'would'; (2) el lloc 'here' →
+      'there'; (3) el temps 'tomorrow' → 'the next day' / 'the following day'.
+      També 'you' → 'her'. Tot això ho compleix B. A no fa cap backshift ni
+      canvi d'adverbis; C canvia malament 'you' → 'me' i manté 'here'; D usa
+      'said Anna' (hauria de ser 'told Anna' o 'said to Anna')."
+    es: "Hay que hacer tres cambios: (1) backshift 'will' → 'would'; (2) el lugar
+      'here' → 'there'; (3) el tiempo 'tomorrow' → 'the next day' / 'the
+      following day'. También 'you' → 'her'. Todo eso lo cumple B. A no hace
+      backshift ni cambia adverbios; C cambia mal 'you' → 'me' y mantiene
+      'here'; D usa 'said Anna' (debería ser 'told Anna' o 'said to Anna')."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.reported_speech
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: '"You must finish it now, but I can help you," the teacher said. Choose the
+      correct report.'
+    es: '"You must finish it now, but I can help you," the teacher said. Choose the
+      correct report.'
+  options:
+    - id: A
+      ca: The teacher said that I must finished it then but he can help me.
+      es: The teacher said that I must finished it then but he can help me.
+    - id: B
+      ca: The teacher said that I had to finish it then but he could help me.
+      es: The teacher said that I had to finish it then but he could help me.
+    - id: C
+      ca: The teacher said that I must to finish it now but he could help me.
+      es: The teacher said that I must to finish it now but he could help me.
+    - id: D
+      ca: The teacher told that I had to finish it then but he can help me.
+      es: The teacher told that I had to finish it then but he can help me.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: En el backshift, 'must' (obligació) es converteix habitualment en 'had to',
+      i 'can' passa a 'could'. També 'now' → 'then' i els pronoms canvien ('you'
+      → 'I', 'I' → 'he'). Tot correcte a B. A deixa 'must finished' (doble marca
+      de temps) i 'can'; C usa 'must to finish' (impossible) i manté 'now'; D
+      usa 'told that' sense complement (cal 'told me that' o 'said that') i
+      manté 'can'.
+    es: En el backshift, 'must' (obligación) suele convertirse en 'had to', y 'can'
+      pasa a 'could'. También 'now' → 'then' y los pronombres cambian ('you' →
+      'I', 'I' → 'he'). Todo correcto en B. A deja 'must finished' (doble marca
+      de tiempo) y 'can'; C usa 'must to finish' (imposible) y mantiene 'now'; D
+      usa 'told that' sin complemento (hace falta 'told me that' o 'said that')
+      y mantiene 'can'.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.reported_speech
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: On Monday she said, "I finished the project yesterday." You report it on
+      Wednesday. Choose the fully correct report.
+    es: On Monday she said, "I finished the project yesterday." You report it on
+      Wednesday. Choose the fully correct report.
+  options:
+    - id: A
+      ca: She said she had finished the project yesterday.
+      es: She said she had finished the project yesterday.
+    - id: B
+      ca: She said she finished the project the day before.
+      es: She said she finished the project the day before.
+    - id: C
+      ca: She said she had finished the project the previous day.
+      es: She said she had finished the project the previous day.
+    - id: D
+      ca: She has said she finished the project the day before.
+      es: She has said she finished the project the day before.
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "Dos canvis: (1) el past simple 'finished' fa backshift al past perfect 'had
+      finished'; (2) 'yesterday' (dit dilluns es refereix a diumenge) → 'the
+      previous day' / 'the day before'. C compleix les dues coses. A manté
+      'yesterday' (adverbi no desplaçat); B no fa el backshift ('finished'); D
+      canvia malament el verb introductori a present perfect ('has said') i
+      tampoc fa el backshift."
+    es: "Dos cambios: (1) el pasado simple 'finished' hace backshift al pasado
+      perfecto 'had finished'; (2) 'yesterday' (dicho el lunes se refiere al
+      domingo) → 'the previous day' / 'the day before'. C cumple ambas cosas. A
+      mantiene 'yesterday' (adverbio no desplazado); B no hace el backshift
+      ('finished'); D cambia mal el verbo introductorio a presente perfecto
+      ('has said') y tampoco hace el backshift."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.relative_clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "Alexander Fleming was the scientist ___ discovered penicillin in 1928."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "Alexander Fleming was the scientist ___ discovered penicillin in 1928."
+  options:
+    - id: A
+      ca: who
+      es: who
+    - id: B
+      ca: which
+      es: which
+    - id: C
+      ca: whose
+      es: whose
+    - id: D
+      ca: where
+      es: where
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'antecedent és 'the scientist', una persona i el subjecte de l'oració de
+      relatiu, per tant fem servir 'who'. 'which' només s'usa per a coses o
+      animals (error molt comú en catalanoparlants, que tradueixen 'que' sempre
+      igual); 'whose' indica possessió ('de qui') i 'where' es refereix a un
+      lloc. Resposta correcta: who."
+    es: "El antecedente es 'the scientist', una persona y sujeto de la oración de
+      relativo, así que se usa 'who'. 'which' solo se emplea para cosas o
+      animales (error frecuente al traducir 'que' siempre igual); 'whose' indica
+      posesión ('cuyo') y 'where' se refiere a un lugar. Respuesta correcta:
+      who."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.relative_clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "That's the neighbour ___ car was damaged during the storm last night."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "That's the neighbour ___ car was damaged during the storm last night."
+  options:
+    - id: A
+      ca: who's
+      es: who's
+    - id: B
+      ca: whose
+      es: whose
+    - id: C
+      ca: who
+      es: who
+    - id: D
+      ca: which
+      es: which
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Cal un pronom relatiu possessiu perquè el cotxe pertany al veí: 'whose car'
+      (el cotxe del qual / el cotxe del veí). 'who's' és la contracció de 'who
+      is/has' i sona igual però no és possessiu (error ortogràfic típic). 'who'
+      seria subjecte, no possessiu, i 'which' és per a coses. Resposta correcta:
+      whose."
+    es: "Se necesita un pronombre relativo posesivo porque el coche pertenece al
+      vecino: 'whose car' (cuyo coche). 'who's' es la contracción de 'who
+      is/has' y suena igual pero no es posesivo (error ortográfico típico).
+      'who' sería sujeto, no posesivo, y 'which' es para cosas. Respuesta
+      correcta: whose."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.relative_clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "This is the little restaurant ___ we had dinner on our anniversary."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "This is the little restaurant ___ we had dinner on our anniversary."
+  options:
+    - id: A
+      ca: which
+      es: which
+    - id: B
+      ca: that
+      es: that
+    - id: C
+      ca: where
+      es: where
+    - id: D
+      ca: who
+      es: who
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "L'antecedent és un lloc ('restaurant') i darrere no hi ha cap preposició,
+      així que usem l'adverbi relatiu 'where' (= 'in which'). 'which' o 'that'
+      sols serien correctes amb una preposició ('in which we had dinner' / 'that
+      we had dinner in'); sense preposició són agramaticals aquí, un error molt
+      comú. 'who' és per a persones. Resposta correcta: where."
+    es: "El antecedente es un lugar ('restaurant') y detrás no hay preposición, así
+      que usamos el adverbio relativo 'where' (= 'in which'). 'which' o 'that'
+      solo serían correctos con una preposición ('in which we had dinner' /
+      'that we had dinner in'); sin preposición son agramaticales aquí, error
+      muy frecuente. 'who' es para personas. Respuesta correcta: where."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.relative_clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: In which sentence can the relative pronoun be LEFT OUT (omitted) without
+      making the sentence incorrect?
+    es: In which sentence can the relative pronoun be LEFT OUT (omitted) without
+      making the sentence incorrect?
+  options:
+    - id: A
+      ca: The woman who lives next door is a nurse.
+      es: The woman who lives next door is a nurse.
+    - id: B
+      ca: The keys that open this door are missing.
+      es: The keys that open this door are missing.
+    - id: C
+      ca: The email that I sent you yesterday bounced back.
+      es: The email that I sent you yesterday bounced back.
+    - id: D
+      ca: The train which leaves at 6 is always fast.
+      es: The train which leaves at 6 is always fast.
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "El pronom relatiu es pot ometre només quan és el COMPLEMENT (objecte) de
+      l'oració de relatiu, no quan n'és el subjecte. A C, 'I' és el subjecte i
+      'that' és l'objecte de 'sent' → 'The email I sent you...' és correcte. A
+      A, B i D el relatiu és el subjecte del verb (lives, open, leaves) i no es
+      pot suprimir. Resposta correcta: C."
+    es: "El pronombre relativo solo puede omitirse cuando es el COMPLEMENTO (objeto)
+      de la oración de relativo, no cuando es el sujeto. En C, 'I' es el sujeto
+      y 'that' es el objeto de 'sent' → 'The email I sent you...' es correcto.
+      En A, B y D el relativo es el sujeto del verbo (lives, open, leaves) y no
+      puede suprimirse. Respuesta correcta: C."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.relative_clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: |-
+      Combine the two sentences into ONE, keeping the same meaning:
+
+      "The results were finally published. Nobody had expected them."
+
+      "The results, ___ nobody had expected, were finally published."
+    es: |-
+      Combine the two sentences into ONE, keeping the same meaning:
+
+      "The results were finally published. Nobody had expected them."
+
+      "The results, ___ nobody had expected, were finally published."
+  options:
+    - id: A
+      ca: that
+      es: that
+    - id: B
+      ca: which
+      es: which
+    - id: C
+      ca: what
+      es: what
+    - id: D
+      ca: who
+      es: who
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "És una oració de relatiu explicativa (no-defining), marcada per les comes,
+      i l'antecedent és una cosa ('the results'). En les explicatives NO es pot
+      fer servir 'that'; cal 'which'. 'what' no és pronom relatiu (significa
+      'allò que') i 'who' és per a persones. Resposta correcta: which."
+    es: "Es una oración de relativo explicativa (no especificativa), marcada por las
+      comas, y el antecedente es una cosa ('the results'). En las explicativas
+      NO se puede usar 'that'; se necesita 'which'. 'what' no es pronombre
+      relativo (significa 'lo que') y 'who' es para personas. Respuesta
+      correcta: which."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.relative_clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Which sentence is grammatically CORRECT?
+    es: Which sentence is grammatically CORRECT?
+  options:
+    - id: A
+      ca: Paris, that is the capital of France, attracts millions of tourists.
+      es: Paris, that is the capital of France, attracts millions of tourists.
+    - id: B
+      ca: Paris, which is the capital of France, attracts millions of tourists.
+      es: Paris, which is the capital of France, attracts millions of tourists.
+    - id: C
+      ca: Paris which is the capital of France attracts millions of tourists.
+      es: Paris which is the capital of France attracts millions of tourists.
+    - id: D
+      ca: Paris, what is the capital of France, attracts millions of tourists.
+      es: Paris, what is the capital of France, attracts millions of tourists.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "'Paris' és un nom propi únic, així que la informació hi és afegida en una
+      oració explicativa (no-defining), que ha d'anar entre comes i introduïda
+      per 'which' (per a coses). A és incorrecta perquè 'that' no s'usa en
+      explicatives; C omet les comes obligatòries; D usa 'what', que no és
+      pronom relatiu. Resposta correcta: B."
+    es: "'Paris' es un nombre propio único, por lo que la información se añade en
+      una oración explicativa (no especificativa), que debe ir entre comas e
+      introducida por 'which' (para cosas). A es incorrecta porque 'that' no se
+      usa en explicativas; C omite las comas obligatorias; D usa 'what', que no
+      es pronombre relativo. Respuesta correcta: B."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.comparatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: >-
+      Choose the correct option to complete the sentence:
+
+
+      "This year's exam was ______ than last year's, so most students passed
+      easily."
+    es: >-
+      Choose the correct option to complete the sentence:
+
+
+      "This year's exam was ______ than last year's, so most students passed
+      easily."
+  options:
+    - id: A
+      ca: more easy
+      es: more easy
+    - id: B
+      ca: easier
+      es: easier
+    - id: C
+      ca: easiest
+      es: easiest
+    - id: D
+      ca: as easy
+      es: as easy
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Amb adjectius curts de dues síl·labes acabats en -y, el comparatiu es forma
+      canviant la -y per -ier: 'easy' → 'easier'. No es diu 'more easy' (A)
+      perquè 'more' només s'usa amb adjectius llargs. 'easiest' (C) és
+      superlatiu, no comparatiu, i aquí hi ha 'than'. 'as easy' (D) necessitaria
+      'as ... as', no 'than'."
+    es: "Con adjetivos cortos de dos sílabas terminados en -y, el comparativo se
+      forma cambiando la -y por -ier: 'easy' → 'easier'. No se dice 'more easy'
+      (A) porque 'more' solo se usa con adjetivos largos. 'easiest' (C) es
+      superlativo, no comparativo, y aquí aparece 'than'. 'as easy' (D) exigiría
+      'as ... as', no 'than'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.comparatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: >-
+      Choose the correct option to complete the sentence:
+
+
+      "Of all the students in the class, Marta got ______ mark in the final
+      test."
+    es: >-
+      Choose the correct option to complete the sentence:
+
+
+      "Of all the students in the class, Marta got ______ mark in the final
+      test."
+  options:
+    - id: A
+      ca: the highest
+      es: the highest
+    - id: B
+      ca: the most high
+      es: the most high
+    - id: C
+      ca: higher
+      es: higher
+    - id: D
+      ca: highest
+      es: highest
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El context 'Of all the students' indica un superlatiu, que amb adjectius
+      curts es forma amb -est i sempre porta l'article 'the': 'the highest'.
+      'the most high' (B) és incorrecte perquè 'high' és curt i no usa 'most'.
+      'higher' (C) és comparatiu. 'highest' sense 'the' (D) és incorrecte perquè
+      el superlatiu necessita l'article."
+    es: "El contexto 'Of all the students' indica un superlativo, que con adjetivos
+      cortos se forma con -est y siempre lleva el artículo 'the': 'the highest'.
+      'the most high' (B) es incorrecto porque 'high' es corto y no usa 'most'.
+      'higher' (C) es comparativo. 'highest' sin 'the' (D) es incorrecto porque
+      el superlativo necesita el artículo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.comparatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: >-
+      Complete the sentence with the correct form:
+
+
+      "The film wasn't as good as the book; in fact, the book was ______
+      interesting."
+    es: >-
+      Complete the sentence with the correct form:
+
+
+      "The film wasn't as good as the book; in fact, the book was ______
+      interesting."
+  options:
+    - id: A
+      ca: much more
+      es: much more
+    - id: B
+      ca: more much
+      es: more much
+    - id: C
+      ca: the most
+      es: the most
+    - id: D
+      ca: as
+      es: as
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'interesting' és un adjectiu llarg, així que el comparatiu és 'more
+      interesting'. Per reforçar-lo ('molt més') s'anteposa 'much': 'much more
+      interesting'. 'more much' (B) inverteix l'ordre incorrectament. 'the most'
+      (C) és superlatiu i no encaixa amb la comparació entre dues coses. 'as'
+      (D) exigiria una segona 'as' i canviaria el sentit."
+    es: "'interesting' es un adjetivo largo, así que el comparativo es 'more
+      interesting'. Para reforzarlo ('mucho más') se antepone 'much': 'much more
+      interesting'. 'more much' (B) invierte el orden de forma incorrecta. 'the
+      most' (C) es superlativo y no encaja con la comparación entre dos cosas.
+      'as' (D) exigiría una segunda 'as' y cambiaría el sentido."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.comparatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: |-
+      Rewrite the sentence keeping the same meaning:
+
+      "No other mountain in the Pyrenees is as high as Aneto."
+
+      Choose the option that best expresses the same idea:
+    es: |-
+      Rewrite the sentence keeping the same meaning:
+
+      "No other mountain in the Pyrenees is as high as Aneto."
+
+      Choose the option that best expresses the same idea:
+  options:
+    - id: A
+      ca: Aneto is higher than any other mountain in the Pyrenees.
+      es: Aneto is higher than any other mountain in the Pyrenees.
+    - id: B
+      ca: Aneto is as high as the other mountains in the Pyrenees.
+      es: Aneto is as high as the other mountains in the Pyrenees.
+    - id: C
+      ca: Aneto is not the highest mountain in the Pyrenees.
+      es: Aneto is not the highest mountain in the Pyrenees.
+    - id: D
+      ca: Aneto is the less high mountain in the Pyrenees.
+      es: Aneto is the less high mountain in the Pyrenees.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'No other X is as high as Aneto' significa que l'Aneto és el més alt de
+      tots. Això equival a 'Aneto is higher than any other mountain' (comparatiu
+      + 'any other'). B afirma igualtat, cosa que canvia el sentit. C nega que
+      sigui el més alt, el contrari. D és agramatical/incorrecta ('less high' i
+      sentit oposat)."
+    es: "'No other X is as high as Aneto' significa que el Aneto es el más alto de
+      todos. Eso equivale a 'Aneto is higher than any other mountain'
+      (comparativo + 'any other'). B afirma igualdad, lo que cambia el sentido.
+      C niega que sea el más alto, lo contrario. D es agramatical/incorrecta
+      ('less high' y sentido opuesto)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.grammar.comparatives
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: >-
+      Read the short text and answer:
+
+
+      "The new metro line reduced my journey considerably. By bus the trip took
+      45 minutes; by the old train it took 30 minutes; the new metro takes just
+      18 minutes."
+
+
+      Which sentence is TRUE according to the text?
+    es: >-
+      Read the short text and answer:
+
+
+      "The new metro line reduced my journey considerably. By bus the trip took
+      45 minutes; by the old train it took 30 minutes; the new metro takes just
+      18 minutes."
+
+
+      Which sentence is TRUE according to the text?
+  options:
+    - id: A
+      ca: The metro is the fastest of the three options.
+      es: The metro is the fastest of the three options.
+    - id: B
+      ca: The bus is faster than the train.
+      es: The bus is faster than the train.
+    - id: C
+      ca: The train is the slowest option.
+      es: The train is the slowest option.
+    - id: D
+      ca: The metro is slower than the bus.
+      es: The metro is slower than the bus.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Menys temps = més ràpid. El metro (18 min) és el que triga menys, per tant
+      és 'the fastest' dels tres: superlatiu correcte (A). B és fals: el bus (45
+      min) triga més que el tren (30 min), o sigui és més lent. C és fals: el
+      bus és el més lent, no el tren. D és fals: el metro és el més ràpid, no
+      més lent que el bus."
+    es: "Menos tiempo = más rápido. El metro (18 min) es el que menos tarda, por
+      tanto es 'the fastest' de los tres: superlativo correcto (A). B es falso:
+      el bus (45 min) tarda más que el tren (30 min), es decir es más lento. C
+      es falso: el bus es el más lento, no el tren. D es falso: el metro es el
+      más rápido, no más lento que el bus."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.word_formation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Her students love her because of her patience and ______.
+    es: Her students love her because of her patience and ______.
+  options:
+    - id: A
+      ca: kindness
+      es: kindness
+    - id: B
+      ca: kindity
+      es: kindity
+    - id: C
+      ca: kindment
+      es: kindment
+    - id: D
+      ca: kindful
+      es: kindful
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El sufix -ness converteix un adjectiu en un nom abstracte (kind → kindness),
+      i aquí necessitem un nom coordinat amb 'patience'. Les formes 'kindity' i
+      'kindment' no existeixen; -ful (kindful) formaria un adjectiu, no un nom.
+    es: El sufijo -ness convierte un adjetivo en un sustantivo abstracto (kind →
+      kindness), y aquí hace falta un sustantivo coordinado con 'patience'. Las
+      formas 'kindity' y 'kindment' no existen; -ful (kindful) formaría un
+      adjetivo, no un sustantivo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.word_formation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Her argument was completely ______ because she gave no evidence at all.
+    es: Her argument was completely ______ because she gave no evidence at all.
+  options:
+    - id: A
+      ca: illogical
+      es: illogical
+    - id: B
+      ca: unlogical
+      es: unlogical
+    - id: C
+      ca: inlogical
+      es: inlogical
+    - id: D
+      ca: dislogical
+      es: dislogical
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El prefix negatiu in- s'assimila a il- davant de paraules que comencen per
+      'l' (legal → illegal; logical → illogical). El prefix 'un-' no s'usa amb
+      aquesta arrel i 'inlogical'/'dislogical' no són paraules angleses.
+    es: El prefijo negativo in- se asimila a il- ante palabras que empiezan por 'l'
+      (legal → illegal; logical → illogical). El prefijo 'un-' no se usa con
+      esta raíz, y 'inlogical'/'dislogical' no son palabras inglesas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.word_formation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Don't be afraid of that snake — it is completely ______ and cannot hurt you.
+    es: Don't be afraid of that snake — it is completely ______ and cannot hurt you.
+  options:
+    - id: A
+      ca: harmless
+      es: harmless
+    - id: B
+      ca: harmful
+      es: harmful
+    - id: C
+      ca: harmness
+      es: harmness
+    - id: D
+      ca: unharmful
+      es: unharmful
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El sufix -less significa 'sense' (harm + less = 'sense perill'), que és el
+      que demana el context ('cannot hurt you'). -ful (harmful) vol dir just el
+      contrari, 'perillós'; 'harmness' i 'unharmful' no existeixen.
+    es: El sufijo -less significa 'sin' (harm + less = 'inofensivo'), que es lo que
+      pide el contexto ('cannot hurt you'). -ful (harmful) significa justo lo
+      contrario, 'dañino'; 'harmness' y 'unharmful' no existen.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.word_formation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: The engineers are trying to ______ the design so that it is easier to build.
+    es: The engineers are trying to ______ the design so that it is easier to build.
+  options:
+    - id: A
+      ca: simplify
+      es: simplify
+    - id: B
+      ca: simplize
+      es: simplize
+    - id: C
+      ca: simplyfy
+      es: simplyfy
+    - id: D
+      ca: simpler
+      es: simpler
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El sufix verbal -ify forma verbs a partir d'adjectius o noms (simple →
+      simplify; pure → purify). 'simplize' usaria malament el sufix -ize;
+      'simplyfy' és una falta d'ortografia; 'simpler' és el comparatiu de
+      l'adjectiu, no un verb.
+    es: El sufijo verbal -ify forma verbos a partir de adjetivos o sustantivos
+      (simple → simplify; pure → purify). 'simplize' usaría mal el sufijo -ize;
+      'simplyfy' es una falta de ortografía; 'simpler' es el comparativo del
+      adjetivo, no un verbo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.word_formation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Researchers announced a major ______ breakthrough at the international
+      conference.
+    es: Researchers announced a major ______ breakthrough at the international
+      conference.
+  options:
+    - id: A
+      ca: scientific
+      es: scientific
+    - id: B
+      ca: scientifical
+      es: scientifical
+    - id: C
+      ca: sciential
+      es: sciential
+    - id: D
+      ca: scienced
+      es: scienced
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'adjectiu que correspon a 'science' es forma amb el sufix -ic: scientific.
+      'scientifical' és una sobregeneralització incorrecta (-ical no s'hi
+      afegeix); 'sciential' és arcaic i no s'usa aquí, i 'scienced' no
+      existeix."
+    es: "El adjetivo que corresponde a 'science' se forma con el sufijo -ic:
+      scientific. 'scientifical' es una sobregeneralización incorrecta (-ical no
+      se añade aquí); 'sciential' es arcaico y no se usa así, y 'scienced' no
+      existe."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.word_formation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.72
+  question:
+    ca: "Rewrite keeping the same meaning: 'He always acts in a responsible way.' →
+      'He always acts with great ______.'"
+    es: "Rewrite keeping the same meaning: 'He always acts in a responsible way.' →
+      'He always acts with great ______.'"
+  options:
+    - id: A
+      ca: responsibility
+      es: responsibility
+    - id: B
+      ca: responsability
+      es: responsability
+    - id: C
+      ca: responsibleness
+      es: responsibleness
+    - id: D
+      ca: responsivity
+      es: responsivity
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'adjectiu 'responsible' forma el nom abstracte amb -ity: responsibility
+      (es manté la 'i': responsibil-ity). 'responsability' és un error
+      d'ortografia per influència del català/castellà
+      ('responsabilitat/responsabilidad'); 'responsibleness' no és habitual i
+      'responsivity' ve de 'responsive' i té un altre significat."
+    es: "El adjetivo 'responsible' forma el sustantivo abstracto con -ity:
+      responsibility (se conserva la 'i': responsibil-ity). 'responsability' es
+      un error ortográfico por influencia del castellano/catalán
+      ('responsabilidad'); 'responsibleness' no es habitual y 'responsivity'
+      procede de 'responsive' y tiene otro significado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.collocations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.32
+  question:
+    ca: The football match was cancelled because of _____ rain that flooded the
+      pitch.
+    es: The football match was cancelled because of _____ rain that flooded the
+      pitch.
+  options:
+    - id: A
+      ca: strong
+      es: strong
+    - id: B
+      ca: heavy
+      es: heavy
+    - id: C
+      ca: big
+      es: big
+    - id: D
+      ca: hard
+      es: hard
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Amb 'rain' (pluja) l'adjectiu que col·loca és 'heavy rain'. L'error 'strong
+      rain' ve de traduir literalment 'pluja forta' / 'lluvia fuerte'; 'strong'
+      s'usa amb 'wind' (strong wind), no amb 'rain'. 'Big rain' i 'hard rain' no
+      són col·locacions estàndard.
+    es: Con 'rain' (lluvia) el adjetivo que colocamos es 'heavy rain'. El error
+      'strong rain' viene de traducir literalmente 'lluvia fuerte'; 'strong' se
+      usa con 'wind' (strong wind), no con 'rain'. 'Big rain' y 'hard rain' no
+      son colocaciones estándar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.collocations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: When you plan a monthly budget, you should _____ all your expenses into
+      account.
+    es: When you plan a monthly budget, you should _____ all your expenses into
+      account.
+  options:
+    - id: A
+      ca: have
+      es: have
+    - id: B
+      ca: make
+      es: make
+    - id: C
+      ca: take
+      es: take
+    - id: D
+      ca: get
+      es: get
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: L'expressió fixa és 'take something into account' (tenir en compte). L'error
+      més freqüent és 'have into account', per calc del català 'tenir en compte'
+      / castellà 'tener en cuenta'. En anglès el verb correcte d'aquesta
+      col·locació és 'take', no 'have', 'make' ni 'get'.
+    es: La expresión fija es 'take something into account' (tener en cuenta). El
+      error más frecuente es 'have into account', por calco del español 'tener
+      en cuenta'. En inglés el verbo correcto de esta colocación es 'take', no
+      'have', 'make' ni 'get'.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.collocations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: My uncle is a _____ smoker; he gets through two packs of cigarettes a day.
+    es: My uncle is a _____ smoker; he gets through two packs of cigarettes a day.
+  options:
+    - id: A
+      ca: heavy
+      es: heavy
+    - id: B
+      ca: strong
+      es: strong
+    - id: C
+      ca: hard
+      es: hard
+    - id: D
+      ca: big
+      es: big
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La col·locació és 'a heavy smoker' (un fumador empedreït). 'Heavy' s'usa per
+      indicar consum intens (a heavy drinker, a heavy user). 'Strong' descriu el
+      tabac (strong tobacco), no la persona; 'hard' i 'big' no col·loquen amb
+      'smoker'. La pista 'two packs a day' confirma la idea de consum elevat.
+    es: La colocación es 'a heavy smoker' (un fumador empedernido). 'Heavy' indica
+      consumo intenso (a heavy drinker, a heavy user). 'Strong' describe el
+      tabaco (strong tobacco), no a la persona; 'hard' y 'big' no colocan con
+      'smoker'. La pista 'two packs a day' confirma la idea de consumo elevado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.collocations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.68
+  question:
+    ca: Which sentence contains an INCORRECT collocation?
+    es: Which sentence contains an INCORRECT collocation?
+  options:
+    - id: A
+      ca: She made a great effort to finish the project on time.
+      es: She made a great effort to finish the project on time.
+    - id: B
+      ca: They did a party to celebrate her graduation.
+      es: They did a party to celebrate her graduation.
+    - id: C
+      ca: He paid close attention to the teacher's instructions.
+      es: He paid close attention to the teacher's instructions.
+    - id: D
+      ca: We took a lot of photos during the trip.
+      es: We took a lot of photos during the trip.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La frase incorrecta és la B: en anglès no es diu 'do a party', sinó
+      'have/throw a party'. L'error prové del calc 'fer una festa' / 'hacer una
+      fiesta'. Les altres col·locacions són correctes: 'make an effort', 'pay
+      attention' i 'take photos'."
+    es: "La frase incorrecta es la B: en inglés no se dice 'do a party', sino
+      'have/throw a party'. El error proviene del calco 'hacer una fiesta'. Las
+      demás colocaciones son correctas: 'make an effort', 'pay attention' y
+      'take photos'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.collocations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: According to the economists interviewed, the new education reform is _____
+      likely to reduce the school dropout rate over the next decade.
+    es: According to the economists interviewed, the new education reform is _____
+      likely to reduce the school dropout rate over the next decade.
+  options:
+    - id: A
+      ca: highly
+      es: highly
+    - id: B
+      ca: strongly
+      es: strongly
+    - id: C
+      ca: hardly
+      es: hardly
+    - id: D
+      ca: deeply
+      es: deeply
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'adverbi intensificador que col·loca amb 'likely' és 'highly' (highly
+      likely = molt probable). 'Strongly' col·loca amb verbs com
+      'recommend/agree', no amb 'likely'. Atenció al parany 'hardly', que
+      significa 'gairebé no' i canviaria completament el sentit. 'Deeply' s'usa
+      amb sentiments (deeply moved), no amb 'likely'.
+    es: El adverbio intensificador que coloca con 'likely' es 'highly' (highly
+      likely = muy probable). 'Strongly' coloca con verbos como
+      'recommend/agree', no con 'likely'. Cuidado con la trampa 'hardly', que
+      significa 'apenas' y cambiaría por completo el sentido. 'Deeply' se usa
+      con sentimientos (deeply moved), no con 'likely'.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.phrasal_verbs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: "Choose the correct option: \"I don't know the meaning of this word, so I'll
+      ______ in the dictionary.\""
+    es: "Choose the correct option: \"I don't know the meaning of this word, so I'll
+      ______ in the dictionary.\""
+  options:
+    - id: A
+      ca: look it up
+      es: look it up
+    - id: B
+      ca: look up it
+      es: look up it
+    - id: C
+      ca: look it for
+      es: look it for
+    - id: D
+      ca: look after it
+      es: look after it
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Look up' (buscar informació) és un phrasal verb separable; quan l'objecte
+      és un pronom ('it') SEMPRE va entre el verb i la partícula: 'look it up'.
+      Per això B ('look up it') és incorrecta. C inventa la partícula 'for'.
+      'Look after' (D) significa 'tenir cura de', que no encaixa amb buscar al
+      diccionari."
+    es: "'Look up' (buscar información) es un phrasal verb separable; cuando el
+      objeto es un pronombre ('it') SIEMPRE va entre el verbo y la partícula:
+      'look it up'. Por eso B ('look up it') es incorrecta. C inventa la
+      partícula 'for'. 'Look after' (D) significa 'cuidar de', que no encaja con
+      buscar en el diccionario."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.phrasal_verbs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: 'Complete the sentence: "She was very close to her grandmother, so it took
+      her months to ______ her death."'
+    es: 'Complete the sentence: "She was very close to her grandmother, so it took
+      her months to ______ her death."'
+  options:
+    - id: A
+      ca: get over
+      es: get over
+    - id: B
+      ca: get off
+      es: get off
+    - id: C
+      ca: get on
+      es: get on
+    - id: D
+      ca: get through
+      es: get through
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Get over (something)' vol dir 'superar / recuperar-se de' una experiència
+      dolorosa o una malaltia, així que encaixa amb 'her death'. 'Get off' (B) =
+      baixar (d'un vehicle). 'Get on' (C) = pujar / portar-se bé / progressar.
+      'Get through' (D) sol significar 'acabar / aprovar / contactar per
+      telèfon', no recuperar-se emocionalment."
+    es: "'Get over (something)' significa 'superar / recuperarse de' una experiencia
+      dolorosa o una enfermedad, por lo que encaja con 'her death'. 'Get off'
+      (B) = bajarse (de un vehículo). 'Get on' (C) = subirse / llevarse bien /
+      progresar. 'Get through' (D) suele significar 'terminar / aprobar /
+      contactar por teléfono', no recuperarse emocionalmente."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.phrasal_verbs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "Choose the correct option: \"We've run ______ sugar. Can you buy some on
+      your way home?\""
+    es: "Choose the correct option: \"We've run ______ sugar. Can you buy some on
+      your way home?\""
+  options:
+    - id: A
+      ca: out of
+      es: out of
+    - id: B
+      ca: out
+      es: out
+    - id: C
+      ca: off
+      es: off
+    - id: D
+      ca: away
+      es: away
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Quan després hi ha un nom (l'allò que s'ha esgotat), la forma és 'run out
+      OF something': 'run out of sugar'. Sense objecte diríem 'The sugar has run
+      out'. Per això B ('run out sugar') és incorrecta perquè falta 'of'. 'Run
+      off' = fugir / imprimir còpies; 'run away' = escapar-se. Cap dels dos
+      significa 'esgotar-se una provisió'."
+    es: "Cuando a continuación hay un sustantivo (aquello que se ha agotado), la
+      forma es 'run out OF something': 'run out of sugar'. Sin objeto diríamos
+      'The sugar has run out'. Por eso B ('run out sugar') es incorrecta porque
+      falta 'of'. 'Run off' = huir / imprimir copias; 'run away' = escaparse.
+      Ninguno significa 'agotarse una provisión'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.phrasal_verbs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: 'Rewrite keeping the same meaning: "The meeting was postponed until next
+      Monday." → "The meeting was ______ until next Monday."'
+    es: 'Rewrite keeping the same meaning: "The meeting was postponed until next
+      Monday." → "The meeting was ______ until next Monday."'
+  options:
+    - id: A
+      ca: put off
+      es: put off
+    - id: B
+      ca: put up
+      es: put up
+    - id: C
+      ca: called off
+      es: called off
+    - id: D
+      ca: put out
+      es: put out
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Postpone' equival al phrasal verb 'put off' (ajornar). 'Call off' (C)
+      significa 'cancel·lar' (no ajornar: implica que no es farà). 'Put up' (B)
+      = allotjar / aixecar / muntar. 'Put out' (D) = apagar (un foc) / molestar.
+      Només 'put off' conserva el sentit d'ajornar."
+    es: "'Postpone' equivale al phrasal verb 'put off' (aplazar). 'Call off' (C)
+      significa 'cancelar' (no aplazar: implica que no se hará). 'Put up' (B) =
+      alojar / levantar / montar. 'Put out' (D) = apagar (un fuego) / molestar.
+      Solo 'put off' conserva el sentido de aplazar."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.phrasal_verbs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Identify the sentence where the phrasal verb is used INCORRECTLY.
+    es: Identify the sentence where the phrasal verb is used INCORRECTLY.
+  options:
+    - id: A
+      ca: The firefighters put out the fire in ten minutes.
+      es: The firefighters put out the fire in ten minutes.
+    - id: B
+      ca: I came across an old photo while I was tidying up.
+      es: I came across an old photo while I was tidying up.
+    - id: C
+      ca: You should cut down on the fat you eat.
+      es: You should cut down on the fat you eat.
+    - id: D
+      ca: Please turn on the volume; it's too loud.
+      es: Please turn on the volume; it's too loud.
+  answer:
+    type: single
+    correct: D
+  explanation:
+    ca: "A D el sentit és contradictori: si el volum és massa alt ('too loud') no
+      s'ha de 'turn on' (encendre/activar) sinó 'turn down' (abaixar). Les
+      altres són correctes: 'put out' = apagar (un foc), 'come across' = trobar
+      per casualitat, 'cut down on' = reduir el consum de."
+    es: "En D el sentido es contradictorio: si el volumen está demasiado alto ('too
+      loud') no hay que 'turn on' (encender/activar) sino 'turn down' (bajarlo).
+      Las demás son correctas: 'put out' = apagar (un fuego), 'come across' =
+      encontrar por casualidad, 'cut down on' = reducir el consumo de."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.vocabulary.phrasal_verbs
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: "Read the snippet and choose the option that best replaces the underlined
+      verb: \"After losing his job, Tom decided he would not give up. He kept
+      applying, and three weeks later a firm _took him on_ as a junior
+      analyst.\" The phrasal verb 'took him on' means:"
+    es: "Read the snippet and choose the option that best replaces the underlined
+      verb: \"After losing his job, Tom decided he would not give up. He kept
+      applying, and three weeks later a firm _took him on_ as a junior
+      analyst.\" The phrasal verb 'took him on' means:"
+  options:
+    - id: A
+      ca: employed / hired him
+      es: employed / hired him
+    - id: B
+      ca: challenged / fought him
+      es: challenged / fought him
+    - id: C
+      ca: deceived / tricked him
+      es: deceived / tricked him
+    - id: D
+      ca: removed / dismissed him
+      es: removed / dismissed him
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el context de la feina, 'take somebody on' significa 'contractar / donar
+      feina a algú', que és el sentit que demana la frase ('as a junior
+      analyst'). 'Take on' també pot voler dir 'enfrontar-se a un rival' (B),
+      però aquí el context laboral ho descarta. C ('enganyar') correspondria a
+      'take somebody in', un error freqüent. D ('acomiadar') seria el contrari;
+      el text diu que 'no es va rendir' i finalment el van contractar.
+    es: En el contexto laboral, 'take somebody on' significa 'contratar / dar empleo
+      a alguien', que es el sentido que pide la frase ('as a junior analyst').
+      'Take on' también puede significar 'enfrentarse a un rival' (B), pero aquí
+      el contexto laboral lo descarta. C ('engañar') correspondería a 'take
+      somebody in', un error frecuente. D ('despedir') sería lo contrario; el
+      texto dice que 'no se rindió' y finalmente lo contrataron.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.connectors
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: |-
+      Choose the best option to complete the sentence:
+      "She studied really hard for the exam; ______, she failed it."
+    es: |-
+      Choose the best option to complete the sentence:
+      "She studied really hard for the exam; ______, she failed it."
+  options:
+    - id: A
+      ca: however
+      es: however
+    - id: B
+      ca: therefore
+      es: therefore
+    - id: C
+      ca: moreover
+      es: moreover
+    - id: D
+      ca: meanwhile
+      es: meanwhile
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Hi ha un contrast entre estudiar molt i suspendre, per tant cal un
+      connector de contrast: 'however' (tanmateix). 'Therefore' (per tant)
+      expressa conseqüència, 'moreover' (a més) addició i 'meanwhile'
+      (mentrestant) temps simultani, cap dels quals encaixa amb el contrast."
+    es: "Hay un contraste entre estudiar mucho y suspender, por lo que se necesita
+      un conector de contraste: 'however' (sin embargo). 'Therefore' (por tanto)
+      expresa consecuencia, 'moreover' (además) adición y 'meanwhile' (mientras
+      tanto) tiempo simultáneo, ninguno de los cuales encaja con el contraste."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.connectors
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: |-
+      Choose the best option to complete the sentence:
+      "The road was closed ______ the heavy snow that had fallen overnight."
+    es: |-
+      Choose the best option to complete the sentence:
+      "The road was closed ______ the heavy snow that had fallen overnight."
+  options:
+    - id: A
+      ca: because
+      es: because
+    - id: B
+      ca: because of
+      es: because of
+    - id: C
+      ca: so that
+      es: so that
+    - id: D
+      ca: although
+      es: although
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El buit va seguit d'un sintagma nominal ('the heavy snow'), no d'una oració
+      amb verb conjugat. Per introduir una causa davant d'un nom cal la
+      preposició 'because of'. 'Because' introdueix una oració (subjecte + verb)
+      i és l'error més típic. 'So that' expressa finalitat i 'although'
+      concessió.
+    es: El hueco va seguido de un sintagma nominal ('the heavy snow'), no de una
+      oración con verbo conjugado. Para introducir una causa ante un sustantivo
+      se usa la preposición 'because of'. 'Because' introduce una oración
+      (sujeto + verbo) y es el error más típico. 'So that' expresa finalidad y
+      'although' concesión.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.connectors
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: |-
+      Choose the best option to complete the sentence:
+      "______ the bad weather, the football match went ahead as scheduled."
+    es: |-
+      Choose the best option to complete the sentence:
+      "______ the bad weather, the football match went ahead as scheduled."
+  options:
+    - id: A
+      ca: Despite
+      es: Despite
+    - id: B
+      ca: Although
+      es: Although
+    - id: C
+      ca: Even though
+      es: Even though
+    - id: D
+      ca: However
+      es: However
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El buit va seguit d'un sintagma nominal ('the bad weather'), així que cal
+      'Despite' (+ nom). 'Although' i 'Even though' són conjuncions i han d'anar
+      seguides d'una oració amb subjecte i verb (Although the weather was
+      bad...). 'However' és un adverbi connectiu que no pot enllaçar directament
+      un nom.
+    es: El hueco va seguido de un sintagma nominal ('the bad weather'), por lo que
+      se necesita 'Despite' (+ sustantivo). 'Although' y 'Even though' son
+      conjunciones y deben ir seguidas de una oración con sujeto y verbo
+      (Although the weather was bad...). 'However' es un adverbio conectivo que
+      no puede enlazar directamente un sustantivo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.connectors
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: >-
+      Choose the option that best completes the text:
+
+      "The new recycling scheme has three main advantages. ______, it reduces
+      the amount of waste sent to landfill. ______, it creates local jobs.
+      ______, it raises public awareness about the environment."
+    es: >-
+      Choose the option that best completes the text:
+
+      "The new recycling scheme has three main advantages. ______, it reduces
+      the amount of waste sent to landfill. ______, it creates local jobs.
+      ______, it raises public awareness about the environment."
+  options:
+    - id: A
+      ca: Firstly / Secondly / Finally
+      es: Firstly / Secondly / Finally
+    - id: B
+      ca: At first / Second / At the end
+      es: At first / Second / At the end
+    - id: C
+      ca: First of all / However / In addition
+      es: First of all / However / In addition
+    - id: D
+      ca: In the first place / Otherwise / Finally
+      es: In the first place / Otherwise / Finally
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El text enumera tres avantatges, així que calen marcadors de
+      seqüència/enumeració coherents: 'Firstly, Secondly, Finally'. L'opció B
+      confon 'at first' (=al principi, temps) amb 'firstly', i 'at the end' (=al
+      final físic) amb 'finally'. L'opció C i D introdueixen contrast
+      ('however', 'otherwise'), que trenca l'enumeració d'avantatges."
+    es: "El texto enumera tres ventajas, por lo que se necesitan marcadores de
+      secuencia/enumeración coherentes: 'Firstly, Secondly, Finally'. La opción
+      B confunde 'at first' (=al principio, tiempo) con 'firstly', y 'at the
+      end' (=al final físico) con 'finally'. Las opciones C y D introducen
+      contraste ('however', 'otherwise'), que rompe la enumeración de ventajas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.connectors
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: >-
+      Complete the sentence with the correct connector:
+
+      "You should back up your files regularly; ______, you risk losing all your
+      work if the computer crashes."
+    es: >-
+      Complete the sentence with the correct connector:
+
+      "You should back up your files regularly; ______, you risk losing all your
+      work if the computer crashes."
+  options:
+    - id: A
+      ca: otherwise
+      es: otherwise
+    - id: B
+      ca: instead
+      es: instead
+    - id: C
+      ca: besides
+      es: besides
+    - id: D
+      ca: as a result
+      es: as a result
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La segona part expressa la conseqüència negativa de NO fer l'acció
+      recomanada, cosa que exigeix 'otherwise' (si no, en cas contrari).
+      'Instead' (en lloc d'això) implica substitució, 'besides' (a més) addició
+      i 'as a result' (com a resultat) una conseqüència directa del que s'acaba
+      de dir, no d'una condició negativa implícita.
+    es: La segunda parte expresa la consecuencia negativa de NO hacer la acción
+      recomendada, lo que exige 'otherwise' (de lo contrario, si no). 'Instead'
+      (en lugar de eso) implica sustitución, 'besides' (además) adición y 'as a
+      result' (como resultado) una consecuencia directa de lo dicho, no de una
+      condición negativa implícita.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.connectors
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: |-
+      Read the sentence and choose the option that keeps the SAME meaning:
+      "Even though the company invested a lot of money, the project failed."
+    es: |-
+      Read the sentence and choose the option that keeps the SAME meaning:
+      "Even though the company invested a lot of money, the project failed."
+  options:
+    - id: A
+      ca: The project failed in spite of the large investment the company made.
+      es: The project failed in spite of the large investment the company made.
+    - id: B
+      ca: The project failed because of the large investment the company made.
+      es: The project failed because of the large investment the company made.
+    - id: C
+      ca: The company invested a lot of money so the project succeeded.
+      es: The company invested a lot of money so the project succeeded.
+    - id: D
+      ca: Unless the company invested a lot of money, the project failed.
+      es: Unless the company invested a lot of money, the project failed.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Even though' expressa concessió/contrast: malgrat la gran inversió, va
+      fracassar. L'equivalent amb sintagma nominal és 'in spite of' (= despite)
+      + nom, opció A. B canvia el sentit a causa ('because of'), C afirma que va
+      tenir èxit (contradicció) i D introdueix una condició ('unless')
+      inexistent a l'original."
+    es: "'Even though' expresa concesión/contraste: a pesar de la gran inversión,
+      fracasó. El equivalente con sintagma nominal es 'in spite of' (= despite)
+      + sustantivo, opción A. B cambia el sentido a causa ('because of'), C
+      afirma que tuvo éxito (contradicción) y D introduce una condición
+      ('unless') inexistente en el original."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.prepositions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: >-
+      Complete the sentence with the correct preposition:
+
+
+      "My little brother is still afraid ___ the dark, so he sleeps with a light
+      on."
+    es: >-
+      Complete the sentence with the correct preposition:
+
+
+      "My little brother is still afraid ___ the dark, so he sleeps with a light
+      on."
+  options:
+    - id: A
+      ca: of
+      es: of
+    - id: B
+      ca: from
+      es: from
+    - id: C
+      ca: to
+      es: to
+    - id: D
+      ca: with
+      es: with
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'adjectiu 'afraid' sempre va seguit de la preposició 'of' (afraid of
+      something). És una col·locació fixa: 'afraid of the dark'. Els aprenents
+      castellano/catalanoparlants tendeixen a traduir literalment 'tenir por de'
+      amb 'from' o 'with', però en anglès l'única opció correcta és 'of'."
+    es: "El adjetivo 'afraid' siempre va seguido de la preposición 'of' (afraid of
+      something). Es una colocación fija: 'afraid of the dark'. Los hablantes de
+      español/catalán tienden a traducir literalmente 'tener miedo de' con
+      'from' o 'with', pero en inglés la única opción correcta es 'of'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.prepositions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: |-
+      Complete the sentence with the correct preposition:
+
+      "Whether we go to the beach tomorrow depends ___ the weather."
+    es: |-
+      Complete the sentence with the correct preposition:
+
+      "Whether we go to the beach tomorrow depends ___ the weather."
+  options:
+    - id: A
+      ca: on
+      es: on
+    - id: B
+      ca: of
+      es: of
+    - id: C
+      ca: from
+      es: from
+    - id: D
+      ca: in
+      es: in
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El verb 'depend' regeix sempre la preposició 'on' (to depend on
+      something/someone). L'error més freqüent és 'depend of', calc directe del
+      castellà 'depender de' i del català 'dependre de'. En anglès, però, sempre
+      es diu 'depend on'.
+    es: El verbo 'depend' rige siempre la preposición 'on' (to depend on
+      something/someone). El error más frecuente es 'depend of', calco directo
+      del español 'depender de' y del catalán 'dependre de'. En inglés, sin
+      embargo, siempre se dice 'depend on'.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.prepositions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: |-
+      Choose the correct option to complete the sentence:
+
+      "My sister has always been very good ___ solving maths problems."
+    es: |-
+      Choose the correct option to complete the sentence:
+
+      "My sister has always been very good ___ solving maths problems."
+  options:
+    - id: A
+      ca: at
+      es: at
+    - id: B
+      ca: in
+      es: in
+    - id: C
+      ca: on
+      es: on
+    - id: D
+      ca: for
+      es: for
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per expressar habilitat o destresa en una activitat, l'anglès utilitza
+      'good at' (+ substantiu o -ing form): 'good at maths', 'good at solving
+      problems'. L'error típic és 'good in', per influència del castellà/català
+      'bo en'. Recorda: 'be good/bad at (doing) something'."
+    es: "Para expresar habilidad o destreza en una actividad, el inglés utiliza
+      'good at' (+ sustantivo o forma en -ing): 'good at maths', 'good at
+      solving problems'. El error típico es 'good in', por influencia del
+      español/catalán 'bueno en'. Recuerda: 'be good/bad at (doing) something'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.prepositions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: |-
+      Complete the sentence with the correct preposition:
+
+      "Owls hunt mostly ___ night, when their prey is active."
+    es: |-
+      Complete the sentence with the correct preposition:
+
+      "Owls hunt mostly ___ night, when their prey is active."
+  options:
+    - id: A
+      ca: at
+      es: at
+    - id: B
+      ca: in
+      es: in
+    - id: C
+      ca: on
+      es: on
+    - id: D
+      ca: by
+      es: by
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Amb 'night' l'anglès fa servir l'expressió fixa 'at night'. Fixa't en el
+      contrast amb altres franges del dia: 'in the morning', 'in the afternoon',
+      'in the evening', però 'at night'. Els errors habituals són 'in the night'
+      (calc de 'en la nit') o 'by night' (poètic, no neutre)."
+    es: "Con 'night' el inglés usa la expresión fija 'at night'. Fíjate en el
+      contraste con otras franjas del día: 'in the morning', 'in the afternoon',
+      'in the evening', pero 'at night'. Los errores habituales son 'in the
+      night' (calco de 'en la noche') o 'by night' (poético, no neutro)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.prepositions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: >-
+      Identify the underlined part that contains a preposition error:
+
+
+      "The team finally succeeded (A) in finishing the report (B) on time, (C)
+      despite of (D) the technical problems."
+    es: >-
+      Identify the underlined part that contains a preposition error:
+
+
+      "The team finally succeeded (A) in finishing the report (B) on time, (C)
+      despite of (D) the technical problems."
+  options:
+    - id: A
+      ca: in finishing
+      es: in finishing
+    - id: B
+      ca: on time
+      es: on time
+    - id: C
+      ca: despite of
+      es: despite of
+    - id: D
+      ca: the technical problems
+      es: the technical problems
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "L'error és 'despite of'. 'Despite' ja significa 'malgrat' i NO porta 'of'
+      al darrere: es diu 'despite the technical problems' (o bé 'in spite OF the
+      technical problems'). La confusió ve de barrejar les dues estructures. Les
+      altres opcions són correctes: 'succeed in doing something' i 'on time'
+      (puntualment)."
+    es: "El error es 'despite of'. 'Despite' ya significa 'a pesar de' y NO lleva
+      'of' detrás: se dice 'despite the technical problems' (o bien 'in spite OF
+      the technical problems'). La confusión surge de mezclar las dos
+      estructuras. Las demás opciones son correctas: 'succeed in doing
+      something' y 'on time' (puntualmente)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.prepositions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: >-
+      Choose the option that correctly completes BOTH gaps:
+
+
+      "The award-winning film was inspired ___ a true story and deals ___ the
+      consequences of climate change."
+    es: >-
+      Choose the option that correctly completes BOTH gaps:
+
+
+      "The award-winning film was inspired ___ a true story and deals ___ the
+      consequences of climate change."
+  options:
+    - id: A
+      ca: by / with
+      es: by / with
+    - id: B
+      ca: in / about
+      es: in / about
+    - id: C
+      ca: from / with
+      es: from / with
+    - id: D
+      ca: by / about
+      es: by / about
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Dues col·locacions fixes: 'to be inspired BY something' (la font
+      d'inspiració s'introdueix amb 'by', com un agent passiu) i 'to deal WITH
+      something' (tractar/abordar un tema). L'error 'deal about' és molt comú
+      per influència de 'tractar sobre/de'. La combinació correcta és 'inspired
+      by ... deals with'."
+    es: "Dos colocaciones fijas: 'to be inspired BY something' (la fuente de
+      inspiración se introduce con 'by', como agente pasivo) y 'to deal WITH
+      something' (tratar/abordar un tema). El error 'deal about' es muy común
+      por influencia de 'tratar sobre/de'. La combinación correcta es 'inspired
+      by ... deals with'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.transformation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: 'Choose the option that best rewrites the sentence keeping the same meaning:
+      "Someone stole my bicycle last night."'
+    es: 'Choose the option that best rewrites the sentence keeping the same meaning:
+      "Someone stole my bicycle last night."'
+  options:
+    - id: A
+      ca: My bicycle was stolen last night.
+      es: My bicycle was stolen last night.
+    - id: B
+      ca: My bicycle was stole last night.
+      es: My bicycle was stole last night.
+    - id: C
+      ca: My bicycle is stolen last night.
+      es: My bicycle is stolen last night.
+    - id: D
+      ca: My bicycle has been stolen last night.
+      es: My bicycle has been stolen last night.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per passar a passiva un temps de passat simple, l'objecte ('my bicycle')
+      passa a subjecte i el verb es forma amb 'was/were' + participi. El
+      participi de 'steal' és irregular: 'stolen' (no 'stole', que és el passat
+      simple), per això B és incorrecta. C usa present ('is') amb 'last night',
+      un temps que no concorda. D fa servir present perfect ('has been'),
+      incompatible amb un marcador temporal acabat com 'last night'. La correcta
+      és 'was stolen'."
+    es: "Para pasar a pasiva un pasado simple, el objeto ('my bicycle') pasa a
+      sujeto y el verbo se forma con 'was/were' + participio. El participio de
+      'steal' es irregular: 'stolen' (no 'stole', que es el pasado simple), por
+      eso B es incorrecta. C usa presente ('is') con 'last night', tiempo que no
+      concuerda. D emplea present perfect ('has been'), incompatible con un
+      marcador temporal terminado como 'last night'. La correcta es 'was
+      stolen'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.transformation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: '"I have finished my homework," Tom said. Choose the correct reported
+      (indirect) form.'
+    es: '"I have finished my homework," Tom said. Choose the correct reported
+      (indirect) form.'
+  options:
+    - id: A
+      ca: Tom said he had finished his homework.
+      es: Tom said he had finished his homework.
+    - id: B
+      ca: Tom said he has finished his homework.
+      es: Tom said he has finished his homework.
+    - id: C
+      ca: Tom said I had finished my homework.
+      es: Tom said I had finished my homework.
+    - id: D
+      ca: Tom said he had finished my homework.
+      es: Tom said he had finished my homework.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En estil indirecte amb verb introductori en passat ('said'), el present
+      perfect ('have finished') retrocedeix a past perfect ('had finished'). A
+      més, els pronoms canvien segons qui parla: 'I' passa a 'he' (és Tom) i
+      'my' a 'his'. B no fa el retrocés temporal. C manté 'I' en lloc de 'he'. D
+      no canvia 'my' a 'his'. La correcta és A."
+    es: "En estilo indirecto con verbo introductorio en pasado ('said'), el present
+      perfect ('have finished') retrocede a past perfect ('had finished').
+      Además, los pronombres cambian según quién habla: 'I' pasa a 'he' (es Tom)
+      y 'my' a 'his'. B no hace el retroceso temporal. C mantiene 'I' en vez de
+      'he'. D no cambia 'my' por 'his'. La correcta es A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.transformation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "\"She didn't study, so she failed the exam.\" Complete the third
+      conditional keeping the same meaning: \"If she ___ , she ___ the exam.\""
+    es: "\"She didn't study, so she failed the exam.\" Complete the third
+      conditional keeping the same meaning: \"If she ___ , she ___ the exam.\""
+  options:
+    - id: A
+      ca: had studied / wouldn't have failed
+      es: had studied / wouldn't have failed
+    - id: B
+      ca: studied / wouldn't fail
+      es: studied / wouldn't fail
+    - id: C
+      ca: had studied / wouldn't fail
+      es: had studied / wouldn't fail
+    - id: D
+      ca: would have studied / hadn't failed
+      es: would have studied / hadn't failed
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "És una situació irreal del passat (ja va suspendre), així que cal la
+      tercera condicional: 'If' + past perfect ('had studied') a la condició i
+      'would have' + participi ('wouldn't have failed') al resultat. B és segona
+      condicional (present/futur irreal). C barreja bé la condició però posa un
+      resultat de segona condicional. D inverteix les estructures: posa 'would
+      have' a la clàusula 'if', cosa incorrecta. La correcta és A."
+    es: "Es una situación irreal del pasado (ya suspendió), así que se necesita la
+      tercera condicional: 'If' + past perfect ('had studied') en la condición y
+      'would have' + participio ('wouldn't have failed') en el resultado. B es
+      segunda condicional (presente/futuro irreal). C acierta la condición pero
+      pone un resultado de segunda condicional. D invierte las estructuras:
+      coloca 'would have' en la cláusula 'if', lo cual es incorrecto. La
+      correcta es A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.transformation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "\"A mechanic is repairing John's car.\" Rewrite the sentence with a
+      causative structure using 'have': \"John ___ at the moment.\""
+    es: "\"A mechanic is repairing John's car.\" Rewrite the sentence with a
+      causative structure using 'have': \"John ___ at the moment.\""
+  options:
+    - id: A
+      ca: is having his car repaired
+      es: is having his car repaired
+    - id: B
+      ca: is having repaired his car
+      es: is having repaired his car
+    - id: C
+      ca: is having his car repairing
+      es: is having his car repairing
+    - id: D
+      ca: is having his car repair
+      es: is having his car repair
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La causativa 'have something done' expressa que algú altre fa l'acció per
+      tu. L'ordre és: have + objecte ('his car') + participi passat
+      ('repaired'). Com que l'original està en present continu ('is repairing'),
+      la causativa també ('is having ... repaired'). B posa el participi abans
+      de l'objecte (ordre incorrecte). C usa gerundi 'repairing' en lloc del
+      participi. D usa l'infinitiu sense 'to', que no és la forma causativa amb
+      'have + objecte'. La correcta és A."
+    es: "La causativa 'have something done' expresa que otra persona hace la acción
+      por ti. El orden es: have + objeto ('his car') + participio pasado
+      ('repaired'). Como el original está en presente continuo ('is repairing'),
+      la causativa también ('is having ... repaired'). B pone el participio
+      antes del objeto (orden incorrecto). C usa gerundio 'repairing' en lugar
+      del participio. D usa el infinitivo sin 'to', que no es la forma causativa
+      con 'have + objeto'. La correcta es A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.transformation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "\"It was such a difficult exam that nobody passed.\" Rewrite the sentence
+      with 'so', keeping the same meaning: \"The exam ___ that nobody passed.\""
+    es: "\"It was such a difficult exam that nobody passed.\" Rewrite the sentence
+      with 'so', keeping the same meaning: \"The exam ___ that nobody passed.\""
+  options:
+    - id: A
+      ca: was so difficult
+      es: was so difficult
+    - id: B
+      ca: was such difficult
+      es: was such difficult
+    - id: C
+      ca: was so difficult exam
+      es: was so difficult exam
+    - id: D
+      ca: was so a difficult
+      es: was so a difficult
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Such' va amb un nom (amb o sense adjectiu): 'such a difficult exam'. 'So'
+      va només amb un adjectiu o adverbi: 'so difficult'. Com que el subjecte ja
+      és 'The exam', després del verb només hi ha d'anar l'adjectiu: 'was so
+      difficult'. B confon 'such' amb 'so' (i sense article). C afegeix el nom
+      'exam', que ja és el subjecte. D posa un article 'a' després de 'so', cosa
+      que només s'usa amb 'such'. La correcta és A."
+    es: "'Such' acompaña a un sustantivo (con o sin adjetivo): 'such a difficult
+      exam'. 'So' va solo con un adjetivo o adverbio: 'so difficult'. Como el
+      sujeto ya es 'The exam', tras el verbo solo debe ir el adjetivo: 'was so
+      difficult'. B confunde 'such' con 'so' (y sin artículo). C añade el
+      sustantivo 'exam', que ya es el sujeto. D coloca un artículo 'a' tras
+      'so', algo que solo se usa con 'such'. La correcta es A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.use_of_english.transformation
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: '"As soon as we arrived, it started to rain." Rewrite the sentence beginning
+      with the negative adverbial: "No sooner ___ than it started to rain."'
+    es: '"As soon as we arrived, it started to rain." Rewrite the sentence beginning
+      with the negative adverbial: "No sooner ___ than it started to rain."'
+  options:
+    - id: A
+      ca: had we arrived
+      es: had we arrived
+    - id: B
+      ca: we had arrived
+      es: we had arrived
+    - id: C
+      ca: did we arrive
+      es: did we arrive
+    - id: D
+      ca: we arrived
+      es: we arrived
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Quan una oració comença amb una expressió negativa com 'No sooner', cal la
+      inversió: auxiliar + subjecte. L'estructura fixa és 'No sooner had +
+      subjecte + participi ... than ...', amb past perfect per a l'acció
+      anterior. Per tant: 'No sooner had we arrived than...'. B no inverteix
+      (subjecte abans de l'auxiliar). C usa 'did' + infinitiu, però l'estructura
+      demana past perfect ('had arrived'). D no fa cap inversió ni auxiliar. La
+      correcta és A."
+    es: "Cuando una oración empieza con una expresión negativa como 'No sooner', se
+      requiere la inversión: auxiliar + sujeto. La estructura fija es 'No sooner
+      had + sujeto + participio ... than ...', con past perfect para la acción
+      anterior. Por tanto: 'No sooner had we arrived than...'. B no invierte
+      (sujeto antes del auxiliar). C usa 'did' + infinitivo, pero la estructura
+      pide past perfect ('had arrived'). D no hace inversión ni auxiliar. La
+      correcta es A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.main_idea
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: >-
+      Read the text and choose the best title (main idea):
+
+
+      "Many people believe that eating late at night causes weight gain.
+      However, recent studies show that it is the total number of calories you
+      eat during the day, not the time you eat them, that really matters. A
+      person who eats a large dinner at midnight but stays within their daily
+      calorie limit will not gain more weight than someone who eats the same
+      amount earlier."
+
+
+      What is the main idea of the text?
+    es: >-
+      Read the text and choose the best title (main idea):
+
+
+      "Many people believe that eating late at night causes weight gain.
+      However, recent studies show that it is the total number of calories you
+      eat during the day, not the time you eat them, that really matters. A
+      person who eats a large dinner at midnight but stays within their daily
+      calorie limit will not gain more weight than someone who eats the same
+      amount earlier."
+
+
+      What is the main idea of the text?
+  options:
+    - id: A
+      ca: Total daily calories matter more than the time of eating for weight gain.
+      es: Total daily calories matter more than the time of eating for weight gain.
+    - id: B
+      ca: Eating a large dinner at midnight is always unhealthy.
+      es: Eating a large dinner at midnight is always unhealthy.
+    - id: C
+      ca: Recent studies are often unreliable and contradictory.
+      es: Recent studies are often unreliable and contradictory.
+    - id: D
+      ca: People should never eat late at night to avoid gaining weight.
+      es: People should never eat late at night to avoid gaining weight.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La idea principal resumeix tot el text. El text contrasta una creença
+      popular (menjar tard engreixa) amb el que diuen els estudis: el que compta
+      és el total de calories del dia, no l'hora. Per tant A és correcta. B i D
+      repeteixen precisament la creença que el text refuta (l'error típic de
+      quedar-se amb la primera frase). C parla de la fiabilitat dels estudis, un
+      tema que el text no tracta."
+    es: "La idea principal resume todo el texto. El texto contrasta una creencia
+      popular (comer tarde engorda) con lo que dicen los estudios: lo que
+      importa es el total de calorías del día, no la hora. Por eso A es
+      correcta. B y D repiten justo la creencia que el texto refuta (el error
+      típico de quedarse con la primera frase). C habla de la fiabilidad de los
+      estudios, un tema que el texto no trata."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.main_idea
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: >-
+      Read the paragraph and choose the sentence that best expresses its main
+      idea:
+
+
+      "When the first coffee houses opened in London in the 1650s, they quickly
+      became more than places to drink coffee. Merchants met there to make
+      deals, writers gathered to share ideas, and ordinary citizens went to read
+      newspapers and discuss politics. For the price of one cup, anyone could
+      join the conversation, which is why the coffee houses were nicknamed
+      'penny universities'."
+
+
+      What is the main idea?
+    es: >-
+      Read the paragraph and choose the sentence that best expresses its main
+      idea:
+
+
+      "When the first coffee houses opened in London in the 1650s, they quickly
+      became more than places to drink coffee. Merchants met there to make
+      deals, writers gathered to share ideas, and ordinary citizens went to read
+      newspapers and discuss politics. For the price of one cup, anyone could
+      join the conversation, which is why the coffee houses were nicknamed
+      'penny universities'."
+
+
+      What is the main idea?
+  options:
+    - id: A
+      ca: London coffee houses became important centres of business and public
+        discussion.
+      es: London coffee houses became important centres of business and public
+        discussion.
+    - id: B
+      ca: Coffee first arrived in London during the 1650s.
+      es: Coffee first arrived in London during the 1650s.
+    - id: C
+      ca: A cup of coffee cost only one penny in the 17th century.
+      es: A cup of coffee cost only one penny in the 17th century.
+    - id: D
+      ca: Universities in London were cheaper than coffee houses.
+      es: Universities in London were cheaper than coffee houses.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La idea principal ha d'englobar tot el paràgraf: els cafès eren molt més
+      que llocs per beure cafè; s'hi feien negocis i debats públics. Per això A
+      és correcta. B i C són detalls concrets (una data, un preu), no la idea
+      global; és l'error típic de confondre un detall amb la idea principal. D
+      fa una comparació que el text no fa: 'penny universities' és només un
+      sobrenom."
+    es: "La idea principal debe abarcar todo el párrafo: los cafés eran mucho más
+      que lugares para beber café; en ellos se hacían negocios y debates
+      públicos. Por eso A es correcta. B y C son detalles concretos (una fecha,
+      un precio), no la idea global; es el error típico de confundir un detalle
+      con la idea principal. D hace una comparación que el texto no hace: 'penny
+      universities' es solo un apodo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.main_idea
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: >-
+      Read the text and choose its main purpose:
+
+
+      "Turn off lights when you leave a room. Unplug chargers that are not in
+      use. Wash your clothes with cold water instead of hot. Take the stairs
+      instead of the lift when you can. None of these actions is difficult, yet
+      together they can noticeably reduce both your energy bill and your carbon
+      footprint."
+
+
+      What is the writer's main point?
+    es: >-
+      Read the text and choose its main purpose:
+
+
+      "Turn off lights when you leave a room. Unplug chargers that are not in
+      use. Wash your clothes with cold water instead of hot. Take the stairs
+      instead of the lift when you can. None of these actions is difficult, yet
+      together they can noticeably reduce both your energy bill and your carbon
+      footprint."
+
+
+      What is the writer's main point?
+  options:
+    - id: A
+      ca: Small everyday habits can save energy and help the environment.
+      es: Small everyday habits can save energy and help the environment.
+    - id: B
+      ca: Using the stairs is the most effective way to reduce carbon emissions.
+      es: Using the stairs is the most effective way to reduce carbon emissions.
+    - id: C
+      ca: Cold water washes clothes better than hot water.
+      es: Cold water washes clothes better than hot water.
+    - id: D
+      ca: Reducing your energy bill is impossible without expensive equipment.
+      es: Reducing your energy bill is impossible without expensive equipment.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La darrera frase és la clau: totes aquestes accions senzilles, juntes,
+      redueixen la factura i la petjada de carboni. Aquesta és la idea
+      principal, per tant A. B i C agafen un únic exemple de la llista i el
+      converteixen erròniament en la idea central. D contradiu directament el
+      text, que diu que són accions fàcils i sense cost."
+    es: "La última frase es la clave: todas estas acciones sencillas, juntas,
+      reducen la factura y la huella de carbono. Esa es la idea principal, por
+      eso A. B y C toman un único ejemplo de la lista y lo convierten
+      erróneamente en la idea central. D contradice directamente el texto, que
+      dice que son acciones fáciles y sin coste."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.main_idea
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: >-
+      Read the passage and identify the main idea:
+
+
+      "Critics often complain that video games make young people lazy and
+      antisocial. Yet a growing body of research suggests the opposite may be
+      true. Many games require players to solve problems under pressure,
+      coordinate with teammates across the world, and learn from repeated
+      failure. Far from being a waste of time, these skills can transfer to
+      school and, later, to the workplace."
+
+
+      Which statement best captures the main idea?
+    es: >-
+      Read the passage and identify the main idea:
+
+
+      "Critics often complain that video games make young people lazy and
+      antisocial. Yet a growing body of research suggests the opposite may be
+      true. Many games require players to solve problems under pressure,
+      coordinate with teammates across the world, and learn from repeated
+      failure. Far from being a waste of time, these skills can transfer to
+      school and, later, to the workplace."
+
+
+      Which statement best captures the main idea?
+  options:
+    - id: A
+      ca: Video games can develop useful skills, contrary to what critics claim.
+      es: Video games can develop useful skills, contrary to what critics claim.
+    - id: B
+      ca: Video games make young people lazy and antisocial.
+      es: Video games make young people lazy and antisocial.
+    - id: C
+      ca: Most research on video games is unreliable.
+      es: Most research on video games is unreliable.
+    - id: D
+      ca: Video games should replace traditional schooling.
+      es: Video games should replace traditional schooling.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El text presenta una crítica ('fan la gent mandrosa') i tot seguit la rebat
+      amb 'Yet... the opposite may be true', explicant que els jocs desenvolupen
+      habilitats útils. La idea principal és aquesta refutació: A. B és la
+      postura que l'autor rebutja (error de no veure el gir amb 'Yet'). C no
+      apareix: el text es recolza en la recerca, no la desacredita. D és una
+      exageració que el text no proposa."
+    es: "El texto presenta una crítica ('hacen a la gente perezosa') y a
+      continuación la rebate con 'Yet... the opposite may be true', explicando
+      que los juegos desarrollan habilidades útiles. La idea principal es esa
+      refutación: A. B es la postura que el autor rechaza (error de no ver el
+      giro con 'Yet'). C no aparece: el texto se apoya en la investigación, no
+      la desacredita. D es una exageración que el texto no propone."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.main_idea
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: >-
+      Read the two paragraphs and choose the title that best reflects the main
+      idea of the whole text:
+
+
+      "For decades, the standard advice for anyone learning a language was to
+      move abroad. Only by living among native speakers, experts argued, could a
+      learner truly become fluent. Immersion, they claimed, was irreplaceable.
+
+
+      Today that certainty is fading. With apps that offer daily conversation
+      with speakers worldwide, films streamed in dozens of languages, and online
+      tutors available at any hour, a motivated learner in their own bedroom can
+      now recreate many of the conditions that once required a plane ticket. The
+      destination, it seems, matters less than the effort."
+
+
+      The best title is:
+    es: >-
+      Read the two paragraphs and choose the title that best reflects the main
+      idea of the whole text:
+
+
+      "For decades, the standard advice for anyone learning a language was to
+      move abroad. Only by living among native speakers, experts argued, could a
+      learner truly become fluent. Immersion, they claimed, was irreplaceable.
+
+
+      Today that certainty is fading. With apps that offer daily conversation
+      with speakers worldwide, films streamed in dozens of languages, and online
+      tutors available at any hour, a motivated learner in their own bedroom can
+      now recreate many of the conditions that once required a plane ticket. The
+      destination, it seems, matters less than the effort."
+
+
+      The best title is:
+  options:
+    - id: A
+      ca: "Learning a Language: Technology Makes Living Abroad Less Necessary"
+      es: "Learning a Language: Technology Makes Living Abroad Less Necessary"
+    - id: B
+      ca: Why Immersion Abroad Remains the Only Path to Fluency
+      es: Why Immersion Abroad Remains the Only Path to Fluency
+    - id: C
+      ca: The Best Language-Learning Apps of the Year
+      es: The Best Language-Learning Apps of the Year
+    - id: D
+      ca: How to Save Money on Plane Tickets
+      es: How to Save Money on Plane Tickets
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El text té dos moviments: abans es creia que calia anar a l'estranger; ara
+      la tecnologia permet recrear la immersió a casa, així que 'la destinació
+      importa menys que l'esforç'. Un bon títol ha de recollir aquest gir
+      complet: A. B només descriu el primer paràgraf, la idea antiga que el text
+      supera. C i D s'agafen a detalls concrets (les apps, els bitllets d'avió)
+      i no capten la idea global del text."
+    es: "El texto tiene dos movimientos: antes se creía que había que ir al
+      extranjero; ahora la tecnología permite recrear la inmersión en casa, así
+      que 'el destino importa menos que el esfuerzo'. Un buen título debe
+      recoger ese giro completo: A. B solo describe el primer párrafo, la idea
+      antigua que el texto supera. C y D se aferran a detalles concretos (las
+      apps, los billetes de avión) y no captan la idea global del texto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.detail
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: >-
+      Read the text and answer the question.
+
+
+      "The city library opens at 9 a.m. on weekdays, but on Saturdays it does
+      not open until 10 a.m. It stays closed on Sundays and public holidays.
+      During August, however, closing time is brought forward to 6 p.m. instead
+      of the usual 8 p.m."
+
+
+      According to the text, at what time does the library open on Saturdays?
+    es: >-
+      Read the text and answer the question.
+
+
+      "The city library opens at 9 a.m. on weekdays, but on Saturdays it does
+      not open until 10 a.m. It stays closed on Sundays and public holidays.
+      During August, however, closing time is brought forward to 6 p.m. instead
+      of the usual 8 p.m."
+
+
+      According to the text, at what time does the library open on Saturdays?
+  options:
+    - id: A
+      ca: At 9 a.m.
+      es: At 9 a.m.
+    - id: B
+      ca: At 10 a.m.
+      es: At 10 a.m.
+    - id: C
+      ca: At 8 p.m.
+      es: At 8 p.m.
+    - id: D
+      ca: At 6 p.m.
+      es: At 6 p.m.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El text diu "on Saturdays it does not open until 10 a.m.", és a dir, els
+      dissabtes obre a les 10 del matí. L'opció A (9 a.m.) és l'horari dels dies
+      laborables (weekdays), un error freqüent per no distingir el dia. Les
+      opcions C i D es refereixen a l'hora de tancament, no a la d'obertura.
+    es: El texto dice "on Saturdays it does not open until 10 a.m.", es decir, los
+      sábados abre a las 10 de la mañana. La opción A (9 a.m.) es el horario de
+      los días laborables (weekdays), un error común por no distinguir el día.
+      Las opciones C y D se refieren a la hora de cierre, no a la de apertura.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.detail
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: >-
+      Read the text and answer the question.
+
+
+      "Maria had planned to travel to Berlin by plane, but when the airline
+      cancelled her flight she decided to go by train instead. Her brother, who
+      lives there, offered to pick her up at the station."
+
+
+      How did Maria finally travel to Berlin?
+    es: >-
+      Read the text and answer the question.
+
+
+      "Maria had planned to travel to Berlin by plane, but when the airline
+      cancelled her flight she decided to go by train instead. Her brother, who
+      lives there, offered to pick her up at the station."
+
+
+      How did Maria finally travel to Berlin?
+  options:
+    - id: A
+      ca: By plane.
+      es: By plane.
+    - id: B
+      ca: By train.
+      es: By train.
+    - id: C
+      ca: By car with her brother.
+      es: By car with her brother.
+    - id: D
+      ca: She did not travel.
+      es: She did not travel.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: La frase clau és "she decided to go by train instead". "Instead" indica que
+      va canviar el pla original (l'avió) pel tren. L'opció A era només el pla
+      inicial ("had planned"), que no es va complir perquè van cancel·lar el
+      vol. El germà només la va anar a buscar a l'estació; no la va portar en
+      cotxe (C).
+    es: La frase clave es "she decided to go by train instead". "Instead" indica que
+      cambió el plan original (el avión) por el tren. La opción A era solo el
+      plan inicial ("had planned"), que no se cumplió porque cancelaron el
+      vuelo. El hermano solo fue a recogerla a la estación; no la llevó en coche
+      (C).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.detail
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: >-
+      Read the text and answer the question.
+
+
+      "The survey showed that 60% of the students walked to school, a quarter
+      came by bus, and the rest were driven by their parents. Only the students
+      who walked said they were never late."
+
+
+      What percentage of the students were driven by their parents?
+    es: >-
+      Read the text and answer the question.
+
+
+      "The survey showed that 60% of the students walked to school, a quarter
+      came by bus, and the rest were driven by their parents. Only the students
+      who walked said they were never late."
+
+
+      What percentage of the students were driven by their parents?
+  options:
+    - id: A
+      ca: 25%
+      es: 25%
+    - id: B
+      ca: 15%
+      es: 15%
+    - id: C
+      ca: 40%
+      es: 40%
+    - id: D
+      ca: 60%
+      es: 60%
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El 60% caminava i "a quarter" (una quarta part = 25%) anava en autobús. La
+      resta = 100% − 60% − 25% = 15%, que és qui portaven els pares. L'opció A
+      (25%) confon "a quarter" amb el resultat final. L'opció C (40%) surt de
+      fer 100% − 60% oblidant restar l'autobús. L'opció D repeteix la dada dels
+      que caminaven.
+    es: El 60% caminaba y "a quarter" (una cuarta parte = 25%) iba en autobús. El
+      resto = 100% − 60% − 25% = 15%, que es a quienes llevaban sus padres. La
+      opción A (25%) confunde "a quarter" con el resultado final. La opción C
+      (40%) resulta de hacer 100% − 60% olvidando restar el autobús. La opción D
+      repite el dato de los que caminaban.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.detail
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: >-
+      Read the text and answer the question.
+
+
+      "Although the new smartphone was praised for its camera, most reviewers
+      complained that its battery barely lasted a full day. The manufacturer
+      promised a software update to address the problem, but admitted it would
+      not increase the actual battery capacity."
+
+
+      What is the main drawback of the smartphone mentioned in the text?
+    es: >-
+      Read the text and answer the question.
+
+
+      "Although the new smartphone was praised for its camera, most reviewers
+      complained that its battery barely lasted a full day. The manufacturer
+      promised a software update to address the problem, but admitted it would
+      not increase the actual battery capacity."
+
+
+      What is the main drawback of the smartphone mentioned in the text?
+  options:
+    - id: A
+      ca: Its camera is of poor quality.
+      es: Its camera is of poor quality.
+    - id: B
+      ca: Its battery life is short.
+      es: Its battery life is short.
+    - id: C
+      ca: The software update is too expensive.
+      es: The software update is too expensive.
+    - id: D
+      ca: It has a very small screen.
+      es: It has a very small screen.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "El text diu \"its battery barely lasted a full day\": el problema principal
+      és la poca durada de la bateria. L'opció A és el contrari, ja que la
+      càmera va rebre elogis (\"praised\"). L'opció C no apareix: no es diu que
+      l'actualització sigui cara. L'opció D (pantalla petita) no es menciona
+      enlloc. Cal fixar-se en el detall que contrasta amb l'elogi de la càmera."
+    es: 'El texto dice "its battery barely lasted a full day": el problema principal
+      es la poca duración de la batería. La opción A es lo contrario, ya que la
+      cámara recibió elogios ("praised"). La opción C no aparece: no se dice que
+      la actualización sea cara. La opción D (pantalla pequeña) no se menciona.
+      Hay que fijarse en el detalle que contrasta con el elogio de la cámara.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000084
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.detail
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: >-
+      Read the text and answer the question.
+
+
+      "When Tom arrived at the campsite, he realised he had forgotten to pack
+      the tent poles. Luckily, the family camping next to his lent him a spare
+      set, so he managed to put the tent up before it got dark."
+
+
+      Why was Tom able to set up his tent?
+    es: >-
+      Read the text and answer the question.
+
+
+      "When Tom arrived at the campsite, he realised he had forgotten to pack
+      the tent poles. Luckily, the family camping next to his lent him a spare
+      set, so he managed to put the tent up before it got dark."
+
+
+      Why was Tom able to set up his tent?
+  options:
+    - id: A
+      ca: Because he bought new poles at the campsite.
+      es: Because he bought new poles at the campsite.
+    - id: B
+      ca: Because a nearby family lent him some poles.
+      es: Because a nearby family lent him some poles.
+    - id: C
+      ca: Because he found his own poles in the car.
+      es: Because he found his own poles in the car.
+    - id: D
+      ca: Because the campsite staff helped him.
+      es: Because the campsite staff helped him.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El text explica que "the family camping next to his lent him a spare set"
+      (uns pals de recanvi), i per això va poder muntar la tenda. El verb "lent"
+      (de "lend") vol dir prestar, no vendre; per això A és incorrecta. No trobà
+      els seus propis pals (C), ni l'ajudà el personal del càmping (D). L'error
+      típic és confondre "lend" (prestar) amb "buy" (comprar).
+    es: El texto explica que "the family camping next to his lent him a spare set"
+      (unas varillas de repuesto), y por eso pudo montar la tienda. El verbo
+      "lent" (de "lend") significa prestar, no vender; por eso A es incorrecta.
+      No encontró sus propias varillas (C) ni le ayudó el personal del camping
+      (D). El error típico es confundir "lend" (prestar) con "buy" (comprar).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000085
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: >-
+      Read the short text and answer the question.
+
+
+      "Marta glanced at the clock, grabbed her coat without buttoning it, and
+      left her half-finished coffee on the table. She didn't even reply to her
+      sister's question as she rushed out of the door."
+
+
+      What can we infer about Marta?
+    es: >-
+      Read the short text and answer the question.
+
+
+      "Marta glanced at the clock, grabbed her coat without buttoning it, and
+      left her half-finished coffee on the table. She didn't even reply to her
+      sister's question as she rushed out of the door."
+
+
+      What can we infer about Marta?
+  options:
+    - id: A
+      ca: She was in a hurry and probably running late.
+      es: She was in a hurry and probably running late.
+    - id: B
+      ca: She was angry with her sister and left on purpose.
+      es: She was angry with her sister and left on purpose.
+    - id: C
+      ca: She disliked the coffee she had made.
+      es: She disliked the coffee she had made.
+    - id: D
+      ca: She was going out to enjoy a relaxing walk.
+      es: She was going out to enjoy a relaxing walk.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El text no diu directament que faci tard, però els detalls impliquen
+      pressa: mirar el rellotge, no cordar-se l'abric, deixar el cafè a mitges i
+      sortir corrents. Inferir vol dir deduir a partir de pistes. B (enfadada) i
+      C (no li agrada el cafè) sobreinterpreten: no contestar la germana i
+      deixar el cafè s'expliquen per la pressa, no per enuig o disgust. D
+      contradiu el to accelerat del text."
+    es: "El texto no dice directamente que llegue tarde, pero los detalles implican
+      prisa: mirar el reloj, no abrocharse el abrigo, dejar el café a medias y
+      salir corriendo. Inferir es deducir a partir de pistas. B (enfadada) y C
+      (no le gusta el café) sobreinterpretan: no contestar a la hermana y dejar
+      el café se explican por la prisa, no por enojo o disgusto. D contradice el
+      tono acelerado del texto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000086
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: >-
+      Read the short text and answer the question.
+
+
+      "By the time the guide finished speaking, several tourists had put their
+      cameras away and a few were checking their watches. One quietly slipped
+      out of the room."
+
+
+      What can be inferred about the guide's talk?
+    es: >-
+      Read the short text and answer the question.
+
+
+      "By the time the guide finished speaking, several tourists had put their
+      cameras away and a few were checking their watches. One quietly slipped
+      out of the room."
+
+
+      What can be inferred about the guide's talk?
+  options:
+    - id: A
+      ca: The tourists found the talk fascinating and wanted more.
+      es: The tourists found the talk fascinating and wanted more.
+    - id: B
+      ca: The talk had become long or boring for the audience.
+      es: The talk had become long or boring for the audience.
+    - id: C
+      ca: The room was too cold for the tourists to stay.
+      es: The room was too cold for the tourists to stay.
+    - id: D
+      ca: The guide had asked everyone to leave the room.
+      es: The guide had asked everyone to leave the room.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Les accions descrites són senyals d'avorriment o impaciència: desar les
+      càmeres, mirar el rellotge i marxar discretament. La inferència lògica és
+      que la xerrada s'havia fet llarga o pesada. A diu el contrari de les
+      pistes. C introdueix una causa (fred) que el text no esmenta. D contradiu
+      'slipped out quietly', que suggereix marxar per iniciativa pròpia, no per
+      ordre del guia."
+    es: "Las acciones descritas son señales de aburrimiento o impaciencia: guardar
+      las cámaras, mirar el reloj y salir discretamente. La inferencia lógica es
+      que la charla se había hecho larga o pesada. A dice lo contrario de las
+      pistas. C introduce una causa (frío) que el texto no menciona. D
+      contradice 'slipped out quietly', que sugiere marcharse por iniciativa
+      propia, no por orden del guía."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000087
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: >-
+      Read the short text and answer the question.
+
+
+      "When I mentioned the promotion, Daniel congratulated me warmly. But later
+      I noticed he kept correcting small things I said in the meeting, and he
+      'forgot' to forward me the email everyone else received."
+
+
+      What does the narrator imply about Daniel?
+    es: >-
+      Read the short text and answer the question.
+
+
+      "When I mentioned the promotion, Daniel congratulated me warmly. But later
+      I noticed he kept correcting small things I said in the meeting, and he
+      'forgot' to forward me the email everyone else received."
+
+
+      What does the narrator imply about Daniel?
+  options:
+    - id: A
+      ca: Daniel is genuinely happy about the narrator's promotion.
+      es: Daniel is genuinely happy about the narrator's promotion.
+    - id: B
+      ca: Daniel is naturally forgetful and often makes mistakes.
+      es: Daniel is naturally forgetful and often makes mistakes.
+    - id: C
+      ca: Daniel may secretly resent the narrator's promotion.
+      es: Daniel may secretly resent the narrator's promotion.
+    - id: D
+      ca: Daniel wants to help the narrator improve at meetings.
+      es: Daniel wants to help the narrator improve at meetings.
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "Hi ha un contrast entre les paraules i els fets. Daniel felicita 'warmly',
+      però després actua de manera que soscava el narrador: corregir detalls i
+      'oblidar' (cometes irònics) l'email. Les cometes al voltant de 'forgot'
+      assenyalen que no va ser un veritable oblit. La inferència és que potser
+      està gelós o ressentit. A ignora les accions posteriors; B pren l'oblit al
+      peu de la lletra malgrat les cometes; D dóna una intenció positiva que les
+      pistes desmenteixen."
+    es: "Hay un contraste entre las palabras y los hechos. Daniel felicita 'warmly',
+      pero luego actúa socavando al narrador: corregir detalles y 'olvidar'
+      (comillas irónicas) el email. Las comillas en 'forgot' señalan que no fue
+      un olvido real. La inferencia es que quizá esté celoso o resentido. A
+      ignora las acciones posteriores; B toma el olvido al pie de la letra pese
+      a las comillas; D atribuye una intención positiva que las pistas
+      desmienten."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000088
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: >-
+      Read the short text and answer the question.
+
+
+      "The streets were empty, shutters were down, and a single flag hung
+      motionless. From a distant square came the faint sound of a marching band,
+      and the bakery had a handwritten note taped to its door."
+
+
+      What can we most reasonably infer?
+    es: >-
+      Read the short text and answer the question.
+
+
+      "The streets were empty, shutters were down, and a single flag hung
+      motionless. From a distant square came the faint sound of a marching band,
+      and the bakery had a handwritten note taped to its door."
+
+
+      What can we most reasonably infer?
+  options:
+    - id: A
+      ca: It is an ordinary busy working morning in the town.
+      es: It is an ordinary busy working morning in the town.
+    - id: B
+      ca: The town has been abandoned by all its inhabitants.
+      es: The town has been abandoned by all its inhabitants.
+    - id: C
+      ca: It is a public holiday, so shops are closed and there is a celebration.
+      es: It is a public holiday, so shops are closed and there is a celebration.
+    - id: D
+      ca: A dangerous storm has forced everyone to stay indoors.
+      es: A dangerous storm has forced everyone to stay indoors.
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "Cal combinar diverses pistes: carrers buits i persianes abaixades (comerços
+      tancats), una bandera, una banda de música al lluny (celebració) i una
+      nota escrita a mà a la fleca (avís de tancament). Tot plegat encaixa amb
+      un dia festiu. A contradiu els carrers buits i les persianes abaixades. B
+      exagera: la banda de música indica que hi ha gent. D introdueix una
+      tempesta, però una banda desfilant i una bandera immòbil no encaixen amb
+      mal temps."
+    es: "Hay que combinar varias pistas: calles vacías y persianas bajadas
+      (comercios cerrados), una bandera, una banda de música a lo lejos
+      (celebración) y una nota manuscrita en la panadería (aviso de cierre).
+      Todo encaja con un día festivo. A contradice las calles vacías y las
+      persianas bajadas. B exagera: la banda de música indica que hay gente. D
+      introduce una tormenta, pero una banda desfilando y una bandera inmóvil no
+      encajan con mal tiempo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: ang-g-000089
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: english
+  type: multiple_choice
+  skills:
+    - english.reading.inference
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: >-
+      Read the short text and answer the question.
+
+
+      "'Of course I read your whole report,' said the manager, turning to page
+      one for the first time. 'The conclusions were... exactly what I'd
+      expected.' She paused, searching the summary for a heading."
+
+
+      What is the writer suggesting through this description?
+    es: >-
+      Read the short text and answer the question.
+
+
+      "'Of course I read your whole report,' said the manager, turning to page
+      one for the first time. 'The conclusions were... exactly what I'd
+      expected.' She paused, searching the summary for a heading."
+
+
+      What is the writer suggesting through this description?
+  options:
+    - id: A
+      ca: The manager had read the report carefully and remembered it well.
+      es: The manager had read the report carefully and remembered it well.
+    - id: B
+      ca: The manager had not actually read the report and was pretending.
+      es: The manager had not actually read the report and was pretending.
+    - id: C
+      ca: The report was too short for the manager to form an opinion.
+      es: The report was too short for the manager to form an opinion.
+    - id: D
+      ca: The manager disagreed strongly with the report's conclusions.
+      es: The manager disagreed strongly with the report's conclusions.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: L'autor crea un contrast irònic entre el que la directora diu i el que fa.
+      Afirma haver llegit 'tot' l'informe mentre gira a la pàgina u 'per primera
+      vegada'; la pausa i el fet de buscar un títol al resum revelen que no el
+      coneix. La inferència és que fingeix haver-lo llegit. A pren les paraules
+      literalment i ignora les accions delatores. C i D introdueixen idees
+      (informe massa curt, desacord) que el text no recolza; el problema és la
+      fingida lectura, no el contingut.
+    es: El autor crea un contraste irónico entre lo que la directora dice y lo que
+      hace. Afirma haber leído 'todo' el informe mientras pasa a la página uno
+      'por primera vez'; la pausa y el buscar un título en el resumen revelan
+      que no lo conoce. La inferencia es que finge haberlo leído. A toma las
+      palabras literalmente e ignora las acciones delatoras. C y D introducen
+      ideas (informe demasiado corto, desacuerdo) que el texto no respalda; el
+      problema es la lectura fingida, no el contenido.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

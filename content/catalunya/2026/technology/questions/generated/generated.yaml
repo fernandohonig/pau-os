@@ -1,0 +1,5189 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: tec-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.mechanisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: En una palanca de primer gènere, la resistència val 600 N i actua a 0,20 m
+      del punt de suport (fulcre). Si el braç de la potència (des del fulcre
+      fins on s'aplica la força) és de 0,60 m, quina força mínima cal aplicar
+      per mantenir l'equilibri?
+    es: En una palanca de primer género, la resistencia vale 600 N y actúa a 0,20 m
+      del punto de apoyo (fulcro). Si el brazo de la potencia (desde el fulcro
+      hasta donde se aplica la fuerza) es de 0,60 m, ¿qué fuerza mínima hay que
+      aplicar para mantener el equilibrio?
+  options:
+    - id: A
+      ca: 200 N
+      es: 200 N
+    - id: B
+      ca: 1800 N
+      es: 1800 N
+    - id: C
+      ca: 600 N
+      es: 600 N
+    - id: D
+      ca: 120 N
+      es: 120 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Llei de la palanca (equilibri de moments): P·b_p = R·b_r. Aïllant la
+      potència: P = R·b_r/b_p = 600×0,20/0,60 = 200 N. B inverteix els braços
+      (600×0,60/0,20); C suposa braços iguals (P=R); D només multiplica R pel
+      braç de la resistència sense dividir."
+    es: "Ley de la palanca (equilibrio de momentos): P·b_p = R·b_r. Despejando la
+      potencia: P = R·b_r/b_p = 600×0,20/0,60 = 200 N. B invierte los brazos
+      (600×0,60/0,20); C supone brazos iguales (P=R); D solo multiplica R por el
+      brazo de la resistencia sin dividir."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.mechanisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Un polispast (aparell de politges) sosté una càrrega de 1200 N amb 4 trams
+      de corda que suporten directament la càrrega. Menyspreant el fregament i
+      el pes de les politges, quina és la força teòrica que cal fer a l'extrem
+      lliure de la corda?
+    es: Un polipasto sostiene una carga de 1200 N con 4 tramos de cuerda que
+      soportan directamente la carga. Despreciando el rozamiento y el peso de
+      las poleas, ¿qué fuerza teórica hay que hacer en el extremo libre de la
+      cuerda?
+  options:
+    - id: A
+      ca: 300 N
+      es: 300 N
+    - id: B
+      ca: 1200 N
+      es: 1200 N
+    - id: C
+      ca: 4800 N
+      es: 4800 N
+    - id: D
+      ca: 600 N
+      es: 600 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un polispast ideal la força es reparteix entre els n trams que suporten
+      la càrrega: F = W/n = 1200/4 = 300 N. B correspon a una politja fixa (n=1,
+      sense avantatge mecànic); C multiplica per 4 en lloc de dividir; D fa
+      servir n=2."
+    es: "En un polipasto ideal la fuerza se reparte entre los n tramos que soportan
+      la carga: F = W/n = 1200/4 = 300 N. B corresponde a una polea fija (n=1,
+      sin ventaja mecánica); C multiplica por 4 en lugar de dividir; D usa n=2."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.mechanisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En una transmissió per engranatges, el pinyó motriu té 20 dents i gira a
+      1500 min^-1. La roda conduïda té 60 dents. A quina velocitat gira la roda
+      conduïda?
+    es: En una transmisión por engranajes, el piñón motriz tiene 20 dientes y gira a
+      1500 min^-1. La rueda conducida tiene 60 dientes. ¿A qué velocidad gira la
+      rueda conducida?
+  options:
+    - id: A
+      ca: 500 min^-1
+      es: 500 min^-1
+    - id: B
+      ca: 4500 min^-1
+      es: 4500 min^-1
+    - id: C
+      ca: 1500 min^-1
+      es: 1500 min^-1
+    - id: D
+      ca: 600 min^-1
+      es: 600 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El nombre de dents que engranen per unitat de temps és igual: n1·Z1 =
+      n2·Z2, per tant n2 = n1·Z1/Z2 = 1500×20/60 = 500 min^-1 (reducció, i=3). B
+      inverteix la relació (×Z2/Z1); C suposa que la velocitat no canvia; D
+      respon a llegir malament 50 dents (1500×20/50)."
+    es: "El número de dientes que engranan por unidad de tiempo es igual: n1·Z1 =
+      n2·Z2, luego n2 = n1·Z1/Z2 = 1500×20/60 = 500 min^-1 (reducción, i=3). B
+      invierte la relación (×Z2/Z1); C supone que la velocidad no cambia; D
+      responde a leer mal 50 dientes (1500×20/50)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.mechanisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "Un tren d'engranatges compost té dues etapes de reducció: a la primera, un
+      pinyó de 15 dents mou una roda de 45 dents; a la segona (sobre el mateix
+      eix intermedi), un pinyó de 20 dents mou una roda de 40 dents. Si l'eix
+      d'entrada gira a 1200 min^-1, a quina velocitat gira l'eix de sortida?
+      (sense pèrdues)"
+    es: "Un tren de engranajes compuesto tiene dos etapas de reducción: en la
+      primera, un piñón de 15 dientes mueve una rueda de 45 dientes; en la
+      segunda (sobre el mismo eje intermedio), un piñón de 20 dientes mueve una
+      rueda de 40 dientes. Si el eje de entrada gira a 1200 min^-1, ¿a qué
+      velocidad gira el eje de salida? (sin pérdidas)"
+  options:
+    - id: A
+      ca: 200 min^-1
+      es: 200 min^-1
+    - id: B
+      ca: 7200 min^-1
+      es: 7200 min^-1
+    - id: C
+      ca: 400 min^-1
+      es: 400 min^-1
+    - id: D
+      ca: 600 min^-1
+      es: 600 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La relació total és el producte de les etapes: i = (45/15)·(40/20) = 3·2 =
+      6. La sortida gira n_s = n_e/i = 1200/6 = 200 min^-1. B multiplica per 6
+      (confon reducció amb multiplicació); C només aplica la primera etapa (÷3);
+      D només la segona (÷2)."
+    es: "La relación total es el producto de las etapas: i = (45/15)·(40/20) = 3·2 =
+      6. La salida gira n_s = n_e/i = 1200/6 = 200 min^-1. B multiplica por 6
+      (confunde reducción con multiplicación); C solo aplica la primera etapa
+      (÷3); D solo la segunda (÷2)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.mechanisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin dels següents estris és un exemple de palanca de segon gènere (la
+      resistència se situa entre el fulcre i la potència)?
+    es: ¿Cuál de los siguientes utensilios es un ejemplo de palanca de segundo
+      género (la resistencia se sitúa entre el fulcro y la potencia)?
+  options:
+    - id: A
+      ca: El carretó (carreta de mà)
+      es: La carretilla
+    - id: B
+      ca: Les tisores
+      es: Las tijeras
+    - id: C
+      ca: Les pinces de depilar
+      es: Las pinzas de depilar
+    - id: D
+      ca: El gronxador (balancí)
+      es: El balancín (columpio de tabla)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Al carretó el fulcre és la roda, la càrrega (resistència) queda entre la
+      roda i les mans, i la potència s'aplica als mànecs: resistència al mig →
+      palanca de segon gènere. Les tisores i el gronxador tenen el fulcre al mig
+      (primer gènere); les pinces de depilar tenen la potència al mig (tercer
+      gènere)."
+    es: "En la carretilla el fulcro es la rueda, la carga (resistencia) queda entre
+      la rueda y las manos, y la potencia se aplica en los mangos: resistencia
+      en medio → palanca de segundo género. Las tijeras y el balancín tienen el
+      fulcro en medio (primer género); las pinzas de depilar tienen la potencia
+      en medio (tercer género)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.mechanisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Una transmissió per corretja té una politja motriu de 120 mm de diàmetre que
+      gira a 1450 min^-1 i una politja conduïda de 300 mm de diàmetre. Suposant
+      que no hi ha lliscament, a quina velocitat gira la politja conduïda?
+    es: Una transmisión por correa tiene una polea motriz de 120 mm de diámetro que
+      gira a 1450 min^-1 y una polea conducida de 300 mm de diámetro. Suponiendo
+      que no hay deslizamiento, ¿a qué velocidad gira la polea conducida?
+  options:
+    - id: A
+      ca: 580 min^-1
+      es: 580 min^-1
+    - id: B
+      ca: 3625 min^-1
+      es: 3625 min^-1
+    - id: C
+      ca: 1450 min^-1
+      es: 1450 min^-1
+    - id: D
+      ca: 725 min^-1
+      es: 725 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Sense lliscament la velocitat lineal de la corretja és igual, per tant n1·D1
+      = n2·D2 → n2 = n1·D1/D2 = 1450×120/300 = 580 min^-1. B inverteix la
+      relació (×D2/D1); C suposa la mateixa velocitat; D respon a llegir
+      malament un diàmetre de 240 mm (1450×120/240).
+    es: Sin deslizamiento la velocidad lineal de la correa es igual, por tanto n1·D1
+      = n2·D2 → n2 = n1·D1/D2 = 1450×120/300 = 580 min^-1. B invierte la
+      relación (×D2/D1); C supone la misma velocidad; D responde a leer mal un
+      diámetro de 240 mm (1450×120/240).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.motion_transmission
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Una politja motriu de 20 cm de diàmetre gira a 600 min^-1 i està unida per
+      una corretja a una politja conduïda de 40 cm de diàmetre. Suposant que no
+      hi ha lliscament, quina és la velocitat de gir de la politja conduïda?
+    es: Una polea motriz de 20 cm de diámetro gira a 600 min^-1 y está unida por una
+      correa a una polea conducida de 40 cm de diámetro. Suponiendo que no hay
+      deslizamiento, ¿cuál es la velocidad de giro de la polea conducida?
+  options:
+    - id: A
+      ca: 300 min^-1
+      es: 300 min^-1
+    - id: B
+      ca: 1200 min^-1
+      es: 1200 min^-1
+    - id: C
+      ca: 600 min^-1
+      es: 600 min^-1
+    - id: D
+      ca: 150 min^-1
+      es: 150 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un sistema de politges amb corretja es compleix n1·d1 = n2·d2. Aïllant:
+      n2 = n1·d1/d2 = 600·20/40 = 300 min^-1. Com que la politja conduïda és més
+      gran, gira més a poc a poc (reducció)."
+    es: "En un sistema de poleas con correa se cumple n1·d1 = n2·d2. Despejando: n2
+      = n1·d1/d2 = 600·20/40 = 300 min^-1. Como la polea conducida es mayor,
+      gira más despacio (reducción)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.motion_transmission
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Un engranatge motriu de 20 dents gira a 1500 min^-1 i engrana amb una roda
+      conduïda de 60 dents. Quina és la velocitat de la roda conduïda?
+    es: Un engranaje motriz de 20 dientes gira a 1500 min^-1 y engrana con una rueda
+      conducida de 60 dientes. ¿Cuál es la velocidad de la rueda conducida?
+  options:
+    - id: A
+      ca: 4500 min^-1
+      es: 4500 min^-1
+    - id: B
+      ca: 500 min^-1
+      es: 500 min^-1
+    - id: C
+      ca: 1500 min^-1
+      es: 1500 min^-1
+    - id: D
+      ca: 750 min^-1
+      es: 750 min^-1
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "En engranatges: n1·z1 = n2·z2. Per tant n2 = n1·z1/z2 = 1500·20/60 = 500
+      min^-1. La roda amb més dents gira més lenta."
+    es: "En engranajes: n1·z1 = n2·z2. Por tanto n2 = n1·z1/z2 = 1500·20/60 = 500
+      min^-1. La rueda con más dientes gira más lenta."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.motion_transmission
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Un tren d'engranatges compost parteix d'un motor a 1200 min^-1. La roda A
+      (15 dents) engrana amb B (45 dents); B comparteix eix amb C (20 dents),
+      que engrana amb D (60 dents). Quina és la velocitat de sortida a l'eix de
+      D?
+    es: Un tren de engranajes compuesto parte de un motor a 1200 min^-1. La rueda A
+      (15 dientes) engrana con B (45 dientes); B comparte eje con C (20
+      dientes), que engrana con D (60 dientes). ¿Cuál es la velocidad de salida
+      en el eje de D?
+  options:
+    - id: A
+      ca: 133,3 min^-1
+      es: 133,3 min^-1
+    - id: B
+      ca: 400 min^-1
+      es: 400 min^-1
+    - id: C
+      ca: 300 min^-1
+      es: 300 min^-1
+    - id: D
+      ca: 10800 min^-1
+      es: 10800 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La relació total és el producte de les relacions parcials: i =
+      (zA/zB)·(zC/zD) = (15/45)·(20/60) = (1/3)·(1/3) = 1/9. Sortida =
+      1200·(1/9) = 133,3 min^-1. Cal multiplicar les dues etapes, no
+      considerar-ne només una."
+    es: "La relación total es el producto de las relaciones parciales: i =
+      (zA/zB)·(zC/zD) = (15/45)·(20/60) = (1/3)·(1/3) = 1/9. Salida = 1200·(1/9)
+      = 133,3 min^-1. Hay que multiplicar las dos etapas, no considerar solo
+      una."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.motion_transmission
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un motor lliura un parell de 10 N·m girant a 3000 min^-1 i acciona un
+      reductor ideal (sense pèrdues) que redueix la velocitat de sortida a 750
+      min^-1. Quin és el parell disponible a l'eix de sortida?
+    es: Un motor entrega un par de 10 N·m girando a 3000 min^-1 y acciona un
+      reductor ideal (sin pérdidas) que reduce la velocidad de salida a 750
+      min^-1. ¿Cuál es el par disponible en el eje de salida?
+  options:
+    - id: A
+      ca: 40 N·m
+      es: 40 N·m
+    - id: B
+      ca: 2,5 N·m
+      es: 2,5 N·m
+    - id: C
+      ca: 10 N·m
+      es: 10 N·m
+    - id: D
+      ca: 30000 N·m
+      es: 30000 N·m
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En una transmissió ideal es conserva la potència: P = T·ω constant, per
+      tant T1·n1 = T2·n2. La velocitat es divideix per 4 (3000/750), així que el
+      parell es multiplica per 4: T2 = 10·(3000/750) = 40 N·m. Reduir velocitat
+      augmenta el parell."
+    es: "En una transmisión ideal se conserva la potencia: P = T·ω constante, por
+      tanto T1·n1 = T2·n2. La velocidad se divide por 4 (3000/750), así que el
+      par se multiplica por 4: T2 = 10·(3000/750) = 40 N·m. Reducir velocidad
+      aumenta el par."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.motion_transmission
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: En una bicicleta, el plat (roda motriu) té 48 dents i el pinyó de la roda
+      posterior 16 dents. La roda té un diàmetre de 0,70 m. Si el ciclista
+      pedala a una cadència de 60 min^-1, quina velocitat lineal assoleix la
+      bicicleta (aprox.)?
+    es: En una bicicleta, el plato (rueda motriz) tiene 48 dientes y el piñón de la
+      rueda trasera 16 dientes. La rueda tiene un diámetro de 0,70 m. Si el
+      ciclista pedalea a una cadencia de 60 min^-1, ¿qué velocidad lineal
+      alcanza la bicicleta (aprox.)?
+  options:
+    - id: A
+      ca: 6,6 m/s (≈ 23,8 km/h)
+      es: 6,6 m/s (≈ 23,8 km/h)
+    - id: B
+      ca: 2,2 m/s (≈ 7,9 km/h)
+      es: 2,2 m/s (≈ 7,9 km/h)
+    - id: C
+      ca: 0,73 m/s (≈ 2,6 km/h)
+      es: 0,73 m/s (≈ 2,6 km/h)
+    - id: D
+      ca: 13,2 m/s (≈ 47,5 km/h)
+      es: 13,2 m/s (≈ 47,5 km/h)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La cadena uneix plat i pinyó: n_roda = n_pedal·(z_plat/z_pinyó) =
+      60·(48/16) = 180 min^-1 = 3 s^-1. La velocitat lineal és v = n_roda·π·d =
+      3·π·0,70 ≈ 6,6 m/s (≈ 23,8 km/h). Cal usar el diàmetre (no el radi) i
+      multiplicar per la relació, no dividir."
+    es: "La cadena une plato y piñón: n_rueda = n_pedal·(z_plato/z_piñón) =
+      60·(48/16) = 180 min^-1 = 3 s^-1. La velocidad lineal es v = n_rueda·π·d =
+      3·π·0,70 ≈ 6,6 m/s (≈ 23,8 km/h). Hay que usar el diámetro (no el radio) y
+      multiplicar por la relación, no dividir."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.transmission_ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Un pinyó de 20 dents gira a 1500 min^-1 i engrana amb una roda de 60 dents.
+      Quina és la velocitat de gir de la roda conduïda?
+    es: Un piñón de 20 dientes gira a 1500 min^-1 y engrana con una rueda de 60
+      dientes. ¿Cuál es la velocidad de giro de la rueda conducida?
+  options:
+    - id: A
+      ca: 500 min^-1
+      es: 500 min^-1
+    - id: B
+      ca: 4500 min^-1
+      es: 4500 min^-1
+    - id: C
+      ca: 1500 min^-1
+      es: 1500 min^-1
+    - id: D
+      ca: 300 min^-1
+      es: 300 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En el punt d'engranament es conserva el producte n·Z, de manera que n1·Z1 =
+      n2·Z2. Aïllant: n2 = n1·Z1/Z2 = 1500·20/60 = 500 min^-1. Com que la roda
+      té més dents, és una reducció (gira més a poc a poc). L'error de 4500
+      correspon a invertir la relació (Z2/Z1)."
+    es: "En el punto de engrane se conserva el producto n·Z, por lo que n1·Z1 =
+      n2·Z2. Despejando: n2 = n1·Z1/Z2 = 1500·20/60 = 500 min^-1. Como la rueda
+      tiene más dientes, es una reducción (gira más despacio). El error de 4500
+      corresponde a invertir la relación (Z2/Z1)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.transmission_ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En una transmissió per corretja, la politja motriu té un diàmetre de 100 mm
+      i gira a 3000 min^-1. La politja conduïda té un diàmetre de 250 mm.
+      Suposant que no hi ha lliscament, a quina velocitat gira la politja
+      conduïda?
+    es: En una transmisión por correa, la polea motriz tiene un diámetro de 100 mm y
+      gira a 3000 min^-1. La polea conducida tiene un diámetro de 250 mm.
+      Suponiendo que no hay deslizamiento, ¿a qué velocidad gira la polea
+      conducida?
+  options:
+    - id: A
+      ca: 1200 min^-1
+      es: 1200 min^-1
+    - id: B
+      ca: 7500 min^-1
+      es: 7500 min^-1
+    - id: C
+      ca: 3000 min^-1
+      es: 3000 min^-1
+    - id: D
+      ca: 750 min^-1
+      es: 750 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Sense lliscament, la velocitat lineal de la corretja és la mateixa a les
+      dues politges: v = π·d1·n1 = π·d2·n2. Per tant n2 = n1·d1/d2 =
+      3000·100/250 = 1200 min^-1. La politja gran gira més a poc a poc
+      (reducció). El valor 7500 surt d'invertir els diàmetres (d2/d1)."
+    es: "Sin deslizamiento, la velocidad lineal de la correa es la misma en ambas
+      poleas: v = π·d1·n1 = π·d2·n2. Por tanto n2 = n1·d1/d2 = 3000·100/250 =
+      1200 min^-1. La polea grande gira más despacio (reducción). El valor 7500
+      sale de invertir los diámetros (d2/d1)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.transmission_ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Un reductor ideal (sense pèrdues) té una relació de transmissió i =
+      n_sortida/n_entrada = 1/5. Si a l'entrada s'aplica un parell de 10 N·m,
+      quin parell s'obté a la sortida?
+    es: Un reductor ideal (sin pérdidas) tiene una relación de transmisión i =
+      n_salida/n_entrada = 1/5. Si en la entrada se aplica un par de 10 N·m,
+      ¿qué par se obtiene en la salida?
+  options:
+    - id: A
+      ca: 50 N·m
+      es: 50 N·m
+    - id: B
+      ca: 2 N·m
+      es: 2 N·m
+    - id: C
+      ca: 10 N·m
+      es: 10 N·m
+    - id: D
+      ca: 250 N·m
+      es: 250 N·m
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En una transmissió ideal es conserva la potència: P = T·ω = constant, per
+      tant T_entrada·ω_entrada = T_sortida·ω_sortida. Així T_sortida =
+      T_entrada·(ω_entrada/ω_sortida) = T_entrada/i = 10/(1/5) = 50 N·m. Una
+      reducció de velocitat multiplica el parell. Multiplicar per i (donant 2
+      N·m) és l'error habitual."
+    es: "En una transmisión ideal se conserva la potencia: P = T·ω = constante, por
+      lo que T_entrada·ω_entrada = T_salida·ω_salida. Así T_salida =
+      T_entrada·(ω_entrada/ω_salida) = T_entrada/i = 10/(1/5) = 50 N·m. Una
+      reducción de velocidad multiplica el par. Multiplicar por i (dando 2 N·m)
+      es el error habitual."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.transmission_ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Un tren d'engranatges compost té dues etapes. L'eix d'entrada porta Z1 = 15
+      dents i engrana amb Z2 = 45 dents. Solidari a Z2, l'eix intermedi porta Z3
+      = 20 dents, que engrana amb la roda de sortida Z4 = 60 dents. Si l'entrada
+      gira a 1800 min^-1, quina és la velocitat de sortida?
+    es: Un tren de engranajes compuesto tiene dos etapas. El eje de entrada lleva Z1
+      = 15 dientes y engrana con Z2 = 45 dientes. Solidario a Z2, el eje
+      intermedio lleva Z3 = 20 dientes, que engrana con la rueda de salida Z4 =
+      60 dientes. Si la entrada gira a 1800 min^-1, ¿cuál es la velocidad de
+      salida?
+  options:
+    - id: A
+      ca: 200 min^-1
+      es: 200 min^-1
+    - id: B
+      ca: 600 min^-1
+      es: 600 min^-1
+    - id: C
+      ca: 1800 min^-1
+      es: 1800 min^-1
+    - id: D
+      ca: 16200 min^-1
+      es: 16200 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La relació total és el producte de les dues etapes: i = (Z1/Z2)·(Z3/Z4) =
+      (15/45)·(20/60) = (1/3)·(1/3) = 1/9. Llavors n_sortida = n_entrada·i =
+      1800·(1/9) = 200 min^-1. El valor 600 correspon a aplicar només la primera
+      etapa; 16200 a invertir tota la relació."
+    es: "La relación total es el producto de las dos etapas: i = (Z1/Z2)·(Z3/Z4) =
+      (15/45)·(20/60) = (1/3)·(1/3) = 1/9. Entonces n_salida = n_entrada·i =
+      1800·(1/9) = 200 min^-1. El valor 600 corresponde a aplicar solo la
+      primera etapa; 16200 a invertir toda la relación."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.transmission_ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.85
+  question:
+    ca: En una bicicleta, el plat davanter té 48 dents i el pinyó de la roda
+      posterior 16 dents. La roda posterior té un diàmetre de 0,70 m. Si el
+      ciclista pedala a una cadència de 60 min^-1, quina és la velocitat
+      aproximada de la bicicleta?
+    es: En una bicicleta, el plato delantero tiene 48 dientes y el piñón de la rueda
+      trasera 16 dientes. La rueda trasera tiene un diámetro de 0,70 m. Si el
+      ciclista pedalea a una cadencia de 60 min^-1, ¿cuál es la velocidad
+      aproximada de la bicicleta?
+  options:
+    - id: A
+      ca: 6,6 m/s
+      es: 6,6 m/s
+    - id: B
+      ca: 2,2 m/s
+      es: 2,2 m/s
+    - id: C
+      ca: 13,2 m/s
+      es: 13,2 m/s
+    - id: D
+      ca: 0,73 m/s
+      es: 0,73 m/s
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La cadena transmet del plat (48 dents, motriu) al pinyó (16 dents): n_roda
+      = n_pedal·48/16 = 60·3 = 180 min^-1 = 3 voltes/s. La velocitat lineal és v
+      = n_roda·π·d = 3·π·0,70 ≈ 3·2,199 ≈ 6,6 m/s. Oblidar la relació (B) o
+      confondre diàmetre amb radi, doblant el resultat (C), són errors típics."
+    es: "La cadena transmite del plato (48 dientes, motriz) al piñón (16 dientes):
+      n_rueda = n_pedal·48/16 = 60·3 = 180 min^-1 = 3 vueltas/s. La velocidad
+      lineal es v = n_rueda·π·d = 3·π·0,70 ≈ 3·2,199 ≈ 6,6 m/s. Olvidar la
+      relación (B) o confundir diámetro con radio, doblando el resultado (C),
+      son errores típicos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.machines.transmission_ratios
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Un mecanisme de cargol sense fi (vis sens fi) de 2 filets acciona una corona
+      de 50 dents. El cargol gira a 1500 min^-1. A quina velocitat gira la
+      corona?
+    es: Un mecanismo de tornillo sinfín de 2 entradas (filetes) acciona una corona
+      de 50 dientes. El tornillo gira a 1500 min^-1. ¿A qué velocidad gira la
+      corona?
+  options:
+    - id: A
+      ca: 60 min^-1
+      es: 60 min^-1
+    - id: B
+      ca: 30 min^-1
+      es: 30 min^-1
+    - id: C
+      ca: 37500 min^-1
+      es: 37500 min^-1
+    - id: D
+      ca: 3000 min^-1
+      es: 3000 min^-1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el sistema cargol sense fi–corona, la relació és i = nombre de filets del
+      cargol / nombre de dents de la corona = 2/50 = 1/25. Per tant n_corona =
+      n_cargol·i = 1500·(2/50) = 60 min^-1. Prendre 1 filet en comptes de 2 dóna
+      30 (error B); invertir la relació dóna 37500 (C).
+    es: En el sistema tornillo sinfín–corona, la relación es i = número de entradas
+      del tornillo / número de dientes de la corona = 2/50 = 1/25. Por tanto
+      n_corona = n_tornillo·i = 1500·(2/50) = 60 min^-1. Tomar 1 entrada en
+      lugar de 2 da 30 (error B); invertir la relación da 37500 (C).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.quantities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.18
+  question:
+    ca: Una resistència de 220 Ω és travessada per un corrent de 50 mA. Quina és la
+      tensió entre els seus extrems?
+    es: Una resistencia de 220 Ω es atravesada por una corriente de 50 mA. ¿Cuál es
+      la tensión entre sus extremos?
+  options:
+    - id: A
+      ca: 11 V
+      es: 11 V
+    - id: B
+      ca: 11 000 V
+      es: 11 000 V
+    - id: C
+      ca: 4,4 V
+      es: 4,4 V
+    - id: D
+      ca: 0,23 V
+      es: 0,23 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per la llei d'Ohm, V = I·R. Cal convertir la intensitat: 50 mA = 0,050 A.
+      Així V = 0,050 A × 220 Ω = 11 V. L'error comú és no convertir els mA a A,
+      que dóna erròniament 11 000 V."
+    es: "Por la ley de Ohm, V = I·R. Hay que convertir la intensidad: 50 mA = 0,050
+      A. Así V = 0,050 A × 220 Ω = 11 V. El error común es no convertir los mA a
+      A, que da erróneamente 11 000 V."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.quantities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.12
+  question:
+    ca: En quina unitat del Sistema Internacional s'expressa la intensitat del
+      corrent elèctric?
+    es: ¿En qué unidad del Sistema Internacional se expresa la intensidad de la
+      corriente eléctrica?
+  options:
+    - id: A
+      ca: Ampere (A)
+      es: Amperio (A)
+    - id: B
+      ca: Volt (V)
+      es: Voltio (V)
+    - id: C
+      ca: Ohm (Ω)
+      es: Ohmio (Ω)
+    - id: D
+      ca: Watt (W)
+      es: Vatio (W)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La intensitat de corrent es mesura en amperes (A). El volt (V) mesura la
+      tensió o diferència de potencial, l'ohm (Ω) mesura la resistència i el
+      watt (W) mesura la potència.
+    es: La intensidad de corriente se mide en amperios (A). El voltio (V) mide la
+      tensión o diferencia de potencial, el ohmio (Ω) mide la resistencia y el
+      vatio (W) mide la potencia.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.quantities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.42
+  question:
+    ca: Un aparell connectat a 230 V té una resistència de 2,3 kΩ. Quina intensitat
+      hi circula?
+    es: Un aparato conectado a 230 V tiene una resistencia de 2,3 kΩ. ¿Qué
+      intensidad circula por él?
+  options:
+    - id: A
+      ca: 100 mA (0,1 A)
+      es: 100 mA (0,1 A)
+    - id: B
+      ca: 1 A
+      es: 1 A
+    - id: C
+      ca: 10 A
+      es: 10 A
+    - id: D
+      ca: 10 mA (0,01 A)
+      es: 10 mA (0,01 A)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per la llei d'Ohm, I = V/R. Cal convertir 2,3 kΩ = 2300 Ω. Així I = 230 V /
+      2300 Ω = 0,1 A = 100 mA. Errors habituals: no convertir els kΩ (dóna 1 A)
+      o invertir la fórmula com R/V (dóna 10 A)."
+    es: "Por la ley de Ohm, I = V/R. Hay que convertir 2,3 kΩ = 2300 Ω. Así I = 230
+      V / 2300 Ω = 0,1 A = 100 mA. Errores habituales: no convertir los kΩ (da 1
+      A) o invertir la fórmula como R/V (da 10 A)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.quantities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Dues resistències de 100 Ω i 200 Ω es connecten en sèrie a una font de 12 V.
+      Quina és la tensió als extrems de la resistència de 200 Ω?
+    es: Dos resistencias de 100 Ω y 200 Ω se conectan en serie a una fuente de 12 V.
+      ¿Cuál es la tensión en los extremos de la resistencia de 200 Ω?
+  options:
+    - id: A
+      ca: 8 V
+      es: 8 V
+    - id: B
+      ca: 4 V
+      es: 4 V
+    - id: C
+      ca: 6 V
+      es: 6 V
+    - id: D
+      ca: 12 V
+      es: 12 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En sèrie la intensitat és la mateixa a tot el circuit. Resistència total R =
+      100 + 200 = 300 Ω, i I = 12 V / 300 Ω = 0,04 A. La tensió a la resistència
+      de 200 Ω és V = 0,04 A × 200 Ω = 8 V. (Als 100 Ω hi hauria 4 V; la suma
+      dóna els 12 V de la font.)
+    es: En serie la intensidad es la misma en todo el circuito. Resistencia total R
+      = 100 + 200 = 300 Ω, e I = 12 V / 300 Ω = 0,04 A. La tensión en la
+      resistencia de 200 Ω es V = 0,04 A × 200 Ω = 8 V. (En los 100 Ω habría 4
+      V; la suma da los 12 V de la fuente.)
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.quantities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Dues resistències de 6 Ω i 3 Ω es connecten en paral·lel a una font de 12 V.
+      Quin és el corrent total subministrat per la font?
+    es: Dos resistencias de 6 Ω y 3 Ω se conectan en paralelo a una fuente de 12 V.
+      ¿Cuál es la corriente total suministrada por la fuente?
+  options:
+    - id: A
+      ca: 6 A
+      es: 6 A
+    - id: B
+      ca: 1,33 A
+      es: 1,33 A
+    - id: C
+      ca: 4 A
+      es: 4 A
+    - id: D
+      ca: 2 A
+      es: 2 A
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En paral·lel la resistència equivalent és Req = (6·3)/(6+3) = 18/9 = 2 Ω, i
+      el corrent total I = 12 V / 2 Ω = 6 A. També es pot sumar el corrent de
+      cada branca: 12/6 + 12/3 = 2 + 4 = 6 A. Error típic: sumar les
+      resistències com si fos sèrie (9 Ω → 1,33 A)."
+    es: "En paralelo la resistencia equivalente es Req = (6·3)/(6+3) = 18/9 = 2 Ω, y
+      la corriente total I = 12 V / 2 Ω = 6 A. También se puede sumar la
+      corriente de cada rama: 12/6 + 12/3 = 2 + 4 = 6 A. Error típico: sumar las
+      resistencias como si fuera serie (9 Ω → 1,33 A)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.quantities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.66
+  question:
+    ca: Un conductor òhmic deixa passar 0,15 A quan se li apliquen 4,5 V. Si
+      s'apliquen 9 V, quin corrent hi circularà?
+    es: Un conductor óhmico deja pasar 0,15 A cuando se le aplican 4,5 V. Si se
+      aplican 9 V, ¿qué corriente circulará?
+  options:
+    - id: A
+      ca: 0,30 A
+      es: 0,30 A
+    - id: B
+      ca: 0,15 A
+      es: 0,15 A
+    - id: C
+      ca: 0,075 A
+      es: 0,075 A
+    - id: D
+      ca: 0,60 A
+      es: 0,60 A
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un conductor òhmic la resistència és constant: R = V/I = 4,5 V / 0,15 A
+      = 30 Ω. En doblar la tensió (de 4,5 a 9 V), pel mateix R el corrent també
+      es dobla: I = 9 V / 30 Ω = 0,30 A. Errors: creure que el corrent no canvia
+      (0,15 A) o invertir la proporció (0,075 A)."
+    es: "En un conductor óhmico la resistencia es constante: R = V/I = 4,5 V / 0,15
+      A = 30 Ω. Al doblar la tensión (de 4,5 a 9 V), para el mismo R la
+      corriente también se dobla: I = 9 V / 30 Ω = 0,30 A. Errores: creer que la
+      corriente no cambia (0,15 A) o invertir la proporción (0,075 A)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.dc_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Una resistència de 100 Ω es connecta directament als borns d'una font de
+      tensió ideal de 12 V. Quin corrent hi circula?
+    es: Una resistencia de 100 Ω se conecta directamente a los bornes de una fuente
+      de tensión ideal de 12 V. ¿Qué corriente circula por ella?
+  options:
+    - id: A
+      ca: 0,12 A (120 mA)
+      es: 0,12 A (120 mA)
+    - id: B
+      ca: 1200 A
+      es: 1200 A
+    - id: C
+      ca: 8,33 A
+      es: 8,33 A
+    - id: D
+      ca: 0,012 A (12 mA)
+      es: 0,012 A (12 mA)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per la llei d'Ohm, I = V/R = 12 V / 100 Ω = 0,12 A = 120 mA. L'opció B
+      multiplica (V·R), la C inverteix el quocient (R/V) i la D té un error de
+      factor 10.
+    es: Por la ley de Ohm, I = V/R = 12 V / 100 Ω = 0,12 A = 120 mA. La opción B
+      multiplica (V·R), la C invierte el cociente (R/V) y la D tiene un error de
+      factor 10.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.dc_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Tres resistències de 10 Ω, 20 Ω i 30 Ω es connecten en sèrie a una bateria
+      de 12 V. Quin és el corrent que circula pel circuit?
+    es: Tres resistencias de 10 Ω, 20 Ω y 30 Ω se conectan en serie a una batería de
+      12 V. ¿Cuál es la corriente que circula por el circuito?
+  options:
+    - id: A
+      ca: 0,2 A
+      es: 0,2 A
+    - id: B
+      ca: 2,2 A
+      es: 2,2 A
+    - id: C
+      ca: 1,2 A
+      es: 1,2 A
+    - id: D
+      ca: 0,6 A
+      es: 0,6 A
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En sèrie les resistències se sumen: Req = 10 + 20 + 30 = 60 Ω. El corrent
+      és el mateix a tot el circuit: I = V/Req = 12/60 = 0,2 A. La B tracta les
+      resistències com si fossin en paral·lel (≈5,45 Ω), la C fa servir només la
+      de 10 Ω i la D només la de 20 Ω."
+    es: "En serie las resistencias se suman: Req = 10 + 20 + 30 = 60 Ω. La corriente
+      es la misma en todo el circuito: I = V/Req = 12/60 = 0,2 A. La B trata las
+      resistencias como si estuvieran en paralelo (≈5,45 Ω), la C usa solo la de
+      10 Ω y la D solo la de 20 Ω."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.dc_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Dues resistències, R1 = 6 Ω i R2 = 3 Ω, es connecten en paral·lel. Quina és
+      la resistència equivalent del conjunt?
+    es: Dos resistencias, R1 = 6 Ω y R2 = 3 Ω, se conectan en paralelo. ¿Cuál es la
+      resistencia equivalente del conjunto?
+  options:
+    - id: A
+      ca: 2 Ω
+      es: 2 Ω
+    - id: B
+      ca: 9 Ω
+      es: 9 Ω
+    - id: C
+      ca: 4,5 Ω
+      es: 4,5 Ω
+    - id: D
+      ca: 0,5 Ω
+      es: 0,5 Ω
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En paral·lel: 1/Req = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 0,5 S, per tant Req =
+      1/0,5 = 2 Ω (equival a Req = R1·R2/(R1+R2) = 18/9 = 2 Ω). La B suma com si
+      fossin en sèrie, la C fa la mitjana i la D oblida invertir la suma de
+      conductàncies (0,5 S) i la dóna com a ohms."
+    es: "En paralelo: 1/Req = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 0,5 S, por tanto Req =
+      1/0,5 = 2 Ω (equivale a Req = R1·R2/(R1+R2) = 18/9 = 2 Ω). La B suma como
+      si estuvieran en serie, la C hace la media y la D olvida invertir la suma
+      de conductancias (0,5 S) y la da como ohmios."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.dc_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En un node d'un circuit hi arriben dos corrents, I1 = 5 A i I2 = 2 A, i en
+      surt un corrent I3 = 4 A per una branca. Per una quarta branca circula I4.
+      Quin és el valor i el sentit de I4?
+    es: A un nudo de un circuito llegan dos corrientes, I1 = 5 A e I2 = 2 A, y sale
+      una corriente I3 = 4 A por una rama. Por una cuarta rama circula I4. ¿Cuál
+      es el valor y el sentido de I4?
+  options:
+    - id: A
+      ca: 3 A sortint del node
+      es: 3 A saliendo del nudo
+    - id: B
+      ca: 11 A sortint del node
+      es: 11 A saliendo del nudo
+    - id: C
+      ca: 3 A entrant al node
+      es: 3 A entrando al nudo
+    - id: D
+      ca: 7 A sortint del node
+      es: 7 A saliendo del nudo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per la 1a llei de Kirchhoff (dels nodes), la suma de corrents entrants és
+      igual a la suma de sortints: 5 + 2 = 4 + I4, d'on I4 = 3 A, i com que
+      apareix al costat de les sortints, surt del node. La B suma tots els
+      corrents, la C encerta el valor però equivoca el sentit i la D ignora la
+      branca de 4 A."
+    es: "Por la 1ª ley de Kirchhoff (de los nudos), la suma de corrientes entrantes
+      es igual a la suma de salientes: 5 + 2 = 4 + I4, de donde I4 = 3 A, y como
+      aparece en el lado de las salientes, sale del nudo. La B suma todas las
+      corrientes, la C acierta el valor pero equivoca el sentido y la D ignora
+      la rama de 4 A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.dc_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Una bateria real té una força electromotriu de 12 V i una resistència
+      interna de 1 Ω. Es connecta a una resistència externa de 5 Ω. Quina és la
+      tensió entre els borns de la bateria (tensió en càrrega)?
+    es: Una batería real tiene una fuerza electromotriz de 12 V y una resistencia
+      interna de 1 Ω. Se conecta a una resistencia externa de 5 Ω. ¿Cuál es la
+      tensión entre los bornes de la batería (tensión en carga)?
+  options:
+    - id: A
+      ca: 10 V
+      es: 10 V
+    - id: B
+      ca: 12 V
+      es: 12 V
+    - id: C
+      ca: 2 V
+      es: 2 V
+    - id: D
+      ca: 14 V
+      es: 14 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El corrent del circuit és I = ε/(R+r) = 12/(5+1) = 2 A. La tensió als borns
+      és V = ε − I·r = 12 − 2·1 = 10 V (igual que I·R = 2·5 = 10 V). La B
+      menysprea la resistència interna, la C dóna la caiguda a la resistència
+      interna (I·r) i la D suma I·r en lloc de restar-lo (error de signe).
+    es: La corriente del circuito es I = ε/(R+r) = 12/(5+1) = 2 A. La tensión en
+      bornes es V = ε − I·r = 12 − 2·1 = 10 V (igual que I·R = 2·5 = 10 V). La B
+      desprecia la resistencia interna, la C da la caída en la resistencia
+      interna (I·r) y la D suma I·r en lugar de restarlo (error de signo).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.dc_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "En una única malla hi ha dues bateries ideals connectades de manera que
+      s'oposen (els seus pols positius es \"miren\"): ε1 = 9 V i ε2 = 3 V. En
+      sèrie amb elles hi ha dues resistències, R1 = 2 Ω i R2 = 4 Ω. Aplicant la
+      2a llei de Kirchhoff, quin corrent circula per la malla?"
+    es: 'En una única malla hay dos baterías ideales conectadas de forma que se
+      oponen (sus polos positivos se "miran"): ε1 = 9 V y ε2 = 3 V. En serie con
+      ellas hay dos resistencias, R1 = 2 Ω y R2 = 4 Ω. Aplicando la 2ª ley de
+      Kirchhoff, ¿qué corriente circula por la malla?'
+  options:
+    - id: A
+      ca: 1 A
+      es: 1 A
+    - id: B
+      ca: 2 A
+      es: 2 A
+    - id: C
+      ca: 1,5 A
+      es: 1,5 A
+    - id: D
+      ca: 3 A
+      es: 3 A
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per la 2a llei de Kirchhoff (de les malles), la suma de fem és igual a la
+      suma de caigudes I·R. Com que les bateries s'oposen, la fem neta és ε1 −
+      ε2 = 9 − 3 = 6 V. La resistència total és R1 + R2 = 6 Ω. Així I = 6/6 = 1
+      A. La B suma les fem (12/6), la C fa servir només la de 9 V (9/6) i la D
+      fa servir la fem neta però només una resistència (6/2 o 9/3).
+    es: Por la 2ª ley de Kirchhoff (de las mallas), la suma de fem es igual a la
+      suma de caídas I·R. Como las baterías se oponen, la fem neta es ε1 − ε2 =
+      9 − 3 = 6 V. La resistencia total es R1 + R2 = 6 Ω. Así I = 6/6 = 1 A. La
+      B suma las fem (12/6), la C usa solo la de 9 V (9/6) y la D usa la fem
+      neta pero solo una resistencia (6/2 o 9/3).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.ac_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: La tensió de la xarxa domèstica té un valor de pic (màxim) de 325 V. Quin és
+      el seu valor eficaç (RMS)?
+    es: La tensión de la red doméstica tiene un valor de pico (máximo) de 325 V.
+      ¿Cuál es su valor eficaz (RMS)?
+  options:
+    - id: A
+      ca: 230 V
+      es: 230 V
+    - id: B
+      ca: 460 V
+      es: 460 V
+    - id: C
+      ca: 162,5 V
+      es: 162,5 V
+    - id: D
+      ca: 325 V
+      es: 325 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El valor eficaç d'una senyal sinusoïdal és Vrms = Vmax/√2 = 325/1,414 ≈ 230
+      V. L'opció B multiplica per √2 en lloc de dividir; la C divideix per 2; la
+      D confon pic amb eficaç.
+    es: El valor eficaz de una señal senoidal es Vrms = Vmax/√2 = 325/1,414 ≈ 230 V.
+      La opción B multiplica por √2 en vez de dividir; la C divide entre 2; la D
+      confunde pico con eficaz.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.ac_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Un condensador de 100 µF es connecta a una xarxa de corrent altern de 50 Hz.
+      Quina és la seva reactància capacitiva Xc?
+    es: Un condensador de 100 µF se conecta a una red de corriente alterna de 50 Hz.
+      ¿Cuál es su reactancia capacitiva Xc?
+  options:
+    - id: A
+      ca: 31,8 Ω
+      es: 31,8 Ω
+    - id: B
+      ca: 0,0314 Ω
+      es: 0,0314 Ω
+    - id: C
+      ca: 318 Ω
+      es: 318 Ω
+    - id: D
+      ca: 3,18 Ω
+      es: 3,18 Ω
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Xc = 1/(2πfC) = 1/(2π·50·100×10^-6) = 1/(0,0314) ≈ 31,8 Ω. L'opció B calcula
+      2πfC (la inversa); la C i la D són errors de factor 10 en la potència de
+      µF.
+    es: Xc = 1/(2πfC) = 1/(2π·50·100×10^-6) = 1/(0,0314) ≈ 31,8 Ω. La opción B
+      calcula 2πfC (la inversa); la C y la D son errores de factor 10 en la
+      potencia de µF.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.ac_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Una bobina ideal de 0,1 H es connecta a una font de 50 Hz. Quina és la seva
+      reactància inductiva XL?
+    es: Una bobina ideal de 0,1 H se conecta a una fuente de 50 Hz. ¿Cuál es su
+      reactancia inductiva XL?
+  options:
+    - id: A
+      ca: 31,4 Ω
+      es: 31,4 Ω
+    - id: B
+      ca: 5 Ω
+      es: 5 Ω
+    - id: C
+      ca: 0,0318 Ω
+      es: 0,0318 Ω
+    - id: D
+      ca: 314 Ω
+      es: 314 Ω
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: XL = 2πfL = 2π·50·0,1 = 31,4 Ω. L'opció B oblida el factor 2π (fL = 5); la C
+      usa la fórmula capacitiva 1/(2πfL); la D confon un error de factor 10.
+    es: XL = 2πfL = 2π·50·0,1 = 31,4 Ω. La opción B olvida el factor 2π (fL = 5); la
+      C usa la fórmula capacitiva 1/(2πfL); la D confunde un error de factor 10.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.ac_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En un circuit sèrie RLC es té R = 30 Ω, XL = 80 Ω i Xc = 40 Ω. Quina és la
+      impedància total Z del circuit?
+    es: En un circuito serie RLC se tiene R = 30 Ω, XL = 80 Ω y Xc = 40 Ω. ¿Cuál es
+      la impedancia total Z del circuito?
+  options:
+    - id: A
+      ca: 50 Ω
+      es: 50 Ω
+    - id: B
+      ca: 70 Ω
+      es: 70 Ω
+    - id: C
+      ca: 94,3 Ω
+      es: 94,3 Ω
+    - id: D
+      ca: 150 Ω
+      es: 150 Ω
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Z = √(R² + (XL − Xc)²) = √(30² + (80−40)²) = √(900 + 1600) = √2500 = 50 Ω.
+      L'opció B suma R i (XL−Xc) aritmèticament; la C fa √(30²+80²+40²); la D
+      suma tots els valors.
+    es: Z = √(R² + (XL − Xc)²) = √(30² + (80−40)²) = √(900 + 1600) = √2500 = 50 Ω.
+      La opción B suma R y (XL−Xc) aritméticamente; la C hace √(30²+80²+40²); la
+      D suma todos los valores.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.ac_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Un circuit sèrie amb R = 40 Ω i reactància neta X = 30 Ω (inductiva) es
+      connecta a 230 V eficaços. Quina és la potència activa consumida?
+    es: Un circuito serie con R = 40 Ω y reactancia neta X = 30 Ω (inductiva) se
+      conecta a 230 V eficaces. ¿Cuál es la potencia activa consumida?
+  options:
+    - id: A
+      ca: 846 W
+      es: 846 W
+    - id: B
+      ca: 1058 W
+      es: 1058 W
+    - id: C
+      ca: 635 W
+      es: 635 W
+    - id: D
+      ca: 1322 W
+      es: 1322 W
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Z = √(40²+30²) = 50 Ω; I = 230/50 = 4,6 A; cosφ = R/Z = 40/50 = 0,8. P =
+      V·I·cosφ = 230·4,6·0,8 ≈ 846 W (o P = I²R = 4,6²·40). L'opció B és la
+      potència aparent S = V·I; la C usa cosφ = 0,6 (X/Z); la D no aplica cap
+      factor de potència sobre S sinó un error.
+    es: Z = √(40²+30²) = 50 Ω; I = 230/50 = 4,6 A; cosφ = R/Z = 40/50 = 0,8. P =
+      V·I·cosφ = 230·4,6·0,8 ≈ 846 W (o P = I²R = 4,6²·40). La opción B es la
+      potencia aparente S = V·I; la C usa cosφ = 0,6 (X/Z); la D aplica un
+      factor erróneo sobre S.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electrical.ac_circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Un circuit sèrie RLC té L = 0,2 H i C = 50 µF. A quina freqüència es
+      produeix la ressonància?
+    es: Un circuito serie RLC tiene L = 0,2 H y C = 50 µF. ¿A qué frecuencia se
+      produce la resonancia?
+  options:
+    - id: A
+      ca: 50,3 Hz
+      es: 50,3 Hz
+    - id: B
+      ca: 316 Hz
+      es: 316 Hz
+    - id: C
+      ca: 100 Hz
+      es: 100 Hz
+    - id: D
+      ca: 8,0 Hz
+      es: 8,0 Hz
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A la ressonància XL = Xc, i f0 = 1/(2π√(LC)) = 1/(2π√(0,2·50×10^-6)) =
+      1/(2π·3,16×10^-3) ≈ 50,3 Hz. L'opció B oblida el 2π (ω0 = 1/√(LC) = 316
+      rad/s, no Hz); la C i la D provenen d'errors en l'arrel o en la potència
+      de µF.
+    es: En la resonancia XL = Xc, y f0 = 1/(2π√(LC)) = 1/(2π√(0,2·50×10^-6)) =
+      1/(2π·3,16×10^-3) ≈ 50,3 Hz. La opción B olvida el 2π (ω0 = 1/√(LC) = 316
+      rad/s, no Hz); la C y la D provienen de errores en la raíz o en la
+      potencia de µF.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.analog_components
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Un díode de silici (tensió de conducció Vγ = 0,7 V) es connecta en sèrie amb
+      una resistència de 470 Ω a una font de 9 V, en polarització directa. Quin
+      és el corrent que circula pel circuit?
+    es: Un diodo de silicio (tensión de conducción Vγ = 0,7 V) se conecta en serie
+      con una resistencia de 470 Ω a una fuente de 9 V, en polarización directa.
+      ¿Cuál es la corriente que circula por el circuito?
+  options:
+    - id: A
+      ca: 17,7 mA
+      es: 17,7 mA
+    - id: B
+      ca: 19,1 mA
+      es: 19,1 mA
+    - id: C
+      ca: 18,5 mA
+      es: 18,5 mA
+    - id: D
+      ca: 1,77 mA
+      es: 1,77 mA
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La resistència suporta la tensió de la font menys la caiguda al díode: VR =
+      9 − 0,7 = 8,3 V. Per la llei d'Ohm, I = VR/R = 8,3/470 = 0,0177 A = 17,7
+      mA. L'error B ignora la caiguda del díode (9/470 = 19,1 mA); C fa servir
+      0,3 V (germani); D és un error de coma decimal."
+    es: "La resistencia soporta la tensión de la fuente menos la caída en el diodo:
+      VR = 9 − 0,7 = 8,3 V. Por la ley de Ohm, I = VR/R = 8,3/470 = 0,0177 A =
+      17,7 mA. El error B ignora la caída del diodo (9/470 = 19,1 mA); C usa 0,3
+      V (germanio); D es un error de coma decimal."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.analog_components
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Perquè un díode de silici real condueixi apreciablement (entri en conducció
+      directa), quina condició s'ha de complir?
+    es: Para que un diodo de silicio real conduzca apreciablemente (entre en
+      conducción directa), ¿qué condición debe cumplirse?
+  options:
+    - id: A
+      ca: L'ànode ha d'estar a un potencial superior al càtode en almenys uns 0,7 V.
+      es: El ánodo debe estar a un potencial superior al cátodo en al menos unos 0,7
+        V.
+    - id: B
+      ca: El càtode ha d'estar a un potencial superior a l'ànode en almenys uns 0,7 V.
+      es: El cátodo debe estar a un potencial superior al ánodo en al menos unos 0,7
+        V.
+    - id: C
+      ca: N'hi ha prou amb qualsevol tensió positiva entre ànode i càtode, per petita
+        que sigui.
+      es: Basta con cualquier tensión positiva entre ánodo y cátodo, por pequeña que
+        sea.
+    - id: D
+      ca: S'ha d'aplicar una tensió inversa superior a la tensió de ruptura.
+      es: Debe aplicarse una tensión inversa superior a la tensión de ruptura.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En polarització directa l'ànode és més positiu que el càtode; només hi ha
+      conducció apreciable quan es supera la tensió de llindar (≈0,7 V en
+      silici). B descriu la polarització inversa; C ignora la tensió de llindar;
+      D correspon a la ruptura inversa (zona Zener/allau), no a la conducció
+      directa normal.
+    es: En polarización directa el ánodo es más positivo que el cátodo; solo hay
+      conducción apreciable cuando se supera la tensión de umbral (≈0,7 V en
+      silicio). B describe la polarización inversa; C ignora la tensión de
+      umbral; D corresponde a la ruptura inversa (zona Zener/avalancha), no a la
+      conducción directa normal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.analog_components
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "En un regulador amb díode Zener: Vin = 12 V, resistència sèrie Rs = 330 Ω i
+      Vz = 5,1 V. La càrrega és RL = 1 kΩ connectada en paral·lel amb el Zener.
+      Quin corrent circula pel díode Zener?"
+    es: "En un regulador con diodo Zener: Vin = 12 V, resistencia serie Rs = 330 Ω y
+      Vz = 5,1 V. La carga es RL = 1 kΩ conectada en paralelo con el Zener. ¿Qué
+      corriente circula por el diodo Zener?"
+  options:
+    - id: A
+      ca: 15,8 mA
+      es: 15,8 mA
+    - id: B
+      ca: 20,9 mA
+      es: 20,9 mA
+    - id: C
+      ca: 5,1 mA
+      es: 5,1 mA
+    - id: D
+      ca: 26,0 mA
+      es: 26,0 mA
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El Zener fixa 5,1 V a la càrrega. Corrent per Rs: Is = (Vin − Vz)/Rs = (12
+      − 5,1)/330 = 20,9 mA. Corrent per la càrrega: IL = Vz/RL = 5,1/1000 = 5,1
+      mA. Per Kirchhoff al node: Iz = Is − IL = 20,9 − 5,1 = 15,8 mA. B oblida
+      restar IL; C dóna només IL; D suma Is + IL en lloc de restar."
+    es: "El Zener fija 5,1 V en la carga. Corriente por Rs: Is = (Vin − Vz)/Rs = (12
+      − 5,1)/330 = 20,9 mA. Corriente por la carga: IL = Vz/RL = 5,1/1000 = 5,1
+      mA. Por Kirchhoff en el nudo: Iz = Is − IL = 20,9 − 5,1 = 15,8 mA. B
+      olvida restar IL; C da solo IL; D suma Is + IL en vez de restar."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.analog_components
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Un transistor bipolar NPN té una guany de corrent β = 200 i treballa a la
+      zona activa amb un corrent de base IB = 15 µA. Quin és el corrent de
+      col·lector IC?
+    es: Un transistor bipolar NPN tiene una ganancia de corriente β = 200 y trabaja
+      en la zona activa con una corriente de base IB = 15 µA. ¿Cuál es la
+      corriente de colector IC?
+  options:
+    - id: A
+      ca: 3 mA
+      es: 3 mA
+    - id: B
+      ca: 30 mA
+      es: 30 mA
+    - id: C
+      ca: 0,3 mA
+      es: 0,3 mA
+    - id: D
+      ca: 215 µA
+      es: 215 µA
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A la zona activa IC = β·IB = 200 × 15 µA = 3000 µA = 3 mA. B i C són errors
+      de factor 10 en la conversió d'unitats; D suma β + IB (o IE≈IC+IB mal
+      aplicat) en lloc de multiplicar.
+    es: En la zona activa IC = β·IB = 200 × 15 µA = 3000 µA = 3 mA. B y C son
+      errores de factor 10 en la conversión de unidades; D suma β + IB (o
+      IE≈IC+IB mal aplicado) en lugar de multiplicar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.analog_components
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: "Un transistor NPN en emissor comú: VCC = 10 V, RC = 1 kΩ, RB = 220 kΩ des
+      d'una entrada de 5 V a la base, β = 100 i VBE = 0,7 V. Determina la tensió
+      col·lector-emissor VCE i l'estat del transistor."
+    es: "Un transistor NPN en emisor común: VCC = 10 V, RC = 1 kΩ, RB = 220 kΩ desde
+      una entrada de 5 V en la base, β = 100 y VBE = 0,7 V. Determina la tensión
+      colector-emisor VCE y el estado del transistor."
+  options:
+    - id: A
+      ca: VCE ≈ 8,05 V; zona activa
+      es: VCE ≈ 8,05 V; zona activa
+    - id: B
+      ca: VCE ≈ 0,2 V; saturació
+      es: VCE ≈ 0,2 V; saturación
+    - id: C
+      ca: VCE ≈ 1,95 V; zona activa
+      es: VCE ≈ 1,95 V; zona activa
+    - id: D
+      ca: VCE ≈ 10 V; tall
+      es: VCE ≈ 10 V; corte
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: IB = (5 − 0,7)/220k = 19,5 µA. Suposant zona activa, IC = β·IB = 100 × 19,5
+      µA = 1,95 mA. El corrent de saturació seria IC(sat) = VCC/RC = 10 mA; com
+      que 1,95 mA < 10 mA, el transistor NO està saturat (zona activa). VCE =
+      VCC − IC·RC = 10 − 1,95×1 = 8,05 V. B suposa saturació incorrectament; C
+      confon IC·RC amb VCE; D suposa tall.
+    es: IB = (5 − 0,7)/220k = 19,5 µA. Suponiendo zona activa, IC = β·IB = 100 ×
+      19,5 µA = 1,95 mA. La corriente de saturación sería IC(sat) = VCC/RC = 10
+      mA; como 1,95 mA < 10 mA, el transistor NO está saturado (zona activa).
+      VCE = VCC − IC·RC = 10 − 1,95×1 = 8,05 V. B supone saturación
+      incorrectamente; C confunde IC·RC con VCE; D supone corte.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.analog_components
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Un pont rectificador de díodes (4 díodes de silici, Vγ = 0,7 V cadascun)
+      alimenta una càrrega des d'una tensió alterna de valor de pic 12 V. Quin
+      és el valor de pic aproximat de la tensió de sortida?
+    es: Un puente rectificador de diodos (4 diodos de silicio, Vγ = 0,7 V cada uno)
+      alimenta una carga desde una tensión alterna de valor de pico 12 V. ¿Cuál
+      es el valor de pico aproximado de la tensión de salida?
+  options:
+    - id: A
+      ca: 10,6 V
+      es: 10,6 V
+    - id: B
+      ca: 11,3 V
+      es: 11,3 V
+    - id: C
+      ca: 12 V
+      es: 12 V
+    - id: D
+      ca: 9,2 V
+      es: 9,2 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En cada semicicle d'un pont de Graetz condueixen 2 díodes en sèrie, de
+      manera que la sortida perd 2 caigudes: Vout(pic) = 12 − 2×0,7 = 12 − 1,4 =
+      10,6 V. B resta només una caiguda (cas de rectificació de mig ona); C
+      ignora les caigudes (díodes ideals); D resta 4 caigudes suposant
+      erròniament que condueixen els 4 díodes alhora."
+    es: "En cada semiciclo de un puente de Graetz conducen 2 diodos en serie, de
+      modo que la salida pierde 2 caídas: Vout(pico) = 12 − 2×0,7 = 12 − 1,4 =
+      10,6 V. B resta solo una caída (caso de rectificación de media onda); C
+      ignora las caídas (diodos ideales); D resta 4 caídas suponiendo
+      erróneamente que conducen los 4 diodos a la vez."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.digital_logic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quantes files (combinacions d'entrada) té la taula de veritat d'un circuit
+      lògic amb 4 entrades independents?
+    es: ¿Cuántas filas (combinaciones de entrada) tiene la tabla de verdad de un
+      circuito lógico con 4 entradas independientes?
+  options:
+    - id: A
+      ca: 8 files
+      es: 8 filas
+    - id: B
+      ca: 16 files
+      es: 16 filas
+    - id: C
+      ca: 4 files
+      es: 4 filas
+    - id: D
+      ca: 32 files
+      es: 32 filas
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "El nombre de combinacions possibles de n entrades binàries és 2^n. Amb n =
+      4 entrades: 2^4 = 16 files. L'error de triar 8 correspon a 2^3 (comptar
+      només 3 entrades); triar 4 confon nombre d'entrades amb nombre de files;
+      32 seria 2^5."
+    es: "El número de combinaciones posibles de n entradas binarias es 2^n. Con n =
+      4 entradas: 2^4 = 16 filas. Elegir 8 corresponde a 2^3 (contar solo 3
+      entradas); elegir 4 confunde número de entradas con número de filas; 32
+      sería 2^5."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.digital_logic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Una porta NAND rep a les seves dues entrades A = 1 i B = 1. Quin és el valor
+      de la sortida?
+    es: Una puerta NAND recibe en sus dos entradas A = 1 y B = 1. ¿Cuál es el valor
+      de la salida?
+  options:
+    - id: A
+      ca: "1"
+      es: "1"
+    - id: B
+      ca: "0"
+      es: "0"
+    - id: C
+      ca: Indeterminat (alta impedància)
+      es: Indeterminado (alta impedancia)
+    - id: D
+      ca: Oscil·la entre 0 i 1
+      es: Oscila entre 0 y 1
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La NAND és la negació de l'AND: S = NOT(A·B). Amb A = 1 i B = 1, A·B = 1 i
+      la seva negació és 0. Triar 1 és l'error típic de calcular només l'AND
+      sense negar. Les opcions d'alta impedància o oscil·lació no corresponen a
+      una porta lògica combinacional bàsica."
+    es: "La NAND es la negación de la AND: S = NOT(A·B). Con A = 1 y B = 1, A·B = 1
+      y su negación es 0. Elegir 1 es el error típico de calcular solo la AND
+      sin negar. Las opciones de alta impedancia u oscilación no corresponden a
+      una puerta lógica combinacional básica."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.digital_logic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Segons els teoremes de De Morgan, a quina expressió equival NOT(A + B)?
+    es: Según los teoremas de De Morgan, ¿a qué expresión equivale NOT(A + B)?
+  options:
+    - id: A
+      ca: NOT(A) + NOT(B)
+      es: NOT(A) + NOT(B)
+    - id: B
+      ca: NOT(A) · NOT(B)
+      es: NOT(A) · NOT(B)
+    - id: C
+      ca: A · B
+      es: A · B
+    - id: D
+      ca: NOT(A) · B
+      es: NOT(A) · B
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "El teorema de De Morgan estableix que la negació d'una suma (OR) és el
+      producte (AND) de les negacions: NOT(A + B) = NOT(A) · NOT(B). L'error més
+      comú (opció A) és negar cada terme però mantenir l'operador OR; en canvi
+      De Morgan intercanvia OR per AND. L'opció C oblida negar les variables."
+    es: "El teorema de De Morgan establece que la negación de una suma (OR) es el
+      producto (AND) de las negaciones: NOT(A + B) = NOT(A) · NOT(B). El error
+      más común (opción A) es negar cada término pero mantener el operador OR;
+      en cambio De Morgan intercambia OR por AND. La opción C olvida negar las
+      variables."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.digital_logic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Simplifica la funció lògica F = A·B + A·NOT(B) + NOT(A)·B utilitzant
+      l'àlgebra de Boole.
+    es: Simplifica la función lógica F = A·B + A·NOT(B) + NOT(A)·B utilizando el
+      álgebra de Boole.
+  options:
+    - id: A
+      ca: F = A + B
+      es: F = A + B
+    - id: B
+      ca: F = A · B
+      es: F = A · B
+    - id: C
+      ca: F = A
+      es: F = A
+    - id: D
+      ca: F = B
+      es: F = B
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Agrupem els dos primers termes: A·B + A·NOT(B) = A·(B + NOT(B)) = A·1 = A.
+      Queda F = A + NOT(A)·B. Aplicant el teorema d'absorció A + NOT(A)·B = A +
+      B, s'obté F = A + B. Triar F = A oblida el darrer terme NOT(A)·B; F = A·B
+      només consideraria el primer minterme."
+    es: "Agrupamos los dos primeros términos: A·B + A·NOT(B) = A·(B + NOT(B)) = A·1
+      = A. Queda F = A + NOT(A)·B. Aplicando el teorema de absorción A +
+      NOT(A)·B = A + B, se obtiene F = A + B. Elegir F = A olvida el último
+      término NOT(A)·B; F = A·B solo consideraría el primer minterm."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.digital_logic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un circuit calcula la paritat de 3 bits mitjançant F = A XOR B XOR C. De les
+      8 combinacions possibles d'entrada, en quantes val F = 1?
+    es: Un circuito calcula la paridad de 3 bits mediante F = A XOR B XOR C. De las
+      8 combinaciones posibles de entrada, ¿en cuántas vale F = 1?
+  options:
+    - id: A
+      ca: 3 combinacions
+      es: 3 combinaciones
+    - id: B
+      ca: 4 combinacions
+      es: 4 combinaciones
+    - id: C
+      ca: 5 combinacions
+      es: 5 combinaciones
+    - id: D
+      ca: 8 combinacions
+      es: 8 combinaciones
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Un XOR encadenat de 3 entrades és una funció de paritat: F = 1 quan el
+      nombre d'entrades a 1 és senar. Les combinacions amb un nombre senar de 1
+      són: 001, 010, 100 (un 1) i 111 (tres 1), és a dir 4 combinacions. Triar 3
+      compta només els casos amb un sol 1 i oblida el 111; l'XOR no és
+      simplement un OR (que donaria 7)."
+    es: "Un XOR encadenado de 3 entradas es una función de paridad: F = 1 cuando el
+      número de entradas a 1 es impar. Las combinaciones con un número impar de
+      1 son: 001, 010, 100 (un 1) y 111 (tres 1), es decir 4 combinaciones.
+      Elegir 3 cuenta solo los casos con un solo 1 y olvida el 111; el XOR no es
+      simplemente un OR (que daría 7)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.digital_logic
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una funció de 3 variables val 1 exactament en els mintermes F(A,B,C) = Σm(1,
+      3, 5, 7). Quina és l'expressió mínima després de simplificar amb un mapa
+      de Karnaugh?
+    es: Una función de 3 variables vale 1 exactamente en los minterms F(A,B,C) =
+      Σm(1, 3, 5, 7). ¿Cuál es la expresión mínima tras simplificar con un mapa
+      de Karnaugh?
+  options:
+    - id: A
+      ca: F = C
+      es: F = C
+    - id: B
+      ca: F = A
+      es: F = A
+    - id: C
+      ca: F = A · C
+      es: F = A · C
+    - id: D
+      ca: F = B + C
+      es: F = B + C
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els mintermes 1=001, 3=011, 5=101, 7=111 tenen tots C = 1, mentre que A i B
+      prenen tots els valors possibles. En el mapa de Karnaugh els quatre 1
+      formen un únic grup en què només C es manté constant a 1, de manera que F
+      = C. Triar A·C deixa fora la meitat dels mintermes; F = A no encaixa
+      perquè hi ha mintermes amb A = 0 (com 001).
+    es: Los minterms 1=001, 3=011, 5=101, 7=111 tienen todos C = 1, mientras que A y
+      B toman todos los valores posibles. En el mapa de Karnaugh los cuatro 1
+      forman un único grupo en el que solo C se mantiene constante a 1, de modo
+      que F = C. Elegir A·C deja fuera la mitad de los minterms; F = A no encaja
+      porque hay minterms con A = 0 (como 001).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.combinational
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Simplifica la funció lògica F = A·B + A'·B fins a la seva expressió mínima.
+      Quina expressió hi és equivalent?
+    es: Simplifica la función lógica F = A·B + A'·B hasta su expresión mínima. ¿Qué
+      expresión es equivalente?
+  options:
+    - id: A
+      ca: F = B
+      es: F = B
+    - id: B
+      ca: F = A
+      es: F = A
+    - id: C
+      ca: F = A + B
+      es: F = A + B
+    - id: D
+      ca: F = A·B
+      es: F = A·B
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Traiem factor comú B: F = B·(A + A'). Com que A + A' = 1, queda F = B·1 =
+      B. L'error habitual és quedar-se amb A perquè apareix a tots dos termes,
+      però és B el factor comú."
+    es: "Sacamos factor común B: F = B·(A + A'). Como A + A' = 1, queda F = B·1 = B.
+      El error habitual es quedarse con A porque aparece en ambos términos, pero
+      el factor común es B."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.combinational
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quantes files (combinacions d'entrada) té la taula de veritat d'un circuit
+      combinacional amb 4 variables d'entrada?
+    es: ¿Cuántas filas (combinaciones de entrada) tiene la tabla de verdad de un
+      circuito combinacional con 4 variables de entrada?
+  options:
+    - id: A
+      ca: "16"
+      es: "16"
+    - id: B
+      ca: "8"
+      es: "8"
+    - id: C
+      ca: "4"
+      es: "4"
+    - id: D
+      ca: "32"
+      es: "32"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El nombre de combinacions és 2^n, on n és el nombre de variables. Amb n =
+      4: 2^4 = 16 files. Errors típics: 2^3 = 8, confondre n amb el resultat
+      (4), o 2^5 = 32."
+    es: "El número de combinaciones es 2^n, donde n es el número de variables. Con n
+      = 4: 2^4 = 16 filas. Errores típicos: 2^3 = 8, confundir n con el
+      resultado (4), o 2^5 = 32."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.combinational
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Aplica el teorema de De Morgan a l'expressió (A + B)'. Quin és el resultat
+      correcte?
+    es: Aplica el teorema de De Morgan a la expresión (A + B)'. ¿Cuál es el
+      resultado correcto?
+  options:
+    - id: A
+      ca: A'·B'
+      es: A'·B'
+    - id: B
+      ca: A' + B'
+      es: A' + B'
+    - id: C
+      ca: A·B
+      es: A·B
+    - id: D
+      ca: A + B
+      es: A + B
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "De Morgan: la negació d'una suma és el producte de les negacions: (A + B)'
+      = A'·B'. L'error freqüent és negar les variables però mantenir l'operador
+      (A' + B'); cal canviar OR per AND."
+    es: "De Morgan: la negación de una suma es el producto de las negaciones: (A +
+      B)' = A'·B'. El error frecuente es negar las variables pero mantener el
+      operador (A' + B'); hay que cambiar OR por AND."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.combinational
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un sumador complet (full adder) les entrades són A = 1, B = 1 i el carry
+      d'entrada Cin = 1. Quins són els valors de la suma S i del carry de
+      sortida Cout?
+    es: En un sumador completo (full adder) las entradas son A = 1, B = 1 y el
+      acarreo de entrada Cin = 1. ¿Cuáles son los valores de la suma S y del
+      acarreo de salida Cout?
+  options:
+    - id: A
+      ca: S = 1, Cout = 1
+      es: S = 1, Cout = 1
+    - id: B
+      ca: S = 0, Cout = 1
+      es: S = 0, Cout = 1
+    - id: C
+      ca: S = 1, Cout = 0
+      es: S = 1, Cout = 0
+    - id: D
+      ca: S = 0, Cout = 0
+      es: S = 0, Cout = 0
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La suma binària és 1 + 1 + 1 = 3 = 11 en binari, de manera que el bit de
+      suma S = 1 i el carry Cout = 1. Amb les funcions: S = A⊕B⊕Cin = 1⊕1⊕1 = 1
+      i Cout és la majoria de les tres entrades = 1. L'error de S = 0 sorgeix
+      d'oblidar el Cin en el XOR."
+    es: "La suma binaria es 1 + 1 + 1 = 3 = 11 en binario, por lo que el bit de suma
+      S = 1 y el acarreo Cout = 1. Con las funciones: S = A⊕B⊕Cin = 1⊕1⊕1 = 1 y
+      Cout es la mayoría de las tres entradas = 1. El error de S = 0 surge de
+      olvidar el Cin en el XOR."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.combinational
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una funció lògica de 3 variables val 1 per a tots els minterms excepte m6
+      (110) i m7 (111). Quina és l'expressió simplificada de F(A,B,C)?
+    es: Una función lógica de 3 variables vale 1 para todos los minterms excepto m6
+      (110) y m7 (111). ¿Cuál es la expresión simplificada de F(A,B,C)?
+  options:
+    - id: A
+      ca: F = A' + B'
+      es: F = A' + B'
+    - id: B
+      ca: F = A'·B'
+      es: F = A'·B'
+    - id: C
+      ca: F = A + B
+      es: F = A + B
+    - id: D
+      ca: F = A·B
+      es: F = A·B
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els únics 0 són m6 = 110 i m7 = 111, que comparteixen A = 1 i B = 1 (C
+      indiferent). Per tant F = 0 només quan A·B = 1, és a dir F = (A·B)' = A' +
+      B' (De Morgan). Agrupant els zeros al mapa de Karnaugh s'obté el terme A·B
+      per a F', i la seva negació dóna A' + B'.
+    es: Los únicos 0 son m6 = 110 y m7 = 111, que comparten A = 1 y B = 1 (C
+      indiferente). Por tanto F = 0 solo cuando A·B = 1, es decir F = (A·B)' =
+      A' + B' (De Morgan). Agrupando los ceros en el mapa de Karnaugh se obtiene
+      el término A·B para F', y su negación da A' + B'.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.electronics.combinational
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un sumador de 4 bits per propagació de residu (ripple-carry) està format per
+      4 sumadors complets en cascada. Si el retard de propagació del carry a
+      través de cada sumador complet és de 6 ns, quin és el retard màxim de
+      propagació del carry des de l'entrada fins a la sortida Cout del bit més
+      significatiu?
+    es: Un sumador de 4 bits por propagación de acarreo (ripple-carry) está formado
+      por 4 sumadores completos en cascada. Si el retardo de propagación del
+      acarreo a través de cada sumador completo es de 6 ns, ¿cuál es el retardo
+      máximo de propagación del acarreo desde la entrada hasta la salida Cout
+      del bit más significativo?
+  options:
+    - id: A
+      ca: 24 ns
+      es: 24 ns
+    - id: B
+      ca: 6 ns
+      es: 6 ns
+    - id: C
+      ca: 12 ns
+      es: 12 ns
+    - id: D
+      ca: 30 ns
+      es: 30 ns
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un ripple-carry el carry ha de travessar seqüencialment els 4 sumadors,
+      de manera que els retards se sumen: 4 × 6 ns = 24 ns. Errors: 6 ns (un sol
+      sumador), 12 ns (només 2 etapes) o 30 ns (comptar 5 etapes)."
+    es: "En un ripple-carry el acarreo debe atravesar secuencialmente los 4
+      sumadores, por lo que los retardos se suman: 4 × 6 ns = 24 ns. Errores: 6
+      ns (un solo sumador), 12 ns (solo 2 etapas) o 30 ns (contar 5 etapas)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.open_closed_loop
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina característica distingeix un sistema de control de llaç tancat d'un de
+      llaç obert?
+    es: ¿Qué característica distingue un sistema de control de lazo cerrado de uno
+      de lazo abierto?
+  options:
+    - id: A
+      ca: "El llaç tancat disposa de realimentació: mesura la sortida i la compara amb
+        la consigna per corregir l'error."
+      es: "El lazo cerrado dispone de realimentación: mide la salida y la compara con
+        la consigna para corregir el error."
+    - id: B
+      ca: El llaç tancat sempre funciona sense sensors, mentre que el llaç obert en
+        necessita.
+      es: El lazo cerrado siempre funciona sin sensores, mientras que el lazo abierto
+        los necesita.
+    - id: C
+      ca: El llaç tancat només pot treballar amb senyals analògics i el llaç obert amb
+        senyals digitals.
+      es: El lazo cerrado solo puede trabajar con señales analógicas y el lazo abierto
+        con señales digitales.
+    - id: D
+      ca: El llaç tancat no té actuador; el llaç obert sí.
+      es: El lazo cerrado no tiene actuador; el lazo abierto sí.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La diferència essencial és la realimentació. En llaç tancat un sensor mesura
+      la variable de sortida i un comparador la resta de la consigna, generant
+      un senyal d'error que el controlador utilitza per corregir l'actuació. En
+      llaç obert no hi ha aquesta comparació i l'actuació no depèn del valor
+      real de la sortida.
+    es: La diferencia esencial es la realimentación. En lazo cerrado un sensor mide
+      la variable de salida y un comparador la resta de la consigna, generando
+      una señal de error que el controlador usa para corregir la actuación. En
+      lazo abierto no existe esa comparación y la actuación no depende del valor
+      real de la salida.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.open_closed_loop
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Quin dels següents dispositius és un exemple clar de sistema de control de
+      llaç TANCAT?
+    es: ¿Cuál de los siguientes dispositivos es un ejemplo claro de sistema de
+      control de lazo CERRADO?
+  options:
+    - id: A
+      ca: Una torradora que s'apaga amb un temporitzador prefixat.
+      es: Una tostadora que se apaga con un temporizador prefijado.
+    - id: B
+      ca: Un semàfor que canvia de color segons intervals de temps programats.
+      es: Un semáforo que cambia de color según intervalos de tiempo programados.
+    - id: C
+      ca: Un frigorífic amb termòstat que engega el compressor quan la temperatura
+        puja per sobre de la consigna.
+      es: Un frigorífico con termostato que arranca el compresor cuando la temperatura
+        sube por encima de la consigna.
+    - id: D
+      ca: Una rentadora que executa un programa de rentat durant un temps fix,
+        independentment de la brutícia.
+      es: Una lavadora que ejecuta un programa de lavado durante un tiempo fijo,
+        independientemente de la suciedad.
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "El frigorífic amb termòstat mesura la temperatura real (sortida), la
+      compara amb la consigna i actua sobre el compressor en funció d'aquesta
+      mesura: hi ha realimentació, per tant és llaç tancat. Els altres casos
+      (temporitzador, semàfor per temps, programa fix) actuen sense mesurar la
+      variable controlada, són de llaç obert."
+    es: "El frigorífico con termostato mide la temperatura real (salida), la compara
+      con la consigna y actúa sobre el compresor en función de esa medida: hay
+      realimentación, por tanto es lazo cerrado. Los demás casos (temporizador,
+      semáforo por tiempo, programa fijo) actúan sin medir la variable
+      controlada, son de lazo abierto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.open_closed_loop
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En un sistema de control amb realimentació negativa, la referència és R =
+      100. El comparador calcula l'error com E = R − H·C, on la sortida és C =
+      90 i el guany del sensor de realimentació és H = 0,8. Quin és el valor del
+      senyal d'error E?
+    es: En un sistema de control con realimentación negativa, la referencia es R =
+      100. El comparador calcula el error como E = R − H·C, donde la salida es C
+      = 90 y la ganancia del sensor de realimentación es H = 0,8. ¿Cuál es el
+      valor de la señal de error E?
+  options:
+    - id: A
+      ca: E = 28
+      es: E = 28
+    - id: B
+      ca: E = 10
+      es: E = 10
+    - id: C
+      ca: E = 20
+      es: E = 20
+    - id: D
+      ca: E = 172
+      es: E = 172
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El senyal realimentat és H·C = 0,8 × 90 = 72. L'error és E = R − H·C = 100 −
+      72 = 28. L'error B (10) oblida el guany H (100 − 90). L'error C (20)
+      aplica H a la referència. L'error D (172) suma en lloc de restar.
+    es: La señal realimentada es H·C = 0,8 × 90 = 72. El error es E = R − H·C = 100
+      − 72 = 28. El error B (10) olvida la ganancia H (100 − 90). El error C
+      (20) aplica H a la referencia. El error D (172) suma en lugar de restar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.open_closed_loop
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Un sistema de llaç tancat amb realimentació negativa té un guany directe G =
+      50 i un guany de realimentació H = 0,1. Quin és el guany del sistema en
+      llaç tancat, G_LT = G/(1 + G·H)?
+    es: Un sistema de lazo cerrado con realimentación negativa tiene una ganancia
+      directa G = 50 y una ganancia de realimentación H = 0,1. ¿Cuál es la
+      ganancia del sistema en lazo cerrado, G_LC = G/(1 + G·H)?
+  options:
+    - id: A
+      ca: ≈ 8,33
+      es: ≈ 8,33
+    - id: B
+      ca: ≈ 0,98
+      es: ≈ 0,98
+    - id: C
+      ca: = 45,45
+      es: = 45,45
+    - id: D
+      ca: = 10
+      es: = 10
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El producte de llaç és G·H = 50 × 0,1 = 5. Aleshores G_LT = G/(1 + G·H) =
+      50/(1 + 5) = 50/6 ≈ 8,33. El distractor B (0,98) confon G·H amb G al
+      denominador (50/51). El C (45,45) usa H sol en lloc de G·H (50/1,1). El D
+      (10) oblida el terme +1 del denominador (50/5).
+    es: El producto de lazo es G·H = 50 × 0,1 = 5. Entonces G_LC = G/(1 + G·H) =
+      50/(1 + 5) = 50/6 ≈ 8,33. El distractor B (0,98) confunde G·H con G en el
+      denominador (50/51). El C (45,45) usa H solo en lugar de G·H (50/1,1). El
+      D (10) olvida el término +1 del denominador (50/5).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.open_closed_loop
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Un control proporcional amb realimentació unitària (H = 1) té un guany
+      directe en règim permanent K = 9 davant d'una entrada esglaó. La consigna
+      és R = 100 unitats. Suposant que la sortida s'estabilitza en C = R·K/(1 +
+      K), quin és el valor final de la sortida i l'error en règim permanent?
+    es: Un control proporcional con realimentación unitaria (H = 1) tiene una
+      ganancia directa en régimen permanente K = 9 ante una entrada escalón. La
+      consigna es R = 100 unidades. Suponiendo que la salida se estabiliza en C
+      = R·K/(1 + K), ¿cuál es el valor final de la salida y el error en régimen
+      permanente?
+  options:
+    - id: A
+      ca: C = 90 i error = 10
+      es: C = 90 y error = 10
+    - id: B
+      ca: C = 100 i error = 0
+      es: C = 100 y error = 0
+    - id: C
+      ca: C = 91 i error = 9
+      es: C = 91 y error = 9
+    - id: D
+      ca: C = 900 i error = −800
+      es: C = 900 y error = −800
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Amb realimentació unitària la sortida s'estabilitza en C = R·K/(1 + K) = 100
+      × 9/10 = 90. L'error en règim permanent és E = R − C = 100 − 90 = 10
+      (equival a R/(1+K) = 100/10). Un control proporcional pur deixa error
+      residual no nul. El distractor B suposa error zero (només cert amb K
+      infinit o control integral). El C confon el terme 1/(1+K). El D aplica el
+      guany directe sense realimentació (R·K).
+    es: Con realimentación unitaria la salida se estabiliza en C = R·K/(1 + K) = 100
+      × 9/10 = 90. El error en régimen permanente es E = R − C = 100 − 90 = 10
+      (equivale a R/(1+K) = 100/10). Un control proporcional puro deja error
+      residual no nulo. El distractor B supone error cero (solo cierto con K
+      infinito o control integral). El C confunde el término 1/(1+K). El D
+      aplica la ganancia directa sin realimentación (R·K).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.open_closed_loop
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Respecte als sistemes de control de llaç obert i tancat, quina afirmació és
+      CORRECTA?
+    es: Respecto a los sistemas de control de lazo abierto y cerrado, ¿qué
+      afirmación es CORRECTA?
+  options:
+    - id: A
+      ca: El llaç tancat corregeix automàticament l'efecte de pertorbacions externes,
+        però és més complex i pot arribar a fer-se inestable.
+      es: El lazo cerrado corrige automáticamente el efecto de perturbaciones
+        externas, pero es más complejo y puede llegar a hacerse inestable.
+    - id: B
+      ca: El llaç obert és més precís perquè no depèn de sensors que poden introduir
+        error.
+      es: El lazo abierto es más preciso porque no depende de sensores que puedan
+        introducir error.
+    - id: C
+      ca: El llaç tancat mai pot ser inestable, ja que la realimentació sempre
+        estabilitza el sistema.
+      es: El lazo cerrado nunca puede ser inestable, ya que la realimentación siempre
+        estabiliza el sistema.
+    - id: D
+      ca: El llaç obert compensa les pertorbacions millor que el llaç tancat perquè és
+        més ràpid.
+      es: El lazo abierto compensa las perturbaciones mejor que el lazo cerrado porque
+        es más rápido.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El principal avantatge del llaç tancat és que, gràcies a la realimentació,
+      corregeix desviacions causades per pertorbacions i canvis del sistema; a
+      canvi, és més complex i costós i, si el guany no està ben ajustat, pot
+      esdevenir inestable (oscil·lacions creixents). El llaç obert no detecta
+      pertorbacions (B i D falsos) i la realimentació no garanteix per si sola
+      l'estabilitat (C fals).
+    es: La principal ventaja del lazo cerrado es que, gracias a la realimentación,
+      corrige desviaciones causadas por perturbaciones y cambios del sistema; a
+      cambio, es más complejo y costoso y, si la ganancia no está bien ajustada,
+      puede volverse inestable (oscilaciones crecientes). El lazo abierto no
+      detecta perturbaciones (B y D falsos) y la realimentación no garantiza por
+      sí sola la estabilidad (C falso).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.sensors_actuators
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: D'aquests quatre components d'un sistema de control, quin és un ACTUADOR (i
+      no un sensor)?
+    es: De estos cuatro componentes de un sistema de control, ¿cuál es un ACTUADOR
+      (y no un sensor)?
+  options:
+    - id: A
+      ca: Una LDR (fotoresistència)
+      es: Una LDR (fotorresistencia)
+    - id: B
+      ca: Un termistor NTC
+      es: Un termistor NTC
+    - id: C
+      ca: Un servomotor
+      es: Un servomotor
+    - id: D
+      ca: Una galga extensiomètrica
+      es: Una galga extensiométrica
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: Un sensor transforma una magnitud física en un senyal elèctric (entrada del
+      sistema), mentre que un actuador transforma un senyal elèctric en una
+      acció física (sortida). La LDR (llum), l'NTC (temperatura) i la galga
+      (deformació) són sensors. El servomotor converteix el senyal elèctric en
+      moviment, per tant és l'actuador.
+    es: Un sensor transforma una magnitud física en una señal eléctrica (entrada del
+      sistema), mientras que un actuador transforma una señal eléctrica en una
+      acción física (salida). La LDR (luz), el NTC (temperatura) y la galga
+      (deformación) son sensores. El servomotor convierte la señal eléctrica en
+      movimiento, por lo que es el actuador.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.sensors_actuators
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Un potenciòmetre lineal de 10 kΩ s'usa com a sensor de posició. S'aplica una
+      tensió de 5 V entre els extrems de la pista i la sortida es pren al
+      cursor, mesurada respecte de l'extrem inferior. Si el cursor està al 30 %
+      del recorregut (comptat des de l'extrem inferior), quina és la tensió de
+      sortida?
+    es: Un potenciómetro lineal de 10 kΩ se usa como sensor de posición. Se aplica
+      una tensión de 5 V entre los extremos de la pista y la salida se toma en
+      el cursor, medida respecto del extremo inferior. Si el cursor está al 30 %
+      del recorrido (contado desde el extremo inferior), ¿cuál es la tensión de
+      salida?
+  options:
+    - id: A
+      ca: 1,5 V
+      es: 1,5 V
+    - id: B
+      ca: 3,5 V
+      es: 3,5 V
+    - id: C
+      ca: 0,30 V
+      es: 0,30 V
+    - id: D
+      ca: 1,67 V
+      es: 1,67 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un divisor de tensió lineal, la tensió al cursor és proporcional a la
+      fracció de recorregut mesurada des de l'extrem de referència: Vout = Valim
+      × fracció = 5 V × 0,30 = 1,5 V. L'opció 3,5 V correspon a mesurar des de
+      l'extrem contrari (5 × 0,70) i és l'error més comú."
+    es: "En un divisor de tensión lineal, la tensión en el cursor es proporcional a
+      la fracción de recorrido medida desde el extremo de referencia: Vout =
+      Valim × fracción = 5 V × 0,30 = 1,5 V. La opción 3,5 V corresponde a medir
+      desde el extremo contrario (5 × 0,70) y es el error más común."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.sensors_actuators
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Un termistor NTC es connecta en sèrie amb una resistència fixa de 10 kΩ i el
+      conjunt s'alimenta amb 5 V. La tensió de sortida es pren als extrems de la
+      resistència FIXA. A una certa temperatura el termistor val 15 kΩ. Quina és
+      la tensió de sortida?
+    es: Un termistor NTC se conecta en serie con una resistencia fija de 10 kΩ y el
+      conjunto se alimenta con 5 V. La tensión de salida se toma en los extremos
+      de la resistencia FIJA. A cierta temperatura el termistor vale 15 kΩ.
+      ¿Cuál es la tensión de salida?
+  options:
+    - id: A
+      ca: 2,0 V
+      es: 2,0 V
+    - id: B
+      ca: 3,0 V
+      es: 3,0 V
+    - id: C
+      ca: 2,5 V
+      es: 2,5 V
+    - id: D
+      ca: 0,5 V
+      es: 0,5 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Divisor de tensió: la sortida a la resistència fixa és Vout = Valim ×
+      Rfixa/(Rfixa + RNTC) = 5 × 10/(10 + 15) = 5 × 10/25 = 2,0 V. L'opció 3,0 V
+      correspon a la caiguda sobre el termistor (5 × 15/25) i és l'error típic
+      de confondre sobre quin element es mesura."
+    es: "Divisor de tensión: la salida en la resistencia fija es Vout = Valim ×
+      Rfija/(Rfija + RNTC) = 5 × 10/(10 + 15) = 5 × 10/25 = 2,0 V. La opción 3,0
+      V corresponde a la caída sobre el termistor (5 × 15/25) y es el error
+      típico de confundir sobre qué elemento se mide."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.sensors_actuators
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Una LDR es connecta en sèrie amb una resistència fixa de 10 kΩ, alimentada
+      amb 12 V. La tensió de sortida es mesura als extrems de la LDR. En foscor
+      la LDR presenta 50 kΩ. Quina tensió de sortida s'obté en foscor?
+    es: Una LDR se conecta en serie con una resistencia fija de 10 kΩ, alimentada
+      con 12 V. La tensión de salida se mide en los extremos de la LDR. En
+      oscuridad la LDR presenta 50 kΩ. ¿Qué tensión de salida se obtiene en
+      oscuridad?
+  options:
+    - id: A
+      ca: 10 V
+      es: 10 V
+    - id: B
+      ca: 2 V
+      es: 2 V
+    - id: C
+      ca: 6 V
+      es: 6 V
+    - id: D
+      ca: 8 V
+      es: 8 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La sortida a la LDR és Vout = Valim × RLDR/(RLDR + Rfixa) = 12 × 50/(50 +
+      10) = 12 × 50/60 = 10 V. L'opció 2 V correspon a la caiguda sobre la
+      resistència fixa (12 × 10/60), que seria la sortida si es mesurés sobre
+      l'altre element.
+    es: La salida en la LDR es Vout = Valim × RLDR/(RLDR + Rfija) = 12 × 50/(50 +
+      10) = 12 × 50/60 = 10 V. La opción 2 V corresponde a la caída sobre la
+      resistencia fija (12 × 10/60), que sería la salida si se midiese sobre el
+      otro elemento.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.sensors_actuators
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un motor pas a pas (actuador) té un angle de pas de 1,8° per pas. Quants
+      passos ha de rebre per girar exactament 90°?
+    es: Un motor paso a paso (actuador) tiene un ángulo de paso de 1,8° por paso.
+      ¿Cuántos pasos debe recibir para girar exactamente 90°?
+  options:
+    - id: A
+      ca: 50 passos
+      es: 50 pasos
+    - id: B
+      ca: 200 passos
+      es: 200 pasos
+    - id: C
+      ca: 45 passos
+      es: 45 pasos
+    - id: D
+      ca: 162 passos
+      es: 162 pasos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Nombre de passos = angle desitjat / angle de pas = 90° / 1,8° = 50 passos.
+      L'opció 200 és el nombre de passos per a una volta completa (360/1,8) i
+      l'opció 162 surt de multiplicar 90 × 1,8 en lloc de dividir.
+    es: Número de pasos = ángulo deseado / ángulo de paso = 90° / 1,8° = 50 pasos.
+      La opción 200 es el número de pasos para una vuelta completa (360/1,8) y
+      la opción 162 sale de multiplicar 90 × 1,8 en lugar de dividir.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.sensors_actuators
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Una galga extensiomètrica té un factor de galga GF = 2,0 i una resistència
+      nominal de 120 Ω. Quan es sotmet a una deformació de 500 µε
+      (microdeformacions, és a dir 500×10^-6), quina és la variació de
+      resistència ΔR?
+    es: Una galga extensiométrica tiene un factor de galga GF = 2,0 y una
+      resistencia nominal de 120 Ω. Cuando se somete a una deformación de 500 µε
+      (microdeformaciones, es decir 500×10^-6), ¿cuál es la variación de
+      resistencia ΔR?
+  options:
+    - id: A
+      ca: 0,12 Ω
+      es: 0,12 Ω
+    - id: B
+      ca: 0,24 Ω
+      es: 0,24 Ω
+    - id: C
+      ca: 12 Ω
+      es: 12 Ω
+    - id: D
+      ca: 0,06 Ω
+      es: 0,06 Ω
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El factor de galga es defineix com GF = (ΔR/R)/ε, per tant ΔR = GF × ε × R =
+      2,0 × (500×10^-6) × 120 = 2,0 × 0,060 = 0,12 Ω. L'opció 12 Ω apareix si
+      s'oblida el factor 10^-6 (tractant 500 µε com 0,5 en lloc de 5×10^-4);
+      l'opció 0,06 Ω omet el factor GF.
+    es: El factor de galga se define como GF = (ΔR/R)/ε, por tanto ΔR = GF × ε × R =
+      2,0 × (500×10^-6) × 120 = 2,0 × 0,060 = 0,12 Ω. La opción 12 Ω aparece si
+      se olvida el factor 10^-6 (tratando 500 µε como 0,5 en lugar de 5×10^-4);
+      la opción 0,06 Ω omite el factor GF.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.programmed_systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina característica distingeix un sistema de control en llaç tancat
+      (realimentat) d'un sistema en llaç obert?
+    es: ¿Qué característica distingue un sistema de control en lazo cerrado
+      (realimentado) de un sistema en lazo abierto?
+  options:
+    - id: A
+      ca: El sistema en llaç tancat mesura la sortida amb un sensor i la compara amb
+        la consigna per corregir l'error.
+      es: El sistema en lazo cerrado mide la salida con un sensor y la compara con la
+        consigna para corregir el error.
+    - id: B
+      ca: El sistema en llaç tancat no necessita sensors, perquè la sortida mai
+        influeix en l'entrada.
+      es: El sistema en lazo cerrado no necesita sensores, porque la salida nunca
+        influye en la entrada.
+    - id: C
+      ca: El sistema en llaç obert corregeix automàticament les pertorbacions
+        externes.
+      es: El sistema en lazo abierto corrige automáticamente las perturbaciones
+        externas.
+    - id: D
+      ca: En llaç tancat el senyal només flueix de l'entrada cap a la sortida, sense
+        cap camí de retorn.
+      es: En lazo cerrado la señal solo fluye de la entrada hacia la salida, sin
+        ningún camino de retorno.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El tret definitori del llaç tancat és la realimentació: un sensor mesura la
+      sortida real, un comparador calcula l'error (error = consigna − mesura) i
+      el controlador actua per reduir-lo. Això li permet compensar
+      pertorbacions, cosa que el llaç obert no pot fer. Les opcions B i D neguen
+      la realimentació (pròpia del llaç tancat) i la C atribueix al llaç obert
+      una capacitat que no té."
+    es: "El rasgo definitorio del lazo cerrado es la realimentación: un sensor mide
+      la salida real, un comparador calcula el error (error = consigna − medida)
+      y el controlador actúa para reducirlo. Esto le permite compensar
+      perturbaciones, algo que el lazo abierto no puede hacer. Las opciones B y
+      D niegan la realimentación (propia del lazo cerrado) y la C atribuye al
+      lazo abierto una capacidad que no tiene."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.programmed_systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Un regulador proporcional controla la temperatura d'un forn amb consigna 80
+      °C. En un instant el sensor mesura 65 °C i la constant proporcional és Kp
+      = 4 %/°C. Quin és el senyal de sortida u del controlador?
+    es: Un regulador proporcional controla la temperatura de un horno con consigna
+      80 °C. En un instante el sensor mide 65 °C y la constante proporcional es
+      Kp = 4 %/°C. ¿Cuál es la señal de salida u del controlador?
+  options:
+    - id: A
+      ca: u = 60 %
+      es: u = 60 %
+    - id: B
+      ca: u = −60 %
+      es: u = −60 %
+    - id: C
+      ca: u = 320 %
+      es: u = 320 %
+    - id: D
+      ca: u = 15 %
+      es: u = 15 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Primer es calcula l'error: e = consigna − mesura = 80 − 65 = 15 °C. La
+      sortida proporcional és u = Kp · e = 4 %/°C · 15 °C = 60 %. L'opció B
+      inverteix el signe de l'error (mesura − consigna); la C multiplica Kp per
+      la consigna en lloc de per l'error; la D dona només l'error sense aplicar
+      el guany."
+    es: "Primero se calcula el error: e = consigna − medida = 80 − 65 = 15 °C. La
+      salida proporcional es u = Kp · e = 4 %/°C · 15 °C = 60 %. La opción B
+      invierte el signo del error (medida − consigna); la C multiplica Kp por la
+      consigna en lugar de por el error; la D da solo el error sin aplicar la
+      ganancia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.programmed_systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Un sensor de temperatura lineal té una sensibilitat de 10 mV/°C i dona 0 mV
+      a 0 °C. El sistema programat llegeix una tensió de 0,37 V a l'entrada
+      analògica. Quina temperatura correspon a aquesta lectura?
+    es: Un sensor de temperatura lineal tiene una sensibilidad de 10 mV/°C y da 0 mV
+      a 0 °C. El sistema programado lee una tensión de 0,37 V en la entrada
+      analógica. ¿Qué temperatura corresponde a esa lectura?
+  options:
+    - id: A
+      ca: 37 °C
+      es: 37 °C
+    - id: B
+      ca: 3,7 °C
+      es: 3,7 °C
+    - id: C
+      ca: 0,037 °C
+      es: 0,037 °C
+    - id: D
+      ca: 370 °C
+      es: 370 °C
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cal treballar amb unitats coherents: 0,37 V = 370 mV. Com que la
+      sensibilitat és 10 mV/°C, T = 370 mV ÷ 10 mV/°C = 37 °C. Les opcions B i C
+      provenen d'oblidar la conversió V→mV (dividir 0,37 entre 10, o 0,37 entre
+      10 sense convertir); la D confon el resultat amb el valor en mil·livolts."
+    es: "Hay que trabajar con unidades coherentes: 0,37 V = 370 mV. Como la
+      sensibilidad es 10 mV/°C, T = 370 mV ÷ 10 mV/°C = 37 °C. Las opciones B y
+      C provienen de olvidar la conversión V→mV (dividir 0,37 entre 10, o 0,37
+      entre 10 sin convertir); la D confunde el resultado con el valor en
+      milivoltios."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.programmed_systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Un microcontrolador genera un senyal PWM per regular la velocitat d'un motor
+      de contínua alimentat a 12 V. El període del senyal és de 20 ms i el temps
+      en estat alt és de 5 ms. Quina és la tensió mitjana aplicada al motor?
+    es: Un microcontrolador genera una señal PWM para regular la velocidad de un
+      motor de continua alimentado a 12 V. El periodo de la señal es de 20 ms y
+      el tiempo en estado alto es de 5 ms. ¿Cuál es la tensión media aplicada al
+      motor?
+  options:
+    - id: A
+      ca: 3 V
+      es: 3 V
+    - id: B
+      ca: 9 V
+      es: 9 V
+    - id: C
+      ca: 6 V
+      es: 6 V
+    - id: D
+      ca: 48 V
+      es: 48 V
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El cicle de treball (duty) és D = t_alt / T = 5 ms / 20 ms = 0,25 (25 %). La
+      tensió mitjana d'un PWM és V_mitjana = D · V_alim = 0,25 · 12 V = 3 V.
+      L'opció B usa el cicle complementari (75 %); la C suposa erròniament un 50
+      %; la D divideix la tensió pel duty en lloc de multiplicar.
+    es: El ciclo de trabajo (duty) es D = t_alto / T = 5 ms / 20 ms = 0,25 (25 %).
+      La tensión media de un PWM es V_media = D · V_alim = 0,25 · 12 V = 3 V. La
+      opción B usa el ciclo complementario (75 %); la C supone erróneamente un
+      50 %; la D divide la tensión por el duty en lugar de multiplicar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.programmed_systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un sistema de control amb realimentació negativa té un guany directe G = 100
+      i un guany del llaç de realimentació H = 0,04. Quin és el guany global (en
+      llaç tancat) del sistema?
+    es: Un sistema de control con realimentación negativa tiene una ganancia directa
+      G = 100 y una ganancia del lazo de realimentación H = 0,04. ¿Cuál es la
+      ganancia global (en lazo cerrado) del sistema?
+  options:
+    - id: A
+      ca: "20"
+      es: "20"
+    - id: B
+      ca: "25"
+      es: "25"
+    - id: C
+      ca: −33,3
+      es: −33,3
+    - id: D
+      ca: "4"
+      es: "4"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per a realimentació negativa, el guany en llaç tancat és G_LT = G / (1 +
+      G·H) = 100 / (1 + 100·0,04) = 100 / (1 + 4) = 100 / 5 = 20. L'opció B
+      oblida el terme «1» del denominador (100/4 = 25); la C aplica la fórmula
+      de realimentació positiva 100/(1 − 4) = −33,3; la D dona només el producte
+      G·H.
+    es: Para realimentación negativa, la ganancia en lazo cerrado es G_LC = G / (1 +
+      G·H) = 100 / (1 + 100·0,04) = 100 / (1 + 4) = 100 / 5 = 20. La opción B
+      olvida el término «1» del denominador (100/4 = 25); la C aplica la fórmula
+      de realimentación positiva 100/(1 − 4) = −33,3; la D da solo el producto
+      G·H.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.control.programmed_systems
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Un llaç de control proporcional (sistema de tipus 0) té un guany total de
+      llaç K = 24. Davant d'un esglaó unitari en la consigna, quin és l'error en
+      règim permanent, expressat com a percentatge de l'esglaó?
+    es: Un lazo de control proporcional (sistema de tipo 0) tiene una ganancia total
+      de lazo K = 24. Ante un escalón unitario en la consigna, ¿cuál es el error
+      en régimen permanente, expresado como porcentaje del escalón?
+  options:
+    - id: A
+      ca: 4 %
+      es: 4 %
+    - id: B
+      ca: 4,17 %
+      es: 4,17 %
+    - id: C
+      ca: 96 %
+      es: 96 %
+    - id: D
+      ca: 0 %
+      es: 0 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per a un sistema de tipus 0 amb control proporcional, l'error en règim
+      permanent davant un esglaó és e_ss = 1 / (1 + K) = 1 / (1 + 24) = 1/25 =
+      0,04 = 4 %. L'opció B usa 1/K en lloc de 1/(1+K); la C dona el factor
+      complementari K/(1+K) (la part corregida, no l'error); la D reflecteix la
+      idea equivocada que un control proporcional anul·la sempre l'error (només
+      ho faria un terme integral).
+    es: Para un sistema de tipo 0 con control proporcional, el error en régimen
+      permanente ante un escalón es e_ss = 1 / (1 + K) = 1 / (1 + 24) = 1/25 =
+      0,04 = 4 %. La opción B usa 1/K en lugar de 1/(1+K); la C da el factor
+      complementario K/(1+K) (la parte corregida, no el error); la D refleja la
+      idea equivocada de que un control proporcional anula siempre el error
+      (solo lo haría un término integral).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Un material recupera completament la seva forma original quan es retira la
+      força que l'ha deformat. Quina propietat mecànica descriu aquest
+      comportament?
+    es: Un material recupera completamente su forma original cuando se retira la
+      fuerza que lo ha deformado. ¿Qué propiedad mecánica describe este
+      comportamiento?
+  options:
+    - id: A
+      ca: Elasticitat
+      es: Elasticidad
+    - id: B
+      ca: Plasticitat
+      es: Plasticidad
+    - id: C
+      ca: Ductilitat
+      es: Ductilidad
+    - id: D
+      ca: Fragilitat
+      es: Fragilidad
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'elasticitat és la capacitat d'un material de recuperar la forma inicial
+      quan cessa la força aplicada (deformació reversible). La plasticitat és la
+      deformació permanent; la ductilitat és la capacitat de deformar-se en fils
+      sense trencar-se; la fragilitat és trencar-se sense deformació plàstica
+      apreciable.
+    es: La elasticidad es la capacidad de un material de recuperar su forma inicial
+      cuando cesa la fuerza aplicada (deformación reversible). La plasticidad es
+      la deformación permanente; la ductilidad es la capacidad de deformarse en
+      hilos sin romperse; la fragilidad es romperse sin deformación plástica
+      apreciable.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Una barra d'acer de 2 m de longitud i secció de 100 mm^2 (E = 210 GPa)
+      suporta una força axial de tracció de 21 kN dins del rang elàstic. Quin és
+      l'allargament de la barra?
+    es: Una barra de acero de 2 m de longitud y sección de 100 mm^2 (E = 210 GPa)
+      soporta una fuerza axial de tracción de 21 kN dentro del rango elástico.
+      ¿Cuál es el alargamiento de la barra?
+  options:
+    - id: A
+      ca: 2 mm
+      es: 2 mm
+    - id: B
+      ca: 0,2 mm
+      es: 0,2 mm
+    - id: C
+      ca: 20 mm
+      es: 20 mm
+    - id: D
+      ca: 1 mm
+      es: 1 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Tensió: σ = F/A = 21000 N / (100×10^-6 m^2) = 210×10^6 Pa = 210 MPa.
+      Deformació: ε = σ/E = 210×10^6 / 210×10^9 = 1×10^-3. Allargament: ΔL = ε·L
+      = 1×10^-3 · 2 m = 2×10^-3 m = 2 mm."
+    es: "Tensión: σ = F/A = 21000 N / (100×10^-6 m^2) = 210×10^6 Pa = 210 MPa.
+      Deformación: ε = σ/E = 210×10^6 / 210×10^9 = 1×10^-3. Alargamiento: ΔL =
+      ε·L = 1×10^-3 · 2 m = 2×10^-3 m = 2 mm."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Un cable de coure (resistivitat ρ = 1,7×10^-8 Ω·m) té una longitud de 50 m i
+      una secció de 1,5 mm^2. Quina és la seva resistència elèctrica?
+    es: Un cable de cobre (resistividad ρ = 1,7×10^-8 Ω·m) tiene una longitud de 50
+      m y una sección de 1,5 mm^2. ¿Cuál es su resistencia eléctrica?
+  options:
+    - id: A
+      ca: ≈ 0,57 Ω
+      es: ≈ 0,57 Ω
+    - id: B
+      ca: ≈ 5,7 Ω
+      es: ≈ 5,7 Ω
+    - id: C
+      ca: ≈ 0,85 Ω
+      es: ≈ 0,85 Ω
+    - id: D
+      ca: ≈ 8,5 Ω
+      es: ≈ 8,5 Ω
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "R = ρ·L/A. Cal convertir la secció: 1,5 mm^2 = 1,5×10^-6 m^2. R =
+      (1,7×10^-8 · 50) / (1,5×10^-6) = (8,5×10^-7) / (1,5×10^-6) ≈ 0,57 Ω.
+      L'error habitual és fer servir 1,5×10^-7 m^2 (→ 5,7 Ω) o oblidar dividir
+      per A (→ 8,5×10^-7 mal interpretat)."
+    es: "R = ρ·L/A. Hay que convertir la sección: 1,5 mm^2 = 1,5×10^-6 m^2. R =
+      (1,7×10^-8 · 50) / (1,5×10^-6) = (8,5×10^-7) / (1,5×10^-6) ≈ 0,57 Ω. El
+      error habitual es usar 1,5×10^-7 m^2 (→ 5,7 Ω) u olvidar dividir por A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Un carril d'alumini de 10 m de longitud (coeficient de dilatació lineal α =
+      24×10^-6 °C^-1) experimenta un augment de temperatura de 40 °C. Quin és
+      l'increment de longitud?
+    es: Un carril de aluminio de 10 m de longitud (coeficiente de dilatación lineal
+      α = 24×10^-6 °C^-1) experimenta un aumento de temperatura de 40 °C. ¿Cuál
+      es el incremento de longitud?
+  options:
+    - id: A
+      ca: 9,6 mm
+      es: 9,6 mm
+    - id: B
+      ca: 0,96 mm
+      es: 0,96 mm
+    - id: C
+      ca: 96 mm
+      es: 96 mm
+    - id: D
+      ca: 0,24 mm
+      es: 0,24 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: ΔL = α·L0·ΔT = 24×10^-6 °C^-1 · 10 m · 40 °C = 9,6×10^-3 m = 9,6 mm. Els
+      errors típics són desplaçar el punt decimal (0,96 mm o 96 mm) o oblidar
+      multiplicar per ΔT.
+    es: ΔL = α·L0·ΔT = 24×10^-6 °C^-1 · 10 m · 40 °C = 9,6×10^-3 m = 9,6 mm. Los
+      errores típicos son desplazar el punto decimal (0,96 mm o 96 mm) u olvidar
+      multiplicar por ΔT.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En un assaig de tracció, una proveta de longitud inicial 200 mm i secció 20
+      mm^2 s'allarga 0,25 mm quan s'aplica una força de 5000 N, sempre dins del
+      rang elàstic lineal. Quin és el mòdul de Young (E) del material?
+    es: En un ensayo de tracción, una probeta de longitud inicial 200 mm y sección
+      20 mm^2 se alarga 0,25 mm cuando se aplica una fuerza de 5000 N, siempre
+      dentro del rango elástico lineal. ¿Cuál es el módulo de Young (E) del
+      material?
+  options:
+    - id: A
+      ca: 200 GPa
+      es: 200 GPa
+    - id: B
+      ca: 250 GPa
+      es: 250 GPa
+    - id: C
+      ca: 20 GPa
+      es: 20 GPa
+    - id: D
+      ca: 2 GPa
+      es: 2 GPa
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: σ = F/A = 5000 N / (20×10^-6 m^2) = 2,5×10^8 Pa = 250 MPa. ε = ΔL/L0 =
+      0,25/200 = 1,25×10^-3. E = σ/ε = 2,5×10^8 / 1,25×10^-3 = 2×10^11 Pa = 200
+      GPa. Confondre σ (250 MPa) amb E dona l'error de 250 GPa.
+    es: σ = F/A = 5000 N / (20×10^-6 m^2) = 2,5×10^8 Pa = 250 MPa. ε = ΔL/L0 =
+      0,25/200 = 1,25×10^-3. E = σ/ε = 2,5×10^8 / 1,25×10^-3 = 2×10^11 Pa = 200
+      GPa. Confundir σ (250 MPa) con E da el error de 250 GPa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Una resistència de coure val 10 Ω a 20 °C. El coeficient tèrmic de
+      resistivitat del coure és α = 3,9×10^-3 °C^-1. Quina serà la seva
+      resistència a 70 °C, segons R = R0·(1 + α·ΔT)?
+    es: Una resistencia de cobre vale 10 Ω a 20 °C. El coeficiente térmico de
+      resistividad del cobre es α = 3,9×10^-3 °C^-1. ¿Cuál será su resistencia a
+      70 °C, según R = R0·(1 + α·ΔT)?
+  options:
+    - id: A
+      ca: ≈ 11,95 Ω
+      es: ≈ 11,95 Ω
+    - id: B
+      ca: ≈ 8,05 Ω
+      es: ≈ 8,05 Ω
+    - id: C
+      ca: ≈ 10,39 Ω
+      es: ≈ 10,39 Ω
+    - id: D
+      ca: ≈ 29,5 Ω
+      es: ≈ 29,5 Ω
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: ΔT = 70 − 20 = 50 °C. R = R0·(1 + α·ΔT) = 10·(1 + 3,9×10^-3 · 50) = 10·(1 +
+      0,195) = 10·1,195 ≈ 11,95 Ω. En els metalls la resistència augmenta amb la
+      temperatura; usar ΔT amb signe negatiu dona 8,05 Ω, i oblidar multiplicar
+      per ΔT dona ≈10,39 Ω.
+    es: ΔT = 70 − 20 = 50 °C. R = R0·(1 + α·ΔT) = 10·(1 + 3,9×10^-3 · 50) = 10·(1 +
+      0,195) = 10·1,195 ≈ 11,95 Ω. En los metales la resistencia aumenta con la
+      temperatura; usar ΔT con signo negativo da 8,05 Ω, y olvidar multiplicar
+      por ΔT da ≈10,39 Ω.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin dels següents materials és un polímer termoestable (termostable)?
+    es: ¿Cuál de los siguientes materiales es un polímero termoestable
+      (termostable)?
+  options:
+    - id: A
+      ca: Polietilè (PE)
+      es: Polietileno (PE)
+    - id: B
+      ca: Baquelita (fenol-formaldehid)
+      es: Baquelita (fenol-formaldehído)
+    - id: C
+      ca: Policlorur de vinil (PVC)
+      es: Policloruro de vinilo (PVC)
+    - id: D
+      ca: Polipropilè (PP)
+      es: Polipropileno (PP)
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Els polímers termoestables tenen una estructura reticulada (enllaços
+      creuats) que es forma de manera irreversible en curar; no es poden tornar
+      a fondre ni remodelar amb la calor. La baquelita (resina de
+      fenol-formaldehid) n'és l'exemple clàssic. En canvi, PE, PVC i PP són
+      termoplàstics: cadenes lineals o ramificades que s'estoven amb la calor i
+      es poden reciclar per fusió."
+    es: "Los polímeros termoestables tienen una estructura reticulada (enlaces
+      cruzados) que se forma de forma irreversible al curar; no pueden volver a
+      fundirse ni remodelarse con el calor. La baquelita (resina de
+      fenol-formaldehído) es el ejemplo clásico. En cambio, PE, PVC y PP son
+      termoplásticos: cadenas lineales o ramificadas que se ablandan con el
+      calor y se pueden reciclar por fusión."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: "S'ha de triar un material per a la placa aïllant d'una resistència
+      elèctrica que treballa a temperatura alta. Es requereix: duresa elevada,
+      punt de fusió alt, gran resistència a la corrosió i comportament aïllant,
+      tot i que és fràgil. A quina família de materials correspon?"
+    es: "Se debe elegir un material para la placa aislante de una resistencia
+      eléctrica que trabaja a temperatura alta. Se requiere: dureza elevada,
+      punto de fusión alto, gran resistencia a la corrosión y comportamiento
+      aislante, aunque es frágil. ¿A qué familia de materiales corresponde?"
+  options:
+    - id: A
+      ca: Metall
+      es: Metal
+    - id: B
+      ca: Polímer termoplàstic
+      es: Polímero termoplástico
+    - id: C
+      ca: Ceràmic
+      es: Cerámico
+    - id: D
+      ca: Elastòmer
+      es: Elastómero
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: El conjunt de propietats —duresa alta, punt de fusió elevat, aïllant
+      elèctric i tèrmic, resistent a la corrosió però fràgil (poca tenacitat)—
+      és característic dels materials ceràmics, on predominen els enllaços
+      iònics/covalents. Els metalls serien conductors i dúctils; els
+      termoplàstics tenen punts de fusió baixos; els elastòmers són molt
+      deformables i tous.
+    es: El conjunto de propiedades —dureza alta, punto de fusión elevado, aislante
+      eléctrico y térmico, resistente a la corrosión pero frágil (poca
+      tenacidad)— es característico de los materiales cerámicos, donde
+      predominan los enlaces iónicos/covalentes. Los metales serían conductores
+      y dúctiles; los termoplásticos tienen puntos de fusión bajos; los
+      elastómeros son muy deformables y blandos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "Un polímer que es pot fondre i remodelar diverses vegades escalfant-lo,
+      sense que canviï la seva composició química, s'anomena:"
+    es: "Un polímero que puede fundirse y remodelarse varias veces calentándolo, sin
+      que cambie su composición química, se denomina:"
+  options:
+    - id: A
+      ca: Termoestable
+      es: Termoestable
+    - id: B
+      ca: Termoplàstic
+      es: Termoplástico
+    - id: C
+      ca: Ceràmic
+      es: Cerámico
+    - id: D
+      ca: Material compost
+      es: Material compuesto
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Els termoplàstics estan formats per cadenes no reticulades unides per forces
+      febles (Van der Waals); en escalfar, aquestes forces cedeixen, el material
+      s'estova i es pot remodelar repetidament (reciclable). Els termoestables,
+      en canvi, tenen enllaços creuats permanents i es degraden abans de
+      fondre's. Ni els ceràmics ni els compostos són polímers per definició.
+    es: Los termoplásticos están formados por cadenas no reticuladas unidas por
+      fuerzas débiles (Van der Waals); al calentar, esas fuerzas ceden, el
+      material se ablanda y puede remodelarse repetidamente (reciclable). Los
+      termoestables, en cambio, tienen enlaces cruzados permanentes y se
+      degradan antes de fundirse. Ni los cerámicos ni los compuestos son
+      polímeros por definición.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Un material compost té una fracció en volum de fibra de vidre del 60%
+      (densitat 2,5 g/cm^3) i el 40% restant de matriu epoxi (densitat 1,2
+      g/cm^3). Aplicant la regla de les mescles, quina és la densitat del
+      compost?
+    es: Un material compuesto tiene una fracción en volumen de fibra de vidrio del
+      60% (densidad 2,5 g/cm^3) y el 40% restante de matriz epoxi (densidad 1,2
+      g/cm^3). Aplicando la regla de las mezclas, ¿cuál es la densidad del
+      compuesto?
+  options:
+    - id: A
+      ca: 1,85 g/cm^3
+      es: 1,85 g/cm^3
+    - id: B
+      ca: 1,98 g/cm^3
+      es: 1,98 g/cm^3
+    - id: C
+      ca: 3,70 g/cm^3
+      es: 3,70 g/cm^3
+    - id: D
+      ca: 2,08 g/cm^3
+      es: 2,08 g/cm^3
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La regla de les mescles per a la densitat és una mitjana ponderada per les
+      fraccions en volum: ρc = Vf·ρf + Vm·ρm = 0,60·2,5 + 0,40·1,2 = 1,50 + 0,48
+      = 1,98 g/cm^3. L'opció 1,85 seria la mitjana aritmètica simple (sense
+      ponderar), i 3,70 seria la suma incorrecta de les densitats."
+    es: "La regla de las mezclas para la densidad es una media ponderada por las
+      fracciones en volumen: ρc = Vf·ρf + Vm·ρm = 0,60·2,5 + 0,40·1,2 = 1,50 +
+      0,48 = 1,98 g/cm^3. La opción 1,85 sería la media aritmética simple (sin
+      ponderar), y 3,70 sería la suma incorrecta de las densidades."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Un compost unidireccional es carrega en direcció longitudinal (paral·lela a
+      les fibres, condició d'isodeformació). La fibra de carboni té E_f = 230
+      GPa i una fracció en volum del 60%; la matriu epoxi té E_m = 3,0 GPa. Quin
+      és el mòdul de Young longitudinal del compost?
+    es: Un compuesto unidireccional se carga en dirección longitudinal (paralela a
+      las fibras, condición de isodeformación). La fibra de carbono tiene E_f =
+      230 GPa y una fracción en volumen del 60%; la matriz epoxi tiene E_m = 3,0
+      GPa. ¿Cuál es el módulo de Young longitudinal del compuesto?
+  options:
+    - id: A
+      ca: 7,4 GPa
+      es: 7,4 GPa
+    - id: B
+      ca: 116,5 GPa
+      es: 116,5 GPa
+    - id: C
+      ca: 139,2 GPa
+      es: 139,2 GPa
+    - id: D
+      ca: 233 GPa
+      es: 233 GPa
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "En càrrega longitudinal (isodeformació) s'aplica la regla de les mescles
+      directa: E_c = Vf·E_f + Vm·E_m = 0,60·230 + 0,40·3,0 = 138 + 1,2 = 139,2
+      GPa. L'opció 7,4 GPa correspon al model transversal (isotensió, mitjana
+      harmònica); 116,5 GPa és la mitjana aritmètica simple; i 233 GPa és la
+      suma incorrecta dels mòduls."
+    es: "En carga longitudinal (isodeformación) se aplica la regla de las mezclas
+      directa: E_c = Vf·E_f + Vm·E_m = 0,60·230 + 0,40·3,0 = 138 + 1,2 = 139,2
+      GPa. La opción 7,4 GPa corresponde al modelo transversal (isotensión,
+      media armónica); 116,5 GPa es la media aritmética simple; y 233 GPa es la
+      suma incorrecta de los módulos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.materials.types
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Un compost conté un 30% en massa de fibra de carboni (densitat 1,8 g/cm^3) i
+      un 70% en massa de matriu epoxi (densitat 1,2 g/cm^3). Quina és la fracció
+      en volum de fibra?
+    es: Un compuesto contiene un 30% en masa de fibra de carbono (densidad 1,8
+      g/cm^3) y un 70% en masa de matriz epoxi (densidad 1,2 g/cm^3). ¿Cuál es
+      la fracción en volumen de fibra?
+  options:
+    - id: A
+      ca: 22%
+      es: 22%
+    - id: B
+      ca: 30%
+      es: 30%
+    - id: C
+      ca: 38%
+      es: 38%
+    - id: D
+      ca: 45%
+      es: 45%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cal passar de massa a volum. Prenent 100 g: V_fibra = 30/1,8 = 16,67 cm^3 i
+      V_epoxi = 70/1,2 = 58,33 cm^3, de manera que V_total = 75,0 cm^3. La
+      fracció en volum de fibra és Vf = 16,67/75,0 = 0,222 ≈ 22%. L'error
+      habitual és confondre fracció en massa amb fracció en volum i respondre
+      30%; com que la fibra és més densa que la matriu, la seva fracció en volum
+      és menor que en massa."
+    es: "Hay que pasar de masa a volumen. Tomando 100 g: V_fibra = 30/1,8 = 16,67
+      cm^3 y V_epoxi = 70/1,2 = 58,33 cm^3, de modo que V_total = 75,0 cm^3. La
+      fracción en volumen de fibra es Vf = 16,67/75,0 = 0,222 ≈ 22%. El error
+      habitual es confundir fracción en masa con fracción en volumen y responder
+      30%; como la fibra es más densa que la matriz, su fracción en volumen es
+      menor que en masa."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000084
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.pneumatics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Un cilindre pneumàtic de simple efecte té un èmbol de 40 mm de diàmetre i
+      treballa amb una pressió relativa de 6 bar. Quina és, aproximadament, la
+      força teòrica que exerceix en la sortida de la tija?
+    es: Un cilindro neumático de simple efecto tiene un émbolo de 40 mm de diámetro
+      y trabaja con una presión relativa de 6 bar. ¿Cuál es, aproximadamente, la
+      fuerza teórica que ejerce en la salida del vástago?
+  options:
+    - id: A
+      ca: 754 N
+      es: 754 N
+    - id: B
+      ca: 960 N
+      es: 960 N
+    - id: C
+      ca: 3016 N
+      es: 3016 N
+    - id: D
+      ca: 7540 N
+      es: 7540 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: F = p·A. L'àrea de l'èmbol és A = (π/4)·d² = (π/4)·(0,040 m)² = 1,257×10^-3
+      m². La pressió és p = 6 bar = 6×10^5 Pa. Per tant F = 6×10^5 · 1,257×10^-3
+      = 754 N. (B usa A = d² sense el factor π/4; C confon el diàmetre amb el
+      radi; D fa una errada d'unitats de factor 10 en la pressió.)
+    es: F = p·A. El área del émbolo es A = (π/4)·d² = (π/4)·(0,040 m)² = 1,257×10^-3
+      m². La presión es p = 6 bar = 6×10^5 Pa. Por tanto F = 6×10^5 ·
+      1,257×10^-3 = 754 N. (B usa A = d² sin el factor π/4; C confunde el
+      diámetro con el radio; D comete un error de unidades de factor 10 en la
+      presión.)
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000085
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.pneumatics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En un cilindre de doble efecte, l'èmbol té 50 mm de diàmetre i la tija 20 mm
+      de diàmetre. Amb una pressió relativa de 5 bar, quina és la força teòrica
+      durant la CARRERA DE RETORN (entrada de la tija)?
+    es: En un cilindro de doble efecto, el émbolo tiene 50 mm de diámetro y el
+      vástago 20 mm de diámetro. Con una presión relativa de 5 bar, ¿cuál es la
+      fuerza teórica durante la CARRERA DE RETROCESO (entrada del vástago)?
+  options:
+    - id: A
+      ca: 825 N
+      es: 825 N
+    - id: B
+      ca: 982 N
+      es: 982 N
+    - id: C
+      ca: 157 N
+      es: 157 N
+    - id: D
+      ca: 353 N
+      es: 353 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el retorn, l'aire empeny sobre l'àrea anular (àrea de l'èmbol menys àrea
+      de la tija). A_anular = (π/4)·(0,050² − 0,020²) = (π/4)·(2,5×10^-3 −
+      4,0×10^-4) = 1,649×10^-3 m². F = p·A = 5×10^5 · 1,649×10^-3 = 825 N. (B
+      ignora la tija i dóna la força de sortida; C usa només l'àrea de la tija;
+      D resta els diàmetres en lloc de les àrees.)
+    es: En el retroceso, el aire empuja sobre el área anular (área del émbolo menos
+      área del vástago). A_anular = (π/4)·(0,050² − 0,020²) = (π/4)·(2,5×10^-3 −
+      4,0×10^-4) = 1,649×10^-3 m². F = p·A = 5×10^5 · 1,649×10^-3 = 825 N. (B
+      ignora el vástago y da la fuerza de salida; C usa solo el área del
+      vástago; D resta los diámetros en lugar de las áreas.)
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000086
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.pneumatics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En la designació d'una vàlvula distribuïdora pneumàtica, què indiquen les
+      xifres d'una vàlvula 5/2?
+    es: En la designación de una válvula distribuidora neumática, ¿qué indican las
+      cifras de una válvula 5/2?
+  options:
+    - id: A
+      ca: 5 vies (orificis) i 2 posicions estables
+      es: 5 vías (orificios) y 2 posiciones estables
+    - id: B
+      ca: 5 posicions estables i 2 vies (orificis)
+      es: 5 posiciones estables y 2 vías (orificios)
+    - id: C
+      ca: 5 bar de pressió màxima i 2 vies
+      es: 5 bar de presión máxima y 2 vías
+    - id: D
+      ca: 5 vies i un temps de commutació de 2 s
+      es: 5 vías y un tiempo de conmutación de 2 s
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En la nomenclatura X/Y d'una vàlvula distribuïdora, la primera xifra és el
+      nombre de vies (orificis de connexió) i la segona és el nombre de
+      posicions. Una 5/2 té 5 vies i 2 posicions; és típica per governar
+      cilindres de doble efecte. Les altres opcions inverteixen els termes o els
+      confonen amb pressió o temps.
+    es: En la nomenclatura X/Y de una válvula distribuidora, la primera cifra es el
+      número de vías (orificios de conexión) y la segunda es el número de
+      posiciones. Una 5/2 tiene 5 vías y 2 posiciones; es típica para gobernar
+      cilindros de doble efecto. Las demás opciones invierten los términos o los
+      confunden con presión o tiempo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000087
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.pneumatics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Es vol regular la velocitat de sortida de la tija d'un cilindre de doble
+      efecte mitjançant estrangulació de l'aire d'escapament (mètode
+      'meter-out'). Quin element cal instal·lar a les línies del cilindre?
+    es: Se quiere regular la velocidad de salida del vástago de un cilindro de doble
+      efecto mediante estrangulación del aire de escape (método 'meter-out').
+      ¿Qué elemento hay que instalar en las líneas del cilindro?
+  options:
+    - id: A
+      ca: Un regulador de cabal unidireccional (estrangulador amb antiretorn integrat)
+      es: Un regulador de caudal unidireccional (estrangulador con antirretorno
+        integrado)
+    - id: B
+      ca: Un regulador de pressió (manoreductor)
+      es: Un regulador de presión (manorreductor)
+    - id: C
+      ca: Una vàlvula antiretorn simple
+      es: Una válvula antirretorno simple
+    - id: D
+      ca: Una vàlvula d'escapament ràpid
+      es: Una válvula de escape rápido
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La velocitat es controla amb un regulador de cabal unidireccional: l'aire
+      de retorn (escapament) passa forçosament pel estrangulador, mentre que
+      l'antiretorn deixa passar lliurement l'aire d'alimentació. Així
+      s'estrangula la sortida (meter-out), aconseguint un moviment suau i
+      controlat. Un manoreductor regula la pressió (força), no la velocitat; un
+      antiretorn simple no estrangula; una vàlvula d'escapament ràpid augmenta
+      la velocitat en lloc de regular-la."
+    es: "La velocidad se controla con un regulador de caudal unidireccional: el aire
+      de retorno (escape) pasa obligatoriamente por el estrangulador, mientras
+      que el antirretorno deja pasar libremente el aire de alimentación. Así se
+      estrangula la salida (meter-out), logrando un movimiento suave y
+      controlado. Un manorreductor regula la presión (fuerza), no la velocidad;
+      un antirretorno simple no estrangula; una válvula de escape rápido aumenta
+      la velocidad en lugar de regularla."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000088
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.pneumatics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Un cilindre de simple efecte té un èmbol de 32 mm de diàmetre i una carrera
+      de 100 mm, i treballa amb una pressió relativa (manomètrica) de 6 bar.
+      Considerant la pressió atmosfèrica d'1 bar, quin volum d'aire lliure (a
+      pressió atmosfèrica) consumeix en cada carrera de sortida?
+    es: Un cilindro de simple efecto tiene un émbolo de 32 mm de diámetro y una
+      carrera de 100 mm, y trabaja con una presión relativa (manométrica) de 6
+      bar. Considerando la presión atmosférica de 1 bar, ¿qué volumen de aire
+      libre (a presión atmosférica) consume en cada carrera de salida?
+  options:
+    - id: A
+      ca: 0,56 L
+      es: 0,56 L
+    - id: B
+      ca: 0,48 L
+      es: 0,48 L
+    - id: C
+      ca: 0,080 L
+      es: 0,080 L
+    - id: D
+      ca: 0,72 L
+      es: 0,72 L
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Volum escombrat: V = A·L = (π/4)·(0,032)²·0,100 = 8,04×10^-5 m³ = 0,0804 L.
+      Aquest aire està comprimit a la pressió absoluta p_abs = 6 + 1 = 7 bar. El
+      volum d'aire lliure equival, per la llei de Boyle, a V_lliure =
+      V·(p_abs/p_atm) = 0,0804·(7/1) = 0,56 L. (B usa la pressió relativa 6 en
+      lloc de l'absoluta 7; C oblida l'expansió a atmosfèrica; D usa A = d²
+      sense el factor π/4.)"
+    es: "Volumen barrido: V = A·L = (π/4)·(0,032)²·0,100 = 8,04×10^-5 m³ = 0,0804 L.
+      Ese aire está comprimido a la presión absoluta p_abs = 6 + 1 = 7 bar. El
+      volumen de aire libre equivale, por la ley de Boyle, a V_libre =
+      V·(p_abs/p_atm) = 0,0804·(7/1) = 0,56 L. (B usa la presión relativa 6 en
+      lugar de la absoluta 7; C olvida la expansión a atmosférica; D usa A = d²
+      sin el factor π/4.)"
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000089
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.pneumatics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En un circuit pneumàtic es vol que un cilindre només avanci quan s'accionin
+      simultàniament DOS polsadors (funció lògica AND). Quin element pneumàtic
+      realitza aquesta funció de forma directa?
+    es: En un circuito neumático se quiere que un cilindro solo avance cuando se
+      accionen simultáneamente DOS pulsadores (función lógica AND). ¿Qué
+      elemento neumático realiza esta función de forma directa?
+  options:
+    - id: A
+      ca: La vàlvula de simultaneïtat (vàlvula de dues pressions)
+      es: La válvula de simultaneidad (válvula de dos presiones)
+    - id: B
+      ca: La vàlvula selectora de circuit (vàlvula O / antiretorn doble)
+      es: La válvula selectora de circuito (válvula O / antirretorno doble)
+    - id: C
+      ca: La vàlvula d'escapament ràpid
+      es: La válvula de escape rápido
+    - id: D
+      ca: La vàlvula reguladora de pressió
+      es: La válvula reguladora de presión
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La vàlvula de simultaneïtat (o de dues pressions) només dóna senyal a la
+      sortida quan hi ha pressió a les dues entrades alhora: implementa la
+      funció lògica AND. La vàlvula selectora de circuit dóna sortida si hi ha
+      pressió a qualsevol de les entrades (funció OR), per la qual cosa és el
+      distractor típic. L'escapament ràpid i el regulador de pressió no
+      realitzen funcions lògiques."
+    es: "La válvula de simultaneidad (o de dos presiones) solo da señal a la salida
+      cuando hay presión en las dos entradas a la vez: implementa la función
+      lógica AND. La válvula selectora de circuito da salida si hay presión en
+      cualquiera de las entradas (función OR), por lo que es el distractor
+      típico. El escape rápido y el regulador de presión no realizan funciones
+      lógicas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000090
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.hydraulics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En una premsa hidràulica, el pistó petit té una superfície de 2 cm^2 i s'hi
+      aplica una força de 100 N. El pistó gran té una superfície de 50 cm^2.
+      Segons el principi de Pascal, quina força s'obté al pistó gran?
+    es: En una prensa hidráulica, el pistón pequeño tiene una superficie de 2 cm^2 y
+      se le aplica una fuerza de 100 N. El pistón grande tiene una superficie de
+      50 cm^2. Según el principio de Pascal, ¿qué fuerza se obtiene en el pistón
+      grande?
+  options:
+    - id: A
+      ca: 2500 N
+      es: 2500 N
+    - id: B
+      ca: 4 N
+      es: 4 N
+    - id: C
+      ca: 250 N
+      es: 250 N
+    - id: D
+      ca: 5000 N
+      es: 5000 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La pressió és la mateixa a tot el fluid: p = F1/A1 = 100/2 = 50 N/cm^2. Al
+      pistó gran, F2 = p·A2 = 50·50 = 2500 N. La força es multiplica per la
+      relació d'àrees A2/A1 = 25. L'opció de 4 N inverteix la relació d'àrees."
+    es: "La presión es la misma en todo el fluido: p = F1/A1 = 100/2 = 50 N/cm^2. En
+      el pistón grande, F2 = p·A2 = 50·50 = 2500 N. La fuerza se multiplica por
+      la relación de áreas A2/A1 = 25. La opción de 4 N invierte la relación de
+      áreas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000091
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.hydraulics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Un cilindre hidràulic té un èmbol de 40 mm de diàmetre i treballa a una
+      pressió de 100 bar. Quina força màxima pot exercir? (1 bar = 10^5 Pa)
+    es: Un cilindro hidráulico tiene un émbolo de 40 mm de diámetro y trabaja a una
+      presión de 100 bar. ¿Qué fuerza máxima puede ejercer? (1 bar = 10^5 Pa)
+  options:
+    - id: A
+      ca: ≈ 12,6 kN
+      es: ≈ 12,6 kN
+    - id: B
+      ca: ≈ 50,3 kN
+      es: ≈ 50,3 kN
+    - id: C
+      ca: ≈ 1,26 kN
+      es: ≈ 1,26 kN
+    - id: D
+      ca: ≈ 126 kN
+      es: ≈ 126 kN
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Àrea de l'èmbol: A = π·d^2/4 = π·(0,040)^2/4 = 1,257×10^-3 m^2. Pressió:
+      100 bar = 10^7 Pa. Força: F = p·A = 10^7 · 1,257×10^-3 ≈ 12,6 kN. L'opció
+      de 50,3 kN prové d'usar el diàmetre com si fos el radi (àrea 4 vegades més
+      gran)."
+    es: "Área del émbolo: A = π·d^2/4 = π·(0,040)^2/4 = 1,257×10^-3 m^2. Presión:
+      100 bar = 10^7 Pa. Fuerza: F = p·A = 10^7 · 1,257×10^-3 ≈ 12,6 kN. La
+      opción de 50,3 kN resulta de usar el diámetro como si fuera el radio (área
+      4 veces mayor)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000092
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.hydraulics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Una bomba subministra un cabal de 12 L/min a un cilindre hidràulic l'èmbol
+      del qual té una superfície de 20 cm^2. Quina és la velocitat d'avanç de
+      l'èmbol?
+    es: Una bomba suministra un caudal de 12 L/min a un cilindro hidráulico cuyo
+      émbolo tiene una superficie de 20 cm^2. ¿Cuál es la velocidad de avance
+      del émbolo?
+  options:
+    - id: A
+      ca: 0,1 m/s
+      es: 0,1 m/s
+    - id: B
+      ca: 6 m/s
+      es: 6 m/s
+    - id: C
+      ca: 0,01 m/s
+      es: 0,01 m/s
+    - id: D
+      ca: 1 m/s
+      es: 1 m/s
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per continuïtat, v = Q/A. Convertim el cabal: 12 L/min = 12000 cm^3 / 60 s
+      = 200 cm^3/s. Aleshores v = 200/20 = 10 cm/s = 0,1 m/s. L'opció de 6 m/s
+      (600 cm/s) oblida dividir els minuts entre 60 segons."
+    es: "Por continuidad, v = Q/A. Convertimos el caudal: 12 L/min = 12000 cm^3 / 60
+      s = 200 cm^3/s. Entonces v = 200/20 = 10 cm/s = 0,1 m/s. La opción de 6
+      m/s (600 cm/s) olvida dividir los minutos entre 60 segundos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000093
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.hydraulics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Un grup hidràulic treballa amb un cabal de 20 L/min a una pressió de 150
+      bar. Quina és la potència hidràulica útil?
+    es: Un grupo hidráulico trabaja con un caudal de 20 L/min a una presión de 150
+      bar. ¿Cuál es la potencia hidráulica útil?
+  options:
+    - id: A
+      ca: 5 kW
+      es: 5 kW
+    - id: B
+      ca: 300 kW
+      es: 300 kW
+    - id: C
+      ca: 0,5 kW
+      es: 0,5 kW
+    - id: D
+      ca: 50 kW
+      es: 50 kW
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La potència hidràulica és P = p·Q. En unitats SI: p = 150 bar = 1,5×10^7
+      Pa; Q = 20 L/min = 20/60000 = 3,33×10^-4 m^3/s. P = 1,5×10^7 · 3,33×10^-4
+      = 5000 W = 5 kW. Equival a la regla pràctica P(kW) = p(bar)·Q(L/min)/600.
+      L'opció de 300 kW oblida convertir els minuts a segons."
+    es: "La potencia hidráulica es P = p·Q. En unidades SI: p = 150 bar = 1,5×10^7
+      Pa; Q = 20 L/min = 20/60000 = 3,33×10^-4 m^3/s. P = 1,5×10^7 · 3,33×10^-4
+      = 5000 W = 5 kW. Equivale a la regla práctica P(kW) = p(bar)·Q(L/min)/600.
+      La opción de 300 kW olvida convertir los minutos a segundos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000094
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.hydraulics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En una premsa hidràulica, el pistó petit (àrea 5 cm^2) baixa 40 cm. El pistó
+      gran té una àrea de 200 cm^2. Menyspreant compressibilitat i pèrdues,
+      quant puja el pistó gran?
+    es: En una prensa hidráulica, el pistón pequeño (área 5 cm^2) baja 40 cm. El
+      pistón grande tiene un área de 200 cm^2. Despreciando compresibilidad y
+      pérdidas, ¿cuánto sube el pistón grande?
+  options:
+    - id: A
+      ca: 1 cm
+      es: 1 cm
+    - id: B
+      ca: 1600 cm
+      es: 1600 cm
+    - id: C
+      ca: 8 cm
+      es: 8 cm
+    - id: D
+      ca: 0,125 cm
+      es: 0,125 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El volum de líquid desplaçat es conserva: V = A1·h1 = 5·40 = 200 cm^3. Al
+      pistó gran: h2 = V/A2 = 200/200 = 1 cm. El desplaçament es redueix per la
+      mateixa relació d'àrees (25) per la qual s'amplia la força, de manera que
+      el treball es manté. L'opció de 1600 cm inverteix la relació d'àrees."
+    es: "El volumen de líquido desplazado se conserva: V = A1·h1 = 5·40 = 200 cm^3.
+      En el pistón grande: h2 = V/A2 = 200/200 = 1 cm. El desplazamiento se
+      reduce en la misma relación de áreas (25) en que se amplía la fuerza, de
+      modo que el trabajo se mantiene. La opción de 1600 cm invierte la relación
+      de áreas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000095
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.hydraulics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Un gat hidràulic s'acciona amb una palanca de relació de braços 4:1. A
+      l'extrem de la palanca s'apliquen 200 N. El pistó de bombeig té 10 mm de
+      diàmetre i el pistó de càrrega (ram) 50 mm de diàmetre. Quina càrrega
+      màxima es pot aixecar (en equilibri, sense pèrdues)?
+    es: Un gato hidráulico se acciona con una palanca de relación de brazos 4:1. En
+      el extremo de la palanca se aplican 200 N. El pistón de bombeo tiene 10 mm
+      de diámetro y el pistón de carga (ariete) 50 mm de diámetro. ¿Qué carga
+      máxima se puede levantar (en equilibrio, sin pérdidas)?
+  options:
+    - id: A
+      ca: 20 kN
+      es: 20 kN
+    - id: B
+      ca: 4 kN
+      es: 4 kN
+    - id: C
+      ca: 5 kN
+      es: 5 kN
+    - id: D
+      ca: 100 kN
+      es: 100 kN
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La palanca amplia la força sobre el pistó de bombeig: F_bomba = 200·4 = 800
+      N. La relació d'àrees entre pistons és (d2/d1)^2 = (50/10)^2 = 25.
+      Càrrega: F_càrrega = 800·25 = 20000 N = 20 kN. L'opció de 4 kN usa la
+      relació de diàmetres sense elevar-la al quadrat; la de 5 kN oblida la
+      palanca."
+    es: "La palanca amplía la fuerza sobre el pistón de bombeo: F_bomba = 200·4 =
+      800 N. La relación de áreas entre pistones es (d2/d1)^2 = (50/10)^2 = 25.
+      Carga: F_carga = 800·25 = 20000 N = 20 kN. La opción de 4 kN usa la
+      relación de diámetros sin elevarla al cuadrado; la de 5 kN olvida la
+      palanca."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000096
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En una premsa hidràulica, el pistó petit té un diàmetre de 20 mm i el gran
+      un diàmetre de 100 mm. Si s'aplica una força de 200 N sobre el pistó
+      petit, quina força s'obté al pistó gran (principi de Pascal)?
+    es: En una prensa hidráulica, el pistón pequeño tiene un diámetro de 20 mm y el
+      grande un diámetro de 100 mm. Si se aplica una fuerza de 200 N sobre el
+      pistón pequeño, ¿qué fuerza se obtiene en el pistón grande (principio de
+      Pascal)?
+  options:
+    - id: A
+      ca: 5000 N
+      es: 5000 N
+    - id: B
+      ca: 1000 N
+      es: 1000 N
+    - id: C
+      ca: 8 N
+      es: 8 N
+    - id: D
+      ca: 40 N
+      es: 40 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La pressió és igual als dos pistons: F1/A1 = F2/A2, per tant F2 =
+      F1·(A2/A1) = F1·(d2/d1)^2 = 200·(100/20)^2 = 200·25 = 5000 N. L'error de
+      1000 N ve d'usar la relació de diàmetres sense elevar-la al quadrat."
+    es: "La presión es igual en ambos pistones: F1/A1 = F2/A2, por lo que F2 =
+      F1·(A2/A1) = F1·(d2/d1)^2 = 200·(100/20)^2 = 200·25 = 5000 N. El error de
+      1000 N proviene de usar la relación de diámetros sin elevarla al
+      cuadrado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000097
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Un cilindre pneumàtic d'efecte simple té un pistó de 40 mm de diàmetre i
+      treballa amb una pressió relativa de 6 bar. Quina és la força teòrica que
+      exerceix en la carrera d'avanç?
+    es: Un cilindro neumático de simple efecto tiene un pistón de 40 mm de diámetro
+      y trabaja con una presión relativa de 6 bar. ¿Cuál es la fuerza teórica
+      que ejerce en la carrera de avance?
+  options:
+    - id: A
+      ca: 754 N
+      es: 754 N
+    - id: B
+      ca: 3016 N
+      es: 3016 N
+    - id: C
+      ca: 960 N
+      es: 960 N
+    - id: D
+      ca: 75 N
+      es: 75 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: F = p·A, amb A = π·d^2/4 = π·(0,040)^2/4 = 1,257×10^-3 m^2 i p = 6 bar =
+      6×10^5 Pa. Així F = 6×10^5 · 1,257×10^-3 ≈ 754 N. El valor 3016 N surt de
+      confondre el diàmetre amb el radi; 75 N, de convertir malament 6 bar a Pa.
+    es: F = p·A, con A = π·d^2/4 = π·(0,040)^2/4 = 1,257×10^-3 m^2 y p = 6 bar =
+      6×10^5 Pa. Así F = 6×10^5 · 1,257×10^-3 ≈ 754 N. El valor 3016 N surge de
+      confundir el diámetro con el radio; 75 N, de convertir mal 6 bar a Pa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000098
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.72
+  question:
+    ca: Un cilindre pneumàtic de doble efecte té un pistó de 50 mm de diàmetre i un
+      vàstag de 20 mm de diàmetre. Amb una pressió de 8 bar, quina és la força
+      teòrica en la carrera de retrocés (recollida)?
+    es: Un cilindro neumático de doble efecto tiene un pistón de 50 mm de diámetro y
+      un vástago de 20 mm de diámetro. Con una presión de 8 bar, ¿cuál es la
+      fuerza teórica en la carrera de retroceso (recogida)?
+  options:
+    - id: A
+      ca: 1320 N
+      es: 1320 N
+    - id: B
+      ca: 1571 N
+      es: 1571 N
+    - id: C
+      ca: 1680 N
+      es: 1680 N
+    - id: D
+      ca: 251 N
+      es: 251 N
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En el retrocés actua l'àrea anular: A = π/4·(d_p^2 − d_v^2) = π/4·(0,050^2
+      − 0,020^2) = 1,649×10^-3 m^2. F = 8×10^5 · 1,649×10^-3 ≈ 1320 N. 1571 N és
+      no restar el vàstag (força d'avanç); 1680 N és oblidar el factor π/4; 251
+      N és usar només l'àrea del vàstag."
+    es: "En el retroceso actúa el área anular: A = π/4·(d_p^2 − d_v^2) =
+      π/4·(0,050^2 − 0,020^2) = 1,649×10^-3 m^2. F = 8×10^5 · 1,649×10^-3 ≈ 1320
+      N. 1571 N es no restar el vástago (fuerza de avance); 1680 N es olvidar el
+      factor π/4; 251 N es usar solo el área del vástago."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000099
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Un cabal de 10 L/min d'oli entra en un cilindre hidràulic amb un pistó de 32
+      mm de diàmetre. Quina és la velocitat teòrica d'avanç del pistó?
+    es: Un caudal de 10 L/min de aceite entra en un cilindro hidráulico con un
+      pistón de 32 mm de diámetro. ¿Cuál es la velocidad teórica de avance del
+      pistón?
+  options:
+    - id: A
+      ca: 0,21 m/s
+      es: 0,21 m/s
+    - id: B
+      ca: 12,4 m/s
+      es: 12,4 m/s
+    - id: C
+      ca: 0,05 m/s
+      es: 0,05 m/s
+    - id: D
+      ca: 0,16 m/s
+      es: 0,16 m/s
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: v = Q/A. Q = 10 L/min = 10/(1000·60) = 1,667×10^-4 m^3/s; A = π·d^2/4 =
+      π·(0,032)^2/4 = 8,04×10^-4 m^2. v = 1,667×10^-4 / 8,04×10^-4 ≈ 0,21 m/s.
+      12,4 m/s és oblidar dividir per 60; 0,05 m/s és confondre diàmetre i radi;
+      0,16 m/s és oblidar el factor /4.
+    es: v = Q/A. Q = 10 L/min = 10/(1000·60) = 1,667×10^-4 m^3/s; A = π·d^2/4 =
+      π·(0,032)^2/4 = 8,04×10^-4 m^2. v = 1,667×10^-4 / 8,04×10^-4 ≈ 0,21 m/s.
+      12,4 m/s es olvidar dividir por 60; 0,05 m/s es confundir diámetro y
+      radio; 0,16 m/s es olvidar el factor /4.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000100
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En un circuit pneumàtic, quin component s'utilitza per regular la velocitat
+      de desplaçament d'un cilindre?
+    es: En un circuito neumático, ¿qué componente se utiliza para regular la
+      velocidad de desplazamiento de un cilindro?
+  options:
+    - id: A
+      ca: Un regulador de cabal (estrangulador)
+      es: Un regulador de caudal (estrangulador)
+    - id: B
+      ca: Una vàlvula distribuïdora 5/2
+      es: Una válvula distribuidora 5/2
+    - id: C
+      ca: Un regulador de pressió
+      es: Un regulador de presión
+    - id: D
+      ca: Una vàlvula antiretorn
+      es: Una válvula antirretorno
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La velocitat del cilindre depèn del cabal d'aire que hi entra o surt; el
+      regulador de cabal (estrangulador) limita aquest cabal i controla la
+      velocitat. La vàlvula 5/2 canvia la direcció del moviment, el regulador de
+      pressió fixa la força, i l'antiretorn només permet el pas en un sentit.
+    es: La velocidad del cilindro depende del caudal de aire que entra o sale; el
+      regulador de caudal (estrangulador) limita ese caudal y controla la
+      velocidad. La válvula 5/2 cambia la dirección del movimiento, el regulador
+      de presión fija la fuerza, y la antirretorno solo permite el paso en un
+      sentido.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: tec-g-000101
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: technology
+  type: multiple_choice
+  skills:
+    - technology.fluid_power.circuits
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Una bomba hidràulica subministra un cabal de 20 L/min a una pressió de 150
+      bar. Quina és la potència hidràulica teòrica de la bomba?
+    es: Una bomba hidráulica suministra un caudal de 20 L/min a una presión de 150
+      bar. ¿Cuál es la potencia hidráulica teórica de la bomba?
+  options:
+    - id: A
+      ca: 5 kW
+      es: 5 kW
+    - id: B
+      ca: 300 kW
+      es: 300 kW
+    - id: C
+      ca: 50 kW
+      es: 50 kW
+    - id: D
+      ca: 50 W
+      es: 50 W
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: P = p·Q. Q = 20 L/min = 20/(1000·60) = 3,33×10^-4 m^3/s; p = 150 bar =
+      150×10^5 = 1,5×10^7 Pa. P = 1,5×10^7 · 3,33×10^-4 = 5000 W = 5 kW. Amb la
+      regla P[kW] = p[bar]·Q[L/min]/600 també dona 5 kW. 300 kW és oblidar
+      dividir per 60; 50 kW és usar /60 en lloc de /600; 50 W és error en la
+      conversió de bar.
+    es: P = p·Q. Q = 20 L/min = 20/(1000·60) = 3,33×10^-4 m^3/s; p = 150 bar =
+      150×10^5 = 1,5×10^7 Pa. P = 1,5×10^7 · 3,33×10^-4 = 5000 W = 5 kW. Con la
+      regla P[kW] = p[bar]·Q[L/min]/600 también da 5 kW. 300 kW es olvidar
+      dividir por 60; 50 kW es usar /60 en vez de /600; 50 W es error en la
+      conversión de bar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

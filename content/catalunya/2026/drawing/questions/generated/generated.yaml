@@ -1,0 +1,4407 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: dib-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.basic_constructions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En traçats geomètrics fonamentals, la mediatriu d'un segment AB es defineix
+      com el lloc geomètric dels punts del pla que compleixen quina condició?
+    es: En trazados geométricos fundamentales, la mediatriz de un segmento AB se
+      define como el lugar geométrico de los puntos del plano que cumplen qué
+      condición?
+  options:
+    - id: A
+      ca: Equidisten dels dos extrems A i B del segment.
+      es: Equidistan de los dos extremos A y B del segmento.
+    - id: B
+      ca: Equidisten de les dues rectes que passen per A i per B.
+      es: Equidistan de las dos rectas que pasan por A y por B.
+    - id: C
+      ca: Estan a la mateixa distància del punt mitjà del segment.
+      es: Están a la misma distancia del punto medio del segmento.
+    - id: D
+      ca: Divideixen el segment en dues parts proporcionals.
+      es: Dividen el segmento en dos partes proporcionales.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La mediatriu és la recta perpendicular al segment pel seu punt mitjà i, per
+      definició, és el conjunt de tots els punts que equidisten dels extrems A i
+      B. Aquesta propietat és la que permet construir-la amb dos arcs de radi
+      igual centrats a A i a B. L'opció C descriuria una circumferència, i la B
+      correspon a la bisectriu d'angle.
+    es: La mediatriz es la recta perpendicular al segmento por su punto medio y, por
+      definición, es el conjunto de todos los puntos que equidistan de los
+      extremos A y B. Esa propiedad permite construirla con dos arcos de igual
+      radio centrados en A y en B. La opción C describiría una circunferencia, y
+      la B corresponde a la bisectriz de un ángulo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.basic_constructions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "La bisectriu d'un angle format per dues rectes és el lloc geomètric dels
+      punts que:"
+    es: "La bisectriz de un ángulo formado por dos rectas es el lugar geométrico de
+      los puntos que:"
+  options:
+    - id: A
+      ca: Equidisten dels dos costats (rectes) de l'angle.
+      es: Equidistan de los dos lados (rectas) del ángulo.
+    - id: B
+      ca: Equidisten del vèrtex de l'angle.
+      es: Equidistan del vértice del ángulo.
+    - id: C
+      ca: Equidisten de dos punts fixos situats sobre cada costat.
+      es: Equidistan de dos puntos fijos situados sobre cada lado.
+    - id: D
+      ca: Formen un angle recte amb un dels costats.
+      es: Forman un ángulo recto con uno de los lados.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La bisectriu divideix l'angle en dues parts iguals i, com a lloc geomètric,
+      conté tots els punts que estan a la mateixa distància (perpendicular) dels
+      dos costats de l'angle. L'opció B descriu una circumferència centrada al
+      vèrtex; la C correspondria a una mediatriu.
+    es: La bisectriz divide el ángulo en dos partes iguales y, como lugar
+      geométrico, contiene todos los puntos que están a la misma distancia
+      (perpendicular) de los dos lados del ángulo. La opción B describe una
+      circunferencia centrada en el vértice; la C correspondería a una
+      mediatriz.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.basic_constructions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En una circumferència de radi R, quina és la longitud del costat del hexàgon
+      regular inscrit?
+    es: En una circunferencia de radio R, ¿cuál es la longitud del lado del hexágono
+      regular inscrito?
+  options:
+    - id: A
+      ca: És igual a R.
+      es: Es igual a R.
+    - id: B
+      ca: És igual a R·√2.
+      es: Es igual a R·√2.
+    - id: C
+      ca: És igual a R·√3.
+      es: Es igual a R·√3.
+    - id: D
+      ca: És igual a R/2.
+      es: Es igual a R/2.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'angle central del hexàgon regular és 360°/6 = 60°, de manera que cada
+      triangle format pel centre i un costat és equilàter; per tant el costat és
+      igual al radi (L = R). Aquesta és la base de la construcció del hexàgon
+      portant el radi sis vegades sobre la circumferència. R·√2 és el costat del
+      quadrat inscrit i R·√3 el del triangle equilàter inscrit.
+    es: El ángulo central del hexágono regular es 360°/6 = 60°, por lo que cada
+      triángulo formado por el centro y un lado es equilátero; en consecuencia
+      el lado es igual al radio (L = R). Esta es la base de la construcción del
+      hexágono llevando el radio seis veces sobre la circunferencia. R·√2 es el
+      lado del cuadrado inscrito y R·√3 el del triángulo equilátero inscrito.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.basic_constructions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "En els traçats de tangències, en el punt de tangència entre una recta i una
+      circumferència es compleix sempre que:"
+    es: "En los trazados de tangencias, en el punto de tangencia entre una recta y
+      una circunferencia se cumple siempre que:"
+  options:
+    - id: A
+      ca: El radi que arriba al punt de tangència és perpendicular a la recta tangent.
+      es: El radio que llega al punto de tangencia es perpendicular a la recta
+        tangente.
+    - id: B
+      ca: El radi que arriba al punt de tangència és paral·lel a la recta tangent.
+      es: El radio que llega al punto de tangencia es paralelo a la recta tangente.
+    - id: C
+      ca: La recta tangent passa pel centre de la circumferència.
+      es: La recta tangente pasa por el centro de la circunferencia.
+    - id: D
+      ca: El radi forma un angle de 45° amb la recta tangent.
+      es: El radio forma un ángulo de 45° con la recta tangente.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Propietat fonamental de tangència: la recta tangent toca la circumferència
+      en un únic punt i és perpendicular al radi en aquell punt. Per això, per
+      traçar una tangent en un punt de la circumferència, es dibuixa el radi i
+      s'aixeca la perpendicular. Una tangent mai passa pel centre (això seria
+      una secant diametral)."
+    es: "Propiedad fundamental de tangencia: la recta tangente toca la
+      circunferencia en un único punto y es perpendicular al radio en ese punto.
+      Por eso, para trazar una tangente en un punto de la circunferencia, se
+      dibuja el radio y se levanta la perpendicular. Una tangente nunca pasa por
+      el centro (eso sería una secante diametral)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.basic_constructions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un plànol dibuixat a escala 1:50, un mur apareix representat amb una
+      longitud de 7 cm. Quina és la longitud real del mur?
+    es: En un plano dibujado a escala 1:50, un muro aparece representado con una
+      longitud de 7 cm. ¿Cuál es la longitud real del muro?
+  options:
+    - id: A
+      ca: 3,5 m
+      es: 3,5 m
+    - id: B
+      ca: 0,14 m
+      es: 0,14 m
+    - id: C
+      ca: 35 m
+      es: 35 m
+    - id: D
+      ca: 0,35 m
+      es: 0,35 m
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'escala 1:50 significa que la mesura real és 50 vegades la del dibuix: 7
+      cm × 50 = 350 cm = 3,5 m. L'opció B (0,14 m) resulta d'invertir l'escala i
+      dividir per 50; l'opció C (35 m) prové d'aplicar un factor 500 (error de
+      desena); l'opció D confon cm amb m."
+    es: "La escala 1:50 significa que la medida real es 50 veces la del dibujo: 7 cm
+      × 50 = 350 cm = 3,5 m. La opción B (0,14 m) resulta de invertir la escala
+      y dividir entre 50; la opción C (35 m) proviene de aplicar un factor 500
+      (error de decena); la opción D confunde cm con m."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.basic_constructions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "L'arc capaç d'un segment AB per a un angle de 90° (lloc geomètric dels
+      punts des dels quals AB es veu sota 90°) és:"
+    es: "El arco capaz de un segmento AB para un ángulo de 90° (lugar geométrico de
+      los puntos desde los cuales AB se ve bajo 90°) es:"
+  options:
+    - id: A
+      ca: La circumferència que té AB com a diàmetre (excepte A i B).
+      es: La circunferencia que tiene AB como diámetro (excepto A y B).
+    - id: B
+      ca: La mediatriu del segment AB.
+      es: La mediatriz del segmento AB.
+    - id: C
+      ca: La circumferència que té AB com a radi.
+      es: La circunferencia que tiene AB como radio.
+    - id: D
+      ca: Una recta paral·lela a AB a distància AB/2.
+      es: Una recta paralela a AB a distancia AB/2.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Pel teorema de l'angle inscrit, un angle inscrit val la meitat de l'angle
+      central que abasta el mateix arc. Un angle inscrit de 90° correspon a un
+      angle central de 180°, és a dir, AB és un diàmetre. Per tant l'arc capaç
+      de 90° és la circumferència de diàmetre AB (teorema de Tales). Cada meitat
+      és un arc capaç de 90°.
+    es: Por el teorema del ángulo inscrito, un ángulo inscrito vale la mitad del
+      ángulo central que abarca el mismo arco. Un ángulo inscrito de 90°
+      corresponde a un ángulo central de 180°, es decir, AB es un diámetro. Por
+      tanto el arco capaz de 90° es la circunferencia de diámetro AB (teorema de
+      Tales). Cada semicircunferencia es un arco capaz de 90°.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.proportionality_scales
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En un plànol dibuixat a escala 1:50, quina longitud tindrà en el dibuix una
+      paret real de 4 m?
+    es: En un plano dibujado a escala 1:50, ¿qué longitud tendrá en el dibujo una
+      pared real de 4 m?
+  options:
+    - id: A
+      ca: 8 cm
+      es: 8 cm
+    - id: B
+      ca: 80 cm
+      es: 80 cm
+    - id: C
+      ca: 2 cm
+      es: 2 cm
+    - id: D
+      ca: 0,8 cm
+      es: 0,8 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'escala 1:50 significa dibuix = realitat / 50. La paret real són 4 m = 4000
+      mm. Dibuix = 4000 / 50 = 80 mm = 8 cm. L'error habitual és quedar-se en 80
+      i llegir-ho com cm (opció B).
+    es: La escala 1:50 significa dibujo = realidad / 50. La pared real son 4 m =
+      4000 mm. Dibujo = 4000 / 50 = 80 mm = 8 cm. El error habitual es quedarse
+      en 80 y leerlo como cm (opción B).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.proportionality_scales
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Quina de les següents escales és una escala d'ampliació?
+    es: ¿Cuál de las siguientes escalas es una escala de ampliación?
+  options:
+    - id: A
+      ca: 5:1
+      es: 5:1
+    - id: B
+      ca: 1:2
+      es: 1:2
+    - id: C
+      ca: 1:100
+      es: 1:100
+    - id: D
+      ca: 1:1
+      es: 1:1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En una escala E = dibuix : realitat, hi ha ampliació quan el dibuix és més
+      gran que la realitat, és a dir E > 1. Només 5:1 (= 5) compleix E > 1. 1:2
+      i 1:100 són reduccions (E < 1) i 1:1 és escala natural."
+    es: "En una escala E = dibujo : realidad, hay ampliación cuando el dibujo es
+      mayor que la realidad, es decir E > 1. Solo 5:1 (= 5) cumple E > 1. 1:2 y
+      1:100 son reducciones (E < 1) y 1:1 es escala natural."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.proportionality_scales
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Un segment que en el dibuix fa 25 mm representa una longitud real de 5 m.
+      Quina és l'escala del dibuix?
+    es: Un segmento que en el dibujo mide 25 mm representa una longitud real de 5 m.
+      ¿Cuál es la escala del dibujo?
+  options:
+    - id: A
+      ca: 1:200
+      es: 1:200
+    - id: B
+      ca: 1:20
+      es: 1:20
+    - id: C
+      ca: 1:2000
+      es: 1:2000
+    - id: D
+      ca: 2:1
+      es: 2:1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: E = dibuix / realitat, amb les mateixes unitats. 5 m = 5000 mm, per tant E =
+      25 / 5000 = 1/200, és a dir 1:200. L'error de 1:20 surt de convertir
+      malament 5 m a 500 mm.
+    es: E = dibujo / realidad, con las mismas unidades. 5 m = 5000 mm, por tanto E =
+      25 / 5000 = 1/200, es decir 1:200. El error de 1:20 surge de convertir mal
+      5 m a 500 mm.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.proportionality_scales
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un mapa a escala 1:25000, dos punts estan separats 6 cm. Quina és la
+      distància real entre ells?
+    es: En un mapa a escala 1:25000, dos puntos están separados 6 cm. ¿Cuál es la
+      distancia real entre ellos?
+  options:
+    - id: A
+      ca: 1,5 km
+      es: 1,5 km
+    - id: B
+      ca: 15 km
+      es: 15 km
+    - id: C
+      ca: 150 m
+      es: 150 m
+    - id: D
+      ca: 250 m
+      es: 250 m
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Realitat = dibuix × denominador = 6 cm × 25000 = 150000 cm. Convertint:
+      150000 cm = 1500 m = 1,5 km. L'error de 15 km prové d'una equivocació en
+      el pas d'unitats (cm a km)."
+    es: "Realidad = dibujo × denominador = 6 cm × 25000 = 150000 cm. Convirtiendo:
+      150000 cm = 1500 m = 1,5 km. El error de 15 km proviene de una
+      equivocación en el paso de unidades (cm a km)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.proportionality_scales
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una peça s'ha dibuixat a escala 1:5. Per redibuixar-la a escala 1:2
+      conservant la mateixa peça real, per quin factor cal multiplicar totes les
+      longituds del dibuix actual?
+    es: Una pieza se ha dibujado a escala 1:5. Para redibujarla a escala 1:2
+      conservando la misma pieza real, ¿por qué factor hay que multiplicar todas
+      las longitudes del dibujo actual?
+  options:
+    - id: A
+      ca: ×2,5
+      es: ×2,5
+    - id: B
+      ca: ×0,4
+      es: ×0,4
+    - id: C
+      ca: ×2
+      es: ×2
+    - id: D
+      ca: ×10
+      es: ×10
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El factor entre dibuixos és el quocient de les dues escales: (1/2) / (1/5)
+      = 5/2 = 2,5. Com que 1:2 és menys reductora que 1:5, el nou dibuix és més
+      gran, coherent amb ×2,5. L'invers (×0,4) correspondria a passar de 1:2 a
+      1:5."
+    es: "El factor entre dibujos es el cociente de las dos escalas: (1/2) / (1/5) =
+      5/2 = 2,5. Como 1:2 es menos reductora que 1:5, el nuevo dibujo es mayor,
+      coherente con ×2,5. El inverso (×0,4) correspondería a pasar de 1:2 a
+      1:5."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.proportionality_scales
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Quin és el segment mitjà proporcional entre dos segments de 4 cm i 16 cm?
+    es: ¿Cuál es el segmento medio proporcional entre dos segmentos de 4 cm y 16 cm?
+  options:
+    - id: A
+      ca: 8 cm
+      es: 8 cm
+    - id: B
+      ca: 10 cm
+      es: 10 cm
+    - id: C
+      ca: 6,4 cm
+      es: 6,4 cm
+    - id: D
+      ca: 20 cm
+      es: 20 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El mitjà proporcional x entre a i b compleix a/x = x/b, és a dir x² = a·b
+      (mitjana geomètrica). x = √(4·16) = √64 = 8 cm. L'error de 10 cm surt de
+      calcular la mitjana aritmètica (4+16)/2, que no és la proporcional.
+    es: El medio proporcional x entre a y b cumple a/x = x/b, es decir x² = a·b
+      (media geométrica). x = √(4·16) = √64 = 8 cm. El error de 10 cm surge de
+      calcular la media aritmética (4+16)/2, que no es la proporcional.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.tangencies
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Segons la propietat fonamental de la tangència, quin angle forma una recta
+      tangent a una circumferència amb el radi traçat al punt de tangència?
+    es: Según la propiedad fundamental de la tangencia, ¿qué ángulo forma una recta
+      tangente a una circunferencia con el radio trazado en el punto de
+      tangencia?
+  options:
+    - id: A
+      ca: 90° (són perpendiculars)
+      es: 90° (son perpendiculares)
+    - id: B
+      ca: 45°
+      es: 45°
+    - id: C
+      ca: 180° (són paral·lels)
+      es: 180° (son paralelos)
+    - id: D
+      ca: Depèn del radi de la circumferència
+      es: Depende del radio de la circunferencia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La propietat bàsica de tangència estableix que tota recta tangent a una
+      circumferència és perpendicular al radi en el punt de tangència. Per això,
+      el radi és la distància mínima del centre a la recta i l'angle és sempre
+      90°, independentment del valor del radi.
+    es: La propiedad básica de la tangencia establece que toda recta tangente a una
+      circunferencia es perpendicular al radio en el punto de tangencia. Por
+      ello, el radio es la distancia mínima del centro a la recta y el ángulo es
+      siempre 90°, con independencia del valor del radio.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.tangencies
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Dues circumferències de radis 5 cm i 3 cm són tangents exteriorment. Quina
+      és la distància entre els seus centres?
+    es: Dos circunferencias de radios 5 cm y 3 cm son tangentes exteriormente. ¿Cuál
+      es la distancia entre sus centros?
+  options:
+    - id: A
+      ca: 8 cm
+      es: 8 cm
+    - id: B
+      ca: 2 cm
+      es: 2 cm
+    - id: C
+      ca: 15 cm
+      es: 15 cm
+    - id: D
+      ca: 4 cm
+      es: 4 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En la tangència exterior el punt de tangència queda entre els dos centres,
+      de manera que la distància entre centres és la suma dels radis: d = R + r
+      = 5 + 3 = 8 cm. La resposta 2 cm correspon a la resta (tangència
+      interior), 15 cm al producte i 4 cm a la mitjana dels radis."
+    es: "En la tangencia exterior el punto de tangencia queda entre ambos centros,
+      por lo que la distancia entre centros es la suma de los radios: d = R + r
+      = 5 + 3 = 8 cm. La respuesta 2 cm corresponde a la resta (tangencia
+      interior), 15 cm al producto y 4 cm a la media de los radios."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.tangencies
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Dues circumferències de radis 7 cm i 3 cm són tangents interiorment (una
+      conté l'altra). Quina és la distància entre els seus centres?
+    es: Dos circunferencias de radios 7 cm y 3 cm son tangentes interiormente (una
+      contiene a la otra). ¿Cuál es la distancia entre sus centros?
+  options:
+    - id: A
+      ca: 4 cm
+      es: 4 cm
+    - id: B
+      ca: 10 cm
+      es: 10 cm
+    - id: C
+      ca: 5 cm
+      es: 5 cm
+    - id: D
+      ca: 0 cm (són concèntriques)
+      es: 0 cm (son concéntricas)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En la tangència interior els dos centres i el punt de tangència estan
+      alineats i els centres queden al mateix costat, per la qual cosa la
+      distància entre centres és la diferència dels radis: d = R − r = 7 − 3 = 4
+      cm. La resposta 10 cm és la suma (tangència exterior) i 5 cm és la mitjana
+      dels radis."
+    es: "En la tangencia interior los dos centros y el punto de tangencia están
+      alineados y los centros quedan al mismo lado, por lo que la distancia
+      entre centros es la diferencia de los radios: d = R − r = 7 − 3 = 4 cm. La
+      respuesta 10 cm es la suma (tangencia exterior) y 5 cm es la media de los
+      radios."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.tangencies
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "El lloc geomètric dels centres de totes les circumferències tangents a una
+      recta donada en un punt fix P d'aquesta recta és:"
+    es: "El lugar geométrico de los centros de todas las circunferencias tangentes a
+      una recta dada en un punto fijo P de dicha recta es:"
+  options:
+    - id: A
+      ca: La recta perpendicular a la recta donada que passa per P
+      es: La recta perpendicular a la recta dada que pasa por P
+    - id: B
+      ca: Una recta paral·lela a la recta donada
+      es: Una recta paralela a la recta dada
+    - id: C
+      ca: La mediatriu del segment que uneix P amb l'origen
+      es: La mediatriz del segmento que une P con el origen
+    - id: D
+      ca: Una circumferència amb centre a P
+      es: Una circunferencia con centro en P
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Com que la tangent és perpendicular al radi en el punt de tangència, el radi
+      de qualsevol circumferència tangent a la recta en P ha d'estar sobre la
+      perpendicular a la recta per P. Per tant, tots els centres possibles es
+      troben en aquesta perpendicular, que és el lloc geomètric buscat.
+    es: Como la tangente es perpendicular al radio en el punto de tangencia, el
+      radio de cualquier circunferencia tangente a la recta en P debe estar
+      sobre la perpendicular a la recta por P. Por tanto, todos los centros
+      posibles se encuentran en esa perpendicular, que es el lugar geométrico
+      buscado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.tangencies
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Dues circumferències de radis 3 cm i 2 cm tenen els centres separats 10 cm.
+      Quantes rectes tangents comunes admeten?
+    es: Dos circunferencias de radios 3 cm y 2 cm tienen sus centros separados 10
+      cm. ¿Cuántas rectas tangentes comunes admiten?
+  options:
+    - id: A
+      ca: "4"
+      es: "4"
+    - id: B
+      ca: "3"
+      es: "3"
+    - id: C
+      ca: "2"
+      es: "2"
+    - id: D
+      ca: "1"
+      es: "1"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Com que la distància entre centres (10 cm) és més gran que la suma dels
+      radis (3 + 2 = 5 cm), les circumferències són exteriors i no es toquen. En
+      aquesta posició hi ha 4 tangents comunes: 2 exteriors i 2 interiors. Hi
+      hauria 3 si fossin tangents exteriors, 2 si es tallessin i 1 si fossin
+      tangents interiors."
+    es: "Como la distancia entre centros (10 cm) es mayor que la suma de los radios
+      (3 + 2 = 5 cm), las circunferencias son exteriores y no se tocan. En esa
+      posición hay 4 tangentes comunes: 2 exteriores y 2 interiores. Habría 3 si
+      fueran tangentes exteriores, 2 si se cortasen y 1 si fueran tangentes
+      interiores."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.tangencies
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "Es té una circumferència fixa de radi 10 cm. Es vol dibuixar el lloc
+      geomètric dels centres de totes les circumferències de radi 4 cm que hi
+      són tangents interiorment (contingudes dins la fixa). Aquest lloc
+      geomètric és una circumferència concèntrica de radi:"
+    es: "Se tiene una circunferencia fija de radio 10 cm. Se quiere dibujar el lugar
+      geométrico de los centros de todas las circunferencias de radio 4 cm
+      tangentes interiormente a ella (contenidas dentro de la fija). Dicho lugar
+      geométrico es una circunferencia concéntrica de radio:"
+  options:
+    - id: A
+      ca: 6 cm
+      es: 6 cm
+    - id: B
+      ca: 14 cm
+      es: 14 cm
+    - id: C
+      ca: 4 cm
+      es: 4 cm
+    - id: D
+      ca: 10 cm
+      es: 10 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per a la tangència interior, la distància del centre fix al centre de cada
+      circumferència mòbil és la diferència de radis: R − r = 10 − 4 = 6 cm. Com
+      que aquesta distància és constant, els centres descriuen una
+      circumferència concèntrica de radi 6 cm. El valor 14 cm (R + r)
+      correspondria a la tangència exterior."
+    es: "Para la tangencia interior, la distancia del centro fijo al centro de cada
+      circunferencia móvil es la diferencia de radios: R − r = 10 − 4 = 6 cm.
+      Como esa distancia es constante, los centros describen una circunferencia
+      concéntrica de radio 6 cm. El valor 14 cm (R + r) correspondería a la
+      tangencia exterior."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.conics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En una el·lipse l'eix major mesura 2a = 10 cm. Segons la definició de
+      l'el·lipse com a lloc geomètric, quant val la suma de les distàncies de
+      qualsevol punt de la corba als dos focus?
+    es: En una elipse el eje mayor mide 2a = 10 cm. Según la definición de la elipse
+      como lugar geométrico, ¿cuánto vale la suma de las distancias de cualquier
+      punto de la curva a los dos focos?
+  options:
+    - id: A
+      ca: 5 cm
+      es: 5 cm
+    - id: B
+      ca: 10 cm
+      es: 10 cm
+    - id: C
+      ca: 20 cm
+      es: 20 cm
+    - id: D
+      ca: Depèn de la posició del punt sobre la corba
+      es: Depende de la posición del punto sobre la curva
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: L'el·lipse es defineix com el lloc geomètric dels punts el suma de
+      distàncies als quals dos focus és constant i igual a la longitud de l'eix
+      major, 2a. Per tant la suma és 2a = 10 cm, independentment del punt
+      escollit. L'error de 5 cm confon la suma amb el semieix a; 20 cm duplica
+      erròniament l'eix.
+    es: La elipse se define como el lugar geométrico de los puntos cuya suma de
+      distancias a los dos focos es constante e igual a la longitud del eje
+      mayor, 2a. Por tanto la suma es 2a = 10 cm, con independencia del punto
+      elegido. El error de 5 cm confunde la suma con el semieje a; 20 cm duplica
+      erróneamente el eje.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.conics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Una el·lipse té semieix major a = 13 cm i semieix menor b = 5 cm. Quina és
+      la distància entre els dos focus (2c)?
+    es: Una elipse tiene semieje mayor a = 13 cm y semieje menor b = 5 cm. ¿Cuál es
+      la distancia entre los dos focos (2c)?
+  options:
+    - id: A
+      ca: 24 cm
+      es: 24 cm
+    - id: B
+      ca: 12 cm
+      es: 12 cm
+    - id: C
+      ca: 27,8 cm
+      es: 27,8 cm
+    - id: D
+      ca: 18 cm
+      es: 18 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A l'el·lipse es compleix c^2 = a^2 - b^2 = 13^2 - 5^2 = 169 - 25 = 144, així
+      c = 12 cm i la distància focal és 2c = 24 cm. L'opció 12 cm dóna només c
+      (no 2c); 27,8 cm surt de l'error de signe c^2 = a^2 + b^2 = 194; 18 cm és
+      la suma a + b.
+    es: En la elipse se cumple c^2 = a^2 - b^2 = 13^2 - 5^2 = 169 - 25 = 144, así c
+      = 12 cm y la distancia focal es 2c = 24 cm. La opción 12 cm da solo c (no
+      2c); 27,8 cm procede del error de signo c^2 = a^2 + b^2 = 194; 18 cm es la
+      suma a + b.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.conics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Una corba cònica es defineix per una excentricitat e = 1,5. De quin tipus de
+      cònica es tracta?
+    es: Una curva cónica se define por una excentricidad e = 1,5. ¿De qué tipo de
+      cónica se trata?
+  options:
+    - id: A
+      ca: El·lipse
+      es: Elipse
+    - id: B
+      ca: Paràbola
+      es: Parábola
+    - id: C
+      ca: Hipèrbola
+      es: Hipérbola
+    - id: D
+      ca: Circumferència
+      es: Circunferencia
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "La classificació per excentricitat és: e = 0 circumferència, 0 < e < 1
+      el·lipse, e = 1 paràbola i e > 1 hipèrbola. Com que e = 1,5 > 1, la cònica
+      és una hipèrbola. Els altres valors corresponen a rangs diferents
+      d'excentricitat."
+    es: "La clasificación por excentricidad es: e = 0 circunferencia, 0 < e < 1
+      elipse, e = 1 parábola y e > 1 hipérbola. Como e = 1,5 > 1, la cónica es
+      una hipérbola. Los demás valores corresponden a rangos distintos de
+      excentricidad."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.conics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En una el·lipse amb semieix major a = 13 cm i distància focal c = 12 cm,
+      quina és la seva excentricitat?
+    es: En una elipse con semieje mayor a = 13 cm y distancia focal c = 12 cm, ¿cuál
+      es su excentricidad?
+  options:
+    - id: A
+      ca: e = 0,92
+      es: e = 0,92
+    - id: B
+      ca: e = 1,08
+      es: e = 1,08
+    - id: C
+      ca: e = 0,38
+      es: e = 0,38
+    - id: D
+      ca: e = 1
+      es: e = 1
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'excentricitat de l'el·lipse és e = c/a = 12/13 = 0,923 ≈ 0,92, valor menor
+      que 1 com correspon a una el·lipse. L'opció 1,08 inverteix la fórmula
+      (a/c); 0,38 usa b/a amb b = 5; e = 1 correspondria a una paràbola.
+    es: La excentricidad de la elipse es e = c/a = 12/13 = 0,923 ≈ 0,92, valor menor
+      que 1 como corresponde a una elipse. La opción 1,08 invierte la fórmula
+      (a/c); 0,38 usa b/a con b = 5; e = 1 correspondería a una parábola.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.conics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En una paràbola, la directriu es troba a 6 cm del focus, mesurats sobre
+      l'eix. A quina distància del focus se situa el vèrtex de la paràbola?
+    es: En una parábola, la directriz se encuentra a 6 cm del foco, medidos sobre el
+      eje. ¿A qué distancia del foco se sitúa el vértice de la parábola?
+  options:
+    - id: A
+      ca: 3 cm
+      es: 3 cm
+    - id: B
+      ca: 6 cm
+      es: 6 cm
+    - id: C
+      ca: 12 cm
+      es: 12 cm
+    - id: D
+      ca: 0 cm (el vèrtex coincideix amb el focus)
+      es: 0 cm (el vértice coincide con el foco)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El vèrtex és el punt de la paràbola i, com a tal, ha de ser equidistant del
+      focus i de la directriu. En estar situat sobre l'eix entre tots dos, ocupa
+      el punt mitjà: 6/2 = 3 cm del focus (i 3 cm de la directriu). L'opció 6 cm
+      el situa sobre la directriu; 12 cm duplica la distància; el vèrtex mai
+      coincideix amb el focus."
+    es: "El vértice es un punto de la parábola y, como tal, debe ser equidistante
+      del foco y de la directriz. Al estar situado sobre el eje entre ambos,
+      ocupa el punto medio: 6/2 = 3 cm del foco (y 3 cm de la directriz). La
+      opción 6 cm lo sitúa sobre la directriz; 12 cm duplica la distancia; el
+      vértice nunca coincide con el foco."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.plane_geometry.conics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una hipèrbola té semieix real a = 4 cm i semieix imaginari b = 3 cm. Quin és
+      el pendent (m) de les seves asímptotes respecte de l'eix real i quant val
+      la distància focal 2c?
+    es: Una hipérbola tiene semieje real a = 4 cm y semieje imaginario b = 3 cm.
+      ¿Cuál es la pendiente (m) de sus asíntotas respecto al eje real y cuánto
+      vale la distancia focal 2c?
+  options:
+    - id: A
+      ca: m = ±3/4 i 2c = 10 cm
+      es: m = ±3/4 y 2c = 10 cm
+    - id: B
+      ca: m = ±4/3 i 2c = 10 cm
+      es: m = ±4/3 y 2c = 10 cm
+    - id: C
+      ca: m = ±3/4 i 2c = 5 cm
+      es: m = ±3/4 y 2c = 5 cm
+    - id: D
+      ca: m = ±3/4 i 2c = 2,65 cm
+      es: m = ±3/4 y 2c = 2,65 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A la hipèrbola les asímptotes tenen pendent m = ±b/a = ±3/4. La relació
+      entre semieixos és c^2 = a^2 + b^2 = 16 + 9 = 25, així c = 5 cm i la
+      distància focal és 2c = 10 cm. L'opció B inverteix el pendent (a/b);
+      l'opció C confon c amb 2c; l'opció D aplica erròniament c^2 = a^2 - b^2 =
+      7 (fórmula de l'el·lipse).
+    es: En la hipérbola las asíntotas tienen pendiente m = ±b/a = ±3/4. La relación
+      entre semiejes es c^2 = a^2 + b^2 = 16 + 9 = 25, así c = 5 cm y la
+      distancia focal es 2c = 10 cm. La opción B invierte la pendiente (a/b); la
+      opción C confunde c con 2c; la opción D aplica erróneamente c^2 = a^2 -
+      b^2 = 7 (fórmula de la elipse).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.point_line_plane
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En sistema dièdric, un punt A té la seva projecció vertical (A'') situada 25
+      mm PER DAMUNT de la línia de terra (LT) i la seva projecció horitzontal
+      (A') situada 15 mm PER SOTA de la LT. A quin espai es troba el punt A?
+    es: En sistema diédrico, un punto A tiene su proyección vertical (A'') situada
+      25 mm POR ENCIMA de la línea de tierra (LT) y su proyección horizontal
+      (A') situada 15 mm POR DEBAJO de la LT. ¿En qué espacio se encuentra el
+      punto A?
+  options:
+    - id: A
+      ca: Al primer dièdric (cota positiva i allunyament positiu).
+      es: En el primer diedro (cota positiva y alejamiento positivo).
+    - id: B
+      ca: Al segon dièdric (per damunt del PH i darrere del PV).
+      es: En el segundo diedro (por encima del PH y detrás del PV).
+    - id: C
+      ca: Al tercer dièdric (per sota del PH i darrere del PV).
+      es: En el tercer diedro (por debajo del PH y detrás del PV).
+    - id: D
+      ca: Sobre el pla vertical de projecció (PV).
+      es: Sobre el plano vertical de proyección (PV).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el rebatiment, la projecció vertical per damunt de la LT indica cota
+      positiva (punt per damunt del PH) i la projecció horitzontal per sota de
+      la LT indica allunyament positiu (punt davant del PV). Cota + i
+      allunyament + corresponen al primer dièdric.
+    es: En el abatimiento, la proyección vertical por encima de la LT indica cota
+      positiva (punto por encima del PH) y la proyección horizontal por debajo
+      de la LT indica alejamiento positivo (punto delante del PV). Cota + y
+      alejamiento + corresponden al primer diedro.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.point_line_plane
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quina afirmació descriu correctament una RECTA HORITZONTAL (recta de nivell)
+      en sistema dièdric?
+    es: ¿Qué afirmación describe correctamente una RECTA HORIZONTAL (recta de nivel)
+      en sistema diédrico?
+  options:
+    - id: A
+      ca: És paral·lela al PH; tots els seus punts tenen la mateixa cota i la seva
+        projecció vertical (r'') és paral·lela a la LT.
+      es: Es paralela al PH; todos sus puntos tienen la misma cota y su proyección
+        vertical (r'') es paralela a la LT.
+    - id: B
+      ca: És paral·lela al PV; tots els seus punts tenen el mateix allunyament i la
+        seva projecció horitzontal (r') és paral·lela a la LT.
+      es: Es paralela al PV; todos sus puntos tienen el mismo alejamiento y su
+        proyección horizontal (r') es paralela a la LT.
+    - id: C
+      ca: És perpendicular al PH; les seves dues projeccions són perpendiculars a la
+        LT.
+      es: Es perpendicular al PH; sus dos proyecciones son perpendiculares a la LT.
+    - id: D
+      ca: Té les dues traces sobre la LT i forma 45° amb tots dos plans de projecció.
+      es: Tiene las dos trazas sobre la LT y forma 45° con ambos planos de proyección.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Una recta horitzontal és paral·lela al pla horitzontal PH: per tant tots
+      els seus punts conserven la mateixa cota i la seva projecció vertical r''
+      surt paral·lela a la LT. L'opció B descriu una recta frontal (paral·lela
+      al PV), un error de confusió freqüent."
+    es: "Una recta horizontal es paralela al plano horizontal PH: por tanto todos
+      sus puntos conservan la misma cota y su proyección vertical r'' resulta
+      paralela a la LT. La opción B describe una recta frontal (paralela al PV),
+      un error de confusión frecuente."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.point_line_plane
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Per determinar si un punt P pertany a una recta r en sistema dièdric (essent
+      r una recta genèrica, no de perfil), quina condició s'ha de complir?
+    es: Para determinar si un punto P pertenece a una recta r en sistema diédrico
+      (siendo r una recta genérica, no de perfil), ¿qué condición debe
+      cumplirse?
+  options:
+    - id: A
+      ca: Que la projecció horitzontal P' estigui sobre r' i, alhora, la projecció
+        vertical P'' estigui sobre r''.
+      es: Que la proyección horizontal P' esté sobre r' y, a la vez, la proyección
+        vertical P'' esté sobre r''.
+    - id: B
+      ca: N'hi ha prou que la projecció horitzontal P' estigui sobre r'.
+      es: Basta con que la proyección horizontal P' esté sobre r'.
+    - id: C
+      ca: Que la projecció horitzontal P' estigui sobre r'' i la vertical P'' sobre r'
+        (projeccions creuades).
+      es: Que la proyección horizontal P' esté sobre r'' y la vertical P'' sobre r'
+        (proyecciones cruzadas).
+    - id: D
+      ca: Que P tingui la mateixa cota que un extrem qualsevol de r.
+      es: Que P tenga la misma cota que un extremo cualquiera de r.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Un punt pertany a una recta només si les seves dues projeccions homònimes
+      hi estan contingudes simultàniament: P' sobre r' I P'' sobre r''. Amb una
+      sola projecció (B) no n'hi ha prou, i les projeccions no es creuen (C)."
+    es: "Un punto pertenece a una recta solo si sus dos proyecciones homónimas están
+      contenidas simultáneamente: P' sobre r' Y P'' sobre r''. Con una sola
+      proyección (B) no basta, y las proyecciones no se cruzan (C)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.point_line_plane
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En sistema dièdric, la TRAÇA VERTICAL (V) d'una recta és el punt on la recta
+      talla el pla vertical de projecció (PV). Quina característica té aquest
+      punt?
+    es: En sistema diédrico, la TRAZA VERTICAL (V) de una recta es el punto donde la
+      recta corta al plano vertical de proyección (PV). ¿Qué característica
+      tiene ese punto?
+  options:
+    - id: A
+      ca: Té allunyament nul (=0); la seva projecció horitzontal V' cau sobre la LT.
+      es: Tiene alejamiento nulo (=0); su proyección horizontal V' cae sobre la LT.
+    - id: B
+      ca: Té cota nul·la (=0); la seva projecció vertical V'' cau sobre la LT.
+      es: Tiene cota nula (=0); su proyección vertical V'' cae sobre la LT.
+    - id: C
+      ca: Té cota i allunyament iguals; les seves projeccions són simètriques respecte
+        de la LT.
+      es: Tiene cota y alejamiento iguales; sus proyecciones son simétricas respecto
+        de la LT.
+    - id: D
+      ca: Té allunyament nul i cota nul·la; coincideix amb un punt de la LT.
+      es: Tiene alejamiento nulo y cota nula; coincide con un punto de la LT.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Si el punt és sobre el PV, la seva distància al PV (allunyament) és zero; en
+      conseqüència la seva projecció horitzontal V' se situa sobre la LT.
+      L'opció B descriu la traça horitzontal (cota=0), confusió habitual entre
+      les dues traces.
+    es: Si el punto está sobre el PV, su distancia al PV (alejamiento) es cero; en
+      consecuencia su proyección horizontal V' se sitúa sobre la LT. La opción B
+      describe la traza horizontal (cota=0), confusión habitual entre ambas
+      trazas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.point_line_plane
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un punt M té cota +30 mm i allunyament +30 mm (primer dièdric). Què es pot
+      afirmar de M i de les seves projeccions?
+    es: Un punto M tiene cota +30 mm y alejamiento +30 mm (primer diedro). ¿Qué se
+      puede afirmar de M y de sus proyecciones?
+  options:
+    - id: A
+      ca: M pertany al primer pla bisector; les projeccions M' i M'' són equidistants
+        de la LT (simètriques respecte d'ella).
+      es: M pertenece al primer plano bisector; las proyecciones M' y M'' son
+        equidistantes de la LT (simétricas respecto a ella).
+    - id: B
+      ca: M pertany al segon pla bisector; les projeccions M' i M'' coincideixen sobre
+        la LT.
+      es: M pertenece al segundo plano bisector; las proyecciones M' y M'' coinciden
+        sobre la LT.
+    - id: C
+      ca: M pertany a la LT, ja que cota i allunyament són iguals.
+      es: M pertenece a la LT, ya que cota y alejamiento son iguales.
+    - id: D
+      ca: Les projeccions M' i M'' queden totes dues per damunt de la LT.
+      es: Las proyecciones M' y M'' quedan ambas por encima de la LT.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El primer pla bisector conté els punts amb cota i allunyament iguals en
+      valor i signe (aquí +30 i +30). Per això M'' queda 30 mm per damunt de la
+      LT i M' 30 mm per sota: equidistants i simètriques respecte de la LT. El
+      segon bisector correspon a cota i allunyament iguals però de signe
+      contrari."
+    es: "El primer plano bisector contiene los puntos con cota y alejamiento iguales
+      en valor y signo (aquí +30 y +30). Por eso M'' queda 30 mm por encima de
+      la LT y M' 30 mm por debajo: equidistantes y simétricas respecto a la LT.
+      El segundo bisector corresponde a cota y alejamiento iguales pero de signo
+      contrario."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.point_line_plane
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Respecte de la LÍNIA DE MÀXIMA PENDENT (respecte del PH) d'un pla oblic en
+      sistema dièdric, quina propietat és correcta?
+    es: Respecto de la LÍNEA DE MÁXIMA PENDIENTE (respecto del PH) de un plano
+      oblicuo en sistema diédrico, ¿qué propiedad es correcta?
+  options:
+    - id: A
+      ca: La seva projecció horitzontal és perpendicular a la traça horitzontal del
+        pla.
+      es: Su proyección horizontal es perpendicular a la traza horizontal del plano.
+    - id: B
+      ca: La seva projecció horitzontal és paral·lela a la traça horitzontal del pla.
+      es: Su proyección horizontal es paralela a la traza horizontal del plano.
+    - id: C
+      ca: La seva projecció horitzontal és perpendicular a la LT.
+      es: Su proyección horizontal es perpendicular a la LT.
+    - id: D
+      ca: La seva projecció vertical és perpendicular a la traça vertical del pla.
+      es: Su proyección vertical es perpendicular a la traza vertical del plano.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La línia de màxima pendent d'un pla respecte del PH és, per definició,
+      perpendicular a les horitzontals del pla; com que la traça horitzontal és
+      una horitzontal del pla (de cota 0), la projecció horitzontal de la línia
+      de màxima pendent surt perpendicular a la traça horitzontal. Ser-hi
+      paral·lela (B) definiria una horitzontal, no la de màxima pendent.
+    es: La línea de máxima pendiente de un plano respecto del PH es, por definición,
+      perpendicular a las horizontales del plano; como la traza horizontal es
+      una horizontal del plano (de cota 0), la proyección horizontal de la línea
+      de máxima pendiente resulta perpendicular a la traza horizontal. Ser
+      paralela a ella (B) definiría una horizontal, no la de máxima pendiente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.intersections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En geometria descriptiva, quina figura és sempre la intersecció de dos plans
+      no paral·lels?
+    es: En geometría descriptiva, ¿qué figura es siempre la intersección de dos
+      planos no paralelos?
+  options:
+    - id: A
+      ca: Una recta
+      es: Una recta
+    - id: B
+      ca: Un únic punt
+      es: Un único punto
+    - id: C
+      ca: Una corba plana
+      es: Una curva plana
+    - id: D
+      ca: Un segment de longitud finita
+      es: Un segmento de longitud finita
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Dos plans que no són paral·lels comparteixen infinits punts alineats: la
+      seva intersecció és sempre una recta (il·limitada). Un punt seria la
+      intersecció de tres plans o d'una recta amb un pla; una corba només
+      apareix en superfícies no planes."
+    es: "Dos planos no paralelos comparten infinitos puntos alineados: su
+      intersección es siempre una recta (ilimitada). Un punto correspondería a
+      la intersección de tres planos o de una recta con un plano; una curva solo
+      aparece en superficies no planas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.intersections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En sistema dièdric, quin és el procediment estàndard per trobar el punt de
+      trencament (traça) d'una recta r amb un pla genèric α?
+    es: En sistema diédrico, ¿cuál es el procedimiento estándar para hallar el punto
+      de traza (perforación) de una recta r con un plano genérico α?
+  options:
+    - id: A
+      ca: Contenir r en un pla projectant auxiliar, obtenir la recta d'intersecció
+        d'aquest pla amb α i tallar-la amb r
+      es: Contener r en un plano proyectante auxiliar, obtener la recta de
+        intersección de ese plano con α y cortarla con r
+    - id: B
+      ca: Girar la recta r fins deixar-la en veritable magnitud i projectar-la
+      es: Girar la recta r hasta dejarla en verdadera magnitud y proyectarla
+    - id: C
+      ca: Traçar un pla auxiliar paral·lel a la recta r i buscar-ne les traces
+      es: Trazar un plano auxiliar paralelo a la recta r y buscar sus trazas
+    - id: D
+      ca: Projectar ortogonalment un punt qualsevol de r sobre el pla α
+      es: Proyectar ortogonalmente un punto cualquiera de r sobre el plano α
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El mètode del pla auxiliar: es fa passar per r un pla projectant
+      (perpendicular a un pla de projecció), que talla α segons una recta i
+      (intersecció de plans). El punt on i talla r és la perforació buscada, ja
+      que pertany alhora a r i a α. Girar la recta o usar un pla paral·lel no
+      dóna cap punt comú amb α."
+    es: "El método del plano auxiliar: se hace pasar por r un plano proyectante
+      (perpendicular a un plano de proyección), que corta a α según una recta i
+      (intersección de planos). El punto donde i corta a r es la perforación
+      buscada, pues pertenece a la vez a r y a α. Girar la recta o usar un plano
+      paralelo no da ningún punto común con α."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.intersections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En seccionar un con de revolució amb un pla que no passa pel vèrtex, si el
+      pla és paral·lel a EXACTAMENT una generatriu del con, quina cònica s'obté?
+    es: Al seccionar un cono de revolución con un plano que no pasa por el vértice,
+      si el plano es paralelo a EXACTAMENTE una generatriz del cono, ¿qué cónica
+      se obtiene?
+  options:
+    - id: A
+      ca: Paràbola
+      es: Parábola
+    - id: B
+      ca: El·lipse
+      es: Elipse
+    - id: C
+      ca: Hipèrbola
+      es: Hipérbola
+    - id: D
+      ca: Circumferència
+      es: Circunferencia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Quan el pla de tall és paral·lel a una sola generatriu, talla totes les
+      altres generatrius d'un mateix full però mai la generatriu paral·lela, de
+      manera que la corba queda oberta amb una sola branca: és una paràbola. Si
+      fos paral·lel a cap generatriu i tallés totes → el·lipse; paral·lel a dues
+      generatrius (tallant els dos fulls) → hipèrbola; perpendicular a l'eix →
+      circumferència."
+    es: "Cuando el plano de corte es paralelo a una sola generatriz, corta a todas
+      las demás generatrices de una misma hoja pero nunca a la generatriz
+      paralela, por lo que la curva queda abierta con una sola rama: es una
+      parábola. Si no fuese paralelo a ninguna generatriz y cortase a todas →
+      elipse; paralelo a dos generatrices (cortando ambas hojas) → hipérbola;
+      perpendicular al eje → circunferencia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.intersections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Les generatrius d'un con recte de revolució formen 60° amb el pla de la
+      base. Un pla secant que no passa pel vèrtex forma 70° amb aquest mateix
+      pla de la base. Quina cònica determina la secció?
+    es: Las generatrices de un cono recto de revolución forman 60° con el plano de
+      la base. Un plano secante que no pasa por el vértice forma 70° con ese
+      mismo plano de la base. ¿Qué cónica determina la sección?
+  options:
+    - id: A
+      ca: Hipèrbola
+      es: Hipérbola
+    - id: B
+      ca: El·lipse
+      es: Elipse
+    - id: C
+      ca: Paràbola
+      es: Parábola
+    - id: D
+      ca: Circumferència
+      es: Circunferencia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Es compara l'angle del pla amb la base (70°) amb l'angle de les generatrius
+      amb la base (60°). Si el pla és MÉS inclinat que les generatrius (70° >
+      60°), queda paral·lel a dues generatrius i talla els dos fulls del con →
+      hipèrbola. Amb angle menor (p. ex. 30° < 60°) seria el·lipse, amb angle
+      igual (60°) paràbola, i amb 0° (paral·lel a la base) circumferència.
+    es: Se compara el ángulo del plano con la base (70°) con el ángulo de las
+      generatrices con la base (60°). Si el plano es MÁS inclinado que las
+      generatrices (70° > 60°), queda paralelo a dos generatrices y corta las
+      dos hojas del cono → hipérbola. Con ángulo menor (p. ej. 30° < 60°) sería
+      elipse, con ángulo igual (60°) parábola, y con 0° (paralelo a la base)
+      circunferencia.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.intersections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En seccionar un cub (hexàedre) amb un únic pla, quin és el nombre MÀXIM de
+      costats que pot tenir el polígon de la secció?
+    es: Al seccionar un cubo (hexaedro) con un único plano, ¿cuál es el número
+      MÁXIMO de lados que puede tener el polígono de la sección?
+  options:
+    - id: A
+      ca: "6"
+      es: "6"
+    - id: B
+      ca: "4"
+      es: "4"
+    - id: C
+      ca: "8"
+      es: "8"
+    - id: D
+      ca: "12"
+      es: "12"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El polígon de secció d'un políedre convex té, com a màxim, tants costats com
+      cares travessa el pla. El cub té 6 cares; un pla adequadament inclinat pot
+      tallar-les totes sis, donant un hexàgon. No pot superar 6 perquè cada cara
+      aporta com a molt un costat. Un tall paral·lel a una cara dóna un quadrat
+      (4).
+    es: El polígono de sección de un poliedro convexo tiene, como máximo, tantos
+      lados como caras atraviesa el plano. El cubo tiene 6 caras; un plano
+      adecuadamente inclinado puede cortarlas las seis, dando un hexágono. No
+      puede superar 6 porque cada cara aporta a lo sumo un lado. Un corte
+      paralelo a una cara da un cuadrado (4).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.intersections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Un pla talla una esfera sense ser tangent. Quina és la forma real de la
+      secció i com es projecta ortogonalment sobre un pla de projecció que NO és
+      paral·lel al pla de tall?
+    es: Un plano corta una esfera sin ser tangente. ¿Cuál es la forma real de la
+      sección y cómo se proyecta ortogonalmente sobre un plano de proyección que
+      NO es paralelo al plano de corte?
+  options:
+    - id: A
+      ca: La secció és sempre una circumferència; la seva projecció és, en general,
+        una el·lipse
+      es: La sección es siempre una circunferencia; su proyección es, en general, una
+        elipse
+    - id: B
+      ca: La secció és una el·lipse; la seva projecció és una circumferència
+      es: La sección es una elipse; su proyección es una circunferencia
+    - id: C
+      ca: La secció és una circumferència i la seva projecció també és sempre una
+        circumferència del mateix radi
+      es: La sección es una circunferencia y su proyección también es siempre una
+        circunferencia del mismo radio
+    - id: D
+      ca: La secció és una paràbola; la seva projecció és una recta
+      es: La sección es una parábola; su proyección es una recta
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Qualsevol pla que talli una esfera ho fa segons una circumferència (la
+      superfície esfèrica és igual en totes direccions). En projecció ortogonal,
+      aquesta circumferència es veu en veritable magnitud només si el pla de
+      tall és paral·lel al pla de projecció; en qualsevol altre cas es projecta
+      escorçada com una el·lipse (i com un segment si el pla de tall és
+      projectant).
+    es: Cualquier plano que corte una esfera lo hace según una circunferencia (la
+      superficie esférica es igual en todas las direcciones). En proyección
+      ortogonal, esa circunferencia se ve en verdadera magnitud solo si el plano
+      de corte es paralelo al plano de proyección; en cualquier otro caso se
+      proyecta escorzada como una elipse (y como un segmento si el plano de
+      corte es proyectante).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.rotations_abatiments
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En sistema dièdric, quan s'abat un pla oblic sobre el pla horitzontal de
+      projecció (PH), quina recta actua com a eix de gir (xarnera o bisagra) del
+      abatiment?
+    es: En sistema diédrico, cuando se abate un plano oblicuo sobre el plano
+      horizontal de proyección (PH), ¿qué recta actúa como eje de giro (charnela
+      o bisagra) del abatimiento?
+  options:
+    - id: A
+      ca: La traça horitzontal del pla
+      es: La traza horizontal del plano
+    - id: B
+      ca: La traça vertical del pla
+      es: La traza vertical del plano
+    - id: C
+      ca: La línia de terra (LT)
+      es: La línea de tierra (LT)
+    - id: D
+      ca: La línia de màxima pendent del pla
+      es: La línea de máxima pendiente del plano
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'abatiment és un gir del pla al voltant d'una de les seves traces fins
+      fer-lo coincidir amb el pla de projecció. Si abatem sobre el PH, l'eix
+      (xarnera) és la traça horitzontal del pla, que queda fixa mentre la resta
+      del pla gira. La línia de terra i la línia de màxima pendent no són eixos
+      de gir; la traça vertical seria l'eix només si abatéssim sobre el pla
+      vertical (PV).
+    es: El abatimiento es un giro del plano alrededor de una de sus trazas hasta
+      hacerlo coincidir con el plano de proyección. Si abatimos sobre el PH, el
+      eje (charnela) es la traza horizontal del plano, que queda fija mientras
+      el resto del plano gira. La línea de tierra y la línea de máxima pendiente
+      no son ejes de giro; la traza vertical sería el eje solo si abatiéramos
+      sobre el plano vertical (PV).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.rotations_abatiments
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Una recta és paral·lela al pla vertical de projecció (recta frontal). En
+      quina projecció es mesura directament la seva vertadera magnitud?
+    es: Una recta es paralela al plano vertical de proyección (recta frontal). ¿En
+      qué proyección se mide directamente su verdadera magnitud?
+  options:
+    - id: A
+      ca: En la projecció vertical (alçat)
+      es: En la proyección vertical (alzado)
+    - id: B
+      ca: En la projecció horitzontal (planta)
+      es: En la proyección horizontal (planta)
+    - id: C
+      ca: En cap; cal fer sempre un abatiment
+      es: En ninguna; hay que hacer siempre un abatimiento
+    - id: D
+      ca: Només en la projecció de perfil
+      es: Solo en la proyección de perfil
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Un segment es projecta en vertadera magnitud sobre un pla de projecció quan
+      és paral·lel a aquest pla. Una recta frontal és paral·lela al PV, de
+      manera que la seva projecció vertical (alçat) mostra la longitud real; a
+      més, l'angle que forma amb el PH també apareix en vertadera magnitud a
+      l'alçat. No cal cap abatiment.
+    es: Un segmento se proyecta en verdadera magnitud sobre un plano de proyección
+      cuando es paralelo a dicho plano. Una recta frontal es paralela al PV, por
+      lo que su proyección vertical (alzado) muestra la longitud real; además,
+      el ángulo que forma con el PH también aparece en verdadera magnitud en el
+      alzado. No hace falta ningún abatimiento.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.rotations_abatiments
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Un segment AB té una projecció horitzontal de 60 mm. Els extrems tenen cotes
+      (altures) de 20 mm i 50 mm. Determina la vertadera magnitud del segment
+      pel mètode del triangle de rebatiment.
+    es: Un segmento AB tiene una proyección horizontal de 60 mm. Los extremos tienen
+      cotas (alturas) de 20 mm y 50 mm. Determina la verdadera magnitud del
+      segmento por el método del triángulo de abatimiento.
+  options:
+    - id: A
+      ca: 67,1 mm
+      es: 67,1 mm
+    - id: B
+      ca: 60,0 mm
+      es: 60,0 mm
+    - id: C
+      ca: 78,1 mm
+      es: 78,1 mm
+    - id: D
+      ca: 90,0 mm
+      es: 90,0 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La vertadera magnitud és la hipotenusa d'un triangle rectangle amb un catet
+      igual a la projecció horitzontal (60 mm) i l'altre igual a la DIFERÈNCIA
+      de cotes (50 − 20 = 30 mm): VM = sqrt(60^2 + 30^2) = sqrt(4500) = 67,1 mm.
+      Error B: prendre només la projecció. Error C: usar la cota 50 en lloc de
+      la diferència, sqrt(60^2+50^2)=78,1. Error D: sumar 60+30."
+    es: "La verdadera magnitud es la hipotenusa de un triángulo rectángulo con un
+      cateto igual a la proyección horizontal (60 mm) y el otro igual a la
+      DIFERENCIA de cotas (50 − 20 = 30 mm): VM = sqrt(60^2 + 30^2) = sqrt(4500)
+      = 67,1 mm. Error B: tomar solo la proyección. Error C: usar la cota 50 en
+      vez de la diferencia, sqrt(60^2+50^2)=78,1. Error D: sumar 60+30."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.rotations_abatiments
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En abatre un pla sobre el PH al voltant de la seva traça horitzontal, en
+      quina direcció es desplaça (dins el dibuix) la projecció de cada punt en
+      passar a la seva posició abatuda?
+    es: Al abatir un plano sobre el PH alrededor de su traza horizontal, ¿en qué
+      dirección se desplaza (dentro del dibujo) la proyección de cada punto al
+      pasar a su posición abatida?
+  options:
+    - id: A
+      ca: Perpendicular a la traça horitzontal (xarnera)
+      es: Perpendicular a la traza horizontal (charnela)
+    - id: B
+      ca: Paral·lela a la traça horitzontal
+      es: Paralela a la traza horizontal
+    - id: C
+      ca: Perpendicular a la línia de terra
+      es: Perpendicular a la línea de tierra
+    - id: D
+      ca: Paral·lela a la traça vertical
+      es: Paralela a la traza vertical
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En un gir al voltant d'un eix, cada punt es mou dins un pla perpendicular a
+      l'eix. Com que l'eix és la traça horitzontal, cada punt descriu un arc
+      contingut en un pla perpendicular a aquesta traça; en projecció sobre el
+      PH, aquest recorregut es veu com una recta perpendicular a la xarnera. Per
+      això la posició abatuda de cada punt s'alinea perpendicularment a la traça
+      horitzontal.
+    es: En un giro alrededor de un eje, cada punto se mueve dentro de un plano
+      perpendicular al eje. Como el eje es la traza horizontal, cada punto
+      describe un arco contenido en un plano perpendicular a dicha traza; en
+      proyección sobre el PH, ese recorrido se ve como una recta perpendicular a
+      la charnela. Por eso la posición abatida de cada punto se alinea
+      perpendicularmente a la traza horizontal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.rotations_abatiments
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: La línia de màxima pendent d'un pla té una vertadera magnitud de 80 mm i la
+      seva projecció horitzontal fa 40 mm. Quin angle forma el pla amb el pla
+      horitzontal de projecció?
+    es: La línea de máxima pendiente de un plano tiene una verdadera magnitud de 80
+      mm y su proyección horizontal mide 40 mm. ¿Qué ángulo forma el plano con
+      el plano horizontal de proyección?
+  options:
+    - id: A
+      ca: 60°
+      es: 60°
+    - id: B
+      ca: 30°
+      es: 30°
+    - id: C
+      ca: 45°
+      es: 45°
+    - id: D
+      ca: 26,6°
+      es: 26,6°
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'angle del pla amb el PH és el que forma la seva línia de màxima pendent
+      amb la pròpia projecció horitzontal. La projecció horitzontal és el catet
+      adjacent: cos θ = projecció / VM = 40/80 = 0,5, d'on θ = 60°. Error B
+      (30°): usar sin en lloc de cos, arcsin(0,5). Error D (26,6°): fer
+      arctan(40/80). Error C (45°): suposar catets iguals."
+    es: "El ángulo del plano con el PH es el que forma su línea de máxima pendiente
+      con su propia proyección horizontal. La proyección horizontal es el cateto
+      adyacente: cos θ = proyección / VM = 40/80 = 0,5, de donde θ = 60°. Error
+      B (30°): usar sin en vez de cos, arcsin(0,5). Error D (26,6°): hacer
+      arctan(40/80). Error C (45°): suponer catetos iguales."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.dihedral.rotations_abatiments
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: S'abat un pla oblic sobre el PH al voltant de la seva traça horitzontal. Un
+      punt P del pla té la seva projecció horitzontal situada a 30 mm de la
+      traça i té una cota (altura) de 40 mm. A quina distància de la xarnera
+      queda el punt abatut P0?
+    es: Se abate un plano oblicuo sobre el PH alrededor de su traza horizontal. Un
+      punto P del plano tiene su proyección horizontal situada a 30 mm de la
+      traza y tiene una cota (altura) de 40 mm. ¿A qué distancia de la charnela
+      queda el punto abatido P0?
+  options:
+    - id: A
+      ca: 50 mm
+      es: 50 mm
+    - id: B
+      ca: 30 mm
+      es: 30 mm
+    - id: C
+      ca: 40 mm
+      es: 40 mm
+    - id: D
+      ca: 70 mm
+      es: 70 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El gir conserva la distància real de P a l'eix. Aquesta distància real és
+      la hipotenusa del triangle rectangle format per la distància de la
+      projecció horitzontal a la xarnera (30 mm) i la cota del punt (40 mm): d =
+      sqrt(30^2 + 40^2) = sqrt(2500) = 50 mm. En abatre, P0 queda sobre la
+      perpendicular a la traça a aquesta distància de 50 mm. Error B: ignorar la
+      cota. Error C: usar només la cota. Error D: sumar 30+40."
+    es: "El giro conserva la distancia real de P al eje. Esa distancia real es la
+      hipotenusa del triángulo rectángulo formado por la distancia de la
+      proyección horizontal a la charnela (30 mm) y la cota del punto (40 mm): d
+      = sqrt(30^2 + 40^2) = sqrt(2500) = 50 mm. Al abatir, P0 queda sobre la
+      perpendicular a la traza a esa distancia de 50 mm. Error B: ignorar la
+      cota. Error C: usar solo la cota. Error D: sumar 30+40."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.isometric
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En una axonometria isomètrica, quin angle formen entre si els tres eixos
+      axonomètrics en el pla del dibuix?
+    es: En una axonometría isométrica, ¿qué ángulo forman entre sí los tres ejes
+      axonométricos en el plano del dibujo?
+  options:
+    - id: A
+      ca: 120° entre cada parell d'eixos
+      es: 120° entre cada par de ejes
+    - id: B
+      ca: 90° entre cada parell d'eixos
+      es: 90° entre cada par de ejes
+    - id: C
+      ca: 60° entre cada parell d'eixos
+      es: 60° entre cada par de ejes
+    - id: D
+      ca: Dos eixos a 90° i el tercer a 45°
+      es: Dos ejes a 90° y el tercero a 45°
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La característica definitòria de la isometria és que els tres eixos són
+      simètrics respecte del pla del quadre, de manera que es projecten formant
+      angles iguals entre si. Com que la suma al voltant del punt d'origen és
+      360°, cada parell d'eixos forma 360°/3 = 120°. (Els 90° serien el sistema
+      dièdric d'un sol pla; els 45° corresponen a la perspectiva cavallera.)
+    es: La característica que define la isometría es que los tres ejes son
+      simétricos respecto del plano del cuadro, por lo que se proyectan formando
+      ángulos iguales entre sí. Como la suma alrededor del origen es 360°, cada
+      par de ejes forma 360°/3 = 120°. (Los 90° serían el sistema diédrico de un
+      solo plano; los 45° corresponden a la perspectiva caballera.)
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.isometric
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Què distingeix l'axonometria isomètrica de la dimètrica i la trimètrica?
+    es: ¿Qué distingue a la axonometría isométrica de la dimétrica y la trimétrica?
+  options:
+    - id: A
+      ca: Els tres coeficients de reducció dels eixos són iguals
+      es: Los tres coeficientes de reducción de los ejes son iguales
+    - id: B
+      ca: Només dos coeficients de reducció són iguals i el tercer diferent
+      es: Solo dos coeficientes de reducción son iguales y el tercero distinto
+    - id: C
+      ca: Els tres coeficients de reducció són tots diferents
+      es: Los tres coeficientes de reducción son todos distintos
+    - id: D
+      ca: "No hi ha cap reducció: totes les mesures es conserven a mida real"
+      es: "No hay reducción alguna: todas las medidas se conservan a tamaño real"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La classificació axonomètrica es basa en els coeficients de reducció dels
+      tres eixos. Isomètrica ('igual mesura') = els tres coeficients iguals;
+      dimètrica = dos iguals i un diferent; trimètrica = els tres diferents. Per
+      tant la resposta B descriu la dimètrica i la C la trimètrica. La D és
+      falsa: en isometria ortogonal hi ha reducció (coeficient ≈ 0,816)."
+    es: "La clasificación axonométrica se basa en los coeficientes de reducción de
+      los tres ejes. Isométrica ('igual medida') = los tres coeficientes
+      iguales; dimétrica = dos iguales y uno distinto; trimétrica = los tres
+      distintos. Por tanto la respuesta B describe la dimétrica y la C la
+      trimétrica. La D es falsa: en isometría ortogonal hay reducción
+      (coeficiente ≈ 0,816)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.isometric
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quin és el coeficient de reducció teòric de cadascun dels eixos en
+      l'axonometria isomètrica ortogonal?
+    es: ¿Cuál es el coeficiente de reducción teórico de cada uno de los ejes en la
+      axonometría isométrica ortogonal?
+  options:
+    - id: A
+      ca: ≈ 0,816 (arrel de 2/3)
+      es: ≈ 0,816 (raíz de 2/3)
+    - id: B
+      ca: ≈ 0,707 (arrel de 2/2)
+      es: ≈ 0,707 (raíz de 2/2)
+    - id: C
+      ca: ≈ 0,577 (1/arrel de 3)
+      es: ≈ 0,577 (1/raíz de 3)
+    - id: D
+      ca: ≈ 0,943 (coeficient de l'eix llarg de la dimètrica)
+      es: ≈ 0,943 (coeficiente del eje largo de la dimétrica)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En la projecció isomètrica ortogonal, els tres eixos formen el mateix angle
+      amb el pla del quadre. El coeficient de reducció comú val
+      cos(arcsin(1/√3)) = √(2/3) ≈ 0,816. El 0,707 (=√2/2) és una confusió amb
+      cos 45°; el 0,577 (=1/√3) és la relació entre semieixos de l'el·lipse
+      d'una circumferència, no el coeficient dels eixos.
+    es: En la proyección isométrica ortogonal, los tres ejes forman el mismo ángulo
+      con el plano del cuadro. El coeficiente de reducción común vale
+      cos(arcsen(1/√3)) = √(2/3) ≈ 0,816. El 0,707 (=√2/2) es una confusión con
+      cos 45°; el 0,577 (=1/√3) es la relación entre semiejes de la elipse de
+      una circunferencia, no el coeficiente de los ejes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.isometric
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: A la pràctica es dibuixa la isometria a escala natural (coeficient 1) en
+      lloc d'aplicar la reducció teòrica. Per quin factor queda ampliat el
+      dibuix respecte de la projecció isomètrica veritable?
+    es: En la práctica se dibuja la isometría a escala natural (coeficiente 1) en
+      lugar de aplicar la reducción teórica. ¿Por qué factor queda ampliado el
+      dibujo respecto de la proyección isométrica verdadera?
+  options:
+    - id: A
+      ca: ≈ 1,22
+      es: ≈ 1,22
+    - id: B
+      ca: ≈ 0,82
+      es: ≈ 0,82
+    - id: C
+      ca: ≈ 1,41
+      es: ≈ 1,41
+    - id: D
+      ca: ≈ 1,15
+      es: ≈ 1,15
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Si s'utilitzen les mesures reals directament sobre els eixos (coeficient 1)
+      en comptes del coeficient veritable 0,816, el dibuix resulta ampliat pel
+      factor 1/0,816 = 1,22. L'opció 0,82 és la reducció mateixa (el factor
+      invers); 1,41 (=√2) i 1,15 no corresponen a aquesta relació.
+    es: Si se utilizan las medidas reales directamente sobre los ejes (coeficiente
+      1) en vez del coeficiente verdadero 0,816, el dibujo resulta ampliado por
+      el factor 1/0,816 = 1,22. La opción 0,82 es la reducción misma (el factor
+      inverso); 1,41 (=√2) y 1,15 no corresponden a esta relación.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.isometric
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Una aresta d'una peça mesura 120 mm de longitud real i és paral·lela a un
+      eix isomètric. Quina longitud tindrà en la projecció isomètrica veritable
+      (amb reducció)?
+    es: Una arista de una pieza mide 120 mm de longitud real y es paralela a un eje
+      isométrico. ¿Qué longitud tendrá en la proyección isométrica verdadera
+      (con reducción)?
+  options:
+    - id: A
+      ca: ≈ 98 mm
+      es: ≈ 98 mm
+    - id: B
+      ca: 120 mm (no varia)
+      es: 120 mm (no varía)
+    - id: C
+      ca: ≈ 85 mm
+      es: ≈ 85 mm
+    - id: D
+      ca: ≈ 147 mm
+      es: ≈ 147 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Sobre un eix isomètric s'aplica el coeficient de reducció 0,816: 120 mm ×
+      0,816 = 97,9 ≈ 98 mm. La resposta B ignora la reducció (això seria el
+      dibuix a escala natural); 85 mm surt d'aplicar per error 0,707; 147 mm
+      surt d'ampliar per 1,22 en lloc de reduir."
+    es: "Sobre un eje isométrico se aplica el coeficiente de reducción 0,816: 120 mm
+      × 0,816 = 97,9 ≈ 98 mm. La respuesta B ignora la reducción (eso sería el
+      dibujo a escala natural); 85 mm sale de aplicar por error 0,707; 147 mm
+      sale de ampliar por 1,22 en lugar de reducir."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.isometric
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Una circumferència de 40 mm de diàmetre situada en una cara paral·lela a un
+      pla coordenat es representa, en un dibuix isomètric a escala natural
+      (coeficient 1), com una el·lipse. Quant fa aproximadament el seu eix
+      major?
+    es: Una circunferencia de 40 mm de diámetro situada en una cara paralela a un
+      plano coordenado se representa, en un dibujo isométrico a escala natural
+      (coeficiente 1), como una elipse. ¿Cuánto mide aproximadamente su eje
+      mayor?
+  options:
+    - id: A
+      ca: ≈ 49 mm
+      es: ≈ 49 mm
+    - id: B
+      ca: 40 mm (igual que el diàmetre)
+      es: 40 mm (igual que el diámetro)
+    - id: C
+      ca: ≈ 33 mm
+      es: ≈ 33 mm
+    - id: D
+      ca: ≈ 23 mm
+      es: ≈ 23 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En un dibuix isomètric a escala natural, la circumferència es converteix en
+      una el·lipse amb eix major = 1,22 × D i eix menor = 0,707 × D (la relació
+      menor/major és sempre 1/√3 ≈ 0,577). Així, eix major = 1,22 × 40 = 48,8 ≈
+      49 mm. El valor 40 mm ignoraria l'ampliació; 33 mm (0,816×40) confon amb
+      el coeficient d'eix; 23 mm (0,577×40) és una fracció incorrecta del
+      diàmetre.
+    es: En un dibujo isométrico a escala natural, la circunferencia se convierte en
+      una elipse con eje mayor = 1,22 × D y eje menor = 0,707 × D (la relación
+      menor/mayor es siempre 1/√3 ≈ 0,577). Así, eje mayor = 1,22 × 40 = 48,8 ≈
+      49 mm. El valor 40 mm ignoraría la ampliación; 33 mm (0,816×40) confunde
+      con el coeficiente de eje; 23 mm (0,577×40) es una fracción incorrecta del
+      diámetro.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.orthogonal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En l'axonometria ortogonal, la direcció de projecció és perpendicular al pla
+      del quadre. Quina relació compleixen sempre els tres coeficients de
+      reducció (u, v, w) dels eixos?
+    es: En la axonometría ortogonal, la dirección de proyección es perpendicular al
+      plano del cuadro. ¿Qué relación cumplen siempre los tres coeficientes de
+      reducción (u, v, w) de los ejes?
+  options:
+    - id: A
+      ca: u^2 + v^2 + w^2 = 2
+      es: u^2 + v^2 + w^2 = 2
+    - id: B
+      ca: u^2 + v^2 + w^2 = 1
+      es: u^2 + v^2 + w^2 = 1
+    - id: C
+      ca: u + v + w = 2
+      es: u + v + w = 2
+    - id: D
+      ca: u^2 + v^2 + w^2 = 3
+      es: u^2 + v^2 + w^2 = 3
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El teorema fonamental de l'axonometria ortogonal estableix que la suma dels
+      quadrats dels coeficients de reducció dels tres eixos val 2: u^2 + v^2 +
+      w^2 = 2. És una condició geomètrica derivada del fet que la direcció
+      projectant és normal al pla del quadre. Les altres expressions confonen la
+      suma amb la suma de quadrats o assignen un valor incorrecte."
+    es: "El teorema fundamental de la axonometría ortogonal establece que la suma de
+      los cuadrados de los coeficientes de reducción de los tres ejes vale 2:
+      u^2 + v^2 + w^2 = 2. Es una condición geométrica derivada de que la
+      dirección proyectante es normal al plano del cuadro. Las otras expresiones
+      confunden la suma con la suma de cuadrados o asignan un valor incorrecto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.orthogonal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Segons la relació entre els coeficients de reducció dels eixos, quina
+      afirmació defineix correctament l'axonometria ortogonal DIMÈTRICA?
+    es: Según la relación entre los coeficientes de reducción de los ejes, ¿qué
+      afirmación define correctamente la axonometría ortogonal DIMÉTRICA?
+  options:
+    - id: A
+      ca: Dos coeficients de reducció són iguals entre si i el tercer és diferent.
+      es: Dos coeficientes de reducción son iguales entre sí y el tercero es
+        diferente.
+    - id: B
+      ca: Els tres coeficients de reducció són iguals.
+      es: Los tres coeficientes de reducción son iguales.
+    - id: C
+      ca: Els tres coeficients de reducció són diferents entre si.
+      es: Los tres coeficientes de reducción son diferentes entre sí.
+    - id: D
+      ca: Els tres eixos formen sempre angles de 120° entre si.
+      es: Los tres ejes forman siempre ángulos de 120° entre sí.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En la dimètrica, dos dels tres coeficients de reducció (i per tant dues
+      escales dels eixos) coincideixen i el tercer difereix. Si els tres fossin
+      iguals seria isomètrica (opció B, amb angles de 120°, opció D); si els
+      tres fossin diferents seria trimètrica (opció C).
+    es: En la dimétrica, dos de los tres coeficientes de reducción (y por tanto dos
+      escalas de los ejes) coinciden y el tercero difiere. Si los tres fueran
+      iguales sería isométrica (opción B, con ángulos de 120°, opción D); si los
+      tres fueran distintos sería trimétrica (opción C).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.orthogonal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "El coeficient de reducció real dels tres eixos en la perspectiva isomètrica
+      (cas particular de l'axonometria ortogonal) és aproximadament:"
+    es: "El coeficiente de reducción real de los tres ejes en la perspectiva
+      isométrica (caso particular de la axonometría ortogonal) es
+      aproximadamente:"
+  options:
+    - id: A
+      ca: 0,816
+      es: 0,816
+    - id: B
+      ca: 0,707
+      es: 0,707
+    - id: C
+      ca: 1,000
+      es: 1,000
+    - id: D
+      ca: 0,500
+      es: 0,500
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En la isomètrica els tres coeficients són iguals: u = v = w. Amb u^2 + v^2
+      + w^2 = 2 s'obté 3u^2 = 2, per tant u = √(2/3) ≈ 0,816. El valor 1,000 és
+      el coeficient CONVENCIONAL (sense reducció) que s'usa per comoditat, no el
+      real; 0,707 (√2/2) i 0,500 no compleixen la condició."
+    es: "En la isométrica los tres coeficientes son iguales: u = v = w. Con u^2 +
+      v^2 + w^2 = 2 se obtiene 3u^2 = 2, por tanto u = √(2/3) ≈ 0,816. El valor
+      1,000 es el coeficiente CONVENCIONAL (sin reducción) que se usa por
+      comodidad, no el real; 0,707 (√2/2) y 0,500 no cumplen la condición."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.orthogonal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En una axonometria ortogonal dimètrica, dos dels coeficients de reducció
+      valen u = v = 0,94. Aplicant el teorema fonamental, quin és el valor del
+      tercer coeficient w?
+    es: En una axonometría ortogonal dimétrica, dos de los coeficientes de reducción
+      valen u = v = 0,94. Aplicando el teorema fundamental, ¿cuál es el valor
+      del tercer coeficiente w?
+  options:
+    - id: A
+      ca: ≈ 0,47
+      es: ≈ 0,47
+    - id: B
+      ca: ≈ 0,94
+      es: ≈ 0,94
+    - id: C
+      ca: ≈ 0,23
+      es: ≈ 0,23
+    - id: D
+      ca: ≈ 0,71
+      es: ≈ 0,71
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Del teorema u^2 + v^2 + w^2 = 2: 0,94^2 + 0,94^2 + w^2 = 2 → 0,8836 +
+      0,8836 + w^2 = 2 → w^2 = 0,2328 → w = √0,2328 ≈ 0,48 ≈ 0,47. Aquests són
+      els valors de la dimètrica normalitzada (relació d'escales 1:1:½). L'error
+      de 0,23 prové d'oblidar l'arrel quadrada (quedar-se amb w^2)."
+    es: "Del teorema u^2 + v^2 + w^2 = 2: 0,94^2 + 0,94^2 + w^2 = 2 → 0,8836 +
+      0,8836 + w^2 = 2 → w^2 = 0,2328 → w = √0,2328 ≈ 0,48 ≈ 0,47. Estos son los
+      valores de la dimétrica normalizada (relación de escalas 1:1:½). El error
+      de 0,23 proviene de olvidar la raíz cuadrada (quedarse con w^2)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.orthogonal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Quina de les següents afirmacions descriu correctament l'axonometria
+      ortogonal TRIMÈTRICA?
+    es: ¿Cuál de las siguientes afirmaciones describe correctamente la axonometría
+      ortogonal TRIMÉTRICA?
+  options:
+    - id: A
+      ca: Els tres coeficients de reducció són diferents i els tres angles entre eixos
+        també són diferents entre si.
+      es: Los tres coeficientes de reducción son diferentes y los tres ángulos entre
+        ejes también son distintos entre sí.
+    - id: B
+      ca: Té dos coeficients de reducció iguals i el tercer diferent.
+      es: Tiene dos coeficientes de reducción iguales y el tercero diferente.
+    - id: C
+      ca: Els tres eixos formen angles iguals de 120° i tenen el mateix coeficient.
+      es: Los tres ejes forman ángulos iguales de 120° y tienen el mismo coeficiente.
+    - id: D
+      ca: Els tres coeficients de reducció sumen exactament 1.
+      es: Los tres coeficientes de reducción suman exactamente 1.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La trimètrica és el cas general: els tres coeficients de reducció són
+      diferents (u ≠ v ≠ w) i, en conseqüència, els tres angles que formen els
+      eixos entre si també són diferents. L'opció B correspon a la dimètrica, la
+      C a la isomètrica i la D confon la condició (la suma de QUADRATS val 2, no
+      la suma dels coeficients)."
+    es: "La trimétrica es el caso general: los tres coeficientes de reducción son
+      diferentes (u ≠ v ≠ w) y, en consecuencia, los tres ángulos que forman los
+      ejes entre sí también son distintos. La opción B corresponde a la
+      dimétrica, la C a la isométrica y la D confunde la condición (la suma de
+      CUADRADOS vale 2, no la suma de los coeficientes)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.axonometric.orthogonal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Una aresta d'una peça mesura 80 mm en la realitat i es dibuixa al llarg d'un
+      eix axonomètric el coeficient de reducció del qual és 0,47. Quina longitud
+      tindrà aquesta aresta en el dibuix (sense aplicar cap escala addicional)?
+    es: Una arista de una pieza mide 80 mm en la realidad y se dibuja a lo largo de
+      un eje axonométrico cuyo coeficiente de reducción es 0,47. ¿Qué longitud
+      tendrá esa arista en el dibujo (sin aplicar ninguna escala adicional)?
+  options:
+    - id: A
+      ca: ≈ 37,6 mm
+      es: ≈ 37,6 mm
+    - id: B
+      ca: ≈ 170 mm
+      es: ≈ 170 mm
+    - id: C
+      ca: 80 mm
+      es: 80 mm
+    - id: D
+      ca: ≈ 18,8 mm
+      es: ≈ 18,8 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El coeficient de reducció és la raó entre la longitud projectada i la real:
+      L_dibuix = L_real × coeficient = 80 × 0,47 = 37,6 mm. L'opció B divideix
+      per 0,47 (aplica el factor a l'inrevés), la C oblida la reducció i la D
+      aplica 0,47^2 en lloc de 0,47."
+    es: "El coeficiente de reducción es la razón entre la longitud proyectada y la
+      real: L_dibujo = L_real × coeficiente = 80 × 0,47 = 37,6 mm. La opción B
+      divide por 0,47 (aplica el factor al revés), la C olvida la reducción y la
+      D aplica 0,47^2 en lugar de 0,47."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.frontal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En la perspectiva cònica frontal (paral·lela), quants punts de fuga té la
+      representació dels elements en profunditat de l'objecte?
+    es: En la perspectiva cónica frontal (paralela), ¿cuántos puntos de fuga tiene
+      la representación de los elementos en profundidad del objeto?
+  options:
+    - id: A
+      ca: Un únic punt de fuga, que coincideix amb el punt principal.
+      es: Un único punto de fuga, que coincide con el punto principal.
+    - id: B
+      ca: Dos punts de fuga situats sobre la línia d'horitzó.
+      es: Dos puntos de fuga situados sobre la línea de horizonte.
+    - id: C
+      ca: Tres punts de fuga (dos horitzontals i un vertical).
+      es: Tres puntos de fuga (dos horizontales y uno vertical).
+    - id: D
+      ca: Cap punt de fuga, perquè totes les arestes són paral·leles.
+      es: Ningún punto de fuga, porque todas las aristas son paralelas.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En la cònica frontal l'objecte té una cara paral·lela al pla del quadre.
+      Les arestes que hi són paral·leles no fuguen, però les perpendiculars al
+      quadre (en profunditat) conflueixen en un sol punt: el punt principal,
+      projecció ortogonal del punt de vista sobre el quadre. Per tant, un únic
+      punt de fuga. Dos punts corresponen a la cònica obliqua i tres a la
+      aèria."
+    es: "En la cónica frontal el objeto tiene una cara paralela al plano del cuadro.
+      Las aristas paralelas a él no fugan, pero las perpendiculares al cuadro
+      (en profundidad) confluyen en un solo punto: el punto principal,
+      proyección ortogonal del punto de vista sobre el cuadro. Por tanto, un
+      único punto de fuga. Dos puntos corresponden a la cónica oblicua y tres a
+      la aérea."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.frontal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Una cara de l'objecte és paral·lela al pla del quadre. Com es representa en
+      perspectiva cònica frontal?
+    es: Una cara del objeto es paralela al plano del cuadro. ¿Cómo se representa en
+      perspectiva cónica frontal?
+  options:
+    - id: A
+      ca: "Com una figura semblant a la real: conserva els angles i la forma, només
+        afectada per una reducció uniforme d'escala segons la distància."
+      es: "Como una figura semejante a la real: conserva los ángulos y la forma, solo
+        afectada por una reducción uniforme de escala según la distancia."
+    - id: B
+      ca: Deformada en un trapezi, perquè totes les seves arestes fuguen cap al punt
+        principal.
+      es: Deformada en un trapecio, porque todas sus aristas fugan hacia el punto
+        principal.
+    - id: C
+      ca: Amb els angles rectes convertits en 45°.
+      es: Con los ángulos rectos convertidos en 45°.
+    - id: D
+      ca: Sempre a mida real (escala 1:1), sense cap reducció.
+      es: Siempre a tamaño real (escala 1:1), sin ninguna reducción.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les figures situades en plans paral·lels al quadre no fuguen: les seves
+      arestes horitzontals i verticals romanen horitzontals i verticals i
+      paral·leles entre si. Es representen com a figures semblants (mateixos
+      angles, mateixa forma), amb una reducció uniforme que depèn de la seva
+      distància al quadre. Només tenen mida real les que estan contingudes en el
+      mateix pla del quadre."
+    es: "Las figuras situadas en planos paralelos al cuadro no fugan: sus aristas
+      horizontales y verticales permanecen horizontales y verticales y paralelas
+      entre sí. Se representan como figuras semejantes (mismos ángulos, misma
+      forma), con una reducción uniforme que depende de su distancia al cuadro.
+      Solo tienen tamaño real las contenidas en el propio plano del cuadro."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.frontal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En perspectiva cònica frontal, quines rectes conflueixen exactament en el
+      punt principal?
+    es: En perspectiva cónica frontal, ¿qué rectas confluyen exactamente en el punto
+      principal?
+  options:
+    - id: A
+      ca: Les rectes perpendiculars al pla del quadre (les de profunditat).
+      es: Las rectas perpendiculares al plano del cuadro (las de profundidad).
+    - id: B
+      ca: Les rectes verticals de l'objecte.
+      es: Las rectas verticales del objeto.
+    - id: C
+      ca: Les rectes horitzontals paral·leles al quadre.
+      es: Las rectas horizontales paralelas al cuadro.
+    - id: D
+      ca: Les rectes que formen 45° amb el quadre.
+      es: Las rectas que forman 45° con el cuadro.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El punt principal és la fuga de totes les rectes perpendiculars al pla del
+      quadre. Les verticals romanen verticals i les horitzontals paral·leles al
+      quadre romanen horitzontals (no fuguen). Les rectes a 45° amb el quadre
+      fuguen als punts de distància, no al punt principal.
+    es: El punto principal es la fuga de todas las rectas perpendiculares al plano
+      del cuadro. Las verticales permanecen verticales y las horizontales
+      paralelas al cuadro permanecen horizontales (no fugan). Las rectas a 45°
+      con el cuadro fugan a los puntos de distancia, no al punto principal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.frontal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: A quina alçada se situa la línia d'horitzó en una perspectiva cònica
+      frontal?
+    es: ¿A qué altura se sitúa la línea de horizonte en una perspectiva cónica
+      frontal?
+  options:
+    - id: A
+      ca: A l'alçada dels ulls de l'observador (alçada del punt de vista sobre el pla
+        del terra).
+      es: A la altura de los ojos del observador (altura del punto de vista sobre el
+        plano del suelo).
+    - id: B
+      ca: Sempre coincidint amb la línia de terra.
+      es: Siempre coincidiendo con la línea de tierra.
+    - id: C
+      ca: A l'alçada del punt més alt de l'objecte.
+      es: A la altura del punto más alto del objeto.
+    - id: D
+      ca: A la meitat de la distància entre l'observador i el quadre.
+      es: A la mitad de la distancia entre el observador y el cuadro.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La línia d'horitzó és la intersecció visual del pla horitzontal que passa
+      pels ulls de l'observador amb el quadre; per tant està a l'alçada del punt
+      de vista. La seva separació respecte a la línia de terra és precisament
+      aquesta alçada de l'observador. No depèn de l'objecte ni de la distància
+      al quadre.
+    es: La línea de horizonte es la intersección visual del plano horizontal que
+      pasa por los ojos del observador con el cuadro; por tanto está a la altura
+      del punto de vista. Su separación respecto a la línea de tierra es
+      precisamente esa altura del observador. No depende del objeto ni de la
+      distancia al cuadro.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.frontal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: L'observador se situa a 4 m del pla del quadre. Si es dibuixa a escala 1:50,
+      a quina distància del punt principal, sobre la línia d'horitzó, cal
+      col·locar cadascun dels punts de distància?
+    es: El observador se sitúa a 4 m del plano del cuadro. Si se dibuja a escala
+      1:50, ¿a qué distancia del punto principal, sobre la línea de horizonte,
+      hay que colocar cada uno de los puntos de distancia?
+  options:
+    - id: A
+      ca: 8 cm.
+      es: 8 cm.
+    - id: B
+      ca: 80 cm.
+      es: 80 cm.
+    - id: C
+      ca: 0,8 cm.
+      es: 0,8 cm.
+    - id: D
+      ca: 2 cm.
+      es: 2 cm.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El punt de distància es col·loca sobre la línia d'horitzó a una distància
+      del punt principal igual a la distància real observador-quadre, però
+      reduïda a escala. 4 m = 400 cm; a escala 1:50: 400/50 = 8 cm. L'error de
+      80 cm ve d'oblidar dividir (o dividir per 5) i el de 0,8 cm de dividir per
+      500."
+    es: "El punto de distancia se coloca sobre la línea de horizonte a una distancia
+      del punto principal igual a la distancia real observador-cuadro, pero
+      reducida a escala. 4 m = 400 cm; a escala 1:50: 400/50 = 8 cm. El error de
+      80 cm proviene de olvidar dividir (o dividir entre 5) y el de 0,8 cm de
+      dividir entre 500."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.frontal
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: En la perspectiva cònica frontal, els punts de distància són,
+      geomètricament, els punts de fuga de quines rectes?
+    es: En la perspectiva cónica frontal, los puntos de distancia son,
+      geométricamente, los puntos de fuga de ¿qué rectas?
+  options:
+    - id: A
+      ca: De les rectes horitzontals que formen 45° amb el pla del quadre (les
+        diagonals dels quadrats del terra).
+      es: De las rectas horizontales que forman 45° con el plano del cuadro (las
+        diagonales de los cuadrados del suelo).
+    - id: B
+      ca: De les rectes perpendiculars al quadre.
+      es: De las rectas perpendiculares al cuadro.
+    - id: C
+      ca: De les rectes verticals de l'objecte.
+      es: De las rectas verticales del objeto.
+    - id: D
+      ca: De les rectes que formen 30° amb el pla del quadre.
+      es: De las rectas que forman 30° con el plano del cuadro.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els punts de distància són la fuga de les rectes horitzontals inclinades 45°
+      respecte del quadre. Com que el triangle format pel punt de vista, el punt
+      principal i el punt de distància és isòsceles rectangle, la distància PP-D
+      és igual a la distància observador-quadre; per això serveixen per
+      transportar profunditats reals (les diagonals a 45° dels quadrats del
+      paviment). Les perpendiculars fuguen al punt principal.
+    es: Los puntos de distancia son la fuga de las rectas horizontales inclinadas
+      45° respecto al cuadro. Como el triángulo formado por el punto de vista,
+      el punto principal y el punto de distancia es isósceles rectángulo, la
+      distancia PP-D es igual a la distancia observador-cuadro; por eso sirven
+      para transportar profundidades reales (las diagonales a 45° de los
+      cuadrados del pavimento). Las perpendiculares fugan al punto principal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.oblique
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: En la perspectiva cònica obliqua d'un objecte prismàtic recolzat sobre el
+      pla del terra, quants punts de fuga s'utilitzen per als dos feixos
+      d'arestes horitzontals i on se situen?
+    es: En la perspectiva cónica oblicua de un objeto prismático apoyado sobre el
+      plano del suelo, ¿cuántos puntos de fuga se utilizan para los dos haces de
+      aristas horizontales y dónde se sitúan?
+  options:
+    - id: A
+      ca: Dos punts de fuga, tots dos situats sobre la línia d'horitzó
+      es: Dos puntos de fuga, ambos situados sobre la línea de horizonte
+    - id: B
+      ca: Un únic punt de fuga situat sobre la línia d'horitzó
+      es: Un único punto de fuga situado sobre la línea de horizonte
+    - id: C
+      ca: "Tres punts de fuga: dos a l'horitzó i un al zenit"
+      es: "Tres puntos de fuga: dos en el horizonte y uno en el cenit"
+    - id: D
+      ca: Dos punts de fuga situats sobre la línia de terra
+      es: Dos puntos de fuga situados sobre la línea de tierra
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La perspectiva cònica obliqua (de dos punts) es caracteritza perquè cap de
+      les dues direccions horitzontals principals de l'objecte és paral·lela al
+      quadre; per tant, cada feix d'arestes horitzontals convergeix en el seu
+      propi punt de fuga. Com que aquestes arestes són horitzontals, tots dos
+      punts de fuga queden sobre la línia d'horitzó (a l'altura de l'ull). Un
+      sol punt de fuga correspon a la cònica frontal, i el tercer punt
+      (zenit/nadir) apareix només en la cònica aèria/obliqua amb el quadre
+      inclinat.
+    es: La perspectiva cónica oblicua (de dos puntos) se caracteriza porque ninguna
+      de las dos direcciones horizontales principales del objeto es paralela al
+      cuadro; por ello cada haz de aristas horizontales converge en su propio
+      punto de fuga. Al ser aristas horizontales, ambos puntos de fuga quedan
+      sobre la línea de horizonte (a la altura del ojo). Un solo punto de fuga
+      corresponde a la cónica frontal, y el tercer punto (cenit/nadir) aparece
+      solo en la cónica aérea con el cuadro inclinado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.oblique
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: En una perspectiva cònica obliqua d'un edifici, amb el pla del quadre
+      vertical, com es representen les arestes verticals de l'edifici?
+    es: En una perspectiva cónica oblicua de un edificio, con el plano del cuadro
+      vertical, ¿cómo se representan las aristas verticales del edificio?
+  options:
+    - id: A
+      ca: Es mantenen verticals i paral·leles entre si, sense fugir a cap punt
+      es: Se mantienen verticales y paralelas entre sí, sin fugar a ningún punto
+    - id: B
+      ca: Convergeixen en un tercer punt de fuga situat al zenit
+      es: Convergen en un tercer punto de fuga situado en el cenit
+    - id: C
+      ca: Convergeixen en un dels dos punts de fuga de l'horitzó
+      es: Convergen en uno de los dos puntos de fuga del horizonte
+    - id: D
+      ca: Convergeixen en el punt principal P
+      es: Convergen en el punto principal P
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les rectes paral·leles al pla del quadre no tenen punt de fuga: es
+      projecten paral·leles i conservant la seva direcció. Com que el quadre és
+      vertical, les arestes verticals de l'objecte són paral·leles al quadre i,
+      per tant, es dibuixen verticals i paral·leles entre si. Només si s'inclina
+      el quadre (cònica aèria) aquestes verticals fugirien cap a un tercer punt
+      (zenit o nadir)."
+    es: "Las rectas paralelas al plano del cuadro no tienen punto de fuga: se
+      proyectan paralelas conservando su dirección. Como el cuadro es vertical,
+      las aristas verticales del objeto son paralelas al cuadro y, por tanto, se
+      dibujan verticales y paralelas entre sí. Solo si se inclina el cuadro
+      (cónica aérea) esas verticales fugarían hacia un tercer punto (cenit o
+      nadir)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.oblique
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quina és la condició geomètrica que distingeix una perspectiva cònica
+      obliqua d'una perspectiva cònica frontal (paral·lela) d'un mateix prisma
+      recte, amb el quadre vertical?
+    es: ¿Cuál es la condición geométrica que distingue una perspectiva cónica
+      oblicua de una perspectiva cónica frontal (paralela) de un mismo prisma
+      recto, con el cuadro vertical?
+  options:
+    - id: A
+      ca: En l'obliqua, cap cara vertical del prisma és paral·lela al quadre; les dues
+        direccions horitzontals són obliqües al quadre
+      es: En la oblicua, ninguna cara vertical del prisma es paralela al cuadro; las
+        dos direcciones horizontales son oblicuas al cuadro
+    - id: B
+      ca: En l'obliqua, una cara vertical del prisma és paral·lela al quadre i l'altra
+        hi és perpendicular
+      es: En la oblicua, una cara vertical del prisma es paralela al cuadro y la otra
+        es perpendicular a él
+    - id: C
+      ca: En l'obliqua, també les arestes verticals són obliqües al quadre
+      es: En la oblicua, también las aristas verticales son oblicuas al cuadro
+    - id: D
+      ca: En l'obliqua, la base del prisma és paral·lela al quadre
+      es: En la oblicua, la base del prisma es paralela al cuadro
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En la cònica frontal, una de les cares (i el corresponent feix d'arestes
+      horitzontals) és paral·lela al quadre i no fuga; només l'altre feix fuga
+      cap al punt principal. En la cònica obliqua, en canvi, l'objecte està
+      girat de manera que cap cara vertical és paral·lela al quadre: els dos
+      feixos horitzontals són obliqües al quadre i fuguen cada un al seu punt de
+      fuga sobre l'horitzó. Les verticals segueixen sent paral·leles al quadre
+      en tots dos casos."
+    es: "En la cónica frontal, una de las caras (y su haz de aristas horizontales)
+      es paralela al cuadro y no fuga; solo el otro haz fuga hacia el punto
+      principal. En la cónica oblicua, en cambio, el objeto está girado de modo
+      que ninguna cara vertical es paralela al cuadro: los dos haces
+      horizontales son oblicuos al cuadro y fugan cada uno a su punto de fuga
+      sobre el horizonte. Las verticales siguen siendo paralelas al cuadro en
+      ambos casos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.oblique
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En la perspectiva cònica obliqua d'un cub, els dos feixos d'arestes
+      horitzontals són perpendiculars entre si a l'espai i fuguen als punts F1 i
+      F2 sobre l'horitzó. Quin angle formen, al punt de vista V, els dos raigs
+      visuals VF1 i VF2 (les visuals que determinen aquests punts de fuga)?
+    es: En la perspectiva cónica oblicua de un cubo, los dos haces de aristas
+      horizontales son perpendiculares entre sí en el espacio y fugan a los
+      puntos F1 y F2 sobre el horizonte. ¿Qué ángulo forman, en el punto de
+      vista V, los dos rayos visuales VF1 y VF2 (las visuales que determinan
+      esos puntos de fuga)?
+  options:
+    - id: A
+      ca: 90°
+      es: 90°
+    - id: B
+      ca: 45°
+      es: 45°
+    - id: C
+      ca: 180° (V, F1 i F2 alineats)
+      es: 180° (V, F1 y F2 alineados)
+    - id: D
+      ca: 60°
+      es: 60°
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El punt de fuga d'un feix de rectes paral·leles s'obté traçant des del punt
+      de vista V una visual paral·lela a aquestes rectes fins a tallar el
+      quadre. Per tant, VF1 és paral·lel a un feix d'arestes i VF2 al feix
+      perpendicular. Com que les arestes d'un cub que es troben són
+      perpendiculars entre si (90°), les dues visuals també ho són: l'angle
+      F1-V-F2 és de 90°."
+    es: "El punto de fuga de un haz de rectas paralelas se obtiene trazando desde el
+      punto de vista V una visual paralela a esas rectas hasta cortar el cuadro.
+      Por tanto, VF1 es paralelo a un haz de aristas y VF2 al haz perpendicular.
+      Como las aristas concurrentes de un cubo son perpendiculares entre sí
+      (90°), las dos visuales también lo son: el ángulo F1-V-F2 es de 90°."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.oblique
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: En una perspectiva cònica obliqua d'un cub, els dos punts de fuga F1 i F2
+      estan sobre la línia d'horitzó a costats oposats del punt principal P. Es
+      mesura PF1 = 8 cm i PF2 = 18 cm. Quina és la distància principal
+      (distància del punt de vista al quadre), sabent que l'angle F1-V-F2 és
+      recte?
+    es: En una perspectiva cónica oblicua de un cubo, los dos puntos de fuga F1 y F2
+      están sobre la línea de horizonte a lados opuestos del punto principal P.
+      Se mide PF1 = 8 cm y PF2 = 18 cm. ¿Cuál es la distancia principal
+      (distancia del punto de vista al cuadro), sabiendo que el ángulo F1-V-F2
+      es recto?
+  options:
+    - id: A
+      ca: 12 cm
+      es: 12 cm
+    - id: B
+      ca: 13 cm
+      es: 13 cm
+    - id: C
+      ca: 144 cm
+      es: 144 cm
+    - id: D
+      ca: ≈ 19,7 cm
+      es: ≈ 19,7 cm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Com que les arestes del cub són perpendiculars, l'angle F1-V-F2 és de 90°.
+      En el triangle rectangle F1-V-F2, la visual VP (distància principal) és
+      l'altura relativa a la hipotenusa F1F2, i el punt principal P n'és el peu.
+      Per la propietat de l'altura sobre la hipotenusa, VP és la mitjana
+      geomètrica dels segments: VP = √(PF1 · PF2) = √(8 · 18) = √144 = 12 cm.
+      Les altres opcions confonen la mitjana geomètrica amb la aritmètica (13),
+      amb el producte (144) o amb la hipotenusa √(8²+18²) (≈19,7)."
+    es: "Como las aristas del cubo son perpendiculares, el ángulo F1-V-F2 es de 90°.
+      En el triángulo rectángulo F1-V-F2, la visual VP (distancia principal) es
+      la altura relativa a la hipotenusa F1F2, y el punto principal P es su pie.
+      Por la propiedad de la altura sobre la hipotenusa, VP es la media
+      geométrica de los segmentos: VP = √(PF1 · PF2) = √(8 · 18) = √144 = 12 cm.
+      Las demás opciones confunden la media geométrica con la aritmética (13),
+      con el producto (144) o con la hipotenusa √(8²+18²) (≈19,7)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.conic_perspective.oblique
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En perspectiva cònica obliqua, una recta horitzontal de l'objecte forma un
+      angle de 30° amb el pla del quadre. Sabent que la distància principal
+      (distància del punt de vista V al quadre) és d, a quina distància del punt
+      principal P, mesurada sobre la línia d'horitzó, se situa el punt de fuga
+      d'aquesta recta?
+    es: En perspectiva cónica oblicua, una recta horizontal del objeto forma un
+      ángulo de 30° con el plano del cuadro. Sabiendo que la distancia principal
+      (distancia del punto de vista V al cuadro) es d, ¿a qué distancia del
+      punto principal P, medida sobre la línea de horizonte, se sitúa el punto
+      de fuga de esa recta?
+  options:
+    - id: A
+      ca: d · cot(30°) = d·√3 ≈ 1,73 d
+      es: d · cot(30°) = d·√3 ≈ 1,73 d
+    - id: B
+      ca: d · tan(30°) ≈ 0,58 d
+      es: d · tan(30°) ≈ 0,58 d
+    - id: C
+      ca: d · sin(30°) = 0,5 d
+      es: d · sin(30°) = 0,5 d
+    - id: D
+      ca: d · cos(30°) ≈ 0,87 d
+      es: d · cos(30°) ≈ 0,87 d
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El punt de fuga s'obté amb la visual des de V paral·lela a la recta,
+      tallant el quadre sobre l'horitzó. Situant V a distància d del quadre, la
+      visual paral·lela a una recta que forma angle β amb el quadre determina,
+      respecte del peu P, un desplaçament PF = d/tan(β) = d·cot(β). Per a β =
+      30°: PF = d·cot(30°) = d·√3 ≈ 1,73 d. L'error freqüent és fer servir
+      tan(β) en lloc de cot(β) (opció B), o confondre amb sin/cos. Nota: la
+      recta perpendicular (β = 60°) fugiria a d·cot(60°) ≈ 0,58 d, i el producte
+      de tots dos és d², coherent amb la mitjana geomètrica."
+    es: "El punto de fuga se obtiene con la visual desde V paralela a la recta,
+      cortando el cuadro sobre el horizonte. Situando V a distancia d del
+      cuadro, la visual paralela a una recta que forma ángulo β con el cuadro
+      determina, respecto del pie P, un desplazamiento PF = d/tan(β) = d·cot(β).
+      Para β = 30°: PF = d·cot(30°) = d·√3 ≈ 1,73 d. El error frecuente es usar
+      tan(β) en lugar de cot(β) (opción B), o confundir con sin/cos. Nota: la
+      recta perpendicular (β = 60°) fugaría a d·cot(60°) ≈ 0,58 d, y el producto
+      de ambos es d², coherente con la media geométrica."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.views
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En el sistema europeu (primer dièdre), on es col·loca la planta respecte de
+      l'alçat?
+    es: En el sistema europeo (primer diedro), ¿dónde se coloca la planta respecto
+      al alzado?
+  options:
+    - id: A
+      ca: Sota l'alçat
+      es: Debajo del alzado
+    - id: B
+      ca: Sobre l'alçat
+      es: Encima del alzado
+    - id: C
+      ca: A la dreta de l'alçat
+      es: A la derecha del alzado
+    - id: D
+      ca: A l'esquerra de l'alçat
+      es: A la izquierda del alzado
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el primer dièdre l'objecte se situa entre l'observador i el pla de
+      projecció; la vista des de dalt es projecta cap al pla inferior, de manera
+      que la planta es dibuixa SOTA l'alçat. Col·locar-la a sobre correspondria
+      al sistema americà (tercer dièdre).
+    es: En el primer diedro el objeto se sitúa entre el observador y el plano de
+      proyección; la vista desde arriba se proyecta hacia el plano inferior, por
+      lo que la planta se dibuja DEBAJO del alzado. Colocarla encima
+      correspondería al sistema americano (tercer diedro).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.views
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.32
+  question:
+    ca: Quina és la disposició característica del sistema europeu (primer dièdre)
+      quant a la posició relativa de l'observador, l'objecte i el pla de
+      projecció?
+    es: ¿Cuál es la disposición característica del sistema europeo (primer diedro)
+      en cuanto a la posición relativa del observador, el objeto y el plano de
+      proyección?
+  options:
+    - id: A
+      ca: Observador — objecte — pla de projecció
+      es: Observador — objeto — plano de proyección
+    - id: B
+      ca: Observador — pla de projecció — objecte
+      es: Observador — plano de proyección — objeto
+    - id: C
+      ca: Objecte — observador — pla de projecció
+      es: Objeto — observador — plano de proyección
+    - id: D
+      ca: Pla de projecció — objecte — observador
+      es: Plano de proyección — objeto — observador
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En el sistema europeu (primer dièdre) l'objecte queda entre l'observador i
+      el pla: l'ordre és observador → objecte → pla. Les projeccions travessen
+      l'objecte i queden al pla del darrere. L'ordre observador → pla → objecte
+      (opció B) és el sistema americà (tercer dièdre)."
+    es: "En el sistema europeo (primer diedro) el objeto queda entre el observador y
+      el plano: el orden es observador → objeto → plano. Las proyecciones
+      atraviesan el objeto y quedan en el plano posterior. El orden observador →
+      plano → objeto (opción B) es el sistema americano (tercer diedro)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.views
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En el sistema europeu, on es dibuixa la vista lateral dreta (perfil dret)
+      respecte de l'alçat?
+    es: En el sistema europeo, ¿dónde se dibuja la vista lateral derecha (perfil
+      derecho) respecto al alzado?
+  options:
+    - id: A
+      ca: A l'esquerra de l'alçat
+      es: A la izquierda del alzado
+    - id: B
+      ca: A la dreta de l'alçat
+      es: A la derecha del alzado
+    - id: C
+      ca: Sota l'alçat
+      es: Debajo del alzado
+    - id: D
+      ca: Sobre l'alçat
+      es: Encima del alzado
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el primer dièdre, mirant l'objecte des de la dreta, la projecció es forma
+      en el pla situat a l'esquerra; per tant la vista lateral dreta es dibuixa
+      A L'ESQUERRA de l'alçat. En el sistema americà es col·locaria a la dreta.
+    es: En el primer diedro, mirando el objeto desde la derecha, la proyección se
+      forma en el plano situado a la izquierda; por tanto la vista lateral
+      derecha se dibuja A LA IZQUIERDA del alzado. En el sistema americano se
+      colocaría a la derecha.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.views
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quantes vistes principals (normalitzades) es defineixen en el sistema de
+      representació dièdric a partir del cub de projecció?
+    es: ¿Cuántas vistas principales (normalizadas) se definen en el sistema de
+      representación diédrico a partir del cubo de proyección?
+  options:
+    - id: A
+      ca: "6"
+      es: "6"
+    - id: B
+      ca: "3"
+      es: "3"
+    - id: C
+      ca: "4"
+      es: "4"
+    - id: D
+      ca: "8"
+      es: "8"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les sis cares del cub de projecció donen sis vistes principals: alçat,
+      planta, vista inferior, perfil esquerre, perfil dret i vista posterior. A
+      la pràctica sovint en basten tres (alçat, planta i perfil), però el nombre
+      de vistes principals normalitzades és 6."
+    es: "Las seis caras del cubo de proyección dan seis vistas principales: alzado,
+      planta, vista inferior, perfil izquierdo, perfil derecho y vista
+      posterior. En la práctica suelen bastar tres (alzado, planta y perfil),
+      pero el número de vistas principales normalizadas es 6."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.views
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Quina dimensió comparteixen i han de mantenir en correspondència l'alçat i
+      el perfil (vista lateral)?
+    es: ¿Qué dimensión comparten y deben mantener en correspondencia el alzado y el
+      perfil (vista lateral)?
+  options:
+    - id: A
+      ca: L'alçada (altura)
+      es: La altura
+    - id: B
+      ca: L'amplada
+      es: La anchura
+    - id: C
+      ca: La profunditat
+      es: La profundidad
+    - id: D
+      ca: El volum total
+      es: El volumen total
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'alçat mostra alçada i amplada; el perfil mostra alçada i profunditat. La
+      dimensió comuna és l'alçada, i per això alçat i perfil s'alineen
+      horitzontalment (mateixes línies de referència d'altura). L'amplada és
+      comuna entre alçat i planta, i la profunditat entre planta i perfil.
+    es: El alzado muestra altura y anchura; el perfil muestra altura y profundidad.
+      La dimensión común es la altura, y por eso alzado y perfil se alinean
+      horizontalmente (mismas líneas de referencia de altura). La anchura es
+      común entre alzado y planta, y la profundidad entre planta y perfil.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.views
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: En el sistema europeu, on se situa la vista inferior respecte de l'alçat?
+    es: En el sistema europeo, ¿dónde se sitúa la vista inferior respecto al alzado?
+  options:
+    - id: A
+      ca: Sobre l'alçat
+      es: Encima del alzado
+    - id: B
+      ca: Sota l'alçat
+      es: Debajo del alzado
+    - id: C
+      ca: A la dreta de l'alçat
+      es: A la derecha del alzado
+    - id: D
+      ca: A l'esquerra de l'alçat
+      es: A la izquierda del alzado
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el primer dièdre cada vista es projecta al pla oposat al costat des del
+      qual es mira. La vista inferior s'obté mirant l'objecte des de baix, i la
+      seva projecció es forma al pla superior; per tant es dibuixa SOBRE
+      l'alçat, just al costat oposat de la planta (que va a sota).
+    es: En el primer diedro cada vista se proyecta al plano opuesto al lado desde el
+      que se mira. La vista inferior se obtiene mirando el objeto desde abajo, y
+      su proyección se forma en el plano superior; por tanto se dibuja ENCIMA
+      del alzado, justo en el lado opuesto a la planta (que va debajo).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.sections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: En dibuix tècnic normalitzat, quin és l'objectiu principal de representar un
+      tall (secció) d'una peça?
+    es: En dibujo técnico normalizado, ¿cuál es el objetivo principal de representar
+      un corte (sección) de una pieza?
+  options:
+    - id: A
+      ca: Mostrar amb línies contínues gruixudes els detalls interns (forats,
+        buidatges, cavitats) que quedarien ocults i s'haurien de dibuixar amb
+        línia discontínua.
+      es: Mostrar con líneas continuas gruesas los detalles internos (agujeros,
+        vaciados, cavidades) que quedarían ocultos y deberían dibujarse con
+        línea discontinua.
+    - id: B
+      ca: Augmentar l'escala de la peça per veure-la més gran sense modificar les
+        cotes.
+      es: Aumentar la escala de la pieza para verla más grande sin modificar las
+        cotas.
+    - id: C
+      ca: Representar la peça en perspectiva per donar-li sensació de volum.
+      es: Representar la pieza en perspectiva para darle sensación de volumen.
+    - id: D
+      ca: Eliminar definitivament la meitat del material de la peça real.
+      es: Eliminar definitivamente la mitad del material de la pieza real.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El tall és un recurs convencional: s'imagina un pla de tall que elimina la
+      part de material situada davant de l'observador per fer visibles els
+      detalls interiors, que així es dibuixen amb línia contínua gruixuda
+      (aresta vista) en lloc de línia discontínua (aresta oculta), millorant la
+      claredat i facilitant l'acotació. No canvia ni l'escala, ni el sistema de
+      representació, ni la peça física."
+    es: "El corte es un recurso convencional: se imagina un plano de corte que
+      elimina la parte de material situada delante del observador para hacer
+      visibles los detalles interiores, que así se dibujan con línea continua
+      gruesa (arista vista) en lugar de línea discontinua (arista oculta),
+      mejorando la claridad y facilitando la acotación. No cambia ni la escala,
+      ni el sistema de representación, ni la pieza física."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.sections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Segons la normativa (UNE-EN ISO), com es dibuixa el ratllat (retícula) de la
+      superfície tallada d'una única peça en una secció?
+    es: Según la normativa (UNE-EN ISO), ¿cómo se dibuja el rayado (achurado) de la
+      superficie cortada de una única pieza en una sección?
+  options:
+    - id: A
+      ca: Amb línies fines paral·leles i equidistants, generalment inclinades 45°
+        respecte als eixos de simetria o al contorn principal de la peça.
+      es: Con líneas finas paralelas y equidistantes, generalmente inclinadas 45°
+        respecto a los ejes de simetría o al contorno principal de la pieza.
+    - id: B
+      ca: Amb línies gruixudes inclinades 30° i espaiat variable segons el material.
+      es: Con líneas gruesas inclinadas 30° y espaciado variable según el material.
+    - id: C
+      ca: Amb línies fines sempre horitzontals i molt juntes, independentment del
+        contorn.
+      es: Con líneas finas siempre horizontales y muy juntas, independientemente del
+        contorno.
+    - id: D
+      ca: Amb línies discontínues a 45° per indicar que és material ocult.
+      es: Con líneas discontinuas a 45° para indicar que es material oculto.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El ratllat de tall es fa amb línia fina contínua, paral·lela i equidistant,
+      inclinada normalment 45° respecte als eixos de simetria o als contorns
+      principals. Si a 45° les línies quedessin paral·leles al contorn, s'adopta
+      un altre angle (30° o 60°). No és línia gruixuda ni discontínua, i
+      l'espaiat es tria uniforme segons la mida de la zona ratllada.
+    es: El rayado de corte se hace con línea fina continua, paralela y equidistante,
+      inclinada normalmente 45° respecto a los ejes de simetría o a los
+      contornos principales. Si a 45° las líneas quedasen paralelas al contorno,
+      se adopta otro ángulo (30° o 60°). No es línea gruesa ni discontinua, y el
+      espaciado se elige uniforme según el tamaño de la zona rayada.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.sections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En una secció longitudinal (el pla de tall passa al llarg de l'eix), quin
+      d'aquests elements NO s'ha de ratllar encara que el pla de tall el
+      travessi?
+    es: En una sección longitudinal (el plano de corte pasa a lo largo del eje),
+      ¿cuál de estos elementos NO se debe rayar aunque el plano de corte lo
+      atraviese?
+  options:
+    - id: A
+      ca: Un nervi (nervadura) tallat en sentit longitudinal.
+      es: Un nervio (nervadura) cortado en sentido longitudinal.
+    - id: B
+      ca: La paret d'un cilindre buit tallada transversalment.
+      es: La pared de un cilindro hueco cortada transversalmente.
+    - id: C
+      ca: Una brida massissa tallada perpendicularment al seu gruix.
+      es: Una brida maciza cortada perpendicularmente a su espesor.
+    - id: D
+      ca: El fons massís d'un tub tallat transversalment.
+      es: El fondo macizo de un tubo cortado transversalmente.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per conveni, els nervis (nervadures), les ànimes, els radis de rodes, els
+      eixos, femelles, cargols i passadors NO es ratllen quan el pla de tall els
+      talla longitudinalment (al llarg), ja que ratllar-los donaria falsa
+      sensació de massís i dificultaria la lectura. Sí es ratllen quan es tallen
+      transversalment. La resta d'elements massissos tallats perpendicularment
+      sí es ratllen normalment.
+    es: Por convenio, los nervios (nervaduras), las almas, los radios de ruedas, los
+      ejes, tuercas, tornillos y pasadores NO se rayan cuando el plano de corte
+      los corta longitudinalmente (a lo largo), ya que rayarlos daría falsa
+      sensación de macizo y dificultaría la lectura. Sí se rayan cuando se
+      cortan transversalmente. El resto de elementos macizos cortados
+      perpendicularmente sí se rayan normalmente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.sections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quan és aplicable i què representa una mitja secció (semisecció)?
+    es: ¿Cuándo es aplicable y qué representa una media sección (semisección)?
+  options:
+    - id: A
+      ca: "En peces simètriques: en una meitat es dibuixa la vista exterior i en
+        l'altra meitat la secció, separades per l'eix de simetria (línia de
+        traç-punt fina)."
+      es: "En piezas simétricas: en una mitad se dibuja la vista exterior y en la otra
+        mitad la sección, separadas por el eje de simetría (línea de trazo-punto
+        fina)."
+    - id: B
+      ca: "En qualsevol peça: es secciona exactament la meitat del gruix per veure'n
+        l'interior en tot el dibuix."
+      es: "En cualquier pieza: se secciona exactamente la mitad del grosor para ver su
+        interior en todo el dibujo."
+    - id: C
+      ca: Només en peces asimètriques, per estalviar la meitat de les cotes.
+      es: Solo en piezas asimétricas, para ahorrar la mitad de las cotas.
+    - id: D
+      ca: En peces simètriques, seccionant les dues meitats però ratllant-ne només
+        una.
+      es: En piezas simétricas, seccionando las dos mitades pero rayando solo una.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La mitja secció s'aplica a peces simètriques i aprofita la simetria: a un
+      costat de l'eix es mostra la vista exterior completa i a l'altre la secció
+      interior, separades per l'eix de simetria (línia fina de traç i punt, no
+      una aresta gruixuda). Així una sola representació dona informació exterior
+      i interior alhora. Requereix simetria; en les altres opcions no es
+      compleix aquesta condició o la descripció és incorrecta."
+    es: "La media sección se aplica a piezas simétricas y aprovecha la simetría: a
+      un lado del eje se muestra la vista exterior completa y al otro la sección
+      interior, separadas por el eje de simetría (línea fina de trazo y punto,
+      no una arista gruesa). Así una sola representación da información exterior
+      e interior a la vez. Requiere simetría; en las otras opciones no se cumple
+      esa condición o la descripción es incorrecta."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.sections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En una secció d'un conjunt (muntatge) on dues peces massisses contigües
+      queden tallades i en contacte, com han de ser els seus ratllats per
+      distingir-les?
+    es: En una sección de un conjunto (montaje) donde dos piezas macizas contiguas
+      quedan cortadas y en contacto, ¿cómo deben ser sus rayados para
+      distinguirlas?
+  options:
+    - id: A
+      ca: Amb ratllats de sentits (angles) diferents, o si cal amb el mateix angle
+        però amb espaiat diferent o desfasat.
+      es: Con rayados de sentidos (ángulos) distintos, o si es necesario con el mismo
+        ángulo pero con espaciado distinto o desfasado.
+    - id: B
+      ca: Amb el mateix angle i el mateix espaiat perquè pertanyen al mateix pla de
+        tall.
+      es: Con el mismo ángulo y el mismo espaciado porque pertenecen al mismo plano de
+        corte.
+    - id: C
+      ca: Una peça ratllada i l'altra deixada totalment en blanc (sense ratllar).
+      es: Una pieza rayada y la otra dejada totalmente en blanco (sin rayar).
+    - id: D
+      ca: Totes dues amb línia discontínua per indicar que estan en contacte.
+      es: Ambas con línea discontinua para indicar que están en contacto.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un conjunt, cada peça tallada es ratlla amb línia fina, però peces
+      diferents en contacte s'han de diferenciar: es fan servir angles oposats
+      (p. ex. 45° i 135°) o, quan tenen el mateix angle, se'n canvia l'espaiat o
+      es desfasen les línies. Cada peça manté el mateix ratllat en totes les
+      vistes. Deixar-ne una en blanc o ratllar-les idènticament impediria
+      distingir-les."
+    es: "En un conjunto, cada pieza cortada se raya con línea fina, pero piezas
+      distintas en contacto deben diferenciarse: se emplean ángulos opuestos (p.
+      ej. 45° y 135°) o, cuando tienen el mismo ángulo, se cambia el espaciado o
+      se desfasan las líneas. Cada pieza mantiene el mismo rayado en todas las
+      vistas. Dejar una en blanco o rayarlas de forma idéntica impediría
+      distinguirlas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.sections
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Un eix té una part on el pla de tall canvia de direcció per travessar dos
+      forats que no estan alineats amb l'eix principal, mitjançant trams de pla
+      paral·lels units per trams perpendiculars. Com s'anomena aquesta secció i
+      com es representa el canvi de pla?
+    es: Un eje tiene una zona donde el plano de corte cambia de dirección para
+      atravesar dos agujeros no alineados con el eje principal, mediante tramos
+      de plano paralelos unidos por tramos perpendiculares. ¿Cómo se llama esta
+      sección y cómo se representa el cambio de plano?
+  options:
+    - id: A
+      ca: Secció per plans paral·lels (secció trencada o desviada); en abatre's al pla
+        del dibuix NO es dibuixa cap aresta en les arestes fictícies dels canvis
+        de pla, i el ratllat és continu.
+      es: Sección por planos paralelos (sección quebrada o desviada); al abatirse al
+        plano del dibujo NO se dibuja ninguna arista en las aristas ficticias de
+        los cambios de plano, y el rayado es continuo.
+    - id: B
+      ca: Secció total simple; s'ha de dibuixar una aresta gruixuda a cada canvi de
+        pla.
+      es: Sección total simple; se debe dibujar una arista gruesa en cada cambio de
+        plano.
+    - id: C
+      ca: Secció girada (abatuda); el ratllat s'interromp a cada canvi de direcció.
+      es: Sección girada (abatida); el rayado se interrumpe en cada cambio de
+        dirección.
+    - id: D
+      ca: Mitja secció; només es dibuixa fins al primer forat.
+      es: Media sección; solo se dibuja hasta el primer agujero.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Quan un únic pla no pot passar per tots els detalls d'interès, s'utilitza
+      una secció per plans paral·lels (trencada o desviada): el pla de tall es
+      desplaça en esglaó. En projectar-la, els trams paral·lels s'abaten al
+      mateix pla i les arestes fictícies produïdes pels salts NO es representen
+      amb línia; el ratllat es dibuixa continu i sense diferenciar els trams. La
+      línia del pla de tall sí indica els canvis de direcció en la vista
+      corresponent."
+    es: "Cuando un único plano no puede pasar por todos los detalles de interés, se
+      utiliza una sección por planos paralelos (quebrada o desviada): el plano
+      de corte se desplaza en escalón. Al proyectarla, los tramos paralelos se
+      abaten al mismo plano y las aristas ficticias producidas por los saltos NO
+      se representan con línea; el rayado se dibuja continuo y sin diferenciar
+      los tramos. La línea del plano de corte sí indica los cambios de dirección
+      en la vista correspondiente."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.dimensioning
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En acotació normalitzada (UNE-EN ISO), quin símbol s'ha de col·locar davant
+      de la xifra de cota per indicar el diàmetre d'un element cilíndric?
+    es: En acotación normalizada (UNE-EN ISO), ¿qué símbolo debe colocarse delante
+      de la cifra de cota para indicar el diámetro de un elemento cilíndrico?
+  options:
+    - id: A
+      ca: Ø
+      es: Ø
+    - id: B
+      ca: R
+      es: R
+    - id: C
+      ca: □ (quadrat)
+      es: □ (cuadrado)
+    - id: D
+      ca: SØ (diàmetre esfèric)
+      es: SØ (diámetro esférico)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El símbol Ø precedeix la xifra per indicar un diàmetre (p. ex. Ø20). La 'R'
+      s'usa per a radis, el símbol '□' per a seccions quadrades i 'SØ' només per
+      a diàmetres d'esferes. Per tant la resposta és Ø.
+    es: El símbolo Ø precede a la cifra para indicar un diámetro (p. ej. Ø20). La
+      'R' se usa para radios, el símbolo '□' para secciones cuadradas y 'SØ'
+      solo para diámetros de esferas. Por tanto la respuesta es Ø.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.dimensioning
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Un plànol està dibuixat a escala 2:1. Una peça real fa 30 mm de longitud.
+      Quina xifra de cota s'ha d'escriure sobre el dibuix?
+    es: Un plano está dibujado a escala 2:1. Una pieza real mide 30 mm de longitud.
+      ¿Qué cifra de cota debe escribirse sobre el dibujo?
+  options:
+    - id: A
+      ca: 30 mm (la mida real)
+      es: 30 mm (la medida real)
+    - id: B
+      ca: 60 mm (la mida dibuixada)
+      es: 60 mm (la medida dibujada)
+    - id: C
+      ca: 15 mm (la meitat de la real)
+      es: 15 mm (la mitad de la real)
+    - id: D
+      ca: 2 mm (el factor d'escala)
+      es: 2 mm (el factor de escala)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Norma fonamental d'acotació: la xifra de cota expressa SEMPRE la dimensió
+      real de la peça, amb independència de l'escala del dibuix. Encara que a
+      2:1 la peça es representi amb 60 mm de traç, la cota ha d'indicar 30 mm.
+      L'error habitual és escriure la longitud dibuixada (60)."
+    es: "Norma fundamental de acotación: la cifra de cota expresa SIEMPRE la
+      dimensión real de la pieza, con independencia de la escala del dibujo.
+      Aunque a 2:1 la pieza se represente con 60 mm de trazo, la cota debe
+      indicar 30 mm. El error habitual es escribir la longitud dibujada (60)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.dimensioning
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Sobre un plànol a escala 1:5, un segment mesurat amb regle sobre el paper fa
+      24 mm. Quina és la dimensió real corresponent?
+    es: Sobre un plano a escala 1:5, un segmento medido con regla sobre el papel
+      mide 24 mm. ¿Cuál es la dimensión real correspondiente?
+  options:
+    - id: A
+      ca: 120 mm
+      es: 120 mm
+    - id: B
+      ca: 4,8 mm
+      es: 4,8 mm
+    - id: C
+      ca: 29 mm
+      es: 29 mm
+    - id: D
+      ca: 19 mm
+      es: 19 mm
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Escala 1:5 significa dibuix:realitat = 1:5, és a dir, és una escala de
+      reducció on la realitat és 5 vegades el dibuix. Real = dibuixat × 5 = 24 ×
+      5 = 120 mm. L'error 4,8 prové de dividir per 5 (confondre reducció amb
+      ampliació); 29 i 19 provenen de sumar o restar l'escala.
+    es: Escala 1:5 significa dibujo:realidad = 1:5, es decir, es una escala de
+      reducción donde la realidad es 5 veces el dibujo. Real = dibujado × 5 = 24
+      × 5 = 120 mm. El error 4,8 proviene de dividir entre 5 (confundir
+      reducción con ampliación); 29 y 19 provienen de sumar o restar la escala.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.dimensioning
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Segons el sistema d'acotació alineat de la norma ISO, com s'han d'orientar
+      les xifres de cota perquè siguin llegibles?
+    es: Según el sistema de acotación alineado de la norma ISO, ¿cómo deben
+      orientarse las cifras de cota para que sean legibles?
+  options:
+    - id: A
+      ca: Es col·loquen sobre la línia de cota i es llegeixen des de baix i des de la
+        dreta del plànol.
+      es: Se colocan sobre la línea de cota y se leen desde abajo y desde la derecha
+        del plano.
+    - id: B
+      ca: Es col·loquen sobre la línia de cota i es llegeixen des de baix i des de
+        l'esquerra del plànol.
+      es: Se colocan sobre la línea de cota y se leen desde abajo y desde la izquierda
+        del plano.
+    - id: C
+      ca: Sempre horitzontals, independentment de la direcció de la línia de cota.
+      es: Siempre horizontales, independientemente de la dirección de la línea de
+        cota.
+    - id: D
+      ca: Es llegeixen des de dalt i des de l'esquerra del plànol.
+      es: Se leen desde arriba y desde la izquierda del plano.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el mètode alineat, la xifra se situa paral·lela i just per damunt de la
+      línia de cota, orientada de manera que les cotes horitzontals es llegeixin
+      des de baix i les verticals/inclinades es llegeixin girant el full cap a
+      la dreta. L'opció C descriu el mètode 'unidireccional' (no l'alineat) i
+      les altres inverteixen el sentit de lectura.
+    es: En el método alineado, la cifra se sitúa paralela y justo por encima de la
+      línea de cota, orientada de modo que las cotas horizontales se lean desde
+      abajo y las verticales/inclinadas se lean girando la hoja hacia la
+      derecha. La opción C describe el método 'unidireccional' (no el alineado)
+      y las demás invierten el sentido de lectura.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.dimensioning
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Quin sistema d'acotació és preferible quan es vol evitar l'acumulació
+      d'errors o de toleràncies entre diverses cotes consecutives?
+    es: ¿Qué sistema de acotación es preferible cuando se quiere evitar la
+      acumulación de errores o de tolerancias entre varias cotas consecutivas?
+  options:
+    - id: A
+      ca: Acotació en paral·lel des d'un origen o aresta de referència comuna.
+      es: Acotación en paralelo desde un origen o arista de referencia común.
+    - id: B
+      ca: Acotació en sèrie (en cadena), cota rere cota.
+      es: Acotación en serie (en cadena), cota tras cota.
+    - id: C
+      ca: Acotació sobre línies ocultes de traç discontinu.
+      es: Acotación sobre líneas ocultas de trazo discontinuo.
+    - id: D
+      ca: Repetint cada cota en dues vistes diferents per seguretat.
+      es: Repitiendo cada cota en dos vistas diferentes por seguridad.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En l'acotació en paral·lel (o des d'origen) totes les cotes es prenen des
+      d'una mateixa referència, de manera que l'error de cada cota és
+      independent i NO s'acumula. En canvi, l'acotació en sèrie/cadena suma els
+      errors de cada tram. Acotar sobre línies ocultes o repetir cotes són
+      pràctiques incorrectes.
+    es: En la acotación en paralelo (o desde origen) todas las cotas se toman desde
+      una misma referencia, de modo que el error de cada cota es independiente y
+      NO se acumula. En cambio, la acotación en serie/cadena suma los errores de
+      cada tramo. Acotar sobre líneas ocultas o repetir cotas son prácticas
+      incorrectas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dib-g-000084
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: drawing
+  type: multiple_choice
+  skills:
+    - drawing.standardization.dimensioning
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Quina de les següents afirmacions constitueix una norma CORRECTA d'acotació
+      segons UNE-EN ISO?
+    es: ¿Cuál de las siguientes afirmaciones constituye una norma CORRECTA de
+      acotación según UNE-EN ISO?
+  options:
+    - id: A
+      ca: Cada dimensió s'ha d'indicar una sola vegada al conjunt del plànol,
+        preferentment sobre arestes vistes.
+      es: Cada dimensión debe indicarse una sola vez en el conjunto del plano,
+        preferentemente sobre aristas vistas.
+    - id: B
+      ca: Convé repetir les cotes importants en diverses vistes per assegurar-ne la
+        lectura.
+      es: Conviene repetir las cotas importantes en varias vistas para asegurar su
+        lectura.
+    - id: C
+      ca: Les cotes s'han de situar preferentment sobre les línies ocultes (traç
+        discontinu).
+      es: Las cotas deben situarse preferentemente sobre las líneas ocultas (trazo
+        discontinuo).
+    - id: D
+      ca: Les línies de cota poden creuar-se lliurement amb les línies auxiliars
+        sempre que hi càpiguen.
+      es: Las líneas de cota pueden cruzarse libremente con las líneas auxiliares
+        siempre que quepan.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La norma estableix que cada dimensió es dona una única vegada (no es
+      repeteixen cotes) i que s'acota preferentment sobre arestes o contorns
+      vistos, no sobre línies ocultes. A més, s'han d'evitar els encreuaments
+      innecessaris de línies de cota. Per tant l'única afirmació correcta és
+      l'A; la B, C i D descriuen errors freqüents.
+    es: La norma establece que cada dimensión se da una única vez (no se repiten
+      cotas) y que se acota preferentemente sobre aristas o contornos vistos, no
+      sobre líneas ocultas. Además, deben evitarse los cruces innecesarios de
+      líneas de cota. Por tanto la única afirmación correcta es la A; la B, C y
+      D describen errores frecuentes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
