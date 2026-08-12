@@ -63,6 +63,7 @@ import {
 const SUBJECT_NAMES: Record<string, { ca: string; es: string }> = {
   'mathematics-ii': { ca: 'Matemàtiques II', es: 'Matemáticas II' },
   physics: { ca: 'Física', es: 'Física' },
+  chemistry: { ca: 'Química', es: 'Química' },
 };
 const subjectDisplay = (id: string): { ca: string; es: string } =>
   SUBJECT_NAMES[id] ?? { ca: id, es: id };

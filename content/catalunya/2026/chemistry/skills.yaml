@@ -1,0 +1,282 @@
+# Química — 2n de Batxillerat, Catalunya (PAU / LOMLOE).
+# Skill graph organised by the exam blocks: Estructura de la matèria i enllaç,
+# Termoquímica, Cinètica, Equilibri, Àcid-base, Redox, Química orgànica.
+# `parent` is taxonomic (block); `prerequisites` is the pedagogical DAG. Names
+# are bilingual ca/es.
+
+# ── Estructura de la matèria i enllaç ────────────────────────────────────────
+- id: chemistry.matter
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estructura de la matèria, es: Estructura de la materia }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.matter.stoichiometry
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estequiometria i mols, es: Estequiometría y moles }
+  parent: chemistry.matter
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.matter.atomic_structure
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estructura atòmica, es: Estructura atómica }
+  parent: chemistry.matter
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.matter.periodic
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Taula periòdica i propietats, es: Tabla periódica y propiedades }
+  parent: chemistry.matter
+  prerequisites: [chemistry.matter.atomic_structure]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.matter.bonding
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Enllaç químic, es: Enlace químico }
+  parent: chemistry.matter
+  prerequisites: [chemistry.matter.atomic_structure, chemistry.matter.periodic]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Termoquímica ─────────────────────────────────────────────────────────────
+- id: chemistry.thermochemistry
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Termoquímica, es: Termoquímica }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.thermochemistry.enthalpy
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Entalpia de reacció i llei de Hess, es: Entalpía de reacción y ley de Hess }
+  parent: chemistry.thermochemistry
+  prerequisites: [chemistry.matter.stoichiometry]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.thermochemistry.spontaneity
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Entropia i energia de Gibbs, es: Entropía y energía de Gibbs }
+  parent: chemistry.thermochemistry
+  prerequisites: [chemistry.thermochemistry.enthalpy]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Cinètica química ─────────────────────────────────────────────────────────
+- id: chemistry.kinetics
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Cinètica química, es: Cinética química }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.kinetics.rate
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Velocitat i equació de velocitat, es: Velocidad y ecuación de velocidad }
+  parent: chemistry.kinetics
+  prerequisites: [chemistry.matter.stoichiometry]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.kinetics.factors
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Factors i catàlisi, es: Factores y catálisis }
+  parent: chemistry.kinetics
+  prerequisites: [chemistry.kinetics.rate]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Equilibri químic ─────────────────────────────────────────────────────────
+- id: chemistry.equilibrium
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Equilibri químic, es: Equilibrio químico }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.equilibrium.constant
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Constant d'equilibri (Kc, Kp)", es: "Constante de equilibrio (Kc, Kp)" }
+  parent: chemistry.equilibrium
+  prerequisites: [chemistry.matter.stoichiometry]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.equilibrium.le_chatelier
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Principi de Le Chatelier, es: Principio de Le Chatelier }
+  parent: chemistry.equilibrium
+  prerequisites: [chemistry.equilibrium.constant]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.equilibrium.solubility
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Solubilitat i precipitació (Kps), es: Solubilidad y precipitación (Kps) }
+  parent: chemistry.equilibrium
+  prerequisites: [chemistry.equilibrium.constant]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Àcid-base ────────────────────────────────────────────────────────────────
+- id: chemistry.acid_base
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Àcids i bases, es: Ácidos y bases }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.acid_base.theory
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Teoria de Brønsted-Lowry, es: Teoría de Brønsted-Lowry }
+  parent: chemistry.acid_base
+  prerequisites: [chemistry.equilibrium.constant]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.acid_base.ph
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: pH i força d'àcids i bases, es: pH y fuerza de ácidos y bases }
+  parent: chemistry.acid_base
+  prerequisites: [chemistry.acid_base.theory]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.acid_base.titration
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Valoracions i neutralització, es: Valoraciones y neutralización }
+  parent: chemistry.acid_base
+  prerequisites: [chemistry.acid_base.ph]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Reaccions redox i electroquímica ─────────────────────────────────────────
+- id: chemistry.redox
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Reaccions redox, es: Reacciones redox }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.redox.balancing
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Estats d'oxidació i ajust redox, es: Estados de oxidación y ajuste redox }
+  parent: chemistry.redox
+  prerequisites: [chemistry.matter.stoichiometry]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.redox.electrochemistry
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Piles i electròlisi, es: Pilas y electrólisis }
+  parent: chemistry.redox
+  prerequisites: [chemistry.redox.balancing]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+# ── Química orgànica ─────────────────────────────────────────────────────────
+- id: chemistry.organic
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Química orgànica, es: Química orgánica }
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.organic.nomenclature
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Nomenclatura i grups funcionals, es: Nomenclatura y grupos funcionales }
+  parent: chemistry.organic
+  prerequisites: [chemistry.matter.bonding]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.organic.isomerism
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Isomeria, es: Isomería }
+  parent: chemistry.organic
+  prerequisites: [chemistry.organic.nomenclature]
+  status: published
+  competencies: [reasoning, problem_solving]
+
+- id: chemistry.organic.reactions
+  version: 1
+  subject: chemistry
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Reaccions orgàniques i polímers, es: Reacciones orgánicas y polímeros }
+  parent: chemistry.organic
+  prerequisites: [chemistry.organic.nomenclature]
+  status: published
+  competencies: [reasoning, problem_solving]
