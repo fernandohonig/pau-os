@@ -1,0 +1,4787 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: lit-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin és el gènere literari que es caracteritza per l'expressió subjectiva de
+      sentiments, emocions i estats d'ànim del jo poètic, sovint en vers?
+    es: ¿Cuál es el género literario que se caracteriza por la expresión subjetiva
+      de sentimientos, emociones y estados de ánimo del yo poético, a menudo en
+      verso?
+  options:
+    - id: A
+      ca: El gènere líric
+      es: El género lírico
+    - id: B
+      ca: El gènere èpic o narratiu
+      es: El género épico o narrativo
+    - id: C
+      ca: El gènere dramàtic
+      es: El género dramático
+    - id: D
+      ca: El gènere didàctic
+      es: El género didáctico
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El gènere líric expressa la subjectivitat del jo poètic (sentiments,
+      emocions, reflexions), tradicionalment en vers. L'èpic narra fets i
+      accions a través d'un narrador; el dramàtic està concebut per ser
+      representat i es basa en el diàleg dels personatges. Per tant, la resposta
+      és el gènere líric.
+    es: El género lírico expresa la subjetividad del yo poético (sentimientos,
+      emociones, reflexiones), tradicionalmente en verso. El épico narra hechos
+      y acciones a través de un narrador; el dramático está concebido para ser
+      representado y se basa en el diálogo de los personajes. Por tanto, la
+      respuesta es el género lírico.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: La divisió clàssica dels gèneres literaris, que arrenca de la Poètica
+      d'Aristòtil, distingeix tres grans gèneres. Quins són?
+    es: La división clásica de los géneros literarios, que arranca de la Poética de
+      Aristóteles, distingue tres grandes géneros. ¿Cuáles son?
+  options:
+    - id: A
+      ca: Èpic, líric i dramàtic
+      es: Épico, lírico y dramático
+    - id: B
+      ca: Narratiu, teatral i assagístic
+      es: Narrativo, teatral y ensayístico
+    - id: C
+      ca: Novel·la, poesia i periodisme
+      es: Novela, poesía y periodismo
+    - id: D
+      ca: Líric, satíric i epistolar
+      es: Lírico, satírico y epistolar
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La tripartició canònica dels gèneres literaris és èpic (o narratiu), líric i
+      dramàtic. Les altres opcions barregen subgèneres, modalitats o formes
+      concretes (novel·la, assaig, periodisme, sàtira, epístola) que no
+      constitueixen la divisió tripartida tradicional.
+    es: La tripartición canónica de los géneros literarios es épico (o narrativo),
+      lírico y dramático. Las otras opciones mezclan subgéneros, modalidades o
+      formas concretas (novela, ensayo, periodismo, sátira, epístola) que no
+      constituyen la división tripartita tradicional.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quin dels següents subgèneres pertany al gènere DRAMÀTIC?
+    es: ¿Cuál de los siguientes subgéneros pertenece al género DRAMÁTICO?
+  options:
+    - id: A
+      ca: La tragèdia
+      es: La tragedia
+    - id: B
+      ca: L'oda
+      es: La oda
+    - id: C
+      ca: L'epopeia
+      es: La epopeya
+    - id: D
+      ca: La faula
+      es: La fábula
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La tragèdia és un subgènere dramàtic (concebut per a la representació
+      escènica). L'oda és un subgènere líric; l'epopeia és un subgènere
+      èpic/narratiu en vers; la faula és un relat breu narratiu-didàctic amb
+      moralitat. Per tant, l'única opció dramàtica és la tragèdia.
+    es: La tragedia es un subgénero dramático (concebido para la representación
+      escénica). La oda es un subgénero lírico; la epopeya es un subgénero
+      épico/narrativo en verso; la fábula es un relato breve narrativo-didáctico
+      con moraleja. Por tanto, la única opción dramática es la tragedia.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: A quin gènere literari pertany «Canigó» (1886), de Jacint Verdaguer, un
+      extens poema en vers que narra llegendes i la lluita entre moros i
+      cristians als Pirineus?
+    es: ¿A qué género literario pertenece «Canigó» (1886), de Jacint Verdaguer, un
+      extenso poema en verso que narra leyendas y la lucha entre moros y
+      cristianos en los Pirineos?
+  options:
+    - id: A
+      ca: Al gènere èpic (és un poema èpic o narratiu)
+      es: Al género épico (es un poema épico o narrativo)
+    - id: B
+      ca: Al gènere líric
+      es: Al género lírico
+    - id: C
+      ca: Al gènere dramàtic
+      es: Al género dramático
+    - id: D
+      ca: Al gènere didàctic
+      es: Al género didáctico
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Canigó» és un poema èpic: tot i estar escrit en vers, no predomina
+      l'expressió subjectiva del jo (líric), sinó la narració de fets, accions i
+      llegendes a través d'un narrador, tret propi del gènere èpic o narratiu.
+      El fet d'estar en vers no el fa líric."
+    es: "«Canigó» es un poema épico: aunque está escrito en verso, no predomina la
+      expresión subjetiva del yo (lírico), sino la narración de hechos, acciones
+      y leyendas a través de un narrador, rasgo propio del género épico o
+      narrativo. El hecho de estar en verso no lo hace lírico."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: «Terra baixa» (1897), d'Àngel Guimerà, és un text concebut per ser
+      representat dalt d'un escenari, sense narrador i format essencialment per
+      diàlegs i acotacions. A quin gènere pertany i per què?
+    es: «Terra baixa» (1897), de Àngel Guimerà, es un texto concebido para ser
+      representado en un escenario, sin narrador y formado esencialmente por
+      diálogos y acotaciones. ¿A qué género pertenece y por qué?
+  options:
+    - id: A
+      ca: Al gènere dramàtic, perquè es basa en el diàleg i les acotacions i està
+        destinat a la representació
+      es: Al género dramático, porque se basa en el diálogo y las acotaciones y está
+        destinado a la representación
+    - id: B
+      ca: Al gènere èpic, perquè un narrador explica la història dels personatges
+      es: Al género épico, porque un narrador explica la historia de los personajes
+    - id: C
+      ca: Al gènere líric, perquè expressa els sentiments íntims de l'autor en vers
+      es: Al género lírico, porque expresa los sentimientos íntimos del autor en verso
+    - id: D
+      ca: Al gènere didàctic, perquè la seva finalitat principal és ensenyar una moral
+      es: Al género didáctico, porque su finalidad principal es enseñar una moral
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El tret definitori del gènere dramàtic és que el text està escrit per ser
+      representat: no hi ha narrador i l'acció avança mitjançant el diàleg dels
+      personatges i les acotacions escèniques. «Terra baixa» respon exactament a
+      aquests trets, per la qual cosa és una obra dramàtica (teatral)."
+    es: "El rasgo definitorio del género dramático es que el texto está escrito para
+      ser representado: no hay narrador y la acción avanza mediante el diálogo
+      de los personajes y las acotaciones escénicas. «Terra baixa» responde
+      exactamente a estos rasgos, por lo que es una obra dramática (teatral)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Quina afirmació sobre els gèneres literaris és CORRECTA?
+    es: ¿Qué afirmación sobre los géneros literarios es CORRECTA?
+  options:
+    - id: A
+      ca: "En el gènere dramàtic no hi ha narrador: la història es transmet
+        directament a través del diàleg dels personatges"
+      es: "En el género dramático no hay narrador: la historia se transmite
+        directamente a través del diálogo de los personajes"
+    - id: B
+      ca: El gènere líric ha d'estar sempre escrit en prosa, mai en vers
+      es: El género lírico debe estar siempre escrito en prosa, nunca en verso
+    - id: C
+      ca: Tot text escrit en vers pertany necessàriament al gènere líric
+      es: Todo texto escrito en verso pertenece necesariamente al género lírico
+    - id: D
+      ca: El gènere èpic exclou la prosa i només admet la narració en vers
+      es: El género épico excluye la prosa y solo admite la narración en verso
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En el gènere dramàtic l'acció es mostra directament mitjançant el diàleg i,
+      per tant, no hi ha la figura del narrador. Les altres afirmacions són
+      falses: la lírica es cultiva sobretot en vers (B error); no tot vers és
+      líric, ja que hi ha poesia èpica narrativa (C error); i l'èpica moderna
+      inclou la prosa, com la novel·la o el conte (D error)."
+    es: "En el género dramático la acción se muestra directamente mediante el
+      diálogo y, por tanto, no existe la figura del narrador. Las demás
+      afirmaciones son falsas: la lírica se cultiva sobre todo en verso (B
+      error); no todo verso es lírico, pues existe poesía épica narrativa (C
+      error); y la épica moderna incluye la prosa, como la novela o el cuento (D
+      error)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.metrics_figures
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin dels parells de mots següents forma una rima CONSONANT (total)?
+    es: ¿Cuál de los siguientes pares de palabras forma una rima CONSONANTE (total)?
+  options:
+    - id: A
+      ca: cor / amor
+      es: cor / amor
+    - id: B
+      ca: fosca / cosa
+      es: fosca / cosa
+    - id: C
+      ca: vida / mira
+      es: vida / mira
+    - id: D
+      ca: poble / home
+      es: poble / home
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La rima és consonant quan coincideixen TOTES les vocals i consonants a
+      partir de la darrera vocal tònica. En 'cor'/'amor' la part final és '-or'
+      en tots dos casos (vocal 'o' + consonant 'r' idèntiques) → consonant. En
+      canvi 'fosca/cosa' (o-a), 'vida/mira' (i-a) i 'poble/home' (o-e) només
+      coincideixen en les vocals, no en les consonants → són rimes ASSONANTS,
+      l'error típic de confondre-les amb consonants.
+    es: La rima es consonante cuando coinciden TODOS los sonidos, vocálicos y
+      consonánticos, a partir de la última vocal tónica. En 'cor'/'amor' la
+      parte final es '-or' en ambos (vocal 'o' + consonante 'r' idénticas) →
+      consonante. En cambio 'fosca/cosa' (o-a), 'vida/mira' (i-a) y 'poble/home'
+      (o-e) solo coinciden en las vocales, no en las consonantes → son rimas
+      ASONANTES, el error típico de confundirlas con consonantes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.metrics_figures
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Segons la mètrica catalana (es compta fins a la darrera síl·laba tònica),
+      quin tipus de vers és 'Al meu país la pluja no sap ploure'?
+    es: Según la métrica catalana (se cuenta hasta la última sílaba tónica), ¿qué
+      tipo de verso es 'Al meu país la pluja no sap ploure'?
+  options:
+    - id: A
+      ca: Octosíl·lab (8 síl·labes)
+      es: Octosílabo (8 sílabas)
+    - id: B
+      ca: Decasíl·lab (10 síl·labes)
+      es: Decasílabo (10 sílabas)
+    - id: C
+      ca: Hendecasíl·lab (11 síl·labes)
+      es: Endecasílabo (11 sílabas)
+    - id: D
+      ca: Alexandrí (12 síl·labes)
+      es: Alejandrino (12 sílabas)
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Comptem: Al(1)-meu(2)-pa(3)-ís(4,
+      hiat)-la(5)-plu(6)-ja(7)-no(8)-sap(9)-plou(10)-re. No hi ha sinalefes (no
+      hi ha vocals en contacte entre mots). L'accent recau a 'plou' (10a
+      síl·laba) i 'ploure' és mot pla, per tant la síl·laba final àtona '-re' NO
+      es compta. La mètrica catalana compta fins a la tònica → 10 síl·labes =
+      decasíl·lab. Comptar l'última àtona (11) és l'error habitual d'aplicar el
+      còmput castellà."
+    es: "Contamos: Al(1)-meu(2)-pa(3)-ís(4,
+      hiato)-la(5)-plu(6)-ja(7)-no(8)-sap(9)-plou(10)-re. No hay sinalefas (no
+      hay vocales en contacto entre palabras). El acento recae en 'plou' (sílaba
+      10) y 'ploure' es palabra llana, así que la sílaba final átona '-re' NO se
+      cuenta. La métrica catalana cuenta hasta la tónica → 10 sílabas =
+      decasílabo. Contar la última átona (11) es el error habitual de aplicar el
+      cómputo castellano."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.metrics_figures
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quantes sinalefes (unions de vocal final d'un mot amb vocal inicial del
+      següent) hi ha en el vers 'Terra i mar sota una llum d'argent'?
+    es: ¿Cuántas sinalefas (unión de la vocal final de una palabra con la vocal
+      inicial de la siguiente) hay en el verso 'Terra i mar sota una llum
+      d'argent'?
+  options:
+    - id: A
+      ca: "1"
+      es: "1"
+    - id: B
+      ca: "2"
+      es: "2"
+    - id: C
+      ca: "3"
+      es: "3"
+    - id: D
+      ca: "4"
+      es: "4"
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Es produeix sinalefa quan un mot acaba en vocal i el següent comença en
+      vocal. Repassem els contactes: 'Terra i' (a+i) → sinalefa; 'i mar' (i+m)
+      no; 'mar sota' (r+s) no; 'sota una' (a+u) → sinalefa; 'una llum' (a+ll)
+      no; 'llum d'argent' (m+d) no. Total = 2 sinalefes. Comptar-ne 1 és
+      oblidar-ne una; 3 és afegir un contacte inexistent (com 'i mar')."
+    es: "Se produce sinalefa cuando una palabra acaba en vocal y la siguiente
+      empieza por vocal. Repasamos los contactos: 'Terra i' (a+i) → sinalefa; 'i
+      mar' (i+m) no; 'mar sota' (r+s) no; 'sota una' (a+u) → sinalefa; 'una
+      llum' (a+ll) no; 'llum d'argent' (m+d) no. Total = 2 sinalefas. Contar 1
+      es olvidar una; 3 es añadir un contacto inexistente (como 'i mar')."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.metrics_figures
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quina figura retòrica predomina en aquests versos? 'Tants dies d'espera, /
+      tants mesos de dubte, / tants anys de silenci.'
+    es: ¿Qué figura retórica predomina en estos versos? 'Tants dies d'espera, /
+      tants mesos de dubte, / tants anys de silenci.'
+  options:
+    - id: A
+      ca: Anàfora
+      es: Anáfora
+    - id: B
+      ca: Al·literació
+      es: Aliteración
+    - id: C
+      ca: Hipèrbaton
+      es: Hipérbaton
+    - id: D
+      ca: Metàfora
+      es: Metáfora
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'anàfora és la repetició d'una mateixa paraula (o grup) a l'inici de versos
+      o membres successius. Aquí 'Tants' encapçala els tres versos → anàfora. No
+      és al·literació (repetició de sons consonàntics dins els mots), ni
+      hipèrbaton (alteració de l'ordre sintàctic), ni metàfora (identificació
+      d'un terme real amb un d'imaginari).
+    es: La anáfora es la repetición de una misma palabra (o grupo) al inicio de
+      versos o miembros sucesivos. Aquí 'Tants' encabeza los tres versos →
+      anáfora. No es aliteración (repetición de sonidos consonánticos dentro de
+      las palabras), ni hipérbaton (alteración del orden sintáctico), ni
+      metáfora (identificación de un término real con uno imaginario).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.metrics_figures
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En la frase 'Aquell estiu va llegir tot Verdaguer', quina figura retòrica hi
+      ha en l'ús del nom 'Verdaguer'?
+    es: En la frase 'Aquell estiu va llegir tot Verdaguer', ¿qué figura retórica hay
+      en el uso del nombre 'Verdaguer'?
+  options:
+    - id: A
+      ca: Metonímia (l'autor pel seu obra)
+      es: Metonimia (el autor por su obra)
+    - id: B
+      ca: Sinècdoque (la part pel tot)
+      es: Sinécdoque (la parte por el todo)
+    - id: C
+      ca: Metàfora
+      es: Metáfora
+    - id: D
+      ca: Hipèrbole
+      es: Hipérbole
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Es designa l'obra amb el nom del seu autor (llegir 'Verdaguer' = llegir els
+      llibres de Verdaguer): és una metonímia, basada en una relació de
+      contigüitat lògica (autor–obra). La sinècdoque es basa en la relació
+      part–tot (o gènere–espècie), que aquí no s'hi dóna; no hi ha ni translació
+      de significat per semblança (metàfora) ni exageració (hipèrbole)."
+    es: "Se designa la obra con el nombre de su autor (leer 'Verdaguer' = leer los
+      libros de Verdaguer): es una metonimia, basada en una relación de
+      contigüidad lógica (autor–obra). La sinécdoque se basa en la relación
+      parte–todo (o género–especie), que aquí no se da; no hay ni traslación de
+      significado por semejanza (metáfora) ni exageración (hipérbole)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.metrics_figures
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "El recurs mètric que consisteix a desfer un diftong perquè les dues vocals
+      comptin com dues síl·labes (sovint marcat amb el signe de dièresi ¨),
+      afegint així una síl·laba al vers, s'anomena:"
+    es: "El recurso métrico que consiste en deshacer un diptongo para que las dos
+      vocales cuenten como dos sílabas (a menudo marcado con el signo de
+      diéresis ¨), añadiendo así una sílaba al verso, se denomina:"
+  options:
+    - id: A
+      ca: Dièresi
+      es: Diéresis
+    - id: B
+      ca: Sinèresi
+      es: Sinéresis
+    - id: C
+      ca: Sinalefa
+      es: Sinalefa
+    - id: D
+      ca: Elisió
+      es: Elisión
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La dièresi separa en dues síl·labes vocals que normalment formarien diftong
+      (p. ex. 'glo-ri-a' en lloc de 'glò-ria'), guanyant una síl·laba. El seu
+      contrari és la sinèresi, que uneix en una sola síl·laba dues vocals que
+      normalment estan en hiat. La sinalefa uneix vocals de mots DIFERENTS, i
+      l'elisió és la supressió d'un so; per això B, C i D són incorrectes.
+    es: La diéresis separa en dos sílabas vocales que normalmente formarían diptongo
+      (p. ej. 'glo-ri-a' en lugar de 'glò-ria'), ganando una sílaba. Su
+      contrario es la sinéresis, que une en una sola sílaba dos vocales que
+      normalmente están en hiato. La sinalefa une vocales de palabras DISTINTAS,
+      y la elisión es la supresión de un sonido; por eso B, C y D son
+      incorrectas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.text_commentary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En comentar un poema format per dos quartets i dos tercets (14 versos amb
+      rima consonant), quina forma mètrica hem d'identificar?
+    es: Al comentar un poema formado por dos cuartetos y dos tercetos (14 versos con
+      rima consonante), ¿qué forma métrica debemos identificar?
+  options:
+    - id: A
+      ca: Un sonet
+      es: Un soneto
+    - id: B
+      ca: Una balada
+      es: Una balada
+    - id: C
+      ca: Un romanç
+      es: Un romance
+    - id: D
+      ca: Una oda
+      es: Una oda
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El sonet és una composició fixa de 14 versos distribuïts en dos quartets i
+      dos tercets. El romanç és una tirada de versos, sovint octosíl·labs amb
+      rima assonant en els parells; la balada i l'oda no tenen aquesta
+      estructura fixa de quartets més tercets. Per tant, la resposta és el
+      sonet.
+    es: El soneto es una composición fija de 14 versos distribuidos en dos cuartetos
+      y dos tercetos. El romance es una tirada de versos, a menudo octosílabos
+      con rima asonante en los pares; la balada y la oda no presentan esa
+      estructura fija de cuartetos más tercetos. Por tanto, la respuesta es el
+      soneto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.text_commentary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En el vers «Els teus cabells són fils d'or», quina figura retòrica
+      predomina?
+    es: En el verso «Els teus cabells són fils d'or» («Tus cabellos son hilos de
+      oro»), ¿qué figura retórica predomina?
+  options:
+    - id: A
+      ca: Metàfora (identificació directa sense nexe comparatiu)
+      es: Metáfora (identificación directa sin nexo comparativo)
+    - id: B
+      ca: Símil o comparació (amb el nexe «com»)
+      es: Símil o comparación (con el nexo «como»)
+    - id: C
+      ca: Metonímia (substitució per contigüitat)
+      es: Metonimia (sustitución por contigüidad)
+    - id: D
+      ca: Hipèrbole (exageració)
+      es: Hipérbole (exageración)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El vers identifica directament un terme real (els cabells) amb un terme
+      imaginari (fils d'or) mitjançant el verb «ser», sense cap nexe comparatiu
+      com «com» o «igual que»: és una metàfora. Si hi hagués el nexe «com» seria
+      un símil; la metonímia es basa en relacions de contigüitat (causa-efecte,
+      part-tot), i la hipèrbole en l'exageració, que aquí no és el recurs
+      central."
+    es: "El verso identifica directamente un término real (los cabellos) con uno
+      imaginario (hilos de oro) mediante el verbo «ser», sin nexo comparativo
+      como «como» o «igual que»: es una metáfora. Si apareciera el nexo «como»
+      sería un símil; la metonimia se basa en relaciones de contigüidad
+      (causa-efecto, parte-todo), y la hipérbole en la exageración, que aquí no
+      es el recurso central."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.text_commentary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En un comentari mètric, el decasíl·lab clàssic català (el de tradició
+      italiana, usat per Ausiàs March) presenta una cesura que el divideix
+      habitualment en dos hemistiquis. En quina posició cau aquesta cesura?
+    es: En un comentario métrico, el decasílabo clásico catalán (el de tradición
+      italiana, usado por Ausiàs March) presenta una cesura que lo divide
+      habitualmente en dos hemistiquios. ¿En qué posición cae esa cesura?
+  options:
+    - id: A
+      ca: Després de la 4a síl·laba (4+6)
+      es: Tras la 4ª sílaba (4+6)
+    - id: B
+      ca: Després de la 6a síl·laba (6+4)
+      es: Tras la 6ª sílaba (6+4)
+    - id: C
+      ca: Després de la 5a síl·laba (5+5)
+      es: Tras la 5ª sílaba (5+5)
+    - id: D
+      ca: Després de la 2a síl·laba (2+8)
+      es: Tras la 2ª sílaba (2+8)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El decasíl·lab clàssic català (a minori), heretat de la tradició italiana i
+      emprat per Ausiàs March, porta cesura masculina després de la 4a síl·laba
+      tònica, formant dos hemistiquis de 4+6 síl·labes. La divisió 5+5 correspon
+      al decasíl·lab a maiori (menys freqüent en March), i les opcions 6+4 i 2+8
+      no són el patró canònic.
+    es: El decasílabo clásico catalán (a minori), heredado de la tradición italiana
+      y empleado por Ausiàs March, lleva cesura masculina tras la 4ª sílaba
+      tónica, formando dos hemistiquios de 4+6 sílabas. La división 5+5
+      corresponde al decasílabo a maiori (menos frecuente en March), y las
+      opciones 6+4 y 2+8 no son el patrón canónico.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.text_commentary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "Un fragment narratiu comença així: «Vaig arribar al poble a mitja tarda;
+      recordo que el cor em bategava mentre pujava cap a l'ermita on jo havia de
+      viure». En comentar la veu narrativa, com la classifiquem?"
+    es: "Un fragmento narrativo empieza así: «Llegué al pueblo a media tarde;
+      recuerdo que el corazón me latía mientras subía hacia la ermita donde yo
+      debía vivir». Al comentar la voz narrativa, ¿cómo la clasificamos?"
+  options:
+    - id: A
+      ca: Narrador protagonista en primera persona (homodiegètic)
+      es: Narrador protagonista en primera persona (homodiegético)
+    - id: B
+      ca: Narrador omniscient en tercera persona
+      es: Narrador omnisciente en tercera persona
+    - id: C
+      ca: Narrador testimoni que observa un altre personatge
+      es: Narrador testigo que observa a otro personaje
+    - id: D
+      ca: Narrador en segona persona
+      es: Narrador en segunda persona
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'ús de la primera persona («Vaig arribar», «em bategava», «jo havia de
+      viure») i el fet que qui narra és el mateix subjecte de l'acció indiquen
+      un narrador protagonista (homodiegètic i, més precisament, autodiegètic).
+      No és omniscient (que narraria en tercera persona i coneixeria l'interior
+      de tots els personatges), ni testimoni (que narraria en primera persona
+      però com a observador d'un altre), ni de segona persona.
+    es: El uso de la primera persona («Llegué», «me latía», «yo debía vivir») y que
+      quien narra es el propio sujeto de la acción indican un narrador
+      protagonista (homodiegético y, más precisamente, autodiegético). No es
+      omnisciente (que narraría en tercera persona conociendo el interior de
+      todos los personajes), ni testigo (que narraría en primera persona pero
+      como observador de otro), ni de segunda persona.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.text_commentary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "Comentem aquests versos: «Sé que vindràs quan calli la tempesta, / sé que
+      vindràs quan neixi la claror, / sé que vindràs...». Quin recurs estilístic
+      estructura principalment el fragment?"
+    es: "Comentamos estos versos: «Sé que vendrás cuando calle la tormenta, / sé que
+      vendrás cuando nazca la claridad, / sé que vendrás...». ¿Qué recurso
+      estilístico estructura principalmente el fragmento?"
+  options:
+    - id: A
+      ca: Anàfora (repetició d'un mot o grup a l'inici de versos successius)
+      es: Anáfora (repetición de una palabra o grupo al inicio de versos sucesivos)
+    - id: B
+      ca: Epífora (repetició al final dels versos)
+      es: Epífora (repetición al final de los versos)
+    - id: C
+      ca: Al·literació (repetició de sons consonàntics)
+      es: Aliteración (repetición de sonidos consonánticos)
+    - id: D
+      ca: Hipèrbaton (alteració de l'ordre sintàctic)
+      es: Hipérbaton (alteración del orden sintáctico)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La repetició de «sé que vindràs» a l'inici de cada vers és una anàfora,
+      figura de repetició posicional en posició inicial. L'epífora seria la
+      repetició al final del vers; l'al·literació és la reiteració de sons
+      consonàntics, i l'hipèrbaton, l'alteració de l'ordre lògic de la frase,
+      cap dels quals és el recurs dominant aquí.
+    es: La repetición de «sé que vendrás» al inicio de cada verso es una anáfora,
+      figura de repetición en posición inicial. La epífora sería la repetición
+      al final del verso; la aliteración es la reiteración de sonidos
+      consonánticos, y el hipérbaton, la alteración del orden lógico de la
+      frase, ninguno de los cuales es el recurso dominante aquí.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.tools.text_commentary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En comentar un text en prosa que exalça l'equilibri, la mesura clàssica, la
+      «ciutat» i l'ideal de «l'obra ben feta», amb un llenguatge acurat i
+      antisentimental, i que reacciona contra l'individualisme i el vitalisme
+      anteriors, a quin moviment de la literatura catalana l'adscrivim?
+    es: Al comentar un texto en prosa que ensalza el equilibrio, la mesura clásica,
+      la «ciudad» y el ideal de «la obra bien hecha», con un lenguaje cuidado y
+      antisentimental, y que reacciona contra el individualismo y el vitalismo
+      anteriores, ¿a qué movimiento de la literatura catalana lo adscribimos?
+  options:
+    - id: A
+      ca: Noucentisme
+      es: Noucentisme
+    - id: B
+      ca: Modernisme
+      es: Modernisme
+    - id: C
+      ca: Romanticisme
+      es: Romanticismo
+    - id: D
+      ca: Renaixença
+      es: Renaixença
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El culte a l'equilibri, el classicisme, la civilitat i la ciutat, l'ideal de
+      «l'obra ben feta» i l'antisentimentalisme, juntament amb la reacció contra
+      el vitalisme i l'individualisme modernistes, són trets del Noucentisme
+      (primer terç del segle XX, teoritzat per Eugeni d'Ors). El Modernisme era
+      vitalista i individualista; el Romanticisme i la Renaixença són del segle
+      XIX i responen a altres ideals (subjectivitat, recuperació de la llengua i
+      la tradició).
+    es: El culto al equilibrio, el clasicismo, la civilidad y la ciudad, el ideal de
+      «la obra bien hecha» y el antisentimentalismo, junto con la reacción
+      contra el vitalismo e individualismo modernistas, son rasgos del
+      Noucentisme (primer tercio del siglo XX, teorizado por Eugeni d'Ors). El
+      Modernisme era vitalista e individualista; el Romanticismo y la Renaixença
+      son del siglo XIX y responden a otros ideales (subjetividad, recuperación
+      de la lengua y la tradición).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ramon_llull
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina obra de Ramon Llull es considera una de les primeres novel·les de la
+      literatura europea escrita en llengua romànica i inclou dins seu el
+      'Llibre d'amic e amat'?
+    es: ¿Qué obra de Ramon Llull se considera una de las primeras novelas de la
+      literatura europea escrita en lengua romance e incluye en su interior el
+      'Llibre d'amic e amat'?
+  options:
+    - id: A
+      ca: Llibre d'Evast e Blaquerna
+      es: Llibre d'Evast e Blaquerna
+    - id: B
+      ca: Llibre de contemplació en Déu
+      es: Llibre de contemplació en Déu
+    - id: C
+      ca: Arbre de ciència
+      es: Arbre de ciència
+    - id: D
+      ca: Llibre de l'orde de cavalleria
+      es: Llibre de l'orde de cavalleria
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El 'Llibre d'Evast e Blaquerna' (c. 1283) és una novel·la de tema religiós i
+      moral que segueix la vida de Blaquerna fins a fer-se papa i després
+      ermità; en la seva part d'ermitatge s'hi insereix el 'Llibre d'amic e
+      amat'. El 'Llibre de contemplació' és un tractat enciclopèdic, no una
+      novel·la; l'Arbre de ciència és una exposició del saber segons l'Art; i el
+      'Llibre de l'orde de cavalleria' és un tractat sobre la cavalleria.
+    es: El 'Llibre d'Evast e Blaquerna' (c. 1283) es una novela de tema religioso y
+      moral que sigue la vida de Blaquerna hasta llegar a papa y luego ermitaño;
+      en su parte de ermitaño se inserta el 'Llibre d'amic e amat'. El 'Llibre
+      de contemplació' es un tratado enciclopédico, no una novela; el 'Arbre de
+      ciència' es una exposición del saber según el Arte; y el 'Llibre de l'orde
+      de cavalleria' es un tratado sobre la caballería.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ramon_llull
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Per què Ramon Llull és considerat una figura fundacional de la prosa
+      catalana?
+    es: ¿Por qué se considera a Ramon Llull una figura fundacional de la prosa
+      catalana?
+  options:
+    - id: A
+      ca: Fou el primer a emprar el català com a llengua de creació literària,
+        filosòfica i científica, dotant-la d'una prosa culta
+      es: Fue el primero en emplear el catalán como lengua de creación literaria,
+        filosófica y científica, dotándola de una prosa culta
+    - id: B
+      ca: Va escriure exclusivament en català i va rebutjar el llatí i l'àrab
+      es: Escribió exclusivamente en catalán y rechazó el latín y el árabe
+    - id: C
+      ca: Va ser el primer poeta a compondre en català en lloc de l'occità
+      es: Fue el primer poeta en componer en catalán en lugar del occitano
+    - id: D
+      ca: Va fixar la gramàtica normativa del català modern
+      es: Fijó la gramática normativa del catalán moderno
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Llull és pioner perquè converteix el català en vehicle de pensament
+      abstracte (filosofia, teologia, ciència), àmbits fins aleshores reservats
+      al llatí. No escrivia només en català: també va emprar el llatí, l'àrab i
+      l'occità. No és el 'primer poeta' en català (la poesia culta encara
+      s'escrivia en occità en el seu temps), i la normativització moderna és
+      obra de Pompeu Fabra al segle XX."
+    es: "Llull es pionero porque convierte el catalán en vehículo de pensamiento
+      abstracto (filosofía, teología, ciencia), ámbitos hasta entonces
+      reservados al latín. No escribía solo en catalán: también usó el latín, el
+      árabe y el occitano. No es el 'primer poeta' en catalán (la poesía culta
+      seguía escribiéndose en occitano en su época), y la normativización
+      moderna es obra de Pompeu Fabra en el siglo XX."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ramon_llull
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: El 'Llibre de les bèsties', faula al·legòrica de tradició esòpica i
+      orientalitzant sobre l'engany en el poder, forma part d'una obra més
+      àmplia de Llull. De quina?
+    es: El 'Llibre de les bèsties', fábula alegórica de tradición esópica y
+      orientalizante sobre el engaño en el poder, forma parte de una obra más
+      amplia de Llull. ¿De cuál?
+  options:
+    - id: A
+      ca: Fèlix o Llibre de meravelles
+      es: Fèlix o Llibre de meravelles
+    - id: B
+      ca: Llibre d'Evast e Blaquerna
+      es: Llibre d'Evast e Blaquerna
+    - id: C
+      ca: Doctrina pueril
+      es: Doctrina pueril
+    - id: D
+      ca: Ars magna
+      es: Ars magna
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El 'Llibre de les bèsties' constitueix el setè llibre del 'Fèlix o Llibre de
+      meravelles' (c. 1288-1289), on el protagonista Fèlix recorre el món
+      admirant-se de les seves meravelles. El 'Blaquerna' conté el 'Llibre
+      d'amic e amat'; la 'Doctrina pueril' és un manual educatiu per al seu
+      fill; i l''Ars magna' és el mètode combinatori (l'Art).
+    es: El 'Llibre de les bèsties' constituye el séptimo libro del 'Fèlix o Llibre
+      de meravelles' (c. 1288-1289), donde el protagonista Fèlix recorre el
+      mundo admirándose de sus maravillas. El 'Blaquerna' contiene el 'Llibre
+      d'amic e amat'; la 'Doctrina pueril' es un manual educativo para su hijo;
+      y el 'Ars magna' es el método combinatorio (el Arte).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ramon_llull
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: El 'Llibre d'amic e amat' s'organitza en breus versicles de caràcter místic.
+      Segons el mateix text, quants versicles conté i quin principi estructural
+      en justifica el nombre?
+    es: El 'Llibre d'amic e amat' se organiza en breves versículos de carácter
+      místico. Según el propio texto, ¿cuántos versículos contiene y qué
+      principio estructural justifica ese número?
+  options:
+    - id: A
+      ca: 366 versicles, un per a cada dia de l'any (incloent-hi l'any de traspàs)
+      es: 366 versículos, uno para cada día del año (incluyendo el año bisiesto)
+    - id: B
+      ca: 52 versicles, un per a cada setmana de l'any
+      es: 52 versículos, uno para cada semana del año
+    - id: C
+      ca: 100 versicles, seguint la divisió de la 'Divina Comèdia'
+      es: 100 versículos, siguiendo la división de la 'Divina Comedia'
+    - id: D
+      ca: 12 versicles, un per a cada apòstol
+      es: 12 versículos, uno para cada apóstol
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El pròleg del 'Llibre d'amic e amat' indica que conté tants versicles com
+      dies té l'any, pensats perquè el místic en mediti un cada dia; el text
+      recull 366 versicles (comptant l'any de traspàs). Les altres xifres
+      corresponen a estructures d'altres obres o marcs (setmanes, cants de la
+      'Comèdia', apòstols) alienes a aquest text.
+    es: El prólogo del 'Llibre d'amic e amat' indica que contiene tantos versículos
+      como días tiene el año, pensados para que el místico medite uno cada día;
+      el texto recoge 366 versículos (contando el año bisiesto). Las otras
+      cifras corresponden a estructuras de otras obras o marcos (semanas, cantos
+      de la 'Comedia', apóstoles) ajenas a este texto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ramon_llull
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Quina afirmació descriu millor l'objectiu i el mètode de l''Art' de Llull
+      (Ars magna / Ars generalis ultima)?
+    es: ¿Qué afirmación describe mejor el objetivo y el método del 'Arte' de Llull
+      (Ars magna / Ars generalis ultima)?
+  options:
+    - id: A
+      ca: Un sistema lògic i combinatori de principis i figures per demostrar
+        racionalment les veritats de la fe i convèncer els no creients
+      es: Un sistema lógico y combinatorio de principios y figuras para demostrar
+        racionalmente las verdades de la fe y convencer a los no creyentes
+    - id: B
+      ca: Un tractat de retòrica i poètica per compondre versos en occità
+      es: Un tratado de retórica y poética para componer versos en occitano
+    - id: C
+      ca: Un mètode alquímic per transmutar metalls que Llull va practicar
+        personalment
+      es: Un método alquímico para transmutar metales que Llull practicó personalmente
+    - id: D
+      ca: Un recull de sermons destinats a la predicació dominical
+      es: Una colección de sermones destinados a la predicación dominical
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'Art lul·liana és un mètode lògic i combinatori (amb principis, figures,
+      taules i rodes giratòries) que pretén, a partir d'uns conceptes bàsics
+      comuns a totes les religions, demostrar racionalment les veritats
+      cristianes i convertir infidels (jueus i musulmans). No és una poètica;
+      els tractats alquímics atribuïts a Llull són apòcrifs (pseudo-Llull), i
+      tampoc no és un sermonari.
+    es: El Arte luliano es un método lógico y combinatorio (con principios, figuras,
+      tablas y ruedas giratorias) que pretende, a partir de unos conceptos
+      básicos comunes a todas las religiones, demostrar racionalmente las
+      verdades cristianas y convertir a los infieles (judíos y musulmanes). No
+      es una poética; los tratados alquímicos atribuidos a Llull son apócrifos
+      (pseudo-Llull), y tampoco es un sermonario.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ramon_llull
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Quina de les següents dades biogràfiques i contextuals sobre Ramon Llull és
+      correcta?
+    es: ¿Cuál de los siguientes datos biográficos y contextuales sobre Ramon Llull
+      es correcto?
+  options:
+    - id: A
+      ca: Nascut a Mallorca vers 1232 i mort vers 1315-1316, va promoure la fundació
+        d'una escola de llengües orientals a Miramar (1276) per formar
+        missioners
+      es: Nacido en Mallorca hacia 1232 y muerto hacia 1315-1316, promovió la
+        fundación de una escuela de lenguas orientales en Miramar (1276) para
+        formar misioneros
+    - id: B
+      ca: Va viure al segle XV i va ser contemporani d'Ausiàs March i de Joanot
+        Martorell
+      es: Vivió en el siglo XV y fue contemporáneo de Ausiàs March y de Joanot
+        Martorell
+    - id: C
+      ca: Era un monjo benedictí que mai no va sortir de Mallorca
+      es: Era un monje benedictino que nunca salió de Mallorca
+    - id: D
+      ca: Va escriure tota la seva obra únicament en llatí, i les versions catalanes
+        són traduccions posteriors d'altres autors
+      es: Escribió toda su obra únicamente en latín, y las versiones catalanas son
+        traducciones posteriores de otros autores
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Llull neix a Mallorca c. 1232 i mor c. 1315-1316; després de la seva
+      conversió va impulsar el monestir-escola de Miramar (autoritzat pel rei
+      Jaume II de Mallorca cap al 1276) per ensenyar àrab a futurs missioners.
+      Pertany al segle XIII-XIV, no al XV (March i Martorell són molt
+      posteriors); no fou monjo de clausura sinó laic i gran viatger (Roma,
+      París, el nord d'Àfrica); i va escriure directament en català, a més de
+      llatí i àrab.
+    es: Llull nace en Mallorca c. 1232 y muere c. 1315-1316; tras su conversión
+      impulsó el monasterio-escuela de Miramar (autorizado por el rey Jaime II
+      de Mallorca hacia 1276) para enseñar árabe a futuros misioneros. Pertenece
+      al siglo XIII-XIV, no al XV (March y Martorell son muy posteriores); no
+      fue monje de clausura sino laico y gran viajero (Roma, París, el norte de
+      África); y escribió directamente en catalán, además de en latín y árabe.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ausias_march
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Una de les grans innovacions d'Ausiàs March (c. 1400-1459) respecte de la
+      tradició poètica anterior és la llengua que fa servir. Quina afirmació és
+      correcta?
+    es: Una de las grandes innovaciones de Ausiàs March (c. 1400-1459) respecto de
+      la tradición poética anterior es la lengua que utiliza. ¿Qué afirmación es
+      correcta?
+  options:
+    - id: A
+      ca: Abandona l'occità (provençal) dels trobadors i escriu la seva obra en
+        català.
+      es: Abandona el occitano (provenzal) de los trovadores y escribe su obra en
+        catalán.
+    - id: B
+      ca: Escriu en occità pur per fidelitat als trobadors provençals.
+      es: Escribe en occitano puro por fidelidad a los trovadores provenzales.
+    - id: C
+      ca: Escriu la seva poesia amorosa en llatí, com els clàssics.
+      es: Escribe su poesía amorosa en latín, como los clásicos.
+    - id: D
+      ca: Alterna el català i el castellà dins d'un mateix poema.
+      es: Alterna el catalán y el castellano dentro de un mismo poema.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La ruptura decisiva de March és lingüística i estilística: és el primer
+      gran poeta que deixa enrere l'occità (la llengua convencional de la lírica
+      trobadoresca, encara plena d'occitanismes en poetes com Jordi de Sant
+      Jordi) i escriu íntegrament en català. No fa servir ni llatí ni castellà."
+    es: "La ruptura decisiva de March es lingüística y estilística: es el primer
+      gran poeta que deja atrás el occitano (la lengua convencional de la lírica
+      trovadoresca, todavía llena de occitanismos en poetas como Jordi de Sant
+      Jordi) y escribe íntegramente en catalán. No emplea ni latín ni
+      castellano."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ausias_march
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En la poesia amorosa d'Ausiàs March és habitual el senyal (pseudònim poètic
+      amb què s'invoca la dama). Quin dels següents és un senyal usat per March?
+    es: En la poesía amorosa de Ausiàs March es habitual el senyal (seudónimo
+      poético con el que se invoca a la dama). ¿Cuál de los siguientes es un
+      senyal usado por March?
+  options:
+    - id: A
+      ca: «Plena de seny»
+      es: «Plena de seny»
+    - id: B
+      ca: «Laura»
+      es: «Laura»
+    - id: C
+      ca: «Beatrice»
+      es: «Beatrice»
+    - id: D
+      ca: «Dulcinea»
+      es: «Dulcinea»
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: March identifica les destinatàries dels seus poemes amb senyals com «Plena
+      de seny», «Llir entre cards», «Amor, amor» o «Oh, foll amor». «Laura» és
+      la dama de Petrarca; «Beatrice», la de Dante; «Dulcinea», la del Quixot de
+      Cervantes.
+    es: March identifica a las destinatarias de sus poemas con senyals como «Plena
+      de seny», «Llir entre cards», «Amor, amor» u «Oh, foll amor». «Laura» es
+      la dama de Petrarca; «Beatrice», la de Dante; «Dulcinea», la del Quijote
+      de Cervantes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ausias_march
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Dins l'obra d'Ausiàs March es distingeix un cicle conegut com els «Cants de
+      mort». Quin n'és el tema central?
+    es: Dentro de la obra de Ausiàs March se distingue un ciclo conocido como los
+      «Cants de mort». ¿Cuál es su tema central?
+  options:
+    - id: A
+      ca: El dol per la mort de la dama estimada i la reflexió sobre l'amor i la
+        salvació de l'ànima més enllà de la mort.
+      es: El duelo por la muerte de la dama amada y la reflexión sobre el amor y la
+        salvación del alma más allá de la muerte.
+    - id: B
+      ca: L'exaltació festiva de la joventut i del plaer amorós correspost.
+      es: La exaltación festiva de la juventud y del placer amoroso correspondido.
+    - id: C
+      ca: La narració de gestes cavalleresques i batalles del poeta.
+      es: La narración de gestas caballerescas y batallas del poeta.
+    - id: D
+      ca: La descripció idealitzada del paisatge natural de València.
+      es: La descripción idealizada del paisaje natural de Valencia.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els «Cants de mort» sorgeixen de la mort de la dama estimada i s'hi combina
+      el plany pel dol amb la meditació angoixada sobre la naturalesa del seu
+      amor i sobre la sort de l'ànima de la difunta (i de la seva pròpia). No
+      són poesia festiva, ni èpica, ni paisatgística.
+    es: Los «Cants de mort» surgen de la muerte de la dama amada y combinan el
+      llanto por el duelo con la meditación angustiada sobre la naturaleza de su
+      amor y sobre la suerte del alma de la difunta (y de la suya propia). No
+      son poesía festiva, ni épica, ni paisajística.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ausias_march
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: El poema XLVI d'Ausiàs March, que comença «Veles e vents han mos desigs
+      complir», és un dels més cèlebres. Quin recurs vertebra el poema?
+    es: El poema XLVI de Ausiàs March, que comienza «Veles e vents han mos desigs
+      complir», es uno de los más célebres. ¿Qué recurso vertebra el poema?
+  options:
+    - id: A
+      ca: "Una metàfora nàutica: el viatge per mar (veles, vents, tempesta) expressa
+        el desig i la por del jo davant l'amor."
+      es: "Una metáfora náutica: el viaje por mar (velas, vientos, tempestad) expresa
+        el deseo y el miedo del yo ante el amor."
+    - id: B
+      ca: Una al·legoria bèl·lica en què l'amor es representa com un setge militar.
+      es: Una alegoría bélica en la que el amor se representa como un asedio militar.
+    - id: C
+      ca: Una pastorel·la on el jo dialoga amb una pastora al camp.
+      es: Una pastorela donde el yo dialoga con una pastora en el campo.
+    - id: D
+      ca: Una descripció astronòmica dels estels que guien la dama.
+      es: Una descripción astronómica de los astros que guían a la dama.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Veles e vents» construeix una gran metàfora marinera: el poeta desitja que
+      els vents i les veles li permetin d'arribar fins a la dama, però la
+      travessia i la tempesta simbolitzen alhora la intensitat del desig i el
+      temor a la mort i a la pèrdua de l'amor. No és una al·legoria militar ni
+      una pastorel·la."
+    es: "«Veles e vents» construye una gran metáfora marinera: el poeta desea que
+      los vientos y las velas le permitan llegar hasta la dama, pero la travesía
+      y la tempestad simbolizan a la vez la intensidad del deseo y el temor a la
+      muerte y a la pérdida del amor. No es una alegoría militar ni una
+      pastorela."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ausias_march
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Pel que fa a la mètrica, quin vers empra de manera característica Ausiàs
+      March en la seva poesia?
+    es: En cuanto a la métrica, ¿qué verso emplea de manera característica Ausiàs
+      March en su poesía?
+  options:
+    - id: A
+      ca: El decasíl·lab català amb cesura després de la quarta síl·laba.
+      es: El decasílabo catalán con cesura tras la cuarta sílaba.
+    - id: B
+      ca: L'alexandrí de dotze síl·labes amb rima assonant.
+      es: El alejandrino de doce sílabas con rima asonante.
+    - id: C
+      ca: L'octosíl·lab en romanç, sense estrofisme fix.
+      es: El octosílabo en romance, sin estrofismo fijo.
+    - id: D
+      ca: El vers lliure, sense mesura ni rima.
+      es: El verso libre, sin medida ni rima.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: March fa servir el decasíl·lab (deu síl·labes) amb cesura interior després
+      de la quarta síl·laba (4+6), el vers propi de la lírica culta catalana
+      medieval, organitzat en cobles amb rima. No usa l'alexandrí, ni el romanç
+      octosil·làbic, ni el vers lliure, invenció molt posterior.
+    es: March emplea el decasílabo (diez sílabas) con cesura interior tras la cuarta
+      sílaba (4+6), el verso propio de la lírica culta catalana medieval,
+      organizado en coblas con rima. No usa el alejandrino, ni el romance
+      octosilábico, ni el verso libre, invención muy posterior.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.ausias_march
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: El «Cant espiritual» d'Ausiàs March és una peça singular dins la seva obra.
+      Quina de les caracteritzacions següents és la correcta?
+    es: El «Cant espiritual» de Ausiàs March es una pieza singular dentro de su
+      obra. ¿Cuál de las siguientes caracterizaciones es la correcta?
+  options:
+    - id: A
+      ca: És un llarg poema-oració adreçat directament a Déu, on el jo expressa la
+        seva angoixa moral i el desig de salvació.
+      es: Es un largo poema-oración dirigido directamente a Dios, donde el yo expresa
+        su angustia moral y el deseo de salvación.
+    - id: B
+      ca: És una cançó de lloança a la dama en què el jo li demana correspondència
+        amorosa.
+      es: Es una canción de alabanza a la dama en la que el yo le pide correspondencia
+        amorosa.
+    - id: C
+      ca: És un poema humorístic i satíric contra el clergat de l'època.
+      es: Es un poema humorístico y satírico contra el clero de la época.
+    - id: D
+      ca: És una crònica en vers dels fets militars de la Corona d'Aragó.
+      es: Es una crónica en verso de los hechos militares de la Corona de Aragón.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El «Cant espiritual» és una extensa pregària en vers dirigida a Déu (comença
+      «Puis que sens tu algú a tu no basta»), en què March, abandonant el tema
+      amorós, planteja amb tensió dramàtica el seu conflicte moral, la por al
+      pecat i el desig —barrejat amb dubte— de salvar l'ànima. No és lloança a
+      la dama, ni sàtira, ni crònica militar.
+    es: El «Cant espiritual» es una extensa plegaria en verso dirigida a Dios
+      (comienza «Puis que sens tu algú a tu no basta»), en la que March,
+      abandonando el tema amoroso, plantea con tensión dramática su conflicto
+      moral, el miedo al pecado y el deseo —mezclado con duda— de salvar el
+      alma. No es alabanza a la dama, ni sátira, ni crónica militar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.tirant_lo_blanc
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Qui és l'autor de la major part de Tirant lo Blanc, cavaller valencià que va
+      deixar l'obra pràcticament enllestida a la seva mort (1465)?
+    es: ¿Quién es el autor de la mayor parte de Tirant lo Blanc, caballero
+      valenciano que dejó la obra prácticamente terminada a su muerte (1465)?
+  options:
+    - id: A
+      ca: Joanot Martorell
+      es: Joanot Martorell
+    - id: B
+      ca: Ausiàs March
+      es: Ausiàs March
+    - id: C
+      ca: Ramon Llull
+      es: Ramon Llull
+    - id: D
+      ca: Bernat Metge
+      es: Bernat Metge
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Tirant lo Blanc és obra del cavaller valencià Joanot Martorell. Ausiàs March
+      fou poeta, Ramon Llull escriptor del s. XIII-XIV i Bernat Metge autor de
+      Lo somni; cap d'ells no va escriure Tirant.
+    es: Tirant lo Blanc es obra del caballero valenciano Joanot Martorell. Ausiàs
+      March fue poeta, Ramon Llull escritor de los s. XIII-XIV y Bernat Metge
+      autor de Lo somni; ninguno de ellos escribió Tirant.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.tirant_lo_blanc
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: On i en quin any es va imprimir per primera vegada Tirant lo Blanc (editio
+      princeps)?
+    es: ¿Dónde y en qué año se imprimió por primera vez Tirant lo Blanc (editio
+      princeps)?
+  options:
+    - id: A
+      ca: València, 1490
+      es: Valencia, 1490
+    - id: B
+      ca: Barcelona, 1490
+      es: Barcelona, 1490
+    - id: C
+      ca: València, 1460
+      es: Valencia, 1460
+    - id: D
+      ca: Barcelona, 1497
+      es: Barcelona, 1497
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'editio princeps es va imprimir a València el 1490 (taller de Nicolau
+      Spindeler). El 1460 és la data de la dedicatòria, no de la impressió; el
+      1497 correspon a la segona edició, feta a Barcelona.
+    es: La editio princeps se imprimió en Valencia en 1490 (taller de Nicolau
+      Spindeler). 1460 es la fecha de la dedicatoria, no de la impresión; 1497
+      corresponde a la segunda edición, hecha en Barcelona.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.tirant_lo_blanc
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quin tret defineix Tirant lo Blanc com a «novel·la cavalleresca» i la
+      distingeix dels «llibres de cavalleries»?
+    es: ¿Qué rasgo define Tirant lo Blanc como «novela caballeresca» y la distingue
+      de los «libros de caballerías»?
+  options:
+    - id: A
+      ca: "El verisme: el protagonista és humà, sense elements meravellosos ni
+        fantàstics"
+      es: "El verismo: el protagonista es humano, sin elementos maravillosos ni
+        fantásticos"
+    - id: B
+      ca: L'abundància de gegants, dracs i encantaments
+      es: La abundancia de gigantes, dragones y encantamientos
+    - id: C
+      ca: El fet d'estar escrita en vers
+      es: El hecho de estar escrita en verso
+    - id: D
+      ca: La localització de l'acció en un món purament imaginari
+      es: La localización de la acción en un mundo puramente imaginario
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La novel·la cavalleresca es caracteritza pel verisme: Tirant és un heroi
+      humà que menja, dorm, s'enamora, emmalalteix i mor, en escenaris
+      geogràfics reconeixibles. Els llibres de cavalleries, en canvi, incorporen
+      elements meravellosos (gegants, dracs, encantaments). L'obra és en prosa,
+      no en vers."
+    es: "La novela caballeresca se caracteriza por el verismo: Tirant es un héroe
+      humano que come, duerme, se enamora, enferma y muere, en escenarios
+      geográficos reconocibles. Los libros de caballerías, en cambio, incorporan
+      elementos maravillosos (gigantes, dragones, encantamientos). La obra está
+      en prosa, no en verso."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.tirant_lo_blanc
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Com mor Tirant al final de la novel·la, un desenllaç coherent amb el verisme
+      de l'obra?
+    es: ¿Cómo muere Tirant al final de la novela, un desenlace coherente con el
+      verismo de la obra?
+  options:
+    - id: A
+      ca: D'una malaltia (un mal de costat), no pas en combat, i Carmesina mor de
+        dolor poc després
+      es: De una enfermedad (un mal de costado), no en combate, y Carmesina muere de
+        dolor poco después
+    - id: B
+      ca: En una batalla heroica contra els turcs davant de Constantinoble
+      es: En una batalla heroica contra los turcos ante Constantinopla
+    - id: C
+      ca: En un duel singular contra un gegant a l'Àfrica
+      es: En un duelo singular contra un gigante en África
+    - id: D
+      ca: Assassinat per la Viuda Reposada per gelosia
+      es: Asesinado por la Viuda Reposada por celos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Coherent amb el verisme, Tirant no mor gloriosament en batalla sinó d'una
+      malaltia (un mal de costat) quan ja ha alliberat l'Imperi grec; en
+      assabentar-se'n, la princesa Carmesina mor de dolor. Aquesta mort «humana»
+      reforça el caràcter realista de la novel·la cavalleresca.
+    es: Coherente con el verismo, Tirant no muere gloriosamente en batalla sino de
+      una enfermedad (un mal de costado) cuando ya ha liberado el Imperio
+      griego; al enterarse, la princesa Carmesina muere de dolor. Esta muerte
+      «humana» refuerza el carácter realista de la novela caballeresca.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.tirant_lo_blanc
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quin personatge femení actua com a còmplice enginyosa i afavoreix, amb humor
+      i sensualitat, els amors entre Tirant i Carmesina?
+    es: ¿Qué personaje femenino actúa como cómplice ingeniosa y favorece, con humor
+      y sensualidad, los amores entre Tirant y Carmesina?
+  options:
+    - id: A
+      ca: Plaerdemavida
+      es: Plaerdemavida
+    - id: B
+      ca: La Viuda Reposada
+      es: La Viuda Reposada
+    - id: C
+      ca: Estefania
+      es: Estefania
+    - id: D
+      ca: L'emperadriu
+      es: La emperatriz
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Plaerdemavida és la donzella astuta i desimbolta que, amb enginy i to eròtic
+      i humorístic, facilita la relació entre Tirant i Carmesina. La Viuda
+      Reposada, en canvi, hi actua en contra per gelosia; Estefania és cosina de
+      Carmesina i aparella amb Diafebus.
+    es: Plaerdemavida es la doncella astuta y desenvuelta que, con ingenio y tono
+      erótico y humorístico, facilita la relación entre Tirant y Carmesina. La
+      Viuda Reposada, en cambio, actúa en contra por celos; Estefania es prima
+      de Carmesina y se empareja con Diafebus.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.medieval.tirant_lo_blanc
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Segons el colofó de l'edició de 1490, qui hauria completat la part final de
+      Tirant lo Blanc després de la mort de Martorell?
+    es: Según el colofón de la edición de 1490, ¿quién habría completado la parte
+      final de Tirant lo Blanc tras la muerte de Martorell?
+  options:
+    - id: A
+      ca: Martí Joan de Galba
+      es: Martí Joan de Galba
+    - id: B
+      ca: Joan Roís de Corella
+      es: Joan Roís de Corella
+    - id: C
+      ca: Jaume Roig
+      es: Jaume Roig
+    - id: D
+      ca: Nicolau Spindeler
+      es: Nicolau Spindeler
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El colofó de l'editio princeps (1490) atribueix l'acabament de l'obra a
+      Martí Joan de Galba, tot i que la crítica moderna discuteix l'abast real
+      d'aquesta intervenció. Joan Roís de Corella i Jaume Roig són altres autors
+      valencians del segle XV, i Nicolau Spindeler fou l'impressor, no un
+      continuador.
+    es: El colofón de la editio princeps (1490) atribuye la conclusión de la obra a
+      Martí Joan de Galba, aunque la crítica moderna discute el alcance real de
+      esa intervención. Joan Roís de Corella y Jaume Roig son otros autores
+      valencianos del siglo XV, y Nicolau Spindeler fue el impresor, no un
+      continuador.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.decadencia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Segons la periodització convencional de la història de la literatura
+      catalana, quin fet marca el final de la Decadència i l'inici de la
+      Renaixença?
+    es: Según la periodización convencional de la historia de la literatura
+      catalana, ¿qué hecho marca el final de la Decadència y el inicio de la
+      Renaixença?
+  options:
+    - id: A
+      ca: La publicació de l'oda «La Pàtria» de Bonaventura Carles Aribau (1833)
+      es: La publicación de la oda «La Pàtria» de Bonaventura Carles Aribau (1833)
+    - id: B
+      ca: La caiguda de Barcelona i els Decrets de Nova Planta (1714-1716)
+      es: La caída de Barcelona y los Decretos de Nueva Planta (1714-1716)
+    - id: C
+      ca: La publicació de «L'Atlàntida» de Jacint Verdaguer (1877)
+      es: La publicación de «L'Atlàntida» de Jacint Verdaguer (1877)
+    - id: D
+      ca: El Compromís de Casp (1412)
+      es: El Compromiso de Caspe (1412)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Es fixa convencionalment el final de la Decadència i l'inici de la
+      Renaixença en 1833, amb l'oda «La Pàtria» d'Aribau, publicada a la revista
+      «El Vapor». La caiguda de 1714 i els Decrets de Nova Planta són causes
+      polítiques de la Decadència, no el seu final; «L'Atlàntida» (1877) és ja
+      plena Renaixença; el Compromís de Casp (1412) és anterior i pertany a
+      l'època medieval.
+    es: Se fija convencionalmente el final de la Decadència y el inicio de la
+      Renaixença en 1833, con la oda «La Pàtria» de Aribau, publicada en la
+      revista «El Vapor». La caída de 1714 y los Decretos de Nueva Planta son
+      causas políticas de la Decadència, no su final; «L'Atlàntida» (1877) ya es
+      plena Renaixença; el Compromiso de Caspe (1412) es anterior y pertenece a
+      la época medieval.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.decadencia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: «Rector de Vallfogona» és el sobrenom amb què es coneix un dels màxims
+      exponents de la poesia barroca catalana. De quin autor es tracta?
+    es: «Rector de Vallfogona» es el sobrenombre con el que se conoce a uno de los
+      máximos exponentes de la poesía barroca catalana. ¿De qué autor se trata?
+  options:
+    - id: A
+      ca: Francesc Vicent Garcia
+      es: Francesc Vicent Garcia
+    - id: B
+      ca: Francesc Fontanella
+      es: Francesc Fontanella
+    - id: C
+      ca: Cristòfor Despuig
+      es: Cristòfor Despuig
+    - id: D
+      ca: Joan Ramis i Ramis
+      es: Joan Ramis i Ramis
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Francesc Vicent Garcia (mort el 1623) va ser rector de Vallfogona de
+      Riucorb, d'on ve el sobrenom; la seva obra, publicada pòstumament («La
+      armonia del Parnàs», 1703), va donar nom al «vallfogonisme», una poesia
+      barroca d'influència gongorina. Fontanella és també barroc però lligat a
+      la Guerra dels Segadors; Despuig és un prosista del segle XVI; Ramis és un
+      tràgic neoclàssic del XVIII.
+    es: Francesc Vicent Garcia (fallecido en 1623) fue rector de Vallfogona de
+      Riucorb, de donde procede el sobrenombre; su obra, publicada póstumamente
+      («La armonia del Parnàs», 1703), dio nombre al «vallfogonismo», una poesía
+      barroca de influencia gongorina. Fontanella es también barroco pero ligado
+      a la Guerra dels Segadors; Despuig es un prosista del siglo XVI; Ramis es
+      un trágico neoclásico del XVIII.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.decadencia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: «Los col·loquis de la insigne ciutat de Tortosa» (1557), de Cristòfor
+      Despuig, és una obra rellevant del segle XVI. Quin gènere i quina intenció
+      la caracteritzen?
+    es: «Los col·loquis de la insigne ciutat de Tortosa» (1557), de Cristòfor
+      Despuig, es una obra relevante del siglo XVI. ¿Qué género e intención la
+      caracterizan?
+  options:
+    - id: A
+      ca: Un diàleg humanista en prosa que defensa la llengua i la història del país
+      es: Un diálogo humanista en prosa que defiende la lengua y la historia del país
+    - id: B
+      ca: Una tragèdia neoclàssica en vers d'inspiració romana
+      es: Una tragedia neoclásica en verso de inspiración romana
+    - id: C
+      ca: Un recull de poesia satírica i escatològica d'estil barroc
+      es: Un cancionero de poesía satírica y escatológica de estilo barroco
+    - id: D
+      ca: Una novel·la cavalleresca continuadora del «Tirant lo Blanc»
+      es: Una novela caballeresca continuadora del «Tirant lo Blanc»
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'obra és un diàleg humanista en prosa, en què uns interlocutors conversen
+      sobre la història, la societat i la llengua; Despuig hi reivindica el
+      català i critica la castellanització incipient. La tragèdia neoclàssica
+      correspon a Ramis (XVIII); la poesia satírica barroca, al Rector de
+      Vallfogona (XVII); la novel·la cavalleresca pertany al segle XV
+      (Martorell).
+    es: La obra es un diálogo humanista en prosa, en el que unos interlocutores
+      conversan sobre la historia, la sociedad y la lengua; Despuig reivindica
+      el catalán y critica la castellanización incipiente. La tragedia
+      neoclásica corresponde a Ramis (XVIII); la poesía satírica barroca, al
+      Rector de Vallfogona (XVII); la novela caballeresca pertenece al siglo XV
+      (Martorell).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.decadencia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Durant el segle XVIII, l'illa de Menorca —sota domini britànic bona part de
+      la centúria— va viure una notable activitat literària. Quina obra i quin
+      moviment representa Joan Ramis i Ramis?
+    es: Durante el siglo XVIII, la isla de Menorca —bajo dominio británico buena
+      parte de la centuria— vivió una notable actividad literaria. ¿Qué obra y
+      qué movimiento representa Joan Ramis i Ramis?
+  options:
+    - id: A
+      ca: «Lucrècia» (1769), tragèdia neoclàssica
+      es: «Lucrècia» (1769), tragedia neoclásica
+    - id: B
+      ca: «Lo desengany», obra dramàtica barroca
+      es: «Lo desengany», obra dramática barroca
+    - id: C
+      ca: «Atheneo de grandesa», tractat de prosa barroca
+      es: «Atheneo de grandesa», tratado de prosa barroca
+    - id: D
+      ca: «La armonia del Parnàs», recull de poesia barroca
+      es: «La armonia del Parnàs», cancionero de poesía barroca
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Joan Ramis i Ramis va escriure «Lucrècia» (o «Roma lliure», 1769), tragèdia
+      neoclàssica que segueix les regles de les tres unitats i el gust
+      il·lustrat del segle XVIII. «Lo desengany» és de Fontanella (barroc,
+      XVII); l'«Atheneo de grandesa» és de Josep Romaguera (prosa barroca,
+      1681); «La armonia del Parnàs» recull la poesia del Rector de Vallfogona.
+    es: Joan Ramis i Ramis escribió «Lucrècia» (o «Roma lliure», 1769), tragedia
+      neoclásica que sigue las reglas de las tres unidades y el gusto ilustrado
+      del siglo XVIII. «Lo desengany» es de Fontanella (barroco, XVII); el
+      «Atheneo de grandesa» es de Josep Romaguera (prosa barroca, 1681); «La
+      armonia del Parnàs» recoge la poesía del Rector de Vallfogona.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.decadencia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Francesc Fontanella (1622-c.1683) és una de les grans veus del Barroc
+      català. Amb quin context històric i quina producció s'associa
+      principalment?
+    es: Francesc Fontanella (1622-c.1683) es una de las grandes voces del Barroco
+      catalán. ¿Con qué contexto histórico y qué producción se asocia
+      principalmente?
+  options:
+    - id: A
+      ca: La Guerra dels Segadors; poesia i teatre barrocs, com «Lo desengany»
+      es: La Guerra dels Segadors; poesía y teatro barrocos, como «Lo desengany»
+    - id: B
+      ca: La Guerra de Successió; poesia neoclàssica il·lustrada
+      es: La Guerra de Sucesión; poesía neoclásica ilustrada
+    - id: C
+      ca: El regnat dels Reis Catòlics; prosa historiogràfica humanista
+      es: El reinado de los Reyes Católicos; prosa historiográfica humanista
+    - id: D
+      ca: La Renaixença; poesia patriòtica dels Jocs Florals
+      es: La Renaixença; poesía patriótica de los Jocs Florals
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Fontanella va viure la Guerra dels Segadors (1640-1652), en què participà
+      activament, i la seva obra —poesia i teatre— és plenament barroca; se li
+      atribueix «Lo desengany». La Guerra de Successió (1701-1714) i el
+      Neoclassicisme són posteriors; els Reis Catòlics i la historiografia
+      humanista corresponen a la transició del XV-XVI; la Renaixença i els Jocs
+      Florals són del segle XIX.
+    es: Fontanella vivió la Guerra dels Segadors (1640-1652), en la que participó
+      activamente, y su obra —poesía y teatro— es plenamente barroca; se le
+      atribuye «Lo desengany». La Guerra de Sucesión (1701-1714) y el
+      Neoclasicismo son posteriores; los Reyes Católicos y la historiografía
+      humanista corresponden a la transición del XV-XVI; la Renaixença y los
+      Jocs Florals son del siglo XIX.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.decadencia
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: El terme «Decadència» descriu els segles XVI-XVIII de la literatura
+      catalana. Quina afirmació en defineix amb més precisió el sentit i la
+      cronologia?
+    es: El término «Decadència» describe los siglos XVI-XVIII de la literatura
+      catalana. ¿Qué afirmación define con más precisión su sentido y
+      cronología?
+  options:
+    - id: A
+      ca: S'estén aproximadament del segle XVI al 1833 i indica el declivi de l'ús
+        culte i literari del català —per castellanització de les elits i pèrdua
+        de prestigi—, no pas l'absència de textos
+      es: Se extiende aproximadamente del siglo XVI a 1833 e indica el declive del uso
+        culto y literario del catalán —por castellanización de las élites y
+        pérdida de prestigio—, no la ausencia de textos
+    - id: B
+      ca: Comprèn tot just el segle XVIII i significa que no es va escriure
+        absolutament res en català
+      es: Comprende solo el siglo XVIII y significa que no se escribió absolutamente
+        nada en catalán
+    - id: C
+      ca: Va de 1714 a 1936 i designa la prohibició total del català després de la
+        Nova Planta
+      es: Va de 1714 a 1936 y designa la prohibición total del catalán tras la Nueva
+        Planta
+    - id: D
+      ca: Coincideix amb el Segle d'Or valencià del XV i n'és sinònim
+      es: Coincide con el Siglo de Oro valenciano del XV y es sinónimo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La Decadència s'estén, a grans trets, del segle XVI fins al 1833 (tres
+      segles) i designa el declivi de la literatura culta en català —afavorit
+      per la castellanització de les classes altes i la pèrdua de prestigi de la
+      llengua—, però NO l'absència de producció: hi ha Barroc (Vicent Garcia,
+      Fontanella) i Neoclassicisme (Ramis). No es limita al XVIII, no implica
+      prohibició total ni cap absència de textos, i s'oposa al Segle d'Or del
+      XV, que és l'apogeu, no la decadència."
+    es: "La Decadència se extiende, a grandes rasgos, del siglo XVI hasta 1833 (tres
+      siglos) y designa el declive de la literatura culta en catalán —favorecido
+      por la castellanización de las clases altas y la pérdida de prestigio de
+      la lengua—, pero NO la ausencia de producción: hay Barroco (Vicent Garcia,
+      Fontanella) y Neoclasicismo (Ramis). No se limita al XVIII, no implica
+      prohibición total ni ausencia de textos, y se opone al Siglo de Oro del
+      XV, que es el apogeo, no la decadencia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.renaixenca
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina obra i any es consideren tradicionalment l'inici simbòlic de la
+      Renaixença literària catalana?
+    es: ¿Qué obra y año se consideran tradicionalmente el inicio simbólico de la
+      Renaixença literaria catalana?
+  options:
+    - id: A
+      ca: «La Pàtria» de Bonaventura Carles Aribau (1833)
+      es: «La Pàtria» de Bonaventura Carles Aribau (1833)
+    - id: B
+      ca: «Lo Gaiter del Llobregat» de Joaquim Rubió i Ors (1841)
+      es: «Lo Gaiter del Llobregat» de Joaquim Rubió i Ors (1841)
+    - id: C
+      ca: «L'Atlàntida» de Jacint Verdaguer (1877)
+      es: «L'Atlàntida» de Jacint Verdaguer (1877)
+    - id: D
+      ca: La restauració dels Jocs Florals de Barcelona (1859)
+      es: La restauración de los Jocs Florals de Barcelona (1859)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La crítica fixa l'inici simbòlic de la Renaixença en la publicació de l'oda
+      «La Pàtria» d'Aribau al diari El Vapor el 1833. El poemari de Rubió i Ors
+      (1841), «L'Atlàntida» de Verdaguer (1877) i la restauració dels Jocs
+      Florals (1859) són fites posteriors del mateix moviment, però no en
+      marquen l'inici.
+    es: La crítica sitúa el inicio simbólico de la Renaixença en la publicación de
+      la oda «La Pàtria» de Aribau en el diario El Vapor en 1833. El poemario de
+      Rubió i Ors (1841), «L'Atlàntida» de Verdaguer (1877) y la restauración de
+      los Jocs Florals (1859) son hitos posteriores del mismo movimiento, pero
+      no marcan su inicio.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.renaixenca
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En quin any es van restaurar els Jocs Florals a Barcelona, fet clau per a la
+      institucionalització de la Renaixença?
+    es: ¿En qué año se restauraron los Jocs Florals en Barcelona, hecho clave para
+      la institucionalización de la Renaixença?
+  options:
+    - id: A
+      ca: "1833"
+      es: "1833"
+    - id: B
+      ca: "1859"
+      es: "1859"
+    - id: C
+      ca: "1877"
+      es: "1877"
+    - id: D
+      ca: "1892"
+      es: "1892"
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Els Jocs Florals de Barcelona es van restaurar el 1859, inspirats en els
+      certàmens medievals. El 1833 és l'any de «La Pàtria» d'Aribau; el 1877, el
+      de «L'Atlàntida» de Verdaguer; i el 1892, el de les Bases de Manresa
+      (Modernisme polític), aliè als Jocs Florals.
+    es: Los Jocs Florals de Barcelona se restauraron en 1859, inspirados en los
+      certámenes medievales. 1833 es el año de «La Pàtria» de Aribau; 1877, el
+      de «L'Atlàntida» de Verdaguer; y 1892, el de las Bases de Manresa
+      (Modernismo político), ajeno a los Jocs Florals.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.renaixenca
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quin era el lema dels Jocs Florals restaurats, que resumia els tres eixos
+      temàtics del certamen?
+    es: ¿Cuál era el lema de los Jocs Florals restaurados, que resumía los tres ejes
+      temáticos del certamen?
+  options:
+    - id: A
+      ca: «Pàtria, Fe, Amor»
+      es: «Pàtria, Fe, Amor»
+    - id: B
+      ca: «Llibertat, Igualtat, Fraternitat»
+      es: «Libertad, Igualdad, Fraternidad»
+    - id: C
+      ca: «Deu, Pàtria i Rei»
+      es: «Dios, Patria y Rey»
+    - id: D
+      ca: «Seny, Treball, Progrés»
+      es: «Seny, Trabajo, Progreso»
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El lema dels Jocs Florals era «Pàtria, Fe, Amor», que es corresponia amb els
+      tres premis ordinaris. «Llibertat, Igualtat, Fraternitat» és el lema de la
+      Revolució Francesa; «Déu, Pàtria i Rei» és una divisa
+      carlina/tradicionalista; i «Seny, Treball, Progrés» és una invenció, no el
+      lema del certamen.
+    es: El lema de los Jocs Florals era «Pàtria, Fe, Amor», que se correspondía con
+      los tres premios ordinarios. «Libertad, Igualdad, Fraternidad» es el lema
+      de la Revolución Francesa; «Dios, Patria y Rey» es una divisa
+      carlista/tradicionalista; y «Seny, Trabajo, Progreso» es una invención, no
+      el lema del certamen.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.renaixenca
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quins dos poemes èpics de Jacint Verdaguer, amb els seus anys de publicació,
+      són considerats les seves grans obres majors?
+    es: ¿Qué dos poemas épicos de Jacint Verdaguer, con sus años de publicación, se
+      consideran sus grandes obras mayores?
+  options:
+    - id: A
+      ca: «L'Atlàntida» (1877) i «Canigó» (1886)
+      es: «L'Atlàntida» (1877) y «Canigó» (1886)
+    - id: B
+      ca: «Canigó» (1877) i «L'Atlàntida» (1886)
+      es: «Canigó» (1877) y «L'Atlàntida» (1886)
+    - id: C
+      ca: «L'Atlàntida» (1877) i «Idil·lis i cants místics» (1886)
+      es: «L'Atlàntida» (1877) e «Idil·lis i cants místics» (1886)
+    - id: D
+      ca: «La Pàtria» (1877) i «Canigó» (1886)
+      es: «La Pàtria» (1877) y «Canigó» (1886)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Verdaguer va publicar «L'Atlàntida» el 1877 (premiada als Jocs Florals) i
+      «Canigó» el 1886; són els seus dos grans poemes èpics. L'opció B inverteix
+      els anys; «Idil·lis i cants místics» (1879) és poesia religiosa, no un
+      poema èpic; i «La Pàtria» és d'Aribau, no de Verdaguer.
+    es: Verdaguer publicó «L'Atlàntida» en 1877 (premiada en los Jocs Florals) y
+      «Canigó» en 1886; son sus dos grandes poemas épicos. La opción B invierte
+      los años; «Idil·lis i cants místics» (1879) es poesía religiosa, no un
+      poema épico; y «La Pàtria» es de Aribau, no de Verdaguer.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.renaixenca
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Com s'obtenia el títol de «Mestre en Gai Saber» als Jocs Florals?
+    es: ¿Cómo se obtenía el título de «Mestre en Gai Saber» en los Jocs Florals?
+  options:
+    - id: A
+      ca: Guanyant els tres premis ordinaris (Flor Natural, Englantina d'or i Viola
+        d'or i d'argent)
+      es: Ganando los tres premios ordinarios (Flor Natural, Englantina de oro y Viola
+        de oro y plata)
+    - id: B
+      ca: Guanyant tres vegades la Flor Natural
+      es: Ganando tres veces la Flor Natural
+    - id: C
+      ca: Presidint el jurat del certamen durant tres edicions
+      es: Presidiendo el jurado del certamen durante tres ediciones
+    - id: D
+      ca: Publicant tres poemaris en llengua catalana
+      es: Publicando tres poemarios en lengua catalana
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El poeta que aconseguia guanyar els tres premis ordinaris —Flor Natural
+      (amor), Englantina d'or (pàtria) i Viola d'or i d'argent (fe)— era
+      proclamat «Mestre en Gai Saber». Verdaguer, per exemple, hi va assolir
+      aquest títol. Les altres opcions confonen el requisit amb repetir un sol
+      premi, presidir el jurat o publicar llibres.
+    es: El poeta que lograba ganar los tres premios ordinarios —Flor Natural (amor),
+      Englantina de oro (patria) y Viola de oro y plata (fe)— era proclamado
+      «Mestre en Gai Saber». Verdaguer, por ejemplo, alcanzó este título. Las
+      otras opciones confunden el requisito con repetir un solo premio, presidir
+      el jurado o publicar libros.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modern.renaixenca
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Als Jocs Florals, quina era la correspondència correcta entre cada premi
+      ordinari i el seu tema?
+    es: En los Jocs Florals, ¿cuál era la correspondencia correcta entre cada premio
+      ordinario y su tema?
+  options:
+    - id: A
+      ca: Flor Natural → Amor; Englantina d'or → Pàtria; Viola d'or i d'argent → Fe
+      es: Flor Natural → Amor; Englantina de oro → Patria; Viola de oro y plata → Fe
+    - id: B
+      ca: Flor Natural → Pàtria; Englantina d'or → Amor; Viola d'or i d'argent → Fe
+      es: Flor Natural → Patria; Englantina de oro → Amor; Viola de oro y plata → Fe
+    - id: C
+      ca: Flor Natural → Fe; Englantina d'or → Amor; Viola d'or i d'argent → Pàtria
+      es: Flor Natural → Fe; Englantina de oro → Amor; Viola de oro y plata → Patria
+    - id: D
+      ca: Flor Natural → Amor; Englantina d'or → Fe; Viola d'or i d'argent → Pàtria
+      es: Flor Natural → Amor; Englantina de oro → Fe; Viola de oro y plata → Patria
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Flor Natural premiava la poesia amorosa (amor), l'Englantina d'or la
+      poesia patriòtica (pàtria) i la Viola d'or i d'argent la poesia religiosa
+      o moral (fe), tal com reflecteix el lema «Pàtria, Fe, Amor». Les altres
+      opcions intercanvien aquestes correspondències, un error habitual.
+    es: La Flor Natural premiaba la poesía amorosa (amor), la Englantina de oro la
+      poesía patriótica (patria) y la Viola de oro y plata la poesía religiosa o
+      moral (fe), tal como refleja el lema «Pàtria, Fe, Amor». Las otras
+      opciones intercambian estas correspondencias, un error habitual.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.modernism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Qui és l'autor del drama Terra baixa (estrenat el 1897), una de les obres
+      cabdals del teatre del Modernisme català?
+    es: ¿Quién es el autor del drama Terra baixa (estrenado en 1897), una de las
+      obras capitales del teatro del Modernismo catalán?
+  options:
+    - id: A
+      ca: Àngel Guimerà
+      es: Àngel Guimerà
+    - id: B
+      ca: Santiago Rusiñol
+      es: Santiago Rusiñol
+    - id: C
+      ca: Joan Maragall
+      es: Joan Maragall
+    - id: D
+      ca: Narcís Oller
+      es: Narcís Oller
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Terra baixa (1897) és obra d'Àngel Guimerà, on el conflicte entre Manelic i
+      Sebastià simbolitza la lluita entre la puresa de la muntanya i la
+      corrupció de la plana. Rusiñol i Maragall són modernistes coetanis, però
+      no en són autors; Narcís Oller és el gran novel·lista del
+      Realisme/Naturalisme.
+    es: Terra baixa (1897) es obra de Àngel Guimerà, donde el conflicto entre
+      Manelic y Sebastià simboliza la lucha entre la pureza de la montaña y la
+      corrupción de la llanura. Rusiñol y Maragall son modernistas coetáneos,
+      pero no son sus autores; Narcís Oller es el gran novelista del
+      Realismo/Naturalismo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.modernism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quin és el conflicte central de L'auca del senyor Esteve, obra de Santiago
+      Rusiñol?
+    es: ¿Cuál es el conflicto central de L'auca del senyor Esteve, obra de Santiago
+      Rusiñol?
+  options:
+    - id: A
+      ca: L'oposició entre els valors utilitaris de la burgesia botiguera i la vocació
+        artística
+      es: La oposición entre los valores utilitarios de la burguesía tendera y la
+        vocación artística
+    - id: B
+      ca: La lluita de classes entre pagesos i terratinents rurals
+      es: La lucha de clases entre campesinos y terratenientes rurales
+    - id: C
+      ca: El conflicte religiós entre fe i raó en un místic
+      es: El conflicto religioso entre fe y razón en un místico
+    - id: D
+      ca: La rivalitat amorosa entre dos pescadors per una mateixa dona
+      es: La rivalidad amorosa entre dos pescadores por una misma mujer
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'auca del senyor Esteve contraposa la mentalitat pràctica i comercial de
+      la família Moratona (el negoci «La Puntual») amb la vocació d'artista del
+      net Ramonet: és una crítica amable al filisteisme burgès. L'opció C remet
+      a El místic, també de Rusiñol; la D evoca temes de Guimerà (La filla del
+      mar)."
+    es: "L'auca del senyor Esteve contrapone la mentalidad práctica y comercial de
+      la familia Moratona (el negocio «La Puntual») con la vocación de artista
+      del nieto Ramonet: es una crítica amable al filisteísmo burgués. La opción
+      C remite a El místic, también de Rusiñol; la D evoca temas de Guimerà (La
+      filla del mar)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.modernism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "El «Cant espiritual», un dels poemes més celebrats de Joan Maragall, es va
+      publicar dins del recull pòstum:"
+    es: "El «Cant espiritual», uno de los poemas más celebrados de Joan Maragall, se
+      publicó dentro del poemario póstumo:"
+  options:
+    - id: A
+      ca: Seqüències (1911)
+      es: Seqüències (1911)
+    - id: B
+      ca: Visions & Cants (1900)
+      es: Visions & Cants (1900)
+    - id: C
+      ca: Poesies (1895)
+      es: Poesies (1895)
+    - id: D
+      ca: Enllà (1906)
+      es: Enllà (1906)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El «Cant espiritual», que expressa el desig del poeta de mantenir el món
+      davant la mort («Si el món ja és tan formós, Senyor...»), es va publicar a
+      Seqüències (1911), el darrer recull, aparegut l'any de la seva mort. Els
+      altres reculls són anteriors i no el contenen.
+    es: El «Cant espiritual», que expresa el deseo del poeta de conservar el mundo
+      ante la muerte («Si el món ja és tan formós, Senyor...»), se publicó en
+      Seqüències (1911), el último poemario, aparecido el año de su muerte. Los
+      demás libros son anteriores y no lo contienen.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.modernism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Quin escriptor-pintor va impulsar les Festes Modernistes de Sitges (a partir
+      del 1892), celebrades al seu taller-museu Cau Ferrat?
+    es: ¿Qué escritor-pintor impulsó las Festes Modernistes de Sitges (a partir de
+      1892), celebradas en su taller-museo Cau Ferrat?
+  options:
+    - id: A
+      ca: Santiago Rusiñol
+      es: Santiago Rusiñol
+    - id: B
+      ca: Joan Maragall
+      es: Joan Maragall
+    - id: C
+      ca: Àngel Guimerà
+      es: Àngel Guimerà
+    - id: D
+      ca: Jacint Verdaguer
+      es: Jacint Verdaguer
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Santiago Rusiñol va organitzar les Festes Modernistes de Sitges (la primera
+      el 1892) al Cau Ferrat, que van esdevenir un aparador de l'esteticisme
+      modernista. Maragall i Guimerà pertanyen al Modernisme però no en foren
+      els promotors; Verdaguer és una figura anterior, de la Renaixença.
+    es: Santiago Rusiñol organizó las Festes Modernistes de Sitges (la primera en
+      1892) en el Cau Ferrat, que se convirtieron en escaparate del esteticismo
+      modernista. Maragall y Guimerà pertenecen al Modernismo pero no fueron sus
+      promotores; Verdaguer es una figura anterior, de la Renaixença.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.modernism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Dins del Modernisme se solen distingir dos corrents. Quina afirmació els
+      descriu correctament amb els autors associats?
+    es: Dentro del Modernismo suelen distinguirse dos corrientes. ¿Qué afirmación
+      las describe correctamente con los autores asociados?
+  options:
+    - id: A
+      ca: Un corrent regeneracionista/vitalista (Maragall i el seu vitalisme, Guimerà)
+        i un corrent esteticista-decadentista (Rusiñol i l'art per l'art)
+      es: Una corriente regeneracionista/vitalista (Maragall y su vitalismo, Guimerà)
+        y una corriente esteticista-decadentista (Rusiñol y el arte por el arte)
+    - id: B
+      ca: Un corrent classicista i civil defensat per Rusiñol i un corrent
+        avantguardista defensat per Maragall
+      es: Una corriente clasicista y civil defendida por Rusiñol y una corriente
+        vanguardista defendida por Maragall
+    - id: C
+      ca: Un corrent naturalista liderat per Guimerà i un corrent realista liderat per
+        Oller
+      es: Una corriente naturalista liderada por Guimerà y una corriente realista
+        liderada por Oller
+    - id: D
+      ca: Un corrent trobadoresc i un corrent barroc, tots dos conreats per Maragall
+      es: Una corriente trovadoresca y una corriente barroca, ambas cultivadas por
+        Maragall
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Modernisme combina una línia regeneracionista i vitalista —que vol
+      modernitzar i «regenerar» la cultura, amb el vitalisme i la «paraula viva»
+      de Maragall— i una línia esteticista i decadentista de l'art per l'art,
+      representada per Rusiñol (Oracions, l'ambient del Cau Ferrat). El
+      classicisme i la voluntat civil (B) són trets del Noucentisme posterior,
+      no del Modernisme; el Naturalisme/Realisme (C) és el moviment previ.
+    es: El Modernismo combina una línea regeneracionista y vitalista —que quiere
+      modernizar y «regenerar» la cultura, con el vitalismo y la «palabra viva»
+      de Maragall— y una línea esteticista y decadentista del arte por el arte,
+      representada por Rusiñol (Oracions, el ambiente del Cau Ferrat). El
+      clasicismo y la voluntad civil (B) son rasgos del Noucentismo posterior,
+      no del Modernismo; el Naturalismo/Realismo (C) es el movimiento previo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.noucentisme
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Amb quin pseudònim signava Eugeni d'Ors el seu «Glosari», el vehicle amb què
+      va difondre i, de fet, batejar el Noucentisme?
+    es: ¿Con qué seudónimo firmaba Eugeni d'Ors su «Glosari», el vehículo con el que
+      difundió y, de hecho, bautizó el Novecentismo?
+  options:
+    - id: A
+      ca: Xènius
+      es: Xènius
+    - id: B
+      ca: Gaziel
+      es: Gaziel
+    - id: C
+      ca: Guerau de Liost
+      es: Guerau de Liost
+    - id: D
+      ca: Víctor Català
+      es: Víctor Català
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Eugeni d'Ors signava el «Glosari» amb el pseudònim Xènius. «Gaziel» era
+      Agustí Calvet; «Guerau de Liost» era Jaume Bofill i Mates (poeta
+      noucentista); «Víctor Català» era Caterina Albert, narradora modernista.
+    es: Eugeni d'Ors firmaba el «Glosari» con el seudónimo Xènius. «Gaziel» era
+      Agustí Calvet; «Guerau de Liost» era Jaume Bofill i Mates (poeta
+      novecentista); «Víctor Català» era Caterina Albert, narradora modernista.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.noucentisme
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Quina obra de 1911 esdevé el símbol per excel·lència del Noucentisme, on el
+      personatge de Teresa encarna l'ideal de dona mediterrània, serena i
+      clàssica?
+    es: ¿Qué obra de 1911 se convierte en el símbolo por excelencia del
+      Novecentismo, donde el personaje de Teresa encarna el ideal de mujer
+      mediterránea, serena y clásica?
+  options:
+    - id: A
+      ca: La Ben Plantada, d'Eugeni d'Ors
+      es: La Ben Plantada, de Eugeni d'Ors
+    - id: B
+      ca: Solitud, de Víctor Català
+      es: Solitud, de Víctor Català
+    - id: C
+      ca: Els fruits saborosos, de Josep Carner
+      es: Els fruits saborosos, de Josep Carner
+    - id: D
+      ca: La punyalada, de Marià Vayreda
+      es: La punyalada, de Marià Vayreda
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Ben Plantada (1911) d'Eugeni d'Ors presenta Teresa com a al·legoria de la
+      Catalunya ideal, classicista i mediterrània. Solitud (1905) i La punyalada
+      són narrativa modernista de tema rural; Els fruits saborosos (1906) és un
+      llibre de poesia de Carner, no una novel·la amb el personatge de Teresa.
+    es: La Ben Plantada (1911) de Eugeni d'Ors presenta a Teresa como alegoría de la
+      Cataluña ideal, clasicista y mediterránea. Solitud (1905) y La punyalada
+      son narrativa modernista de tema rural; Els fruits saborosos (1906) es un
+      libro de poesía de Carner, no una novela con el personaje de Teresa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.noucentisme
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En quina publicació periòdica, òrgan de la Lliga Regionalista, va aparèixer
+      a partir de 1906 el «Glosari» d'Eugeni d'Ors?
+    es: ¿En qué publicación periódica, órgano de la Lliga Regionalista, apareció a
+      partir de 1906 el «Glosari» de Eugeni d'Ors?
+  options:
+    - id: A
+      ca: La Veu de Catalunya
+      es: La Veu de Catalunya
+    - id: B
+      ca: L'Avenç
+      es: L'Avenç
+    - id: C
+      ca: Serra d'Or
+      es: Serra d'Or
+    - id: D
+      ca: Els Marges
+      es: Els Marges
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El «Glosari» es publicava diàriament a La Veu de Catalunya des de 1906.
+      L'Avenç fou la revista de referència del Modernisme (finals del XIX);
+      Serra d'Or (1959) i Els Marges són publicacions molt posteriors, de la
+      segona meitat del segle XX.
+    es: El «Glosari» se publicaba a diario en La Veu de Catalunya desde 1906.
+      L'Avenç fue la revista de referencia del Modernismo (finales del XIX);
+      Serra d'Or (1959) y Els Marges son publicaciones muy posteriores, de la
+      segunda mitad del siglo XX.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.noucentisme
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quin dels següents valors NO forma part de l'ideal noucentista de
+      «civilitat» promogut per Eugeni d'Ors?
+    es: ¿Cuál de los siguientes valores NO forma parte del ideal novecentista de
+      «civilidad» promovido por Eugeni d'Ors?
+  options:
+    - id: A
+      ca: L'exaltació del paisatge rural agrest i de l'individu bohemi i marginal
+      es: La exaltación del paisaje rural agreste y del individuo bohemio y marginal
+    - id: B
+      ca: El classicisme, l'ordre i la mesura
+      es: El clasicismo, el orden y la mesura
+    - id: C
+      ca: L'urbanitat i la ciutat com a model de convivència civilitzada
+      es: La urbanidad y la ciudad como modelo de convivencia civilizada
+    - id: D
+      ca: El culte a l'«obra ben feta» i al seny
+      es: El culto a la «obra bien hecha» y al seny
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La «civilitat» noucentista defensa el classicisme, l'ordre, la ciutat i
+      l'«obra ben feta». L'exaltació del món rural, de la bohèmia i de
+      l'individu marginal és pròpia del Modernisme, moviment que el Noucentisme
+      volia superar.
+    es: La «civilidad» novecentista defiende el clasicismo, el orden, la ciudad y la
+      «obra bien hecha». La exaltación del mundo rural, de la bohemia y del
+      individuo marginal es propia del Modernismo, movimiento que el
+      Novecentismo quería superar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.noucentisme
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En la teoria estètica d'Eugeni d'Ors, què designa fonamentalment el concepte
+      d'«arbitrarisme»?
+    es: En la teoría estética de Eugeni d'Ors, ¿qué designa fundamentalmente el
+      concepto de «arbitrarismo»?
+  options:
+    - id: A
+      ca: La voluntat de l'artista d'imposar l'ordre de la intel·ligència sobre la
+        natura, creant una obra conscient i deliberada
+      es: La voluntad del artista de imponer el orden de la inteligencia sobre la
+        naturaleza, creando una obra consciente y deliberada
+    - id: B
+      ca: La reproducció fidel i espontània de la natura tal com és
+      es: La reproducción fiel y espontánea de la naturaleza tal como es
+    - id: C
+      ca: El predomini de la inspiració irracional i del geni individual
+      es: El predominio de la inspiración irracional y del genio individual
+    - id: D
+      ca: La creació lliure guiada per l'atzar i l'absència de normes
+      es: La creación libre guiada por el azar y la ausencia de normas
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'«arbitrarisme» orsià és l'afirmació que l'art neix de la voluntat i la
+      intel·ligència que ordenen i corregeixen la natura (art = artifici
+      conscient), no de la imitació espontània ni de la inspiració irracional.
+      Malgrat el nom, no significa atzar ni absència de normes (distractor D),
+      sinó decisió deliberada de l'«àrbitre» que és l'artista.
+    es: El «arbitrarismo» orsiano es la afirmación de que el arte nace de la
+      voluntad y la inteligencia que ordenan y corrigen la naturaleza (arte =
+      artificio consciente), no de la imitación espontánea ni de la inspiración
+      irracional. Pese al nombre, no significa azar ni ausencia de normas
+      (distractor D), sino decisión deliberada del «árbitro» que es el artista.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.modernism_noucentisme.noucentisme
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Molts historiadors situen el 1906 com a any fundacional del Noucentisme.
+      Quin conjunt de fets d'aquell any ho justifica millor?
+    es: Muchos historiadores sitúan 1906 como año fundacional del Novecentismo. ¿Qué
+      conjunto de hechos de aquel año lo justifica mejor?
+  options:
+    - id: A
+      ca: L'inici del «Glosari» d'Eugeni d'Ors, la publicació d'Els fruits saborosos
+        de Josep Carner i el Primer Congrés Internacional de la Llengua Catalana
+      es: El inicio del «Glosari» de Eugeni d'Ors, la publicación de Els fruits
+        saborosos de Josep Carner y el Primer Congrés Internacional de la
+        Llengua Catalana
+    - id: B
+      ca: La creació de la Mancomunitat de Catalunya i la publicació de les Normes
+        ortogràfiques de Pompeu Fabra
+      es: La creación de la Mancomunitat de Catalunya y la publicación de las Normes
+        ortogràfiques de Pompeu Fabra
+    - id: C
+      ca: La fundació de l'Institut d'Estudis Catalans i la mort d'Enric Prat de la
+        Riba
+      es: La fundación del Institut d'Estudis Catalans y la muerte de Enric Prat de la
+        Riba
+    - id: D
+      ca: La publicació de La Ben Plantada i l'inici de la dictadura de Primo de
+        Rivera
+      es: La publicación de La Ben Plantada y el inicio de la dictadura de Primo de
+        Rivera
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El 1906 conflueixen tres fites: comença el «Glosari» de d'Ors a La Veu de
+      Catalunya, apareix Els fruits saborosos de Carner i se celebra el Primer
+      Congrés Internacional de la Llengua Catalana. Les altres opcions barregen
+      dates diverses: la Mancomunitat és de 1914 i les Normes de 1913 (B); l'IEC
+      és de 1907 i Prat de la Riba morí el 1917 (C); La Ben Plantada és de 1911
+      i la dictadura de Primo de Rivera de 1923 (D)."
+    es: "En 1906 confluyen tres hitos: comienza el «Glosari» de d'Ors en La Veu de
+      Catalunya, aparece Els fruits saborosos de Carner y se celebra el Primer
+      Congrés Internacional de la Llengua Catalana. Las demás opciones mezclan
+      fechas distintas: la Mancomunitat es de 1914 y las Normes de 1913 (B); el
+      IEC es de 1907 y Prat de la Riba murió en 1917 (C); La Ben Plantada es de
+      1911 y la dictadura de Primo de Rivera de 1923 (D)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_carner_riba
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Quin d'aquests llargs poemes, publicat el 1941 durant l'exili i basat en la
+      figura del profeta bíblic Jonàs, és considerat l'obra mestra de Josep
+      Carner?
+    es: ¿Cuál de estos largos poemas, publicado en 1941 durante el exilio y basado
+      en la figura del profeta bíblico Jonás, se considera la obra maestra de
+      Josep Carner?
+  options:
+    - id: A
+      ca: Nabí
+      es: Nabí
+    - id: B
+      ca: Elegies de Bierville
+      es: Elegies de Bierville
+    - id: C
+      ca: Els fruits saborosos
+      es: Els fruits saborosos
+    - id: D
+      ca: Estances
+      es: Estances
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: «Nabí» (1941) és el gran poema narratiu de Josep Carner sobre el profeta
+      Jonàs; el seu títol prové de l'hebreu 'nabí' (profeta). «Elegies de
+      Bierville» i «Estances» són de Carles Riba, i «Els fruits saborosos», tot
+      i ser de Carner, és una obra primerenca (1906), no la de l'exili.
+    es: «Nabí» (1941) es el gran poema narrativo de Josep Carner sobre el profeta
+      Jonás; su título procede del hebreo 'nabí' (profeta). «Elegies de
+      Bierville» y «Estances» son de Carles Riba, y «Els fruits saborosos»,
+      aunque de Carner, es una obra temprana (1906), no la del exilio.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_carner_riba
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "«Elegies de Bierville» (1943), escrites a l'exili i considerades el cim de
+      la seva poesia, són obra de:"
+    es: "«Elegies de Bierville» (1943), escritas en el exilio y consideradas la
+      cumbre de su poesía, son obra de:"
+  options:
+    - id: A
+      ca: Josep Carner
+      es: Josep Carner
+    - id: B
+      ca: Carles Riba
+      es: Carles Riba
+    - id: C
+      ca: Joan Maragall
+      es: Joan Maragall
+    - id: D
+      ca: Joan Salvat-Papasseit
+      es: Joan Salvat-Papasseit
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Les «Elegies de Bierville» són de Carles Riba, escrites a Bierville (França)
+      després de la Guerra Civil i culminades a l'exili. Maragall (mort el 1911)
+      i Salvat-Papasseit (mort el 1924) ja eren difunts; Carner és autor de
+      «Nabí», no de les elegies.
+    es: Las «Elegies de Bierville» son de Carles Riba, escritas en Bierville
+      (Francia) tras la Guerra Civil y culminadas en el exilio. Maragall
+      (fallecido en 1911) y Salvat-Papasseit (fallecido en 1924) ya habían
+      muerto; Carner es autor de «Nabí», no de las elegías.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_carner_riba
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Josep Carner és conegut amb el sobrenom de «Príncep dels poetes catalans» i
+      és una figura central de quin moviment estètic de començaments del segle
+      XX?
+    es: Josep Carner es conocido con el sobrenombre de «Príncep dels poetes
+      catalans» y es figura central de qué movimiento estético de comienzos del
+      siglo XX?
+  options:
+    - id: A
+      ca: El Modernisme
+      es: El Modernismo
+    - id: B
+      ca: El Noucentisme
+      es: El Noucentismo
+    - id: C
+      ca: L'Avantguardisme
+      es: El Vanguardismo
+    - id: D
+      ca: El Realisme històric
+      es: El Realismo histórico
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Carner és el gran poeta del Noucentisme, moviment de l'ideal de mesura,
+      classicisme i «obra ben feta» impulsat per Eugeni d'Ors cap a 1906. El
+      Modernisme el precedeix (Maragall), l'Avantguardisme el trenca
+      (Salvat-Papasseit) i el Realisme històric és de la postguerra.
+    es: Carner es el gran poeta del Noucentismo, movimiento del ideal de mesura,
+      clasicismo y «obra bien hecha» impulsado por Eugeni d'Ors hacia 1906. El
+      Modernismo lo precede (Maragall), el Vanguardismo lo rompe
+      (Salvat-Papasseit) y el Realismo histórico es de la posguerra.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_carner_riba
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Carles Riba, a més de poeta, va ser un gran traductor i hel·lenista. Quina
+      obra clàssica va traduir al català (fins i tot en dues versions)?
+    es: Carles Riba, además de poeta, fue un gran traductor y helenista. ¿Qué obra
+      clásica tradujo al catalán (incluso en dos versiones)?
+  options:
+    - id: A
+      ca: L'Odissea, d'Homer
+      es: La Odisea, de Homero
+    - id: B
+      ca: L'Eneida, de Virgili
+      es: La Eneida, de Virgilio
+    - id: C
+      ca: La Divina Comèdia, de Dante
+      es: La Divina Comedia, de Dante
+    - id: D
+      ca: Les Metamorfosis, d'Ovidi
+      es: Las Metamorfosis, de Ovidio
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Riba va traduir «L'Odissea» d'Homer en dues versions (1919 i 1948), a més de
+      tragèdies gregues, Kavafis, Rilke i Poe. Les altres obres (Eneida, Divina
+      Comèdia, Metamorfosis) no formen part del seu corpus de traduccions
+      cèlebres.
+    es: Riba tradujo «La Odisea» de Homero en dos versiones (1919 y 1948), además de
+      tragedias griegas, Kavafis, Rilke y Poe. Las otras obras (Eneida, Divina
+      Comedia, Metamorfosis) no forman parte de su corpus de traducciones
+      célebres.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_carner_riba
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Quina afirmació descriu millor la poètica de maduresa de Carles Riba
+      respecte a la de Carner?
+    es: ¿Qué afirmación describe mejor la poética de madurez de Carles Riba frente a
+      la de Carner?
+  options:
+    - id: A
+      ca: Riba desenvolupa una poesia postsimbolista i intel·lectual, de gran densitat
+        i tensió espiritual (influïda per Mallarmé, Valéry, Rilke i Hölderlin),
+        mentre que Carner encarna la ironia i la lleugeresa amables del
+        classicisme noucentista
+      es: Riba desarrolla una poesía postsimbolista e intelectual, de gran densidad y
+        tensión espiritual (influida por Mallarmé, Valéry, Rilke y Hölderlin),
+        mientras que Carner encarna la ironía y la levedad amables del
+        clasicismo noucentista
+    - id: B
+      ca: Riba conrea l'avantguarda futurista i Carner el realisme social de
+        postguerra
+      es: Riba cultiva la vanguardia futurista y Carner el realismo social de
+        posguerra
+    - id: C
+      ca: Tots dos són poetes romàntics del segle XIX que exalten el paisatge amb to
+        popular
+      es: Ambos son poetas románticos del siglo XIX que exaltan el paisaje con tono
+        popular
+    - id: D
+      ca: Riba escriu poesia popular i col·loquial mentre que Carner cultiva
+        l'hermetisme simbolista
+      es: Riba escribe poesía popular y coloquial mientras que Carner cultiva el
+        hermetismo simbolista
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En la maduresa (p. ex. «Estances» i «Elegies de Bierville»), Riba practica
+      una poesia postsimbolista, depurada i intel·lectual, marcada pel
+      simbolisme francès i per Rilke i Hölderlin. Carner, en canvi, es
+      distingeix per la ironia fina, la musicalitat i la mesura del classicisme
+      noucentista. L'opció D inverteix erròniament els trets de tots dos.
+    es: En la madurez (p. ej. «Estances» y «Elegies de Bierville»), Riba practica
+      una poesía postsimbolista, depurada e intelectual, marcada por el
+      simbolismo francés y por Rilke y Hölderlin. Carner, en cambio, se
+      distingue por la ironía fina, la musicalidad y la mesura del clasicismo
+      noucentista. La opción D invierte erróneamente los rasgos de ambos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_foix_espriu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Qui és l'autor del recull de sonets "Sol, i de dol" (1947)?
+    es: ¿Quién es el autor del poemario de sonetos "Sol, i de dol" (1947)?
+  options:
+    - id: A
+      ca: J.V. Foix
+      es: J.V. Foix
+    - id: B
+      ca: Salvador Espriu
+      es: Salvador Espriu
+    - id: C
+      ca: Carles Riba
+      es: Carles Riba
+    - id: D
+      ca: Josep Carner
+      es: Josep Carner
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "\"Sol, i de dol\" és un llibre de sonets de J.V. Foix, on conviu
+      l'experimentació avantguardista amb la forma clàssica del sonet. En aquest
+      recull hi apareix el famós vers \"M'exalta el nou i m'enamora el vell\"."
+    es: "\"Sol, i de dol\" es un libro de sonetos de J.V. Foix, donde convive la
+      experimentación vanguardista con la forma clásica del soneto. En este
+      poemario aparece el famoso verso \"M'exalta el nou i m'enamora el vell\"."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_foix_espriu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En la poesia de Salvador Espriu, "Sinera" és el nom mític d'un espai que
+      remet a la seva vila d'infantesa. De quina població es tracta i com es
+      forma el nom?
+    es: En la poesía de Salvador Espriu, "Sinera" es el nombre mítico de un espacio
+      que remite a su pueblo de infancia. ¿De qué población se trata y cómo se
+      forma el nombre?
+  options:
+    - id: A
+      ca: Arenys de Mar, escrit gairebé a l'inrevés (anagrama de "Arenys")
+      es: Arenys de Mar, escrito casi al revés (anagrama de "Arenys")
+    - id: B
+      ca: Sitges, per contracció del topònim
+      es: Sitges, por contracción del topónimo
+    - id: C
+      ca: Santa Coloma de Farners, la seva vila natal
+      es: Santa Coloma de Farners, su pueblo natal
+    - id: D
+      ca: Cadaqués, per associació amb el mar
+      es: Cadaqués, por asociación con el mar
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "\"Sinera\" és l'anagrama de \"Arenys\" (Arenys llegit a l'inrevés dona
+      \"synerA\" → Sinera), la vila marinera on Espriu passava els estius.
+      Encara que va néixer a Santa Coloma de Farners, l'univers mític de la seva
+      poesia (\"Cementiri de Sinera\") s'ancora a Arenys de Mar."
+    es: '"Sinera" es el anagrama de "Arenys" (Arenys leído al revés da "synerA" →
+      Sinera), el pueblo marinero donde Espriu pasaba los veranos. Aunque nació
+      en Santa Coloma de Farners, el universo mítico de su poesía ("Cementiri de
+      Sinera") se ancla en Arenys de Mar.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_foix_espriu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: El vers "M'exalta el nou i m'enamora el vell" sintetitza la poètica de J.V.
+      Foix. Quina actitud creativa expressa?
+    es: El verso "M'exalta el nou i m'enamora el vell" sintetiza la poética de J.V.
+      Foix. ¿Qué actitud creativa expresa?
+  options:
+    - id: A
+      ca: La conjunció de l'experimentació avantguardista amb la recuperació de la
+        tradició literària
+      es: La conjunción de la experimentación vanguardista con la recuperación de la
+        tradición literaria
+    - id: B
+      ca: El rebuig radical de tota tradició en nom de la modernitat
+      es: El rechazo radical de toda tradición en nombre de la modernidad
+    - id: C
+      ca: La preferència exclusiva pel folklore i la poesia popular
+      es: La preferencia exclusiva por el folclore y la poesía popular
+    - id: D
+      ca: La defensa del realisme social i la poesia de denúncia
+      es: La defensa del realismo social y la poesía de denuncia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El vers condensa la tensió creadora de Foix: \"m'exalta el nou\" remet a la
+      seva militància avantguardista (surrealisme, futurisme), mentre que
+      \"m'enamora el vell\" al·ludeix a la seva devoció per la tradició medieval
+      catalana (Ramon Llull, Ausiàs March). La seva obra és precisament la
+      síntesi d'ambdós pols."
+    es: "El verso condensa la tensión creadora de Foix: \"m'exalta el nou\" remite a
+      su militancia vanguardista (surrealismo, futurismo), mientras que
+      \"m'enamora el vell\" alude a su devoción por la tradición medieval
+      catalana (Ramon Llull, Ausiàs March). Su obra es precisamente la síntesis
+      de ambos polos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_foix_espriu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: A "La pell de brau" (1960) de Salvador Espriu, el poeta empra el nom
+      "Sepharad". Què simbolitza aquest topònim i quin tipus de poesia predomina
+      en el llibre?
+    es: En "La pell de brau" (1960) de Salvador Espriu, el poeta emplea el nombre
+      "Sepharad". ¿Qué simboliza este topónimo y qué tipo de poesía predomina en
+      el libro?
+  options:
+    - id: A
+      ca: Sepharad simbolitza la Península Ibèrica (i Espanya); hi predomina una
+        poesia cívica i de reflexió col·lectiva
+      es: Sepharad simboliza la Península Ibérica (y España); predomina una poesía
+        cívica y de reflexión colectiva
+    - id: B
+      ca: Sepharad és la vila de Sinera; hi predomina la poesia elegíaca de la
+        infantesa
+      es: Sepharad es el pueblo de Sinera; predomina la poesía elegíaca de la infancia
+    - id: C
+      ca: Sepharad designa Catalunya en oposició a Espanya; hi predomina la poesia
+        amorosa
+      es: Sepharad designa Cataluña en oposición a España; predomina la poesía amorosa
+    - id: D
+      ca: Sepharad és un espai mitològic grec; hi predomina la poesia metafísica sobre
+        la mort
+      es: Sepharad es un espacio mitológico griego; predomina la poesía metafísica
+        sobre la muerte
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "\"La pell de brau\" (imatge de la pell de toro estesa amb què es compara la
+      Península Ibèrica) fa servir \"Sepharad\" —nom hebreu de la Ibèria— com a
+      símbol dels pobles peninsulars. És l'obra més cívica d'Espriu: una crida
+      al diàleg i a la convivència dels pobles i a la salvació col·lectiva
+      després de la Guerra Civil."
+    es: '"La pell de brau" (imagen de la piel de toro extendida con que se compara
+      la Península Ibérica) usa "Sepharad" —nombre hebreo de Iberia— como
+      símbolo de los pueblos peninsulares. Es la obra más cívica de Espriu: una
+      llamada al diálogo y a la convivencia de los pueblos y a la salvación
+      colectiva tras la Guerra Civil.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_foix_espriu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Quina afirmació sobre la forma mètrica de "Sol, i de dol" de J.V. Foix és
+      correcta?
+    es: ¿Qué afirmación sobre la forma métrica de "Sol, i de dol" de J.V. Foix es
+      correcta?
+  options:
+    - id: A
+      ca: És un recull de sonets, construïts majoritàriament amb decasíl·labs
+      es: Es un poemario de sonetos, construidos mayoritariamente con decasílabos
+    - id: B
+      ca: És un poema únic en vers lliure sense estrofes
+      es: Es un poema único en verso libre sin estrofas
+    - id: C
+      ca: És un recull de poemes en prosa, sense mesura sil·làbica
+      es: Es un poemario de poemas en prosa, sin medida silábica
+    - id: D
+      ca: És un conjunt de romanços en versos heptasíl·labs amb rima assonant
+      es: Es un conjunto de romances en versos heptasílabos con rima asonante
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "\"Sol, i de dol\" està format per sonets, la forma clàssica de catorze
+      versos (dos quartets i dos tercets), escrits en decasíl·labs. Foix
+      recupera aquesta forma tradicional per encabir-hi un contingut d'arrel
+      avantguardista i visionària. El poema en prosa és propi d'altres obres
+      seves, com \"Gertrudis\" o \"KRTU\"."
+    es: '"Sol, i de dol" está formado por sonetos, la forma clásica de catorce
+      versos (dos cuartetos y dos tercetos), escritos en decasílabos. Foix
+      recupera esta forma tradicional para dotarla de un contenido de raíz
+      vanguardista y visionaria. El poema en prosa es propio de otras obras
+      suyas, como "Gertrudis" o "KRTU".'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.poetry_foix_espriu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Una de les obres següents NO és de Salvador Espriu. Quina?
+    es: Una de las siguientes obras NO es de Salvador Espriu. ¿Cuál?
+  options:
+    - id: A
+      ca: '"KRTU"'
+      es: '"KRTU"'
+    - id: B
+      ca: '"Cementiri de Sinera"'
+      es: '"Cementiri de Sinera"'
+    - id: C
+      ca: '"El caminant i el mur"'
+      es: '"El caminant i el mur"'
+    - id: D
+      ca: '"La pell de brau"'
+      es: '"La pell de brau"'
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "\"KRTU\" (1932) és un recull de proses poètiques de J.V. Foix, no d'Espriu.
+      \"Cementiri de Sinera\", \"El caminant i el mur\" i \"La pell de brau\" sí
+      que pertanyen a l'obra poètica de Salvador Espriu."
+    es: '"KRTU" (1932) es un libro de prosas poéticas de J.V. Foix, no de Espriu.
+      "Cementiri de Sinera", "El caminant i el mur" y "La pell de brau" sí
+      pertenecen a la obra poética de Salvador Espriu.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_rodoreda
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: A la novel·la La plaça del Diamant, quin sobrenom posa en Quimet a la
+      protagonista, la Natàlia?
+    es: En la novela La plaça del Diamant, ¿qué apodo le pone Quimet a la
+      protagonista, Natàlia?
+  options:
+    - id: A
+      ca: Colometa
+      es: Colometa
+    - id: B
+      ca: Aloma
+      es: Aloma
+    - id: C
+      ca: Cristina
+      es: Cristina
+    - id: D
+      ca: Teresa
+      es: Teresa
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En Quimet rebateja la Natàlia com a «Colometa», sobrenom lligat al motiu
+      simbòlic dels coloms que crien al terrat. Aloma és la protagonista d'una
+      altra novel·la de Rodoreda (Aloma), Cristina remet al recull La meva
+      Cristina i altres contes i Teresa Goday és un personatge de Mirall
+      trencat.
+    es: Quimet rebautiza a Natàlia como «Colometa», apodo ligado al motivo simbólico
+      de las palomas que crían en la azotea. Aloma es la protagonista de otra
+      novela de Rodoreda (Aloma), Cristina remite al libro La meva Cristina i
+      altres contes y Teresa Goday es un personaje de Mirall trencat.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_rodoreda
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quin marc històric emmarca l'acció de La plaça del Diamant, des dels anys de
+      festeig de la Natàlia fins a la postguerra?
+    es: ¿Qué marco histórico enmarca la acción de La plaça del Diamant, desde el
+      noviazgo de Natàlia hasta la posguerra?
+  options:
+    - id: A
+      ca: La Segona República, la Guerra Civil espanyola i la postguerra
+      es: La Segunda República, la Guerra Civil española y la posguerra
+    - id: B
+      ca: La Guerra del Francès (guerra napoleònica)
+      es: La Guerra del Francés (guerra napoleónica)
+    - id: C
+      ca: La Primera Guerra Mundial
+      es: La Primera Guerra Mundial
+    - id: D
+      ca: La Setmana Tràgica de 1909
+      es: La Semana Trágica de 1909
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La novel·la abraça la Barcelona dels anys trenta: proclamació de la
+      República, esclat i desenvolupament de la Guerra Civil (1936-1939) —on mor
+      en Quimet— i la difícil postguerra, quan la Natàlia es torna a casar amb
+      l'Antoni. Les altres opcions són conflictes cronològicament aliens a la
+      trama."
+    es: "La novela abarca la Barcelona de los años treinta: proclamación de la
+      República, estallido y desarrollo de la Guerra Civil (1936-1939) —donde
+      muere Quimet— y la difícil posguerra, cuando Natàlia se casa de nuevo con
+      Antoni. Las demás opciones son conflictos cronológicamente ajenos a la
+      trama."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_rodoreda
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quina és la tècnica narrativa predominant a La plaça del Diamant?
+    es: ¿Cuál es la técnica narrativa predominante en La plaça del Diamant?
+  options:
+    - id: A
+      ca: Monòleg interior en primera persona, amb llengua col·loquial de la
+        protagonista
+      es: Monólogo interior en primera persona, con lengua coloquial de la
+        protagonista
+    - id: B
+      ca: Narrador omniscient en tercera persona amb intrusions de l'autora
+      es: Narrador omnisciente en tercera persona con intrusiones de la autora
+    - id: C
+      ca: Novel·la epistolar, feta d'un intercanvi de cartes
+      es: Novela epistolar, hecha de un intercambio de cartas
+    - id: D
+      ca: Narració en segona persona (tu)
+      es: Narración en segunda persona (tú)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Natàlia narra la seva pròpia vida en primera persona mitjançant un
+      monòleg interior de sintaxi senzilla i to col·loquial, que reflecteix la
+      seva subjectivitat i la seva evolució. No hi ha narrador omniscient
+      extern, ni forma epistolar, ni narració en segona persona.
+    es: Natàlia narra su propia vida en primera persona mediante un monólogo
+      interior de sintaxis sencilla y tono coloquial, que refleja su
+      subjetividad y su evolución. No hay narrador omnisciente externo, ni forma
+      epistolar, ni narración en segunda persona.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_rodoreda
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Mirall trencat narra l'ascens i la decadència de quina família al llarg de
+      tres generacions?
+    es: Mirall trencat narra el ascenso y la decadencia de qué familia a lo largo de
+      tres generaciones?
+  options:
+    - id: A
+      ca: La família Valldaura
+      es: La familia Valldaura
+    - id: B
+      ca: La família Bearn
+      es: La familia Bearn
+    - id: C
+      ca: La família Buendía
+      es: La familia Buendía
+    - id: D
+      ca: La família Solà
+      es: La familia Solà
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Mirall trencat (1974) segueix la saga dels Valldaura —de Teresa Goday i
+      Salvador Valldaura fins als néts— i la desintegració de la família a la
+      torre familiar, amb una estructura fragmentària com un mirall trencat. Els
+      Bearn són de Villalonga, els Buendía de García Márquez i «Solà» és un
+      cognom aliè a l'obra.
+    es: Mirall trencat (1974) sigue la saga de los Valldaura —de Teresa Goday y
+      Salvador Valldaura hasta los nietos— y la desintegración de la familia en
+      la torre familiar, con una estructura fragmentaria como un espejo roto.
+      Los Bearn son de Villalonga, los Buendía de García Márquez y «Solà» es un
+      apellido ajeno a la obra.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_rodoreda
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En quina ciutat de l'exili va escriure Rodoreda La plaça del Diamant i en
+      quin any es va publicar?
+    es: ¿En qué ciudad del exilio escribió Rodoreda La plaça del Diamant y en qué
+      año se publicó?
+  options:
+    - id: A
+      ca: Ginebra; publicada el 1962
+      es: Ginebra; publicada en 1962
+    - id: B
+      ca: París; publicada el 1938
+      es: París; publicada en 1938
+    - id: C
+      ca: Mèxic; publicada el 1945
+      es: México; publicada en 1945
+    - id: D
+      ca: Barcelona; publicada el 1974
+      es: Barcelona; publicada en 1974
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Rodoreda va redactar la novel·la durant el seu exili a Ginebra i es va
+      publicar el 1962 al Club Editor (Joan Sales). El 1938 correspon a Aloma;
+      l'autora no va viure a Mèxic (l'exili català americà és d'altres
+      escriptors); i 1974 és l'any de Mirall trencat, no de La plaça del
+      Diamant.
+    es: Rodoreda redactó la novela durante su exilio en Ginebra y se publicó en 1962
+      en el Club Editor (Joan Sales). 1938 corresponde a Aloma; la autora no
+      vivió en México (el exilio catalán americano es de otros escritores); y
+      1974 es el año de Mirall trencat, no de La plaça del Diamant.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_rodoreda
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Quina de les obres següents de Mercè Rodoreda és un recull de contes i no
+      una novel·la?
+    es: ¿Cuál de las siguientes obras de Mercè Rodoreda es un libro de cuentos y no
+      una novela?
+  options:
+    - id: A
+      ca: La meva Cristina i altres contes
+      es: La meva Cristina i altres contes
+    - id: B
+      ca: El carrer de les Camèlies
+      es: El carrer de les Camèlies
+    - id: C
+      ca: Jardí vora el mar
+      es: Jardí vora el mar
+    - id: D
+      ca: Quanta, quanta guerra...
+      es: Quanta, quanta guerra...
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La meva Cristina i altres contes (1967) és un recull de narracions breus. En
+      canvi, El carrer de les Camèlies (1966), Jardí vora el mar (1967) i
+      Quanta, quanta guerra... (1980) són novel·les de Rodoreda; el propi títol
+      «i altres contes» delata el gènere de l'opció correcta.
+    es: La meva Cristina i altres contes (1967) es un libro de narraciones breves.
+      En cambio, El carrer de les Camèlies (1966), Jardí vora el mar (1967) y
+      Quanta, quanta guerra... (1980) son novelas de Rodoreda; el propio título
+      «i altres contes» delata el género de la opción correcta.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_villalonga
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina novel·la és considerada l'obra mestra de Llorenç Villalonga, centrada
+      en la decadència d'una família aristocràtica mallorquina?
+    es: ¿Qué novela está considerada la obra maestra de Llorenç Villalonga, centrada
+      en la decadencia de una familia aristocrática mallorquina?
+  options:
+    - id: A
+      ca: Bearn o la sala de les nines
+      es: Bearn o la sala de les nines
+    - id: B
+      ca: Mirall trencat
+      es: Mirall trencat
+    - id: C
+      ca: Vida privada
+      es: Vida privada
+    - id: D
+      ca: Solitud
+      es: Solitud
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'obra mestra de Villalonga és 'Bearn o la sala de les nines', que narra la
+      decadència dels senyors de Bearn. 'Mirall trencat' és de Mercè Rodoreda,
+      'Vida privada' de Josep M. de Sagarra i 'Solitud' de Víctor Català: cap no
+      és de Villalonga."
+    es: "La obra maestra de Villalonga es 'Bearn o la sala de les nines', que narra
+      la decadencia de los señores de Bearn. 'Mirall trencat' es de Mercè
+      Rodoreda, 'Vida privada' de Josep M. de Sagarra y 'Solitud' de Víctor
+      Català: ninguna es de Villalonga."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_villalonga
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quina obra, publicada el 1931, és la novel·la que inaugura la narrativa de
+      Villalonga amb una sàtira mordaç de l'aristocràcia palmesana en
+      decadència?
+    es: ¿Qué obra, publicada en 1931, es la novela que inaugura la narrativa de
+      Villalonga con una sátira mordaz de la aristocracia palmesana en
+      decadencia?
+  options:
+    - id: A
+      ca: Mort de dama
+      es: Mort de dama
+    - id: B
+      ca: Bearn o la sala de les nines
+      es: Bearn o la sala de les nines
+    - id: C
+      ca: Desenllaç a Montlleó
+      es: Desenllaç a Montlleó
+    - id: D
+      ca: L'àngel rebel
+      es: L'àngel rebel
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Mort de dama' (1931), publicada inicialment amb el pseudònim Dhey, és la
+      primera novel·la de Villalonga i una sàtira de la societat aristocràtica
+      de Palma a través de dona Obdúlia. 'Bearn' és molt posterior (anys 50-60)
+      i les altres també són obres més tardanes."
+    es: "'Mort de dama' (1931), publicada inicialmente con el seudónimo Dhey, es la
+      primera novela de Villalonga y una sátira de la sociedad aristocrática de
+      Palma a través de doña Obdúlia. 'Bearn' es muy posterior (años 50-60) y
+      las demás también son obras más tardías."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_villalonga
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Pel que fa a la publicació de 'Bearn', quina afirmació és correcta sobre la
+      llengua i la cronologia?
+    es: Respecto a la publicación de 'Bearn', ¿qué afirmación es correcta sobre la
+      lengua y la cronología?
+  options:
+    - id: A
+      ca: Va aparèixer primer en castellà (1956) i la versió catalana es va publicar
+        el 1961
+      es: Apareció primero en castellano (1956) y la versión catalana se publicó en
+        1961
+    - id: B
+      ca: Es va escriure i publicar únicament en català des del primer moment
+      es: Se escribió y publicó únicamente en catalán desde el primer momento
+    - id: C
+      ca: Es va publicar en català el 1931 i mai no es va traduir al castellà
+      es: Se publicó en catalán en 1931 y nunca se tradujo al castellano
+    - id: D
+      ca: Va aparèixer simultàniament en català i en francès el 1961
+      es: Apareció simultáneamente en catalán y en francés en 1961
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Bearn' va veure la llum primer en castellà l'any 1956 i posteriorment, el
+      1961, es va publicar la versió en català, que és la que s'ha canonitzat.
+      No és de 1931 (any de 'Mort de dama') ni va tenir una edició francesa
+      simultània."
+    es: "'Bearn' vio la luz primero en castellano en 1956 y posteriormente, en 1961,
+      se publicó la versión en catalán, que es la que se ha canonizado. No es de
+      1931 (año de 'Mort de dama') ni tuvo una edición francesa simultánea."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_villalonga
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Quin és el gran tema de 'Bearn' i amb quina obra europea se sol comparar per
+      aquest motiu?
+    es: ¿Cuál es el gran tema de 'Bearn' y con qué obra europea se suele comparar
+      por este motivo?
+  options:
+    - id: A
+      ca: La decadència de l'aristocràcia davant el món modern; se sol comparar amb
+        'Il Gattopardo' de Lampedusa
+      es: La decadencia de la aristocracia ante el mundo moderno; se suele comparar
+        con 'Il Gattopardo' de Lampedusa
+    - id: B
+      ca: La lluita de classes obrera; se sol comparar amb 'Germinal' de Zola
+      es: La lucha de clases obrera; se suele comparar con 'Germinal' de Zola
+    - id: C
+      ca: L'ascens de la burgesia industrial catalana; se sol comparar amb 'La febre
+        d'or' de Narcís Oller
+      es: El ascenso de la burguesía industrial catalana; se suele comparar con 'La
+        febre d'or' de Narcís Oller
+    - id: D
+      ca: La reconstrucció nacional noucentista; se sol comparar amb 'La ben plantada'
+        d'Eugeni d'Ors
+      es: La reconstrucción nacional noucentista; se suele comparar con 'La ben
+        plantada' de Eugeni d'Ors
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El nucli de 'Bearn' és el crepuscle d'un món aristocràtic i senyorial que
+      s'esfondra davant la modernitat, tema que la crítica ha aparellat sovint
+      amb 'Il Gattopardo' (1958) de Giuseppe Tomasi di Lampedusa. Els altres
+      temes i obres pertanyen a corrents (naturalisme obrer, realisme burgès,
+      Noucentisme) aliens al projecte de Villalonga.
+    es: El núcleo de 'Bearn' es el crepúsculo de un mundo aristocrático y señorial
+      que se hunde ante la modernidad, tema que la crítica ha emparejado a
+      menudo con 'Il Gattopardo' (1958) de Giuseppe Tomasi di Lampedusa. Los
+      otros temas y obras pertenecen a corrientes (naturalismo obrero, realismo
+      burgués, Noucentisme) ajenas al proyecto de Villalonga.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.narrative_villalonga
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Com es caracteritza ideològicament Don Toni de Bearn, en contrast amb la
+      seva esposa dona Maria Antònia?
+    es: ¿Cómo se caracteriza ideológicamente Don Toni de Bearn, en contraste con su
+      esposa doña Maria Antònia?
+  options:
+    - id: A
+      ca: Don Toni és un aristòcrata il·lustrat i racionalista, d'esperit volterià i
+        curiós per la ciència, mentre que dona Maria Antònia encarna la tradició
+        i la resignació cristiana
+      es: Don Toni es un aristócrata ilustrado y racionalista, de espíritu volteriano
+        y curioso por la ciencia, mientras que doña Maria Antònia encarna la
+        tradición y la resignación cristiana
+    - id: B
+      ca: Don Toni és un catòlic integrista i dona Maria Antònia una lliurepensadora
+        escèptica
+      es: Don Toni es un católico integrista y doña Maria Antònia una librepensadora
+        escéptica
+    - id: C
+      ca: Don Toni és un revolucionari republicà i dona Maria Antònia una activista
+        obrera
+      es: Don Toni es un revolucionario republicano y doña Maria Antònia una activista
+        obrera
+    - id: D
+      ca: Tots dos són fervents nacionalistes noucentistes que volen modernitzar
+        Mallorca
+      es: Ambos son fervientes nacionalistas noucentistas que quieren modernizar
+        Mallorca
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Don Toni és el prototipus de senyor il·lustrat: racionalista, escèptic,
+      d'esperit volterià, atret pel progrés, la ciència i el plaer (com mostra
+      la 'sala de les nines'). Dona Maria Antònia representa el pol contrari: la
+      fe, la tradició i la resignació. La tensió entre raó il·lustrada i
+      tradició cristiana és l'eix de la novel·la; les altres opcions inverteixen
+      o falsegen aquests trets."
+    es: "Don Toni es el prototipo de señor ilustrado: racionalista, escéptico, de
+      espíritu volteriano, atraído por el progreso, la ciencia y el placer (como
+      muestra la 'sala de les nines'). Doña Maria Antònia representa el polo
+      contrario: la fe, la tradición y la resignación. La tensión entre razón
+      ilustrada y tradición cristiana es el eje de la novela; las demás opciones
+      invierten o falsean estos rasgos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.theatre
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina d'aquestes obres de Josep Maria de Sagarra, escrita en vers, se situa
+      en un cafè d'un poble de pescadors de la Costa Brava?
+    es: ¿Cuál de estas obras de Josep Maria de Sagarra, escrita en verso, se
+      ambienta en un café de un pueblo de pescadores de la Costa Brava?
+  options:
+    - id: A
+      ca: El cafè de la Marina (1933)
+      es: El cafè de la Marina (1933)
+    - id: B
+      ca: Terra baixa (1897), d'Àngel Guimerà
+      es: Terra baixa (1897), de Àngel Guimerà
+    - id: C
+      ca: El verí del teatre (1978)
+      es: El verí del teatre (1978)
+    - id: D
+      ca: Homes i No (1958)
+      es: Homes i No (1958)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El cafè de la Marina (1933) és un dels grans èxits del teatre poètic de
+      Sagarra, escrit en decasíl·labs i ambientat en un cafè-fonda d'un poble
+      mariner de la Costa Brava. Terra baixa és de Guimerà; El verí del teatre
+      és de Rodolf Sirera; Homes i No és de Manuel de Pedrolo.
+    es: El cafè de la Marina (1933) es uno de los grandes éxitos del teatro poético
+      de Sagarra, escrito en decasílabos y ambientado en un café-fonda de un
+      pueblo marinero de la Costa Brava. Terra baixa es de Guimerà; El verí del
+      teatre es de Rodolf Sirera; Homes i No es de Manuel de Pedrolo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.theatre
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Qui és l'autor de l'obra metateatral El verí del teatre (1978), diàleg entre
+      un Marquès i un actor?
+    es: ¿Quién es el autor de la obra metateatral El verí del teatre (1978), diálogo
+      entre un Marqués y un actor?
+  options:
+    - id: A
+      ca: Rodolf Sirera
+      es: Rodolf Sirera
+    - id: B
+      ca: Josep Maria Benet i Jornet
+      es: Josep Maria Benet i Jornet
+    - id: C
+      ca: Joan Brossa
+      es: Joan Brossa
+    - id: D
+      ca: Manuel de Pedrolo
+      es: Manuel de Pedrolo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El verí del teatre (1978) és obra del dramaturg valencià Rodolf Sirera: una
+      peça de dos personatges de fort component metateatral. Benet i Jornet,
+      Brossa i Pedrolo són contemporanis seus, però no en són els autors."
+    es: "El verí del teatre (1978) es obra del dramaturgo valenciano Rodolf Sirera:
+      una pieza de dos personajes de fuerte componente metateatral. Benet i
+      Jornet, Brossa y Pedrolo son contemporáneos suyos, pero no son sus
+      autores."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000084
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.theatre
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Amb quina obra va debutar Josep Maria Benet i Jornet, guardonada amb el
+      Premi Josep Maria de Sagarra el 1963?
+    es: ¿Con qué obra debutó Josep Maria Benet i Jornet, galardonada con el Premi
+      Josep Maria de Sagarra en 1963?
+  options:
+    - id: A
+      ca: Una vella, coneguda olor
+      es: Una vella, coneguda olor
+    - id: B
+      ca: Desig
+      es: Desig
+    - id: C
+      ca: E.R.
+      es: E.R.
+    - id: D
+      ca: Testament
+      es: Testament
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Benet i Jornet va debutar amb Una vella, coneguda olor, que va obtenir el
+      Premi Josep Maria de Sagarra el 1963. Desig (1989), E.R. (1994) i
+      Testament (1995) també són seves, però pertanyen a la seva etapa de
+      maduresa, molt posterior.
+    es: Benet i Jornet debutó con Una vella, coneguda olor, que obtuvo el Premi
+      Josep Maria de Sagarra en 1963. Desig (1989), E.R. (1994) y Testament
+      (1995) también son suyas, pero pertenecen a su etapa de madurez, muy
+      posterior.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000085
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.theatre
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Com es defineix genèricament Primera història d'Esther (1948), de Salvador
+      Espriu, segons el seu subtítol?
+    es: ¿Cómo se define genéricamente Primera història d'Esther (1948), de Salvador
+      Espriu, según su subtítulo?
+  options:
+    - id: A
+      ca: Un "improperi per a titelles"
+      es: Un "improperi para títeres"
+    - id: B
+      ca: Una tragèdia neoclàssica en vers
+      es: Una tragedia neoclásica en verso
+    - id: C
+      ca: Un sainet costumista
+      es: Un sainete costumbrista
+    - id: D
+      ca: Una comèdia de l'absurd
+      es: Una comedia del absurdo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Espriu subtitula Primera història d'Esther com a \"improperi per a
+      titelles\": una peça concebuda per a un teatre de putxinel·lis que
+      reelabora el llibre bíblic d'Ester i el projecta sobre el món de Sinera.
+      No és tragèdia neoclàssica, ni sainet, ni teatre de l'absurd."
+    es: "Espriu subtitula Primera història d'Esther como \"improperi para títeres\":
+      una pieza concebida para un teatro de marionetas que reelabora el libro
+      bíblico de Ester y lo proyecta sobre el mundo de Sinera. No es tragedia
+      neoclásica, ni sainete, ni teatro del absurdo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000086
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.theatre
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: L'obra Homes i No (1958), de Manuel de Pedrolo, s'inscriu principalment en
+      quin corrent dramàtic?
+    es: La obra Homes i No (1958), de Manuel de Pedrolo, se inscribe principalmente
+      en ¿qué corriente dramática?
+  options:
+    - id: A
+      ca: El teatre de l'absurd (i l'existencialisme)
+      es: El teatro del absurdo (y el existencialismo)
+    - id: B
+      ca: El teatre poètic modernista
+      es: El teatro poético modernista
+    - id: C
+      ca: El sainet costumista vuitcentista
+      es: El sainete costumbrista decimonónico
+    - id: D
+      ca: El drama històric romàntic
+      es: El drama histórico romántico
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Homes i No (1958) és una de les mostres pioneres del teatre de l'absurd en
+      català: amb un plantejament simbòlic i existencialista (personatges
+      empresonats, l'oposició entre els Homes i el No), s'allunya del realisme i
+      connecta amb Beckett o Ionesco. No és teatre poètic modernista, ni sainet,
+      ni drama romàntic."
+    es: "Homes i No (1958) es una de las muestras pioneras del teatro del absurdo en
+      catalán: con un planteamiento simbólico y existencialista (personajes
+      encarcelados, la oposición entre los Hombres y el No), se aleja del
+      realismo y conecta con Beckett o Ionesco. No es teatro poético modernista,
+      ni sainete, ni drama romántico."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000087
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.twentieth_century.theatre
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quin d'aquests grups de teatre independent català és el més antic, fundat el
+      1962 per Albert Boadella?
+    es: ¿Cuál de estos grupos de teatro independiente catalán es el más antiguo,
+      fundado en 1962 por Albert Boadella?
+  options:
+    - id: A
+      ca: Els Joglars
+      es: Els Joglars
+    - id: B
+      ca: Comediants
+      es: Comediants
+    - id: C
+      ca: Dagoll Dagom
+      es: Dagoll Dagom
+    - id: D
+      ca: La Cubana
+      es: La Cubana
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els Joglars, fundat el 1962 i vinculat a Albert Boadella, és el degà dels
+      grups de teatre independent català. Comediants es va crear el 1971, Dagoll
+      Dagom el 1974 i La Cubana el 1980, tots posteriors.
+    es: Els Joglars, fundado en 1962 y vinculado a Albert Boadella, es el decano de
+      los grupos de teatro independiente catalán. Comediants se creó en 1971,
+      Dagoll Dagom en 1974 y La Cubana en 1980, todos posteriores.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000088
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.contemporary.current_narrative
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina característica narrativa defineix la novel·la "Canto jo i la muntanya
+      balla" (2019), d'Irene Solà, ambientada als Pirineus?
+    es: ¿Qué característica narrativa define la novela "Canto jo i la muntanya
+      balla" (2019), de Irene Solà, ambientada en los Pirineos?
+  options:
+    - id: A
+      ca: És una narració polifònica en què parlen veus humanes i també no humanes
+        (núvols, animals, la muntanya).
+      es: Es una narración polifónica en la que hablan voces humanas y también no
+        humanas (nubes, animales, la montaña).
+    - id: B
+      ca: És un monòleg interior únic narrat en primera persona per un sol personatge
+        al llarg de tot el llibre.
+      es: Es un monólogo interior único narrado en primera persona por un solo
+        personaje a lo largo de todo el libro.
+    - id: C
+      ca: És una novel·la epistolar formada exclusivament per cartes intercanviades
+        entre dos amants.
+      es: Es una novela epistolar formada exclusivamente por cartas intercambiadas
+        entre dos amantes.
+    - id: D
+      ca: És una crònica periodística en tercera persona objectiva, sense cap element
+        de ficció.
+      es: Es una crónica periodística en tercera persona objetiva, sin ningún elemento
+        de ficción.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El tret distintiu de l'obra és la polifonia: cada capítol el narra una veu
+      diferent, i moltes no són humanes (els núvols que descarreguen la
+      tempesta, una cérvola, els bolets, la muntanya). Aquesta multiplicitat de
+      perspectives, i no un narrador únic, és el que la caracteritza."
+    es: "El rasgo distintivo de la obra es la polifonía: cada capítulo lo narra una
+      voz diferente, y muchas no son humanas (las nubes que descargan la
+      tormenta, una cierva, las setas, la montaña). Esa multiplicidad de
+      perspectivas, y no un narrador único, es lo que la caracteriza."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000089
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.contemporary.current_narrative
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: La novel·la "L'últim patriarca", de Najat El Hachmi, va guanyar el Premi
+      Ramon Llull el 2008. Quin dels temes següents hi és central?
+    es: La novela "L'últim patriarca", de Najat El Hachmi, ganó el Premi Ramon Llull
+      en 2008. ¿Cuál de los siguientes temas es central en ella?
+  options:
+    - id: A
+      ca: La migració i el xoc identitari i de gènere d'una noia d'origen amazic entre
+        dues cultures.
+      es: La migración y el choque identitario y de género de una chica de origen
+        amazigh entre dos culturas.
+    - id: B
+      ca: La Guerra Civil espanyola viscuda en un poble del Pallars.
+      es: La Guerra Civil española vivida en un pueblo del Pallars.
+    - id: C
+      ca: L'ascens i caiguda d'un violinista a l'Europa del segle XVIII.
+      es: El ascenso y caída de un violinista en la Europa del siglo XVIII.
+    - id: D
+      ca: Una expedició científica a una illa remota amenaçada per criatures marines.
+      es: Una expedición científica a una isla remota amenazada por criaturas marinas.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "\"L'últim patriarca\" narra la història d'una família d'origen amazic
+      (rifeny) instal·lada a Catalunya, i posa al centre la construcció de la
+      identitat, la migració i l'emancipació de la filla enfront del patriarcat.
+      Les altres opcions corresponen a \"Les veus del Pamano\"/\"Jo confesso\"
+      de Cabré i a \"La pell freda\" de Sánchez Piñol."
+    es: "\"L'últim patriarca\" narra la historia de una familia de origen amazigh
+      (rifeño) instalada en Cataluña, y sitúa en el centro la construcción de la
+      identidad, la migración y la emancipación de la hija frente al
+      patriarcado. Las demás opciones corresponden a \"Les veus del
+      Pamano\"/\"Jo confesso\" de Cabré y a \"La pell freda\" de Sánchez Piñol."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000090
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.contemporary.current_narrative
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: A "Jo confesso" (2011), de Jaume Cabré, quin objecte funciona com a fil
+      conductor que enllaça les diverses èpoques i històries de la novel·la?
+    es: En "Jo confesso" (2011), de Jaume Cabré, ¿qué objeto funciona como hilo
+      conductor que enlaza las distintas épocas e historias de la novela?
+  options:
+    - id: A
+      ca: Un violí Storioni de gran valor, al voltant del qual s'entrellacen segles
+        d'història i culpa.
+      es: Un violín Storioni de gran valor, en torno al cual se entrelazan siglos de
+        historia y culpa.
+    - id: B
+      ca: Un manuscrit medieval perdut trobat en una biblioteca monàstica.
+      es: Un manuscrito medieval perdido hallado en una biblioteca monástica.
+    - id: C
+      ca: Un rellotge de butxaca heretat que marca sempre la mateixa hora.
+      es: Un reloj de bolsillo heredado que marca siempre la misma hora.
+    - id: D
+      ca: Una maleta extraviada en una estació de tren europea.
+      es: Una maleta extraviada en una estación de tren europea.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El narrador, Adrià Ardèvol, escriu la seva confessió mentre la memòria se li
+      esvaeix, i un violí Storioni robat esdevé l'objecte que connecta episodis
+      separats per segles i reflexiona sobre l'origen del mal. La maleta remet a
+      "Maletes perdudes" de Jordi Puntí, no a Cabré.
+    es: El narrador, Adrià Ardèvol, escribe su confesión mientras la memoria se le
+      desvanece, y un violín Storioni robado se convierte en el objeto que
+      conecta episodios separados por siglos y reflexiona sobre el origen del
+      mal. La maleta remite a "Maletes perdudes" de Jordi Puntí, no a Cabré.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000091
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.contemporary.current_narrative
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Dins la poesia catalana actual, el poemari "La ciutat cansada", de Maria
+      Cabrera, va ser distingit amb quin premi?
+    es: Dentro de la poesía catalana actual, el poemario "La ciutat cansada", de
+      Maria Cabrera, ¿con qué premio fue distinguido?
+  options:
+    - id: A
+      ca: El Premi Carles Riba de poesia (2016).
+      es: El Premi Carles Riba de poesía (2016).
+    - id: B
+      ca: El Premi Ramon Llull de novel·la.
+      es: El Premi Ramon Llull de novela.
+    - id: C
+      ca: El Premi Llibres Anagrama de novel·la.
+      es: El Premi Llibres Anagrama de novela.
+    - id: D
+      ca: El Premi Sant Jordi de novel·la.
+      es: El Premi Sant Jordi de novela.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "\"La ciutat cansada\" de Maria Cabrera va guanyar el Premi Carles Riba, el
+      guardó de referència de la poesia en català. Els altres premis esmentats
+      (Ramon Llull, Llibres Anagrama, Sant Jordi) són de narrativa i, per tant,
+      no s'atorguen a un poemari."
+    es: '"La ciutat cansada" de Maria Cabrera ganó el Premi Carles Riba, el galardón
+      de referencia de la poesía en catalán. Los otros premios citados (Ramon
+      Llull, Llibres Anagrama, Sant Jordi) son de narrativa y, por tanto, no se
+      conceden a un poemario.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lit-g-000092
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: literature
+  type: multiple_choice
+  skills:
+    - literature.contemporary.current_narrative
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Quina de les associacions següents entre autor/a, obra i any de publicació
+      és CORRECTA dins la literatura catalana del segle XXI?
+    es: ¿Cuál de las siguientes asociaciones entre autor/a, obra y año de
+      publicación es CORRECTA dentro de la literatura catalana del siglo XXI?
+  options:
+    - id: A
+      ca: Irene Solà — "Canto jo i la muntanya balla" (2019)
+      es: Irene Solà — "Canto jo i la muntanya balla" (2019)
+    - id: B
+      ca: Eva Baltasar — "L'últim patriarca" (2008)
+      es: Eva Baltasar — "L'últim patriarca" (2008)
+    - id: C
+      ca: Jaume Cabré — "La pell freda" (2002)
+      es: Jaume Cabré — "La pell freda" (2002)
+    - id: D
+      ca: Najat El Hachmi — "Permagel" (2018)
+      es: Najat El Hachmi — "Permagel" (2018)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'única associació correcta és Irene Solà amb "Canto jo i la muntanya balla"
+      (2019). "L'últim patriarca" (2008) és de Najat El Hachmi; "La pell freda"
+      (2002) és d'Albert Sánchez Piñol; i "Permagel" (2018) és d'Eva Baltasar.
+      Les opcions B, C i D barregen autories.
+    es: La única asociación correcta es Irene Solà con "Canto jo i la muntanya
+      balla" (2019). "L'últim patriarca" (2008) es de Najat El Hachmi; "La pell
+      freda" (2002) es de Albert Sánchez Piñol; y "Permagel" (2018) es de Eva
+      Baltasar. Las opciones B, C y D mezclan autorías.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

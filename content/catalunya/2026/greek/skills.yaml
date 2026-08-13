@@ -1,0 +1,214 @@
+- id: greek.alphabet
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "L'alfabet i la fonètica grega", es: "El alfabeto y la fonética griega" }
+  status: published
+  competencies: [reasoning, communication]
+
+- id: greek.alphabet.letters
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Les lletres: majúscules, minúscules i lectura", es: "Las letras: mayúsculas, minúsculas y lectura" }
+  parent: greek.alphabet
+  status: published
+  competencies: [reasoning, communication]
+
+- id: greek.alphabet.phonetics
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Fonètica: esperits, accents i transcripció", es: "Fonética: espíritus, acentos y transcripción" }
+  parent: greek.alphabet
+  prerequisites: [greek.alphabet.letters]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: greek.morphology_nominal
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Morfologia nominal", es: "Morfología nominal" }
+  prerequisites: [greek.alphabet.phonetics]
+  status: published
+  competencies: [reasoning]
+
+- id: greek.morphology_nominal.article
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "L'article i el sistema de casos", es: "El artículo y el sistema de casos" }
+  parent: greek.morphology_nominal
+  status: published
+  competencies: [reasoning]
+
+- id: greek.morphology_nominal.declensions
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Les tres declinacions i els adjectius", es: "Las tres declinaciones y los adjetivos" }
+  parent: greek.morphology_nominal
+  prerequisites: [greek.morphology_nominal.article]
+  status: published
+  competencies: [reasoning]
+
+- id: greek.morphology_verbal
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Morfologia verbal", es: "Morfología verbal" }
+  prerequisites: [greek.morphology_nominal.declensions]
+  status: published
+  competencies: [reasoning]
+
+- id: greek.morphology_verbal.present_system
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Conjugacions: el sistema de present (-ω i -μι)", es: "Conjugaciones: el sistema de presente (-ω y -μι)" }
+  parent: greek.morphology_verbal
+  status: published
+  competencies: [reasoning]
+
+- id: greek.morphology_verbal.voices_tenses
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Veus i temps: activa, mitjana, passiva i aorist", es: "Voces y tiempos: activa, media, pasiva y aoristo" }
+  parent: greek.morphology_verbal
+  prerequisites: [greek.morphology_verbal.present_system]
+  status: published
+  competencies: [reasoning]
+
+- id: greek.syntax
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Sintaxi", es: "Sintaxis" }
+  prerequisites: [greek.morphology_nominal.declensions, greek.morphology_verbal.voices_tenses]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: greek.syntax.cases
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Sintaxi dels casos i les funcions", es: "Sintaxis de los casos y las funciones" }
+  parent: greek.syntax
+  status: published
+  competencies: [reasoning]
+
+- id: greek.syntax.clauses
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Oracions simples, coordinades i subordinades", es: "Oraciones simples, coordinadas y subordinadas" }
+  parent: greek.syntax
+  prerequisites: [greek.syntax.cases]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: greek.translation
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Traducció de textos", es: "Traducción de textos" }
+  prerequisites: [greek.syntax.clauses]
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: greek.translation.method
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Mètode de traducció, ús del diccionari i comentari", es: "Método de traducción, uso del diccionario y comentario" }
+  parent: greek.translation
+  status: published
+  competencies: [reasoning, critical_thinking, communication]
+
+- id: greek.lexicon
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Lèxic i etimologia", es: "Léxico y etimología" }
+  prerequisites: [greek.alphabet.phonetics]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: greek.lexicon.hellenisms
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Hel·lenismes i formants cultes al català i castellà", es: "Helenismos y formantes cultos en catalán y castellano" }
+  parent: greek.lexicon
+  status: published
+  competencies: [reasoning, communication]
+
+- id: greek.culture
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Cultura i civilització grega", es: "Cultura y civilización griega" }
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: greek.culture.history
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Història i societat de la Grècia antiga", es: "Historia y sociedad de la Grecia antigua" }
+  parent: greek.culture
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: greek.culture.mythology
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Mitologia i religió", es: "Mitología y religión" }
+  parent: greek.culture
+  prerequisites: [greek.culture.history]
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: greek.culture.literary_genres
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Gèneres literaris: èpica, teatre i historiografia", es: "Géneros literarios: épica, teatro e historiografía" }
+  parent: greek.culture
+  prerequisites: [greek.culture.mythology]
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: greek.culture.legacy
+  version: 1
+  subject: greek
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "El llegat de Grècia a la cultura occidental", es: "El legado de Grecia en la cultura occidental" }
+  parent: greek.culture
+  prerequisites: [greek.culture.literary_genres]
+  status: published
+  competencies: [critical_thinking, communication]

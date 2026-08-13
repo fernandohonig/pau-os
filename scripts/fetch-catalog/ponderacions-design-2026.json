@@ -1,0 +1,513 @@
+{
+  "_source": {
+    "authority": "Generalitat de Catalunya — Consell Interuniversitari de Catalunya",
+    "title": "Ponderacions Catalunya 2026",
+    "subject": "Disseny — fase específica",
+    "url": "https://universitats.gencat.cat/ca/preinscripcions/ponderacions/",
+    "method": "coordinate-based extraction of the official PDF (Disseny column); joined to degrees by university+name",
+    "retrieved_at": "2026-08-13",
+    "note": "Coefficients are official (0.10/0.20) read directly from the PDF grid; no values invented. Degrees not listed are not weighted by this subject. Names provisional pending 1:1 reconciliation for a minority of double/campus degrees."
+  },
+  "entries": [
+    {
+      "uni": "upc",
+      "name": "\"EUNCET\" (Campus Can Dragó + Campus 22@) (presencial) (simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "upf",
+      "name": "Administració d'Empreses i Gestió de la Innovació / Màrqueting i Comunitats Digitals \"Tecnocampus\" (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Administració i Direcció d'Empreses / Enginyeria en Organització Industrial i Logística (simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udg",
+      "name": "Arquitectura Tècnica i Edificació",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Arquitectura Tècnica i Edificació",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Arquitectura Tècnica i Edificació",
+      "coef": 0.1
+    },
+    {
+      "uni": "udg",
+      "name": "Arquitectura Tècnica i Edificació (Semipresencial)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udg",
+      "name": "Arquitectura, Estudis d'",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Arquitectura, Estudis d'",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Arquitectura, Estudis d' (Barcelona)",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Arquitectura, Estudis d' (Sant Cugat del Vallès)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Arts i Disseny \"Massana\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Belles Arts",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Cinematografia \"ESCAC\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Ciència i Enginyeria de Dades",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Ciències i Tecnologies Aplicades a l'Esport i al Fitnes \"EUNCET\"",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Comunicació Audiovisual / Gestió d'Informació i Documentació Digital (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Comunicació Audiovisual i Multimèdia \"ERAM\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Comunicació Audiovisual i Multimèdia \"ERAM\" (docència en anglès)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Comunicació Cultural",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Comunicació de les Organitzacions",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Comunicació i Indústries Culturals",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Comunicació i Periodisme Audiovisuals",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Comunicació Interactiva",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Conservació - Restauració de Béns Culturals",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Direcció d'Empreses Hoteleres i Gastronòmiques",
+      "coef": 0.1
+    },
+    {
+      "uni": "urv",
+      "name": "Direcció i Gestió d'Empreses en l'Àmbit Digital \"ESIC\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Disseny",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Disseny \"EINA\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Disseny Digital i Tecnologies Creatives",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Disseny Digital i Tecnologies Multimèdia",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Disseny i Producció de Videojocs \"Tecnocampus\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Disseny i Producció de Videojocs / Enginyeria Informàtica de Gestió i Sistemes d'Informació \"Tecnocampus\" (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Disseny, Animació i Art Digital",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Disseny, Animació i Art Digital per a Videojocs i Jocs Aplicats \"ENTI\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Dret / Relacions Internacionals (Simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Eng. de Sistemes Aeroespacials / Eng. de Sistemes de Telecomunicació - Eng. Telemàtica (Agrupació de Simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Eng. de Sistemes de Telecomunicació - Eng. Telemàtica / Eng. de Sistemes Aeroespacials (Agrupació de Simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Eng. Telemàtica - Eng. de Sistemes de Telecomunicació / Eng. de Sistemes Aeroespacials (Agrupació de Simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Enginyeria d'Automoció \"EU Salesiana de Sarrià\"",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Enginyeria de Dades",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Enginyeria de Disseny Industrial i Desenvolupament del Producte (Terrassa)",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Enginyeria de Disseny Industrial i Desenvolupament del Producte (Vilanova i la Geltrú)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria de l'Energia i Sostenibilitat / Enginyeria en Electrònica Industrial i Automàtica / Enginyeria Mecànica (Agrupació)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria de l'Energia i Sostenibilitat / Enginyeria en Electrònica Industrial i Automàtica / Enginyeria Mecànica (agrupació) Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Enginyeria de Sistemes Aeroespacials",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Enginyeria de Sistemes TIC (Àmbit d'Informàtica i Comunicacions)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria en Electrònica Industrial i Automàtica / (agrupació) Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria en Electrònica Industrial i Automàtica / Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat (agrupació)",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Enginyeria en Energies Renovables i Eficiència Energètica \"EU Salesiana de Sarrià\"",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria en Organització Industrial i Logística / Administració i Direcció d'Empreses (simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria en Organització Industrial i Logística / Enginyeria Química (Agrupació)",
+      "coef": 0.1
+    },
+    {
+      "uni": "upf",
+      "name": "Enginyeria Informàtica de Gestió i Sistemes d'Informació / Disseny i Producció de Videojocs \"Tecnocampus\" (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat (Simultaneïtat) Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat /",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria Mecànica / Enginyeria de l'Energia i Sostenibilitat / Enginyeria en Electrònica Industrial i Automàtica (Agrupació)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Enginyeria Química / Enginyeria en Organització Industrial i Logística (Agrupació)",
+      "coef": 0.1
+    },
+    {
+      "uni": "upf",
+      "name": "Estudis Globals",
+      "coef": 0.1
+    },
+    {
+      "uni": "udg",
+      "name": "Estudis Globals / Global Studies (docència en Anglès)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udg",
+      "name": "Estudis Globals / Global Studies (docència en Anglès) / Turisme (simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis Socioculturals de Gènere",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Gestió Aeronàutica",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Gestió d'Informació i Documentació Digital",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Gestió d'Informació i Documentació Digital / Comunicació Audiovisual (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Gestió de Ciutats Intelꞏligents i Sostenibles",
+      "coef": 0.1
+    },
+    {
+      "uni": "urv",
+      "name": "Gestió en Turisme i Hoteleria",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Gestió i Digitalització en l'Esport \"EUNCET\" Gestió i Digitalització en l'Esport / Empresa, Innovació i Tecnologia",
+      "coef": 0.1
+    },
+    {
+      "uni": "upc",
+      "name": "Gestió i Digitalització en l'Esport / Màrqueting, Innovació i Tecnologia \"EUNCET\" (Campus Can Dragó + Campus 22@) (simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Grau obert en Turisme, Negoci digital i innovació en turisme, Direcció hotelera internacional i Màrqueting, esdeveniments i",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Grau Obert, Programa de (Agrupació)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Humanitats",
+      "coef": 0.1
+    },
+    {
+      "uni": "upf",
+      "name": "Humanitats",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "Industrial) Enginyeria de l'Energia i Sostenibilitat / Enginyeria Mecànica (Simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Investigació Privada (Títol propi, no oficial)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udl",
+      "name": "l'Energia i Sostenibilitat / Enginyeria Mecànica (agrupació) Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a",
+      "coef": 0.1
+    },
+    {
+      "uni": "upf",
+      "name": "Mitjans Audiovisuals \"Tecnocampus\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Moda \"ERAM\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Màrqueting i Comunitats Digitals \"Tecnocampus\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Màrqueting i Comunitats Digitals / Administració d'Empreses i Gestió de la Innovació \"Tecnocampus\" (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Màrqueting i Comunitats Digitals / Turisme i Gestió del Lleure \"Tecnocampus\" (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Màrqueting, Innovació i Tecnologia / Gestió i Digitalització en l'Esport \"EUNCET\" (Campus Can Dragó + Campus 22@)",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Negoci Digital i Innovació en Turisme \"CETT\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Negoci Digital i Innovació en Turisme / Turisme \"CETT\" (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "upc",
+      "name": "Ports) Enginyeria d'Automoció (Campus Manresa)",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Producció de Música i So per a la Indústria de l'Entreteniment",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Publicitat i Relacions Públiques / Turisme (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Publicitat, Relacions Públiques i Màrqueting \"ESRP\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Relacions Internacionals",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Relacions Internacionals / Dret (Simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "udg",
+      "name": "Turisme / Estudis Globals / Global Studies (docència en Anglès) (simultaneïtat)",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Turisme / Negoci Digital i Innovació en Turisme \"CETT\" (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Turisme / Publicitat i Relacions Públiques (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Turisme i Gestió del Lleure / Màrqueting i Comunitats Digitals \"Tecnocampus\" (simultaneïtat)",
+      "coef": 0.2
+    }
+  ]
+}

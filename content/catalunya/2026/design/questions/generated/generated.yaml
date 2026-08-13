@@ -1,0 +1,4425 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: dis-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.elements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Segons el llenguatge visual, quina és la característica que defineix el PUNT
+      com a element gràfic conceptual?
+    es: Según el lenguaje visual, ¿cuál es la característica que define el PUNTO
+      como elemento gráfico conceptual?
+  options:
+    - id: A
+      ca: Té posició però no té dimensió (ni longitud ni amplada).
+      es: Tiene posición pero no tiene dimensión (ni longitud ni anchura).
+    - id: B
+      ca: Té longitud però no amplada ni gruix.
+      es: Tiene longitud pero no anchura ni grosor.
+    - id: C
+      ca: Té longitud i amplada però no gruix.
+      es: Tiene longitud y anchura pero no grosor.
+    - id: D
+      ca: Té longitud, amplada i gruix.
+      es: Tiene longitud, anchura y grosor.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El punt és l'element gràfic més simple: conceptualment només indica una
+      posició en l'espai i no té cap dimensió. La línia afegeix longitud (opció
+      B), el pla afegeix amplada (opció C) i el volum afegeix gruix (opció D).
+      Aquesta gradació (punt→línia→pla→volum) és la seqüència d'elements
+      conceptuals de Wucius Wong."
+    es: "El punto es el elemento gráfico más simple: conceptualmente solo indica una
+      posición en el espacio y no tiene dimensión alguna. La línea añade
+      longitud (opción B), el plano añade anchura (opción C) y el volumen añade
+      grosor (opción D). Esta gradación (punto→línea→plano→volumen) es la
+      secuencia de elementos conceptuales de Wucius Wong."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.elements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En la teoria de Kandinsky ("Punt i línia sobre el pla"), com es genera una
+      LÍNIA a partir del punt?
+    es: En la teoría de Kandinsky ("Punto y línea sobre el plano"), ¿cómo se genera
+      una LÍNEA a partir del punto?
+  options:
+    - id: A
+      ca: És el rastre que deixa un punt en moviment per acció d'una força exterior.
+      es: Es el rastro que deja un punto en movimiento por acción de una fuerza
+        exterior.
+    - id: B
+      ca: És la suma de dos plans que es tallen en l'espai.
+      es: Es la suma de dos planos que se cortan en el espacio.
+    - id: C
+      ca: És un punt que augmenta de mida fins omplir el suport.
+      es: Es un punto que aumenta de tamaño hasta llenar el soporte.
+    - id: D
+      ca: És la vora que separa dues zones de color diferents.
+      es: Es el borde que separa dos zonas de color diferentes.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Per a Kandinsky la línia és la petjada del punt en moviment: neix quan una
+      força exterior desplaça el punt en una direcció. L'opció C descriu el
+      creixement d'un punt (que tendiria a llegir-se com un pla, no una línia);
+      l'opció B correspon a la intersecció de plans (una aresta) i la D a un
+      contorn per contrast cromàtic, que no és la definició generativa de la
+      línia."
+    es: "Para Kandinsky la línea es la huella del punto en movimiento: nace cuando
+      una fuerza exterior desplaza el punto en una dirección. La opción C
+      describe el crecimiento de un punto (que tendería a leerse como un plano,
+      no una línea); la opción B corresponde a la intersección de planos (una
+      arista) y la D a un contorno por contraste cromático, que no es la
+      definición generativa de la línea."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.elements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Com es defineix conceptualment la generació d'un PLA a partir dels elements
+      gràfics anteriors?
+    es: ¿Cómo se define conceptualmente la generación de un PLANO a partir de los
+      elementos gráficos anteriores?
+  options:
+    - id: A
+      ca: És el recorregut d'una línia desplaçada en una direcció diferent de la seva
+        pròpia.
+      es: Es el recorrido de una línea desplazada en una dirección distinta de la suya
+        propia.
+    - id: B
+      ca: És el recorregut d'una línia desplaçada en la seva mateixa direcció.
+      es: Es el recorrido de una línea desplazada en su misma dirección.
+    - id: C
+      ca: És un únic punt projectat cap a la profunditat.
+      es: Es un único punto proyectado hacia la profundidad.
+    - id: D
+      ca: És la unió de dos punts mitjançant un traç recte.
+      es: Es la unión de dos puntos mediante un trazo recto.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El pla es genera quan una línia es desplaça en una direcció que NO
+      coincideix amb la seva pròpia; així escombra una superfície amb longitud i
+      amplada. Si la línia es mou en la seva mateixa direcció (opció B) només
+      s'allarga i continua sent una línia. L'opció C generaria volum/profunditat
+      i la D només defineix un segment (línia).
+    es: El plano se genera cuando una línea se desplaza en una dirección que NO
+      coincide con la suya propia; así barre una superficie con longitud y
+      anchura. Si la línea se mueve en su misma dirección (opción B) solo se
+      alarga y sigue siendo una línea. La opción C generaría volumen/profundidad
+      y la D solo define un segmento (línea).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.elements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En l'expressivitat de la línia recta segons la seva orientació, quina
+      associació és la CORRECTA?
+    es: En la expresividad de la línea recta según su orientación, ¿qué asociación
+      es la CORRECTA?
+  options:
+    - id: A
+      ca: La línia diagonal transmet dinamisme, tensió i moviment.
+      es: La línea diagonal transmite dinamismo, tensión y movimiento.
+    - id: B
+      ca: La línia horitzontal transmet tensió i inestabilitat.
+      es: La línea horizontal transmite tensión e inestabilidad.
+    - id: C
+      ca: La línia vertical transmet repòs i calma absoluta.
+      es: La línea vertical transmite reposo y calma absoluta.
+    - id: D
+      ca: La línia diagonal transmet estabilitat i quietud.
+      es: La línea diagonal transmite estabilidad y quietud.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La diagonal, en no estar alineada amb els eixos del suport, s'associa a
+      dinamisme, tensió i moviment (A), mentre que la seva contrària seria
+      l'estabilitat (D, incorrecta). L'horitzontal s'associa a calma, repòs i
+      estabilitat —no a tensió— (B incorrecta) i la vertical a equilibri,
+      elevació i força ascendent, no a calma absoluta (C incorrecta).
+    es: La diagonal, al no estar alineada con los ejes del soporte, se asocia a
+      dinamismo, tensión y movimiento (A), mientras que su contrario sería la
+      estabilidad (D, incorrecta). La horizontal se asocia a calma, reposo y
+      estabilidad —no a tensión— (B incorrecta) y la vertical a equilibrio,
+      elevación y fuerza ascendente, no a calma absoluta (C incorrecta).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.elements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Segons Kandinsky, quin efecte visual produeix un punt situat exactament al
+      CENTRE geomètric del pla (suport)?
+    es: Según Kandinsky, ¿qué efecto visual produce un punto situado exactamente en
+      el CENTRO geométrico del plano (soporte)?
+  options:
+    - id: A
+      ca: "Màxim repòs i equilibri: la tensió es neutralitza i el so és mínim."
+      es: "Máximo reposo y equilibrio: la tensión se neutraliza y el sonido es
+        mínimo."
+    - id: B
+      ca: Màxima tensió dinàmica, perquè lluita contra les vores del pla.
+      es: Máxima tensión dinámica, porque lucha contra los bordes del plano.
+    - id: C
+      ca: Desapareix perceptivament perquè el centre no atrau la mirada.
+      es: Desaparece perceptivamente porque el centro no atrae la mirada.
+    - id: D
+      ca: Genera profunditat i sensació de volum tridimensional.
+      es: Genera profundidad y sensación de volumen tridimensional.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per a Kandinsky, el punt al centre exacte del suport queda en equilibri
+      respecte a totes les vores i produeix el màxim repòs, amb una tensió
+      mínima ("so" més silenciós). En canvi, quan el punt es desplaça del centre
+      apareix tensió i dinamisme (això és el que descriu erròniament B per al
+      centre). El centre és precisament el lloc de màxima atracció, no de
+      desaparició (C), i un sol punt no genera per si mateix volum (D).
+    es: Para Kandinsky, el punto en el centro exacto del soporte queda en equilibrio
+      respecto a todos los bordes y produce el máximo reposo, con una tensión
+      mínima ("sonido" más silencioso). En cambio, cuando el punto se desplaza
+      del centro aparece tensión y dinamismo (eso es lo que describe
+      erróneamente B para el centro). El centro es precisamente el lugar de
+      máxima atracción, no de desaparición (C), y un solo punto no genera por sí
+      mismo volumen (D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.elements
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Un cercle petit i aïllat dins d'un full gran es percep com un PUNT, però el
+      mateix cercle molt ampliat es percep com un PLA. Quin principi del
+      llenguatge visual ho explica?
+    es: Un círculo pequeño y aislado dentro de una hoja grande se percibe como un
+      PUNTO, pero el mismo círculo muy ampliado se percibe como un PLANO. ¿Qué
+      principio del lenguaje visual lo explica?
+  options:
+    - id: A
+      ca: "El caràcter de punt és relatiu: depèn de la mida i la proporció de la forma
+        respecte a l'espai que l'envolta."
+      es: "El carácter de punto es relativo: depende del tamaño y la proporción de la
+        forma respecto al espacio que la rodea."
+    - id: B
+      ca: Només les formes circulars poden funcionar com a punt; en ampliar-les deixen
+        de ser-ho per canvi de forma.
+      es: Solo las formas circulares pueden funcionar como punto; al ampliarlas dejan
+        de serlo por cambio de forma.
+    - id: C
+      ca: Un punt es converteix en pla únicament si canvia de color o de textura.
+      es: Un punto se convierte en plano únicamente si cambia de color o de textura.
+    - id: D
+      ca: El punt sempre té la mateixa mida absoluta; el que canvia és la distància de
+        l'observador.
+      es: El punto siempre tiene el mismo tamaño absoluto; lo que cambia es la
+        distancia del observador.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En el llenguatge visual el \"punt\" no es defineix per una mida absoluta ni
+      per una forma concreta, sinó per la relació de proporció amb l'espai que
+      l'envolta: una forma es llegeix com a punt quan és petita respecte al
+      suport, i com a pla quan la seva superfície es fa dominant. Per això B
+      (limitar-ho al cercle) i D (mida absoluta fixa) són falses, i C confon el
+      fenomen amb un canvi cromàtic, no de proporció."
+    es: 'En el lenguaje visual el "punto" no se define por un tamaño absoluto ni por
+      una forma concreta, sino por la relación de proporción con el espacio que
+      lo rodea: una forma se lee como punto cuando es pequeña respecto al
+      soporte, y como plano cuando su superficie se vuelve dominante. Por eso B
+      (limitarlo al círculo) y D (tamaño absoluto fijo) son falsas, y C confunde
+      el fenómeno con un cambio cromático, no de proporción.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.composition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: "En una composició, quan a banda i banda de l'eix hi ha elements DIFERENTS
+      en forma o mida però que es compensen visualment pel seu pes, parlem d'un
+      equilibri:"
+    es: "En una composición, cuando a ambos lados del eje hay elementos DIFERENTES
+      en forma o tamaño pero que se compensan visualmente por su peso, hablamos
+      de un equilibrio:"
+  options:
+    - id: A
+      ca: Simètric (axial o especular)
+      es: Simétrico (axial o especular)
+    - id: B
+      ca: Asimètric
+      es: Asimétrico
+    - id: C
+      ca: Radial
+      es: Radial
+    - id: D
+      ca: "Inexistent: sense simetria no hi ha equilibri"
+      es: "Inexistente: sin simetría no hay equilibrio"
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: L'equilibri asimètric s'aconsegueix compensant el pes visual d'elements
+      diferents (mida, color, posició) sense que hi hagi correspondència
+      especular. El simètric repeteix la mateixa forma a banda i banda d'un eix;
+      el radial organitza els elements al voltant d'un centre. L'equilibri no
+      exigeix simetria, per això D és falsa.
+    es: El equilibrio asimétrico se logra compensando el peso visual de elementos
+      distintos (tamaño, color, posición) sin correspondencia especular. El
+      simétrico repite la misma forma a ambos lados de un eje; el radial
+      organiza los elementos en torno a un centro. El equilibrio no exige
+      simetría, por eso D es falsa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.composition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "La proporció àuria (secció àuria) que històricament s'ha associat a
+      composicions harmòniques té un valor numèric aproximat de:"
+    es: "La proporción áurea (sección áurea) que históricamente se ha asociado a
+      composiciones armónicas tiene un valor numérico aproximado de:"
+  options:
+    - id: A
+      ca: 1,333 (relació 4:3)
+      es: 1,333 (relación 4:3)
+    - id: B
+      ca: 1,414 (relació 1:√2)
+      es: 1,414 (relación 1:√2)
+    - id: C
+      ca: 1,618
+      es: 1,618
+    - id: D
+      ca: 3,1416
+      es: 3,1416
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: El nombre auri φ = (1+√5)/2 ≈ 1,618. La relació 1:√2 ≈ 1,414 correspon a la
+      sèrie DIN A de paper, i 4:3 ≈ 1,333 és un format d'imatge clàssic; 3,1416
+      és el nombre π, aliè a la proporció àuria.
+    es: El número áureo φ = (1+√5)/2 ≈ 1,618. La relación 1:√2 ≈ 1,414 corresponde a
+      la serie DIN A de papel, y 4:3 ≈ 1,333 es un formato de imagen clásico;
+      3,1416 es el número π, ajeno a la proporción áurea.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.composition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "Segons la regla dels terços, per aconseguir una composició dinàmica els
+      centres d'interès s'han de situar preferentment:"
+    es: "Según la regla de los tercios, para lograr una composición dinámica los
+      centros de interés deben situarse preferentemente:"
+  options:
+    - id: A
+      ca: Al centre geomètric exacte del format
+      es: En el centro geométrico exacto del formato
+    - id: B
+      ca: Sobre les línies que divideixen el format en terços o en els seus punts
+        d'intersecció
+      es: Sobre las líneas que dividen el formato en tercios o en sus puntos de
+        intersección
+    - id: C
+      ca: A les quatre cantonades del format
+      es: En las cuatro esquinas del formato
+    - id: D
+      ca: Sempre sobre l'eix vertical central
+      es: Siempre sobre el eje vertical central
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: La regla dels terços divideix el format amb dues línies horitzontals i dues
+      verticals equidistants, generant quatre punts forts d'intersecció.
+      Situar-hi els centres d'interès crea tensió i dinamisme; el centre exacte
+      (A) o l'eix central (D) donen composicions més estàtiques i simètriques.
+    es: La regla de los tercios divide el formato con dos líneas horizontales y dos
+      verticales equidistantes, generando cuatro puntos fuertes de intersección.
+      Colocar ahí los centros de interés crea tensión y dinamismo; el centro
+      exacto (A) o el eje central (D) dan composiciones más estáticas y
+      simétricas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.composition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En una sanefa on una sèrie de cercles augmenta progressivament de mida
+      d'esquerra a dreta, quin tipus de ritme visual s'estableix?
+    es: En una cenefa donde una serie de círculos aumenta progresivamente de tamaño
+      de izquierda a derecha, ¿qué tipo de ritmo visual se establece?
+  options:
+    - id: A
+      ca: Ritme de repetició (uniforme)
+      es: Ritmo de repetición (uniforme)
+    - id: B
+      ca: Ritme altern
+      es: Ritmo alterno
+    - id: C
+      ca: Ritme progressiu (per gradació)
+      es: Ritmo progresivo (por gradación)
+    - id: D
+      ca: Absència de ritme
+      es: Ausencia de ritmo
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: Quan els elements varien de manera gradual i constant (mida, to, espaiat) es
+      tracta d'un ritme progressiu o per gradació. El ritme de repetició
+      repeteix elements idèntics; l'altern intercala dos o més motius diferents.
+      Com que hi ha una variació ordenada, sí que hi ha ritme, per això D és
+      falsa.
+    es: Cuando los elementos varían de forma gradual y constante (tamaño, tono,
+      espaciado) se trata de un ritmo progresivo o por gradación. El ritmo de
+      repetición repite elementos idénticos; el alterno intercala dos o más
+      motivos distintos. Como hay una variación ordenada, sí existe ritmo, por
+      eso D es falsa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.composition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "En l'equilibri asimètric funciona el principi de la 'palanca visual': com
+      pot un element PETIT compensar el pes d'un element GRAN situat prop del
+      centre?"
+    es: "En el equilibrio asimétrico funciona el principio de la 'palanca visual':
+      ¿cómo puede un elemento PEQUEÑO compensar el peso de un elemento GRANDE
+      situado cerca del centro?"
+  options:
+    - id: A
+      ca: Situant l'element petit ben a prop del centre, al costat del gran
+      es: Situando el elemento pequeño muy cerca del centro, junto al grande
+    - id: B
+      ca: Situant l'element petit allunyat del centre, cap a la vora del format
+      es: Situando el elemento pequeño alejado del centro, hacia el borde del formato
+    - id: C
+      ca: Reduint encara més la mida de l'element petit
+      es: Reduciendo aún más el tamaño del elemento pequeño
+    - id: D
+      ca: Desaturant el color de l'element petit fins al gris
+      es: Desaturando el color del elemento pequeño hasta el gris
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Igual que en una palanca física, el pes visual efectiu depèn de la
+      distància al centre (fulcre): com més lluny del centre es col·loca
+      l'element petit, més 'braç' guanya i més pot compensar un element gran
+      situat a prop de l'eix. Apropar-lo (A) o empetitir-lo (C) li resta pes;
+      desaturar-lo (D) també, perquè els colors saturats i càlids pesen més."
+    es: "Igual que en una palanca física, el peso visual efectivo depende de la
+      distancia al centro (fulcro): cuanto más lejos del centro se coloca el
+      elemento pequeño, más 'brazo' gana y más puede compensar un elemento
+      grande situado cerca del eje. Acercarlo (A) o empequeñecerlo (C) le resta
+      peso; desaturarlo (D) también, porque los colores saturados y cálidos
+      pesan más."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.composition
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: La sèrie de Fibonacci (1, 1, 2, 3, 5, 8, 13, 21...) s'utilitza en composició
+      perquè el quocient entre cada terme i l'anterior tendeix a un valor. Quin
+      és aquest valor límit i quin és el terme següent al 21?
+    es: La serie de Fibonacci (1, 1, 2, 3, 5, 8, 13, 21...) se utiliza en
+      composición porque el cociente entre cada término y el anterior tiende a
+      un valor. ¿Cuál es ese valor límite y cuál es el término siguiente al 21?
+  options:
+    - id: A
+      ca: Tendeix a 1,618 (φ) i el terme següent és 34
+      es: Tiende a 1,618 (φ) y el término siguiente es 34
+    - id: B
+      ca: Tendeix a 1,414 (√2) i el terme següent és 34
+      es: Tiende a 1,414 (√2) y el término siguiente es 34
+    - id: C
+      ca: Tendeix a 1,618 (φ) i el terme següent és 42
+      es: Tiende a 1,618 (φ) y el término siguiente es 42
+    - id: D
+      ca: Tendeix a 2 i el terme següent és 34
+      es: Tiende a 2 y el término siguiente es 34
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cada terme de Fibonacci és la suma dels dos anteriors: 13 + 21 = 34. A
+      mesura que avança la sèrie, el quocient entre termes consecutius (21/13 ≈
+      1,615; 34/21 ≈ 1,619) convergeix al nombre auri φ ≈ 1,618, motiu pel qual
+      s'associa a proporcions harmòniques. Doblar 21 (opció C, 42) o pensar que
+      el límit és √2 o 2 són errors habituals."
+    es: "Cada término de Fibonacci es la suma de los dos anteriores: 13 + 21 = 34. A
+      medida que avanza la serie, el cociente entre términos consecutivos (21/13
+      ≈ 1,615; 34/21 ≈ 1,619) converge al número áureo φ ≈ 1,618, por lo que se
+      asocia a proporciones armónicas. Doblar 21 (opción C, 42) o pensar que el
+      límite es √2 o 2 son errores habituales."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.gestalt
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En un cartell, una sèrie d'icones estan col·locades de manera que algunes
+      queden separades per espais petits i d'altres per espais grans, formant
+      blocs visuals. Quina llei de la Gestalt explica principalment que percebem
+      aquests blocs com a grups?
+    es: En un cartel, una serie de iconos están colocados de manera que algunos
+      quedan separados por espacios pequeños y otros por espacios grandes,
+      formando bloques visuales. ¿Qué ley de la Gestalt explica principalmente
+      que percibamos esos bloques como grupos?
+  options:
+    - id: A
+      ca: Llei de la proximitat
+      es: Ley de la proximidad
+    - id: B
+      ca: Llei de la semblança
+      es: Ley de la semejanza
+    - id: C
+      ca: Llei del tancament (clausura)
+      es: Ley del cierre (clausura)
+    - id: D
+      ca: Relació figura-fons
+      es: Relación figura-fondo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Quan l'única variable rellevant és la distància entre elements iguals, els
+      que estan més a prop es perceben com una unitat: és la llei de la
+      proximitat. La semblança agruparia per forma o color (aquí tots són
+      iguals), el tancament completa contorns incomplets i la figura-fons
+      distingeix l'objecte del seu entorn; cap d'aquests intervé quan el que
+      canvia és només l'espaiat."
+    es: "Cuando la única variable relevante es la distancia entre elementos iguales,
+      los que están más cerca se perciben como una unidad: es la ley de la
+      proximidad. La semejanza agruparía por forma o color (aquí todos son
+      iguales), el cierre completa contornos incompletos y la figura-fondo
+      distingue el objeto de su entorno; ninguno interviene cuando lo único que
+      cambia es el espaciado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.gestalt
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En una graella d'punts tots separats exactament a la mateixa distància,
+      alternem punts vermells i punts blaus per columnes. Espontàniament veiem
+      columnes de color en comptes d'una massa uniforme. Quin principi perceptiu
+      ho justifica?
+    es: En una retícula de puntos todos separados exactamente a la misma distancia,
+      alternamos puntos rojos y puntos azules por columnas. Espontáneamente
+      vemos columnas de color en lugar de una masa uniforme. ¿Qué principio
+      perceptivo lo justifica?
+  options:
+    - id: A
+      ca: Llei de la proximitat
+      es: Ley de la proximidad
+    - id: B
+      ca: Llei de la semblança
+      es: Ley de la semejanza
+    - id: C
+      ca: Llei de la continuïtat
+      es: Ley de la continuidad
+    - id: D
+      ca: Llei del destí comú
+      es: Ley del destino común
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Com que totes les distàncies són idèntiques, la proximitat no pot explicar
+      l'agrupament: el que agrupa és compartir un atribut visual (el color), és
+      a dir la llei de la semblança. La continuïtat s'aplica a traçats alineats
+      i el destí comú a elements que es mouen en la mateixa direcció, cosa que
+      aquí no passa."
+    es: "Como todas las distancias son idénticas, la proximidad no puede explicar la
+      agrupación: lo que agrupa es compartir un atributo visual (el color), es
+      decir la ley de la semejanza. La continuidad se aplica a trazados
+      alineados y el destino común a elementos que se mueven en la misma
+      dirección, algo que aquí no ocurre."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.gestalt
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: El logotip del panda de WWF està format per taques negres discontínues sobre
+      blanc, sense un contorn tancat, i tot i així hi reconeixem la silueta
+      completa de l'animal. Quina llei de la Gestalt actua de manera
+      predominant?
+    es: El logotipo del panda de WWF está formado por manchas negras discontinuas
+      sobre blanco, sin un contorno cerrado, y aun así reconocemos la silueta
+      completa del animal. ¿Qué ley de la Gestalt actúa de forma predominante?
+  options:
+    - id: A
+      ca: Llei del tancament (clausura)
+      es: Ley del cierre (clausura)
+    - id: B
+      ca: Llei de la proximitat
+      es: Ley de la proximidad
+    - id: C
+      ca: Llei de la semblança
+      es: Ley de la semejanza
+    - id: D
+      ca: Llei de la continuïtat
+      es: Ley de la continuidad
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El sistema visual completa les vores que falten per obtenir una forma
+      tancada i estable: és la llei del tancament (clausura). La proximitat i la
+      semblança agrupen elements separats segons distància o atribut, i la
+      continuïtat afecta traçats alineats; cap d'aquestes descriu el fet clau,
+      que és 'omplir' el contorn absent."
+    es: "El sistema visual completa los bordes que faltan para obtener una forma
+      cerrada y estable: es la ley del cierre (clausura). La proximidad y la
+      semejanza agrupan elementos separados según distancia o atributo, y la
+      continuidad afecta a trazados alineados; ninguna describe el hecho clave,
+      que es 'rellenar' el contorno ausente."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.gestalt
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Dues línies rectes es creuen formant una X. Malgrat el punt de creuament,
+      tendim a veure-hi dues línies rectes que continuen el seu recorregut, i no
+      dues línies trencades en angle al punt de tall. Quin principi ho explica?
+    es: Dos líneas rectas se cruzan formando una X. A pesar del punto de cruce,
+      tendemos a ver dos líneas rectas que continúan su recorrido, y no dos
+      líneas quebradas en ángulo en el punto de corte. ¿Qué principio lo
+      explica?
+  options:
+    - id: A
+      ca: Llei de la bona continuïtat (bona continuació)
+      es: Ley de la buena continuidad (buena continuación)
+    - id: B
+      ca: Llei del tancament (clausura)
+      es: Ley del cierre (clausura)
+    - id: C
+      ca: Llei de la proximitat
+      es: Ley de la proximidad
+    - id: D
+      ca: Llei de la semblança
+      es: Ley de la semejanza
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Percebem els traçats de manera que segueixin la trajectòria més suau i
+      regular: preferim dues rectes contínues abans que dos angles bruscos. Això
+      és la llei de la bona continuïtat. El tancament completa formes
+      incompletes, la proximitat agrupa per distància i la semblança per atribut
+      compartit; aquí el que decideix és la direcció del traçat."
+    es: "Percibimos los trazados de modo que sigan la trayectoria más suave y
+      regular: preferimos dos rectas continuas antes que dos ángulos bruscos.
+      Esto es la ley de la buena continuidad. El cierre completa formas
+      incompletas, la proximidad agrupa por distancia y la semejanza por
+      atributo compartido; aquí lo que decide es la dirección del trazado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.visual_language.gestalt
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En la copa de Rubin, la mateixa imatge es pot veure com una copa blanca
+      central o com dues cares negres enfrontades, però no totes dues coses
+      alhora. Quin concepte de la percepció visual il·lustra millor aquest
+      fenomen?
+    es: En la copa de Rubin, la misma imagen puede verse como una copa blanca
+      central o como dos caras negras enfrentadas, pero no ambas cosas a la vez.
+      ¿Qué concepto de la percepción visual ilustra mejor este fenómeno?
+  options:
+    - id: A
+      ca: La reversibilitat de la relació figura-fons
+      es: La reversibilidad de la relación figura-fondo
+    - id: B
+      ca: La llei del destí comú
+      es: La ley del destino común
+    - id: C
+      ca: La llei de la semblança
+      es: La ley de la semejanza
+    - id: D
+      ca: La constància perceptiva de la mida
+      es: La constancia perceptiva del tamaño
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La copa de Rubin és l'exemple clàssic de figura-fons ambigua o reversible:
+      el mateix estímul permet assignar el paper de figura ara a la copa, ara a
+      les cares, i la percepció n'oscil·la. El destí comú i la semblança són
+      lleis d'agrupament d'elements múltiples, i la constància de mida es
+      refereix a mantenir estable la mida percebuda a distàncies diferents; res
+      d'això explica l'alternança figura-fons."
+    es: "La copa de Rubin es el ejemplo clásico de figura-fondo ambigua o
+      reversible: el mismo estímulo permite asignar el papel de figura ora a la
+      copa, ora a las caras, y la percepción oscila. El destino común y la
+      semejanza son leyes de agrupamiento de elementos múltiples, y la
+      constancia de tamaño se refiere a mantener estable el tamaño percibido a
+      distancias distintas; nada de eso explica la alternancia figura-fondo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quina propietat del color ens permet anomenar-lo 'vermell', 'verd' o 'blau'
+      i es correspon amb la longitud d'ona dominant?
+    es: ¿Qué propiedad del color nos permite denominarlo 'rojo', 'verde' o 'azul' y
+      se corresponde con la longitud de onda dominante?
+  options:
+    - id: A
+      ca: El to (matís)
+      es: El tono (matiz)
+    - id: B
+      ca: La saturació
+      es: La saturación
+    - id: C
+      ca: La lluminositat
+      es: La luminosidad
+    - id: D
+      ca: La temperatura
+      es: La temperatura
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El to és la qualitat que identifica cada color pur i el situa al cercle
+      cromàtic segons la longitud d'ona dominant. La saturació indica la puresa,
+      la lluminositat el grau de clar/fosc, i la temperatura (càlid/fred) deriva
+      del to però no és una propietat bàsica independent.
+    es: El tono es la cualidad que identifica cada color puro y lo sitúa en el
+      círculo cromático según la longitud de onda dominante. La saturación
+      indica la pureza, la luminosidad el grado de claro/oscuro, y la
+      temperatura (cálido/frío) deriva del tono pero no es una propiedad básica
+      independiente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Per reduir la saturació d'un color mantenint el mateix to i la mateixa
+      lluminositat, amb què cal barrejar-lo?
+    es: Para reducir la saturación de un color manteniendo el mismo tono y la misma
+      luminosidad, ¿con qué hay que mezclarlo?
+  options:
+    - id: A
+      ca: Amb un gris neutre de la mateixa lluminositat
+      es: Con un gris neutro de la misma luminosidad
+    - id: B
+      ca: Amb blanc
+      es: Con blanco
+    - id: C
+      ca: Amb negre
+      es: Con negro
+    - id: D
+      ca: Amb el color complementari a parts iguals
+      es: Con el color complementario a partes iguales
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Afegir un gris del mateix valor rebaixa la puresa (saturació) sense variar
+      ni el to ni la lluminositat. El blanc apujaria la lluminositat i el negre
+      l'abaixaria; el complementari també desatura, però normalment enfosqueix i
+      pot desplaçar el to.
+    es: Añadir un gris del mismo valor rebaja la pureza (saturación) sin variar ni
+      el tono ni la luminosidad. El blanco subiría la luminosidad y el negro la
+      bajaría; el complementario también desatura, pero normalmente oscurece y
+      puede desplazar el tono.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Si a un to pur hi afegim blanc obtenim una tinta pastel. Respecte al color
+      original, aquesta barreja...
+    es: Si a un tono puro le añadimos blanco obtenemos un tinte pastel. Respecto al
+      color original, esta mezcla...
+  options:
+    - id: A
+      ca: augmenta la lluminositat i disminueix la saturació
+      es: aumenta la luminosidad y disminuye la saturación
+    - id: B
+      ca: augmenta la lluminositat i la saturació
+      es: aumenta la luminosidad y la saturación
+    - id: C
+      ca: disminueix la lluminositat i augmenta la saturació
+      es: disminuye la luminosidad y aumenta la saturación
+    - id: D
+      ca: manté la lluminositat i només canvia el to
+      es: mantiene la luminosidad y solo cambia el tono
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El blanc aclareix el color (més lluminositat) i, en diluir el pigment pur,
+      en redueix la puresa (menys saturació). El to es manté pràcticament igual.
+    es: El blanco aclara el color (más luminosidad) y, al diluir el pigmento puro,
+      reduce su pureza (menos saturación). El tono se mantiene prácticamente
+      igual.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En el model HSB/HSL el to s'expressa com un angle (0–360°) sobre el cercle
+      cromàtic. Si un color té un to de 60° (groc), quin és l'angle del seu
+      complementari?
+    es: En el modelo HSB/HSL el tono se expresa como un ángulo (0–360°) sobre el
+      círculo cromático. Si un color tiene un tono de 60° (amarillo), ¿cuál es
+      el ángulo de su complementario?
+  options:
+    - id: A
+      ca: 240° (blau)
+      es: 240° (azul)
+    - id: B
+      ca: 120°
+      es: 120°
+    - id: C
+      ca: 180°
+      es: 180°
+    - id: D
+      ca: 300°
+      es: 300°
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El complementari és el to diametralment oposat: se sumen 180° mòdul 360°.
+      60° + 180° = 240°, que correspon al blau. 120° i 300° provenen d'errors
+      habituals (sumar 60° o 240°) i 180° d'ignorar el to de partida."
+    es: "El complementario es el tono diametralmente opuesto: se suman 180° módulo
+      360°. 60° + 180° = 240°, que corresponde al azul. 120° y 300° provienen de
+      errores habituales (sumar 60° o 240°) y 180° de ignorar el tono de
+      partida."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Els colors acromàtics (blanc, negre i la gamma de grisos) es caracteritzen
+      per...
+    es: Los colores acromáticos (blanco, negro y la gama de grises) se caracterizan
+      por...
+  options:
+    - id: A
+      ca: tenir saturació nul·la i to indefinit, i diferenciar-se només per la
+        lluminositat
+      es: tener saturación nula y tono indefinido, y diferenciarse solo por la
+        luminosidad
+    - id: B
+      ca: tenir saturació màxima i un to fix
+      es: tener saturación máxima y un tono fijo
+    - id: C
+      ca: variar en to i saturació però no en lluminositat
+      es: variar en tono y saturación pero no en luminosidad
+    - id: D
+      ca: tenir lluminositat constant i saturació variable
+      es: tener luminosidad constante y saturación variable
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Un color acromàtic no conté matís cromàtic: la seva saturació és 0 i no té
+      to definit. L'única propietat que els distingeix entre si és la
+      lluminositat (del negre al blanc passant pels grisos)."
+    es: "Un color acromático no contiene matiz cromático: su saturación es 0 y no
+      tiene tono definido. La única propiedad que los distingue entre sí es la
+      luminosidad (del negro al blanco pasando por los grises)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.properties
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En el sistema de color de Munsell les tres dimensions són to (hue), valor
+      (value) i croma (chroma). Quina d'aquestes es correspon amb la saturació?
+    es: En el sistema de color de Munsell las tres dimensiones son tono (hue), valor
+      (value) y croma (chroma). ¿Cuál de ellas se corresponde con la saturación?
+  options:
+    - id: A
+      ca: El croma (chroma)
+      es: El croma (chroma)
+    - id: B
+      ca: El valor (value)
+      es: El valor (value)
+    - id: C
+      ca: El to (hue)
+      es: El tono (hue)
+    - id: D
+      ca: La lluminància
+      es: La luminancia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En el sistema de Munsell el croma mesura la intensitat o puresa del color,
+      equivalent a la saturació. El valor equival a la lluminositat i el to
+      (hue) al matís cromàtic; la lluminància no és una dimensió del sistema
+      Munsell.
+    es: En el sistema de Munsell el croma mide la intensidad o pureza del color,
+      equivalente a la saturación. El valor equivale a la luminosidad y el tono
+      (hue) al matiz cromático; la luminancia no es una dimensión del sistema
+      Munsell.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.harmony
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En el cercle cromàtic tradicional (model subtractiu RYB), quin és el color
+      complementari del groc?
+    es: En el círculo cromático tradicional (modelo sustractivo RYB), ¿cuál es el
+      color complementario del amarillo?
+  options:
+    - id: A
+      ca: El violeta
+      es: El violeta
+    - id: B
+      ca: El verd
+      es: El verde
+    - id: C
+      ca: El taronja
+      es: El naranja
+    - id: D
+      ca: El blau
+      es: El azul
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El complementari es troba diametralment oposat al cercle. El groc és un
+      primari; el seu complementari és el secundari format per la barreja dels
+      altres dos primaris (vermell + blau = violeta). El verd és el
+      complementari del vermell i el taronja el del blau.
+    es: El complementario se encuentra diametralmente opuesto en el círculo. El
+      amarillo es un primario; su complementario es el secundario formado por la
+      mezcla de los otros dos primarios (rojo + azul = violeta). El verde es el
+      complementario del rojo y el naranja el del azul.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.harmony
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Quin dels següents conjunts de colors constitueix una harmonia d'anàlegs?
+    es: ¿Cuál de los siguientes conjuntos de colores constituye una armonía de
+      análogos?
+  options:
+    - id: A
+      ca: Groc, groc-verdós i verd
+      es: Amarillo, amarillo-verdoso y verde
+    - id: B
+      ca: Vermell i verd
+      es: Rojo y verde
+    - id: C
+      ca: Groc, blau i vermell
+      es: Amarillo, azul y rojo
+    - id: D
+      ca: Blau i taronja
+      es: Azul y naranja
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Una harmonia d'anàlegs combina colors contigus al cercle cromàtic que
+      comparteixen un mateix to dominant (aquí, el groc-verd). El vermell/verd i
+      el blau/taronja són parelles de complementaris (oposats), i
+      groc-blau-vermell és la tríada de primaris.
+    es: Una armonía de análogos combina colores contiguos en el círculo cromático
+      que comparten un mismo tono dominante (aquí, el amarillo-verde).
+      Rojo/verde y azul/naranja son parejas de complementarios (opuestos), y
+      amarillo-azul-rojo es la tríada de primarios.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.harmony
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Un quadre gris neutre envoltat per un fons vermell intens tendeix a
+      percebre's lleugerament verdós. Quin fenomen cromàtic explica aquesta
+      percepció?
+    es: Un recuadro gris neutro rodeado por un fondo rojo intenso tiende a
+      percibirse ligeramente verdoso. ¿Qué fenómeno cromático explica esta
+      percepción?
+  options:
+    - id: A
+      ca: El contrast simultani
+      es: El contraste simultáneo
+    - id: B
+      ca: El contrast de clarobscur
+      es: El contraste de claro-oscuro
+    - id: C
+      ca: El contrast de saturació
+      es: El contraste de saturación
+    - id: D
+      ca: El contrast de quantitat
+      es: El contraste de cantidad
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En el contrast simultani, un color indueix el seu complementari a les àrees
+      veïnes: el vermell projecta un matís verdós sobre el gris adjacent. El
+      clarobscur oposa clar/fosc, el de saturació oposa colors purs i apagats, i
+      el de quantitat es refereix a la proporció de superfícies."
+    es: "En el contraste simultáneo, un color induce su complementario en las áreas
+      vecinas: el rojo proyecta un matiz verdoso sobre el gris adyacente. El
+      claro-oscuro opone claro/oscuro, el de saturación opone colores puros y
+      apagados, y el de cantidad se refiere a la proporción de superficies."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.harmony
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Segons el contrast d'extensió (quantitat) d'Itten, basat en els valors de
+      lluminositat de Goethe (groc = 9, violeta = 3), quina és la proporció de
+      superfície harmònica entre el groc i el violeta?
+    es: Según el contraste de extensión (cantidad) de Itten, basado en los valores
+      de luminosidad de Goethe (amarillo = 9, violeta = 3), ¿cuál es la
+      proporción de superficie armónica entre el amarillo y el violeta?
+  options:
+    - id: A
+      ca: "1 : 3 (menys groc que violeta)"
+      es: "1 : 3 (menos amarillo que violeta)"
+    - id: B
+      ca: "3 : 1 (més groc que violeta)"
+      es: "3 : 1 (más amarillo que violeta)"
+    - id: C
+      ca: "1 : 1 (superfícies iguals)"
+      es: "1 : 1 (superficies iguales)"
+    - id: D
+      ca: "2 : 1"
+      es: "2 : 1"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les superfícies harmòniques són inversament proporcionals a la
+      lluminositat: com més brillant és un color, menys superfície necessita.
+      Àrea del groc : àrea del violeta = (1/9) : (1/3) = 3 : 9 = 1 : 3. Per tant
+      el groc, més lluminós, ha d'ocupar menys superfície."
+    es: "Las superficies armónicas son inversamente proporcionales a la luminosidad:
+      cuanto más brillante es un color, menos superficie necesita. Área del
+      amarillo : área del violeta = (1/9) : (1/3) = 3 : 9 = 1 : 3. Por tanto el
+      amarillo, más luminoso, debe ocupar menos superficie."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.harmony
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Qui va sistematitzar els set tipus de contrast cromàtic (de to, clarobscur,
+      fred-càlid, de complementaris, simultani, de saturació i de quantitat) a
+      la seva obra 'L'art del color'?
+    es: ¿Quién sistematizó los siete tipos de contraste cromático (de tono,
+      claro-oscuro, frío-cálido, de complementarios, simultáneo, de saturación y
+      de cantidad) en su obra 'El arte del color'?
+  options:
+    - id: A
+      ca: Johannes Itten
+      es: Johannes Itten
+    - id: B
+      ca: Michel-Eugène Chevreul
+      es: Michel-Eugène Chevreul
+    - id: C
+      ca: Josef Albers
+      es: Josef Albers
+    - id: D
+      ca: Johann Wolfgang von Goethe
+      es: Johann Wolfgang von Goethe
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Johannes Itten, mestre de la Bauhaus, va formular els set contrasts a 'Kunst
+      der Farbe' (L'art del color, 1961). Chevreul va enunciar la llei del
+      contrast simultani (1839), Albers va escriure 'La interacció del color'
+      (1963) i Goethe la 'Teoria dels colors' (1810), de la qual Itten va
+      prendre els valors de lluminositat.
+    es: Johannes Itten, maestro de la Bauhaus, formuló los siete contrastes en
+      'Kunst der Farbe' (El arte del color, 1961). Chevreul enunció la ley del
+      contraste simultáneo (1839), Albers escribió 'La interacción del color'
+      (1963) y Goethe la 'Teoría de los colores' (1810), de la que Itten tomó
+      los valores de luminosidad.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.harmony
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "Un dissenyador parteix del blau i, en lloc de combinar-lo amb el seu
+      complementari directe (el taronja), utilitza els dos colors adjacents a
+      aquest: el taronja-groguenc i el taronja-vermellós. Quin tipus d'esquema
+      harmònic està aplicant?"
+    es: "Un diseñador parte del azul y, en lugar de combinarlo con su complementario
+      directo (el naranja), utiliza los dos colores adyacentes a este: el
+      naranja-amarillento y el naranja-rojizo. ¿Qué tipo de esquema armónico
+      está aplicando?"
+  options:
+    - id: A
+      ca: Complementari dividit (split-complementary)
+      es: Complementario dividido (split-complementary)
+    - id: B
+      ca: Tríada
+      es: Tríada
+    - id: C
+      ca: Anàlegs
+      es: Análogos
+    - id: D
+      ca: Complementaris dobles (tetràdica)
+      es: Complementarios dobles (tetrádica)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'esquema complementari dividit pren un color base i, en comptes del seu
+      complementari, els dos tons que el flanquegen; ofereix el contrast del
+      complementari amb menys tensió. La tríada són tres colors equidistants,
+      els anàlegs són contigus i la tetràdica combina dues parelles de
+      complementaris.
+    es: El esquema complementario dividido toma un color base y, en vez de su
+      complementario, los dos tonos que lo flanquean; ofrece el contraste del
+      complementario con menor tensión. La tríada son tres colores
+      equidistantes, los análogos son contiguos y la tetrádica combina dos
+      parejas de complementarios.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.psychology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: En la cultura occidental contemporània, quin color s'associa
+      convencionalment amb la calma, la confiança i la serenitat, motiu pel qual
+      és molt utilitzat en identitats visuals corporatives de bancs i
+      tecnològiques?
+    es: En la cultura occidental contemporánea, ¿qué color se asocia
+      convencionalmente con la calma, la confianza y la serenidad, motivo por el
+      cual es muy utilizado en identidades visuales corporativas de bancos y
+      tecnológicas?
+  options:
+    - id: A
+      ca: El blau
+      es: El azul
+    - id: B
+      ca: El vermell
+      es: El rojo
+    - id: C
+      ca: El taronja
+      es: El naranja
+    - id: D
+      ca: El groc
+      es: El amarillo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El blau és el color culturalment vinculat a la calma, l'estabilitat, la
+      confiança i la serenitat en el context occidental; per això domina en
+      logotips de banca i tecnologia. El vermell simbolitza passió, alerta o
+      perill; el taronja, energia i vitalitat; el groc, l'optimisme però també
+      la precaució. Per tant, la resposta correcta és el blau.
+    es: El azul es el color culturalmente vinculado a la calma, la estabilidad, la
+      confianza y la serenidad en el contexto occidental; por eso domina en
+      logotipos de banca y tecnología. El rojo simboliza pasión, alerta o
+      peligro; el naranja, energía y vitalidad; el amarillo, optimismo pero
+      también precaución. Por tanto, la respuesta correcta es el azul.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.psychology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Un dissenyador vol transmetre urgència i estimular una acció immediata en un
+      botó de "rebaixes" i en la senyalització de perill. Segons la psicologia
+      del color, quin color és el més adequat per la seva capacitat d'atraure
+      l'atenció i elevar l'activació fisiològica?
+    es: Un diseñador quiere transmitir urgencia y estimular una acción inmediata en
+      un botón de "rebajas" y en la señalización de peligro. Según la psicología
+      del color, ¿qué color es el más adecuado por su capacidad de atraer la
+      atención y elevar la activación fisiológica?
+  options:
+    - id: A
+      ca: El verd
+      es: El verde
+    - id: B
+      ca: El vermell
+      es: El rojo
+    - id: C
+      ca: El violeta
+      es: El violeta
+    - id: D
+      ca: El blau clar
+      es: El azul claro
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "El vermell és un color càlid d'alta longitud d'ona i gran força d'atracció
+      visual; s'associa a l'energia, la passió, l'alerta i el perill, i tendeix
+      a augmentar l'activació fisiològica (atenció, pols). Per això s'usa en
+      senyals de perill, alarmes i crides a l'acció. El verd evoca calma i
+      natura, el violeta espiritualitat/luxe i el blau clar tranquil·litat: cap
+      d'ells genera la mateixa urgència."
+    es: "El rojo es un color cálido de larga longitud de onda y gran fuerza de
+      atracción visual; se asocia a la energía, la pasión, la alerta y el
+      peligro, y tiende a aumentar la activación fisiológica (atención, pulso).
+      Por eso se usa en señales de peligro, alarmas y llamadas a la acción. El
+      verde evoca calma y naturaleza, el violeta espiritualidad/lujo y el azul
+      claro tranquilidad: ninguno genera la misma urgencia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.psychology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: El fet que el blanc simbolitzi el dol i el funeral en diverses cultures
+      d'Àsia oriental, mentre que a Occident representa la puresa i les noces,
+      il·lustra sobretot un principi fonamental de la psicologia del color.
+      Quin?
+    es: El hecho de que el blanco simbolice el luto y el funeral en varias culturas
+      de Asia oriental, mientras que en Occidente representa la pureza y la
+      boda, ilustra sobre todo un principio fundamental de la psicología del
+      color. ¿Cuál?
+  options:
+    - id: A
+      ca: El significat dels colors és universal i innat, igual per a tots els éssers
+        humans
+      es: El significado de los colores es universal e innato, igual para todos los
+        seres humanos
+    - id: B
+      ca: El significat simbòlic del color és, en gran part, una construcció cultural
+        i contextual
+      es: El significado simbólico del color es, en gran parte, una construcción
+        cultural y contextual
+    - id: C
+      ca: Els colors només tenen valor decoratiu i no comuniquen cap significat
+      es: Los colores solo tienen valor decorativo y no comunican ningún significado
+    - id: D
+      ca: El significat del color depèn exclusivament de la seva lluminositat, no de
+        la cultura
+      es: El significado del color depende exclusivamente de su luminosidad, no de la
+        cultura
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Que un mateix color (el blanc) tingui significats oposats segons la cultura
+      demostra que la simbologia cromàtica és, en bona mesura, apresa i
+      culturalment/contextualment condicionada, i no un valor universal i innat.
+      Les altres opcions són falses: negar tot significat (C) o reduir-lo només
+      a la lluminositat (D) contradiu l'exemple, i afirmar universalitat (A) és
+      precisament el que l'exemple refuta."
+    es: "Que un mismo color (el blanco) tenga significados opuestos según la cultura
+      demuestra que la simbología cromática es, en buena medida, aprendida y
+      condicionada cultural/contextualmente, y no un valor universal e innato.
+      Las demás opciones son falsas: negar todo significado (C) o reducirlo solo
+      a la luminosidad (D) contradice el ejemplo, y afirmar universalidad (A) es
+      precisamente lo que el ejemplo refuta."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.psychology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En la teoria del color aplicada al disseny, els colors se solen classificar
+      en "càlids" i "freds" per la resposta psicològica i espacial que
+      provoquen. Quina afirmació és correcta?
+    es: En la teoría del color aplicada al diseño, los colores se suelen clasificar
+      en "cálidos" y "fríos" por la respuesta psicológica y espacial que
+      provocan. ¿Qué afirmación es correcta?
+  options:
+    - id: A
+      ca: Els colors freds (blaus, verds) tendeixen a semblar més propers i a avançar
+        cap a l'espectador
+      es: Los colores fríos (azules, verdes) tienden a parecer más cercanos y a
+        avanzar hacia el espectador
+    - id: B
+      ca: Els colors càlids (vermells, taronges) tendeixen a semblar més propers i a
+        "avançar", i transmeten estimulació i energia
+      es: Los colores cálidos (rojos, naranjas) tienden a parecer más cercanos y a
+        "avanzar", y transmiten estimulación y energía
+    - id: C
+      ca: La divisió entre càlids i freds no té cap efecte sobre la percepció de
+        profunditat
+      es: La división entre cálidos y fríos no tiene ningún efecto sobre la percepción
+        de profundidad
+    - id: D
+      ca: Els colors càlids transmeten calma i distància, mentre que els freds
+        transmeten agitació
+      es: Los colores cálidos transmiten calma y distancia, mientras que los fríos
+        transmiten agitación
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Els colors càlids (vermell, taronja, groc) s'associen a l'estimulació i
+      l'energia i, perceptivament, tendeixen a "avançar" i semblar més propers;
+      els freds (blau, verd) transmeten calma i tendeixen a "retrocedir" i
+      semblar més llunyans. Per tant l'opció B és correcta. A i D inverteixen
+      els efectes, i C nega l'efecte espacial que sí que existeix.
+    es: Los colores cálidos (rojo, naranja, amarillo) se asocian a la estimulación y
+      la energía y, perceptivamente, tienden a "avanzar" y parecer más cercanos;
+      los fríos (azul, verde) transmiten calma y tienden a "retroceder" y
+      parecer más lejanos. Por tanto la opción B es correcta. A y D invierten
+      los efectos, y C niega el efecto espacial que sí existe.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.psychology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Una marca de productes ecològics i saludables (fruita, herbolari) vol que la
+      seva identitat visual comuniqui natura, frescor, salut i equilibri. Segons
+      la simbologia cromàtica occidental, quin color hauria de ser el dominant
+      de la seva paleta?
+    es: Una marca de productos ecológicos y saludables (fruta, herbolario) quiere
+      que su identidad visual comunique naturaleza, frescura, salud y
+      equilibrio. Según la simbología cromática occidental, ¿qué color debería
+      ser el dominante de su paleta?
+  options:
+    - id: A
+      ca: El negre
+      es: El negro
+    - id: B
+      ca: El magenta
+      es: El magenta
+    - id: C
+      ca: El verd
+      es: El verde
+    - id: D
+      ca: El marró fosc
+      es: El marrón oscuro
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: En la cultura occidental el verd és el color paradigmàtic de la natura, la
+      frescor, la salut, l'equilibri i la sostenibilitat, i per això domina en
+      marques ecològiques i saludables. El negre s'associa a elegància, luxe o
+      dol; el magenta a la provocació o la modernitat; el marró fosc a la terra
+      i la robustesa, però no comunica frescor ni salut de manera tan directa.
+      La resposta és el verd.
+    es: En la cultura occidental el verde es el color paradigmático de la
+      naturaleza, la frescura, la salud, el equilibrio y la sostenibilidad, y
+      por eso domina en marcas ecológicas y saludables. El negro se asocia a
+      elegancia, lujo o luto; el magenta a la provocación o la modernidad; el
+      marrón oscuro a la tierra y la robustez, pero no comunica frescura ni
+      salud de forma tan directa. La respuesta es el verde.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.color.psychology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En el disseny d'una campanya, es vol aprofitar les associacions simbòliques
+      tradicionals del color a Occident. Quina de les següents correspondències
+      color–significat és INCORRECTA?
+    es: En el diseño de una campaña, se quiere aprovechar las asociaciones
+      simbólicas tradicionales del color en Occidente. ¿Cuál de las siguientes
+      correspondencias color–significado es INCORRECTA?
+  options:
+    - id: A
+      ca: Groc → llum, optimisme i energia (però també, en excés, alerta o gelosia)
+      es: Amarillo → luz, optimismo y energía (pero también, en exceso, alerta o
+        celos)
+    - id: B
+      ca: Violeta / porpra → espiritualitat, luxe i reialesa
+      es: Violeta / púrpura → espiritualidad, lujo y realeza
+    - id: C
+      ca: Verd → agressivitat, perill imminent i urgència
+      es: Verde → agresividad, peligro inminente y urgencia
+    - id: D
+      ca: Negre → elegància, sofisticació i formalitat (i també dol)
+      es: Negro → elegancia, sofisticación y formalidad (y también luto)
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "La correspondència incorrecta és la C: en la simbologia occidental el verd
+      s'associa a la natura, la calma, l'esperança, la salut i la llum verda de
+      \"via lliure\", no pas a l'agressivitat, el perill imminent o la urgència,
+      que són atributs típics del vermell. Les altres tres correspondències
+      (groc, violeta i negre) són correctes segons la simbologia tradicional."
+    es: 'La correspondencia incorrecta es la C: en la simbología occidental el verde
+      se asocia a la naturaleza, la calma, la esperanza, la salud y la luz verde
+      de "vía libre", no a la agresividad, el peligro inminente o la urgencia,
+      que son atributos típicos del rojo. Las otras tres correspondencias
+      (amarillo, violeta y negro) son correctas según la simbología
+      tradicional.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.anatomy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: "En tipografia, l'«alçada de la x» (x-height) es defineix com:"
+    es: "En tipografía, la «altura de la x» (x-height) se define como:"
+  options:
+    - id: A
+      ca: La distància, mesurada verticalment, entre la línia de base i la part
+        superior de les lletres de caixa baixa sense ascendents (com x, o, e).
+      es: La distancia, medida verticalmente, entre la línea de base y la parte
+        superior de las letras de caja baja sin ascendentes (como x, o, e).
+    - id: B
+      ca: La distància entre la línia de base i la part superior de les lletres
+        majúscules (alçada de majúscula).
+      es: La distancia entre la línea de base y la parte superior de las letras
+        mayúsculas (altura de mayúscula).
+    - id: C
+      ca: L'alçada total de la lletra, des del descendent més baix fins a l'ascendent
+        més alt.
+      es: La altura total de la letra, desde el descendente más bajo hasta el
+        ascendente más alto.
+    - id: D
+      ca: La distància entre la línia mitjana i la línia d'alçada de majúscula.
+      es: La distancia entre la línea media y la línea de altura de mayúscula.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'alçada de la x és l'altura del cos principal de les minúscules, és a dir,
+      la distància des de la línia de base fins a la línia mitjana (l'alçada de
+      lletres com la x, la o o la e, que no tenen ni ascendents ni descendents).
+      No inclou ni ascendents ni descendents (això seria l'opció C), ni
+      coincideix amb l'alçada de majúscula (opció B).
+    es: La altura de la x es la altura del cuerpo principal de las minúsculas, es
+      decir, la distancia desde la línea de base hasta la línea media (la altura
+      de letras como la x, la o o la e, que no tienen ni ascendentes ni
+      descendentes). No incluye ascendentes ni descendentes (eso sería la opción
+      C), ni coincide con la altura de mayúscula (opción B).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.anatomy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quina de les següents lletres de caixa baixa presenta, en la majoria de
+      tipografies llatines, un traç descendent (descendent) que baixa per sota
+      de la línia de base?
+    es: ¿Cuál de las siguientes letras de caja baja presenta, en la mayoría de
+      tipografías latinas, un trazo descendente (descendente) que baja por
+      debajo de la línea de base?
+  options:
+    - id: A
+      ca: p
+      es: p
+    - id: B
+      ca: b
+      es: b
+    - id: C
+      ca: d
+      es: d
+    - id: D
+      ca: t
+      es: t
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El descendent és la part de la lletra que s'estén per sota de la línia de
+      base; les minúscules amb descendent són g, j, p, q i y. La «p» té
+      descendent. En canvi, la «b» i la «d» tenen ascendent (pugen per sobre de
+      l'alçada de la x), i la «t» arriba una mica per damunt de l'alçada de la x
+      però no baixa de la línia de base.
+    es: El descendente es la parte de la letra que se extiende por debajo de la
+      línea de base; las minúsculas con descendente son g, j, p, q e y. La «p»
+      tiene descendente. En cambio, la «b» y la «d» tienen ascendente (suben por
+      encima de la altura de la x), y la «t» llega un poco por encima de la
+      altura de la x pero no baja de la línea de base.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.anatomy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "En anatomia tipogràfica, el terme «ull» (contraforma; counter) fa
+      referència a:"
+    es: "En anatomía tipográfica, el término «ojo» (contraforma; counter) se refiere
+      a:"
+  options:
+    - id: A
+      ca: L'espai negatiu (blanc) tancat o parcialment tancat que queda dins d'una
+        lletra, com l'interior de la o, la a o la e.
+      es: El espacio negativo (blanco) cerrado o parcialmente cerrado que queda dentro
+        de una letra, como el interior de la o, la a o la e.
+    - id: B
+      ca: El petit traç horitzontal o remat situat als extrems de les astes.
+      es: El pequeño trazo horizontal o remate situado en los extremos de las astas.
+    - id: C
+      ca: El traç vertical principal que forma l'estructura de la lletra.
+      es: El trazo vertical principal que forma la estructura de la letra.
+    - id: D
+      ca: El punt exterior on conflueixen dos traços diagonals a la part superior de
+        la lletra.
+      es: El punto exterior donde confluyen dos trazos diagonales en la parte superior
+        de la letra.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'ull és la contraforma: l'espai interior, totalment o parcialment tancat,
+      delimitat pels traços d'una lletra (l'interior de la o o la a és un ull
+      tancat; el de la c o la e obert cap a fora s'associa a l'obertura).
+      L'opció B descriu el remat/serifa, la C descriu l'asta o fust, i la D
+      descriu l'àpex."
+    es: "El ojo es la contraforma: el espacio interior, total o parcialmente
+      cerrado, delimitado por los trazos de una letra (el interior de la o o la
+      a es un ojo cerrado; el de la c o la e abierto hacia fuera se asocia a la
+      apertura). La opción B describe el remate/serifa, la C describe el asta o
+      fuste, y la D describe el ápice."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.anatomy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "En una lletra amb serifa (romana), la «cartel·la» (bracket) és:"
+    es: "En una letra con serifa (romana), la «cartela» (bracket) es:"
+  options:
+    - id: A
+      ca: La transició corba que connecta suaument el remat (serifa) amb l'asta de la
+        lletra.
+      es: La transición curva que conecta suavemente el remate (serifa) con el asta de
+        la letra.
+    - id: B
+      ca: El propi remat horitzontal pla situat a l'extrem de l'asta.
+      es: El propio remate horizontal plano situado en el extremo del asta.
+    - id: C
+      ca: El traç horitzontal que uneix les dues astes de la A o la H.
+      es: El trazo horizontal que une las dos astas de la A o la H.
+    - id: D
+      ca: L'espai interior tancat de la lletra.
+      es: El espacio interior cerrado de la letra.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La cartel·la és el filet corb de transició que uneix la serifa amb l'asta;
+      les tipografies poden tenir serifes «amb cartel·la» (bracketed, transició
+      corba) o «sense cartel·la» (unbracketed, unió en angle recte, com moltes
+      egípcies/slab). L'opció B confon la cartel·la amb la serifa mateixa, la C
+      descriu el travesser i la D descriu l'ull.
+    es: La cartela es el filete curvo de transición que une la serifa con el asta;
+      las tipografías pueden tener serifas «con cartela» (bracketed, transición
+      curva) o «sin cartela» (unbracketed, unión en ángulo recto, como muchas
+      egipcias/slab). La opción B confunde la cartela con la serifa misma, la C
+      describe el travesaño y la D describe el ojo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.anatomy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En la lletra «S», com s'anomena el traç corb principal que forma l'esquelet
+      o eix central de la lletra?
+    es: En la letra «S», ¿cómo se llama el trazo curvo principal que forma el
+      esqueleto o eje central de la letra?
+  options:
+    - id: A
+      ca: Espina (spine)
+      es: Espina (spine)
+    - id: B
+      ca: Braç (arm)
+      es: Brazo (arm)
+    - id: C
+      ca: Cua (tail)
+      es: Cola (tail)
+    - id: D
+      ca: Espatlla (shoulder)
+      es: Hombro (shoulder)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'espina és el traç corb central de la S que en constitueix l'estructura. El
+      braç és un traç horitzontal o diagonal lliure per un extrem (com a la E o
+      la K); la cua és el traç descendent de lletres com la Q o la R; i
+      l'espatlla és el traç corb que surt de l'asta a la h, m o n.
+    es: La espina es el trazo curvo central de la S que constituye su estructura. El
+      brazo es un trazo horizontal o diagonal libre por un extremo (como en la E
+      o la K); la cola es el trazo descendente de letras como la Q o la R; y el
+      hombro es el trazo curvo que sale del asta en la h, m o n.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.anatomy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "El punt exterior on conflueixen dos traços diagonals a la part SUPERIOR
+      d'una lletra, com al vèrtex superior de la «A» majúscula, s'anomena:"
+    es: "El punto exterior donde confluyen dos trazos diagonales en la parte
+      SUPERIOR de una letra, como en el vértice superior de la «A» mayúscula, se
+      denomina:"
+  options:
+    - id: A
+      ca: Àpex (apex)
+      es: Ápice (apex)
+    - id: B
+      ca: Vèrtex (vertex)
+      es: Vértice (vertex)
+    - id: C
+      ca: Aixella (crotch)
+      es: Axila (crotch)
+    - id: D
+      ca: Esperó (spur)
+      es: Espolón (spur)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'àpex és el punt exterior on es troben dos traços a la part superior de la
+      lletra (cim de la A). El vèrtex és l'equivalent però a la part INFERIOR
+      (punta inferior de la V o la W). L'aixella és l'angle INTERIOR on es
+      troben els traços, i l'esperó és una petita projecció que apareix, per
+      exemple, a la unió de l'asta amb la corba de la G majúscula.
+    es: El ápice es el punto exterior donde se encuentran dos trazos en la parte
+      superior de la letra (cima de la A). El vértice es el equivalente pero en
+      la parte INFERIOR (punta inferior de la V o la W). La axila es el ángulo
+      INTERIOR donde se encuentran los trazos, y el espolón es una pequeña
+      proyección que aparece, por ejemplo, en la unión del asta con la curva de
+      la G mayúscula.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.classification
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina de les següents tipografies és de pal sec (sans-serif), és a dir,
+      sense remats o gràcies als extrems de les astes?
+    es: ¿Cuál de las siguientes tipografías es de palo seco (sans-serif), es decir,
+      sin remates o gracias en los extremos de las astas?
+  options:
+    - id: A
+      ca: Helvetica
+      es: Helvetica
+    - id: B
+      ca: Times New Roman
+      es: Times New Roman
+    - id: C
+      ca: Garamond
+      es: Garamond
+    - id: D
+      ca: Bodoni
+      es: Bodoni
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El remat (serif o gràcia) és el petit traç que acaba les astes. Times New
+      Roman, Garamond i Bodoni són tipografies amb serif (romanes). Helvetica,
+      dissenyada el 1957 per Max Miedinger, és una lineal (Lineals de
+      Vox-ATypI), sense remats, per la qual cosa és l'única de pal sec.
+    es: El remate (serif o gracia) es el pequeño trazo que termina las astas. Times
+      New Roman, Garamond y Bodoni son tipografías con serif (romanas).
+      Helvetica, diseñada en 1957 por Max Miedinger, es una lineal (Lineales de
+      Vox-ATypI), sin remates, por lo que es la única de palo seco.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.classification
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Una tipografia presenta un contrast molt marcat entre astes gruixudes i
+      primes i remats horitzontals molt fins i sense enllaç (no bracketejats). A
+      quin grup de la classificació Vox-ATypI pertany, i quin n'és un exemple?
+    es: Una tipografía presenta un contraste muy marcado entre astas gruesas y finas
+      y remates horizontales muy finos y sin enlace (no bracketeados). ¿A qué
+      grupo de la clasificación Vox-ATypI pertenece, y cuál es un ejemplo?
+  options:
+    - id: A
+      ca: Didones (Modernes) — Bodoni
+      es: Didonas (Modernas) — Bodoni
+    - id: B
+      ca: Mecanes (Egípcies) — Rockwell
+      es: Mecanas (Egipcias) — Rockwell
+    - id: C
+      ca: Garaldes — Garamond
+      es: Garaldas — Garamond
+    - id: D
+      ca: Humanes — Centaur
+      es: Humanas — Centaur
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Les Didones (o romanes modernes) es defineixen per un contrast extrem entre
+      gruixos, eix vertical i remats filiformes sense enllaç. Bodoni i Didot en
+      són els exemples clàssics. Les Mecanes tenen remats rectangulars gruixuts
+      i poc contrast; les Garaldes i Humanes tenen contrast moderat i remats amb
+      enllaç.
+    es: Las Didonas (o romanas modernas) se definen por un contraste extremo entre
+      grosores, eje vertical y remates filiformes sin enlace. Bodoni y Didot son
+      los ejemplos clásicos. Las Mecanas tienen remates rectangulares gruesos y
+      poco contraste; las Garaldas y Humanas tienen contraste moderado y remates
+      con enlace.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.classification
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Dins de la classificació Vox-ATypI, a quin grup s'adscriu la tipografia
+      Garamond, caracteritzada per un contrast moderat, eix inclinat i remats
+      amb enllaç, hereva dels tipus renaixentistes del segle XVI?
+    es: Dentro de la clasificación Vox-ATypI, ¿a qué grupo se adscribe la tipografía
+      Garamond, caracterizada por un contraste moderado, eje inclinado y remates
+      con enlace, heredera de los tipos renacentistas del siglo XVI?
+  options:
+    - id: A
+      ca: Garaldes
+      es: Garaldas
+    - id: B
+      ca: Didones
+      es: Didonas
+    - id: C
+      ca: Lineals
+      es: Lineales
+    - id: D
+      ca: Fractures
+      es: Fracturas
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El terme «Garaldes» és un mot creuat entre Garamond i Aldus (Manuzio) i
+      designa les romanes de l'antiga del Renaixement, amb contrast moderat, eix
+      humanístic inclinat i remats amb enllaç. Les Didones són posteriors i
+      d'alt contrast; les Lineals no tenen remats; les Fractures són
+      l'escriptura gòtica medieval.
+    es: El término «Garaldas» es un acrónimo entre Garamond y Aldus (Manuzio) y
+      designa las romanas antiguas del Renacimiento, con contraste moderado, eje
+      humanístico inclinado y remates con enlace. Las Didonas son posteriores y
+      de alto contraste; las Lineales no tienen remates; las Fracturas son la
+      escritura gótica medieval.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.classification
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Les tipografies anomenades «egípcies» o de remat quadrat (slab serif), com
+      Rockwell o Clarendon, sorgides al segle XIX per a la publicitat i els
+      cartells, reben quin nom en la classificació Vox-ATypI?
+    es: Las tipografías llamadas «egipcias» o de remate cuadrado (slab serif), como
+      Rockwell o Clarendon, surgidas en el siglo XIX para la publicidad y los
+      carteles, ¿qué nombre reciben en la clasificación Vox-ATypI?
+  options:
+    - id: A
+      ca: Mecanes
+      es: Mecanas
+    - id: B
+      ca: Incises
+      es: Incisas
+    - id: C
+      ca: Reials (Transicionals)
+      es: Reales (Transicionales)
+    - id: D
+      ca: Manuals
+      es: Manuales
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Les Mecanes (mecàniques) es caracteritzen per remats rectangulars i
+      gruixuts, gairebé del mateix gruix que les astes, i poc contrast; van
+      néixer amb la industrialització del segle XIX. Les Incises imiten la
+      lletra cisellada; les Reials són les transicionals (Baskerville); les
+      Manuals imiten l'escriptura a mà.
+    es: Las Mecanas (mecánicas) se caracterizan por remates rectangulares y gruesos,
+      casi del mismo grosor que las astas, y poco contraste; nacieron con la
+      industrialización del siglo XIX. Las Incisas imitan la letra cincelada;
+      las Reales son las transicionales (Baskerville); las Manuales imitan la
+      escritura a mano.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.classification
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Dins de les Lineals (sans-serif), quina afirmació classifica correctament
+      els tipus segons la seva subcategoria?
+    es: Dentro de las Lineales (sans-serif), ¿qué afirmación clasifica correctamente
+      los tipos según su subcategoría?
+  options:
+    - id: A
+      ca: Futura és una lineal geomètrica i Gill Sans és una lineal humanística
+      es: Futura es una lineal geométrica y Gill Sans es una lineal humanística
+    - id: B
+      ca: Futura és una lineal humanística i Gill Sans és una lineal geomètrica
+      es: Futura es una lineal humanística y Gill Sans es una lineal geométrica
+    - id: C
+      ca: Helvetica és una lineal geomètrica i Futura és una neogrotesca
+      es: Helvetica es una lineal geométrica y Futura es una neogrotesca
+    - id: D
+      ca: Gill Sans és una grotesca del segle XIX i Helvetica és una humanística
+      es: Gill Sans es una grotesca del siglo XIX y Helvetica es una humanística
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Futura (Paul Renner, 1927) es basa en formes geomètriques pures (el cercle,
+      el triangle) i és el paradigma de lineal geomètrica. Gill Sans (Eric Gill,
+      1928) manté proporcions derivades de les romanes clàssiques i és una
+      lineal humanística. Helvetica és una neogrotesca, no geomètrica; les
+      grotesques del segle XIX són l'Akzidenz Grotesk, no Gill Sans.
+    es: Futura (Paul Renner, 1927) se basa en formas geométricas puras (el círculo,
+      el triángulo) y es el paradigma de lineal geométrica. Gill Sans (Eric
+      Gill, 1928) mantiene proporciones derivadas de las romanas clásicas y es
+      una lineal humanística. Helvetica es una neogrotesca, no geométrica; las
+      grotescas del siglo XIX son la Akzidenz Grotesk, no Gill Sans.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.typography.classification
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: "Un dissenyador busca una tipografia amb serif que representi la transició
+      entre les romanes antigues (Garaldes) i les modernes (Didones): eix
+      gairebé vertical, contrast més acusat que les Garaldes però remats encara
+      amb enllaç. Quin tipus i grup Vox-ATypI compleix millor aquesta
+      descripció?"
+    es: "Un diseñador busca una tipografía con serif que represente la transición
+      entre las romanas antiguas (Garaldas) y las modernas (Didonas): eje casi
+      vertical, contraste más acusado que las Garaldas pero remates aún con
+      enlace. ¿Qué tipo y grupo Vox-ATypI cumple mejor esta descripción?"
+  options:
+    - id: A
+      ca: Baskerville, del grup de les Reials (Transicionals)
+      es: Baskerville, del grupo de las Reales (Transicionales)
+    - id: B
+      ca: Bodoni, del grup de les Didones
+      es: Bodoni, del grupo de las Didonas
+    - id: C
+      ca: Garamond, del grup de les Garaldes
+      es: Garamond, del grupo de las Garaldas
+    - id: D
+      ca: Trajan, del grup de les Incises
+      es: Trajan, del grupo de las Incisas
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les Reials o Transicionals (Baskerville, 1757) fan de pont entre Garaldes i
+      Didones: l'eix es verticalitza, el contrast augmenta però els remats
+      conserven l'enllaç. Bodoni ja és una Didone (contrast extrem, remats sense
+      enllaç); Garamond és una Garalde (eix inclinat); Trajan és una Incisa
+      (basada en la capital romana cisellada)."
+    es: "Las Reales o Transicionales (Baskerville, 1757) hacen de puente entre
+      Garaldas y Didonas: el eje se verticaliza, el contraste aumenta pero los
+      remates conservan el enlace. Bodoni ya es una Didona (contraste extremo,
+      remates sin enlace); Garamond es una Garalda (eje inclinado); Trajan es
+      una Incisa (basada en la capital romana cincelada)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.graphic.identity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin nom rep el signe d'identitat visual format únicament pel nom de la
+      marca representat amb una tipografia específica, sense cap símbol gràfic
+      que l'acompanyi?
+    es: ¿Qué nombre recibe el signo de identidad visual formado únicamente por el
+      nombre de la marca representado con una tipografía específica, sin ningún
+      símbolo gráfico que lo acompañe?
+  options:
+    - id: A
+      ca: Logotip
+      es: Logotipo
+    - id: B
+      ca: Isotip
+      es: Isotipo
+    - id: C
+      ca: Imagotip
+      es: Imagotipo
+    - id: D
+      ca: Isologo
+      es: Isologo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El logotip és la part exclusivament tipogràfica de la marca: el nom escrit
+      amb una lletra pròpia (per exemple Coca-Cola o Google). L'isotip és només
+      el símbol gràfic sense text; l'imagotip combina símbol i text separables;
+      l'isologo fusiona text i símbol en una unitat indivisible."
+    es: "El logotipo es la parte exclusivamente tipográfica de la marca: el nombre
+      escrito con una letra propia (por ejemplo Coca-Cola o Google). El isotipo
+      es solo el símbolo gráfico sin texto; el imagotipo combina símbolo y texto
+      separables; el isologo fusiona texto y símbolo en una unidad indivisible."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.graphic.identity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En un manual d'identitat corporativa es defineix l'"àrea de protecció" (zona
+      de reserva) al voltant de la marca. Quina és la seva funció principal?
+    es: En un manual de identidad corporativa se define el "área de protección"
+      (zona de reserva) alrededor de la marca. ¿Cuál es su función principal?
+  options:
+    - id: A
+      ca: Garantir un espai lliure mínim al voltant de la marca perquè cap altre
+        element n'interfereixi la llegibilitat
+      es: Garantizar un espacio libre mínimo alrededor de la marca para que ningún
+        otro elemento interfiera en su legibilidad
+    - id: B
+      ca: Fixar la mida mínima a la qual es pot reproduir la marca sense perdre detall
+      es: Fijar el tamaño mínimo al que se puede reproducir la marca sin perder
+        detalle
+    - id: C
+      ca: Definir el sagnat de tall (bleed) per a la impressió a sang
+      es: Definir el sangrado de corte (bleed) para la impresión a sangre
+    - id: D
+      ca: Indicar la gamma de colors corporatius permesos
+      es: Indicar la gama de colores corporativos permitidos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'àrea de protecció, zona de reserva o clear space és una franja mínima al
+      voltant de la marca que ha de quedar lliure de textos, imatges o altres
+      logotips, per assegurar-ne la visibilitat i evitar contaminació visual. La
+      mida mínima de reproducció i el sagnat a sang són normes diferents del
+      manual.
+    es: El área de protección, zona de reserva o clear space es una franja mínima
+      alrededor de la marca que debe quedar libre de textos, imágenes u otros
+      logotipos, para asegurar su visibilidad y evitar contaminación visual. El
+      tamaño mínimo de reproducción y el sangrado son normas distintas del
+      manual.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.graphic.identity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: El logotip d'IBM (les inicials formades per franges horitzontals) i les
+      identitats d'UPS, Westinghouse i ABC són obra d'un mateix dissenyador
+      nord-americà, referent del disseny corporatiu del segle XX. Qui és?
+    es: El logotipo de IBM (las iniciales formadas por franjas horizontales) y las
+      identidades de UPS, Westinghouse y ABC son obra de un mismo diseñador
+      estadounidense, referente del diseño corporativo del siglo XX. ¿Quién es?
+  options:
+    - id: A
+      ca: Paul Rand
+      es: Paul Rand
+    - id: B
+      ca: Saul Bass
+      es: Saul Bass
+    - id: C
+      ca: Massimo Vignelli
+      es: Massimo Vignelli
+    - id: D
+      ca: Otl Aicher
+      es: Otl Aicher
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Paul Rand (1914-1996) va crear la identitat d'IBM (logotip de 1956 i la
+      versió amb franges de 1972), UPS, Westinghouse, ABC i NeXT. Saul Bass és
+      conegut per AT&T i les seqüències de títols de cinema; Vignelli pel metro
+      de Nova York i American Airlines; Otl Aicher pels pictogrames de Munic
+      1972 i la identitat de Lufthansa.
+    es: Paul Rand (1914-1996) creó la identidad de IBM (logotipo de 1956 y la
+      versión con franjas de 1972), UPS, Westinghouse, ABC y NeXT. Saul Bass es
+      conocido por AT&T y las secuencias de títulos de cine; Vignelli por el
+      metro de Nueva York y American Airlines; Otl Aicher por los pictogramas de
+      Múnich 1972 y la identidad de Lufthansa.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.graphic.identity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quin és l'objectiu fonamental d'un manual d'identitat corporativa (brand
+      guidelines)?
+    es: ¿Cuál es el objetivo fundamental de un manual de identidad corporativa
+      (brand guidelines)?
+  options:
+    - id: A
+      ca: Normalitzar l'aplicació coherent de la marca (usos, colors, tipografies,
+        proporcions) en tots els suports i mitjans
+      es: Normalizar la aplicación coherente de la marca (usos, colores, tipografías,
+        proporciones) en todos los soportes y medios
+    - id: B
+      ca: Establir el pressupost publicitari i el pla de mitjans de la campanya anual
+      es: Establecer el presupuesto publicitario y el plan de medios de la campaña
+        anual
+    - id: C
+      ca: Recollir l'historial de vendes i la quota de mercat de l'empresa
+      es: Recopilar el historial de ventas y la cuota de mercado de la empresa
+    - id: D
+      ca: Definir un únic estil d'il·lustració artística per als productes
+      es: Definir un único estilo de ilustración artística para los productos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El manual d'identitat corporativa és el document normatiu que garanteix
+      l'aplicació coherent i homogènia de la marca en qualsevol suport: fixa
+      versions permeses, colors (amb referències exactes), tipografies,
+      proporcions, àrea de protecció i usos correctes i incorrectes. No és un
+      pla de màrqueting ni un informe econòmic."
+    es: "El manual de identidad corporativa es el documento normativo que garantiza
+      la aplicación coherente y homogénea de la marca en cualquier soporte: fija
+      versiones permitidas, colores (con referencias exactas), tipografías,
+      proporciones, área de protección y usos correctos e incorrectos. No es un
+      plan de marketing ni un informe económico."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.graphic.identity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Una empresa vol que el seu color corporatiu es reprodueixi exactament igual
+      en impresos offset, retolació de vinil i tèxtil, independentment del
+      suport. Quin sistema de color s'especifica al manual per aconseguir
+      aquesta màxima fidelitat?
+    es: Una empresa quiere que su color corporativo se reproduzca exactamente igual
+      en impresos offset, rotulación de vinilo y textil, independientemente del
+      soporte. ¿Qué sistema de color se especifica en el manual para lograr esa
+      máxima fidelidad?
+  options:
+    - id: A
+      ca: Una tinta plana Pantone (PMS), color directe
+      es: Una tinta plana Pantone (PMS), color directo
+    - id: B
+      ca: Una combinació CMYK (quadricromia)
+      es: Una combinación CMYK (cuatricromía)
+    - id: C
+      ca: Valors RGB
+      es: Valores RGB
+    - id: D
+      ca: Coordenades HSB (to, saturació, brillantor)
+      es: Coordenadas HSB (tono, saturación, brillo)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El color corporatiu s'especifica com a tinta plana Pantone (PMS), un color
+      directe barrejat prèviament amb una referència única que es reprodueix
+      igual en qualsevol suport. La quadricromia CMYK depèn de la trama i pot
+      variar; RGB és per a pantalla (llum) i no és impressió; HSB és un model de
+      selecció, no un estàndard de reproducció física.
+    es: El color corporativo se especifica como tinta plana Pantone (PMS), un color
+      directo mezclado previamente con una referencia única que se reproduce
+      igual en cualquier soporte. La cuatricromía CMYK depende de la trama y
+      puede variar; RGB es para pantalla (luz) y no es impresión; HSB es un
+      modelo de selección, no un estándar de reproducción física.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.graphic.identity
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En una marca, el símbol gràfic i el nom estan fusionats de manera que no es
+      poden separar ni utilitzar de forma independent (formen una sola peça
+      indivisible). Com es classifica correctament aquest signe?
+    es: En una marca, el símbolo gráfico y el nombre están fusionados de manera que
+      no se pueden separar ni utilizar de forma independiente (forman una sola
+      pieza indivisible). ¿Cómo se clasifica correctamente este signo?
+  options:
+    - id: A
+      ca: Isologo (isologotip)
+      es: Isologo (isologotipo)
+    - id: B
+      ca: Imagotip
+      es: Imagotipo
+    - id: C
+      ca: Isotip
+      es: Isotipo
+    - id: D
+      ca: Logotip
+      es: Logotipo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Quan text i símbol estan integrats en una unitat que no es pot descompondre,
+      es tracta d'un isologo (o isologotip). L'imagotip també combina text i
+      símbol però són separables i poden funcionar per separat; l'isotip és
+      només símbol; el logotip és només text. La clau és la indivisibilitat.
+    es: Cuando texto y símbolo están integrados en una unidad que no se puede
+      descomponer, se trata de un isologo (o isologotipo). El imagotipo también
+      combina texto y símbolo pero son separables y pueden funcionar por
+      separado; el isotipo es solo símbolo; el logotipo es solo texto. La clave
+      es la indivisibilidad.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.function
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: "La màxima \"la forma segueix la funció\" (form follows function), principi
+      fonamental del funcionalisme en disseny, s'atribueix a:"
+    es: 'La máxima "la forma sigue a la función" (form follows function), principio
+      fundamental del funcionalismo en diseño, se atribuye a:'
+  options:
+    - id: A
+      ca: Louis Sullivan
+      es: Louis Sullivan
+    - id: B
+      ca: Le Corbusier
+      es: Le Corbusier
+    - id: C
+      ca: Walter Gropius
+      es: Walter Gropius
+    - id: D
+      ca: Mies van der Rohe
+      es: Mies van der Rohe
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'arquitecte nord-americà Louis Sullivan, de l'Escola de Chicago, va
+      formular "form (ever) follows function" al seu assaig de 1896 sobre
+      l'edifici d'oficines. Le Corbusier i Gropius (Bauhaus) van desenvolupar el
+      funcionalisme però no en són els autors; a Mies se li atribueix "menys és
+      més", una idea diferent.
+    es: El arquitecto estadounidense Louis Sullivan, de la Escuela de Chicago,
+      formuló "form (ever) follows function" en su ensayo de 1896 sobre el
+      edificio de oficinas. Le Corbusier y Gropius (Bauhaus) desarrollaron el
+      funcionalismo pero no son sus autores; a Mies se le atribuye "menos es
+      más", una idea distinta.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.function
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Segons la classificació de les funcions del producte industrial de Bernd
+      Löbach, quines són les tres funcions bàsiques d'un objecte de disseny?
+    es: Según la clasificación de las funciones del producto industrial de Bernd
+      Löbach, ¿cuáles son las tres funciones básicas de un objeto de diseño?
+  options:
+    - id: A
+      ca: Pràctica, estètica i simbòlica
+      es: Práctica, estética y simbólica
+    - id: B
+      ca: Pràctica, ergonòmica i econòmica
+      es: Práctica, ergonómica y económica
+    - id: C
+      ca: Formal, cromàtica i textural
+      es: Formal, cromática y textural
+    - id: D
+      ca: Tècnica, comercial i social
+      es: Técnica, comercial y social
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Löbach distingeix la funció pràctica (relacions fisiològiques d'ús), la
+      funció estètica (percepció sensorial de la forma) i la funció simbòlica
+      (associacions culturals i psicològiques). Les altres opcions barregen
+      aspectes parcials (ergonomia, color, textura) que s'integren dins
+      d'aquestes tres, però no en constitueixen la tríada canònica.
+    es: Löbach distingue la función práctica (relaciones fisiológicas de uso), la
+      función estética (percepción sensorial de la forma) y la función simbólica
+      (asociaciones culturales y psicológicas). Las demás opciones mezclan
+      aspectos parciales (ergonomía, color, textura) que se integran dentro de
+      esas tres, pero no constituyen la tríada canónica.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.function
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "L'assaig \"Ornament i delicte\" (Ornament und Verbrechen, 1908), que
+      defensa l'eliminació de l'ornament superflu i anticipa la relació
+      funcionalista entre forma i funció, va ser escrit per:"
+    es: 'El ensayo "Ornamento y delito" (Ornament und Verbrechen, 1908), que
+      defiende la eliminación del ornamento superfluo y anticipa la relación
+      funcionalista entre forma y función, fue escrito por:'
+  options:
+    - id: A
+      ca: Adolf Loos
+      es: Adolf Loos
+    - id: B
+      ca: John Ruskin
+      es: John Ruskin
+    - id: C
+      ca: William Morris
+      es: William Morris
+    - id: D
+      ca: Antoni Gaudí
+      es: Antoni Gaudí
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'arquitecte austríac Adolf Loos va escriure \"Ornament i delicte\",
+      associant l'ornament excessiu a un malbaratament i defensant la forma
+      neta. Ruskin i Morris (Arts and Crafts), en canvi, van reivindicar
+      l'ornament artesanal, i Gaudí és un exponent màxim de l'ornamentació
+      modernista: tots tres representen la posició contrària."
+    es: 'El arquitecto austriaco Adolf Loos escribió "Ornamento y delito", asociando
+      el ornamento excesivo a un despilfarro y defendiendo la forma limpia.
+      Ruskin y Morris (Arts and Crafts), en cambio, reivindicaron el ornamento
+      artesanal, y Gaudí es un máximo exponente de la ornamentación modernista:
+      los tres representan la posición contraria.'
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.function
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "Un dissenyador que sintetitza la seva filosofia en \"menys, però millor\"
+      (Weniger, aber besser) i en deu principis del bon disseny, treballant
+      durant dècades a l'empresa Braun amb productes sobris i funcionals, és:"
+    es: 'Un diseñador que sintetiza su filosofía en "menos, pero mejor" (Weniger,
+      aber besser) y en diez principios del buen diseño, trabajando durante
+      décadas en la empresa Braun con productos sobrios y funcionales, es:'
+  options:
+    - id: A
+      ca: Dieter Rams
+      es: Dieter Rams
+    - id: B
+      ca: Philippe Starck
+      es: Philippe Starck
+    - id: C
+      ca: Ettore Sottsass
+      es: Ettore Sottsass
+    - id: D
+      ca: Raymond Loewy
+      es: Raymond Loewy
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Dieter Rams, cap de disseny de Braun, va formular els deu principis del bon
+      disseny i el lema "menys, però millor", clau del funcionalisme sobri.
+      Starck fa un disseny d'autor més expressiu; Sottsass va liderar el grup
+      Memphis, ornamental i postmodern; Loewy és l'icona del streamlining
+      nord-americà, orientat a l'estil comercial.
+    es: Dieter Rams, jefe de diseño de Braun, formuló los diez principios del buen
+      diseño y el lema "menos, pero mejor", clave del funcionalismo sobrio.
+      Starck hace un diseño de autor más expresivo; Sottsass lideró el grupo
+      Memphis, ornamental y posmoderno; Loewy es el icono del streamlining
+      estadounidense, orientado al estilo comercial.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.function
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "En la relació funció-forma, el concepte d'\"affordance\" (affordància),
+      popularitzat en el disseny per Donald Norman, fa referència a:"
+    es: 'En la relación función-forma, el concepto de "affordance" (affordancia),
+      popularizado en el diseño por Donald Norman, se refiere a:'
+  options:
+    - id: A
+      ca: Les propietats percebudes i reals d'un objecte que suggereixen com es pot
+        fer servir
+      es: Las propiedades percibidas y reales de un objeto que sugieren cómo puede
+        usarse
+    - id: B
+      ca: L'ornamentació afegida per augmentar el valor simbòlic del producte
+      es: La ornamentación añadida para aumentar el valor simbólico del producto
+    - id: C
+      ca: El cost de fabricació d'un objecte en relació amb la seva funció
+      es: El coste de fabricación de un objeto en relación con su función
+    - id: D
+      ca: El vincle emocional que l'usuari desenvolupa amb el producte amb el temps
+      es: El vínculo emocional que el usuario desarrolla con el producto con el tiempo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Una affordance és la relació entre les propietats d'un objecte i les
+      capacitats de l'usuari que indiquen com utilitzar-lo (per exemple, una
+      nansa convida a estirar): la forma comunica la funció. No té a veure amb
+      l'ornament, ni amb el cost, ni amb el vincle afectiu (aquest darrer seria
+      més aviat disseny emocional)."
+    es: "Una affordance es la relación entre las propiedades de un objeto y las
+      capacidades del usuario que indican cómo utilizarlo (por ejemplo, un asa
+      invita a tirar): la forma comunica la función. No tiene que ver con el
+      ornamento, ni con el coste, ni con el vínculo afectivo (esto último sería
+      más bien diseño emocional)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.function
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "La frase \"menys és avorrit\" (Less is a bore), rèplica postmoderna directa
+      al \"menys és més\" de Mies van der Rohe i defensa de la complexitat i
+      l'ornament, es deu a:"
+    es: 'La frase "menos es aburrido" (Less is a bore), réplica posmoderna directa
+      al "menos es más" de Mies van der Rohe y defensa de la complejidad y el
+      ornamento, se debe a:'
+  options:
+    - id: A
+      ca: Robert Venturi
+      es: Robert Venturi
+    - id: B
+      ca: Charles Eames
+      es: Charles Eames
+    - id: C
+      ca: Marcel Breuer
+      es: Marcel Breuer
+    - id: D
+      ca: Max Bill
+      es: Max Bill
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Robert Venturi, a "Complexitat i contradicció en l'arquitectura" (1966), va
+      invertir el lema de Mies amb "less is a bore", obrint la crítica
+      postmoderna al funcionalisme estricte. Eames i Breuer són dissenyadors
+      moderns vinculats al funcionalisme, i Max Bill, de l'Escola d'Ulm, en va
+      ser un continuador racionalista.
+    es: Robert Venturi, en "Complejidad y contradicción en la arquitectura" (1966),
+      invirtió el lema de Mies con "less is a bore", abriendo la crítica
+      posmoderna al funcionalismo estricto. Eames y Breuer son diseñadores
+      modernos ligados al funcionalismo, y Max Bill, de la Escuela de Ulm, fue
+      un continuador racionalista.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.ergonomics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: "L'ergonomia, aplicada al disseny de producte, es defineix fonamentalment
+      com la disciplina que estudia:"
+    es: "La ergonomía, aplicada al diseño de producto, se define fundamentalmente
+      como la disciplina que estudia:"
+  options:
+    - id: A
+      ca: L'adaptació dels objectes, tasques i entorns a les característiques i
+        limitacions de les persones que els utilitzen.
+      es: La adaptación de los objetos, tareas y entornos a las características y
+        limitaciones de las personas que los utilizan.
+    - id: B
+      ca: L'estil visual i la moda dels productes per augmentar-ne l'atractiu
+        comercial.
+      es: El estilo visual y la moda de los productos para aumentar su atractivo
+        comercial.
+    - id: C
+      ca: La reducció del cost dels materials i dels processos de fabricació en sèrie.
+      es: La reducción del coste de los materiales y de los procesos de fabricación en
+        serie.
+    - id: D
+      ca: L'adaptació de les persones a les màquines mitjançant entrenament i
+        instrucció.
+      es: La adaptación de las personas a las máquinas mediante entrenamiento e
+        instrucción.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'ergonomia (o factors humans) busca ajustar el producte a l'usuari, no a
+      l'inrevés: parteix de les dades i límits humans (físics i cognitius) per
+      dissenyar objectes i entorns segurs, eficients i confortables. L'opció D
+      inverteix la relació (adaptar la persona a la màquina), que és precisament
+      el que l'ergonomia vol evitar."
+    es: "La ergonomía (o factores humanos) busca ajustar el producto al usuario, no
+      al revés: parte de los datos y límites humanos (físicos y cognitivos) para
+      diseñar objetos y entornos seguros, eficientes y confortables. La opción D
+      invierte la relación (adaptar la persona a la máquina), que es justamente
+      lo que la ergonomía quiere evitar."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.ergonomics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "En antropometria aplicada al disseny, per fixar l'ALÇADA LLIURE d'una porta
+      (perquè hi passi la màxima quantitat de població sense colpejar-se el
+      cap), el criteri correcte és dimensionar-la segons:"
+    es: "En antropometría aplicada al diseño, para fijar la ALTURA LIBRE de una
+      puerta (para que pase la máxima cantidad de población sin golpearse la
+      cabeza), el criterio correcto es dimensionarla según:"
+  options:
+    - id: A
+      ca: El percentil 95 de l'alçada de la població (l'usuari més alt).
+      es: El percentil 95 de la altura de la población (el usuario más alto).
+    - id: B
+      ca: El percentil 5 de l'alçada de la població (l'usuari més baix).
+      es: El percentil 5 de la altura de la población (el usuario más bajo).
+    - id: C
+      ca: El percentil 50, és a dir, l'usuari mitjà o mitjana estadística.
+      es: El percentil 50, es decir, el usuario medio o media estadística.
+    - id: D
+      ca: El percentil 1, per garantir el mínim material possible.
+      es: El percentil 1, para garantizar el mínimo material posible.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les mesures d'ESPAI LLIURE o de pas (folgances) es dimensionen per a
+      l'usuari extrem gran: si la porta acomoda el percentil 95, també hi passen
+      tots els més baixos. Dissenyar per a la mitjana (P50) deixaria fora
+      aproximadament la meitat de la població. Nota: en canvi, les mesures
+      d'ABAST (arribar a un prestatge) es dimensionen per al percentil 5."
+    es: "Las medidas de ESPACIO LIBRE o de paso (holguras) se dimensionan para el
+      usuario extremo grande: si la puerta acomoda el percentil 95, también
+      pasan todos los más bajos. Diseñar para la media (P50) dejaría fuera
+      aproximadamente a la mitad de la población. Nota: en cambio, las medidas
+      de ALCANCE (llegar a un estante) se dimensionan para el percentil 5."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.ergonomics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "Segons Donald Norman, quan mirem una porta amb una placa plana a l'altura
+      de la mà entenem que s'ha d'EMPÈNYER, mentre que amb una nansa vertical
+      entenem que s'ha d'ESTIRAR. Aquest missatge perceptiu que suggereix
+      l'acció correcta s'anomena:"
+    es: "Según Donald Norman, cuando vemos una puerta con una placa plana a la
+      altura de la mano entendemos que hay que EMPUJAR, mientras que con un
+      tirador vertical entendemos que hay que TIRAR. Ese mensaje perceptivo que
+      sugiere la acción correcta se denomina:"
+  options:
+    - id: A
+      ca: Significant (signifier) o affordance percebuda.
+      es: Significante (signifier) o affordance percibida.
+    - id: B
+      ca: Feedback o retroalimentació del sistema.
+      es: Feedback o retroalimentación del sistema.
+    - id: C
+      ca: Model mental de l'usuari.
+      es: Modelo mental del usuario.
+    - id: D
+      ca: Restricció física (constraint) arbitrària.
+      es: Restricción física (constraint) arbitraria.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Norman distingeix l'affordance (la possibilitat d'acció real que ofereix
+      l'objecte) del signifier o significant, la pista perceptible que comunica
+      a l'usuari com actuar (la placa 'diu' empènyer). El feedback és la
+      resposta DESPRÉS d'actuar; el model mental és la representació interna que
+      l'usuari es fa; la restricció limita accions. Aquí es descriu la pista que
+      guia l'acció: el signifier."
+    es: "Norman distingue la affordance (la posibilidad de acción real que ofrece el
+      objeto) del signifier o significante, la pista perceptible que comunica al
+      usuario cómo actuar (la placa 'dice' empujar). El feedback es la respuesta
+      DESPUÉS de actuar; el modelo mental es la representación interna que se
+      hace el usuario; la restricción limita acciones. Aquí se describe la pista
+      que guía la acción: el signifier."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.ergonomics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: "El principi de 'Disseny Universal' (Universal Design) es diferencia de
+      l'accessibilitat convencional perquè el seu objectiu és:"
+    es: "El principio de 'Diseño Universal' (Universal Design) se diferencia de la
+      accesibilidad convencional porque su objetivo es:"
+  options:
+    - id: A
+      ca: Dissenyar productes i entorns utilitzables per totes les persones, en la
+        major mesura possible, sense necessitat d'adaptacions ni disseny
+        especialitzat.
+      es: Diseñar productos y entornos utilizables por todas las personas, en la mayor
+        medida posible, sin necesidad de adaptaciones ni diseño especializado.
+    - id: B
+      ca: Crear productes específics i separats destinats exclusivament a persones amb
+        discapacitat.
+      es: Crear productos específicos y separados destinados exclusivamente a personas
+        con discapacidad.
+    - id: C
+      ca: Complir únicament la normativa mínima legal d'eliminació de barreres
+        arquitectòniques.
+      es: Cumplir únicamente la normativa mínima legal de eliminación de barreras
+        arquitectónicas.
+    - id: D
+      ca: Estandarditzar tots els productes segons les mesures de l'usuari mitjà
+        (percentil 50).
+      es: Estandarizar todos los productos según las medidas del usuario medio
+        (percentil 50).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Disseny Universal (formalitzat per Ronald Mace i els seus 7 principis)
+      busca solucions úniques i inclusives que serveixin al màxim ventall
+      d'usuaris sense necessitat d'adaptació posterior ni productes segregats.
+      L'opció B descriu el disseny especialitzat/assistiu, no l'universal; C és
+      mínim normatiu; D exclou precisament els usuaris extrems que el disseny
+      inclusiu vol contemplar.
+    es: El Diseño Universal (formalizado por Ronald Mace y sus 7 principios) busca
+      soluciones únicas e inclusivas que sirvan al máximo abanico de usuarios
+      sin necesidad de adaptación posterior ni productos segregados. La opción B
+      describe el diseño especializado/asistivo, no el universal; C es mínimo
+      normativo; D excluye justamente a los usuarios extremos que el diseño
+      inclusivo quiere contemplar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.ergonomics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "La Llei de Fitts, molt utilitzada en ergonomia cognitiva i disseny
+      d'interfícies, prediu que el temps per assolir un objectiu (per exemple,
+      clicar un botó) DISMINUEIX quan:"
+    es: "La Ley de Fitts, muy utilizada en ergonomía cognitiva y diseño de
+      interfaces, predice que el tiempo para alcanzar un objetivo (por ejemplo,
+      hacer clic en un botón) DISMINUYE cuando:"
+  options:
+    - id: A
+      ca: L'objectiu és més gran i està més a prop del punt de partida.
+      es: El objetivo es más grande y está más cerca del punto de partida.
+    - id: B
+      ca: L'objectiu és més petit i està més a prop del punt de partida.
+      es: El objetivo es más pequeño y está más cerca del punto de partida.
+    - id: C
+      ca: L'objectiu és més gran i està més lluny del punt de partida.
+      es: El objetivo es más grande y está más lejos del punto de partida.
+    - id: D
+      ca: El temps només depèn de la mida de l'objectiu i és independent de la
+        distància.
+      es: El tiempo solo depende del tamaño del objetivo y es independiente de la
+        distancia.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La Llei de Fitts estableix que el temps de moviment creix amb la distància
+      (D) fins a l'objectiu i decreix amb la seva amplada (W): T = a +
+      b·log2(2D/W). Per tant, el temps és mínim quan l'objectiu és GRAN (W gran)
+      i PROP (D petita). L'opció D és falsa perquè la distància hi intervé de
+      manera determinant."
+    es: "La Ley de Fitts establece que el tiempo de movimiento crece con la
+      distancia (D) hasta el objetivo y decrece con su anchura (W): T = a +
+      b·log2(2D/W). Por tanto, el tiempo es mínimo cuando el objetivo es GRANDE
+      (W grande) y está CERCA (D pequeña). La opción D es falsa porque la
+      distancia interviene de forma determinante."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.ergonomics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En una avaluació d'usabilitat s'observa que, en enviar un formulari,
+      l'aplicació triga uns segons a respondre sense mostrar cap indicació, i
+      els usuaris tornen a prémer el botó diverses vegades duplicant la comanda.
+      Quina heurística d'usabilitat (Nielsen) s'està incomplint principalment?
+    es: En una evaluación de usabilidad se observa que, al enviar un formulario, la
+      aplicación tarda unos segundos en responder sin mostrar ninguna
+      indicación, y los usuarios vuelven a pulsar el botón varias veces
+      duplicando el pedido. ¿Qué heurística de usabilidad (Nielsen) se está
+      incumpliendo principalmente?
+  options:
+    - id: A
+      ca: Visibilitat de l'estat del sistema (feedback informatiu i oportú).
+      es: Visibilidad del estado del sistema (feedback informativo y oportuno).
+    - id: B
+      ca: Concordança entre el sistema i el món real (llenguatge de l'usuari).
+      es: Concordancia entre el sistema y el mundo real (lenguaje del usuario).
+    - id: C
+      ca: Reconeixement millor que record (minimitzar la memòria).
+      es: Reconocimiento mejor que recuerdo (minimizar la memoria).
+    - id: D
+      ca: Estètica i disseny minimalista.
+      es: Estética y diseño minimalista.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La primera heurística de Nielsen, 'visibilitat de l'estat del sistema',
+      exigeix que el sistema mantingui informat l'usuari amb feedback adequat i
+      en un temps raonable. La manca d'indicador de càrrega/procés fa que
+      l'usuari no sàpiga si la comanda s'ha registrat i la repeteixi. Les altres
+      heurístiques (llenguatge, memòria, minimalisme) no expliquen el problema
+      de falta de resposta perceptible.
+    es: La primera heurística de Nielsen, 'visibilidad del estado del sistema',
+      exige que el sistema mantenga informado al usuario con feedback adecuado y
+      en un tiempo razonable. La ausencia de indicador de carga/proceso hace que
+      el usuario no sepa si el pedido se ha registrado y lo repita. Las otras
+      heurísticas (lenguaje, memoria, minimalismo) no explican el problema de
+      falta de respuesta perceptible.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.materials
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina afirmació distingeix correctament un material termoplàstic d'un
+      termoestable (termofix)?
+    es: ¿Qué afirmación distingue correctamente un material termoplástico de uno
+      termoestable (termofijo)?
+  options:
+    - id: A
+      ca: El termoplàstic es pot fondre i reconformar diverses vegades amb l'escalfor,
+        mentre que el termoestable endureix de manera permanent i, en
+        escalfar-lo, es degrada en lloc de tornar a fondre's.
+      es: El termoplástico se puede fundir y reconformar varias veces con el calor,
+        mientras que el termoestable endurece de forma permanente y, al
+        calentarlo, se degrada en lugar de volver a fundirse.
+    - id: B
+      ca: El termoestable es pot tornar a fondre moltes vegades, mentre que el
+        termoplàstic endureix de manera irreversible.
+      es: El termoestable se puede volver a fundir muchas veces, mientras que el
+        termoplástico endurece de forma irreversible.
+    - id: C
+      ca: Tots dos es fonen indefinidament; l'única diferència és el color.
+      es: Ambos se funden indefinidamente; la única diferencia es el color.
+    - id: D
+      ca: El termoplàstic no es pot reciclar, mentre que el termoestable es recicla
+        fàcilment tornant-lo a fondre.
+      es: El termoplástico no se puede reciclar, mientras que el termoestable se
+        recicla fácilmente volviéndolo a fundir.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els termoplàstics (PET, PP, PE, PMMA...) tenen cadenes no reticulades: en
+      escalfar-se s'estoven i es poden reconformar i reciclar diverses vegades.
+      Els termoestables (baquelita, resines epoxi, poliuretà termofix) formen
+      una xarxa reticulada permanent durant el curat; en escalfar-los no es
+      fonen, sinó que es descomponen. Les opcions B i D inverteixen aquestes
+      propietats i C les nega totes dues."
+    es: "Los termoplásticos (PET, PP, PE, PMMA...) tienen cadenas no reticuladas: al
+      calentarse se reblandecen y pueden reconformarse y reciclarse varias
+      veces. Los termoestables (baquelita, resinas epoxi, poliuretano termofijo)
+      forman una red reticulada permanente durante el curado; al calentarlos no
+      se funden, sino que se descomponen. Las opciones B y D invierten estas
+      propiedades y C las niega ambas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.materials
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Per produir en grans sèries peces petites de plàstic amb geometria complexa
+      (per exemple, taps de flascó), quin procés de fabricació és el més
+      adequat?
+    es: Para producir en grandes series piezas pequeñas de plástico con geometría
+      compleja (por ejemplo, tapones de frasco), ¿qué proceso de fabricación es
+      el más adecuado?
+  options:
+    - id: A
+      ca: Emmotllament per injecció (injecció de termoplàstic dins d'un motlle).
+      es: Moldeo por inyección (inyección de termoplástico dentro de un molde).
+    - id: B
+      ca: Modelatge additiu FDM (impressió 3D per deposició de filament).
+      es: Fabricación aditiva FDM (impresión 3D por deposición de filamento).
+    - id: C
+      ca: Emmotllament en sorra (colada de metall en un motlle de sorra).
+      es: Moldeo en arena (colada de metal en un molde de arena).
+    - id: D
+      ca: Laminació manual de fibra amb resina.
+      es: Laminación manual de fibra con resina.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'emmotllament per injecció ofereix cicles molt curts, alta repetibilitat i
+      geometries complexes amb bon acabat; és el procés estàndard per a grans
+      sèries de peces petites de termoplàstic. La impressió FDM és massa lenta
+      per a sèries massives (prototipatge), l'emmotllament en sorra és per a
+      metalls, i la laminació manual és artesanal i lenta.
+    es: El moldeo por inyección ofrece ciclos muy cortos, alta repetibilidad y
+      geometrías complejas con buen acabado; es el proceso estándar para grandes
+      series de piezas pequeñas de termoplástico. La impresión FDM es demasiado
+      lenta para series masivas (prototipado), el moldeo en arena es para
+      metales, y la laminación manual es artesanal y lenta.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.materials
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Un dissenyador necessita un plàstic rígid i molt transparent per a una
+      vitrina expositora, com a alternativa al vidre. Quin material és el més
+      indicat?
+    es: Un diseñador necesita un plástico rígido y muy transparente para una vitrina
+      expositora, como alternativa al vidrio. ¿Qué material es el más indicado?
+  options:
+    - id: A
+      ca: PMMA (polimetilmetacrilat, conegut comercialment com metacrilat o
+        Plexiglàs).
+      es: PMMA (polimetilmetacrilato, conocido comercialmente como metacrilato o
+        Plexiglás).
+    - id: B
+      ca: Poliestirè expandit (EPS).
+      es: Poliestireno expandido (EPS).
+    - id: C
+      ca: Cautxú vulcanitzat.
+      es: Caucho vulcanizado.
+    - id: D
+      ca: Polietilè d'alta densitat (HDPE).
+      es: Polietileno de alta densidad (HDPE).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El PMMA (metacrilat) és un termoplàstic rígid, transparent (transmitància
+      òptica superior al 90%) i resistent a la intempèrie, per això substitueix
+      el vidre en vitrines, senyalística i lluernes. L'EPS és una escuma opaca i
+      tova, el cautxú vulcanitzat és elàstic i opac, i l'HDPE és opac o
+      translúcid però no transparent.
+    es: El PMMA (metacrilato) es un termoplástico rígido, transparente
+      (transmitancia óptica superior al 90%) y resistente a la intemperie, por
+      eso sustituye al vidrio en vitrinas, señalética y claraboyas. El EPS es
+      una espuma opaca y blanda, el caucho vulcanizado es elástico y opaco, y el
+      HDPE es opaco o translúcido pero no transparente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.materials
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En la fabricació additiva per FDM (Fused Deposition Modeling), com es forma
+      l'objecte?
+    es: En la fabricación aditiva por FDM (Fused Deposition Modeling), ¿cómo se
+      forma el objeto?
+  options:
+    - id: A
+      ca: Dipositant capes successives de filament termoplàstic fos que se
+        solidifiquen en refredar-se.
+      es: Depositando capas sucesivas de filamento termoplástico fundido que se
+        solidifican al enfriarse.
+    - id: B
+      ca: Curant capa a capa una resina líquida fotosensible amb un làser o llum UV.
+      es: Curando capa a capa una resina líquida fotosensible con un láser o luz UV.
+    - id: C
+      ca: Sinteritzant pols metàl·lica compactada amb un làser d'alta potència.
+      es: Sinterizando polvo metálico compactado con un láser de alta potencia.
+    - id: D
+      ca: Arrencant material d'un bloc massís mitjançant eines de tall.
+      es: Arrancando material de un bloque macizo mediante herramientas de corte.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'FDM és additiu i extrusor: un capçal escalfa i diposita filament
+      termoplàstic (PLA, ABS, PETG) capa sobre capa, que solidifica en
+      refredar-se. L'opció B descriu l'estereolitografia (SLA/DLP), la C descriu
+      el sinteritzat de pols (SLS/SLM) i la D descriu un procés substractiu
+      (fresat CNC), no additiu."
+    es: "El FDM es aditivo y extrusor: un cabezal calienta y deposita filamento
+      termoplástico (PLA, ABS, PETG) capa sobre capa, que solidifica al
+      enfriarse. La opción B describe la estereolitografía (SLA/DLP), la C
+      describe el sinterizado de polvo (SLS/SLM) y la D describe un proceso
+      sustractivo (fresado CNC), no aditivo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.materials
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Els perfils d'alumini per a marcs de finestra, amb una secció transversal
+      constant al llarg de tota la seva longitud, es fabriquen habitualment
+      per...
+    es: Los perfiles de aluminio para marcos de ventana, con una sección transversal
+      constante a lo largo de toda su longitud, se fabrican habitualmente por...
+  options:
+    - id: A
+      ca: Extrusió (forçant el metall a través d'una matriu amb el perfil desitjat).
+      es: Extrusión (forzando el metal a través de una matriz con el perfil deseado).
+    - id: B
+      ca: Forja (deformació per cops o pressió entre estampes).
+      es: Forja (deformación por golpes o presión entre estampas).
+    - id: C
+      ca: Embotició profunda (estampació de xapa per formar recipients).
+      es: Embutición profunda (estampado de chapa para formar recipientes).
+    - id: D
+      ca: Emmotllament en sorra (colada dins d'un motlle de sorra).
+      es: Moldeo en arena (colada dentro de un molde de arena).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'extrusió empeny l'alumini (sovint en calent) a través d'una matriu que li
+      dona una secció constant; és ideal per a perfils llargs i uniformes com
+      marcs, guies o dissipadors. La forja produeix peces massisses de forma
+      variable, l'embotició forma recipients a partir de xapa, i l'emmotllament
+      en sorra dona peces amb geometria tancada però sense la uniformitat lineal
+      d'un perfil.
+    es: La extrusión empuja el aluminio (a menudo en caliente) a través de una
+      matriz que le da una sección constante; es ideal para perfiles largos y
+      uniformes como marcos, guías o disipadores. La forja produce piezas
+      macizas de forma variable, la embutición forma recipientes a partir de
+      chapa, y el moldeo en arena da piezas con geometría cerrada pero sin la
+      uniformidad lineal de un perfil.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.product.materials
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Les ampolles de PET per a begudes (cos buit i parets primes) es produeixen
+      massivament mitjançant...
+    es: Las botellas de PET para bebidas (cuerpo hueco y paredes delgadas) se
+      producen masivamente mediante...
+  options:
+    - id: A
+      ca: Emmotllament per bufat (bufat d'aire dins d'una preforma escalfada perquè
+        s'adapti al motlle).
+      es: Moldeo por soplado (soplado de aire dentro de una preforma calentada para
+        que se adapte al molde).
+    - id: B
+      ca: Termoconformat de làmina (escalfament i buit d'una làmina sobre un motlle).
+      es: Termoconformado de lámina (calentamiento y vacío de una lámina sobre un
+        molde).
+    - id: C
+      ca: Emmotllament per injecció d'una peça massissa.
+      es: Moldeo por inyección de una pieza maciza.
+    - id: D
+      ca: Calandratge (laminació entre corrons per fer làmines contínues).
+      es: Calandrado (laminación entre rodillos para hacer láminas continuas).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els cossos buits de paret prima com les ampolles es fabriquen per bufat: es
+      parteix d'una preforma (sovint injectada) que, escalfada, s'infla amb aire
+      comprimit fins a adaptar-se a les parets del motlle
+      (injecció-estirament-bufat). El termoconformat dona safates i blísters
+      oberts, la injecció clàssica dona peces massisses o tancades sòlides, i el
+      calandratge produeix làmines i films plans, no cossos buits."
+    es: "Los cuerpos huecos de pared delgada como las botellas se fabrican por
+      soplado: se parte de una preforma (a menudo inyectada) que, calentada, se
+      infla con aire comprimido hasta adaptarse a las paredes del molde
+      (inyección-estirado-soplado). El termoconformado da bandejas y blísteres
+      abiertos, la inyección clásica da piezas macizas o cerradas sólidas, y el
+      calandrado produce láminas y films planos, no cuerpos huecos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.bauhaus
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Qui va fundar la Bauhaus i en quina ciutat i any ho va fer?
+    es: ¿Quién fundó la Bauhaus y en qué ciudad y año lo hizo?
+  options:
+    - id: A
+      ca: Walter Gropius, a Weimar, el 1919
+      es: Walter Gropius, en Weimar, en 1919
+    - id: B
+      ca: Ludwig Mies van der Rohe, a Dessau, el 1925
+      es: Ludwig Mies van der Rohe, en Dessau, en 1925
+    - id: C
+      ca: Wassily Kandinsky, a Berlín, el 1923
+      es: Wassily Kandinsky, en Berlín, en 1923
+    - id: D
+      ca: Hannes Meyer, a Weimar, el 1928
+      es: Hannes Meyer, en Weimar, en 1928
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Bauhaus va ser fundada per l'arquitecte Walter Gropius a Weimar el 1919,
+      de la fusió de l'Escola de Belles Arts i l'Escola d'Arts i Oficis. Mies
+      van der Rohe i Hannes Meyer en van ser directors posteriors, i Kandinsky
+      hi va ser professor, però cap d'ells no en va ser el fundador.
+    es: La Bauhaus fue fundada por el arquitecto Walter Gropius en Weimar en 1919, a
+      partir de la fusión de la Escuela de Bellas Artes y la Escuela de Artes y
+      Oficios. Mies van der Rohe y Hannes Meyer fueron directores posteriores, y
+      Kandinsky fue profesor, pero ninguno de ellos fue el fundador.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.bauhaus
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: El 1925 la Bauhaus es va traslladar per motius polítics i econòmics a una
+      nova ciutat, on Gropius va dissenyar l'edifici emblemàtic de l'escola. De
+      quina ciutat es tracta?
+    es: En 1925 la Bauhaus se trasladó por motivos políticos y económicos a una
+      nueva ciudad, donde Gropius diseñó el edificio emblemático de la escuela.
+      ¿De qué ciudad se trata?
+  options:
+    - id: A
+      ca: Munic
+      es: Múnich
+    - id: B
+      ca: Dessau
+      es: Dessau
+    - id: C
+      ca: Frankfurt
+      es: Fráncfort
+    - id: D
+      ca: Colònia
+      es: Colonia
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La Bauhaus va tenir tres seus successives: Weimar (1919-1925), Dessau
+      (1925-1932) i Berlín (1932-1933). El 1925 es va traslladar a Dessau, on
+      Gropius va projectar el nou edifici (1925-1926), icona de l'arquitectura
+      moderna. Munic, Frankfurt i Colònia no van ser mai seus de l'escola."
+    es: "La Bauhaus tuvo tres sedes sucesivas: Weimar (1919-1925), Dessau
+      (1925-1932) y Berlín (1932-1933). En 1925 se trasladó a Dessau, donde
+      Gropius proyectó el nuevo edificio (1925-1926), icono de la arquitectura
+      moderna. Múnich, Fráncfort y Colonia nunca fueron sedes de la escuela."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.bauhaus
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quina va ser la successió correcta de directors de la Bauhaus al llarg de la
+      seva existència (1919-1933)?
+    es: ¿Cuál fue la sucesión correcta de directores de la Bauhaus a lo largo de su
+      existencia (1919-1933)?
+  options:
+    - id: A
+      ca: Mies van der Rohe → Hannes Meyer → Walter Gropius
+      es: Mies van der Rohe → Hannes Meyer → Walter Gropius
+    - id: B
+      ca: Walter Gropius → Johannes Itten → Hannes Meyer
+      es: Walter Gropius → Johannes Itten → Hannes Meyer
+    - id: C
+      ca: Walter Gropius → Hannes Meyer → Mies van der Rohe
+      es: Walter Gropius → Hannes Meyer → Mies van der Rohe
+    - id: D
+      ca: Hannes Meyer → Walter Gropius → Mies van der Rohe
+      es: Hannes Meyer → Walter Gropius → Mies van der Rohe
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: L'ordre correcte és Walter Gropius (1919-1928), Hannes Meyer (1928-1930) i
+      Ludwig Mies van der Rohe (1930-1933), que va tancar l'escola sota la
+      pressió nazi. Johannes Itten va ser un professor destacat (del curs
+      preliminar), però mai director.
+    es: El orden correcto es Walter Gropius (1919-1928), Hannes Meyer (1928-1930) y
+      Ludwig Mies van der Rohe (1930-1933), que cerró la escuela bajo la presión
+      nazi. Johannes Itten fue un profesor destacado (del curso preliminar),
+      pero nunca director.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.bauhaus
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: La cadira Wassily (model B3), un dels dissenys més icònics de la Bauhaus, va
+      introduir un material innovador en el mobiliari. Qui la va dissenyar i amb
+      quin material?
+    es: La silla Wassily (modelo B3), uno de los diseños más icónicos de la Bauhaus,
+      introdujo un material innovador en el mobiliario. ¿Quién la diseñó y con
+      qué material?
+  options:
+    - id: A
+      ca: Marcel Breuer, amb tub d'acer corbat
+      es: Marcel Breuer, con tubo de acero curvado
+    - id: B
+      ca: Marianne Brandt, amb tub d'acer corbat
+      es: Marianne Brandt, con tubo de acero curvado
+    - id: C
+      ca: Marcel Breuer, amb fusta contraxapada corbada
+      es: Marcel Breuer, con madera contrachapada curvada
+    - id: D
+      ca: Mies van der Rohe, amb fusta massissa
+      es: Mies van der Rohe, con madera maciza
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La cadira Wassily (B3, 1925-1926) va ser dissenyada per Marcel Breuer, que
+      va ser el primer a emprar el tub d'acer cromat corbat en una cadira,
+      inspirat pel manillar de la seva bicicleta. Marianne Brandt treballava al
+      taller de metall (làmpades i objectes), no en aquest moble; Mies va crear
+      altres cadires però no la B3.
+    es: La silla Wassily (B3, 1925-1926) fue diseñada por Marcel Breuer, que fue el
+      primero en emplear el tubo de acero cromado curvado en una silla,
+      inspirado por el manillar de su bicicleta. Marianne Brandt trabajaba en el
+      taller de metal (lámparas y objetos), no en este mueble; Mies creó otras
+      sillas pero no la B3.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.bauhaus
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: El lema «la forma segueix la funció» («form follows function») s'associa
+      sovint amb la Bauhaus. A qui pertany realment aquesta formulació?
+    es: El lema «la forma sigue a la función» («form follows function») se asocia a
+      menudo con la Bauhaus. ¿A quién pertenece realmente esta formulación?
+  options:
+    - id: A
+      ca: A Walter Gropius, al manifest fundacional de la Bauhaus (1919)
+      es: A Walter Gropius, en el manifiesto fundacional de la Bauhaus (1919)
+    - id: B
+      ca: A l'arquitecte nord-americà Louis Sullivan, de l'Escola de Chicago (finals
+        del s. XIX)
+      es: Al arquitecto estadounidense Louis Sullivan, de la Escuela de Chicago
+        (finales del s. XIX)
+    - id: C
+      ca: A Ludwig Mies van der Rohe, que també va encunyar «menys és més»
+      es: A Ludwig Mies van der Rohe, que también acuñó «menos es más»
+    - id: D
+      ca: A Le Corbusier, a «Vers une architecture» (1923)
+      es: A Le Corbusier, en «Vers une architecture» (1923)
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El principi «form follows function» va ser formulat per l'arquitecte
+      nord-americà Louis Sullivan el 1896, precursor del funcionalisme modern.
+      La Bauhaus el va assumir com a ideal, però no el va crear. «Menys és més»
+      sí que és de Mies van der Rohe, la qual cosa fa que el distractor C sigui
+      un error habitual.
+    es: El principio «form follows function» fue formulado por el arquitecto
+      estadounidense Louis Sullivan en 1896, precursor del funcionalismo
+      moderno. La Bauhaus lo asumió como ideal, pero no lo creó. «Menos es más»
+      sí es de Mies van der Rohe, lo que hace que el distractor C sea un error
+      habitual.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.bauhaus
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El 1923, coincidint amb la primera gran exposició de l'escola, la Bauhaus va
+      adoptar un nou lema que marcava un gir cap a la producció industrial. Quin
+      era aquest lema?
+    es: En 1923, coincidiendo con la primera gran exposición de la escuela, la
+      Bauhaus adoptó un nuevo lema que marcaba un giro hacia la producción
+      industrial. ¿Cuál era ese lema?
+  options:
+    - id: A
+      ca: «Ornament és delicte»
+      es: «Ornamento es delito»
+    - id: B
+      ca: «La casa és una màquina d'habitar»
+      es: «La casa es una máquina de habitar»
+    - id: C
+      ca: "«Art i tècnica: una nova unitat»"
+      es: "«Arte y técnica: una nueva unidad»"
+    - id: D
+      ca: «De la cullera a la ciutat»
+      es: «De la cuchara a la ciudad»
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "El 1923 Gropius va proclamar el lema «Kunst und Technik – eine neue
+      Einheit» («Art i tècnica: una nova unitat»), que substituïa l'orientació
+      inicial més artesanal i expressionista per l'aliança amb la indústria.
+      «Ornament és delicte» és d'Adolf Loos; «La casa és una màquina d'habitar»
+      és de Le Corbusier; «De la cullera a la ciutat» s'atribueix a Ernesto
+      Nathan Rogers."
+    es: "En 1923 Gropius proclamó el lema «Kunst und Technik – eine neue Einheit»
+      («Arte y técnica: una nueva unidad»), que sustituía la orientación inicial
+      más artesanal y expresionista por la alianza con la industria. «Ornamento
+      es delito» es de Adolf Loos; «La casa es una máquina de habitar» es de Le
+      Corbusier; «De la cuchara a la ciudad» se atribuye a Ernesto Nathan
+      Rogers."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.functionalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: "El principi 'la forma segueix la funció' ('form follows function'),
+      fonament teòric del funcionalisme del segle XX, va ser formulat per
+      l'arquitecte de l'Escola de Chicago:"
+    es: "El principio 'la forma sigue a la función' ('form follows function'),
+      fundamento teórico del funcionalismo del siglo XX, fue formulado por el
+      arquitecto de la Escuela de Chicago:"
+  options:
+    - id: A
+      ca: Louis Sullivan
+      es: Louis Sullivan
+    - id: B
+      ca: Le Corbusier
+      es: Le Corbusier
+    - id: C
+      ca: Frank Lloyd Wright
+      es: Frank Lloyd Wright
+    - id: D
+      ca: Adolf Loos
+      es: Adolf Loos
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Louis Sullivan va enunciar 'form follows function' (1896) a l'assaig 'The
+      Tall Office Building Artistically Considered', esdevenint el lema del
+      funcionalisme. Wright va ser deixeble seu; Le Corbusier ('la casa és una
+      màquina d'habitar') i Loos ('ornament i delicte') són figures relacionades
+      però no en són els autors.
+    es: Louis Sullivan enunció 'form follows function' (1896) en su ensayo 'The Tall
+      Office Building Artistically Considered', convirtiéndose en el lema del
+      funcionalismo. Wright fue discípulo suyo; Le Corbusier ('la casa es una
+      máquina de habitar') y Loos ('ornamento y delito') son figuras
+      relacionadas pero no sus autores.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.functionalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "La Bauhaus, escola clau del disseny funcionalista, va ser fundada el 1919.
+      Indica el lloc de fundació i el seu primer director:"
+    es: "La Bauhaus, escuela clave del diseño funcionalista, fue fundada en 1919.
+      Indica el lugar de fundación y su primer director:"
+  options:
+    - id: A
+      ca: Weimar, dirigida per Walter Gropius
+      es: Weimar, dirigida por Walter Gropius
+    - id: B
+      ca: Dessau, dirigida per Walter Gropius
+      es: Dessau, dirigida por Walter Gropius
+    - id: C
+      ca: Weimar, dirigida per Ludwig Mies van der Rohe
+      es: Weimar, dirigida por Ludwig Mies van der Rohe
+    - id: D
+      ca: Berlín, dirigida per Hannes Meyer
+      es: Berlín, dirigida por Hannes Meyer
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Bauhaus va néixer a Weimar el 1919 sota la direcció de Walter Gropius. El
+      1925 es va traslladar a Dessau i el 1932 a Berlín, on va tancar el 1933.
+      Meyer (1928) i Mies van der Rohe (1930) en van ser directors posteriors,
+      no el primer.
+    es: La Bauhaus nació en Weimar en 1919 bajo la dirección de Walter Gropius. En
+      1925 se trasladó a Dessau y en 1932 a Berlín, donde cerró en 1933. Meyer
+      (1928) y Mies van der Rohe (1930) fueron directores posteriores, no el
+      primero.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.functionalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: "El lema 'Less is more' ('menys és més'), sovint associat al minimalisme
+      funcionalista i a l'arquitectura moderna, s'atribueix a:"
+    es: "El lema 'Less is more' ('menos es más'), a menudo asociado al minimalismo
+      funcionalista y a la arquitectura moderna, se atribuye a:"
+  options:
+    - id: A
+      ca: Ludwig Mies van der Rohe
+      es: Ludwig Mies van der Rohe
+    - id: B
+      ca: Walter Gropius
+      es: Walter Gropius
+    - id: C
+      ca: Marcel Breuer
+      es: Marcel Breuer
+    - id: D
+      ca: Wassily Kandinsky
+      es: Wassily Kandinsky
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Less is more' és la màxima de Ludwig Mies van der Rohe, síntesi del seu
+      llenguatge depurat. Gropius va fundar la Bauhaus; Breuer va dissenyar la
+      cadira Wassily (tub d'acer); Kandinsky hi va ser professor de pintura i
+      teoria del color, però cap d'ells és l'autor del lema."
+    es: "'Less is more' es la máxima de Ludwig Mies van der Rohe, síntesis de su
+      lenguaje depurado. Gropius fundó la Bauhaus; Breuer diseñó la silla
+      Wassily (tubo de acero); Kandinsky fue profesor de pintura y teoría del
+      color, pero ninguno es el autor del lema."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.functionalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: El dissenyador Dieter Rams, vinculat a la marca Braun i a l'herència de
+      l'Escola d'Ulm (HfG Ulm), va formular deu principis del 'bon disseny'.
+      Quin dels següents resumeix millor la seva filosofia funcionalista?
+    es: El diseñador Dieter Rams, vinculado a la marca Braun y a la herencia de la
+      Escuela de Ulm (HfG Ulm), formuló diez principios del 'buen diseño'. ¿Cuál
+      de los siguientes resume mejor su filosofía funcionalista?
+  options:
+    - id: A
+      ca: "'Menys, però millor' ('Weniger, aber besser'): el bon disseny és el menys
+        possible"
+      es: "'Menos, pero mejor' ('Weniger, aber besser'): el buen diseño es lo menos
+        posible"
+    - id: B
+      ca: "'El disseny ha d'expressar l'emoció individual per damunt de la utilitat'"
+      es: "'El diseño debe expresar la emoción individual por encima de la utilidad'"
+    - id: C
+      ca: "'L'ornament és la culminació de tot producte industrial'"
+      es: "'El ornamento es la culminación de todo producto industrial'"
+    - id: D
+      ca: "'La forma ha de ser independent de la funció per garantir la novetat'"
+      es: "'La forma debe ser independiente de la función para garantizar la novedad'"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El principi que sintetitza Rams és 'Weniger, aber besser' ('menys, però
+      millor'): un disseny sobri, honest, durador i sense ornament superflu,
+      hereu del funcionalisme d'Ulm i la Bauhaus. Les altres opcions descriuen
+      posicions oposades (expressivisme, ornamentació o gratuïtat formal),
+      pròpies del postmodernisme o l'historicisme."
+    es: "El principio que sintetiza Rams es 'Weniger, aber besser' ('menos, pero
+      mejor'): un diseño sobrio, honesto, duradero y sin ornamento superfluo,
+      heredero del funcionalismo de Ulm y la Bauhaus. Las demás opciones
+      describen posiciones opuestas (expresivismo, ornamentación o gratuidad
+      formal), propias del posmodernismo o el historicismo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.functionalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: La cadira 'Vermell i Blau' (Red and Blue Chair, cap a 1918-1923), amb
+      plànols de color primari i estructura ortogonal de llistons, materialitza
+      en el moble els principis del moviment neoplasticista. Qui la va dissenyar
+      i a quin moviment pertany?
+    es: La silla 'Roja y Azul' (Red and Blue Chair, hacia 1918-1923), con planos de
+      color primario y estructura ortogonal de listones, materializa en el
+      mueble los principios del movimiento neoplasticista. ¿Quién la diseñó y a
+      qué movimiento pertenece?
+  options:
+    - id: A
+      ca: Gerrit Rietveld, moviment De Stijl (neoplasticisme)
+      es: Gerrit Rietveld, movimiento De Stijl (neoplasticismo)
+    - id: B
+      ca: Marcel Breuer, moviment Bauhaus
+      es: Marcel Breuer, movimiento Bauhaus
+    - id: C
+      ca: Le Corbusier, moviment Purisme
+      es: Le Corbusier, movimiento Purismo
+    - id: D
+      ca: Charles Rennie Mackintosh, moviment Art Nouveau
+      es: Charles Rennie Mackintosh, movimiento Art Nouveau
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La cadira 'Vermell i Blau' és obra de Gerrit Rietveld, membre del grup
+      neerlandès De Stijl, i tradueix a tres dimensions el vocabulari de
+      Mondrian (línies ortogonals i colors primaris). Breuer treballava el tub
+      d'acer a la Bauhaus; Le Corbusier és del Purisme; Mackintosh precedeix el
+      moviment i s'associa a l'Art Nouveau escocès.
+    es: La silla 'Roja y Azul' es obra de Gerrit Rietveld, miembro del grupo
+      neerlandés De Stijl, y traduce a tres dimensiones el vocabulario de
+      Mondrian (líneas ortogonales y colores primarios). Breuer trabajaba el
+      tubo de acero en la Bauhaus; Le Corbusier es del Purismo; Mackintosh
+      precede al movimiento y se asocia al Art Nouveau escocés.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: dis-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: design
+  type: multiple_choice
+  skills:
+    - design.history.functionalism
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El grup Memphis, fundat a Milà el 1981, es caracteritza per colors
+      estridents, formes geomètriques arbitràries i laminats decoratius.
+      Respecte al funcionalisme, quina afirmació el descriu correctament?
+    es: El grupo Memphis, fundado en Milán en 1981, se caracteriza por colores
+      estridentes, formas geométricas arbitrarias y laminados decorativos.
+      Respecto al funcionalismo, ¿qué afirmación lo describe correctamente?
+  options:
+    - id: A
+      ca: És una reacció postmoderna liderada per Ettore Sottsass que rebutja el dogma
+        funcionalista de 'la forma segueix la funció'
+      es: Es una reacción posmoderna liderada por Ettore Sottsass que rechaza el dogma
+        funcionalista de 'la forma sigue a la función'
+    - id: B
+      ca: És la continuació directa i ortodoxa dels principis de l'Escola d'Ulm
+      es: Es la continuación directa y ortodoxa de los principios de la Escuela de Ulm
+    - id: C
+      ca: És un moviment del racionalisme dels anys 1920 fundat per Walter Gropius
+      es: Es un movimiento del racionalismo de los años 1920 fundado por Walter
+        Gropius
+    - id: D
+      ca: És una branca del minimalisme que aplica el lema 'menys, però millor'
+      es: Es una rama del minimalismo que aplica el lema 'menos, pero mejor'
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Memphis (Milà, 1981), liderat per Ettore Sottsass, és emblema del disseny
+      postmodern: reivindica l'ornament, el color i la ironia com a reacció
+      contra el rigor funcionalista i el 'good design' racionalista. Ulm i
+      Gropius representen precisament el funcionalisme que Memphis contesta; el
+      lema 'menys, però millor' és de Dieter Rams, oposat a Memphis."
+    es: "Memphis (Milán, 1981), liderado por Ettore Sottsass, es emblema del diseño
+      posmoderno: reivindica el ornamento, el color y la ironía como reacción
+      contra el rigor funcionalista y el 'good design' racionalista. Ulm y
+      Gropius representan precisamente el funcionalismo que Memphis contesta; el
+      lema 'menos, pero mejor' es de Dieter Rams, opuesto a Memphis."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

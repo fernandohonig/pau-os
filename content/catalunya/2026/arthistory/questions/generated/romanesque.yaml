@@ -1,0 +1,326 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: art-r-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: arthistory
+  type: multiple_choice
+  skills:
+    - arthistory.medieval.romanesque
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin sistema d'aboceda és el més característic de l'arquitectura romànica
+      plenament desenvolupada?
+    es: ¿Qué sistema de abovedamiento es el más característico de la arquitectura
+      románica plenamente desarrollada?
+  options:
+    - id: A
+      ca: Volta de canó de mig punt (arcs de mig punt)
+      es: Bóveda de cañón de medio punto (arcos de medio punto)
+    - id: B
+      ca: Volta de creueria amb arcs apuntats
+      es: Bóveda de crucería con arcos apuntados
+    - id: C
+      ca: Sostre pla de fusta amb enteixinat
+      es: Techo plano de madera con artesonado
+    - id: D
+      ca: Cúpula sobre petxines d'influència bizantina
+      es: Cúpula sobre pechinas de influencia bizantina
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El romànic cobreix les naus amb volta de canó generada per la successió
+      d'arcs de mig punt (semicercle). La volta de creueria amb arcs apuntats és
+      pròpia del gòtic; l'enteixinat de fusta és típic de la basílica
+      paleocristiana, i la cúpula sobre petxines és una solució bizantina.
+    es: El románico cubre las naves con bóveda de cañón generada por la sucesión de
+      arcos de medio punto (semicírculo). La bóveda de crucería con arcos
+      apuntados es propia del gótico; el artesonado de madera es típico de la
+      basílica paleocristiana, y la cúpula sobre pechinas es una solución
+      bizantina.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: art-r-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: arthistory
+  type: multiple_choice
+  skills:
+    - arthistory.medieval.romanesque
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "A l'absis de Sant Climent de Taüll, el Crist en Majestat (Pantocràtor)
+      apareix representat dins de:"
+    es: "En el ábside de Sant Climent de Taüll, el Cristo en Majestad (Pantocrátor)
+      aparece representado dentro de:"
+  options:
+    - id: A
+      ca: una màndorla mística, amb les lletres alfa i omega i envoltat del tetramorf
+      es: una mandorla mística, con las letras alfa y omega y rodeado del tetramorfos
+    - id: B
+      ca: un simple nimbe crucífer, sense cap marc que l'envolti
+      es: un simple nimbo crucífero, sin marco alguno que lo rodee
+    - id: C
+      ca: un fons de paisatge naturalista amb profunditat espacial
+      es: un fondo de paisaje naturalista con profundidad espacial
+    - id: D
+      ca: un arc de triomf de tradició romana
+      es: un arco de triunfo de tradición romana
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El Pantocràtor de Taüll seu dins d'una màndorla (ametlla mística) amb
+      l'alfa i l'omega (principi i fi) i acompanyat del tetramorf, els símbols
+      dels quatre evangelistes. La pintura romànica és antinaturalista i
+      abstracta: no hi ha paisatge ni profunditat; el marc és la màndorla, no un
+      arc de triomf."
+    es: "El Pantocrátor de Taüll se sienta dentro de una mandorla (almendra mística)
+      con el alfa y la omega (principio y fin) y acompañado del tetramorfos, los
+      símbolos de los cuatro evangelistas. La pintura románica es
+      antinaturalista y abstracta: no hay paisaje ni profundidad; el marco es la
+      mandorla, no un arco de triunfo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: art-r-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: arthistory
+  type: multiple_choice
+  skills:
+    - arthistory.medieval.romanesque
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Una nau romànica de 6 m d'amplada es cobreix amb una volta de canó de secció
+      semicircular (de mig punt). Quant s'eleva la clau de la volta (l'intradós)
+      per sobre de la línia d'imposta on arrenca l'arc?
+    es: Una nave románica de 6 m de anchura se cubre con una bóveda de cañón de
+      sección semicircular (de medio punto). ¿Cuánto se eleva la clave de la
+      bóveda (el intradós) por encima de la línea de imposta donde arranca el
+      arco?
+  options:
+    - id: A
+      ca: 3 m
+      es: 3 m
+    - id: B
+      ca: 6 m
+      es: 6 m
+    - id: C
+      ca: 1,5 m
+      es: 1,5 m
+    - id: D
+      ca: 4,5 m
+      es: 4,5 m
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un arc de mig punt (semicercle) el radi és la meitat de la llum: r = 6/2
+      = 3 m. La fletxa o elevació de la clau per sobre de la imposta és
+      exactament el radi, és a dir 3 m. Prendre 6 m confon amplada amb alçada;
+      1,5 m seria un quart de la llum; 4,5 m no correspon a cap relació d'un
+      semicercle."
+    es: "En un arco de medio punto (semicírculo) el radio es la mitad de la luz: r =
+      6/2 = 3 m. La flecha o elevación de la clave por encima de la imposta es
+      exactamente el radio, es decir 3 m. Tomar 6 m confunde anchura con altura;
+      1,5 m sería un cuarto de la luz; 4,5 m no corresponde a ninguna relación
+      de un semicírculo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: art-r-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: arthistory
+  type: multiple_choice
+  skills:
+    - arthistory.medieval.romanesque
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: A les grans esglésies romàniques de pelegrinatge (com les del Camí de
+      Santiago), quin element es va incorporar a la capçalera per permetre la
+      circulació dels pelegrins al voltant de l'altar sense interrompre el
+      culte?
+    es: En las grandes iglesias románicas de peregrinación (como las del Camino de
+      Santiago), ¿qué elemento se incorporó a la cabecera para permitir la
+      circulación de los peregrinos alrededor del altar sin interrumpir el
+      culto?
+  options:
+    - id: A
+      ca: El deambulatori (girola) amb capelles radials
+      es: El deambulatorio (girola) con capillas radiales
+    - id: B
+      ca: El nàrtex a l'entrada de l'església
+      es: El nártex a la entrada de la iglesia
+    - id: C
+      ca: El creuer amb cimbori sobre el transsepte
+      es: El crucero con cimborrio sobre el transepto
+    - id: D
+      ca: L'atri porticat davant de la façana
+      es: El atrio porticado delante de la fachada
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Per gestionar el flux de pelegrins que volien venerar les relíquies, es va
+      prolongar la nau lateral al voltant de l'absis formant el deambulatori o
+      girola, sovint amb capelles radials. El nàrtex i l'atri són espais
+      d'entrada; el cimbori il·lumina el creuer, però cap d'aquests resol la
+      circulació al voltant de l'altar.
+    es: Para gestionar el flujo de peregrinos que querían venerar las reliquias, se
+      prolongó la nave lateral alrededor del ábside formando el deambulatorio o
+      girola, a menudo con capillas radiales. El nártex y el atrio son espacios
+      de entrada; el cimborrio ilumina el crucero, pero ninguno resuelve la
+      circulación alrededor del altar.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: art-r-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: arthistory
+  type: multiple_choice
+  skills:
+    - arthistory.medieval.romanesque
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Per què les esglésies romàniques tenen murs molt gruixuts, contraforts i
+      finestres petites i escasses?
+    es: ¿Por qué las iglesias románicas tienen muros muy gruesos, contrafuertes y
+      ventanas pequeñas y escasas?
+  options:
+    - id: A
+      ca: Perquè la volta de canó exerceix una empenta lateral contínua que el mur ha
+        de contrarestar, cosa que limita l'obertura de buits
+      es: Porque la bóveda de cañón ejerce un empuje lateral continuo que el muro debe
+        contrarrestar, lo que limita la apertura de vanos
+    - id: B
+      ca: Perquè encara no es coneixia la tècnica del vidre i no es podien tancar les
+        finestres
+      es: Porque todavía no se conocía la técnica del vidrio y no se podían cerrar las
+        ventanas
+    - id: C
+      ca: Perquè els arcbotants desviaven l'empenta cap a l'exterior i permetien murs
+        prims
+      es: Porque los arbotantes desviaban el empuje hacia el exterior y permitían
+        muros delgados
+    - id: D
+      ca: Perquè una norma litúrgica prohibia l'entrada de llum natural al temple
+      es: Porque una norma litúrgica prohibía la entrada de luz natural al templo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La volta de canó transmet una empenta lateral contínua al llarg de tot el
+      mur; per resistir-la calen murs gruixuts i contraforts, i obrir moltes
+      finestres els debilitaria. Per això el romànic és de poca llum. El vidre
+      sí que es coneixia; els arcbotants són una solució gòtica (permeten murs
+      prims), i no hi havia cap prohibició litúrgica de la llum.
+    es: La bóveda de cañón transmite un empuje lateral continuo a lo largo de todo
+      el muro; para resistirlo se necesitan muros gruesos y contrafuertes, y
+      abrir muchas ventanas los debilitaría. Por eso el románico tiene poca luz.
+      El vidrio sí se conocía; los arbotantes son una solución gótica (permiten
+      muros delgados), y no existía ninguna prohibición litúrgica de la luz.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: art-r-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: arthistory
+  type: multiple_choice
+  skills:
+    - arthistory.medieval.romanesque
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "L'anomenat 'primer romànic' o romànic llombard (segle XI), present a
+      Catalunya en esglésies com Sant Vicenç de Cardona o Sant Pere de Rodes, es
+      reconeix exteriorment sobretot per:"
+    es: "El llamado 'primer románico' o románico lombardo (siglo XI), presente en
+      Cataluña en iglesias como Sant Vicenç de Cardona o Sant Pere de Rodes, se
+      reconoce exteriormente sobre todo por:"
+  options:
+    - id: A
+      ca: Els frisos d'arcuacions cegues i les bandes o lesenes llombardes en carreu
+        petit
+      es: Los frisos de arquillos ciegos y las bandas o lesenas lombardas en sillarejo
+    - id: B
+      ca: Els grans rosetons calats i els pinacles a la façana
+      es: Los grandes rosetones calados y los pináculos en la fachada
+    - id: C
+      ca: El revestiment ceràmic vidriat i els arcs de ferradura
+      es: El revestimiento cerámico vidriado y los arcos de herradura
+    - id: D
+      ca: Els frontons triangulars amb columnes d'ordre corinti
+      es: Los frontones triangulares con columnas de orden corintio
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El primer romànic, difós pels mestres llombards, es caracteritza per la
+      construcció en carreu petit i una decoració exterior molt sòbria feta amb
+      bandes verticals (lesenes o bandes llombardes) unides a la part alta per
+      frisos d'arcuacions cegues. Els rosetons i pinacles són gòtics; els arcs
+      de ferradura i la ceràmica vidriada són hispanomusulmans, i els frontons
+      corintis, clàssics.
+    es: El primer románico, difundido por los maestros lombardos, se caracteriza por
+      la construcción en sillarejo y una decoración exterior muy sobria hecha
+      con bandas verticales (lesenas o bandas lombardas) unidas en la parte alta
+      por frisos de arquillos ciegos. Los rosetones y pináculos son góticos; los
+      arcos de herradura y la cerámica vidriada son hispanomusulmanes, y los
+      frontones corintios, clásicos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

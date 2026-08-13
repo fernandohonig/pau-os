@@ -1,0 +1,322 @@
+- id: geography.physical
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Geografia física d'Espanya
+    es: Geografía física de España
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.physical.relief
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: El relleu
+    es: El relieve
+  parent: geography.physical
+  status: published
+  competencies:
+    - reasoning
+    - communication
+
+- id: geography.physical.climate
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Clima i temps
+    es: Clima y tiempo
+  parent: geography.physical
+  prerequisites:
+    - geography.physical.relief
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.physical.hydrography
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Aigües i xarxa hidrogràfica"
+    es: "Aguas y red hidrográfica"
+  parent: geography.physical
+  prerequisites:
+    - geography.physical.relief
+    - geography.physical.climate
+  status: published
+  competencies:
+    - reasoning
+    - communication
+
+- id: geography.physical.natural_landscapes
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Paisatges naturals
+    es: Paisajes naturales
+  parent: geography.physical
+  prerequisites:
+    - geography.physical.climate
+    - geography.physical.hydrography
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+    - communication
+
+- id: geography.human
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Geografia humana
+    es: Geografía humana
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.human.population
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Població i demografia"
+    es: "Población y demografía"
+  parent: geography.human
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.human.urban
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Poblament urbà i ciutats"
+    es: "Poblamiento urbano y ciudades"
+  parent: geography.human
+  prerequisites:
+    - geography.human.population
+  status: published
+  competencies:
+    - reasoning
+    - communication
+
+- id: geography.economic
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Activitats econòmiques"
+    es: Actividades económicas
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.economic.primary
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Sector primari"
+    es: Sector primario
+  parent: geography.economic
+  prerequisites:
+    - geography.physical.natural_landscapes
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.economic.secondary
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Sector secundari i indústria"
+    es: Sector secundario e industria
+  parent: geography.economic
+  prerequisites:
+    - geography.economic.primary
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.economic.tertiary
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Sector terciari, serveis i turisme"
+    es: "Sector terciario, servicios y turismo"
+  parent: geography.economic
+  prerequisites:
+    - geography.economic.secondary
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+    - communication
+
+- id: geography.territorial
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Organització territorial"
+    es: Organización territorial
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.territorial.autonomous_communities
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Comunitats autònomes"
+    es: Comunidades autónomas
+  parent: geography.territorial
+  status: published
+  competencies:
+    - reasoning
+    - communication
+
+- id: geography.territorial.imbalances
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Desequilibris territorials"
+    es: Desequilibrios territoriales
+  parent: geography.territorial
+  prerequisites:
+    - geography.territorial.autonomous_communities
+    - geography.human.population
+    - geography.economic.tertiary
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.europe_world
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Espanya en el context europeu i mundial"
+    es: "España en el contexto europeo y mundial"
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.europe_world.eu
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Espanya a la Unió Europea"
+    es: "España en la Unión Europea"
+  parent: geography.europe_world
+  prerequisites:
+    - geography.territorial.autonomous_communities
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: geography.europe_world.globalization
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Espanya en un món globalitzat"
+    es: "España en un mundo globalizado"
+  parent: geography.europe_world
+  prerequisites:
+    - geography.europe_world.eu
+    - geography.economic.tertiary
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+    - communication
+
+- id: geography.analysis
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Anàlisi i interpretació geogràfica"
+    es: "Análisis e interpretación geográfica"
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+    - communication
+
+- id: geography.analysis.maps
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Interpretació de mapes i imatges"
+    es: "Interpretación de mapas e imágenes"
+  parent: geography.analysis
+  prerequisites:
+    - geography.physical.relief
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+    - communication
+
+- id: geography.analysis.data
+  version: 1
+  subject: geography
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Interpretació de dades i gràfics"
+    es: "Interpretación de datos y gráficos"
+  parent: geography.analysis
+  prerequisites:
+    - geography.human.population
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+    - communication

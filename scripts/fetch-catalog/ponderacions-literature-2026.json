@@ -1,0 +1,523 @@
+{
+  "_source": {
+    "authority": "Generalitat de Catalunya — Consell Interuniversitari de Catalunya",
+    "title": "Ponderacions Catalunya 2026",
+    "subject": "Literatura Catalana — fase específica",
+    "url": "https://universitats.gencat.cat/ca/preinscripcions/ponderacions/",
+    "method": "coordinate-based extraction of the official PDF (Literatura Catalana column); joined to degrees by university+name",
+    "retrieved_at": "2026-08-13",
+    "note": "Column used: Literatura Catalana (a separate Literatura Castellana column also exists). Coefficients are official (0.10/0.20) read directly from the PDF grid; no values invented. Degrees not listed are not weighted by this subject. Names provisional pending 1:1 reconciliation for a minority of double/campus degrees."
+  },
+  "entries": [
+    {
+      "uni": "urv",
+      "name": "Anglès",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Cinematografia \"ESCAC\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Ciència, Tecnologia i Humanitats",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Ciències de l'Activitat Física i de l'Esport / Educació Primària (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Comunicació Audiovisual",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Comunicació Audiovisual / Gestió d'Informació i Documentació Digital (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Comunicació Cultural",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Comunicació de les Organitzacions",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Comunicació i Indústries Culturals",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Comunicació i Periodisme Audiovisuals",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Educació Infantil",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Educació Infantil",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Educació Infantil",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Educació Infantil",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Educació Infantil",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Educació Infantil (El Vendrell)",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Educació Infantil (Tortosa)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Educació Infantil / Educació Primària (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Educació Infantil / Educació Primària (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Educació Infantil / Educació Primària (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Educació Infantil / Educació Primària (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Educació Infantil / Educació Primària (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Educació Primària",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Educació Primària",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Educació Primària",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Educació Primària",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Educació Primària (Docència en Anglès)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Educació Primària (modalitat bilingüe)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Educació Primària (modalitat dual)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Educació Primària / Ciències de l'Activitat Física i de l'Esport (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Educació Primària / Educació Infantil (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Educació Primària / Educació Infantil (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Educació Primària / Educació Infantil (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Educació Primària / Educació Infantil (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Educació Primària / Educació Infantil (5 anys) (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis Anglesos",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Estudis Anglesos",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Estudis Anglesos (Docència en Anglès)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Estudis Anglesos / Llengües Aplicades i Traducció (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis d'Anglès i Català",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis d'Anglès i de Clàssiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis d'Anglès i Espanyol",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis d'Anglès i Francès",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis d'Espanyol i Xinès: Llengua, Literatura i Cultura",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis d'Àsia Oriental -Japonès-",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis d'Àsia Oriental -Xinès-",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis de Català i Espanyol",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Estudis Literaris",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Estudis Socioculturals de Gènere",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Estudis Àrabs i Hebreus",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Filologia Catalana",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Filologia Catalana",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Filologia Catalana / Filologia Hispànica (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Filologia Catalana i Estudis Occitans",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Filologia Catalana i Estudis Occitans / Llengües Aplicades i Traducció (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Filologia Catalana: Estudis de Literatura i Lingüística",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Filologia Clàssica",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Filologia Hispànica",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Filologia Hispànica",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Filologia Hispànica",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Filologia Hispànica / Filologia Catalana (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Filologia Hispànica / Llengües Aplicades i Traducció (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Gestió d'Informació i Documentació Digital",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Gestió d'Informació i Documentació Digital / Comunicació Audiovisual (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Gestió en Turisme i Hoteleria",
+      "coef": 0.1
+    },
+    {
+      "uni": "upf",
+      "name": "Grau Obert, Programa de (Agrupació)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Història de l'Art i Gestió del Patrimoni Artístic",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Història, Política i Economia Contemporànies",
+      "coef": 0.1
+    },
+    {
+      "uni": "uab",
+      "name": "Humanitats",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Humanitats",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Investigació Privada (Títol propi, no oficial)",
+      "coef": 0.1
+    },
+    {
+      "uni": "ub",
+      "name": "Lingüística",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Llengua i Literatura Catalanes",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Llengua i Literatura Espanyoles",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Llengua i Literatura Hispàniques",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Llengües Aplicades",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Llengües Aplicades / Traducció i Interpretació - Anglès - (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Llengües Aplicades i Traducció / Estudis Anglesos (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Llengües Aplicades i Traducció / Filologia Catalana i Estudis Occitans (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "udl",
+      "name": "Llengües Aplicades i Traducció / Filologia Hispànica (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Llengües i Literatures Modernes",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Llengües Romàniques i les seves Literatures",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Mitjans Audiovisuals \"Tecnocampus\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Periodisme",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Periodisme",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Periodisme",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "urv",
+      "name": "Publicitat i Relacions Públiques",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Publicitat i Relacions Públiques / Turisme (simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "ub",
+      "name": "Publicitat, Relacions Públiques i Màrqueting \"ESRP\"",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Traducció i Interpretació - Alemany",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Traducció i Interpretació - Alemany / Francès / Llengua de Signes Catalana -",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Traducció i Interpretació - Anglès",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Traducció i Interpretació - Anglès",
+      "coef": 0.2
+    },
+    {
+      "uni": "upf",
+      "name": "Traducció i Interpretació - Anglès - / Llengües Aplicades (Simultaneïtat)",
+      "coef": 0.2
+    },
+    {
+      "uni": "uab",
+      "name": "Traducció i Interpretació - Francès",
+      "coef": 0.2
+    },
+    {
+      "uni": "udg",
+      "name": "Turisme / Publicitat i Relacions Públiques (simultaneïtat)",
+      "coef": 0.2
+    }
+  ]
+}

@@ -74,6 +74,11 @@ const SUBJECT_NAMES: Record<string, { ca: string; es: string }> = {
   technology: { ca: 'Tecnologia i Enginyeria', es: 'Tecnología e Ingeniería' },
   drawing: { ca: 'Dibuix Tècnic', es: 'Dibujo Técnico' },
   english: { ca: 'Anglès', es: 'Inglés' },
+  latin: { ca: 'Llatí', es: 'Latín' },
+  greek: { ca: 'Grec', es: 'Griego' },
+  literature: { ca: 'Literatura Catalana', es: 'Literatura Catalana' },
+  geography: { ca: 'Geografia', es: 'Geografía' },
+  design: { ca: 'Disseny', es: 'Diseño' },
 };
 const subjectDisplay = (id: string): { ca: string; es: string } =>
   SUBJECT_NAMES[id] ?? { ca: id, es: id };

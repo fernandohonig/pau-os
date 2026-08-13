@@ -1,0 +1,236 @@
+# Literatura Catalana — PAU Catalunya (2n batxillerat, LOMLOE)
+# Skill graph: literary movements, key authors/works, and text-analysis tools.
+
+# --- Eines d'anàlisi (foundational tools) ---
+- id: literature.tools
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Eines d'anàlisi literària", es: "Herramientas de análisis literario" }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.tools.genres
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Gèneres literaris: èpica, lírica, dramàtica", es: "Géneros literarios: épica, lírica, dramática" }
+  parent: literature.tools
+  status: published
+  competencies: [reasoning, communication]
+
+- id: literature.tools.metrics_figures
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Mètrica, rima i figures retòriques", es: "Métrica, rima y figuras retóricas" }
+  parent: literature.tools
+  status: published
+  competencies: [reasoning, communication]
+
+- id: literature.tools.text_commentary
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Comentari de text literari", es: "Comentario de texto literario" }
+  parent: literature.tools
+  prerequisites: [literature.tools.genres, literature.tools.metrics_figures]
+  status: published
+  competencies: [critical_thinking, communication]
+
+# --- Literatura medieval ---
+- id: literature.medieval
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Literatura medieval", es: "Literatura medieval" }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.medieval.ramon_llull
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Ramon Llull: la prosa i l'obra fundacional", es: "Ramon Llull: la prosa y la obra fundacional" }
+  parent: literature.medieval
+  prerequisites: [literature.tools.genres]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.medieval.ausias_march
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Ausiàs March: la poesia amorosa i moral", es: "Ausiàs March: la poesía amorosa y moral" }
+  parent: literature.medieval
+  prerequisites: [literature.tools.metrics_figures]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.medieval.tirant_lo_blanc
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Tirant lo Blanc i la novel·la cavalleresca", es: "Tirant lo Blanc y la novela caballeresca" }
+  parent: literature.medieval
+  prerequisites: [literature.medieval.ramon_llull]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# --- Literatura moderna: Decadència i Renaixença ---
+- id: literature.modern
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Literatura moderna", es: "Literatura moderna" }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.modern.decadencia
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "La Decadència: els segles XVI-XVIII", es: "La Decadencia: los siglos XVI-XVIII" }
+  parent: literature.modern
+  prerequisites: [literature.medieval.tirant_lo_blanc]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.modern.renaixenca
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "La Renaixença: Aribau, Verdaguer i els Jocs Florals", es: "La Renaixença: Aribau, Verdaguer y los Jocs Florals" }
+  parent: literature.modern
+  prerequisites: [literature.modern.decadencia]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# --- El Modernisme i el Noucentisme ---
+- id: literature.modernism_noucentisme
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "El Modernisme i el Noucentisme", es: "El Modernismo y el Novecentismo" }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.modernism_noucentisme.modernism
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "El Modernisme: Rusiñol, Guimerà i Maragall", es: "El Modernismo: Rusiñol, Guimerà y Maragall" }
+  parent: literature.modernism_noucentisme
+  prerequisites: [literature.modern.renaixenca]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.modernism_noucentisme.noucentisme
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "El Noucentisme: Eugeni d'Ors i l'ideal de civilitat", es: "El Novecentismo: Eugeni d'Ors y el ideal de civilidad" }
+  parent: literature.modernism_noucentisme
+  prerequisites: [literature.modernism_noucentisme.modernism]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+# --- Literatura del segle XX ---
+- id: literature.twentieth_century
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Literatura del segle XX", es: "Literatura del siglo XX" }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.twentieth_century.poetry_carner_riba
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Poesia: Josep Carner i Carles Riba", es: "Poesía: Josep Carner y Carles Riba" }
+  parent: literature.twentieth_century
+  prerequisites: [literature.modernism_noucentisme.noucentisme, literature.tools.metrics_figures]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: literature.twentieth_century.poetry_foix_espriu
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Poesia: J.V. Foix i Salvador Espriu", es: "Poesía: J.V. Foix y Salvador Espriu" }
+  parent: literature.twentieth_century
+  prerequisites: [literature.twentieth_century.poetry_carner_riba]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: literature.twentieth_century.narrative_rodoreda
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Narrativa: Mercè Rodoreda", es: "Narrativa: Mercè Rodoreda" }
+  parent: literature.twentieth_century
+  prerequisites: [literature.tools.genres]
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: literature.twentieth_century.narrative_villalonga
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Narrativa: Llorenç Villalonga", es: "Narrativa: Llorenç Villalonga" }
+  parent: literature.twentieth_century
+  prerequisites: [literature.twentieth_century.narrative_rodoreda]
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: literature.twentieth_century.theatre
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Teatre del segle XX: de Sagarra a Benet i Jornet", es: "Teatro del siglo XX: de Sagarra a Benet i Jornet" }
+  parent: literature.twentieth_century
+  prerequisites: [literature.tools.genres]
+  status: published
+  competencies: [reasoning, communication]
+
+# --- Literatura contemporània i actual ---
+- id: literature.contemporary
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Literatura contemporània i actual", es: "Literatura contemporánea y actual" }
+  status: published
+  competencies: [critical_thinking, communication]
+
+- id: literature.contemporary.current_narrative
+  version: 1
+  subject: literature
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Narrativa i poesia actuals: veus del segle XXI", es: "Narrativa y poesía actuales: voces del siglo XXI" }
+  parent: literature.contemporary
+  prerequisites: [literature.twentieth_century.narrative_villalonga, literature.twentieth_century.poetry_foix_espriu]
+  status: published
+  competencies: [critical_thinking, communication]

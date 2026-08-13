@@ -1,0 +1,302 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: lla-m-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En la mitologia romana, cada divinitat sol tenir un equivalent grec. Quin
+      déu grec correspon al romà Neptú, senyor del mar?
+    es: En la mitología romana, cada divinidad suele tener un equivalente griego.
+      ¿Qué dios griego corresponde al romano Neptuno, señor del mar?
+  options:
+    - id: A
+      ca: Posidó
+      es: Poseidón
+    - id: B
+      ca: Hades
+      es: Hades
+    - id: C
+      ca: Zeus
+      es: Zeus
+    - id: D
+      ca: Ares
+      es: Ares
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Neptú és el déu romà del mar; el seu equivalent grec és Posidó, que porta el
+      trident. Hades és el déu del món dels morts (romà Plutó/Dis), Zeus equival
+      a Júpiter i Ares a Mart.
+    es: Neptuno es el dios romano del mar; su equivalente griego es Poseidón, que
+      porta el tridente. Hades es el dios del inframundo (romano Plutón/Dis),
+      Zeus equivale a Júpiter y Ares a Marte.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-m-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Segons la cronologia tradicional fixada per Varró, en quin any es va fundar
+      la ciutat de Roma (ab urbe condita)?
+    es: Según la cronología tradicional fijada por Varrón, ¿en qué año se fundó la
+      ciudad de Roma (ab urbe condita)?
+  options:
+    - id: A
+      ca: 753 aC
+      es: 753 a. C.
+    - id: B
+      ca: 509 aC
+      es: 509 a. C.
+    - id: C
+      ca: 44 aC
+      es: 44 a. C.
+    - id: D
+      ca: 476 dC
+      es: 476 d. C.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La tradició situa la fundació de Roma per Ròmul el 753 aC, data d'inici del
+      còmput 'ab urbe condita'. El 509 aC és l'inici de la República; el 44 aC,
+      l'assassinat de Cèsar; el 476 dC, la caiguda de l'Imperi romà d'Occident.
+    es: La tradición sitúa la fundación de Roma por Rómulo en 753 a. C., fecha de
+      inicio del cómputo 'ab urbe condita'. El 509 a. C. es el inicio de la
+      República; el 44 a. C., el asesinato de César; el 476 d. C., la caída del
+      Imperio romano de Occidente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-m-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Les sacerdotesses de Vesta (les vestals) tenien cura del foc sagrat de la
+      deessa a Roma. Quantes vestals formaven el col·legi en època clàssica?
+    es: Las sacerdotisas de Vesta (las vestales) cuidaban del fuego sagrado de la
+      diosa en Roma. ¿Cuántas vestales formaban el colegio en época clásica?
+  options:
+    - id: A
+      ca: "6"
+      es: "6"
+    - id: B
+      ca: "3"
+      es: "3"
+    - id: C
+      ca: "9"
+      es: "9"
+    - id: D
+      ca: "12"
+      es: "12"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El col·legi de les vestals el formaven 6 sacerdotesses, encarregades de
+      mantenir encès el foc sagrat de Vesta i de guardar vot de castedat durant
+      els 30 anys de servei. Els altres nombres no corresponen a aquesta
+      institució.
+    es: El colegio de las vestales lo formaban 6 sacerdotisas, encargadas de
+      mantener encendido el fuego sagrado de Vesta y de guardar voto de castidad
+      durante los 30 años de servicio. Los demás números no corresponden a esta
+      institución.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-m-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quin déu romà, sense equivalent grec directe, es representava amb dues cares
+      oposades i presidia els inicis, els llindars i les portes, motiu pel qual
+      el mes de gener rep el seu nom?
+    es: ¿Qué dios romano, sin equivalente griego directo, se representaba con dos
+      caras opuestas y presidía los comienzos, los umbrales y las puertas,
+      motivo por el cual el mes de enero recibe su nombre?
+  options:
+    - id: A
+      ca: Janus
+      es: Jano
+    - id: B
+      ca: Saturn
+      es: Saturno
+    - id: C
+      ca: Mercuri
+      es: Mercurio
+    - id: D
+      ca: Vulcà
+      es: Vulcano
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Janus (bifront) és el déu dels inicis, els llindars i les portes; el mes de
+      'ianuarius' (gener) deriva del seu nom. Les portes del seu temple s'obrien
+      en temps de guerra. Saturn s'associa a l'agricultura i l'edat d'or,
+      Mercuri al comerç i Vulcà al foc i la ferreria.
+    es: Jano (bifronte) es el dios de los comienzos, los umbrales y las puertas; el
+      mes de 'ianuarius' (enero) deriva de su nombre. Las puertas de su templo
+      se abrían en tiempo de guerra. Saturno se asocia a la agricultura y la
+      edad de oro, Mercurio al comercio y Vulcano al fuego y la fragua.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-m-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En la religió romana, diversos col·legis sacerdotals s'ocupaven de
+      l'endevinació. Quins sacerdots interpretaven la voluntat dels déus
+      observant el vol i el cant dels ocells?
+    es: En la religión romana, varios colegios sacerdotales se ocupaban de la
+      adivinación. ¿Qué sacerdotes interpretaban la voluntad de los dioses
+      observando el vuelo y el canto de las aves?
+  options:
+    - id: A
+      ca: Els àugurs
+      es: Los augures
+    - id: B
+      ca: Els harúspexs
+      es: Los harúspices
+    - id: C
+      ca: Els flàmens
+      es: Los flámines
+    - id: D
+      ca: Els pontífexs
+      es: Los pontífices
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els àugurs interpretaven els auspicis a partir del vol, el cant i el
+      comportament dels ocells. Els harúspexs, d'origen etrusc, llegien les
+      entranyes (sobretot el fetge) dels animals sacrificats; els flàmens eren
+      sacerdots dedicats a una divinitat concreta i els pontífexs supervisaven
+      el culte públic.
+    es: Los augures interpretaban los auspicios a partir del vuelo, el canto y el
+      comportamiento de las aves. Los harúspices, de origen etrusco, leían las
+      entrañas (sobre todo el hígado) de los animales sacrificados; los flámines
+      eran sacerdotes dedicados a una divinidad concreta y los pontífices
+      supervisaban el culto público.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-m-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.72
+  question:
+    ca: La Tríada Capitolina era el conjunt de divinitats principals venerades al
+      temple del Capitoli a Roma. Quines tres divinitats la formaven?
+    es: La Tríada Capitolina era el conjunto de divinidades principales veneradas en
+      el templo del Capitolio en Roma. ¿Qué tres divinidades la formaban?
+  options:
+    - id: A
+      ca: Júpiter, Juno i Minerva
+      es: Júpiter, Juno y Minerva
+    - id: B
+      ca: Júpiter, Mart i Quirí
+      es: Júpiter, Marte y Quirino
+    - id: C
+      ca: Júpiter, Neptú i Plutó
+      es: Júpiter, Neptuno y Plutón
+    - id: D
+      ca: Júpiter, Juno i Vesta
+      es: Júpiter, Juno y Vesta
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Tríada Capitolina la formaven Júpiter, Juno i Minerva, venerats al temple
+      del turó Capitolí. La combinació Júpiter, Mart i Quirí és l'anomenada
+      tríada arcaica (precapitolina). Júpiter, Neptú i Plutó són els tres
+      germans que es reparteixen el món, i Vesta no formava part de la tríada
+      capitolina.
+    es: La Tríada Capitolina la formaban Júpiter, Juno y Minerva, venerados en el
+      templo de la colina Capitolina. La combinación Júpiter, Marte y Quirino es
+      la llamada tríada arcaica (precapitolina). Júpiter, Neptuno y Plutón son
+      los tres hermanos que se reparten el mundo, y Vesta no formaba parte de la
+      tríada capitolina.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

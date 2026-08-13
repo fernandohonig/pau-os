@@ -1,0 +1,4857 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: geog-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.relief
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin és el cim més alt de la Península Ibèrica i a quina unitat de relleu es
+      troba?
+    es: ¿Cuál es la cumbre más alta de la Península Ibérica y en qué unidad de
+      relieve se encuentra?
+  options:
+    - id: A
+      ca: El Mulhacén (3.479 m), a Sierra Nevada (Serralades Bètiques)
+      es: El Mulhacén (3.479 m), en Sierra Nevada (Cordilleras Béticas)
+    - id: B
+      ca: El Teide (3.718 m), a l'illa de Tenerife
+      es: El Teide (3.718 m), en la isla de Tenerife
+    - id: C
+      ca: L'Aneto (3.404 m), als Pirineus
+      es: El Aneto (3.404 m), en los Pirineos
+    - id: D
+      ca: La Torre de Cerredo (2.650 m), als Picos d'Europa
+      es: La Torre de Cerredo (2.650 m), en los Picos de Europa
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Mulhacén (3.479 m), a Sierra Nevada, és el sostre de la Península
+      Ibèrica. El Teide (3.718 m) és el cim més alt de tot Espanya, però és a
+      les illes Canàries, fora de la Península (error freqüent). L'Aneto (3.404
+      m) és el més alt dels Pirineus i la Torre de Cerredo (2.650 m) el de la
+      Serralada Cantàbrica; tots dos són inferiors al Mulhacén.
+    es: El Mulhacén (3.479 m), en Sierra Nevada, es el techo de la Península
+      Ibérica. El Teide (3.718 m) es la cumbre más alta de toda España, pero
+      está en las islas Canarias, fuera de la Península (error frecuente). El
+      Aneto (3.404 m) es el más alto de los Pirineos y la Torre de Cerredo
+      (2.650 m) el de la Cordillera Cantábrica; ambos son inferiores al
+      Mulhacén.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.relief
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: La Meseta Central és la unitat de relleu més extensa de la Península. Quina
+      és la seva altitud mitjana aproximada, que fa d'Espanya un dels països més
+      elevats d'Europa?
+    es: La Meseta Central es la unidad de relieve más extensa de la Península. ¿Cuál
+      es su altitud media aproximada, que hace de España uno de los países más
+      elevados de Europa?
+  options:
+    - id: A
+      ca: Uns 600-700 m
+      es: Unos 600-700 m
+    - id: B
+      ca: Uns 200 m
+      es: Unos 200 m
+    - id: C
+      ca: Uns 1.500 m
+      es: Unos 1.500 m
+    - id: D
+      ca: Uns 100 m
+      es: Unos 100 m
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Meseta és una altiplà d'entre 600 i 700 m d'altitud mitjana (l'altitud
+      mitjana del conjunt d'Espanya és d'uns 660 m). Aquesta elevació
+      generalitzada situa Espanya entre els països més alts d'Europa. Valors de
+      100-200 m correspondrien a planes o depressions litorals, i 1.500 m a
+      zones de mitja muntanya, no a la mitjana de la Meseta.
+    es: La Meseta es una altiplanicie de entre 600 y 700 m de altitud media (la
+      altitud media del conjunto de España es de unos 660 m). Esa elevación
+      generalizada sitúa a España entre los países más altos de Europa. Valores
+      de 100-200 m corresponderían a llanuras o depresiones litorales, y 1.500 m
+      a zonas de media montaña, no a la media de la Meseta.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.relief
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: El relleu càrstic, amb formes com dolines, lapiaz, avencs i coves, es
+      desenvolupa de manera característica sobre roques...
+    es: El relieve kárstico, con formas como dolinas, lapiaz, simas y cuevas, se
+      desarrolla de manera característica sobre rocas...
+  options:
+    - id: A
+      ca: calcàries, per dissolució del carbonat de calci per l'aigua carbonatada
+      es: calizas, por disolución del carbonato de calcio por el agua carbonatada
+    - id: B
+      ca: silícies (granit), que originen berrocals i bolos
+      es: silíceas (granito), que originan berrocales y bolos
+    - id: C
+      ca: argiloses, que originen crestes i càrcaves (badlands)
+      es: arcillosas, que originan cárcavas (badlands)
+    - id: D
+      ca: volcàniques (basalt), que originen colades i calderes
+      es: volcánicas (basalto), que originan coladas y calderas
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El modelat càrstic és propi de les roques calcàries (CaCO3), solubles en
+      aigua carregada de CO2, que hi excava dolines, lapiaz, poljes i coves. El
+      relleu silici (granit) dona berrocals i bolos; l'argilós, càrcaves i
+      badlands; i el volcànic, formes com colades o calderes. Cada tipus de roca
+      determina un modelat diferent.
+    es: El modelado kárstico es propio de las rocas calizas (CaCO3), solubles en
+      agua cargada de CO2, que excava dolinas, lapiaz, poljes y cuevas. El
+      relieve silíceo (granito) da berrocales y bolos; el arcilloso, cárcavas y
+      badlands; y el volcánico, formas como coladas o calderas. Cada tipo de
+      roca determina un modelado distinto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.relief
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quines d'aquestes unitats de relleu es van formar principalment durant
+      l'orogènia alpina, al Terciari?
+    es: ¿Cuáles de estas unidades de relieve se formaron principalmente durante la
+      orogenia alpina, en el Terciario?
+  options:
+    - id: A
+      ca: Els Pirineus i les Serralades Bètiques
+      es: Los Pirineos y las Cordilleras Béticas
+    - id: B
+      ca: El Massís Galaic i Sierra Morena
+      es: El Macizo Galaico y Sierra Morena
+    - id: C
+      ca: El Sistema Central i els Montes de Toledo
+      es: El Sistema Central y los Montes de Toledo
+    - id: D
+      ca: La Serralada Cantàbrica occidental i el sòcol de la Meseta
+      es: La Cordillera Cantábrica occidental y el zócalo de la Meseta
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'orogènia alpina (Terciari) va plegar els sediments dipositats al mar de
+      Tethys i va aixecar els Pirineus i les Serralades Bètiques, les serralades
+      més joves i altes. El Massís Galaic, Sierra Morena i el sòcol de la Meseta
+      són d'origen herciniano (Paleozoic); el Sistema Central i els Montes de
+      Toledo són blocs hercinians rejovenits per fractura durant l'alpina, però
+      formats amb materials paleozoics.
+    es: La orogenia alpina (Terciario) plegó los sedimentos depositados en el mar de
+      Tethys y levantó los Pirineos y las Cordilleras Béticas, las cordilleras
+      más jóvenes y altas. El Macizo Galaico, Sierra Morena y el zócalo de la
+      Meseta son de origen herciniano (Paleozoico); el Sistema Central y los
+      Montes de Toledo son bloques hercinianos rejuvenecidos por fractura
+      durante la alpina, pero formados con materiales paleozoicos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.relief
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: El Sistema Central divideix la Meseta en dues submesetas. Quina afirmació és
+      correcta?
+    es: El Sistema Central divide la Meseta en dos submesetas. ¿Qué afirmación es
+      correcta?
+  options:
+    - id: A
+      ca: La submeseta nord (conca del Duero) és més elevada, a uns 700-800 m, que la
+        submeseta sud
+      es: La submeseta norte (cuenca del Duero) es más elevada, a unos 700-800 m, que
+        la submeseta sur
+    - id: B
+      ca: La submeseta sud és clarament més elevada que la nord
+      es: La submeseta sur es claramente más elevada que la norte
+    - id: C
+      ca: Les dues submesetas tenen la mateixa altitud mitjana, uns 300 m
+      es: Las dos submesetas tienen la misma altitud media, unos 300 m
+    - id: D
+      ca: La submeseta nord està drenada pel Guadalquivir
+      es: La submeseta norte está drenada por el Guadalquivir
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La submeseta nord, ocupada per la conca del Duero, és més alta (uns 700-800
+      m) que la submeseta sud, drenada pel Tajo i el Guadiana (uns 600-700 m).
+      El Guadalquivir no drena cap submeseta, sinó la depressió bètica, fora de
+      la Meseta. Les altituds no són iguals ni tan baixes com 300 m.
+    es: La submeseta norte, ocupada por la cuenca del Duero, es más alta (unos
+      700-800 m) que la submeseta sur, drenada por el Tajo y el Guadiana (unos
+      600-700 m). El Guadalquivir no drena ninguna submeseta, sino la depresión
+      bética, fuera de la Meseta. Las altitudes no son iguales ni tan bajas como
+      300 m.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.relief
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Les depressions de l'Ebre i del Guadalquivir comparteixen un mateix origen
+      geològic. Quin?
+    es: Las depresiones del Ebro y del Guadalquivir comparten un mismo origen
+      geológico. ¿Cuál?
+  options:
+    - id: A
+      ca: Són conques d'avantpaís de l'orogènia alpina, reblertes de sediments
+        terciaris i quaternaris
+      es: Son cuencas de antepaís de la orogenia alpina, rellenadas con sedimentos
+        terciarios y cuaternarios
+    - id: B
+      ca: Són fosses tectòniques (grabens) obertes al sòcol herciniano
+      es: Son fosas tectónicas (grabens) abiertas en el zócalo herciniano
+    - id: C
+      ca: Són antigues conques oceàniques plegades durant el Paleozoic
+      es: Son antiguas cuencas oceánicas plegadas durante el Paleozoico
+    - id: D
+      ca: Es van excavar per l'erosió glacial durant el Quaternari
+      es: Se excavaron por la erosión glacial durante el Cuaternario
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Totes dues són depressions exteriors de la Meseta, formades com a conques
+      d'avantpaís al peu de les serralades alpines: l'Ebre paral·lela als
+      Pirineus i el Guadalquivir a les Bètiques. Es van reblir amb potents
+      sèries de sediments terciaris (margues, argiles, calcàries) i quaternaris,
+      cosa que els dona el seu relleu planer i triangular. No són grabens del
+      sòcol, ni conques paleozoiques, ni valls d'origen glacial."
+    es: "Ambas son depresiones exteriores de la Meseta, formadas como cuencas de
+      antepaís al pie de las cordilleras alpinas: el Ebro paralela a los
+      Pirineos y el Guadalquivir a las Béticas. Se rellenaron con potentes
+      series de sedimentos terciarios (margas, arcillas, calizas) y
+      cuaternarios, lo que les da su relieve llano y triangular. No son grabens
+      del zócalo, ni cuencas paleozoicas, ni valles de origen glacial."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.climate
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Segons l'índex d'aridesa de Gaussen, un mes és sec (àrid) quan la
+      precipitació (en mm) és inferior al doble de la temperatura mitjana (en
+      °C), és a dir, quan P < 2T. En una estació de clima mediterrani, el mes de
+      juliol té una temperatura mitjana de 25 °C i una precipitació de 15 mm. El
+      juliol és un mes sec?
+    es: Según el índice de aridez de Gaussen, un mes es seco (árido) cuando la
+      precipitación (en mm) es inferior al doble de la temperatura media (en
+      °C), es decir, cuando P < 2T. En una estación de clima mediterráneo, el
+      mes de julio tiene una temperatura media de 25 °C y una precipitación de
+      15 mm. ¿Es julio un mes seco?
+  options:
+    - id: A
+      ca: Sí, perquè P (15 mm) < 2T (50), i per tant es compleix la condició
+        d'aridesa.
+      es: Sí, porque P (15 mm) < 2T (50), y por tanto se cumple la condición de
+        aridez.
+    - id: B
+      ca: No, perquè P (15 mm) > T/2 (12,5), de manera que no hi ha aridesa.
+      es: No, porque P (15 mm) > T/2 (12,5), de modo que no hay aridez.
+    - id: C
+      ca: No, perquè 15 mm de pluja és suficient i cap mes amb precipitació pot
+        considerar-se sec.
+      es: No, porque 15 mm de lluvia es suficiente y ningún mes con precipitación
+        puede considerarse seco.
+    - id: D
+      ca: Sí, però únicament perquè la temperatura supera els 20 °C, amb independència
+        de la pluja.
+      es: Sí, pero únicamente porque la temperatura supera los 20 °C, con
+        independencia de la lluvia.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El criteri de Gaussen és P < 2T. Amb T = 25 °C, el llindar és 2T = 50 mm.
+      Com que P = 15 mm < 50 mm, el mes es classifica com a sec/àrid. L'opció B
+      usa el llindar erroni T/2; l'opció C ignora el criteri quantitatiu;
+      l'opció D només mira la temperatura, però la sequedat depèn de la relació
+      entre P i 2T.
+    es: El criterio de Gaussen es P < 2T. Con T = 25 °C, el umbral es 2T = 50 mm.
+      Como P = 15 mm < 50 mm, el mes se clasifica como seco/árido. La opción B
+      usa el umbral erróneo T/2; la opción C ignora el criterio cuantitativo; la
+      opción D solo mira la temperatura, pero la sequedad depende de la relación
+      entre P y 2T.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.climate
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "Una estació presenta aquestes característiques climàtiques: precipitació
+      anual superior a 1.000 mm repartida al llarg de tot l'any (sense estació
+      seca estival), amplitud tèrmica anual reduïda (uns 9 °C), temperatures
+      suaus i cel sovint ennuvolat. A quin domini climàtic peninsular
+      correspon?"
+    es: "Una estación presenta estas características climáticas: precipitación anual
+      superior a 1.000 mm repartida a lo largo de todo el año (sin estación seca
+      estival), amplitud térmica anual reducida (unos 9 °C), temperaturas suaves
+      y cielo con frecuencia nublado. ¿A qué dominio climático peninsular
+      corresponde?"
+  options:
+    - id: A
+      ca: Clima oceànic (atlàntic), propi de la façana nord i nord-oest (Galícia,
+        cornisa cantàbrica).
+      es: Clima oceánico (atlántico), propio de la fachada norte y noroeste (Galicia,
+        cornisa cantábrica).
+    - id: B
+      ca: Clima mediterrani continentalitzat de l'interior peninsular (Meseta).
+      es: Clima mediterráneo continentalizado del interior peninsular (Meseta).
+    - id: C
+      ca: Clima mediterrani litoral, propi de la costa est peninsular.
+      es: Clima mediterráneo litoral, propio de la costa este peninsular.
+    - id: D
+      ca: Clima subtropical de les illes Canàries.
+      es: Clima subtropical de las islas Canarias.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'absència de sequera estival, les pluges abundants i regulars (>1.000 mm),
+      l'amplitud tèrmica petita i les temperatures suaus són trets del clima
+      oceànic del nord peninsular, per la influència marítima atlàntica i el pas
+      freqüent de fronts. El mediterrani continentalitzat (B) té gran amplitud
+      tèrmica i pluges escasses; el mediterrani litoral (C) té marcada sequera
+      estival; el subtropical canari (D) és càlid i molt més sec.
+    es: La ausencia de sequía estival, las lluvias abundantes y regulares (>1.000
+      mm), la escasa amplitud térmica y las temperaturas suaves son rasgos del
+      clima oceánico del norte peninsular, por la influencia marítima atlántica
+      y el paso frecuente de frentes. El mediterráneo continentalizado (B) tiene
+      gran amplitud térmica y lluvias escasas; el mediterráneo litoral (C) tiene
+      marcada sequía estival; el subtropical canario (D) es cálido y mucho más
+      seco.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.climate
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Segons les normals climàtiques de Madrid, el mes més càlid (juliol) té una
+      temperatura mitjana de 25,6 °C i el mes més fred (gener) de 6,3 °C. Quina
+      és l'amplitud (oscil·lació) tèrmica anual?
+    es: Según las normales climáticas de Madrid, el mes más cálido (julio) tiene una
+      temperatura media de 25,6 °C y el mes más frío (enero) de 6,3 °C. ¿Cuál es
+      la amplitud (oscilación) térmica anual?
+  options:
+    - id: A
+      ca: 19,3 °C
+      es: 19,3 °C
+    - id: B
+      ca: 31,9 °C
+      es: 31,9 °C
+    - id: C
+      ca: 16,0 °C
+      es: 16,0 °C
+    - id: D
+      ca: 9,65 °C
+      es: 9,65 °C
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'amplitud tèrmica anual és la diferència entre la mitjana del mes més
+      càlid i la del més fred: 25,6 − 6,3 = 19,3 °C. L'opció B suma les dues
+      mitjanes (25,6 + 6,3 = 31,9); l'opció C en fa la mitjana [(25,6 + 6,3)/2 ≈
+      16,0]; l'opció D pren la meitat de l'amplitud correcta."
+    es: "La amplitud térmica anual es la diferencia entre la media del mes más
+      cálido y la del más frío: 25,6 − 6,3 = 19,3 °C. La opción B suma ambas
+      medias (25,6 + 6,3 = 31,9); la opción C hace su promedio [(25,6 + 6,3)/2 ≈
+      16,0]; la opción D toma la mitad de la amplitud correcta."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.climate
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: S'aplica un gradient tèrmic vertical de 0,65 °C per cada 100 m d'ascens. Una
+      estació situada al fons d'una vall a 200 m d'altitud té una temperatura
+      mitjana anual de 16 °C. Estimeu la temperatura mitjana anual en un cim a
+      2.000 m d'altitud, a la mateixa latitud i exposició, considerant només
+      l'efecte de l'altitud.
+    es: Se aplica un gradiente térmico vertical de 0,65 °C por cada 100 m de
+      ascenso. Una estación situada en el fondo de un valle a 200 m de altitud
+      tiene una temperatura media anual de 16 °C. Estimad la temperatura media
+      anual en una cima a 2.000 m de altitud, a la misma latitud y exposición,
+      considerando solo el efecto de la altitud.
+  options:
+    - id: A
+      ca: 4,3 °C
+      es: 4,3 °C
+    - id: B
+      ca: 27,7 °C
+      es: 27,7 °C
+    - id: C
+      ca: 3,0 °C
+      es: 3,0 °C
+    - id: D
+      ca: −2,0 °C
+      es: −2,0 °C
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El desnivell és 2.000 − 200 = 1.800 m. El descens tèrmic és (1.800/100) ×
+      0,65 = 11,7 °C. La temperatura al cim: 16 − 11,7 = 4,3 °C. L'opció B suma
+      el descens en lloc de restar-lo (error de signe); l'opció C usa l'altitud
+      total 2.000 m en comptes del desnivell (13 °C de descens → 3,0 °C);
+      l'opció D aplica un gradient erroni d'1 °C/100 m (18 °C de descens → −2,0
+      °C)."
+    es: "El desnivel es 2.000 − 200 = 1.800 m. El descenso térmico es (1.800/100) ×
+      0,65 = 11,7 °C. La temperatura en la cima: 16 − 11,7 = 4,3 °C. La opción B
+      suma el descenso en lugar de restarlo (error de signo); la opción C usa la
+      altitud total 2.000 m en vez del desnivel (13 °C de descenso → 3,0 °C); la
+      opción D aplica un gradiente erróneo de 1 °C/100 m (18 °C de descenso →
+      −2,0 °C)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.climate
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "La \"gota freda\" (DANA) que provoca pluges torrencials a la façana
+      mediterrània peninsular, sobretot a la tardor, s'explica principalment
+      per:"
+    es: 'La "gota fría" (DANA) que provoca lluvias torrenciales en la fachada
+      mediterránea peninsular, sobre todo en otoño, se explica principalmente
+      por:'
+  options:
+    - id: A
+      ca: Una bossa d'aire molt fred en altitud (depressió aïllada) que circula sobre
+        un mar Mediterrani encara càlid, generant forta inestabilitat i
+        convecció.
+      es: Una bolsa de aire muy frío en altura (depresión aislada) que circula sobre
+        un mar Mediterráneo todavía cálido, generando fuerte inestabilidad y
+        convección.
+    - id: B
+      ca: L'expansió de l'anticicló de les Açores, que aporta aire sec i estable
+        durant l'estiu.
+      es: La expansión del anticiclón de las Azores, que aporta aire seco y estable
+        durante el verano.
+    - id: C
+      ca: El pas successiu de fronts atlàntics que travessen la península d'oest a est
+        a l'hivern.
+      es: El paso sucesivo de frentes atlánticos que atraviesan la península de oeste
+        a este en invierno.
+    - id: D
+      ca: Una inversió tèrmica que acumula aire fred al fons de les valls durant les
+        nits d'hivern.
+      es: Una inversión térmica que acumula aire frío en el fondo de los valles
+        durante las noches de invierno.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La gota freda/DANA es forma quan aire polar molt fred queda aïllat en
+      altitud sobre el Mediterrani occidental, encara càlid a la tardor. El fort
+      contrast tèrmic vertical dispara la convecció i la formació de
+      cúmulonimbus, amb pluges intenses reforçades pel relleu litoral. B descriu
+      la sequera estival; C, la dinàmica frontal atlàntica d'hivern; D, un
+      fenomen tèrmic local (boires/gelades), no de pluges torrencials.
+    es: La gota fría/DANA se forma cuando aire polar muy frío queda aislado en
+      altura sobre el Mediterráneo occidental, aún cálido en otoño. El fuerte
+      contraste térmico vertical dispara la convección y la formación de
+      cumulonimbos, con lluvias intensas reforzadas por el relieve litoral. B
+      describe la sequía estival; C, la dinámica frontal atlántica de invierno;
+      D, un fenómeno térmico local (nieblas/heladas), no de lluvias
+      torrenciales.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.climate
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: A les vessants de barlovent (nord) de les illes Canàries occidentals
+      (Tenerife, La Palma) apareix el característic "mar de núvols" en una
+      franja d'altitud (aproximadament entre 600 i 1.500 m). Quin és el
+      mecanisme principal que l'origina?
+    es: En las laderas de barlovento (norte) de las islas Canarias occidentales
+      (Tenerife, La Palma) aparece el característico "mar de nubes" en una
+      franja de altitud (aproximadamente entre 600 y 1.500 m). ¿Cuál es el
+      mecanismo principal que lo origina?
+  options:
+    - id: A
+      ca: Els vents alisis humits del NE, obligats a ascendir pel relleu, es refreden
+        i condensen, però la inversió tèrmica dels alisis (subsidència de
+        l'anticicló) en limita l'alçada.
+      es: Los vientos alisios húmedos del NE, obligados a ascender por el relieve, se
+        enfrían y condensan, pero la inversión térmica de los alisios
+        (subsidencia del anticiclón) limita su altura.
+    - id: B
+      ca: El corrent càlid del Golf, que evapora molta aigua que després condensa en
+        refredar-se en altitud.
+      es: La corriente cálida del Golfo, que evapora mucha agua que luego condensa al
+        enfriarse en altura.
+    - id: C
+      ca: El pas hivernal de fronts associats a les borrasques atlàntiques que arriben
+        a l'arxipèlag.
+      es: El paso invernal de frentes asociados a las borrascas atlánticas que llegan
+        al archipiélago.
+    - id: D
+      ca: L'efecte Föhn que descendeix i s'escalfa per la vessant sud (sotavent) de
+        les illes.
+      es: El efecto Föhn que desciende y se calienta por la ladera sur (sotavento) de
+        las islas.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els alisis del NE arriben humits i frescos (reforçats pel corrent fred de
+      Canàries) i, en topar amb el relleu insular, s'eleven, es refreden i
+      condensen formant el mar de núvols. La inversió tèrmica dels alisis,
+      deguda a la subsidència de l'anticicló de les Açores, actua com a "tapa" i
+      confina els núvols a una franja d'altitud. B inverteix el paper del
+      corrent (és fred, no càlid); C descriu una situació hivernal excepcional,
+      no el règim habitual; D correspon a la vessant seca de sotavent, on
+      precisament no hi ha mar de núvols.
+    es: Los alisios del NE llegan húmedos y frescos (reforzados por la corriente
+      fría de Canarias) y, al chocar con el relieve insular, se elevan, se
+      enfrían y condensan formando el mar de nubes. La inversión térmica de los
+      alisios, debida a la subsidencia del anticiclón de las Azores, actúa como
+      "tapa" y confina las nubes a una franja de altitud. B invierte el papel de
+      la corriente (es fría, no cálida); C describe una situación invernal
+      excepcional, no el régimen habitual; D corresponde a la ladera seca de
+      sotavento, donde precisamente no hay mar de nubes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.hydrography
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin és el riu més llarg que discorre íntegrament dins del territori
+      espanyol (uns 928 km de recorregut)?
+    es: ¿Cuál es el río más largo que discurre íntegramente dentro del territorio
+      español (unos 928 km de recorrido)?
+  options:
+    - id: A
+      ca: L'Ebre
+      es: El Ebro
+    - id: B
+      ca: El Tajo
+      es: El Tajo
+    - id: C
+      ca: El Duero
+      es: El Duero
+    - id: D
+      ca: El Guadalquivir
+      es: El Guadalquivir
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'Ebre neix a la serralada Cantàbrica i desemboca al delta (Tarragona), amb
+      uns 928 km tots dins d'Espanya: és el riu més llarg de recorregut
+      íntegrament espanyol. El Tajo (uns 1.007 km) és el més llarg de la
+      Península, però desemboca a Lisboa (Portugal); el Duero també travessa la
+      frontera cap a Portugal; el Guadalquivir (uns 657 km) sí que és
+      íntegrament espanyol, però és més curt."
+    es: "El Ebro nace en la cordillera Cantábrica y desemboca en el delta
+      (Tarragona), con unos 928 km todos dentro de España: es el río más largo
+      de recorrido íntegramente español. El Tajo (unos 1.007 km) es el más largo
+      de la Península, pero desemboca en Lisboa (Portugal); el Duero también
+      cruza la frontera hacia Portugal; el Guadalquivir (unos 657 km) sí es
+      íntegramente español, pero es más corto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.hydrography
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En un riu de règim nival pur, propi de conques d'alta muntanya pirinenca, en
+      quin mes s'assoleix normalment el cabal màxim?
+    es: En un río de régimen nival puro, propio de cuencas de alta montaña
+      pirenaica, ¿en qué mes se alcanza normalmente el caudal máximo?
+  options:
+    - id: A
+      ca: Gener
+      es: Enero
+    - id: B
+      ca: Juny
+      es: Junio
+    - id: C
+      ca: Octubre
+      es: Octubre
+    - id: D
+      ca: Agost
+      es: Agosto
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: En el règim nival el màxim cabal es produeix a finals de primavera i
+      principis d'estiu (maig-juny), quan es fon la neu acumulada a l'alta
+      muntanya; el mínim és a l'hivern, perquè la precipitació queda retinguda
+      en forma de neu i gel. El gener correspon al mínim hivernal; l'octubre és
+      típic del màxim tardorenc dels rius mediterranis (règim pluvial); l'agost
+      és estiatge.
+    es: En el régimen nival el máximo caudal se produce a finales de primavera y
+      principios de verano (mayo-junio), cuando se funde la nieve acumulada en
+      la alta montaña; el mínimo es en invierno, porque la precipitación queda
+      retenida en forma de nieve y hielo. Enero corresponde al mínimo invernal;
+      octubre es típico del máximo otoñal de los ríos mediterráneos (régimen
+      pluvial); agosto es estiaje.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.hydrography
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: El mòdul (cabal mitjà anual) d'un riu és de 250 m³/s. Durant el mes d'abril
+      el seu cabal mitjà mensual és de 400 m³/s. Quin és el coeficient de cabal
+      (Ck) d'abril?
+    es: El módulo (caudal medio anual) de un río es de 250 m³/s. Durante el mes de
+      abril su caudal medio mensual es de 400 m³/s. ¿Cuál es el coeficiente de
+      caudal (Ck) de abril?
+  options:
+    - id: A
+      ca: 0,63
+      es: 0,63
+    - id: B
+      ca: 1,6
+      es: 1,6
+    - id: C
+      ca: "150"
+      es: "150"
+    - id: D
+      ca: 1,5
+      es: 1,5
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El coeficient de cabal es defineix com Ck = cabal mitjà del mes / mòdul
+      anual = 400/250 = 1,6. Com que és superior a 1, l'abril és un mes d'aigües
+      altes. L'opció 0,63 és la divisió invertida (250/400); l'opció 150 és la
+      resta (400−250); l'1,5 és un arrodoniment incorrecte.
+    es: El coeficiente de caudal se define como Ck = caudal medio del mes / módulo
+      anual = 400/250 = 1,6. Al ser superior a 1, abril es un mes de aguas
+      altas. La opción 0,63 es la división invertida (250/400); la opción 150 es
+      la resta (400−250); el 1,5 es un redondeo incorrecto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.hydrography
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En un riu de règim mediterrani, l'any més cabalós el cabal mitjà va ser de
+      320 m³/s i l'any més sec de 40 m³/s. Quin és el coeficient d'irregularitat
+      interanual?
+    es: En un río de régimen mediterráneo, el año más caudaloso el caudal medio fue
+      de 320 m³/s y el año más seco de 40 m³/s. ¿Cuál es el coeficiente de
+      irregularidad interanual?
+  options:
+    - id: A
+      ca: "8"
+      es: "8"
+    - id: B
+      ca: "280"
+      es: "280"
+    - id: C
+      ca: 0,125
+      es: 0,125
+    - id: D
+      ca: "12.800"
+      es: "12.800"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El coeficient d'irregularitat interanual és el quocient entre el cabal
+      mitjà de l'any més cabalós i el de l'any més sec: 320/40 = 8. Un valor alt
+      confirma la forta irregularitat mediterrània. L'opció 280 és la resta
+      (320−40); 0,125 és el quocient invertit (40/320); 12.800 és el producte
+      dels dos cabals."
+    es: "El coeficiente de irregularidad interanual es el cociente entre el caudal
+      medio del año más caudaloso y el del año más seco: 320/40 = 8. Un valor
+      alto confirma la fuerte irregularidad mediterránea. La opción 280 es la
+      resta (320−40); 0,125 es el cociente invertido (40/320); 12.800 es el
+      producto de los dos caudales."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.hydrography
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Un riu té un cabal mitjà (mòdul) de 425 m³/s. Quina és aproximadament la
+      seva aportació anual? (Considera 1 any ≈ 31,54×10^6 s i 1 hm³ = 10^6 m³.)
+    es: Un río tiene un caudal medio (módulo) de 425 m³/s. ¿Cuál es aproximadamente
+      su aportación anual? (Considera 1 año ≈ 31,54×10^6 s y 1 hm³ = 10^6 m³.)
+  options:
+    - id: A
+      ca: ≈ 13.400 hm³
+      es: ≈ 13.400 hm³
+    - id: B
+      ca: ≈ 1.340 hm³
+      es: ≈ 1.340 hm³
+    - id: C
+      ca: ≈ 134.000 hm³
+      es: ≈ 134.000 hm³
+    - id: D
+      ca: ≈ 36,7 hm³
+      es: ≈ 36,7 hm³
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'aportació és el volum anual: V = cabal × temps = 425 m³/s × 31,54×10^6 s
+      ≈ 1,34×10^10 m³. Dividint per 10^6 m³/hm³ dóna ≈ 13.400 hm³. Les opcions
+      1.340 i 134.000 són errors de factor 10; l'opció 36,7 hm³ resulta d'usar
+      els segons d'un sol dia (86.400 s) en lloc dels de tot l'any."
+    es: "La aportación es el volumen anual: V = caudal × tiempo = 425 m³/s ×
+      31,54×10^6 s ≈ 1,34×10^10 m³. Dividiendo entre 10^6 m³/hm³ da ≈ 13.400
+      hm³. Las opciones 1.340 y 134.000 son errores de factor 10; la opción 36,7
+      hm³ resulta de usar los segundos de un solo día (86.400 s) en lugar de los
+      de todo el año."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.hydrography
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "El llac de Sanabria (Zamora), el llac natural d'origen no artificial més
+      gran de la Península Ibèrica, s'ha format principalment per un procés
+      d'origen:"
+    es: "El lago de Sanabria (Zamora), el mayor lago natural de origen no artificial
+      de la Península Ibérica, se ha formado principalmente por un proceso de
+      origen:"
+  options:
+    - id: A
+      ca: Glacial
+      es: Glaciar
+    - id: B
+      ca: Endorreic (llacuna tectònica salada)
+      es: Endorreico (laguna tectónica salada)
+    - id: C
+      ca: Volcànic
+      es: Volcánico
+    - id: D
+      ca: Kàrstic
+      es: Kárstico
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El llac de Sanabria ocupa una cubeta excavada per una glacera durant les
+      glaciacions quaternàries i tancada per una morrena: és d'origen glacial.
+      La llacuna de Gallocanta és un exemple endorreic i salat; les llacunes del
+      Campo de Calatrava tenen origen volcànic; les Lagunas de Ruidera són
+      d'origen kàrstic (dissolució de calcàries)."
+    es: "El lago de Sanabria ocupa una cubeta excavada por un glaciar durante las
+      glaciaciones cuaternarias y cerrada por una morrena: es de origen glaciar.
+      La laguna de Gallocanta es un ejemplo endorreico y salado; las lagunas del
+      Campo de Calatrava tienen origen volcánico; las Lagunas de Ruidera son de
+      origen kárstico (disolución de calizas)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.natural_landscapes
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina és la formació vegetal climàcica característica del paisatge oceànic
+      (l'anomenada "Espanya humida", a la façana cantàbrica i el nord-oest
+      peninsular)?
+    es: ¿Cuál es la formación vegetal climácica característica del paisaje oceánico
+      (la llamada "España húmeda", en la fachada cantábrica y el noroeste
+      peninsular)?
+  options:
+    - id: A
+      ca: El bosc caducifoli atlàntic, dominat per faig i roure
+      es: El bosque caducifolio atlántico, dominado por haya y roble
+    - id: B
+      ca: El bosc perennifoli mediterrani, dominat per alzina i surera
+      es: El bosque perennifolio mediterráneo, dominado por encina y alcornoque
+    - id: C
+      ca: La màquia i la garriga de matolls escleròfils
+      es: La maquia y la garriga de matorrales esclerófilos
+    - id: D
+      ca: La laurisilva de fulla ampla i sempre verda
+      es: La laurisilva de hoja ancha y siempre verde
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El clima oceànic (precipitacions abundants >800 mm/any, ben repartides,
+      sense sequera estival i temperatures suaus) afavoreix el bosc caducifoli
+      de faig (Fagus) i roure (Quercus robur/petraea), que perd la fulla a
+      l'hivern. L'alzina i la surera (B) són pròpies del clima mediterrani; la
+      màquia/garriga (C) són etapes de degradació del bosc mediterrani; la
+      laurisilva (D) és exclusiva de les Canàries humides.
+    es: El clima oceánico (precipitaciones abundantes >800 mm/año, bien repartidas,
+      sin sequía estival y temperaturas suaves) favorece el bosque caducifolio
+      de haya (Fagus) y roble (Quercus robur/petraea), que pierde la hoja en
+      invierno. La encina y el alcornoque (B) son propios del clima
+      mediterráneo; la maquia/garriga (C) son etapas de degradación del bosque
+      mediterráneo; la laurisilva (D) es exclusiva de las Canarias húmedas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.natural_landscapes
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En la divisió tradicional del territori espanyol en "Espanya humida" i
+      "Espanya seca", quina isohieta (línia d'igual precipitació anual)
+      s'utilitza habitualment com a límit?
+    es: En la división tradicional del territorio español en "España húmeda" y
+      "España seca", ¿qué isoyeta (línea de igual precipitación anual) se
+      utiliza habitualmente como límite?
+  options:
+    - id: A
+      ca: La isohieta de 300 mm/any
+      es: La isoyeta de 300 mm/año
+    - id: B
+      ca: La isohieta de 500 mm/any
+      es: La isoyeta de 500 mm/año
+    - id: C
+      ca: La isohieta de 800 mm/any
+      es: La isoyeta de 800 mm/año
+    - id: D
+      ca: La isohieta de 1.200 mm/any
+      es: La isoyeta de 1.200 mm/año
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "Convencionalment es fixa el límit en la isohieta de 800 mm/any: per damunt
+      (nord i nord-oest, clima oceànic) es parla d'Espanya humida i per sota,
+      d'Espanya seca. La isohieta de 300 mm (A) delimita més aviat les zones
+      semiàrides/estepàries del sud-est; 500 mm (B) i 1.200 mm (D) no són el
+      llindar convencional."
+    es: "Convencionalmente se fija el límite en la isoyeta de 800 mm/año: por encima
+      (norte y noroeste, clima oceánico) se habla de España húmeda y por debajo,
+      de España seca. La isoyeta de 300 mm (A) delimita más bien las zonas
+      semiáridas/esteparias del sureste; 500 mm (B) y 1.200 mm (D) no son el
+      umbral convencional."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.natural_landscapes
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un climograma (diagrama ombrotèrmic de Gaussen) un mes es considera àrid
+      quan la corba de precipitació queda per sota de la de temperatura amb
+      l'escala P(mm) = 2·T(°C). Si en el mes de juliol la temperatura mitjana és
+      de 25 °C, per sota de quin valor de precipitació mensual es considera que
+      aquest mes és àrid?
+    es: En un climograma (diagrama ombrotérmico de Gaussen) un mes se considera
+      árido cuando la curva de precipitación queda por debajo de la de
+      temperatura con la escala P(mm) = 2·T(°C). Si en el mes de julio la
+      temperatura media es de 25 °C, ¿por debajo de qué valor de precipitación
+      mensual se considera que ese mes es árido?
+  options:
+    - id: A
+      ca: Per sota de 12,5 mm
+      es: Por debajo de 12,5 mm
+    - id: B
+      ca: Per sota de 25 mm
+      es: Por debajo de 25 mm
+    - id: C
+      ca: Per sota de 50 mm
+      es: Por debajo de 50 mm
+    - id: D
+      ca: Per sota de 75 mm
+      es: Por debajo de 75 mm
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: El criteri de Gaussen és P < 2·T. Amb T = 25 °C, el llindar és 2 × 25 = 50
+      mm; per tant, si juliol rep menys de 50 mm és un mes àrid (sequera estival
+      típica del clima mediterrani). L'error 25 mm (B) prové d'usar P < T; 12,5
+      mm (A) d'usar T/2; i 75 mm (D) d'aplicar P < 3·T.
+    es: El criterio de Gaussen es P < 2·T. Con T = 25 °C, el umbral es 2 × 25 = 50
+      mm; por tanto, si julio recibe menos de 50 mm es un mes árido (sequía
+      estival típica del clima mediterráneo). El error 25 mm (B) proviene de
+      usar P < T; 12,5 mm (A) de usar T/2; y 75 mm (D) de aplicar P < 3·T.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.natural_landscapes
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: A les illes Canàries, al vessant nord (a sobrevent dels vents alisis), quina
+      formació vegetal està associada al "mar de núvols" que es forma
+      habitualment entre uns 600 i 1.500 m d'altitud?
+    es: En las islas Canarias, en la vertiente norte (a barlovento de los vientos
+      alisios), ¿qué formación vegetal está asociada al "mar de nubes" que se
+      forma habitualmente entre unos 600 y 1.500 m de altitud?
+  options:
+    - id: A
+      ca: El cardonal-tabaibal, de plantes crasses xeròfiles
+      es: El cardonal-tabaibal, de plantas crasas xerófilas
+    - id: B
+      ca: La laurisilva (i el fajal-bruguerar de degradació)
+      es: La laurisilva (y el fayal-brezal de degradación)
+    - id: C
+      ca: El pinar canari (Pinus canariensis)
+      es: El pinar canario (Pinus canariensis)
+    - id: D
+      ca: El matollar de cim amb ginesta del Teide
+      es: El matorral de cumbre con retama del Teide
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: La humitat aportada per l'estancament del "mar de núvols" dels alisis a
+      mitja muntanya del nord permet la laurisilva, un bosc relíctic de
+      laurifolis sempreverds; quan es degrada dóna el fajal-bruguerar. Per sota
+      domina el cardonal-tabaibal xeròfil (A, pis basal àrid); per damunt del
+      mar de núvols apareix el pinar canari (C) i, ja al cim, la ginesta del
+      Teide (D).
+    es: La humedad aportada por el estancamiento del "mar de nubes" de los alisios
+      en la media montaña del norte permite la laurisilva, un bosque relíctico
+      de laurifolios perennifolios; al degradarse da el fayal-brezal. Por debajo
+      domina el cardonal-tabaibal xerófilo (A, piso basal árido); por encima del
+      mar de nubes aparece el pinar canario (C) y, ya en la cumbre, la retama
+      del Teide (D).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.natural_landscapes
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En un vessant dels Pirineus, quin és l'ordre correcte dels pisos de
+      vegetació a mesura que augmenta l'altitud (de baix a dalt)?
+    es: En una vertiente de los Pirineos, ¿cuál es el orden correcto de los pisos de
+      vegetación a medida que aumenta la altitud (de abajo hacia arriba)?
+  options:
+    - id: A
+      ca: Prats alpins → coníferes (pi negre/avet) → bosc caducifoli (roure/faig) →
+        alzinar
+      es: Prados alpinos → coníferas (pino negro/abeto) → bosque caducifolio
+        (roble/haya) → encinar
+    - id: B
+      ca: Alzinar/roureda basal → bosc caducifoli (faig) → coníferes (pi negre/avet) →
+        prats alpins
+      es: Encinar/robledal basal → bosque caducifolio (haya) → coníferas (pino
+        negro/abeto) → prados alpinos
+    - id: C
+      ca: Coníferes (pi negre) → prats alpins → bosc caducifoli → alzinar basal
+      es: Coníferas (pino negro) → prados alpinos → bosque caducifolio → encinar basal
+    - id: D
+      ca: Bosc caducifoli → alzinar basal → prats alpins → coníferes
+      es: Bosque caducifolio → encinar basal → prados alpinos → coníferas
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La zonació altitudinal reflecteix el descens de temperatura amb l'altura:
+      al pis basal/montà baix, quercínies (alzina i roure); al montà, el bosc
+      caducifoli de faig; al subalpí (~1.600–2.300 m), coníferes de fred com el
+      pi negre i l'avet; i per damunt del límit del bosc, els prats alpins.
+      L'opció A inverteix completament la seqüència."
+    es: "La zonación altitudinal refleja el descenso de temperatura con la altura:
+      en el piso basal/montano bajo, quercíneas (encina y roble); en el montano,
+      el bosque caducifolio de haya; en el subalpino (~1.600–2.300 m), coníferas
+      de frío como el pino negro y el abeto; y por encima del límite del bosque,
+      los prados alpinos. La opción A invierte por completo la secuencia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.physical.natural_landscapes
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: "El matoll mediterrani presenta dues formacions de degradació: la màquia i
+      la garriga. Quina afirmació les distingeix correctament?"
+    es: "El matorral mediterráneo presenta dos formaciones de degradación: la maquia
+      y la garriga. ¿Qué afirmación las distingue correctamente?"
+  options:
+    - id: A
+      ca: La màquia és un matoll dens i alt sobre sòls silicis (estepa, brucs, arboç);
+        la garriga és més baixa i oberta, sobre sòls calcaris (romaní, farigola,
+        coscoll)
+      es: La maquia es un matorral denso y alto sobre suelos silíceos (jara, brezos,
+        madroño); la garriga es más baja y abierta, sobre suelos calcáreos
+        (romero, tomillo, coscoja)
+    - id: B
+      ca: La garriga és un matoll dens i alt sobre sòls silicis; la màquia és més
+        baixa i oberta sobre sòls calcaris
+      es: La garriga es un matorral denso y alto sobre suelos silíceos; la maquia es
+        más baja y abierta sobre suelos calcáreos
+    - id: C
+      ca: Totes dues són boscos climàcics d'alzina, sense relació amb la degradació
+      es: Ambas son bosques climácicos de encina, sin relación con la degradación
+    - id: D
+      ca: La màquia és exclusiva del clima oceànic i la garriga del clima de muntanya
+        alpí
+      es: La maquia es exclusiva del clima oceánico y la garriga del clima de montaña
+        alpino
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Totes dues resulten de la degradació del bosc escleròfil mediterrani. La
+      màquia és densa, alta (>2 m) i pròpia de sòls silicis (estepes, brucs,
+      arboç); en degradar-se més, o sobre sòls calcaris, dóna la garriga, més
+      baixa, oberta i amb aromàtiques (romaní, farigola, coscoll). B inverteix
+      les definicions; C nega que siguin etapes de degradació; D les associa a
+      climes erronis.
+    es: Ambas resultan de la degradación del bosque esclerófilo mediterráneo. La
+      maquia es densa, alta (>2 m) y propia de suelos silíceos (jaras, brezos,
+      madroño); al degradarse más, o sobre suelos calcáreos, da la garriga, más
+      baja, abierta y con aromáticas (romero, tomillo, coscoja). B invierte las
+      definiciones; C niega que sean etapas de degradación; D las asocia a
+      climas erróneos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.population
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Un municipi de 50.000 habitants registra en un any 400 naixements i 550
+      defuncions. Quina és la taxa de creixement natural (vegetatiu)?
+    es: Un municipio de 50.000 habitantes registra en un año 400 nacimientos y 550
+      defunciones. ¿Cuál es la tasa de crecimiento natural (vegetativo)?
+  options:
+    - id: A
+      ca: -3 ‰
+      es: -3 ‰
+    - id: B
+      ca: +3 ‰
+      es: +3 ‰
+    - id: C
+      ca: -0,3 ‰
+      es: -0,3 ‰
+    - id: D
+      ca: -1,5 ‰
+      es: -1,5 ‰
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Taxa de creixement natural = (naixements - defuncions) / població × 1000 =
+      (400 - 550) / 50.000 × 1000 = -150 / 50.000 × 1000 = -3 ‰. El signe
+      negatiu indica que hi ha més defuncions que naixements. L'opció B
+      inverteix el signe; la C oblida multiplicar bé per 1000; la D divideix per
+      100.000 en lloc de 50.000.
+    es: Tasa de crecimiento natural = (nacimientos - defunciones) / población × 1000
+      = (400 - 550) / 50.000 × 1000 = -150 / 50.000 × 1000 = -3 ‰. El signo
+      negativo indica que hay más defunciones que nacimientos. La opción B
+      invierte el signo; la C olvida multiplicar bien por 1000; la D divide por
+      100.000 en vez de 50.000.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.population
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: En una comunitat autònoma hi ha 1.500.000 persones de 65 anys o més i
+      1.000.000 de menors de 15 anys. Quin és l'índex d'envelliment?
+    es: En una comunidad autónoma hay 1.500.000 personas de 65 años o más y
+      1.000.000 de menores de 15 años. ¿Cuál es el índice de envejecimiento?
+  options:
+    - id: A
+      ca: "150"
+      es: "150"
+    - id: B
+      ca: 66,7
+      es: 66,7
+    - id: C
+      ca: "60"
+      es: "60"
+    - id: D
+      ca: 1,5
+      es: 1,5
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Índex d'envelliment = (població de 65 anys o més / població menor de 15
+      anys) × 100 = (1.500.000 / 1.000.000) × 100 = 150. Hi ha 150 gent gran per
+      cada 100 joves. L'opció B inverteix el quocient (100/150); la C calcula el
+      pes de la gent gran sobre el total dels dos grups (1,5/2,5); la D oblida
+      multiplicar per 100.
+    es: Índice de envejecimiento = (población de 65 años o más / población menor de
+      15 años) × 100 = (1.500.000 / 1.000.000) × 100 = 150. Hay 150 mayores por
+      cada 100 jóvenes. La opción B invierte el cociente (100/150); la C calcula
+      el peso de los mayores sobre el total de ambos grupos (1,5/2,5); la D
+      olvida multiplicar por 100.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.population
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quina afirmació descriu millor el règim demogràfic actual d'Espanya (dècada
+      de 2020)?
+    es: ¿Qué afirmación describe mejor el régimen demográfico actual de España
+      (década de 2020)?
+  options:
+    - id: A
+      ca: Natalitat baixa, mortalitat baixa i creixement natural negatiu o proper a
+        zero.
+      es: Natalidad baja, mortalidad baja y crecimiento natural negativo o próximo a
+        cero.
+    - id: B
+      ca: Natalitat alta i mortalitat alta, amb creixement natural gairebé nul (antic
+        règim demogràfic).
+      es: Natalidad alta y mortalidad alta, con crecimiento natural casi nulo (antiguo
+        régimen demográfico).
+    - id: C
+      ca: Natalitat alta i mortalitat en fort descens, amb creixement natural molt
+        elevat (plena transició).
+      es: Natalidad alta y mortalidad en fuerte descenso, con crecimiento natural muy
+        elevado (plena transición).
+    - id: D
+      ca: Natalitat baixa i mortalitat alta per crisis epidèmiques recurrents.
+      es: Natalidad baja y mortalidad alta por crisis epidémicas recurrentes.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Espanya es troba en el règim demogràfic modern (postransicional): la taxa
+      de natalitat és molt baixa (al voltant de 6-7 ‰) i la mortalitat també és
+      baixa (uns 9-10 ‰), de manera que el creixement natural és negatiu o
+      proper a zero i la població envelleix. B correspon a l'antic règim; C a la
+      transició demogràfica; D no reflecteix la situació real (la mortalitat és
+      baixa i estable)."
+    es: "España se encuentra en el régimen demográfico moderno (postransicional): la
+      tasa de natalidad es muy baja (en torno a 6-7 ‰) y la mortalidad también
+      es baja (unos 9-10 ‰), por lo que el crecimiento natural es negativo o
+      próximo a cero y la población envejece. B corresponde al antiguo régimen;
+      C a la transición demográfica; D no refleja la situación real (la
+      mortalidad es baja y estable)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.population
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un any, una província té un creixement natural de -2.000 persones i la
+      seva població total varia en +5.000 persones. Quin és el saldo migratori?
+    es: En un año, una provincia tiene un crecimiento natural de -2.000 personas y
+      su población total varía en +5.000 personas. ¿Cuál es el saldo migratorio?
+  options:
+    - id: A
+      ca: "+7.000"
+      es: "+7.000"
+    - id: B
+      ca: "+3.000"
+      es: "+3.000"
+    - id: C
+      ca: "-7.000"
+      es: "-7.000"
+    - id: D
+      ca: "-3.000"
+      es: "-3.000"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La variació total de població = creixement natural + saldo migratori. Per
+      tant, saldo migratori = variació total - creixement natural = 5.000 -
+      (-2.000) = 5.000 + 2.000 = +7.000. La immigració compensa la pèrdua
+      natural. L'opció B resta en lloc de sumar els 2.000; C i D inverteixen el
+      signe del resultat.
+    es: La variación total de población = crecimiento natural + saldo migratorio.
+      Por tanto, saldo migratorio = variación total - crecimiento natural =
+      5.000 - (-2.000) = 5.000 + 2.000 = +7.000. La inmigración compensa la
+      pérdida natural. La opción B resta en lugar de sumar los 2.000; C y D
+      invierten el signo del resultado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.population
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Una regió té 7 milions de menors de 15 anys, 9 milions de 65 anys o més i 32
+      milions de persones entre 15 i 64 anys. Quina és la taxa de dependència
+      total?
+    es: Una región tiene 7 millones de menores de 15 años, 9 millones de 65 años o
+      más y 32 millones de personas entre 15 y 64 años. ¿Cuál es la tasa de
+      dependencia total?
+  options:
+    - id: A
+      ca: 50 %
+      es: 50 %
+    - id: B
+      ca: 33,3 %
+      es: 33,3 %
+    - id: C
+      ca: 28,1 %
+      es: 28,1 %
+    - id: D
+      ca: 21,9 %
+      es: 21,9 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Taxa de dependència total = (població <15 + població 65+) / població 15-64 ×
+      100 = (7 + 9) / 32 × 100 = 16 / 32 × 100 = 50 %. L'opció B divideix per la
+      població total (16/48); la C calcula només la dependència de la gent gran
+      (9/32); la D només la dependència juvenil (7/32).
+    es: Tasa de dependencia total = (población <15 + población 65+) / población
+      15-64 × 100 = (7 + 9) / 32 × 100 = 16 / 32 × 100 = 50 %. La opción B
+      divide por la población total (16/48); la C calcula solo la dependencia de
+      los mayores (9/32); la D solo la dependencia juvenil (7/32).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.population
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Un municipi de 20.000 habitants registra 138 naixements en un any. Quina és
+      la taxa bruta de natalitat?
+    es: Un municipio de 20.000 habitantes registra 138 nacimientos en un año. ¿Cuál
+      es la tasa bruta de natalidad?
+  options:
+    - id: A
+      ca: 6,9 ‰
+      es: 6,9 ‰
+    - id: B
+      ca: 0,69 ‰
+      es: 0,69 ‰
+    - id: C
+      ca: 69 ‰
+      es: 69 ‰
+    - id: D
+      ca: 13,8 ‰
+      es: 13,8 ‰
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Taxa bruta de natalitat = naixements / població × 1000 = 138 / 20.000 × 1000
+      = 6,9 ‰, valor coherent amb la natalitat actual d'Espanya. L'opció B
+      multiplica per 100 en lloc de 1000; la C multiplica per 10.000; la D
+      divideix per 10.000 (base equivocada).
+    es: Tasa bruta de natalidad = nacimientos / población × 1000 = 138 / 20.000 ×
+      1000 = 6,9 ‰, valor coherente con la natalidad actual de España. La opción
+      B multiplica por 100 en lugar de 1000; la C multiplica por 10.000; la D
+      divide por 10.000 (base equivocada).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.urban
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Segons el criteri estadístic que utilitza habitualment l'INE i la geografia
+      urbana espanyola, a partir de quina xifra de població es considera que un
+      municipi és 'urbà'?
+    es: Según el criterio estadístico que utiliza habitualmente el INE y la
+      geografía urbana española, ¿a partir de qué cifra de población se
+      considera que un municipio es 'urbano'?
+  options:
+    - id: A
+      ca: 2.000 habitants
+      es: 2.000 habitantes
+    - id: B
+      ca: 5.000 habitants
+      es: 5.000 habitantes
+    - id: C
+      ca: 10.000 habitants
+      es: 10.000 habitantes
+    - id: D
+      ca: 50.000 habitants
+      es: 50.000 habitantes
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "La geografia urbana espanyola fixa el llindar urbà en 10.000 habitants: els
+      municipis de més de 10.000 es consideren urbans. El llindar de 2.000
+      separa el poblament rural del semiurbà (municipis intermedis,
+      2.000-10.000), i 50.000 s'utilitza per parlar de 'ciutats mitjanes-grans',
+      no per definir el fet urbà."
+    es: "La geografía urbana española fija el umbral urbano en 10.000 habitantes:
+      los municipios de más de 10.000 se consideran urbanos. El umbral de 2.000
+      separa el poblamiento rural del semiurbano (municipios intermedios,
+      2.000-10.000), y 50.000 se emplea para hablar de 'ciudades
+      medias-grandes', no para definir el hecho urbano."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.urban
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: L'Eixample de Barcelona, projectat per Ildefons Cerdà (1859), amb carrers
+      rectilinis que es tallen en angle recte formant illes quadrades amb els
+      xamfrans, és l'exemple més representatiu de quin tipus de plànol urbà?
+    es: El Ensanche de Barcelona, proyectado por Ildefons Cerdà (1859), con calles
+      rectilíneas que se cortan en ángulo recto formando manzanas cuadradas con
+      los chaflanes, es el ejemplo más representativo de ¿qué tipo de plano
+      urbano?
+  options:
+    - id: A
+      ca: Plànol irregular
+      es: Plano irregular
+    - id: B
+      ca: Plànol ortogonal o en quadrícula
+      es: Plano ortogonal o en cuadrícula
+    - id: C
+      ca: Plànol radiocèntric
+      es: Plano radiocéntrico
+    - id: D
+      ca: Plànol lineal
+      es: Plano lineal
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El plànol ortogonal (en quadrícula o damer) es defineix per carrers que es
+      creuen en angle recte formant illes regulars; l'Eixample de Cerdà n'és el
+      paradigma. L'irregular és propi dels cascs medievals; el radiocèntric té
+      vies que surten d'un centre en anells i radis; el lineal desenvolupa la
+      ciutat al llarg d'un eix (proposta d'Arturo Soria).
+    es: El plano ortogonal (en cuadrícula o damero) se define por calles que se
+      cruzan en ángulo recto formando manzanas regulares; el Ensanche de Cerdà
+      es su paradigma. El irregular es propio de los cascos medievales; el
+      radiocéntrico tiene vías que salen de un centro en anillos y radios; el
+      lineal desarrolla la ciudad a lo largo de un eje (propuesta de Arturo
+      Soria).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.urban
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Segons el padró municipal de l'INE, quin és el segon municipi més poblat
+      d'Espanya, després de Madrid?
+    es: Según el padrón municipal del INE, ¿cuál es el segundo municipio más poblado
+      de España, después de Madrid?
+  options:
+    - id: A
+      ca: València
+      es: Valencia
+    - id: B
+      ca: Sevilla
+      es: Sevilla
+    - id: C
+      ca: Saragossa
+      es: Zaragoza
+    - id: D
+      ca: Barcelona
+      es: Barcelona
+  answer:
+    type: single
+    correct: D
+  explanation:
+    ca: "La jerarquia dels municipis més poblats d'Espanya és, per aquest ordre:
+      Madrid (~3,28 milions), Barcelona (~1,62 milions), València (~0,81
+      milions), Sevilla (~0,68 milions) i Saragossa (~0,68 milions). Barcelona
+      és clarament el segon, amb gairebé el doble de població que València."
+    es: "La jerarquía de los municipios más poblados de España es, por este orden:
+      Madrid (~3,28 millones), Barcelona (~1,62 millones), Valencia (~0,81
+      millones), Sevilla (~0,68 millones) y Zaragoza (~0,68 millones). Barcelona
+      es claramente el segundo, con casi el doble de población que Valencia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.urban
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "Quan diverses ciutats pròximes creixen fins que els seus espais edificats
+      es fusionen i formen una taca urbana contínua (per exemple, al llarg de la
+      badia o d'un corredor industrial), estem davant d'una:"
+    es: "Cuando varias ciudades próximas crecen hasta que sus espacios edificados se
+      fusionan y forman una mancha urbana continua (por ejemplo, a lo largo de
+      la bahía o de un corredor industrial), estamos ante una:"
+  options:
+    - id: A
+      ca: Conurbació
+      es: Conurbación
+    - id: B
+      ca: Àrea metropolitana
+      es: Área metropolitana
+    - id: C
+      ca: Megalòpolis
+      es: Megalópolis
+    - id: D
+      ca: Ciutat dormitori
+      es: Ciudad dormitorio
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La conurbació és la unió física de dos o més nuclis urbans inicialment
+      independents que, en créixer, arriben a tocar-se formant un continu
+      edificat. L'àrea metropolitana és una ciutat central i els municipis
+      funcionalment dependents (encara sense continu edificat). La megalòpolis
+      és la coalescència de diverses àrees metropolitanes a escala molt més
+      gran. La ciutat dormitori és un municipi residencial dependent d'una
+      ciutat major.
+    es: La conurbación es la unión física de dos o más núcleos urbanos inicialmente
+      independientes que, al crecer, llegan a tocarse formando un continuo
+      edificado. El área metropolitana es una ciudad central y los municipios
+      funcionalmente dependientes (aún sin continuo edificado). La megalópolis
+      es la coalescencia de varias áreas metropolitanas a escala mucho mayor. La
+      ciudad dormitorio es un municipio residencial dependiente de una ciudad
+      mayor.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.urban
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "El fet que Toledo se situï sobre un turó envoltat per tres costats per un
+      meandre encaixat del riu Tajo, cosa que en el seu origen li donava un gran
+      valor defensiu, fa referència sobretot a:"
+    es: "El hecho de que Toledo se asiente sobre un cerro rodeado por tres lados por
+      un meandro encajado del río Tajo, lo que en su origen le otorgaba un gran
+      valor defensivo, hace referencia sobre todo a:"
+  options:
+    - id: A
+      ca: La situació de la ciutat
+      es: La situación de la ciudad
+    - id: B
+      ca: L'emplaçament de la ciutat
+      es: El emplazamiento de la ciudad
+    - id: C
+      ca: La jerarquia urbana
+      es: La jerarquía urbana
+    - id: D
+      ca: L'àrea d'influència
+      es: El área de influencia
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "L'emplaçament (site) és l'espai físic concret sobre el qual s'assenta la
+      ciutat: la topografia, el turó, el meandre, les condicions defensives del
+      lloc exacte. La situació, en canvi, és la posició relativa de la ciutat
+      respecte a l'entorn regional (xarxes, eixos, altres ciutats). Descriure el
+      turó i el meandre del Tajo és descriure l'emplaçament."
+    es: "El emplazamiento (site) es el espacio físico concreto sobre el que se
+      asienta la ciudad: la topografía, el cerro, el meandro, las condiciones
+      defensivas del lugar exacto. La situación, en cambio, es la posición
+      relativa de la ciudad respecto al entorno regional (redes, ejes, otras
+      ciudades). Describir el cerro y el meandro del Tajo es describir el
+      emplazamiento."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.human.urban
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: La població dels dos municipis més poblats d'Espanya és, aproximadament,
+      Madrid = 3.280.000 hab. i Barcelona = 1.620.000 hab. Calcula l'índex de
+      primacia urbana de dues ciutats (P1/P2).
+    es: La población de los dos municipios más poblados de España es,
+      aproximadamente, Madrid = 3.280.000 hab. y Barcelona = 1.620.000 hab.
+      Calcula el índice de primacía urbana de dos ciudades (P1/P2).
+  options:
+    - id: A
+      ca: ≈ 0,49
+      es: ≈ 0,49
+    - id: B
+      ca: ≈ 1,66
+      es: ≈ 1,66
+    - id: C
+      ca: ≈ 2,0
+      es: ≈ 2,0
+    - id: D
+      ca: ≈ 4,90
+      es: ≈ 4,90
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "L'índex de primacia de dues ciutats es calcula dividint la població de la
+      primera ciutat per la de la segona: P1/P2 = 3.280.000 / 1.620.000 ≈ 2,0.
+      Un valor proper a 2 indica una forta primacia de Madrid. L'error 0,49 surt
+      d'invertir el quocient (P2/P1); 1,66 és la diferència en milions
+      d'habitants (3,28 − 1,62); i 4,90 és la suma de totes dues (3,28 + 1,62)."
+    es: "El índice de primacía de dos ciudades se calcula dividiendo la población de
+      la primera ciudad entre la de la segunda: P1/P2 = 3.280.000 / 1.620.000 ≈
+      2,0. Un valor cercano a 2 indica una fuerte primacía de Madrid. El error
+      0,49 sale de invertir el cociente (P2/P1); 1,66 es la diferencia en
+      millones de habitantes (3,28 − 1,62); y 4,90 es la suma de ambas (3,28 +
+      1,62)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.primary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En l'economia espanyola actual, quin percentatge aproximat de la població
+      ocupada treballa en el sector primari (agricultura, ramaderia, pesca i
+      silvicultura)?
+    es: En la economía española actual, ¿qué porcentaje aproximado de la población
+      ocupada trabaja en el sector primario (agricultura, ganadería, pesca y
+      silvicultura)?
+  options:
+    - id: A
+      ca: Al voltant del 4%
+      es: Alrededor del 4%
+    - id: B
+      ca: Al voltant del 15%
+      es: Alrededor del 15%
+    - id: C
+      ca: Al voltant del 25%
+      es: Alrededor del 25%
+    - id: D
+      ca: Menys del 0,5%
+      es: Menos del 0,5%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El sector primari ocupa avui aproximadament un 4% de la població activa
+      espanyola (i genera un 2-3% del PIB). El 15% i el 25% corresponen a etapes
+      anteriors (dècades de 1970-1980 o abans), fruit de l'èxode rural i la
+      terciarització. Un valor per sota del 0,5% és massa baix i no reflecteix
+      el pes real del camp espanyol.
+    es: El sector primario ocupa hoy aproximadamente un 4% de la población activa
+      española (y genera un 2-3% del PIB). El 15% y el 25% corresponden a etapas
+      anteriores (décadas de 1970-1980 o antes), fruto del éxodo rural y la
+      terciarización. Un valor por debajo del 0,5% es demasiado bajo y no
+      refleja el peso real del campo español.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.primary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: Quina afirmació descriu correctament el paper del regadiu en l'agricultura
+      espanyola?
+    es: ¿Qué afirmación describe correctamente el papel del regadío en la
+      agricultura española?
+  options:
+    - id: A
+      ca: Ocupa una part minoritària de la superfície de conreu, però aporta la major
+        part del valor de la producció vegetal
+      es: Ocupa una parte minoritaria de la superficie de cultivo, pero aporta la
+        mayor parte del valor de la producción vegetal
+    - id: B
+      ca: Ocupa la major part de la superfície de conreu i es concentra a la cornisa
+        cantàbrica
+      es: Ocupa la mayor parte de la superficie de cultivo y se concentra en la
+        cornisa cantábrica
+    - id: C
+      ca: És menys productiu per hectàrea que el secà i té un valor econòmic marginal
+      es: Es menos productivo por hectárea que el secano y tiene un valor económico
+        marginal
+    - id: D
+      ca: Es localitza sobretot a l'Espanya humida del nord-oest, on les pluges són
+        abundants
+      es: Se localiza sobre todo en la España húmeda del noroeste, donde las lluvias
+        son abundantes
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El regadiu ocupa poc més del 20% de les terres de conreu, però genera més de
+      la meitat del valor de la producció vegetal final, gràcies a la seva alta
+      productivitat i a conreus d'alt valor (hortalisses, fruita, cítrics). Es
+      concentra a l'Espanya seca mediterrània i a les valls de l'Ebre i el
+      Guadalquivir, no al nord humit (on, precisament, el regadiu és poc
+      necessari).
+    es: El regadío ocupa poco más del 20% de las tierras de cultivo, pero genera más
+      de la mitad del valor de la producción vegetal final, gracias a su alta
+      productividad y a cultivos de alto valor (hortalizas, fruta, cítricos). Se
+      concentra en la España seca mediterránea y en los valles del Ebro y del
+      Guadalquivir, no en el norte húmedo (donde, precisamente, el regadío es
+      poco necesario).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.primary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En una comarca agrària, el regadiu ocupa el 22% de la superfície de conreu i
+      genera el 55% del valor de la producció vegetal; el secà ocupa el 78%
+      restant i genera el 45% del valor. Quantes vegades és més productiu per
+      hectàrea el regadiu respecte al secà?
+    es: En una comarca agraria, el regadío ocupa el 22% de la superficie de cultivo
+      y genera el 55% del valor de la producción vegetal; el secano ocupa el 78%
+      restante y genera el 45% del valor. ¿Cuántas veces es más productivo por
+      hectárea el regadío respecto al secano?
+  options:
+    - id: A
+      ca: Unes 1,2 vegades
+      es: Unas 1,2 veces
+    - id: B
+      ca: Unes 2,5 vegades
+      es: Unas 2,5 veces
+    - id: C
+      ca: Unes 4,3 vegades
+      es: Unas 4,3 veces
+    - id: D
+      ca: Unes 0,6 vegades
+      es: Unas 0,6 veces
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "Productivitat = valor / superfície. Regadiu: 55/22 = 2,5 unitats de valor
+      per unitat de superfície. Secà: 45/78 = 0,58. Quocient: 2,5 / 0,58 ≈ 4,3.
+      El regadiu és unes 4,3 vegades més productiu per hectàrea. L'error de 2,5
+      surt de dividir 55/22 oblidant la superfície del secà; 1,2 surt de fer
+      55/45 (ignorant les hectàrees); 0,6 és la productivitat del secà, no el
+      quocient."
+    es: "Productividad = valor / superficie. Regadío: 55/22 = 2,5 unidades de valor
+      por unidad de superficie. Secano: 45/78 = 0,58. Cociente: 2,5 / 0,58 ≈
+      4,3. El regadío es unas 4,3 veces más productivo por hectárea. El error de
+      2,5 surge de dividir 55/22 olvidando la superficie del secano; 1,2 surge
+      de hacer 55/45 (ignorando las hectáreas); 0,6 es la productividad del
+      secano, no el cociente."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.primary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quina comunitat autònoma encapçala els desembarcaments de pesca marítima a
+      Espanya i concentra el principal port pesquer (Vigo)?
+    es: ¿Qué comunidad autónoma encabeza los desembarcos de pesca marítima en España
+      y concentra el principal puerto pesquero (Vigo)?
+  options:
+    - id: A
+      ca: Galícia
+      es: Galicia
+    - id: B
+      ca: Catalunya
+      es: Cataluña
+    - id: C
+      ca: Andalusia
+      es: Andalucía
+    - id: D
+      ca: País Basc
+      es: País Vasco
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Galícia és, amb diferència, la primera regió pesquera espanyola: aporta
+      prop de la meitat dels desembarcaments nacionals i hi és el port de Vigo,
+      un dels més importants d'Europa. El País Basc té una llarga tradició
+      pesquera i Andalusia i Catalunya tenen flotes rellevants, però cap no
+      supera Galícia en volum de captures."
+    es: "Galicia es, con diferencia, la primera región pesquera española: aporta
+      cerca de la mitad de los desembarcos nacionales y en ella está el puerto
+      de Vigo, uno de los más importantes de Europa. El País Vasco tiene una
+      larga tradición pesquera y Andalucía y Cataluña cuentan con flotas
+      relevantes, pero ninguna supera a Galicia en volumen de capturas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.primary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: En una comarca hi ha 8.000 persones ocupades, de les quals 2.400 treballen
+      en el sector primari. Si la mitjana espanyola d'ocupació en el primari és
+      del 4%, quin és l'índex d'especialització de la comarca en aquest sector
+      (participació local dividida per la participació nacional)?
+    es: En una comarca hay 8.000 personas ocupadas, de las cuales 2.400 trabajan en
+      el sector primario. Si la media española de empleo en el primario es del
+      4%, ¿cuál es el índice de especialización de la comarca en ese sector
+      (participación local dividida por la participación nacional)?
+  options:
+    - id: A
+      ca: Aproximadament 0,13
+      es: Aproximadamente 0,13
+    - id: B
+      ca: Aproximadament 7,5
+      es: Aproximadamente 7,5
+    - id: C
+      ca: Aproximadament 26
+      es: Aproximadamente 26
+    - id: D
+      ca: Aproximadament 30
+      es: Aproximadamente 30
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Participació local = 2.400 / 8.000 = 30%. Índex d'especialització =
+      participació local / participació nacional = 30% / 4% = 7,5. La comarca
+      està molt especialitzada en el primari (7,5 vegades la mitjana). 0,13 és
+      l'invers (4/30); 26 confon l'índex amb la diferència de punts percentuals
+      (30 − 4); 30 és només la participació local, no l'índex.
+    es: Participación local = 2.400 / 8.000 = 30%. Índice de especialización =
+      participación local / participación nacional = 30% / 4% = 7,5. La comarca
+      está muy especializada en el primario (7,5 veces la media). 0,13 es el
+      inverso (4/30); 26 confunde el índice con la diferencia de puntos
+      porcentuales (30 − 4); 30 es solo la participación local, no el índice.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.primary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: L'estructura de la propietat agrària a Espanya presenta forts contrastos
+      regionals. On predomina el minifundi (parcel·les petites i molt
+      fragmentades)?
+    es: La estructura de la propiedad agraria en España presenta fuertes contrastes
+      regionales. ¿Dónde predomina el minifundio (parcelas pequeñas y muy
+      fragmentadas)?
+  options:
+    - id: A
+      ca: A Galícia i la cornisa cantàbrica (nord-oest)
+      es: En Galicia y la cornisa cantábrica (noroeste)
+    - id: B
+      ca: A Andalusia, Extremadura i Castella-la Manxa (sud-oest i centre)
+      es: En Andalucía, Extremadura y Castilla-La Mancha (suroeste y centro)
+    - id: C
+      ca: A la depressió de l'Ebre i el litoral mediterrani
+      es: En la depresión del Ebro y el litoral mediterráneo
+    - id: D
+      ca: A l'arxipèlag canari i les Illes Balears
+      es: En el archipiélago canario y las Islas Baleares
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El minifundi predomina al nord-oest peninsular (Galícia i cornisa
+      cantàbrica), on l'herència repartida i el relleu compartimentat han
+      fragmentat molt la propietat. El latifundi (grans explotacions) és
+      característic del sud-oest i el centre: Andalusia, Extremadura i
+      Castella-la Manxa. Per tant, l'opció B descriu el latifundi, no el
+      minifundi."
+    es: "El minifundio predomina en el noroeste peninsular (Galicia y cornisa
+      cantábrica), donde la herencia repartida y el relieve compartimentado han
+      fragmentado mucho la propiedad. El latifundio (grandes explotaciones) es
+      característico del suroeste y el centro: Andalucía, Extremadura y
+      Castilla-La Mancha. Por tanto, la opción B describe el latifundio, no el
+      minifundio."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.secondary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Durant la primera industrialització espanyola (segle XIX), quines dues
+      regions van liderar el procés i amb quins sectors, respectivament?
+    es: Durante la primera industrialización española (siglo XIX), ¿qué dos regiones
+      lideraron el proceso y con qué sectores, respectivamente?
+  options:
+    - id: A
+      ca: Catalunya amb la indústria tèxtil cotonera i el País Basc amb la siderúrgia.
+      es: Cataluña con la industria textil algodonera y el País Vasco con la
+        siderurgia.
+    - id: B
+      ca: Andalusia amb el tèxtil i Galícia amb la siderúrgia.
+      es: Andalucía con el textil y Galicia con la siderurgia.
+    - id: C
+      ca: El País Basc amb el tèxtil i Catalunya amb la mineria del carbó.
+      es: El País Vasco con el textil y Cataluña con la minería del carbón.
+    - id: D
+      ca: Astúries amb el tèxtil i Madrid amb la siderúrgia.
+      es: Asturias con el textil y Madrid con la siderurgia.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La primera industrialització a Espanya va tenir dos focus clars: Catalunya,
+      amb la indústria tèxtil del cotó (fàbriques i colònies industrials al
+      llarg dels rius), i el País Basc (Biscaia), amb la siderúrgia integral
+      basada en el mineral de ferro local i el comerç amb el Regne Unit.
+      Astúries aportava carbó, però el lideratge tèxtil i siderúrgic correspon a
+      Catalunya i el País Basc."
+    es: "La primera industrialización en España tuvo dos focos claros: Cataluña, con
+      la industria textil algodonera (fábricas y colonias industriales junto a
+      los ríos), y el País Vasco (Vizcaya), con la siderurgia integral basada en
+      el mineral de hierro local y el comercio con el Reino Unido. Asturias
+      aportaba carbón, pero el liderazgo textil y siderúrgico corresponde a
+      Cataluña y el País Vasco."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.secondary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En l'estructura ocupacional actual d'Espanya, quin percentatge aproximat de
+      la població ocupada treballa en el sector secundari (indústria més
+      construcció)?
+    es: En la estructura ocupacional actual de España, ¿qué porcentaje aproximado de
+      la población ocupada trabaja en el sector secundario (industria más
+      construcción)?
+  options:
+    - id: A
+      ca: Al voltant del 4%.
+      es: En torno al 4%.
+    - id: B
+      ca: Al voltant del 20%.
+      es: En torno al 20%.
+    - id: C
+      ca: Al voltant del 45%.
+      es: En torno al 45%.
+    - id: D
+      ca: Al voltant del 76%.
+      es: En torno al 76%.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "L'economia espanyola està terciaritzada: els serveis ocupen prop del 76% de
+      la població ocupada, el sector primari només un 4% aproximadament i el
+      sector secundari (indústria ~14% + construcció ~6-7%) al voltant del 20%.
+      El 4% correspon al primari i el 76% als serveis; el 45% seria propi d'una
+      economia industrial dels anys 1960-70, no de l'actual."
+    es: "La economía española está terciarizada: los servicios ocupan cerca del 76%
+      de la población ocupada, el sector primario solo un 4% aproximadamente y
+      el sector secundario (industria ~14% + construcción ~6-7%) en torno al
+      20%. El 4% corresponde al primario y el 76% a los servicios; el 45% sería
+      propio de una economía industrial de los años 1960-70, no de la actual."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.secondary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: La reconversió industrial impulsada a Espanya durant els anys vuitanta
+      (especialment a partir de 1984) va afectar sobretot els sectors madurs en
+      crisi. Quins eren?
+    es: La reconversión industrial impulsada en España durante los años ochenta
+      (especialmente a partir de 1984) afectó sobre todo a los sectores maduros
+      en crisis. ¿Cuáles eran?
+  options:
+    - id: A
+      ca: Indústria aeroespacial, biotecnologia i electrònica de consum.
+      es: Industria aeroespacial, biotecnología y electrónica de consumo.
+    - id: B
+      ca: Indústria agroalimentària i sector turístic.
+      es: Industria agroalimentaria y sector turístico.
+    - id: C
+      ca: Siderúrgia integral, construcció naval i tèxtil.
+      es: Siderurgia integral, construcción naval y textil.
+    - id: D
+      ca: Automoció d'alta gamma i energies renovables.
+      es: Automoción de alta gama y energías renovables.
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "La reconversió industrial dels anys vuitanta va actuar sobre els sectors
+      madurs, poc competitius i molt endeutats: la siderúrgia integral
+      (Astúries, País Basc), la construcció naval (drassanes de Cadis, Vigo,
+      Ferrol) i el tèxtil. Va suposar tancament de plantes, reducció de
+      plantilles i creació de ZUR (Zones d'Urgent Reindustrialització). Els
+      altres sectors esmentats són activitats emergents o de tecnologia punta,
+      no objecte de reconversió."
+    es: "La reconversión industrial de los años ochenta actuó sobre los sectores
+      maduros, poco competitivos y muy endeudados: la siderurgia integral
+      (Asturias, País Vasco), la construcción naval (astilleros de Cádiz, Vigo,
+      Ferrol) y el textil. Supuso cierre de plantas, reducción de plantillas y
+      creación de ZUR (Zonas de Urgente Reindustrialización). Los demás sectores
+      citados son actividades emergentes o de tecnología punta, no objeto de
+      reconversión."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.secondary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Pel que fa a la fabricació d'automòbils, quina afirmació és correcta sobre
+      Espanya amb dades actuals?
+    es: En cuanto a la fabricación de automóviles, ¿qué afirmación es correcta sobre
+      España con datos actuales?
+  options:
+    - id: A
+      ca: És el primer productor de la Unió Europea, per davant d'Alemanya.
+      es: Es el primer productor de la Unión Europea, por delante de Alemania.
+    - id: B
+      ca: Amb prou feines fabrica vehicles i els importa gairebé tots.
+      es: Apenas fabrica vehículos y los importa casi todos.
+    - id: C
+      ca: És el segon productor mundial, només per darrere de la Xina.
+      es: Es el segundo productor mundial, solo por detrás de China.
+    - id: D
+      ca: És el segon productor de la Unió Europea, després d'Alemanya, amb uns 2,4
+        milions de vehicles anuals.
+      es: Es el segundo productor de la Unión Europea, tras Alemania, con unos 2,4
+        millones de vehículos anuales.
+  answer:
+    type: single
+    correct: D
+  explanation:
+    ca: "L'automoció és un dels pilars de la indústria espanyola: Espanya fabrica al
+      voltant de 2,2-2,4 milions de vehicles l'any i és el segon productor de la
+      UE, per darrere d'Alemanya (i entre els primers del món, però no el segon
+      mundial, posició ocupada per grans productors com els EUA o el Japó). La
+      producció es concentra en factories de multinacionals i és molt
+      exportadora, de manera que no és cert que no fabriqui vehicles."
+    es: "La automoción es uno de los pilares de la industria española: España
+      fabrica en torno a 2,2-2,4 millones de vehículos al año y es el segundo
+      productor de la UE, tras Alemania (y entre los primeros del mundo, pero no
+      el segundo mundial, puesto ocupado por grandes productores como EE. UU. o
+      Japón). La producción se concentra en factorías de multinacionales y es
+      muy exportadora, por lo que no es cierto que no fabrique vehículos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.secondary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "Suposem aquestes dades del VAB (Valor Afegit Brut) d'Espanya: VAB total =
+      1.200.000 milions d'euros; indústria = 216.000 milions; construcció =
+      84.000 milions. Quin és el pes del sector secundari sobre el VAB total?"
+    es: "Supongamos estos datos del VAB (Valor Añadido Bruto) de España: VAB total =
+      1.200.000 millones de euros; industria = 216.000 millones; construcción =
+      84.000 millones. ¿Cuál es el peso del sector secundario sobre el VAB
+      total?"
+  options:
+    - id: A
+      ca: 18%
+      es: 18%
+    - id: B
+      ca: 7%
+      es: 7%
+    - id: C
+      ca: 25%
+      es: 25%
+    - id: D
+      ca: 20%
+      es: 20%
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "El sector secundari inclou indústria I construcció. Cal sumar-les: 216.000
+      + 84.000 = 300.000 milions. El pes = 300.000 / 1.200.000 = 0,25 = 25%.
+      L'error habitual és comptar només la indústria (216.000/1.200.000 = 18%) o
+      només la construcció (84.000/1.200.000 = 7%), o bé recórrer a la xifra
+      memoritzada del ~20% d'ocupació sense fer el càlcul demanat."
+    es: "El sector secundario incluye industria Y construcción. Hay que sumarlas:
+      216.000 + 84.000 = 300.000 millones. El peso = 300.000 / 1.200.000 = 0,25
+      = 25%. El error habitual es contar solo la industria (216.000/1.200.000 =
+      18%) o solo la construcción (84.000/1.200.000 = 7%), o recurrir a la cifra
+      memorizada del ~20% de empleo sin hacer el cálculo pedido."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.secondary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: L'any 2023, aproximadament quin percentatge de l'electricitat generada a
+      Espanya va procedir de fonts renovables (eòlica, solar, hidràulica, etc.)?
+    es: En el año 2023, ¿qué porcentaje aproximado de la electricidad generada en
+      España procedió de fuentes renovables (eólica, solar, hidráulica, etc.)?
+  options:
+    - id: A
+      ca: Al voltant del 10%.
+      es: En torno al 10%.
+    - id: B
+      ca: Al voltant del 50%.
+      es: En torno al 50%.
+    - id: C
+      ca: Al voltant del 25%.
+      es: En torno al 25%.
+    - id: D
+      ca: Al voltant del 85%.
+      es: En torno al 85%.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: La indústria energètica espanyola ha viscut una forta expansió de les
+      renovables. El 2023 les fonts renovables van generar aproximadament la
+      meitat de l'electricitat (al voltant del 50%), liderades per l'eòlica i la
+      solar fotovoltaica. Un 10% seria propi de fa dècades, mentre que un 85%
+      encara no s'assoleix perquè el mix conserva gas i nuclear com a fonts
+      rellevants.
+    es: La industria energética española ha vivido una fuerte expansión de las
+      renovables. En 2023 las fuentes renovables generaron aproximadamente la
+      mitad de la electricidad (en torno al 50%), lideradas por la eólica y la
+      solar fotovoltaica. Un 10% sería propio de hace décadas, mientras que un
+      85% aún no se alcanza porque el mix conserva gas y nuclear como fuentes
+      relevantes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.tertiary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin dels següents fenòmens defineix millor el procés de 'terciarització' de
+      l'economia espanyola de les últimes dècades?
+    es: ¿Cuál de los siguientes fenómenos define mejor el proceso de
+      'terciarización' de la economía española de las últimas décadas?
+  options:
+    - id: A
+      ca: L'augment progressiu del pes del sector serveis en el PIB i en l'ocupació,
+        per damunt de l'agricultura i la indústria.
+      es: El aumento progresivo del peso del sector servicios en el PIB y en el
+        empleo, por encima de la agricultura y la industria.
+    - id: B
+      ca: El creixement de la població ocupada en el sector primari gràcies a la
+        mecanització del camp.
+      es: El crecimiento de la población ocupada en el sector primario gracias a la
+        mecanización del campo.
+    - id: C
+      ca: La concentració de la producció industrial en tres grans regions
+        manufactureres.
+      es: La concentración de la producción industrial en tres grandes regiones
+        manufactureras.
+    - id: D
+      ca: La substitució dels serveis públics per serveis privats sense variar el pes
+        total del sector.
+      es: La sustitución de los servicios públicos por servicios privados sin variar
+        el peso total del sector.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La terciarització és el procés pel qual el sector serveis (terciari) guanya
+      pes relatiu en el PIB i en l'ocupació, superant clarament el primari i el
+      secundari. A Espanya els serveis ja suposen aproximadament el 74-75% del
+      PIB i el 76% de l'ocupació. Les altres opcions descriuen processos del
+      sector primari (B), industrial (C) o una simple recomposició interna (D),
+      no la terciarització.
+    es: La terciarización es el proceso por el que el sector servicios (terciario)
+      gana peso relativo en el PIB y en el empleo, superando claramente al
+      primario y al secundario. En España los servicios suponen ya en torno al
+      74-75% del PIB y el 76% del empleo. Las demás opciones describen procesos
+      del sector primario (B), industrial (C) o una mera recomposición interna
+      (D), no la terciarización.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.tertiary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "En un any la població ocupada d'Espanya es reparteix així: sector primari
+      0,9 milions, secundari 4,0 milions i terciari 15,1 milions. Quin
+      percentatge de l'ocupació total correspon al sector terciari? (arrodoneix
+      a la unitat)"
+    es: "En un año la población ocupada de España se reparte así: sector primario
+      0,9 millones, secundario 4,0 millones y terciario 15,1 millones. ¿Qué
+      porcentaje del empleo total corresponde al sector terciario? (redondea a
+      la unidad)"
+  options:
+    - id: A
+      ca: 75%
+      es: 75%
+    - id: B
+      ca: 70%
+      es: 70%
+    - id: C
+      ca: 80%
+      es: 80%
+    - id: D
+      ca: 60%
+      es: 60%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'ocupació total és 0,9 + 4,0 + 15,1 = 20,0 milions. El pes del terciari és
+      15,1 / 20,0 = 0,755 → 75,5%, que s'arrodoneix a 75%. L'error típic (B,
+      70%) surt d'oblidar part de l'ocupació al denominador; 80% (C) i 60% (D)
+      provenen d'arrodoniments incorrectes o de barrejar sectors.
+    es: El empleo total es 0,9 + 4,0 + 15,1 = 20,0 millones. El peso del terciario
+      es 15,1 / 20,0 = 0,755 → 75,5%, que se redondea a 75%. El error típico (B,
+      70%) surge de olvidar parte del empleo en el denominador; 80% (C) y 60%
+      (D) provienen de redondeos incorrectos o de mezclar sectores.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.tertiary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Espanya va rebre aproximadament 71,6 milions de turistes internacionals el
+      2022 i 85,1 milions el 2023. Quina va ser la variació interanual (%) del
+      nombre de turistes entre 2022 i 2023? (arrodoneix a un decimal)
+    es: España recibió aproximadamente 71,6 millones de turistas internacionales en
+      2022 y 85,1 millones en 2023. ¿Cuál fue la variación interanual (%) del
+      número de turistas entre 2022 y 2023? (redondea a un decimal)
+  options:
+    - id: A
+      ca: +18,9%
+      es: +18,9%
+    - id: B
+      ca: +15,9%
+      es: +15,9%
+    - id: C
+      ca: +13,5%
+      es: +13,5%
+    - id: D
+      ca: +84,2%
+      es: +84,2%
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La variació relativa és (valor final − valor inicial) / valor inicial.
+      Aquí: (85,1 − 71,6) / 71,6 = 13,5 / 71,6 = 0,1885 → +18,9%. L'opció B
+      (15,9%) divideix per l'any final (85,1) en comptes de l'inicial; l'opció C
+      (13,5%) confon la diferència absoluta en milions amb el percentatge;
+      l'opció D (84,2%) és el quocient 71,6/85,1 mal interpretat."
+    es: "La variación relativa es (valor final − valor inicial) / valor inicial.
+      Aquí: (85,1 − 71,6) / 71,6 = 13,5 / 71,6 = 0,1885 → +18,9%. La opción B
+      (15,9%) divide por el año final (85,1) en lugar del inicial; la opción C
+      (13,5%) confunde la diferencia absoluta en millones con el porcentaje; la
+      opción D (84,2%) es el cociente 71,6/85,1 mal interpretado."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.tertiary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En un any, Espanya rep 85,0 milions de turistes internacionals que generen
+      una despesa turística total de 108.000 milions d'euros. Quina és la
+      despesa mitjana per turista?
+    es: En un año, España recibe 85,0 millones de turistas internacionales que
+      generan un gasto turístico total de 108.000 millones de euros. ¿Cuál es el
+      gasto medio por turista?
+  options:
+    - id: A
+      ca: ≈ 1.271 €
+      es: ≈ 1.271 €
+    - id: B
+      ca: ≈ 127 €
+      es: ≈ 127 €
+    - id: C
+      ca: ≈ 12.710 €
+      es: ≈ 12.710 €
+    - id: D
+      ca: ≈ 787 €
+      es: ≈ 787 €
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La despesa mitjana per turista = despesa total / nombre de turistes =
+      108.000·10^6 € / 85,0·10^6 turistes = 1.270,6 € ≈ 1.271 €. Els errors B i
+      C provenen de desplaçar el punt decimal (factor ×10) en dividir milions
+      entre milions; l'opció D (787 €) inverteix el quocient (turistes/despesa
+      escalat).
+    es: El gasto medio por turista = gasto total / número de turistas = 108.000·10^6
+      € / 85,0·10^6 turistas = 1.270,6 € ≈ 1.271 €. Los errores B y C provienen
+      de desplazar la coma decimal (factor ×10) al dividir millones entre
+      millones; la opción D (787 €) invierte el cociente (turistas/gasto
+      escalado).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.tertiary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Pel que fa a la balança de pagaments espanyola, com contribueix
+      tradicionalment el turisme internacional receptor?
+    es: En cuanto a la balanza de pagos española, ¿cómo contribuye tradicionalmente
+      el turismo internacional receptor?
+  options:
+    - id: A
+      ca: Aporta un superàvit dins la balança de serveis que ajuda a compensar el
+        dèficit comercial de béns.
+      es: Aporta un superávit dentro de la balanza de servicios que ayuda a compensar
+        el déficit comercial de bienes.
+    - id: B
+      ca: Genera un dèficit en la balança de serveis perquè els espanyols gasten més a
+        l'estranger.
+      es: Genera un déficit en la balanza de servicios porque los españoles gastan más
+        en el extranjero.
+    - id: C
+      ca: S'inclou dins la balança comercial de béns com a exportació de mercaderies.
+      es: Se incluye dentro de la balanza comercial de bienes como exportación de
+        mercancías.
+    - id: D
+      ca: No té cap efecte sobre la balança de pagaments perquè és consum intern.
+      es: No tiene ningún efecto sobre la balanza de pagos porque es consumo interno.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els ingressos dels turistes estrangers a Espanya es comptabilitzen com a
+      exportació de serveis dins la balança de serveis (compte corrent). Com que
+      superen àmpliament la despesa dels espanyols a l'exterior, el turisme
+      genera un ampli superàvit que compensa parcialment el dèficit crònic de la
+      balança comercial de béns. B inverteix el signe del saldo; C confon
+      serveis amb béns; D és fals perquè el turisme receptor és una entrada de
+      divises, no consum intern.
+    es: Los ingresos de los turistas extranjeros en España se contabilizan como
+      exportación de servicios dentro de la balanza de servicios (cuenta
+      corriente). Como superan ampliamente el gasto de los españoles en el
+      exterior, el turismo genera un amplio superávit que compensa parcialmente
+      el déficit crónico de la balanza comercial de bienes. B invierte el signo
+      del saldo; C confunde servicios con bienes; D es falso porque el turismo
+      receptor es una entrada de divisas, no consumo interno.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.economic.tertiary
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quina comunitat autònoma encapçala habitualment la recepció de turistes
+      internacionals a Espanya, seguida de les Canàries i les Balears?
+    es: ¿Qué comunidad autónoma encabeza habitualmente la recepción de turistas
+      internacionales en España, seguida de Canarias y Baleares?
+  options:
+    - id: A
+      ca: Catalunya
+      es: Cataluña
+    - id: B
+      ca: Comunitat de Madrid
+      es: Comunidad de Madrid
+    - id: C
+      ca: Galícia
+      es: Galicia
+    - id: D
+      ca: Castella i Lleó
+      es: Castilla y León
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Catalunya és la principal destinació de turisme internacional d'Espanya (al
+      voltant de 18 milions de turistes anuals), gràcies a Barcelona i a la
+      Costa Brava/Daurada, seguida de les Canàries i les Balears (turisme de sol
+      i platja). Madrid (B) rep molts visitants però queda per darrere de les
+      grans destinacions litorals i insulars; Galícia (C) i Castella i Lleó (D)
+      tenen xifres molt inferiors de turisme estranger.
+    es: Cataluña es el principal destino de turismo internacional de España (en
+      torno a 18 millones de turistas anuales), gracias a Barcelona y a la Costa
+      Brava/Dorada, seguida de Canarias y Baleares (turismo de sol y playa).
+      Madrid (B) recibe muchos visitantes pero queda por detrás de los grandes
+      destinos litorales e insulares; Galicia (C) y Castilla y León (D) tienen
+      cifras muy inferiores de turismo extranjero.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.autonomous_communities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Segons la Constitució espanyola de 1978 i l'organització territorial vigent,
+      quantes comunitats autònomes hi ha a Espanya?
+    es: Según la Constitución española de 1978 y la organización territorial
+      vigente, ¿cuántas comunidades autónomas hay en España?
+  options:
+    - id: A
+      ca: 17 comunitats autònomes (a més de 2 ciutats autònomes)
+      es: 17 comunidades autónomas (además de 2 ciudades autónomas)
+    - id: B
+      ca: 19 comunitats autònomes
+      es: 19 comunidades autónomas
+    - id: C
+      ca: 15 comunitats autònomes
+      es: 15 comunidades autónomas
+    - id: D
+      ca: 50 comunitats autònomes
+      es: 50 comunidades autónomas
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Espanya s'organitza en 17 comunitats autònomes i 2 ciutats autònomes (Ceuta
+      i Melilla). L'error de 19 sorgeix de sumar les ciutats autònomes a les
+      comunitats; 50 correspon al nombre de províncies, no de comunitats.
+    es: España se organiza en 17 comunidades autónomas y 2 ciudades autónomas (Ceuta
+      y Melilla). El error de 19 surge de sumar las ciudades autónomas a las
+      comunidades; 50 corresponde al número de provincias, no de comunidades.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.autonomous_communities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Quines són les dues ciutats autònomes d'Espanya, dotades d'estatut
+      d'autonomia propi des de 1995?
+    es: ¿Cuáles son las dos ciudades autónomas de España, dotadas de estatuto de
+      autonomía propio desde 1995?
+  options:
+    - id: A
+      ca: Ceuta i Melilla
+      es: Ceuta y Melilla
+    - id: B
+      ca: Ceuta i Gibraltar
+      es: Ceuta y Gibraltar
+    - id: C
+      ca: Melilla i Las Palmas de Gran Canaria
+      es: Melilla y Las Palmas de Gran Canaria
+    - id: D
+      ca: Ceuta i Tànger
+      es: Ceuta y Tánger
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Ceuta i Melilla, al nord d'Àfrica, van rebre els seus estatuts d'autonomia
+      el 1995 i són les dues úniques ciutats autònomes. Gibraltar és territori
+      britànic d'ultramar i Tànger pertany al Marroc; Las Palmas és una capital
+      de província de Canàries, no una ciutat autònoma.
+    es: Ceuta y Melilla, en el norte de África, recibieron sus estatutos de
+      autonomía en 1995 y son las dos únicas ciudades autónomas. Gibraltar es
+      territorio británico de ultramar y Tánger pertenece a Marruecos; Las
+      Palmas es una capital de provincia de Canarias, no una ciudad autónoma.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.autonomous_communities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quina és la comunitat autònoma amb major superfície d'Espanya, amb
+      aproximadament 94.000 km²?
+    es: ¿Cuál es la comunidad autónoma con mayor superficie de España, con
+      aproximadamente 94.000 km²?
+  options:
+    - id: A
+      ca: Castella i Lleó
+      es: Castilla y León
+    - id: B
+      ca: Andalusia
+      es: Andalucía
+    - id: C
+      ca: Castella-la Manxa
+      es: Castilla-La Mancha
+    - id: D
+      ca: Aragó
+      es: Aragón
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Castella i Lleó té uns 94.226 km², la major extensió de totes les
+      comunitats. Andalusia (uns 87.600 km²) és la segona i sovint es confon per
+      ser la més poblada; Castella-la Manxa (uns 79.500 km²) i Aragó (uns 47.700
+      km²) són menors.
+    es: Castilla y León tiene unos 94.226 km², la mayor extensión de todas las
+      comunidades. Andalucía (unos 87.600 km²) es la segunda y suele confundirse
+      por ser la más poblada; Castilla-La Mancha (unos 79.500 km²) y Aragón
+      (unos 47.700 km²) son menores.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.autonomous_communities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Les comunitats autònomes uniprovincials són aquelles el territori de les
+      quals coincideix amb una sola província. Quantes n'hi ha a Espanya?
+    es: Las comunidades autónomas uniprovinciales son aquellas cuyo territorio
+      coincide con una sola provincia. ¿Cuántas hay en España?
+  options:
+    - id: A
+      ca: 7 (Astúries, Cantàbria, la Rioja, Madrid, Múrcia, Navarra i les Illes
+        Balears)
+      es: 7 (Asturias, Cantabria, La Rioja, Madrid, Murcia, Navarra e Illes Balears)
+    - id: B
+      ca: "5"
+      es: "5"
+    - id: C
+      ca: "6"
+      es: "6"
+    - id: D
+      ca: "9"
+      es: "9"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Hi ha 7 comunitats uniprovincials: Astúries, Cantàbria, la Rioja, Madrid,
+      Múrcia, Navarra i les Illes Balears. Un error freqüent és oblidar les
+      Illes Balears (que no tenen divisió provincial interna) o incloure
+      Canàries, que és pluriprovincial (Las Palmas i Santa Cruz de Tenerife)."
+    es: "Hay 7 comunidades uniprovinciales: Asturias, Cantabria, La Rioja, Madrid,
+      Murcia, Navarra e Illes Balears. Un error frecuente es olvidar Illes
+      Balears (que no tiene división provincial interna) o incluir Canarias, que
+      es pluriprovincial (Las Palmas y Santa Cruz de Tenerife)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.autonomous_communities
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: La Comunitat de Madrid té una població aproximada de 6.751.000 habitants i
+      una superfície de 8.028 km². Quina és, aproximadament, la seva densitat de
+      població?
+    es: La Comunidad de Madrid tiene una población aproximada de 6.751.000
+      habitantes y una superficie de 8.028 km². ¿Cuál es, aproximadamente, su
+      densidad de población?
+  options:
+    - id: A
+      ca: 841 hab/km²
+      es: 841 hab/km²
+    - id: B
+      ca: 8.410 hab/km²
+      es: 8.410 hab/km²
+    - id: C
+      ca: 84 hab/km²
+      es: 84 hab/km²
+    - id: D
+      ca: 1.190 hab/km²
+      es: 1.190 hab/km²
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La densitat = població / superfície = 6.751.000 / 8.028 ≈ 841 hab/km².
+      L'opció 8.410 multiplica per 10 (error de factor); 84 divideix per 10
+      (lliscament de coma); 1.190 és el resultat invertit i escalat de dividir
+      la superfície entre la població, un error de fórmula habitual.
+    es: La densidad = población / superficie = 6.751.000 / 8.028 ≈ 841 hab/km². La
+      opción 8.410 multiplica por 10 (error de factor); 84 divide por 10
+      (deslizamiento de coma); 1.190 procede de invertir la fórmula (superficie
+      entre población) escalada, un error habitual.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.imbalances
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quin dels següents enunciats defineix millor el concepte de "desequilibris
+      territorials"?
+    es: ¿Cuál de los siguientes enunciados define mejor el concepto de
+      "desequilibrios territoriales"?
+  options:
+    - id: A
+      ca: La distribució desigual de la població, la riquesa i l'activitat econòmica
+        entre les diferents parts del territori.
+      es: La distribución desigual de la población, la riqueza y la actividad
+        económica entre las distintas partes del territorio.
+    - id: B
+      ca: Les diferències de relleu entre les zones de muntanya i les planes.
+      es: Las diferencias de relieve entre las zonas de montaña y las llanuras.
+    - id: C
+      ca: La variació del clima entre el nord i el sud de la península.
+      es: La variación del clima entre el norte y el sur de la península.
+    - id: D
+      ca: La divisió administrativa de l'Estat en comunitats autònomes.
+      es: La división administrativa del Estado en comunidades autónomas.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els desequilibris territorials són fenòmens socioeconòmics: fan referència
+      a la concentració desigual de població, renda, ocupació i activitat
+      productiva en unes àrees enfront d'altres. Les diferències de relleu (B) o
+      de clima (C) són factors físics que poden influir-hi, però no en són la
+      definició; la divisió autonòmica (D) és administrativa."
+    es: "Los desequilibrios territoriales son fenómenos socioeconómicos: se refieren
+      a la concentración desigual de población, renta, empleo y actividad
+      productiva en unas áreas frente a otras. Las diferencias de relieve (B) o
+      de clima (C) son factores físicos que pueden influir, pero no son la
+      definición; la división autonómica (D) es administrativa."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.imbalances
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Segons les dades demogràfiques recents, quina comunitat autònoma presenta la
+      densitat de població més elevada d'Espanya (molt per sobre de la mitjana
+      estatal, ~95 hab/km²)?
+    es: Según los datos demográficos recientes, ¿qué comunidad autónoma presenta la
+      densidad de población más elevada de España (muy por encima de la media
+      estatal, ~95 hab/km²)?
+  options:
+    - id: A
+      ca: Comunitat de Madrid (~840 hab/km²).
+      es: Comunidad de Madrid (~840 hab/km²).
+    - id: B
+      ca: Catalunya (~240 hab/km²).
+      es: Cataluña (~240 hab/km²).
+    - id: C
+      ca: País Basc (~305 hab/km²).
+      es: País Vasco (~305 hab/km²).
+    - id: D
+      ca: Canàries (~290 hab/km²).
+      es: Canarias (~290 hab/km²).
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La Comunitat de Madrid, amb uns 6,75 milions d'habitants en només 8.028 km²,
+      assoleix una densitat propera als 840 hab/km², la més alta d'Espanya amb
+      diferència. País Basc (~305), Canàries (~290) i Catalunya (~240) tenen
+      densitats altes però molt inferiors. La concentració a Madrid és un
+      exemple clar de desequilibri territorial.
+    es: La Comunidad de Madrid, con unos 6,75 millones de habitantes en solo 8.028
+      km², alcanza una densidad cercana a los 840 hab/km², la más alta de España
+      con diferencia. País Vasco (~305), Canarias (~290) y Cataluña (~240)
+      tienen densidades altas pero muy inferiores. La concentración en Madrid es
+      un ejemplo claro de desequilibrio territorial.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.imbalances
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Una província interior té 88.600 habitants i una superfície de 10.306 km².
+      Calcula'n la densitat i indica si queda per sota del llindar de
+      "desertització demogràfica" fixat pel Consell d'Europa (12,5 hab/km²).
+    es: Una provincia interior tiene 88.600 habitantes y una superficie de 10.306
+      km². Calcula su densidad e indica si queda por debajo del umbral de
+      "desertización demográfica" fijado por el Consejo de Europa (12,5
+      hab/km²).
+  options:
+    - id: A
+      ca: ≈ 8,6 hab/km²; sí, queda per sota del llindar.
+      es: ≈ 8,6 hab/km²; sí, queda por debajo del umbral.
+    - id: B
+      ca: ≈ 8,6 hab/km²; no, queda per sobre del llindar.
+      es: ≈ 8,6 hab/km²; no, queda por encima del umbral.
+    - id: C
+      ca: ≈ 116 hab/km²; no, queda molt per sobre del llindar.
+      es: ≈ 116 hab/km²; no, queda muy por encima del umbral.
+    - id: D
+      ca: ≈ 0,12 hab/km²; sí, queda per sota del llindar.
+      es: ≈ 0,12 hab/km²; sí, queda por debajo del umbral.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Densitat = població / superfície = 88.600 / 10.306 ≈ 8,6 hab/km². Com que
+      8,6 < 12,5, la província queda per sota del llindar i es considera en
+      desertització demogràfica (cas típic de la "Espanya buidada", com Sòria).
+      L'opció D inverteix la divisió (superfície/població) i la C desplaça
+      malament la coma decimal.
+    es: Densidad = población / superficie = 88.600 / 10.306 ≈ 8,6 hab/km². Como 8,6
+      < 12,5, la provincia queda por debajo del umbral y se considera en
+      desertización demográfica (caso típico de la "España vaciada", como
+      Soria). La opción D invierte la división (superficie/población) y la C
+      desplaza mal la coma decimal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.imbalances
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: El PIB per capita és d'aproximadament 38.000 €/hab a la Comunitat de Madrid
+      i de 20.000 €/hab a Extremadura. Quantes vegades és superior el de Madrid
+      respecte al d'Extremadura?
+    es: El PIB per cápita es de aproximadamente 38.000 €/hab en la Comunidad de
+      Madrid y de 20.000 €/hab en Extremadura. ¿Cuántas veces es superior el de
+      Madrid respecto al de Extremadura?
+  options:
+    - id: A
+      ca: ≈ 1,9 vegades (un 90% més alt).
+      es: ≈ 1,9 veces (un 90% más alto).
+    - id: B
+      ca: ≈ 0,53 vegades.
+      es: ≈ 0,53 veces.
+    - id: C
+      ca: ≈ 2,9 vegades.
+      es: ≈ 2,9 veces.
+    - id: D
+      ca: ≈ 1,5 vegades.
+      es: ≈ 1,5 veces.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El quocient és 38.000 / 20.000 = 1,9; per tant el PIB per capita de Madrid
+      és aproximadament 1,9 vegades el d'Extremadura, és a dir, un 90% superior.
+      L'opció B inverteix la divisió (20.000/38.000 = 0,53) i les altres
+      apliquen operacions incorrectes. Aquesta bretxa il·lustra el desequilibri
+      econòmic centre–perifèria.
+    es: El cociente es 38.000 / 20.000 = 1,9; por tanto el PIB per cápita de Madrid
+      es aproximadamente 1,9 veces el de Extremadura, es decir, un 90% superior.
+      La opción B invierte la división (20.000/38.000 = 0,53) y las demás
+      aplican operaciones incorrectas. Esta brecha ilustra el desequilibrio
+      económico centro–periferia.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.imbalances
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Quina parella de províncies constitueix l'exemple paradigmàtic de
+      l'anomenada "Espanya buidada" (baixa densitat, envelliment i despoblament
+      interior)?
+    es: ¿Qué pareja de provincias constituye el ejemplo paradigmático de la llamada
+      "España vaciada" (baja densidad, envejecimiento y despoblamiento
+      interior)?
+  options:
+    - id: A
+      ca: Sòria i Terol.
+      es: Soria y Teruel.
+    - id: B
+      ca: Barcelona i Madrid.
+      es: Barcelona y Madrid.
+    - id: C
+      ca: Màlaga i Cadis.
+      es: Málaga y Cádiz.
+    - id: D
+      ca: Biscaia i Guipúscoa.
+      es: Vizcaya y Guipúzcoa.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Sòria (~8,6 hab/km²) i Terol (~9 hab/km²) són les províncies interiors amb
+      densitats més baixes i major despoblament i envelliment, arquetip de la
+      "Espanya buidada". Barcelona i Madrid són les més denses; Màlaga i Cadis
+      són províncies litorals amb densitats altes; Biscaia i Guipúscoa són
+      petites però molt poblades.
+    es: Soria (~8,6 hab/km²) y Teruel (~9 hab/km²) son las provincias interiores con
+      densidades más bajas y mayor despoblamiento y envejecimiento, arquetipo de
+      la "España vaciada". Barcelona y Madrid son las más densas; Málaga y Cádiz
+      son provincias litorales con densidades altas; Vizcaya y Guipúzcoa son
+      pequeñas pero muy pobladas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.territorial.imbalances
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Quin instrument financer, previst a la Constitució espanyola (art. 158.2),
+      està específicament destinat a corregir els desequilibris econòmics
+      interterritorials i a fer efectiu el principi de solidaritat entre
+      comunitats autònomes?
+    es: ¿Qué instrumento financiero, previsto en la Constitución española (art.
+      158.2), está específicamente destinado a corregir los desequilibrios
+      económicos interterritoriales y a hacer efectivo el principio de
+      solidaridad entre comunidades autónomas?
+  options:
+    - id: A
+      ca: El Fons de Compensació Interterritorial (FCI).
+      es: El Fondo de Compensación Interterritorial (FCI).
+    - id: B
+      ca: L'Índex de Preus de Consum (IPC).
+      es: El Índice de Precios de Consumo (IPC).
+    - id: C
+      ca: L'Impost sobre Béns Immobles (IBI).
+      es: El Impuesto sobre Bienes Inmuebles (IBI).
+    - id: D
+      ca: El Fons de Garantia de Dipòsits.
+      es: El Fondo de Garantía de Depósitos.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Fons de Compensació Interterritorial (FCI), recollit a l'art. 158.2 de la
+      Constitució, destina recursos a inversions en les comunitats autònomes
+      menys desenvolupades per reduir les diferències de renda i afavorir la
+      solidaritat territorial (complementat pels fons estructurals i de cohesió
+      de la UE). L'IPC (B) mesura la inflació, l'IBI (C) és un tribut municipal
+      i el Fons de Garantia de Dipòsits (D) protegeix els estalvis bancaris.
+    es: El Fondo de Compensación Interterritorial (FCI), recogido en el art. 158.2
+      de la Constitución, destina recursos a inversiones en las comunidades
+      autónomas menos desarrolladas para reducir las diferencias de renta y
+      favorecer la solidaridad territorial (complementado por los fondos
+      estructurales y de cohesión de la UE). El IPC (B) mide la inflación, el
+      IBI (C) es un tributo municipal y el Fondo de Garantía de Depósitos (D)
+      protege los ahorros bancarios.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.eu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: En quin any va ingressar Espanya a la Comunitat Econòmica Europea (CEE),
+      l'actual Unió Europea?
+    es: ¿En qué año ingresó España en la Comunidad Económica Europea (CEE), la
+      actual Unión Europea?
+  options:
+    - id: A
+      ca: 1986, juntament amb Portugal
+      es: 1986, junto con Portugal
+    - id: B
+      ca: 1957, com a país fundador (Tractat de Roma)
+      es: 1957, como país fundador (Tratado de Roma)
+    - id: C
+      ca: 1992, amb el Tractat de Maastricht
+      es: 1992, con el Tratado de Maastricht
+    - id: D
+      ca: 2002, amb l'entrada de l'euro
+      es: 2002, con la entrada del euro
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El Tractat d'adhesió es va signar el 12 de juny de 1985 i va entrar en vigor
+      l'1 de gener de 1986, quan Espanya i Portugal es van incorporar alhora a
+      la CEE. El 1957 (Tractat de Roma) van signar els sis fundadors, entre els
+      quals no hi era Espanya; 1992 (Maastricht) crea la UE i l'euro circula
+      físicament el 2002, però cap d'aquestes dates és la de l'adhesió.
+    es: El Tratado de adhesión se firmó el 12 de junio de 1985 y entró en vigor el 1
+      de enero de 1986, cuando España y Portugal se incorporaron a la vez a la
+      CEE. En 1957 (Tratado de Roma) firmaron los seis fundadores, entre los que
+      no estaba España; 1992 (Maastricht) crea la UE y el euro circula
+      físicamente en 2002, pero ninguna de esas fechas es la de la adhesión.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.eu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quan van començar a circular físicament les monedes i els bitllets d'euro a
+      Espanya?
+    es: ¿Cuándo empezaron a circular físicamente las monedas y los billetes de euro
+      en España?
+  options:
+    - id: A
+      ca: L'1 de gener de 2002
+      es: El 1 de enero de 2002
+    - id: B
+      ca: L'1 de gener de 1999
+      es: El 1 de enero de 1999
+    - id: C
+      ca: L'1 de gener de 1986
+      es: El 1 de enero de 1986
+    - id: D
+      ca: L'1 de gener de 1993
+      es: El 1 de enero de 1993
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'euro va néixer com a moneda comptable (electrònica i bancària) l'1 de
+      gener de 1999, amb tipus de canvi fixats, però les monedes i els bitllets
+      físics no van entrar en circulació fins l'1 de gener de 2002. El 1986 és
+      l'adhesió a la CEE i el 1993 és l'inici del mercat únic; cap de les dues
+      és l'any de l'euro físic.
+    es: El euro nació como moneda contable (electrónica y bancaria) el 1 de enero de
+      1999, con tipos de cambio fijados, pero las monedas y billetes físicos no
+      entraron en circulación hasta el 1 de enero de 2002. 1986 es la adhesión a
+      la CEE y 1993 el inicio del mercado único; ninguna de las dos es el año
+      del euro físico.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.eu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En la legislatura 2024-2029, quants eurodiputats (escons al Parlament
+      Europeu) li corresponen a Espanya?
+    es: En la legislatura 2024-2029, ¿cuántos eurodiputados (escaños en el
+      Parlamento Europeo) le corresponden a España?
+  options:
+    - id: A
+      ca: 61 escons
+      es: 61 escaños
+    - id: B
+      ca: 54 escons
+      es: 54 escaños
+    - id: C
+      ca: 59 escons
+      es: 59 escaños
+    - id: D
+      ca: 96 escons
+      es: 96 escaños
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Després de les eleccions europees de 2024, el Parlament Europeu té 720
+      escons i a Espanya li'n corresponen 61. Tenia 54 abans del Brexit i va
+      passar a 59 en el repartiment provisional de 2020; 96 és el màxim que fixa
+      el tractat i el correspon a Alemanya, l'Estat més poblat.
+    es: Tras las elecciones europeas de 2024, el Parlamento Europeo tiene 720
+      escaños y a España le corresponden 61. Tenía 54 antes del Brexit y pasó a
+      59 en el reparto provisional de 2020; 96 es el máximo que fija el tratado
+      y corresponde a Alemania, el Estado más poblado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.eu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Segons la població (dades de 2024), quina posició ocupa Espanya entre els 27
+      Estats membres de la UE?
+    es: Según la población (datos de 2024), ¿qué posición ocupa España entre los 27
+      Estados miembros de la UE?
+  options:
+    - id: A
+      ca: 4t Estat més poblat
+      es: 4º Estado más poblado
+    - id: B
+      ca: 3r Estat més poblat
+      es: 3er Estado más poblado
+    - id: C
+      ca: 5è Estat més poblat
+      es: 5º Estado más poblado
+    - id: D
+      ca: 2n Estat més poblat
+      es: 2º Estado más poblado
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Amb uns 48,6 milions d'habitants, Espanya és el 4t Estat més poblat de la
+      UE-27, per darrere d'Alemanya (~83 M), França (~68 M) i Itàlia (~59 M) i
+      per davant de Polònia (~37 M). No és 3r perquè Itàlia la supera, ni 5è
+      perquè Polònia queda per sota.
+    es: Con unos 48,6 millones de habitantes, España es el 4º Estado más poblado de
+      la UE-27, por detrás de Alemania (~83 M), Francia (~68 M) e Italia (~59 M)
+      y por delante de Polonia (~37 M). No es 3ª porque Italia la supera, ni 5ª
+      porque Polonia queda por debajo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.eu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Espanya té uns 48,6 milions d'habitants i la UE-27 en té uns 449 milions
+      (2024). Quin percentatge de la població de la UE representa aproximadament
+      Espanya?
+    es: España tiene unos 48,6 millones de habitantes y la UE-27 unos 449 millones
+      (2024). ¿Qué porcentaje de la población de la UE representa
+      aproximadamente España?
+  options:
+    - id: A
+      ca: Al voltant del 10,8 %
+      es: En torno al 10,8 %
+    - id: B
+      ca: Al voltant del 4 %
+      es: En torno al 4 %
+    - id: C
+      ca: Al voltant del 18 %
+      es: En torno al 18 %
+    - id: D
+      ca: Al voltant del 21 %
+      es: En torno al 21 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El percentatge es calcula (48,6 / 449) × 100 = 10,8 %. L'error del 4 %
+      sorgeix de confondre la 4a posició en població amb un 4 %; el 18 %
+      s'acostaria més a la quota d'Alemanya (~83/449 ≈ 18,5 %) i el 21 % és
+      massa alt per a qualsevol Estat individual.
+    es: El porcentaje se calcula (48,6 / 449) × 100 = 10,8 %. El error del 4 % surge
+      de confundir la 4ª posición en población con un 4 %; el 18 % se acercaría
+      más a la cuota de Alemania (~83/449 ≈ 18,5 %) y el 21 % es demasiado alto
+      para cualquier Estado individual.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.eu
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: En el Consell de la UE, la majoria qualificada per aprovar la major part de
+      decisions es basa en la regla de la "doble majoria". En què consisteix?
+    es: En el Consejo de la UE, la mayoría cualificada para aprobar la mayor parte
+      de decisiones se basa en la regla de la "doble mayoría". ¿En qué consiste?
+  options:
+    - id: A
+      ca: Almenys el 55 % dels Estats membres que representin com a mínim el 65 % de
+        la població de la UE
+      es: Al menos el 55 % de los Estados miembros que representen como mínimo el 65 %
+        de la población de la UE
+    - id: B
+      ca: Almenys el 65 % dels Estats membres que representin com a mínim el 55 % de
+        la població de la UE
+      es: Al menos el 65 % de los Estados miembros que representen como mínimo el 55 %
+        de la población de la UE
+    - id: C
+      ca: Una majoria simple d'Estats (14 de 27) que representi el 50 % de la població
+      es: Una mayoría simple de Estados (14 de 27) que represente el 50 % de la
+        población
+    - id: D
+      ca: Dos terços dels Estats que representin el 60 % de la població
+      es: Dos tercios de los Estados que representen el 60 % de la población
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Des del Tractat de Lisboa, la majoria qualificada exigeix el vot favorable
+      d'almenys el 55 % dels Estats membres (com a mínim 15 de 27) que a més
+      sumin com a mínim el 65 % de la població total de la UE. L'opció B
+      inverteix els dos llindars (error molt habitual); les altres barregen
+      percentatges que no corresponen a la regla vigent.
+    es: Desde el Tratado de Lisboa, la mayoría cualificada exige el voto favorable
+      de al menos el 55 % de los Estados miembros (como mínimo 15 de 27) que
+      además sumen al menos el 65 % de la población total de la UE. La opción B
+      invierte los dos umbrales (error muy habitual); las demás mezclan
+      porcentajes que no corresponden a la regla vigente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.globalization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En quin any va ingressar Espanya a la Comunitat Econòmica Europea (CEE), fet
+      que marca el punt de partida de la seva plena integració en el procés
+      d'europeïtzació i globalització?
+    es: ¿En qué año ingresó España en la Comunidad Económica Europea (CEE), hecho
+      que marca el punto de partida de su plena integración en el proceso de
+      europeización y globalización?
+  options:
+    - id: A
+      ca: 1975, coincidint amb la fi de la dictadura
+      es: 1975, coincidiendo con el fin de la dictadura
+    - id: B
+      ca: 1981, l'any de l'intent de cop d'estat
+      es: 1981, el año del intento de golpe de Estado
+    - id: C
+      ca: 1986, juntament amb Portugal
+      es: 1986, junto con Portugal
+    - id: D
+      ca: 1992, l'any dels Jocs Olímpics de Barcelona
+      es: 1992, el año de los Juegos Olímpicos de Barcelona
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: El Tractat d'adhesió es va signar el juny de 1985 i va entrar en vigor l'1
+      de gener de 1986, incorporant Espanya i Portugal a la CEE. Les altres
+      dates corresponen a fets rellevants (mort de Franco 1975, cop d'estat
+      1981, JJOO/Tractat de Maastricht 1992) però no a l'adhesió.
+    es: El Tratado de adhesión se firmó en junio de 1985 y entró en vigor el 1 de
+      enero de 1986, incorporando a España y Portugal a la CEE. Las otras fechas
+      corresponden a hechos relevantes (muerte de Franco 1975, golpe de Estado
+      1981, JJOO/Tratado de Maastricht 1992) pero no a la adhesión.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.globalization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: El turisme és una de les principals connexions d'Espanya amb l'economia
+      global. L'any 2019 (abans de la pandèmia), aproximadament quants turistes
+      internacionals va rebre Espanya i quina posició ocupava al rànquing
+      mundial de països més visitats?
+    es: El turismo es una de las principales conexiones de España con la economía
+      global. En 2019 (antes de la pandemia), ¿aproximadamente cuántos turistas
+      internacionales recibió España y qué posición ocupaba en el ranking
+      mundial de países más visitados?
+  options:
+    - id: A
+      ca: Uns 45 milions, 1r del món
+      es: Unos 45 millones, 1º del mundo
+    - id: B
+      ca: Uns 84 milions, 2n del món (per darrere de França)
+      es: Unos 84 millones, 2º del mundo (por detrás de Francia)
+    - id: C
+      ca: Uns 110 milions, 1r del món
+      es: Unos 110 millones, 1º del mundo
+    - id: D
+      ca: Uns 60 milions, 4t del món
+      es: Unos 60 millones, 4º del mundo
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El 2019 Espanya va rebre 83,7 milions de turistes internacionals, situant-se
+      com el 2n país més visitat del món, només per darrere de França (~90
+      milions). Xifres com 110 milions són irreals per a Espanya, i 45-60
+      milions infravaloren clarament el volum real.
+    es: En 2019 España recibió 83,7 millones de turistas internacionales, situándose
+      como el 2º país más visitado del mundo, solo por detrás de Francia (~90
+      millones). Cifras como 110 millones son irreales para España, y 45-60
+      millones infravaloran claramente el volumen real.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.globalization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Segons el Padró de l'INE, el 2023 Espanya tenia una població d'uns 48,1
+      milions d'habitants, dels quals aproximadament 6,1 milions eren estrangers
+      (nacionalitat no espanyola). Quin percentatge de la població representaven
+      els estrangers?
+    es: Según el Padrón del INE, en 2023 España tenía una población de unos 48,1
+      millones de habitantes, de los cuales aproximadamente 6,1 millones eran
+      extranjeros (nacionalidad no española). ¿Qué porcentaje de la población
+      representaban los extranjeros?
+  options:
+    - id: A
+      ca: Aproximadament 12,7 %
+      es: Aproximadamente 12,7 %
+    - id: B
+      ca: Aproximadament 6,1 %
+      es: Aproximadamente 6,1 %
+    - id: C
+      ca: Aproximadament 87,3 %
+      es: Aproximadamente 87,3 %
+    - id: D
+      ca: Aproximadament 25 %
+      es: Aproximadamente 25 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El percentatge és (6,1 / 48,1) × 100 = 12,7 %. L'opció 6,1 % confon el
+      nombre absolut en milions amb el percentatge; 87,3 % és el complementari
+      (població de nacionalitat espanyola); i 25 % gairebé duplica el valor
+      real.
+    es: El porcentaje es (6,1 / 48,1) × 100 = 12,7 %. La opción 6,1 % confunde el
+      número absoluto en millones con el porcentaje; 87,3 % es el complementario
+      (población de nacionalidad española); y 25 % casi duplica el valor real.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.globalization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En un any determinat, Espanya va exportar béns per valor de 389.000 milions
+      d'euros i en va importar per 458.000 milions d'euros. Calcula la taxa de
+      cobertura del comerç de béns (exportacions/importacions × 100) i indica
+      què reflecteix.
+    es: En un año determinado, España exportó bienes por valor de 389.000 millones
+      de euros e importó por 458.000 millones de euros. Calcula la tasa de
+      cobertura del comercio de bienes (exportaciones/importaciones × 100) e
+      indica qué refleja.
+  options:
+    - id: A
+      ca: ≈ 85 %, indica un dèficit comercial (importacions > exportacions)
+      es: ≈ 85 %, indica un déficit comercial (importaciones > exportaciones)
+    - id: B
+      ca: ≈ 118 %, indica un superàvit comercial
+      es: ≈ 118 %, indica un superávit comercial
+    - id: C
+      ca: ≈ 15 %, indica un dèficit comercial
+      es: ≈ 15 %, indica un déficit comercial
+    - id: D
+      ca: ≈ 69.000 milions d'euros de cobertura
+      es: ≈ 69.000 millones de euros de cobertura
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Taxa de cobertura = (389.000 / 458.000) × 100 = 84,9 % ≈ 85 %. Com que és
+      inferior al 100 %, les importacions superen les exportacions i hi ha
+      dèficit comercial. 118 % surt d'invertir la fórmula
+      (importacions/exportacions); 15 % és la diferència respecte a 100; i
+      69.000 milions és el saldo comercial absolut (dèficit), no una taxa (%).
+    es: Tasa de cobertura = (389.000 / 458.000) × 100 = 84,9 % ≈ 85 %. Al ser
+      inferior al 100 %, las importaciones superan a las exportaciones y hay
+      déficit comercial. 118 % resulta de invertir la fórmula
+      (importaciones/exportaciones); 15 % es la diferencia respecto a 100; y
+      69.000 millones es el saldo comercial absoluto (déficit), no una tasa (%).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.globalization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Una empresa tèxtil catalana tanca la seva fàbrica al Vallès i trasllada la
+      producció al Marroc per reduir els costos de mà d'obra, mantenint el
+      disseny i la marca a Espanya. Quin concepte de la globalització econòmica
+      descriu millor aquest procés?
+    es: Una empresa textil catalana cierra su fábrica en el Vallès y traslada la
+      producción a Marruecos para reducir los costes de mano de obra,
+      manteniendo el diseño y la marca en España. ¿Qué concepto de la
+      globalización económica describe mejor este proceso?
+  options:
+    - id: A
+      ca: Deslocalització (relocalització de la producció)
+      es: Deslocalización (relocalización de la producción)
+    - id: B
+      ca: Reconversió industrial
+      es: Reconversión industrial
+    - id: C
+      ca: Terciarització de l'economia
+      es: Terciarización de la economía
+    - id: D
+      ca: Autarquia econòmica
+      es: Autarquía económica
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El trasllat de la producció a un país amb costos laborals més baixos és una
+      deslocalització, típica de la globalització i de les cadenes de valor
+      mundials. La reconversió industrial és la modernització/tancament de
+      sectors en crisi dins del país; la terciarització és el pes creixent dels
+      serveis; i l'autarquia és el tancament econòmic a l'exterior, just el
+      contrari de la globalització.
+    es: El traslado de la producción a un país con costes laborales más bajos es una
+      deslocalización, típica de la globalización y de las cadenas de valor
+      mundiales. La reconversión industrial es la modernización/cierre de
+      sectores en crisis dentro del país; la terciarización es el peso creciente
+      de los servicios; y la autarquía es el cierre económico al exterior, justo
+      lo contrario de la globalización.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.europe_world.globalization
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Durant els anys més durs de la crisi econòmica, en un any determinat Espanya
+      va registrar 291.000 immigracions procedents de l'estranger i 400.000
+      emigracions cap a l'estranger. Calcula el saldo migratori exterior i
+      interpreta'l en el context de la globalització.
+    es: Durante los años más duros de la crisis económica, en un año determinado
+      España registró 291.000 inmigraciones procedentes del extranjero y 400.000
+      emigraciones hacia el extranjero. Calcula el saldo migratorio exterior e
+      interprétalo en el contexto de la globalización.
+  options:
+    - id: A
+      ca: "−109.000; saldo negatiu: Espanya perd població per migració (retorn
+        d'immigrants i emigració de joves)"
+      es: "−109.000; saldo negativo: España pierde población por migración (retorno de
+        inmigrantes y emigración de jóvenes)"
+    - id: B
+      ca: "+109.000; saldo positiu: Espanya guanya població per migració"
+      es: "+109.000; saldo positivo: España gana población por migración"
+    - id: C
+      ca: 691.000; saldo positiu molt elevat
+      es: 691.000; saldo positivo muy elevado
+    - id: D
+      ca: −109.000; però indica creixement de la població per migració
+      es: −109.000; pero indica crecimiento de la población por migración
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Saldo migratori = immigracions − emigracions = 291.000 − 400.000 = −109.000.
+      El signe negatiu significa que van marxar més persones de les que van
+      arribar, de manera que Espanya va perdre població per migració, fet propi
+      dels anys de crisi (retorn d'immigrants i emigració de joves qualificats
+      en un mercat laboral global). +109.000 inverteix el signe; 691.000 suma en
+      lloc de restar; i un saldo negatiu no pot implicar creixement per
+      migració.
+    es: Saldo migratorio = inmigraciones − emigraciones = 291.000 − 400.000 =
+      −109.000. El signo negativo significa que se marcharon más personas de las
+      que llegaron, por lo que España perdió población por migración, algo
+      propio de los años de crisis (retorno de inmigrantes y emigración de
+      jóvenes cualificados en un mercado laboral global). +109.000 invierte el
+      signo; 691.000 suma en lugar de restar; y un saldo negativo no puede
+      implicar crecimiento por migración.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.maps
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "Un climograma d'una estació espanyola mostra les dades següents:
+      precipitació anual 475 mm, amb un mínim molt marcat al juliol (7 mm);
+      temperatura mitjana del mes més càlid (agost) 25,5 °C i del mes més fred
+      (gener) 11,5 °C. Quin tipus de clima representa?"
+    es: "Un climograma de una estación española muestra los siguientes datos:
+      precipitación anual 475 mm, con un mínimo muy marcado en julio (7 mm);
+      temperatura media del mes más cálido (agosto) 25,5 °C y del mes más frío
+      (enero) 11,5 °C. ¿Qué tipo de clima representa?"
+  options:
+    - id: A
+      ca: Mediterrani litoral
+      es: Mediterráneo litoral
+    - id: B
+      ca: Oceànic
+      es: Oceánico
+    - id: C
+      ca: Mediterrani continentalitzat (interior)
+      es: Mediterráneo continentalizado (interior)
+    - id: D
+      ca: Subtropical (Canàries)
+      es: Subtropical (Canarias)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les claus són: sequera estival intensa (mínim al juliol de 7 mm, típic
+      mediterrani), precipitació moderada-escassa (475 mm) i amplitud tèrmica
+      petita (25,5 − 11,5 = 14 °C) amb hivern suau (11,5 °C). Aquesta combinació
+      correspon al mediterrani litoral. L'oceànic tindria >800 mm sense sequera
+      estival i amplitud baixa; el mediterrani continentalitzat tindria amplitud
+      molt més gran (~18-20 °C) i hivern més fred; el subtropical canari té
+      amplitud encara menor i temperatures d'hivern més altes."
+    es: "Las claves son: sequía estival intensa (mínimo en julio de 7 mm, típico
+      mediterráneo), precipitación moderada-escasa (475 mm) y amplitud térmica
+      pequeña (25,5 − 11,5 = 14 °C) con invierno suave (11,5 °C). Esta
+      combinación corresponde al mediterráneo litoral. El oceánico tendría >800
+      mm sin sequía estival y amplitud baja; el mediterráneo continentalizado
+      tendría amplitud mucho mayor (~18-20 °C) e invierno más frío; el
+      subtropical canario tiene amplitud aún menor y temperaturas invernales más
+      altas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.maps
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En un mapa topogràfic a escala 1:50.000, la distància mesurada en línia
+      recta entre dos pobles és de 8 cm. Quina és la distància real sobre el
+      terreny?
+    es: En un mapa topográfico a escala 1:50.000, la distancia medida en línea recta
+      entre dos pueblos es de 8 cm. ¿Cuál es la distancia real sobre el terreno?
+  options:
+    - id: A
+      ca: 4 km
+      es: 4 km
+    - id: B
+      ca: 40 km
+      es: 40 km
+    - id: C
+      ca: 0,4 km
+      es: 0,4 km
+    - id: D
+      ca: 400 km
+      es: 400 km
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La distància real = distància al mapa × denominador de l'escala = 8 cm ×
+      50.000 = 400.000 cm. Es converteix a km: 400.000 cm ÷ 100 = 4.000 m; 4.000
+      m ÷ 1.000 = 4 km. Els errors habituals: quedar-se en 400.000 cm sense
+      passar correctament les unitats (40 km surt d'oblidar un factor 10 en la
+      conversió cm→m→km)."
+    es: "La distancia real = distancia en el mapa × denominador de la escala = 8 cm
+      × 50.000 = 400.000 cm. Se convierte a km: 400.000 cm ÷ 100 = 4.000 m;
+      4.000 m ÷ 1.000 = 4 km. Errores habituales: quedarse en 400.000 cm sin
+      pasar bien las unidades (40 km sale de olvidar un factor 10 en la
+      conversión cm→m→km)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.maps
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un mapa topogràfic amb equidistància de corbes de nivell de 20 m, dos
+      punts A i B estan separats per un desnivell de 200 m. La distància
+      horitzontal real entre A i B és de 2 km. Quin és el pendent mitjà del
+      vessant, en percentatge?
+    es: En un mapa topográfico con equidistancia de curvas de nivel de 20 m, dos
+      puntos A y B están separados por un desnivel de 200 m. La distancia
+      horizontal real entre A y B es de 2 km. ¿Cuál es la pendiente media de la
+      ladera, en porcentaje?
+  options:
+    - id: A
+      ca: 10 %
+      es: 10 %
+    - id: B
+      ca: 1 %
+      es: 1 %
+    - id: C
+      ca: 100 %
+      es: 100 %
+    - id: D
+      ca: 20 %
+      es: 20 %
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El pendent (%) = (desnivell / distància horitzontal) × 100, amb les DUES
+      magnituds en la mateixa unitat. Desnivell = 200 m; distància horitzontal =
+      2 km = 2.000 m. Pendent = (200 / 2.000) × 100 = 10 %. L'error típic és no
+      convertir el km a m: (200/2)×100 daria 100 %, o dividir malament (1 %).
+      L'equidistància de 20 m només serveix per llegir el desnivell (10 corbes ×
+      20 m = 200 m)."
+    es: "La pendiente (%) = (desnivel / distancia horizontal) × 100, con las DOS
+      magnitudes en la misma unidad. Desnivel = 200 m; distancia horizontal = 2
+      km = 2.000 m. Pendiente = (200 / 2.000) × 100 = 10 %. El error típico es
+      no convertir el km a m: (200/2)×100 daría 100 %, o dividir mal (1 %). La
+      equidistancia de 20 m solo sirve para leer el desnivel (10 curvas × 20 m =
+      200 m)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.maps
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un mapa del temps (sinòptic) de superfície s'observa que, sobre una zona
+      de la Península, les isòbares apareixen molt juntes (molt poc espaiades
+      entre elles). Com s'interpreta correctament aquesta situació?
+    es: En un mapa del tiempo (sinóptico) de superficie se observa que, sobre una
+      zona de la Península, las isobaras aparecen muy juntas (muy poco
+      espaciadas entre sí). ¿Cómo se interpreta correctamente esta situación?
+  options:
+    - id: A
+      ca: Gradient baromètric fort, per tant vents intensos en aquesta zona
+      es: Gradiente barométrico fuerte, por lo tanto vientos intensos en esa zona
+    - id: B
+      ca: Gradient baromètric feble, per tant temps de calma i vents fluixos
+      es: Gradiente barométrico débil, por lo tanto tiempo de calma y vientos flojos
+    - id: C
+      ca: Temperatures elevades i onada de calor
+      es: Temperaturas elevadas y ola de calor
+    - id: D
+      ca: Precipitacions abundants segures a tota la zona
+      es: Precipitaciones abundantes seguras en toda la zona
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Les isòbares uneixen punts d'igual pressió. Com més juntes estan, més ràpida
+      és la variació de pressió amb la distància, és a dir, més gran és el
+      gradient baromètric. Un gradient fort genera vents més intensos (l'aire es
+      desplaça de les altes a les baixes pressions). Les isòbares separades
+      indiquen gradient feble i vents fluixos. El seu espaiat no informa
+      directament ni de la temperatura ni garanteix precipitació.
+    es: Las isobaras unen puntos de igual presión. Cuanto más juntas están, más
+      rápida es la variación de presión con la distancia, es decir, mayor es el
+      gradiente barométrico. Un gradiente fuerte genera vientos más intensos (el
+      aire se desplaza de las altas a las bajas presiones). Las isobaras
+      separadas indican gradiente débil y vientos flojos. Su espaciado no
+      informa directamente de la temperatura ni garantiza precipitación.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.maps
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "Una piràmide de població d'Espanya (dades de 2023) mostra una base estreta,
+      un eixamplament màxim cap als grups de 45-54 anys i un cim relativament
+      ample: la població de 65 anys o més representa aproximadament el 20 % i la
+      menor de 15 anys al voltant del 14 %. Quina interpretació és la correcta?"
+    es: "Una pirámide de población de España (datos de 2023) muestra una base
+      estrecha, un ensanchamiento máximo hacia los grupos de 45-54 años y una
+      cúspide relativamente ancha: la población de 65 años o más representa
+      aproximadamente el 20 % y la menor de 15 años en torno al 14 %. ¿Cuál es
+      la interpretación correcta?"
+  options:
+    - id: A
+      ca: Població envellida amb natalitat baixa; forma regressiva (en 'bulb' o urna)
+      es: Población envejecida con natalidad baja; forma regresiva (en 'bulbo' o urna)
+    - id: B
+      ca: Població jove i en creixement; forma expansiva (base ampla i triangular)
+      es: Población joven y en crecimiento; forma expansiva (base ancha y triangular)
+    - id: C
+      ca: Població estacionària amb natalitat i mortalitat equilibrades i base ampla
+      es: Población estacionaria con natalidad y mortalidad equilibradas y base ancha
+    - id: D
+      ca: Sobremortalitat infantil elevada que estreny els grups d'edat superiors
+      es: Sobremortalidad infantil elevada que estrecha los grupos de edad superiores
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La base estreta (14 % de menors de 15 anys) indica natalitat baixa i
+      mantinguda dècades; el cim ample (20 % de 65 anys o més, per sobre del 14
+      % de joves) indica envelliment i alta esperança de vida. Aquesta forma
+      d'urna o 'bulb' és una piràmide regressiva, pròpia dels països en
+      transició demogràfica avançada com Espanya. La forma expansiva
+      (triangular, base ampla) correspon a poblacions joves; l'estacionària
+      tindria base i cos més rectangulars; la sobremortalitat infantil
+      implicaria l'efecte contrari a l'observat.
+    es: La base estrecha (14 % de menores de 15 años) indica natalidad baja y
+      sostenida durante décadas; la cúspide ancha (20 % de 65 años o más, por
+      encima del 14 % de jóvenes) indica envejecimiento y alta esperanza de
+      vida. Esta forma de urna o 'bulbo' es una pirámide regresiva, propia de
+      países en transición demográfica avanzada como España. La forma expansiva
+      (triangular, base ancha) corresponde a poblaciones jóvenes; la
+      estacionaria tendría base y cuerpo más rectangulares; la sobremortalidad
+      infantil implicaría el efecto contrario al observado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.maps
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Un mapa coroplètic (de colors graduats) de la densitat de població d'Espanya
+      per províncies (2023) mostra tons intensos a la perifèria litoral i a
+      Madrid, i tons molt clars a bona part de l'interior peninsular. Sabent que
+      la densitat mitjana d'Espanya és d'uns 94 hab/km², que la Comunitat de
+      Madrid supera els 800 hab/km² i que províncies com Sòria ronden els 9
+      hab/km², quina interpretació del mapa és la correcta?
+    es: Un mapa coroplético (de colores graduados) de la densidad de población de
+      España por provincias (2023) muestra tonos intensos en la periferia
+      litoral y en Madrid, y tonos muy claros en buena parte del interior
+      peninsular. Sabiendo que la densidad media de España es de unos 94
+      hab/km², que la Comunidad de Madrid supera los 800 hab/km² y que
+      provincias como Soria rondan los 9 hab/km², ¿cuál es la interpretación
+      correcta del mapa?
+  options:
+    - id: A
+      ca: "La població es concentra al litoral i a Madrid, mentre l'interior (excepte
+        Madrid) està poc poblat: contrast centre-perifèria amb la 'Espanya
+        buidada'"
+      es: "La población se concentra en el litoral y en Madrid, mientras el interior
+        (salvo Madrid) está poco poblado: contraste centro-periferia con la
+        'España vaciada'"
+    - id: B
+      ca: La població es reparteix de manera homogènia per tot el territori, sense
+        contrastos rellevants
+      es: La población se reparte de manera homogénea por todo el territorio, sin
+        contrastes relevantes
+    - id: C
+      ca: L'interior peninsular concentra les densitats més altes i el litoral queda
+        despoblat
+      es: El interior peninsular concentra las densidades más altas y el litoral queda
+        despoblado
+    - id: D
+      ca: Els tons clars de l'interior indiquen províncies amb més població absoluta
+        que les del litoral
+      es: Los tonos claros del interior indican provincias con más población absoluta
+        que las del litoral
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En un mapa coroplètic el to fosc = valor alt i el to clar = valor baix de
+      la variable representada (aquí, densitat). Els tons intensos al litoral i
+      a Madrid (>800 hab/km²) enfront dels tons molt clars de l'interior (Sòria
+      ~9 hab/km², molt per sota de la mitjana de 94) reflecteixen el clàssic
+      contrast centre-perifèria i el fenomen de la 'Espanya buidada', amb un
+      interior despoblat i un centre excepcional (Madrid). No hi ha homogeneïtat
+      (B) ni el patró invers (C). L'opció D confon densitat amb població
+      absoluta: el color representa hab/km², no el total d'habitants."
+    es: "En un mapa coroplético el tono oscuro = valor alto y el tono claro = valor
+      bajo de la variable representada (aquí, densidad). Los tonos intensos en
+      el litoral y en Madrid (>800 hab/km²) frente a los tonos muy claros del
+      interior (Soria ~9 hab/km², muy por debajo de la media de 94) reflejan el
+      clásico contraste centro-periferia y el fenómeno de la 'España vaciada',
+      con un interior despoblado y un centro excepcional (Madrid). No hay
+      homogeneidad (B) ni el patrón inverso (C). La opción D confunde densidad
+      con población absoluta: el color representa hab/km², no el total de
+      habitantes."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000084
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.data
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: En un climograma, segons l'índex d'aridesa de Gaussen, un mes es considera
+      SEC quan la precipitació P (en mm) és inferior al doble de la temperatura
+      mitjana T (en °C), és a dir P < 2·T. Un mes determinat té T = 10 °C i P =
+      15 mm. Com es classifica?
+    es: En un climograma, según el índice de aridez de Gaussen, un mes se considera
+      SECO cuando la precipitación P (en mm) es inferior al doble de la
+      temperatura media T (en °C), es decir P < 2·T. Un mes determinado tiene T
+      = 10 °C y P = 15 mm. ¿Cómo se clasifica?
+  options:
+    - id: A
+      ca: Sec, perquè 2·T = 20 mm i P (15 mm) < 20 mm.
+      es: Seco, porque 2·T = 20 mm y P (15 mm) < 20 mm.
+    - id: B
+      ca: Humit, perquè el llindar és T = 10 mm i P (15 mm) > 10 mm.
+      es: Húmedo, porque el umbral es T = 10 mm y P (15 mm) > 10 mm.
+    - id: C
+      ca: Sec, perquè el llindar és T/2 = 5 mm i P (15 mm) > 5 mm.
+      es: Seco, porque el umbral es T/2 = 5 mm y P (15 mm) > 5 mm.
+    - id: D
+      ca: Humit, perquè si plou (P > 0) el mes mai no pot ser sec.
+      es: Húmedo, porque si llueve (P > 0) el mes nunca puede ser seco.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El llindar d'aridesa de Gaussen és 2·T. Amb T = 10 °C, 2·T = 20 mm. Com que
+      P = 15 mm < 20 mm, el mes és SEC. L'opció B oblida el factor 2 (usa T en
+      lloc de 2·T); l'opció C divideix per 2 en lloc de multiplicar; l'opció D
+      confon l'existència de pluja amb el concepte d'aridesa (l'aridesa depèn de
+      la relació P–T, no de si plou).
+    es: El umbral de aridez de Gaussen es 2·T. Con T = 10 °C, 2·T = 20 mm. Como P =
+      15 mm < 20 mm, el mes es SECO. La opción B olvida el factor 2 (usa T en
+      lugar de 2·T); la opción C divide por 2 en vez de multiplicar; la opción D
+      confunde la existencia de lluvia con el concepto de aridez (que depende de
+      la relación P–T, no de si llueve).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000085
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.data
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "A partir de les dades demogràfiques d'Espanya (any 2022, aprox.): taxa
+      bruta de natalitat = 6,9 ‰ i taxa bruta de mortalitat = 9,8 ‰. Quina és la
+      taxa de creixement natural (o vegetatiu)?"
+    es: "A partir de los datos demográficos de España (año 2022, aprox.): tasa bruta
+      de natalidad = 6,9 ‰ y tasa bruta de mortalidad = 9,8 ‰. ¿Cuál es la tasa
+      de crecimiento natural (o vegetativo)?"
+  options:
+    - id: A
+      ca: -2,9 ‰ (creixement natural negatiu).
+      es: -2,9 ‰ (crecimiento natural negativo).
+    - id: B
+      ca: +2,9 ‰ (creixement natural positiu).
+      es: +2,9 ‰ (crecimiento natural positivo).
+    - id: C
+      ca: +16,7 ‰.
+      es: +16,7 ‰.
+    - id: D
+      ca: -0,029 ‰.
+      es: -0,029 ‰.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La taxa de creixement natural = natalitat − mortalitat = 6,9 − 9,8 = −2,9 ‰.
+      Com que hi ha més defuncions que naixements, el creixement natural és
+      NEGATIU (situació real d'Espanya). L'opció B inverteix el signe; l'opció C
+      suma en lloc de restar (6,9 + 9,8); l'opció D aplica malament la unitat
+      per mil.
+    es: La tasa de crecimiento natural = natalidad − mortalidad = 6,9 − 9,8 = −2,9
+      ‰. Como hay más defunciones que nacimientos, el crecimiento natural es
+      NEGATIVO (situación real de España). La opción B invierte el signo; la
+      opción C suma en lugar de restar (6,9 + 9,8); la opción D aplica mal la
+      unidad por mil.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000086
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.data
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Catalunya té aproximadament 7.900.000 habitants i una superfície aproximada
+      de 32.000 km². Quina és la seva densitat de població?
+    es: Cataluña tiene aproximadamente 7.900.000 habitantes y una superficie
+      aproximada de 32.000 km². ¿Cuál es su densidad de población?
+  options:
+    - id: A
+      ca: ≈ 247 hab/km².
+      es: ≈ 247 hab/km².
+    - id: B
+      ca: ≈ 24,7 hab/km².
+      es: ≈ 24,7 hab/km².
+    - id: C
+      ca: ≈ 2.468 hab/km².
+      es: ≈ 2.468 hab/km².
+    - id: D
+      ca: ≈ 0,004 hab/km².
+      es: ≈ 0,004 hab/km².
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Densitat = població / superfície = 7.900.000 / 32.000 ≈ 246,9 ≈ 247 hab/km².
+      L'opció B i C són errors de factor 10 en la divisió; l'opció D inverteix
+      la fórmula (superfície/població).
+    es: Densidad = población / superficie = 7.900.000 / 32.000 ≈ 246,9 ≈ 247
+      hab/km². Las opciones B y C son errores de factor 10 en la división; la
+      opción D invierte la fórmula (superficie/población).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000087
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.data
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "Un climograma d'una localitat espanyola mostra: temperatura mitjana anual
+      13 °C, amplitud tèrmica anual d'uns 10 °C, precipitació anual d'uns 1.100
+      mm repartida al llarg de tot l'any i CAP mes sec (mai P < 2·T). A quin
+      domini climàtic correspon?"
+    es: "Un climograma de una localidad española muestra: temperatura media anual 13
+      °C, amplitud térmica anual de unos 10 °C, precipitación anual de unos
+      1.100 mm repartida a lo largo de todo el año y NINGÚN mes seco (nunca P <
+      2·T). ¿A qué dominio climático corresponde?"
+  options:
+    - id: A
+      ca: Clima oceànic (Espanya humida, cornisa cantàbrica i Galícia).
+      es: Clima oceánico (España húmeda, cornisa cantábrica y Galicia).
+    - id: B
+      ca: Clima mediterrani litoral.
+      es: Clima mediterráneo litoral.
+    - id: C
+      ca: Clima mediterrani continentalitzat.
+      es: Clima mediterráneo continentalizado.
+    - id: D
+      ca: Clima subtropical canari.
+      es: Clima subtropical canario.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Precipitació abundant (>1.000 mm), repartida tot l'any i sense sequera
+      estival, juntament amb una amplitud tèrmica baixa (~10 °C) i temperatures
+      suaus, són trets del clima OCEÀNIC. El mediterrani litoral (B) i el
+      continentalitzat (C) tenen sequera estival i precipitacions molt menors
+      (400–600 mm), i el continentalitzat, a més, amplitud tèrmica alta. El
+      subtropical canari (D) té escassa precipitació i temperatures més càlides
+      i regulars.
+    es: Precipitación abundante (>1.000 mm), repartida todo el año y sin sequía
+      estival, junto con una amplitud térmica baja (~10 °C) y temperaturas
+      suaves, son rasgos del clima OCEÁNICO. El mediterráneo litoral (B) y el
+      continentalizado (C) tienen sequía estival y precipitaciones mucho menores
+      (400–600 mm), y el continentalizado, además, amplitud térmica alta. El
+      subtropical canario (D) tiene escasa precipitación y temperaturas más
+      cálidas y regulares.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000088
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.data
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Segons dades d'Espanya (aprox. 2023), la població de 65 anys i més és d'uns
+      9.300.000 habitants i la població menor de 15 anys és d'uns 6.500.000
+      habitants. Quin és l'índex d'envelliment? [Índex d'envelliment = (població
+      ≥65 / població <15) × 100]
+    es: Según datos de España (aprox. 2023), la población de 65 años y más es de
+      unos 9.300.000 habitantes y la población menor de 15 años es de unos
+      6.500.000 habitantes. ¿Cuál es el índice de envejecimiento? [Índice de
+      envejecimiento = (población ≥65 / población <15) × 100]
+  options:
+    - id: A
+      ca: ≈ 143 (hi ha 143 persones grans per cada 100 joves).
+      es: ≈ 143 (hay 143 personas mayores por cada 100 jóvenes).
+    - id: B
+      ca: ≈ 70.
+      es: ≈ 70.
+    - id: C
+      ca: ≈ 1,43.
+      es: ≈ 1,43.
+    - id: D
+      ca: ≈ 59.
+      es: ≈ 59.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Índex d'envelliment = (9.300.000 / 6.500.000) × 100 ≈ 143. Un valor superior
+      a 100 indica una població envellida, com és el cas d'Espanya. L'opció B
+      inverteix el quocient (joves/grans × 100 ≈ 70); l'opció C oblida
+      multiplicar per 100; l'opció D calcula la proporció de grans sobre el
+      total dels dos grups.
+    es: Índice de envejecimiento = (9.300.000 / 6.500.000) × 100 ≈ 143. Un valor
+      superior a 100 indica una población envejecida, como es el caso de España.
+      La opción B invierte el cociente (jóvenes/mayores × 100 ≈ 70); la opción C
+      olvida multiplicar por 100; la opción D calcula la proporción de mayores
+      sobre el total de ambos grupos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: geog-g-000089
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: geography
+  type: multiple_choice
+  skills:
+    - geography.analysis.data
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Una comunitat autònoma passa de 500.000 habitants a 512.000 habitants en un
+      any. Durant aquest any s'hi han registrat 4.200 naixements i 6.000
+      defuncions. Quin ha estat el saldo migratori? [Saldo migratori =
+      creixement total − creixement natural]
+    es: Una comunidad autónoma pasa de 500.000 habitantes a 512.000 habitantes en un
+      año. Durante ese año se han registrado 4.200 nacimientos y 6.000
+      defunciones. ¿Cuál ha sido el saldo migratorio? [Saldo migratorio =
+      crecimiento total − crecimiento natural]
+  options:
+    - id: A
+      ca: +13.800 persones.
+      es: +13.800 personas.
+    - id: B
+      ca: +10.200 persones.
+      es: +10.200 personas.
+    - id: C
+      ca: -13.800 persones.
+      es: -13.800 personas.
+    - id: D
+      ca: +12.000 persones.
+      es: +12.000 personas.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Creixement total = 512.000 − 500.000 = +12.000. Creixement natural =
+      naixements − defuncions = 4.200 − 6.000 = −1.800. Saldo migratori =
+      creixement total − creixement natural = 12.000 − (−1.800) = +13.800.
+      L'opció B fa l'error de signe (12.000 + (−1.800) = 10.200); l'opció C
+      inverteix el signe del resultat; l'opció D ignora el creixement natural i
+      pren només la variació total.
+    es: Crecimiento total = 512.000 − 500.000 = +12.000. Crecimiento natural =
+      nacimientos − defunciones = 4.200 − 6.000 = −1.800. Saldo migratorio =
+      crecimiento total − crecimiento natural = 12.000 − (−1.800) = +13.800. La
+      opción B comete el error de signo (12.000 + (−1.800) = 10.200); la opción
+      C invierte el signo del resultado; la opción D ignora el crecimiento
+      natural y toma solo la variación total.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

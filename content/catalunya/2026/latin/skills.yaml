@@ -1,0 +1,215 @@
+- id: latin.morphology_nominal
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Morfologia nominal, es: Morfología nominal }
+  status: published
+  competencies: [reasoning]
+
+- id: latin.morphology_nominal.declensions
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Les cinc declinacions", es: "Las cinco declinaciones" }
+  parent: latin.morphology_nominal
+  status: published
+  competencies: [reasoning]
+
+- id: latin.morphology_nominal.cases
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "El sistema de casos", es: "El sistema de casos" }
+  parent: latin.morphology_nominal
+  prerequisites: [latin.morphology_nominal.declensions]
+  status: published
+  competencies: [reasoning]
+
+- id: latin.morphology_verbal
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Morfologia verbal, es: Morfología verbal }
+  status: published
+  competencies: [reasoning]
+
+- id: latin.morphology_verbal.conjugations
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Les quatre conjugacions", es: "Las cuatro conjugaciones" }
+  parent: latin.morphology_verbal
+  status: published
+  competencies: [reasoning]
+
+- id: latin.morphology_verbal.tenses
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Temps, modes i veus verbals", es: "Tiempos, modos y voces verbales" }
+  parent: latin.morphology_verbal
+  prerequisites: [latin.morphology_verbal.conjugations]
+  status: published
+  competencies: [reasoning]
+
+- id: latin.syntax
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Sintaxi, es: Sintaxis }
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: latin.syntax.case_functions
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Funcions sintàctiques dels casos", es: "Funciones sintácticas de los casos" }
+  parent: latin.syntax
+  prerequisites: [latin.morphology_nominal.cases]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: latin.syntax.simple_sentence
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "L'oració simple: concordança i estructura", es: "La oración simple: concordancia y estructura" }
+  parent: latin.syntax
+  prerequisites: [latin.syntax.case_functions, latin.morphology_verbal.tenses]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: latin.syntax.compound_sentences
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Oracions compostes: coordinació i subordinació", es: "Oraciones compuestas: coordinación y subordinación" }
+  parent: latin.syntax
+  prerequisites: [latin.syntax.simple_sentence]
+  status: published
+  competencies: [reasoning, critical_thinking]
+
+- id: latin.translation
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: Traducció de textos, es: Traducción de textos }
+  status: published
+  competencies: [reasoning, communication]
+
+- id: latin.translation.dictionary_use
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Ús del diccionari i anàlisi morfosintàctica", es: "Uso del diccionario y análisis morfosintáctico" }
+  parent: latin.translation
+  prerequisites: [latin.syntax.case_functions]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: latin.translation.prose_texts
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Traducció de textos en prosa", es: "Traducción de textos en prosa" }
+  parent: latin.translation
+  prerequisites: [latin.translation.dictionary_use, latin.syntax.compound_sentences]
+  status: published
+  competencies: [reasoning, communication, critical_thinking]
+
+- id: latin.lexicon
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Lèxic i etimologia", es: "Léxico y etimología" }
+  status: published
+  competencies: [communication, reasoning]
+
+- id: latin.lexicon.phonetic_evolution
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Evolució fonètica al català i al castellà", es: "Evolución fonética al catalán y al castellano" }
+  parent: latin.lexicon
+  prerequisites: [latin.morphology_nominal.declensions]
+  status: published
+  competencies: [reasoning, communication]
+
+- id: latin.lexicon.cultisms
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Cultismes, patrimonials i llatinismes", es: "Cultismos, patrimoniales y latinismos" }
+  parent: latin.lexicon
+  prerequisites: [latin.lexicon.phonetic_evolution]
+  status: published
+  competencies: [communication, critical_thinking]
+
+- id: latin.culture
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Cultura i civilització romana", es: "Cultura y civilización romana" }
+  status: published
+  competencies: [communication, critical_thinking]
+
+- id: latin.culture.history
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Història de Roma: monarquia, república i imperi", es: "Historia de Roma: monarquía, república e imperio" }
+  parent: latin.culture
+  status: published
+  competencies: [communication, critical_thinking]
+
+- id: latin.culture.society
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Societat i vida quotidiana romana", es: "Sociedad y vida cotidiana romana" }
+  parent: latin.culture
+  prerequisites: [latin.culture.history]
+  status: published
+  competencies: [communication, critical_thinking]
+
+- id: latin.culture.mythology
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "Mitologia i religió romana", es: "Mitología y religión romana" }
+  parent: latin.culture
+  prerequisites: [latin.culture.history]
+  status: published
+  competencies: [communication, critical_thinking]
+
+- id: latin.culture.legacy
+  version: 1
+  subject: latin
+  region: catalunya
+  academic_year: 2026
+  name: { ca: "El llegat de Roma a la cultura occidental", es: "El legado de Roma en la cultura occidental" }
+  parent: latin.culture
+  prerequisites: [latin.culture.society, latin.culture.mythology, latin.lexicon.cultisms]
+  status: published
+  competencies: [critical_thinking, communication]

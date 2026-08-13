@@ -1,0 +1,4147 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: gre-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.letters
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quina és la forma minúscula de la lletra grega majúscula Δ (delta)?
+    es: ¿Cuál es la forma minúscula de la letra griega mayúscula Δ (delta)?
+  options:
+    - id: A
+      ca: δ
+      es: δ
+    - id: B
+      ca: λ
+      es: λ
+    - id: C
+      ca: θ
+      es: θ
+    - id: D
+      ca: ζ
+      es: ζ
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La parella majúscula/minúscula de la delta és Δ/δ. Les altres formes
+      corresponen a λ (lambda), θ (theta) i ζ (dzeta), lletres que sovint es
+      confonen amb la delta pel traç triangular o inclinat.
+    es: La pareja mayúscula/minúscula de la delta es Δ/δ. Las otras formas
+      corresponden a λ (lambda), θ (theta) y ζ (dseta), letras que suelen
+      confundirse con la delta por el trazo triangular o inclinado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.letters
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Com s'anomena la lletra grega Ω / ω?
+    es: ¿Cómo se llama la letra griega Ω / ω?
+  options:
+    - id: A
+      ca: Omega
+      es: Omega
+    - id: B
+      ca: Òmicron
+      es: Ómicron
+    - id: C
+      ca: Fi
+      es: Fi
+    - id: D
+      ca: Psi
+      es: Psi
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Ω / ω és l'omega, la darrera lletra de l'alfabet i vocal llarga [ō]. L'error
+      més comú és confondre-la amb l'òmicron (Ο/ο), que és la o breu; fi és Φ/φ
+      i psi és Ψ/ψ.
+    es: Ω / ω es la omega, la última letra del alfabeto y vocal larga [ō]. El error
+      más común es confundirla con la ómicron (Ο/ο), que es la o breve; fi es
+      Φ/φ y psi es Ψ/ψ.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.letters
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Quan s'escriu la sigma en la seva forma final ς?
+    es: ¿Cuándo se escribe la sigma en su forma final ς?
+  options:
+    - id: A
+      ca: Quan la sigma és l'última lletra de la paraula.
+      es: Cuando la sigma es la última letra de la palabra.
+    - id: B
+      ca: Quan la sigma va a principi de paraula.
+      es: Cuando la sigma va al principio de palabra.
+    - id: C
+      ca: Sempre que la sigma vagi davant d'una vocal.
+      es: Siempre que la sigma vaya delante de una vocal.
+    - id: D
+      ca: En qualsevol posició, ja que ς i σ són intercanviables.
+      es: En cualquier posición, ya que ς y σ son intercambiables.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El grec té dues grafies de la sigma: σ a l'inici o a l'interior de la
+      paraula i ς només al final (p. ex. λόγος, θεός). No depèn de la lletra
+      següent ni són lliurement intercanviables."
+    es: "El griego tiene dos grafías de la sigma: σ al inicio o en el interior de la
+      palabra y ς solo al final (p. ej. λόγος, θεός). No depende de la letra
+      siguiente ni son libremente intercambiables."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.letters
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quina parella de vocals gregues són sempre llargues (i tenen un timbre
+      pròpiament llarg)?
+    es: ¿Qué pareja de vocales griegas son siempre largas (y tienen un timbre
+      propiamente largo)?
+  options:
+    - id: A
+      ca: η i ω
+      es: η y ω
+    - id: B
+      ca: ε i ο
+      es: ε y ο
+    - id: C
+      ca: α i ι
+      es: α e ι
+    - id: D
+      ca: υ i ο
+      es: υ y ο
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El grec distingeix e breu (ε, èpsilon) / e llarga (η, eta) i o breu (ο,
+      òmicron) / o llarga (ω, omega). Les vocals sempre llargues són η i ω.
+      L'error típic és triar ε i ο, que són justament les breus; α, ι i υ poden
+      ser breus o llargues segons el mot.
+    es: El griego distingue e breve (ε, épsilon) / e larga (η, eta) y o breve (ο,
+      ómicron) / o larga (ω, omega). Las vocales siempre largas son η y ω. El
+      error típico es elegir ε y ο, que son precisamente las breves; α, ι y υ
+      pueden ser breves o largas según la palabra.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.letters
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quina és la transcripció correcta de la paraula grega ψυχή?
+    es: ¿Cuál es la transcripción correcta de la palabra griega ψυχή?
+  options:
+    - id: A
+      ca: psyché
+      es: psyché
+    - id: B
+      ca: fyché
+      es: fyché
+    - id: C
+      ca: ksyché
+      es: ksyché
+    - id: D
+      ca: chyché
+      es: chyché
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La ψ inicial és una consonant doble que es transcriu ps-; per tant ψυχή =
+      psyché (υ = y, χ = ch, η = e llarga). Els errors habituals són confondre ψ
+      (ps) amb φ (f → «fyché»), amb ξ (ks → «ksyché») o amb χ (ch → «chyché»).
+    es: La ψ inicial es una consonante doble que se transcribe ps-; por tanto ψυχή =
+      psyché (υ = y, χ = ch, η = e larga). Los errores habituales son confundir
+      ψ (ps) con φ (f → «fyché»), con ξ (ks → «ksyché») o con χ (ch → «chyché»).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.letters
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: La lletra minúscula ν, tot i assemblar-se a una «v» llatina, com es llegeix
+      realment?
+    es: La letra minúscula ν, aunque se parece a una «v» latina, ¿cómo se lee
+      realmente?
+  options:
+    - id: A
+      ca: "[n]: és la nu."
+      es: "[n]: es la ny."
+    - id: B
+      ca: "[b]/[v]: és una ve."
+      es: "[b]/[v]: es una uve."
+    - id: C
+      ca: "[u]: és la upsilon."
+      es: "[u]: es la ípsilon."
+    - id: D
+      ca: "[g]: és la gamma."
+      es: "[g]: es la gamma."
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La minúscula ν és la nu i es llegeix [n], tot i que la seva forma recorda
+      una «v» llatina; aquest parany gràfic és l'error més freqüent. La upsilon
+      és υ (semblant a «u»/«y») i la gamma és γ; cap d'elles no sona [v], so que
+      el grec clàssic ni tan sols té com a tal.
+    es: La minúscula ν es la ny y se lee [n], aunque su forma recuerde a una «v»
+      latina; esa trampa gráfica es el error más frecuente. La ípsilon es υ
+      (parecida a «u»/«y») y la gamma es γ; ninguna suena [v], sonido que el
+      griego clásico ni siquiera tiene como tal.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.phonetics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: "L'esperit aspre (῾) col·locat sobre una vocal inicial indica:"
+    es: "El espíritu áspero (῾) colocado sobre una vocal inicial indica:"
+  options:
+    - id: A
+      ca: Una aspiració inicial /h/, que en la transcripció es representa amb una «h».
+      es: Una aspiración inicial /h/, que en la transcripción se representa con una
+        «h».
+    - id: B
+      ca: Que la vocal és necessàriament llarga.
+      es: Que la vocal es necesariamente larga.
+    - id: C
+      ca: L'accent tònic principal de la paraula.
+      es: El acento tónico principal de la palabra.
+    - id: D
+      ca: L'absència de tot so aspirat davant de la vocal.
+      es: La ausencia de todo sonido aspirado ante la vocal.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'esperit aspre marca una aspiració /h/ davant de la vocal inicial i es
+      transcriu amb «h» (p. ex. ὁ → ho-). L'esperit suau (᾿), en canvi, indica
+      l'absència d'aspiració i no es transcriu. Els esperits no tenen res a
+      veure amb la quantitat vocàlica ni amb l'accentuació.
+    es: El espíritu áspero marca una aspiración /h/ ante la vocal inicial y se
+      transcribe con «h» (p. ej. ὁ → ho-). El espíritu suave (᾿), en cambio,
+      indica ausencia de aspiración y no se transcribe. Los espíritus no tienen
+      relación con la cantidad vocálica ni con la acentuación.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.phonetics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Com es transcriu correctament la paraula grega ῥήτωρ («orador»)?
+    es: ¿Cómo se transcribe correctamente la palabra griega ῥήτωρ («orador»)?
+  options:
+    - id: A
+      ca: rhétor
+      es: rhétor
+    - id: B
+      ca: rétor
+      es: rétor
+    - id: C
+      ca: hrétor
+      es: hrétor
+    - id: D
+      ca: rhítor
+      es: rhítor
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La ρ inicial porta sempre esperit aspre i es transcriu «rh» (la «h» va
+      DESPRÉS de la r, no abans). La η (eta) és una e llarga i es transcriu «e»,
+      no «i». Per tant ῥήτωρ → rhétor. «rétor» oblida l'aspiració; «hrétor»
+      col·loca malament la h; «rhítor» confon η amb ι.
+    es: La ρ inicial lleva siempre espíritu áspero y se transcribe «rh» (la «h» va
+      DESPUÉS de la r, no antes). La η (eta) es una e larga y se transcribe «e»,
+      no «i». Por tanto ῥήτωρ → rhétor. «rétor» olvida la aspiración; «hrétor»
+      coloca mal la h; «rhítor» confunde η con ι.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.phonetics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quines lletres, quan apareixen a inici de paraula, porten SEMPRE esperit
+      aspre?
+    es: ¿Qué letras, cuando aparecen a inicio de palabra, llevan SIEMPRE espíritu
+      áspero?
+  options:
+    - id: A
+      ca: La υ (ípsilon) inicial i la ρ (ro) inicial.
+      es: La υ (ípsilon) inicial y la ρ (ro) inicial.
+    - id: B
+      ca: Totes les vocals quan són inicials de paraula.
+      es: Todas las vocales cuando son iniciales de palabra.
+    - id: C
+      ca: La α i la ε inicials.
+      es: La α y la ε iniciales.
+    - id: D
+      ca: Únicament la ρ inicial.
+      es: Únicamente la ρ inicial.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En grec, la υ inicial i la ρ inicial duen sempre esperit aspre (p. ex. ὕδωρ
+      «hydor», ῥόδον «rhodon»). Les altres vocals inicials poden dur esperit
+      aspre o suau segons la paraula, de manera que no és cert que totes l'hagin
+      de dur. L'opció D és incompleta perquè oblida la υ.
+    es: En griego, la υ inicial y la ρ inicial llevan siempre espíritu áspero (p.
+      ej. ὕδωρ «hydor», ῥόδον «rhodon»). Las demás vocales iniciales pueden
+      llevar espíritu áspero o suave según la palabra, así que no es cierto que
+      todas deban llevarlo. La opción D es incompleta porque olvida la υ.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.phonetics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "En la transcripció al català/castellà, les consonants aspirades θ, φ i χ es
+      representen respectivament com:"
+    es: "En la transcripción al catalán/castellano, las consonantes aspiradas θ, φ y
+      χ se representan respectivamente como:"
+  options:
+    - id: A
+      ca: th, ph, ch
+      es: th, ph, ch
+    - id: B
+      ca: t, p, c
+      es: t, p, c
+    - id: C
+      ca: d, b, g
+      es: d, b, g
+    - id: D
+      ca: z, f, j
+      es: z, f, j
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les oclusives aspirades gregues es transcriuen conservant la «h» que
+      reflecteix l'aspiració: θ → th, φ → ph, χ → ch (p. ex. θεός → theós,
+      φιλοσοφία → philosophia). L'opció B oblida l'aspiració; la C dóna les
+      sonores (δ, β, γ); la D reflecteix la pronúncia del grec modern, no la
+      transcripció del grec clàssic."
+    es: "Las oclusivas aspiradas griegas se transcriben conservando la «h» que
+      refleja la aspiración: θ → th, φ → ph, χ → ch (p. ej. θεός → theós,
+      φιλοσοφία → philosophia). La opción B olvida la aspiración; la C da las
+      sonoras (δ, β, γ); la D refleja la pronunciación del griego moderno, no la
+      transcripción del griego clásico."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.phonetics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: "L'accent circumflex (περισπωμένη) NOMÉS pot recaure sobre:"
+    es: "El acento circunflejo (περισπωμένη) SOLO puede recaer sobre:"
+  options:
+    - id: A
+      ca: Una vocal llarga o un diftong.
+      es: Una vocal larga o un diptongo.
+    - id: B
+      ca: Qualsevol vocal, llarga o breu.
+      es: Cualquier vocal, larga o breve.
+    - id: C
+      ca: Una vocal breu.
+      es: Una vocal breve.
+    - id: D
+      ca: Sempre la síl·laba final de la paraula.
+      es: Siempre la sílaba final de la palabra.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El circumflex representa una entonació ascendent-descendent que exigeix una
+      síl·laba de dues morae; per això només pot recaure sobre vocals llargues o
+      diftongs, i mai sobre vocals breus. A més, per la seva naturalesa, només
+      pot aparèixer a l'última o penúltima síl·laba, no en qualsevol posició.
+    es: El circunflejo representa una entonación ascendente-descendente que exige
+      una sílaba de dos moras; por eso solo puede recaer sobre vocales largas o
+      diptongos, y nunca sobre vocales breves. Además, por su naturaleza, solo
+      puede aparecer en la última o penúltima sílaba, no en cualquier posición.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.alphabet.phonetics
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "Segons la llei de limitació de l'accent grec, l'accent agut pot recaure
+      sobre l'antepenúltima síl·laba només quan:"
+    es: "Según la ley de limitación del acento griego, el acento agudo puede recaer
+      sobre la antepenúltima sílaba solo cuando:"
+  options:
+    - id: A
+      ca: La síl·laba final és breu.
+      es: La sílaba final es breve.
+    - id: B
+      ca: La síl·laba final és llarga.
+      es: La sílaba final es larga.
+    - id: C
+      ca: La penúltima síl·laba és llarga.
+      es: La penúltima sílaba es larga.
+    - id: D
+      ca: En qualsevol cas, sense cap restricció.
+      es: En cualquier caso, sin restricción alguna.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La llei de limitació estableix que l'accent no pot anar més enllà de
+      l'antepenúltima síl·laba, i que, si la vocal de la síl·laba final és
+      llarga, l'accent no pot passar de la penúltima. Per tant, perquè l'agut
+      recaigui sobre l'antepenúltima cal que la final sigui breu (p. ex.
+      ἄνθρωπος; en genitiu ἀνθρώπου, amb final llarga, l'accent es desplaça a la
+      penúltima).
+    es: La ley de limitación establece que el acento no puede ir más allá de la
+      antepenúltima sílaba, y que, si la vocal de la sílaba final es larga, el
+      acento no puede pasar de la penúltima. Por tanto, para que el agudo
+      recaiga sobre la antepenúltima es necesario que la final sea breve (p. ej.
+      ἄνθρωπος; en genitivo ἀνθρώπου, con final larga, el acento se desplaza a
+      la penúltima).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.article
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quina és la forma del nominatiu masculí singular de l'article grec?
+    es: ¿Cuál es la forma del nominativo masculino singular del artículo griego?
+  options:
+    - id: A
+      ca: ὁ (ho)
+      es: ὁ (ho)
+    - id: B
+      ca: ἡ (hē)
+      es: ἡ (hē)
+    - id: C
+      ca: τό (tó)
+      es: τό (tó)
+    - id: D
+      ca: τόν (tón)
+      es: τόν (tón)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'article grec té tres gèneres. El nominatiu singular és ὁ (masculí), ἡ
+      (femení) i τό (neutre). Per tant, ὁ és el masculí. ἡ és el femení
+      nominatiu; τό és el neutre nominatiu/acusatiu; τόν és l'acusatiu masculí
+      singular.
+    es: El artículo griego tiene tres géneros. El nominativo singular es ὁ
+      (masculino), ἡ (femenino) y τό (neutro). Por tanto, ὁ es el masculino. ἡ
+      es el femenino nominativo; τό es el neutro nominativo/acusativo; τόν es el
+      acusativo masculino singular.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.article
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: En grec, quin cas s'utilitza normalment per expressar el complement directe
+      (CD)?
+    es: En griego, ¿qué caso se utiliza normalmente para expresar el complemento
+      directo (CD)?
+  options:
+    - id: A
+      ca: El nominatiu
+      es: El nominativo
+    - id: B
+      ca: L'acusatiu
+      es: El acusativo
+    - id: C
+      ca: El datiu
+      es: El dativo
+    - id: D
+      ca: El genitiu
+      es: El genitivo
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "L'acusatiu és el cas propi del complement directe. El nominatiu marca el
+      subjecte; el datiu, típicament el complement indirecte; i el genitiu, la
+      possessió o el complement del nom. Error freqüent: confondre el nominatiu
+      (subjecte) amb l'acusatiu (CD)."
+    es: "El acusativo es el caso propio del complemento directo. El nominativo marca
+      el sujeto; el dativo, típicamente el complemento indirecto; y el genitivo,
+      la posesión o el complemento del nombre. Error frecuente: confundir el
+      nominativo (sujeto) con el acusativo (CD)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.article
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: La forma τῶν de l'article, ¿a quin cas i nombre correspon?
+    es: La forma τῶν del artículo, ¿a qué caso y número corresponde?
+  options:
+    - id: A
+      ca: Genitiu plural (dels tres gèneres)
+      es: Genitivo plural (de los tres géneros)
+    - id: B
+      ca: Datiu plural masculí i neutre
+      es: Dativo plural masculino y neutro
+    - id: C
+      ca: Acusatiu plural masculí
+      es: Acusativo plural masculino
+    - id: D
+      ca: Genitiu singular femení
+      es: Genitivo singular femenino
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: τῶν és el genitiu plural, comú als tres gèneres (masculí, femení i neutre).
+      El datiu plural és τοῖς (masc./neutre) i ταῖς (fem.); l'acusatiu plural
+      masculí és τούς; i el genitiu singular femení és τῆς. La coincidència del
+      genitiu plural en els tres gèneres és una característica clau de
+      l'article.
+    es: τῶν es el genitivo plural, común a los tres géneros (masculino, femenino y
+      neutro). El dativo plural es τοῖς (masc./neutro) y ταῖς (fem.); el
+      acusativo plural masculino es τούς; y el genitivo singular femenino es
+      τῆς. La coincidencia del genitivo plural en los tres géneros es un rasgo
+      clave del artículo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.article
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quin article completa correctament el sintagma «___ θάλασσα» (la mar),
+      tenint en compte que θάλασσα és un substantiu femení en nominatiu
+      singular?
+    es: ¿Qué artículo completa correctamente el sintagma «___ θάλασσα» (el mar),
+      teniendo en cuenta que θάλασσα es un sustantivo femenino en nominativo
+      singular?
+  options:
+    - id: A
+      ca: ὁ
+      es: ὁ
+    - id: B
+      ca: ἡ
+      es: ἡ
+    - id: C
+      ca: τό
+      es: τό
+    - id: D
+      ca: αἱ
+      es: αἱ
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "L'article concorda en gènere, nombre i cas amb el substantiu. θάλασσα és
+      femení, nominatiu, singular, per tant li correspon ἡ: «ἡ θάλασσα». ὁ seria
+      masculí; τό, neutre; αἱ, femení però plural (αἱ θάλασσαι). Cal no
+      deixar-se enganyar per la terminació -α, que aquí és femenina de la 1a
+      declinació."
+    es: "El artículo concuerda en género, número y caso con el sustantivo. θάλασσα
+      es femenino, nominativo, singular, por lo que le corresponde ἡ: «ἡ
+      θάλασσα». ὁ sería masculino; τό, neutro; αἱ, femenino pero plural (αἱ
+      θάλασσαι). No hay que dejarse engañar por la terminación -α, que aquí es
+      femenina de la 1ª declinación."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.article
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.78
+  question:
+    ca: A la frase «ὁ διδάσκαλος τοῖς μαθηταῖς βιβλία δίδωσιν» (el mestre dóna
+      llibres als deixebles), quin és el cas i la funció sintàctica del sintagma
+      τοῖς μαθηταῖς?
+    es: En la frase «ὁ διδάσκαλος τοῖς μαθηταῖς βιβλία δίδωσιν» (el maestro da
+      libros a los discípulos), ¿cuál es el caso y la función sintáctica del
+      sintagma τοῖς μαθηταῖς?
+  options:
+    - id: A
+      ca: Datiu plural; complement indirecte (CI)
+      es: Dativo plural; complemento indirecto (CI)
+    - id: B
+      ca: Genitiu plural; complement del nom
+      es: Genitivo plural; complemento del nombre
+    - id: C
+      ca: Acusatiu plural; complement directe (CD)
+      es: Acusativo plural; complemento directo (CD)
+    - id: D
+      ca: Nominatiu plural; subjecte
+      es: Nominativo plural; sujeto
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'article τοῖς és datiu plural (masc./neutre), i μαθηταῖς és el datiu
+      plural de μαθητής. Amb un verb de «donar» (δίδωσιν), el datiu expressa el
+      destinatari, és a dir, el complement indirecte: «als deixebles». El
+      subjecte és ὁ διδάσκαλος (nominatiu) i el CD és βιβλία (acusatiu neutre
+      plural). Error típic: prendre τοῖς μαθηταῖς per un CD en comptes del
+      datiu-CI."
+    es: "El artículo τοῖς es dativo plural (masc./neutro), y μαθηταῖς es el dativo
+      plural de μαθητής. Con un verbo de «dar» (δίδωσιν), el dativo expresa el
+      destinatario, es decir, el complemento indirecto: «a los discípulos». El
+      sujeto es ὁ διδάσκαλος (nominativo) y el CD es βιβλία (acusativo neutro
+      plural). Error típico: tomar τοῖς μαθηταῖς por un CD en lugar del
+      dativo-CI."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina és la forma correcta del genitiu singular del substantiu λόγος, -ου
+      (lógos, 2a declinació)?
+    es: ¿Cuál es la forma correcta del genitivo singular del sustantivo λόγος, -ου
+      (lógos, 2ª declinación)?
+  options:
+    - id: A
+      ca: λόγου (lógou)
+      es: λόγου (lógou)
+    - id: B
+      ca: λόγον (lógon)
+      es: λόγον (lógon)
+    - id: C
+      ca: λόγῳ (lógōi)
+      es: λόγῳ (lógōi)
+    - id: D
+      ca: λόγοι (lógoi)
+      es: λόγοι (lógoi)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els masculins de la 2a declinació fan el genitiu singular en -ου: λόγου.
+      λόγον és l'acusatiu singular, λόγῳ el datiu singular i λόγοι el nominatiu
+      plural."
+    es: "Los masculinos de la 2ª declinación forman el genitivo singular en -ου:
+      λόγου. λόγον es el acusativo singular, λόγῳ el dativo singular y λόγοι el
+      nominativo plural."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quina de les paraules següents pertany a la segona declinació?
+    es: ¿Cuál de las siguientes palabras pertenece a la segunda declinación?
+  options:
+    - id: A
+      ca: δῶρον (dôron, «regal»)
+      es: δῶρον (dôron, «regalo»)
+    - id: B
+      ca: θάλασσα (thálassa, «mar»)
+      es: θάλασσα (thálassa, «mar»)
+    - id: C
+      ca: σῶμα (sôma, «cos»)
+      es: σῶμα (sôma, «cuerpo»)
+    - id: D
+      ca: πόλις (pólis, «ciutat»)
+      es: πόλις (pólis, «ciudad»)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: δῶρον, -ου és un neutre de la 2a declinació. θάλασσα, -ης és de la 1a
+      declinació (tema en -α), mentre que σῶμα, -ατος i πόλις, -εως són de la 3a
+      declinació.
+    es: δῶρον, -ου es un neutro de la 2ª declinación. θάλασσα, -ης es de la 1ª
+      declinación (tema en -α), mientras que σῶμα, -ατος y πόλις, -εως son de la
+      3ª declinación.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Donat el substantiu σῶμα, σώματος (sôma, neutre de la 3a declinació), quin
+      és el tema (arrel) sobre el qual es construeixen els casos?
+    es: Dado el sustantivo σῶμα, σώματος (sôma, neutro de la 3ª declinación), ¿cuál
+      es el tema (raíz) sobre el que se construyen los casos?
+  options:
+    - id: A
+      ca: σωματ- (sōmat-)
+      es: σωματ- (sōmat-)
+    - id: B
+      ca: σωμα- (sōma-)
+      es: σωμα- (sōma-)
+    - id: C
+      ca: σωμ- (sōm-)
+      es: σωμ- (sōm-)
+    - id: D
+      ca: σωματος- (sōmatos-)
+      es: σωματος- (sōmatos-)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A la 3a declinació el tema s'obté traient la desinència de genitiu singular
+      -ος a la forma σώματος, i queda σωματ-. No es pren el nominatiu (σωμα-) ni
+      es manté la -ος de la desinència (σωματος-).
+    es: En la 3ª declinación el tema se obtiene quitando la desinencia de genitivo
+      singular -ος a la forma σώματος, quedando σωματ-. No se toma el nominativo
+      (σωμα-) ni se mantiene la -ος de la desinencia (σωματος-).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: El substantiu ἡ ὁδός («el camí») és femení tot i acabar en -ος i declinar-se
+      per la 2a declinació. Quina és la forma correcta de «el bon camí» en
+      nominatiu singular, amb l'adjectiu καλός, -ή, -όν?
+    es: El sustantivo ἡ ὁδός («el camino») es femenino aunque termine en -ος y se
+      decline por la 2ª declinación. ¿Cuál es la forma correcta de «el buen
+      camino» en nominativo singular, con el adjetivo καλός, -ή, -όν?
+  options:
+    - id: A
+      ca: ἡ καλὴ ὁδός (hē kalḕ hodós)
+      es: ἡ καλὴ ὁδός (hē kalḕ hodós)
+    - id: B
+      ca: ὁ καλὸς ὁδός (ho kalòs hodós)
+      es: ὁ καλὸς ὁδός (ho kalòs hodós)
+    - id: C
+      ca: τὸ καλὸν ὁδός (tò kalòn hodós)
+      es: τὸ καλὸν ὁδός (tò kalòn hodós)
+    - id: D
+      ca: ἡ καλὰ ὁδός (hē kalà hodós)
+      es: ἡ καλὰ ὁδός (hē kalà hodós)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'adjectiu concorda en gènere, nombre i cas amb el substantiu, no en la seva
+      declinació. Com que ὁδός és femení, cal el femení καλή (i l'article femení
+      ἡ), encara que la paraula «sembli» masculina de la 2a declinació. καλὸς és
+      masculí, καλὸν neutre, i καλὰ no és el femení singular (seria el neutre
+      plural).
+    es: El adjetivo concuerda en género, número y caso con el sustantivo, no en su
+      declinación. Como ὁδός es femenino, se requiere el femenino καλή (y el
+      artículo femenino ἡ), aunque la palabra «parezca» masculina de la 2ª
+      declinación. καλὸς es masculino, καλὸν neutro, y καλὰ no es el femenino
+      singular (sería el neutro plural).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.72
+  question:
+    ca: Quina és la forma correcta del genitiu singular de ἡ πόλις («la ciutat»),
+      substantiu de la 3a declinació amb tema en -ι?
+    es: ¿Cuál es la forma correcta del genitivo singular de ἡ πόλις («la ciudad»),
+      sustantivo de la 3ª declinación con tema en -ι?
+  options:
+    - id: A
+      ca: πόλεως (póleōs)
+      es: πόλεως (póleōs)
+    - id: B
+      ca: πόλιδος (pólidos)
+      es: πόλιδος (pólidos)
+    - id: C
+      ca: πόλεων (póleōn)
+      es: πόλεων (póleōn)
+    - id: D
+      ca: πόλει (pólei)
+      es: πόλει (pólei)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els temes en -ι com πόλις fan el genitiu singular àtic en -εως: πόλεως.
+      πόλιδος seria l'error de tractar-lo com un tema en dental (-δ), πόλεων és
+      el genitiu plural i πόλει és el datiu singular."
+    es: "Los temas en -ι como πόλις forman el genitivo singular ático en -εως:
+      πόλεως. πόλιδος sería el error de tratarlo como un tema en dental (-δ),
+      πόλεων es el genitivo plural y πόλει es el dativo singular."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.82
+  question:
+    ca: L'adjectiu irregular μέγας, μεγάλη, μέγα («gran»). Quina és la forma
+      correcta de l'acusatiu singular masculí?
+    es: El adjetivo irregular μέγας, μεγάλη, μέγα («grande»). ¿Cuál es la forma
+      correcta del acusativo singular masculino?
+  options:
+    - id: A
+      ca: μέγαν (mégan)
+      es: μέγαν (mégan)
+    - id: B
+      ca: μεγάλον (megálon)
+      es: μεγάλον (megálon)
+    - id: C
+      ca: μέγα (méga)
+      es: μέγα (méga)
+    - id: D
+      ca: μεγάλην (megálēn)
+      es: μεγάλην (megálēn)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "μέγας té una flexió mixta: el nominatiu i l'acusatiu singular masculí i
+      neutre es formen sobre el tema curt μεγα- (nom. μέγας, ac. μέγαν), mentre
+      que la resta de casos usen el tema μεγαλο-/μεγαλη-. μεγάλον és una
+      regularització incorrecta, μέγα és el neutre (nom./ac.) i μεγάλην és
+      l'acusatiu femení."
+    es: "μέγας tiene una flexión mixta: el nominativo y el acusativo singular
+      masculino y neutro se forman sobre el tema corto μεγα- (nom. μέγας, ac.
+      μέγαν), mientras que el resto de casos usan el tema μεγαλο-/μεγαλη-.
+      μεγάλον es una regularización incorrecta, μέγα es el neutro (nom./ac.) y
+      μεγάλην es el acusativo femenino."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.present_system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: El verb παιδεύω («educar») és un verb temàtic en -ω. Quina és la 2a persona
+      del singular del present d'indicatiu actiu?
+    es: El verbo παιδεύω («educar») es un verbo temático en -ω. ¿Cuál es la 2ª
+      persona del singular del presente de indicativo activo?
+  options:
+    - id: A
+      ca: παιδεύεις
+      es: παιδεύεις
+    - id: B
+      ca: παιδεύει
+      es: παιδεύει
+    - id: C
+      ca: παιδεύετε
+      es: παιδεύετε
+    - id: D
+      ca: παιδεύομεν
+      es: παιδεύομεν
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En els verbs temàtics, el present d'indicatiu actiu es forma sobre l'arrel
+      παιδευ- més la vocal temàtica i les desinències primàries: -ω, -εις, -ει,
+      -ομεν, -ετε, -ουσι(ν). La 2a persona del singular és παιδεύεις (desinència
+      -εις). παιδεύει és 3a sg., παιδεύετε és 2a pl. i παιδεύομεν és 1a pl."
+    es: "En los verbos temáticos, el presente de indicativo activo se forma sobre la
+      raíz παιδευ- más la vocal temática y las desinencias primarias: -ω, -εις,
+      -ει, -ομεν, -ετε, -ουσι(ν). La 2ª persona del singular es παιδεύεις
+      (desinencia -εις). παιδεύει es 3ª sg., παιδεύετε es 2ª pl. y παιδεύομεν es
+      1ª pl."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.present_system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: El verb εἰμί («ésser») és un verb atemàtic en -μι. Quina forma correspon a
+      la 3a persona del plural del present d'indicatiu?
+    es: El verbo εἰμί («ser») es un verbo atemático en -μι. ¿Qué forma corresponde a
+      la 3ª persona del plural del presente de indicativo?
+  options:
+    - id: A
+      ca: εἰσί(ν)
+      es: εἰσί(ν)
+    - id: B
+      ca: ἐστί(ν)
+      es: ἐστί(ν)
+    - id: C
+      ca: ἐστέ
+      es: ἐστέ
+    - id: D
+      ca: ἐσμέν
+      es: ἐσμέν
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El present d'indicatiu d'εἰμί és: εἰμί, εἶ, ἐστί(ν), ἐσμέν, ἐστέ, εἰσί(ν).
+      La 3a persona del plural és εἰσί(ν). ἐστί(ν) és la 3a sg., ἐστέ la 2a pl.
+      i ἐσμέν la 1a pl."
+    es: "El presente de indicativo de εἰμί es: εἰμί, εἶ, ἐστί(ν), ἐσμέν, ἐστέ,
+      εἰσί(ν). La 3ª persona del plural es εἰσί(ν). ἐστί(ν) es la 3ª sg., ἐστέ
+      la 2ª pl. y ἐσμέν la 1ª pl."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.present_system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: El verb contracte ποιέω («fer») contreu la vocal de l'arrel amb la vocal
+      temàtica. Quina és la 3a persona del plural del present d'indicatiu actiu?
+    es: El verbo contracto ποιέω («hacer») contrae la vocal de la raíz con la vocal
+      temática. ¿Cuál es la 3ª persona del plural del presente de indicativo
+      activo?
+  options:
+    - id: A
+      ca: ποιοῦσι(ν)
+      es: ποιοῦσι(ν)
+    - id: B
+      ca: ποιέουσι(ν)
+      es: ποιέουσι(ν)
+    - id: C
+      ca: ποιεῖσι(ν)
+      es: ποιεῖσι(ν)
+    - id: D
+      ca: ποιοῦμεν
+      es: ποιοῦμεν
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En els verbs contractes en -έω, ε + ου dóna ου. La forma sense contreure
+      ποιέ-ουσι(ν) esdevé ποιοῦσι(ν). ποιέουσι(ν) és la forma no contreta
+      (error), ποιεῖσι(ν) aplica malament la contracció ε+ει, i ποιοῦμεν és la
+      1a persona del plural.
+    es: En los verbos contractos en -έω, ε + ου da ου. La forma sin contraer
+      ποιέ-ουσι(ν) se convierte en ποιοῦσι(ν). ποιέουσι(ν) es la forma sin
+      contraer (error), ποιεῖσι(ν) aplica mal la contracción ε+ει, y ποιοῦμεν es
+      la 1ª persona del plural.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.present_system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: En el present d'indicatiu actiu del verb atemàtic δίδωμι («donar»), el
+      singular presenta el grau llarg de l'arrel (δω-) i el plural el grau breu
+      (δο-). Quina és la 3a persona del singular?
+    es: En el presente de indicativo activo del verbo atemático δίδωμι («dar»), el
+      singular presenta el grado largo de la raíz (δω-) y el plural el grado
+      breve (δο-). ¿Cuál es la 3ª persona del singular?
+  options:
+    - id: A
+      ca: δίδωσι(ν)
+      es: δίδωσι(ν)
+    - id: B
+      ca: δίδωτι(ν)
+      es: δίδωτι(ν)
+    - id: C
+      ca: δίδοσι(ν)
+      es: δίδοσι(ν)
+    - id: D
+      ca: διδόασι(ν)
+      es: διδόασι(ν)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "δίδωμι reduplica amb ι (δι-) i en el singular manté el grau llarg δω-:
+      δίδωμι, δίδως, δίδωσι(ν). La 3a sg. és δίδωσι(ν), amb la desinència -σι
+      procedent de -τι (assibilació de τ davant ι en àtic). δίδωτι(ν) conserva
+      la -τι sense assibilar (error), δίδοσι(ν) usa el grau breu δο- (propi del
+      plural) i διδόασι(ν) és la 3a persona del plural."
+    es: "δίδωμι reduplica con ι (δι-) y en el singular mantiene el grado largo δω-:
+      δίδωμι, δίδως, δίδωσι(ν). La 3ª sg. es δίδωσι(ν), con la desinencia -σι
+      procedente de -τι (asibilación de τ ante ι en ático). δίδωτι(ν) conserva
+      la -τι sin asibilar (error), δίδοσι(ν) usa el grado breve δο- (propio del
+      plural) y διδόασι(ν) es la 3ª persona del plural."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.present_system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: L'imperfet forma part del sistema de present i es construeix sobre la
+      mateixa arrel. Quina és la 3a persona del plural de l'imperfet d'indicatiu
+      del verb εἰμί?
+    es: El imperfecto forma parte del sistema de presente y se construye sobre la
+      misma raíz. ¿Cuál es la 3ª persona del plural del imperfecto de indicativo
+      del verbo εἰμί?
+  options:
+    - id: A
+      ca: ἦσαν
+      es: ἦσαν
+    - id: B
+      ca: ἦμεν
+      es: ἦμεν
+    - id: C
+      ca: ἦτε
+      es: ἦτε
+    - id: D
+      ca: εἰσί(ν)
+      es: εἰσί(ν)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'imperfet d'εἰμί és: ἦ (o ἦν), ἦσθα, ἦν, ἦμεν, ἦτε, ἦσαν. La 3a persona
+      del plural és ἦσαν. ἦμεν és la 1a pl. i ἦτε la 2a pl.; εἰσί(ν) és la 3a
+      persona del plural però del present, no de l'imperfet."
+    es: "El imperfecto de εἰμί es: ἦ (o ἦν), ἦσθα, ἦν, ἦμεν, ἦτε, ἦσαν. La 3ª
+      persona del plural es ἦσαν. ἦμεν es la 1ª pl. y ἦτε la 2ª pl.; εἰσί(ν) es
+      la 3ª persona del plural pero del presente, no del imperfecto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.present_system
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: L'infinitiu de present actiu distingeix els verbs temàtics (-ειν) dels
+      atemàtics (-ναι). Quina és la forma correcta de l'infinitiu de present
+      actiu del verb τίθημι («posar»)?
+    es: El infinitivo de presente activo distingue los verbos temáticos (-ειν) de
+      los atemáticos (-ναι). ¿Cuál es la forma correcta del infinitivo de
+      presente activo del verbo τίθημι («poner»)?
+  options:
+    - id: A
+      ca: τιθέναι
+      es: τιθέναι
+    - id: B
+      ca: τιθεῖν
+      es: τιθεῖν
+    - id: C
+      ca: θεῖναι
+      es: θεῖναι
+    - id: D
+      ca: τίθεσθαι
+      es: τίθεσθαι
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "τίθημι és atemàtic, de manera que l'infinitiu de present actiu porta la
+      desinència -ναι sobre l'arrel reduplicada en grau breu: τιθέναι. τιθεῖν
+      aplica erròniament la desinència temàtica -ειν; θεῖναι és l'infinitiu
+      d'aorist actiu (error de tema temporal); i τίθεσθαι és l'infinitiu de
+      present mitjà-passiu (error de veu)."
+    es: "τίθημι es atemático, de modo que el infinitivo de presente activo lleva la
+      desinencia -ναι sobre la raíz reduplicada en grado breve: τιθέναι. τιθεῖν
+      aplica erróneamente la desinencia temática -ειν; θεῖναι es el infinitivo
+      de aoristo activo (error de tema temporal); y τίθεσθαι es el infinitivo de
+      presente medio-pasivo (error de voz)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.voices_tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: A quina veu i temps correspon la forma verbal ἐλύθη (3a persona del singular
+      del verb λύω)?
+    es: ¿A qué voz y tiempo corresponde la forma verbal ἐλύθη (3.ª persona del
+      singular del verbo λύω)?
+  options:
+    - id: A
+      ca: Aorist passiu, 3a sing.
+      es: Aoristo pasivo, 3.ª sing.
+    - id: B
+      ca: Aorist mitjà, 3a sing.
+      es: Aoristo medio, 3.ª sing.
+    - id: C
+      ca: Imperfet passiu, 3a sing.
+      es: Imperfecto pasivo, 3.ª sing.
+    - id: D
+      ca: Present passiu, 3a sing.
+      es: Presente pasivo, 3.ª sing.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La forma es descompon en augment ἐ- (temps passat) + arrel λυ- + morfema
+      -θη- + desinència Ø. El segment -θη- és la marca característica de
+      l'aorist passiu; l'augment situa l'acció en el passat i la persona és 3a
+      del singular. Per tant, ἐλύθη = aorist passiu, 3a sing. ('va ser
+      deslligat').
+    es: La forma se descompone en aumento ἐ- (tiempo pasado) + raíz λυ- + morfema
+      -θη- + desinencia Ø. El segmento -θη- es la marca característica del
+      aoristo pasivo; el aumento sitúa la acción en el pasado y la persona es
+      3.ª del singular. Por tanto, ἐλύθη = aoristo pasivo, 3.ª sing. ('fue
+      desatado').
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.voices_tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quin morfema caracteritza l'aorist passiu (i també el futur passiu) en grec
+      antic?
+    es: ¿Qué morfema caracteriza al aoristo pasivo (y también al futuro pasivo) en
+      griego antiguo?
+  options:
+    - id: A
+      ca: El sufix -θη-/-θε- afegit a l'arrel
+      es: El sufijo -θη-/-θε- añadido a la raíz
+    - id: B
+      ca: El sufix -σα- afegit a l'arrel
+      es: El sufijo -σα- añadido a la raíz
+    - id: C
+      ca: Les desinències -ομαι, -ῃ/-ει, -εται
+      es: Las desinencias -ομαι, -ῃ/-ει, -εται
+    - id: D
+      ca: La reduplicació de la consonant inicial
+      es: La reduplicación de la consonante inicial
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'aorist passiu (i el futur passiu, que se'n deriva) es forma amb el morfema
+      -θη- (variant -θε-) intercalat entre l'arrel i les desinències, p. ex.
+      ἐ-λύ-θη-ν. El sufix -σα- pertany a l'aorist sigmàtic (actiu/mitjà); les
+      desinències -ομαι, -εται són pròpies del present medio-passiu; i la
+      reduplicació caracteritza el perfet.
+    es: El aoristo pasivo (y el futuro pasivo, que deriva de él) se forma con el
+      morfema -θη- (variante -θε-) intercalado entre la raíz y las desinencias,
+      p. ej. ἐ-λύ-θη-ν. El sufijo -σα- pertenece al aoristo sigmático
+      (activo/medio); las desinencias -ομαι, -εται son propias del presente
+      medio-pasivo; y la reduplicación caracteriza al perfecto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.voices_tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Analitza la forma λύομαι del verb λύω.
+    es: Analiza la forma λύομαι del verbo λύω.
+  options:
+    - id: A
+      ca: Present d'indicatiu medio-passiu, 1a sing.
+      es: Presente de indicativo medio-pasivo, 1.ª sing.
+    - id: B
+      ca: Present d'indicatiu actiu, 1a sing.
+      es: Presente de indicativo activo, 1.ª sing.
+    - id: C
+      ca: Aorist mitjà, 1a sing.
+      es: Aoristo medio, 1.ª sing.
+    - id: D
+      ca: Futur mitjà, 1a sing.
+      es: Futuro medio, 1.ª sing.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "λύ-ομαι presenta el tema de present λυ- amb la vocal temàtica -ο- i la
+      desinència primària medio-passiva -μαι de 1a persona del singular. No hi
+      ha augment (no és passat), ni sufix -σ- (no és futur ni aorist sigmàtic).
+      La desinència -μαι (front a -ω de l'actiu λύω) indica veu mitjana/passiva:
+      'em deslligo' o 'sóc deslligat'."
+    es: "λύ-ομαι presenta el tema de presente λυ- con la vocal temática -ο- y la
+      desinencia primaria medio-pasiva -μαι de 1.ª persona del singular. No hay
+      aumento (no es pasado) ni sufijo -σ- (no es futuro ni aoristo sigmático).
+      La desinencia -μαι (frente a -ω del activo λύω) indica voz media/pasiva:
+      'me desato' o 'soy desatado'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.voices_tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: El verb παύω significa 'faig cessar, aturo (algú o alguna cosa)'. Quin és el
+      valor propi de la veu mitjana en παύομαι?
+    es: El verbo παύω significa 'hago cesar, detengo (a alguien o algo)'. ¿Cuál es
+      el valor propio de la voz media en παύομαι?
+  options:
+    - id: A
+      ca: "El subjecte fa l'acció sobre si mateix o en interès propi: 'cesso,
+        m'aturo'."
+      es: "El sujeto realiza la acción sobre sí mismo o en su propio interés: 'ceso,
+        me detengo'."
+    - id: B
+      ca: "El subjecte rep l'acció d'un agent extern necessàriament expressat: 'sóc
+        aturat per X'."
+      es: "El sujeto recibe la acción de un agente externo necesariamente expreso:
+        'soy detenido por X'."
+    - id: C
+      ca: "Indica una acció futura sense matís de veu: 'aturaré'."
+      es: "Indica una acción futura sin matiz de voz: 'detendré'."
+    - id: D
+      ca: "Reforça el valor causatiu de l'actiu: 'faig aturar amb més intensitat'."
+      es: "Refuerza el valor causativo del activo: 'hago detener con más intensidad'."
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La veu mitjana expressa que el subjecte està implicat en l'acció, actuant
+      sobre si mateix o en profit propi. Així, davant de l'actiu transitiu παύω
+      ('aturo algú'), el mitjà παύομαι té sentit reflexiu/intransitiu: 'cesso,
+      m'aturo'. La passiva (rebre l'acció d'un agent extern) és un valor
+      diferent, i el mitjà no aporta ni futur ni reforç causatiu."
+    es: "La voz media expresa que el sujeto está implicado en la acción, actuando
+      sobre sí mismo o en su propio provecho. Así, frente al activo transitivo
+      παύω ('detengo a alguien'), el medio παύομαι tiene sentido
+      reflexivo/intransitivo: 'ceso, me detengo'. La pasiva (recibir la acción
+      de un agente externo) es un valor distinto, y el medio no aporta ni futuro
+      ni refuerzo causativo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.voices_tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Identifica amb precisió la forma ἐλύσαντο (verb λύω).
+    es: Identifica con precisión la forma ἐλύσαντο (verbo λύω).
+  options:
+    - id: A
+      ca: Aorist mitjà, 3a plural.
+      es: Aoristo medio, 3.ª plural.
+    - id: B
+      ca: Aorist actiu, 3a plural.
+      es: Aoristo activo, 3.ª plural.
+    - id: C
+      ca: Imperfet mitjà, 3a plural.
+      es: Imperfecto medio, 3.ª plural.
+    - id: D
+      ca: Aorist passiu, 3a plural.
+      es: Aoristo pasivo, 3.ª plural.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "ἐ-λύ-σα-ντο: augment ἐ- + arrel λυ- + sufix -σα- (aorist sigmàtic) +
+      desinència secundària medio-passiva -ντο de 3a plural. El -σα- descarta
+      l'imperfet (que faria ἐλύοντο) i les desinències -ντο (no -ν) descarten
+      l'actiu (ἔλυσαν); el -σα- descarta també el passiu (ἐλύθησαν). Per tant és
+      aorist mitjà, 3a pl.: 'es van deslligar / van rescatar (per a si)'."
+    es: "ἐ-λύ-σα-ντο: aumento ἐ- + raíz λυ- + sufijo -σα- (aoristo sigmático) +
+      desinencia secundaria medio-pasiva -ντο de 3.ª plural. El -σα- descarta el
+      imperfecto (que daría ἐλύοντο) y las desinencias -ντο (no -ν) descartan el
+      activo (ἔλυσαν); el -σα- descarta también el pasivo (ἐλύθησαν). Por tanto
+      es aoristo medio, 3.ª pl.: 'se desataron / rescataron (para sí)'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.morphology_verbal.voices_tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El verb γίγνομαι ('esdevenir-se, néixer') és deponent (media tantum).
+      Analitza la forma ἐγένετο.
+    es: El verbo γίγνομαι ('llegar a ser, nacer') es deponente (media tantum).
+      Analiza la forma ἐγένετο.
+  options:
+    - id: A
+      ca: Aorist mitjà (temàtic o 2n aorist), 3a sing.
+      es: Aoristo medio (temático o 2.º aoristo), 3.ª sing.
+    - id: B
+      ca: Imperfet mitjà, 3a sing.
+      es: Imperfecto medio, 3.ª sing.
+    - id: C
+      ca: Aorist passiu, 3a sing.
+      es: Aoristo pasivo, 3.ª sing.
+    - id: D
+      ca: Present mitjà, 3a sing.
+      es: Presente medio, 3.ª sing.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "ἐ-γεν-ε-το: augment ἐ- + tema d'aorist γεν- (diferent del tema de present
+      γιγν-) + vocal temàtica -ε- + desinència secundària -το de 3a sing. És un
+      aorist temàtic (segon aorist) de veu mitjana. Cal distingir-lo de
+      l'imperfet ἐγίγνετο, que conserva el tema de present γιγν-; l'ús del tema
+      γεν- marca l'aorist. Com que γίγνομαι és deponent, la forma mitjana té
+      sentit actiu: 'va esdevenir-se, va néixer'."
+    es: "ἐ-γεν-ε-το: aumento ἐ- + tema de aoristo γεν- (distinto del tema de
+      presente γιγν-) + vocal temática -ε- + desinencia secundaria -το de 3.ª
+      sing. Es un aoristo temático (segundo aoristo) de voz media. Hay que
+      distinguirlo del imperfecto ἐγίγνετο, que conserva el tema de presente
+      γιγν-; el uso del tema γεν- marca el aoristo. Como γίγνομαι es deponente,
+      la forma media tiene sentido activo: 'sucedió, nació'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En l'oració «ὁ στρατηγὸς νικᾷ» (ho stratēgós nikâi = «el general venç»),
+      quina funció sintàctica fa «ὁ στρατηγός» i en quin cas va?
+    es: En la oración «ὁ στρατηγὸς νικᾷ» (ho stratēgós nikâi = «el general vence»),
+      ¿qué función sintáctica cumple «ὁ στρατηγός» y en qué caso va?
+  options:
+    - id: A
+      ca: Subjecte, en nominatiu
+      es: Sujeto, en nominativo
+    - id: B
+      ca: Complement directe, en acusatiu
+      es: Complemento directo, en acusativo
+    - id: C
+      ca: Complement del nom, en genitiu
+      es: Complemento del nombre, en genitivo
+    - id: D
+      ca: Complement indirecte, en datiu
+      es: Complemento indirecto, en dativo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«ὁ στρατηγός» concorda en nombre i persona amb el verb «νικᾷ» (3a persona
+      del singular) i n'és qui realitza l'acció: és el subjecte. El cas propi
+      del subjecte en grec és el nominatiu, com mostra l'article «ὁ» i la
+      desinència «-ος»."
+    es: "«ὁ στρατηγός» concuerda en número y persona con el verbo «νικᾷ» (3.ª
+      persona del singular) y es quien realiza la acción: es el sujeto. El caso
+      propio del sujeto en griego es el nominativo, como muestran el artículo
+      «ὁ» y la desinencia «-ος»."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En «δῶρα τοῖς θεοῖς φέρουσιν» (dôra toîs theoîs phérousin = «porten regals
+      als déus»), quina funció fa el sintagma «τοῖς θεοῖς»?
+    es: En «δῶρα τοῖς θεοῖς φέρουσιν» (dôra toîs theoîs phérousin = «llevan regalos
+      a los dioses»), ¿qué función cumple el sintagma «τοῖς θεοῖς»?
+  options:
+    - id: A
+      ca: Complement indirecte, en datiu
+      es: Complemento indirecto, en dativo
+    - id: B
+      ca: Complement directe, en acusatiu
+      es: Complemento directo, en acusativo
+    - id: C
+      ca: Subjecte, en nominatiu
+      es: Sujeto, en nominativo
+    - id: D
+      ca: Complement del nom, en genitiu
+      es: Complemento del nombre, en genitivo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El complement directe és «δῶρα» (acusatiu neutre plural). «τοῖς θεοῖς»
+      indica el destinatari de l'acció de portar, és a dir, el complement
+      indirecte, funció que el grec expressa amb el datiu (article «τοῖς» +
+      desinència «-οις»).
+    es: El complemento directo es «δῶρα» (acusativo neutro plural). «τοῖς θεοῖς»
+      indica el destinatario de la acción de llevar, es decir, el complemento
+      indirecto, función que el griego expresa con el dativo (artículo «τοῖς» +
+      desinencia «-οις»).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En «οἱ Ἀθηναῖοι τοὺς πολεμίους ἐνίκησαν» (hoi Athēnaîoi toùs polemíous
+      eníkēsan = «els atenesos van vèncer els enemics»), el sintagma «τοὺς
+      πολεμίους» és...
+    es: En «οἱ Ἀθηναῖοι τοὺς πολεμίους ἐνίκησαν» (hoi Athēnaîoi toùs polemíous
+      eníkēsan = «los atenienses vencieron a los enemigos»), el sintagma «τοὺς
+      πολεμίους» es...
+  options:
+    - id: A
+      ca: Complement directe, en acusatiu
+      es: Complemento directo, en acusativo
+    - id: B
+      ca: Subjecte, en nominatiu
+      es: Sujeto, en nominativo
+    - id: C
+      ca: Complement indirecte, en datiu
+      es: Complemento indirecto, en dativo
+    - id: D
+      ca: Complement del nom, en genitiu
+      es: Complemento del nombre, en genitivo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El subjecte és «οἱ Ἀθηναῖοι» (nominatiu plural), que concorda amb
+      «ἐνίκησαν». «τοὺς πολεμίους» rep directament l'acció del verb transitiu
+      «vèncer»: és el complement directe, en acusatiu (article «τούς» +
+      desinència «-ους»)."
+    es: "El sujeto es «οἱ Ἀθηναῖοι» (nominativo plural), que concuerda con
+      «ἐνίκησαν». «τοὺς πολεμίους» recibe directamente la acción del verbo
+      transitivo «vencer»: es el complemento directo, en acusativo (artículo
+      «τούς» + desinencia «-ους»)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En l'expressió «πολλοὶ τῶν πολιτῶν» (polloì tôn politôn = «molts dels
+      ciutadans»), quin valor té el genitiu «τῶν πολιτῶν»?
+    es: En la expresión «πολλοὶ τῶν πολιτῶν» (polloì tôn politôn = «muchos de los
+      ciudadanos»), ¿qué valor tiene el genitivo «τῶν πολιτῶν»?
+  options:
+    - id: A
+      ca: Genitiu partitiu (indica el tot del qual es pren una part)
+      es: Genitivo partitivo (indica el todo del que se toma una parte)
+    - id: B
+      ca: Genitiu possessiu (indica el posseïdor)
+      es: Genitivo posesivo (indica el poseedor)
+    - id: C
+      ca: Datiu instrumental (indica el mitjà)
+      es: Dativo instrumental (indica el medio)
+    - id: D
+      ca: Acusatiu de relació (indica en què)
+      es: Acusativo de relación (indica en qué)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«πολλοί» designa una part i «τῶν πολιτῶν» el conjunt total del qual
+      s'extreu aquesta part: és un genitiu partitiu. No expressa possessió, i
+      «τῶν πολιτῶν» és clarament genitiu (no datiu ni acusatiu), per la
+      desinència «-ων» i l'article «τῶν»."
+    es: "«πολλοί» designa una parte y «τῶν πολιτῶν» el conjunto total del que se
+      extrae esa parte: es un genitivo partitivo. No expresa posesión, y «τῶν
+      πολιτῶν» es claramente genitivo (no dativo ni acusativo), por la
+      desinencia «-ων» y el artículo «τῶν»."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En «τῇ μαχαίρᾳ τὸν λέοντα ἔκτεινεν» (têi makhaírāi tòn léonta ékteinen = «va
+      matar el lleó amb l'espasa»), quin valor sintàctic té el datiu «τῇ
+      μαχαίρᾳ»?
+    es: En «τῇ μαχαίρᾳ τὸν λέοντα ἔκτεινεν» (têi makhaírāi tòn léonta ékteinen =
+      «mató al león con la espada»), ¿qué valor sintáctico tiene el dativo «τῇ
+      μαχαίρᾳ»?
+  options:
+    - id: A
+      ca: Datiu instrumental (indica el mitjà amb què es fa l'acció)
+      es: Dativo instrumental (indica el medio con que se hace la acción)
+    - id: B
+      ca: Complement indirecte (el destinatari de l'acció)
+      es: Complemento indirecto (el destinatario de la acción)
+    - id: C
+      ca: Datiu de temps (indica quan es fa l'acció)
+      es: Dativo de tiempo (indica cuándo se hace la acción)
+    - id: D
+      ca: Complement directe en acusatiu
+      es: Complemento directo en acusativo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El complement directe és «τὸν λέοντα» (acusatiu). «τῇ μαχαίρᾳ» és un datiu
+      que indica l'instrument o mitjà emprat per matar: datiu instrumental (o de
+      mitjà). No és un destinatari (CI) ni una referència temporal, i no pot ser
+      CD perquè no va en acusatiu."
+    es: "El complemento directo es «τὸν λέοντα» (acusativo). «τῇ μαχαίρᾳ» es un
+      dativo que indica el instrumento o medio empleado para matar: dativo
+      instrumental (o de medio). No es un destinatario (CI) ni una referencia
+      temporal, y no puede ser CD porque no va en acusativo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: En «τοῦ ἡλίου δύοντος, οἱ στρατιῶται ἀνεχώρησαν» (toû hēlíou dýontos, hoi
+      stratiôtai anekhṓrēsan = «en pondre's el sol, els soldats es van
+      retirar»), com s'analitza la construcció «τοῦ ἡλίου δύοντος»?
+    es: En «τοῦ ἡλίου δύοντος, οἱ στρατιῶται ἀνεχώρησαν» (toû hēlíou dýontos, hoi
+      stratiôtai anekhṓrēsan = «al ponerse el sol, los soldados se retiraron»),
+      ¿cómo se analiza la construcción «τοῦ ἡλίου δύοντος»?
+  options:
+    - id: A
+      ca: Genitiu absolut (nom + participi en genitiu) amb valor circumstancial
+        temporal
+      es: Genitivo absoluto (nombre + participio en genitivo) con valor circunstancial
+        temporal
+    - id: B
+      ca: Complement del nom del subjecte «οἱ στρατιῶται»
+      es: Complemento del nombre del sujeto «οἱ στρατιῶται»
+    - id: C
+      ca: Datiu absolut amb valor causal
+      es: Dativo absoluto con valor causal
+    - id: D
+      ca: Acusatiu absolut amb valor concessiu
+      es: Acusativo absoluto con valor concesivo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«τοῦ ἡλίου» (nom en genitiu) i «δύοντος» (participi de present en genitiu)
+      concorden i formen una construcció sintàcticament independent del subjecte
+      principal: és un genitiu absolut. Aquí té valor temporal («quan el sol es
+      ponia»). No és CN del subjecte, i en grec la construcció absoluta canònica
+      és en genitiu, no en datiu ni acusatiu."
+    es: "«τοῦ ἡλίου» (nombre en genitivo) y «δύοντος» (participio de presente en
+      genitivo) concuerdan y forman una construcción sintácticamente
+      independiente del sujeto principal: es un genitivo absoluto. Aquí tiene
+      valor temporal («cuando el sol se ponía»). No es CN del sujeto, y en
+      griego la construcción absoluta canónica es en genitivo, no en dativo ni
+      acusativo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En l'oració «Οἱ Ἀθηναῖοι καὶ οἱ Λακεδαιμόνιοι ἐμάχοντο» (Els atenesos i els
+      lacedemonis lluitaven), quin tipus de conjunció és «καί»?
+    es: En la oración «Οἱ Ἀθηναῖοι καὶ οἱ Λακεδαιμόνιοι ἐμάχοντο» (Los atenienses y
+      los lacedemonios luchaban), ¿qué tipo de conjunción es «καί»?
+  options:
+    - id: A
+      ca: Coordinant copulativa
+      es: Coordinante copulativa
+    - id: B
+      ca: Coordinant adversativa
+      es: Coordinante adversativa
+    - id: C
+      ca: Coordinant disjuntiva
+      es: Coordinante disyuntiva
+    - id: D
+      ca: Subordinant completiva
+      es: Subordinante completiva
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«καί» (i) uneix dos elements sumant-los sense oposició ni alternativa: és
+      una conjunció coordinant copulativa. L'adversativa seria «ἀλλά» (però), la
+      disjuntiva «ἤ» (o) i les subordinants introdueixen oracions dependents."
+    es: "«καί» (y) une dos elementos sumándolos, sin oposición ni alternativa: es
+      una conjunción coordinante copulativa. La adversativa sería «ἀλλά» (pero),
+      la disyuntiva «ἤ» (o) y las subordinantes introducen oraciones
+      dependientes."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.32
+  question:
+    ca: "En «οὐ λέγω, ἀλλὰ γράφω» (no parlo, sinó que escric), la conjunció «ἀλλά»
+      expressa una relació de tipus:"
+    es: "En «οὐ λέγω, ἀλλὰ γράφω» (no hablo, sino que escribo), la conjunción «ἀλλά»
+      expresa una relación de tipo:"
+  options:
+    - id: A
+      ca: Copulativa (suma)
+      es: Copulativa (suma)
+    - id: B
+      ca: Adversativa (oposició)
+      es: Adversativa (oposición)
+    - id: C
+      ca: Disjuntiva (alternativa)
+      es: Disyuntiva (alternativa)
+    - id: D
+      ca: Causal (motiu)
+      es: Causal (motivo)
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "«ἀλλά» (però, sinó) contraposa dos membres coordinats: és una coordinant
+      adversativa. Ací nega el primer verb i n'afirma un altre en oposició.
+      «καί» seria copulativa, «ἤ» disjuntiva i les causals com «γάρ» donen el
+      motiu."
+    es: "«ἀλλά» (pero, sino) contrapone dos miembros coordinados: es una coordinante
+      adversativa. Aquí niega el primer verbo y afirma otro en oposición. «καί»
+      sería copulativa, «ἤ» disyuntiva y las causales como «γάρ» dan el motivo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.48
+  question:
+    ca: En «ὁ ἀνήρ, ὃς ἦλθεν, σοφός ἐστιν» (l'home, que va venir, és savi), quina
+      classe d'oració és «ὃς ἦλθεν»?
+    es: En «ὁ ἀνήρ, ὃς ἦλθεν, σοφός ἐστιν» (el hombre, que vino, es sabio), ¿qué
+      clase de oración es «ὃς ἦλθεν»?
+  options:
+    - id: A
+      ca: Oració coordinada copulativa
+      es: Oración coordinada copulativa
+    - id: B
+      ca: Oració subordinada de relatiu (adjectiva)
+      es: Oración subordinada de relativo (adjetiva)
+    - id: C
+      ca: Oració subordinada completiva (substantiva)
+      es: Oración subordinada completiva (sustantiva)
+    - id: D
+      ca: Oració simple
+      es: Oración simple
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El pronom relatiu «ὅς, ἥ, ὅ» introdueix una oració subordinada de relatiu
+      (adjectiva) que complementa un antecedent, ací «ὁ ἀνήρ». No és coordinada
+      (no hi ha conjunció coordinant) ni completiva (no funciona com a
+      subjecte/objecte d'un verb), ni simple (depèn de la principal).
+    es: El pronombre relativo «ὅς, ἥ, ὅ» introduce una oración subordinada de
+      relativo (adjetiva) que complementa a un antecedente, aquí «ὁ ἀνήρ». No es
+      coordinada (no hay conjunción coordinante) ni completiva (no funciona como
+      sujeto/objeto de un verbo), ni simple (depende de la principal).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.58
+  question:
+    ca: En «λέγει ὅτι ὁ Σωκράτης σοφός ἐστιν» (diu que Sòcrates és savi), quina
+      funció té l'oració introduïda per «ὅτι»?
+    es: En «λέγει ὅτι ὁ Σωκράτης σοφός ἐστιν» (dice que Sócrates es sabio), ¿qué
+      función tiene la oración introducida por «ὅτι»?
+  options:
+    - id: A
+      ca: Subordinada completiva (substantiva), CD del verb «λέγει»
+      es: Subordinada completiva (sustantiva), CD del verbo «λέγει»
+    - id: B
+      ca: Subordinada final (de finalitat)
+      es: Subordinada final (de finalidad)
+    - id: C
+      ca: Subordinada de relatiu (adjectiva)
+      es: Subordinada de relativo (adjetiva)
+    - id: D
+      ca: Coordinada adversativa
+      es: Coordinada adversativa
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Després d'un verb de llengua o pensament (ací «λέγει», diu), «ὅτι» («que»)
+      introdueix una completiva que funciona com a complement directe: expressa
+      QUÈ es diu. Encara que «ὅτι» també pot ser causal («perquè»), amb un verb
+      de dir el valor és completiu. No indica finalitat («ἵνα») ni és relativa
+      ni coordinada."
+    es: "Tras un verbo de lengua o pensamiento (aquí «λέγει», dice), «ὅτι» («que»)
+      introduce una completiva que funciona como complemento directo: expresa
+      QUÉ se dice. Aunque «ὅτι» también puede ser causal («porque»), con un
+      verbo de decir el valor es completivo. No indica finalidad («ἵνα») ni es
+      relativa ni coordinada."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En «μανθάνομεν ἵνα σοφοὶ γενώμεθα» (aprenem per a esdevenir savis), amb
+      «ἵνα» seguit de subjuntiu («γενώμεθα»), quin tipus de subordinada tenim?
+    es: En «μανθάνομεν ἵνα σοφοὶ γενώμεθα» (aprendemos para llegar a ser sabios),
+      con «ἵνα» seguido de subjuntivo («γενώμεθα»), ¿qué tipo de subordinada
+      tenemos?
+  options:
+    - id: A
+      ca: Subordinada temporal
+      es: Subordinada temporal
+    - id: B
+      ca: Subordinada final (de finalitat)
+      es: Subordinada final (de finalidad)
+    - id: C
+      ca: Subordinada causal
+      es: Subordinada causal
+    - id: D
+      ca: Subordinada completiva de CD
+      es: Subordinada completiva de CD
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "«ἵνα» (i també «ὅπως», «ὡς») amb subjuntiu introdueix una subordinada final
+      que indica el propòsit de l'acció principal: «per a esdevenir savis». La
+      temporal usaria «ὅτε»/«ἐπεί», la causal «ὅτι»/«διότι», i el sentit no és
+      el de complement directe d'un verb de dir."
+    es: "«ἵνα» (y también «ὅπως», «ὡς») con subjuntivo introduce una subordinada
+      final que indica el propósito de la acción principal: «para llegar a ser
+      sabios». La temporal usaría «ὅτε»/«ἐπεί», la causal «ὅτι»/«διότι», y el
+      sentido no es el de complemento directo de un verbo de decir."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.syntax.clauses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.85
+  question:
+    ca: En «ταῦτα εἰπόντος τοῦ Σωκράτους, οἱ μαθηταὶ ἀπῆλθον» (havent dit Sòcrates
+      això, els deixebles se n'anaren), com s'analitza la construcció «εἰπόντος
+      τοῦ Σωκράτους» en genitiu?
+    es: En «ταῦτα εἰπόντος τοῦ Σωκράτους, οἱ μαθηταὶ ἀπῆλθον» (habiendo dicho
+      Sócrates esto, los discípulos se marcharon), ¿cómo se analiza la
+      construcción «εἰπόντος τοῦ Σωκράτους» en genitivo?
+  options:
+    - id: A
+      ca: Genitiu absolut, equivalent a una subordinada adverbial (circumstancial, ací
+        temporal)
+      es: Genitivo absoluto, equivalente a una subordinada adverbial (circunstancial,
+        aquí temporal)
+    - id: B
+      ca: Complement del nom del subjecte «οἱ μαθηταί»
+      es: Complemento del nombre del sujeto «οἱ μαθηταί»
+    - id: C
+      ca: Oració principal coordinada amb «ἀπῆλθον»
+      es: Oración principal coordinada con «ἀπῆλθον»
+    - id: D
+      ca: Subordinada completiva en funció de subjecte
+      es: Subordinada completiva en función de sujeto
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Un participi més el seu subjecte, tots dos en genitiu i sense funció
+      sintàctica dins la principal, formen un genitiu absolut. Equival a una
+      subordinada adverbial (circumstancial): temporal, causal, concessiva,
+      etc.; ací temporal («havent dit / quan hagué dit»). El seu subjecte («τοῦ
+      Σωκράτους») és diferent del de la principal («οἱ μαθηταί»), tret propi
+      d'aquesta construcció."
+    es: "Un participio más su sujeto, ambos en genitivo y sin función sintáctica
+      dentro de la principal, forman un genitivo absoluto. Equivale a una
+      subordinada adverbial (circunstancial): temporal, causal, concesiva, etc.;
+      aquí temporal («habiendo dicho / cuando hubo dicho»). Su sujeto («τοῦ
+      Σωκράτους») es distinto del de la principal («οἱ μαθηταί»), rasgo propio
+      de esta construcción."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.translation.method
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En un diccionari de grec clàssic, sota quina forma es troba enunciat (com a
+      lema) un verb regular com λύω?
+    es: En un diccionario de griego clásico, ¿bajo qué forma se encuentra enunciado
+      (como lema) un verbo regular como λύω?
+  options:
+    - id: A
+      ca: Primera persona del singular del present d'indicatiu actiu (λύω)
+      es: Primera persona del singular del presente de indicativo activo (λύω)
+    - id: B
+      ca: Infinitiu de present (λύειν)
+      es: Infinitivo de presente (λύειν)
+    - id: C
+      ca: Tercera persona del singular del present (λύει)
+      es: Tercera persona del singular del presente (λύει)
+    - id: D
+      ca: Participi de present masculí (λύων)
+      es: Participio de presente masculino (λύων)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els diccionaris de grec enuncien els verbs per la 1a persona del singular
+      del present d'indicatiu actiu (λύω), a diferència del llatí (on s'usa
+      aquesta mateixa persona) i del català/castellà (que usen l'infinitiu). Per
+      això, davant d'una forma conjugada cal reconstruir aquesta forma per
+      buscar-la.
+    es: Los diccionarios de griego enuncian los verbos por la 1ª persona del
+      singular del presente de indicativo activo (λύω), a diferencia del
+      catalán/castellano (que usan el infinitivo). Por eso, ante una forma
+      conjugada hay que reconstruir esa forma para buscarla.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.translation.method
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.28
+  question:
+    ca: Com apareix habitualment enunciat un substantiu en una entrada de diccionari
+      de grec, per exemple λόγος?
+    es: ¿Cómo aparece habitualmente enunciado un sustantivo en una entrada de
+      diccionario de griego, por ejemplo λόγος?
+  options:
+    - id: A
+      ca: "Nominatiu singular, seguit de la terminació de genitiu i de l'article:
+        λόγος, -ου, ὁ"
+      es: "Nominativo singular, seguido de la terminación de genitivo y del artículo:
+        λόγος, -ου, ὁ"
+    - id: B
+      ca: "Genitiu singular seguit del nominatiu: λόγου, λόγος"
+      es: "Genitivo singular seguido del nominativo: λόγου, λόγος"
+    - id: C
+      ca: "Nominatiu plural amb l'article: λόγοι, οἱ"
+      es: "Nominativo plural con el artículo: λόγοι, οἱ"
+    - id: D
+      ca: "Acusatiu singular, per ser el cas del complement directe: λόγον"
+      es: "Acusativo singular, por ser el caso del complemento directo: λόγον"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El lema d'un substantiu és el nominatiu singular; a continuació el
+      diccionari dona la terminació del genitiu singular (que indica la
+      declinació i el tema) i l'article, que informa del gènere. Així, «λόγος,
+      -ου, ὁ» ens diu que és masculí, de la 2a declinació.
+    es: El lema de un sustantivo es el nominativo singular; a continuación el
+      diccionario da la terminación del genitivo singular (que indica la
+      declinación y el tema) y el artículo, que informa del género. Así, «λόγος,
+      -ου, ὁ» nos dice que es masculino, de la 2ª declinación.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.translation.method
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Segons el mètode de traducció recomanat, quin hauria de ser el primer pas
+      per traduir una oració grega un cop llegida sencera?
+    es: Según el método de traducción recomendado, ¿cuál debería ser el primer paso
+      para traducir una oración griega una vez leída entera?
+  options:
+    - id: A
+      ca: Localitzar i analitzar el verb principal, que és el nucli de l'oració
+      es: Localizar y analizar el verbo principal, que es el núcleo de la oración
+    - id: B
+      ca: Traduir paraula per paraula seguint l'ordre en què apareixen
+      es: Traducir palabra por palabra siguiendo el orden en que aparecen
+    - id: C
+      ca: Buscar al diccionari totes les paraules abans de fer cap anàlisi
+      es: Buscar en el diccionario todas las palabras antes de hacer ningún análisis
+    - id: D
+      ca: Començar per l'última paraula, perquè el grec sol acabar en verb
+      es: Empezar por la última palabra, porque el griego suele terminar en verbo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El mètode analític parteix del verb principal: identificar-lo permet
+      conèixer la persona i el nombre del subjecte i la mena de complements que
+      regeix. A partir d'aquí es busca el subjecte (nominatiu) i els
+      complements. Traduir paraula per paraula o pel diccionari sense analitzar
+      l'estructura és font d'errors, i l'ordre de mots grec és lliure, no fix."
+    es: "El método analítico parte del verbo principal: identificarlo permite
+      conocer la persona y el número del sujeto y el tipo de complementos que
+      rige. A partir de ahí se busca el sujeto (nominativo) y los complementos.
+      Traducir palabra por palabra o por el diccionario sin analizar la
+      estructura es fuente de errores, y el orden de palabras griego es libre,
+      no fijo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.translation.method
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En un text apareix la forma verbal ἔγραψα. Sota quin lema l'hem de buscar al
+      diccionari?
+    es: En un texto aparece la forma verbal ἔγραψα. ¿Bajo qué lema debemos buscarla
+      en el diccionario?
+  options:
+    - id: A
+      ca: γράφω
+      es: γράφω
+    - id: B
+      ca: ἔγραψα (tal com apareix)
+      es: ἔγραψα (tal como aparece)
+    - id: C
+      ca: γράψω
+      es: γράψω
+    - id: D
+      ca: γραφή
+      es: γραφή
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: ἔγραψα és l'aorist sigmàtic (1a persona sg.). Cal reconèixer i treure
+      l'augment inicial ἐ- i la marca d'aorist -σα, per recuperar l'arrel del
+      present i el lema γράφω («escriure»). γράψω és el futur (no és el lema),
+      ἔγραψα és una forma flexionada i γραφή és un substantiu.
+    es: ἔγραψα es el aoristo sigmático (1ª persona sg.). Hay que reconocer y quitar
+      el aumento inicial ἐ- y la marca de aoristo -σα, para recuperar la raíz
+      del presente y el lema γράφω («escribir»). γράψω es el futuro (no es el
+      lema), ἔγραψα es una forma flexionada y γραφή es un sustantivo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.translation.method
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.62
+  question:
+    ca: "El diccionari dona per a λόγος diverses accepcions (paraula, discurs, raó,
+      càlcul, proporció). En un text filosòfic, l'expressió κατὰ τὸν λόγον es
+      tradueix millor com:"
+    es: "El diccionario da para λόγος varias acepciones (palabra, discurso, razón,
+      cálculo, proporción). En un texto filosófico, la expresión κατὰ τὸν λόγον
+      se traduce mejor como:"
+  options:
+    - id: A
+      ca: «segons la raó»
+      es: «según la razón»
+    - id: B
+      ca: «segons la paraula»
+      es: «según la palabra»
+    - id: C
+      ca: «contra la raó»
+      es: «contra la razón»
+    - id: D
+      ca: «segons el càlcul»
+      es: «según el cálculo»
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Davant d'una paraula polisèmica, el mètode exigeix triar l'accepció que
+      encaixa amb el context i el registre del text: en filosofia, λόγος designa
+      sovint la «raó». La preposició κατά + acusatiu significa aquí «segons,
+      conforme a» (no «contra»), de manera que la traducció adequada és «segons
+      la raó». Les altres accepcions són vàlides al diccionari però no s'ajusten
+      al context."
+    es: "Ante una palabra polisémica, el método exige elegir la acepción que encaja
+      con el contexto y el registro del texto: en filosofía, λόγος designa a
+      menudo la «razón». La preposición κατά + acusativo significa aquí «según,
+      conforme a» (no «contra»), de modo que la traducción adecuada es «según la
+      razón». Las otras acepciones son válidas en el diccionario pero no se
+      ajustan al contexto."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.translation.method
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: En un text narratiu trobem la forma εἶπον («vaig dir / van dir»). Sota quin
+      lema cal buscar-la al diccionari?
+    es: En un texto narrativo encontramos la forma εἶπον («dije / dijeron»). ¿Bajo
+      qué lema hay que buscarla en el diccionario?
+  options:
+    - id: A
+      ca: λέγω
+      es: λέγω
+    - id: B
+      ca: εἴπω
+      es: εἴπω
+    - id: C
+      ca: εἰμί
+      es: εἰμί
+    - id: D
+      ca: οἶδα
+      es: οἶδα
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "εἶπον és un aorist suplet (radical) que funciona com a aorist del verb λέγω
+      («dir»): els verbs amb temes suplets formen els temps a partir d'arrels
+      diferents, de manera que la forma no s'assembla al lema. Cal saber (o
+      consultar a l'entrada del diccionari) que εἶπον remet a λέγω. εἴπω n'és el
+      subjuntiu (no un lema), i εἰμί («ésser») i οἶδα («saber») són verbs
+      diferents amb què es podria confondre per la semblança formal."
+    es: "εἶπον es un aoristo supletivo (radical) que funciona como aoristo del verbo
+      λέγω («decir»): los verbos con temas supletivos forman los tiempos a
+      partir de raíces distintas, de modo que la forma no se parece al lema. Hay
+      que saber (o consultar en la entrada del diccionario) que εἶπον remite a
+      λέγω. εἴπω es su subjuntivo (no un lema), y εἰμί («ser») y οἶδα («saber»)
+      son verbos distintos con los que podría confundirse por la semejanza
+      formal."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.lexicon.hellenisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: La paraula «biologia» està formada pels ètims grecs λόγος (lógos, 'estudi,
+      tractat') i el formant «bio-». Què significa aquest formant «bio-»?
+    es: La palabra «biología» está formada por los étimos griegos λόγος (lógos,
+      'estudio, tratado') y el formante «bio-». ¿Qué significa este formante
+      «bio-»?
+  options:
+    - id: A
+      ca: vida (de βίος, bíos)
+      es: vida (de βίος, bíos)
+    - id: B
+      ca: dos (equival a 'bi-')
+      es: dos (equivale a 'bi-')
+    - id: C
+      ca: terra (de γῆ, gê)
+      es: tierra (de γῆ, gê)
+    - id: D
+      ca: mort (de νεκρός, nekrós)
+      es: muerte (de νεκρός, nekrós)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El formant «bio-» prové del grec βίος (bíos), 'vida'; per tant «biologia» és
+      l'estudi de la vida. No s'ha de confondre amb el prefix llatí «bi-»
+      ('dos'), ni amb «geo-» (terra) o «necro-» (mort).
+    es: El formante «bio-» procede del griego βίος (bíos), 'vida'; por tanto
+      «biología» es el estudio de la vida. No debe confundirse con el prefijo
+      latino «bi-» ('dos'), ni con «geo-» (tierra) o «necro-» (muerte).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.lexicon.hellenisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: El sufix «-cràcia» (de κράτος, krátos, 'poder, govern') apareix en
+      «aristocràcia». Quin és el significat del primer formant, «aristo-»?
+    es: El sufijo «-cracia» (de κράτος, krátos, 'poder, gobierno') aparece en
+      «aristocracia». ¿Cuál es el significado del primer formante, «aristo-»?
+  options:
+    - id: A
+      ca: els millors, els excel·lents (ἄριστος, áristos)
+      es: los mejores, los excelentes (ἄριστος, áristos)
+    - id: B
+      ca: els pocs (ὀλίγος, olígos)
+      es: los pocos (ὀλίγος, olígos)
+    - id: C
+      ca: els rics (πλοῦτος, ploûtos)
+      es: los ricos (πλοῦτος, ploûtos)
+    - id: D
+      ca: els vells (γέρων, gérōn)
+      es: los viejos (γέρων, gérōn)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Aristocràcia» = ἄριστος (áristos, 'el millor') + κράτος (krátos, 'poder'):
+      el govern dels millors. «Els pocs» dóna «oligarquia», «els rics»
+      «plutocràcia» i «els vells» «gerontocràcia»."
+    es: "«Aristocracia» = ἄριστος (áristos, 'el mejor') + κράτος (krátos, 'poder'):
+      el gobierno de los mejores. «Los pocos» da «oligarquía», «los ricos»
+      «plutocracia» y «los viejos» «gerontocracia»."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.lexicon.hellenisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quina de les paraules següents NO conté l'arrel grega ὕδωρ (hýdōr, 'aigua')?
+    es: ¿Cuál de las siguientes palabras NO contiene la raíz griega ὕδωρ (hýdōr,
+      'agua')?
+  options:
+    - id: A
+      ca: hipòdrom
+      es: hipódromo
+    - id: B
+      ca: hidrografia
+      es: hidrografía
+    - id: C
+      ca: deshidratació
+      es: deshidratación
+    - id: D
+      ca: hidroteràpia
+      es: hidroterapia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Hipòdrom» prové de ἵππος (híppos, 'cavall') + δρόμος (drómos, 'cursa'):
+      pista de curses de cavalls; no té res a veure amb l'aigua. Les altres tres
+      contenen ὕδωρ (aigua): hidro-grafia, des-hidr-atació, hidro-teràpia."
+    es: "«Hipódromo» procede de ἵππος (híppos, 'caballo') + δρόμος (drómos,
+      'carrera'): pista de carreras de caballos; no tiene relación con el agua.
+      Las otras tres contienen ὕδωρ (agua): hidro-grafía, des-hidr-atación,
+      hidro-terapia."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.lexicon.hellenisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quina anàlisi etimològica de la paraula «xenofòbia» és la correcta?
+    es: ¿Qué análisis etimológico de la palabra «xenofobia» es el correcto?
+  options:
+    - id: A
+      ca: ξένος (xénos, 'estranger') + φόβος (phóbos, 'por')
+      es: ξένος (xénos, 'extranjero') + φόβος (phóbos, 'miedo')
+    - id: B
+      ca: ξένος (xénos, 'estranger') + φιλία (philía, 'amor')
+      es: ξένος (xénos, 'extranjero') + φιλία (philía, 'amor')
+    - id: C
+      ca: γένος (génos, 'raça') + φόβος (phóbos, 'por')
+      es: γένος (génos, 'raza') + φόβος (phóbos, 'miedo')
+    - id: D
+      ca: ξένος (xénos, 'estranger') + φωνή (phōné, 'so')
+      es: ξένος (xénos, 'extranjero') + φωνή (phōné, 'sonido')
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Xenofòbia» = ξένος (xénos, 'estranger') + φόβος (phóbos, 'por, rebuig'):
+      aversió a allò estranger. Amb φιλία (amor) es formaria «xenofília»;
+      l'arrel de 'raça' és γένος, no ξένος; i φωνή ('so') dóna paraules com
+      «fonètica»."
+    es: "«Xenofobia» = ξένος (xénos, 'extranjero') + φόβος (phóbos, 'miedo,
+      rechazo'): aversión a lo extranjero. Con φιλία (amor) se formaría
+      «xenofilia»; la raíz de 'raza' es γένος, no ξένος; y φωνή ('sonido') da
+      palabras como «fonética»."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.lexicon.hellenisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Una analítica indica que un pacient té la concentració de sucre a la sang
+      per SOTA del valor normal. Amb els formants grecs ὑπό/ὑπέρ, γλυκύς
+      (glykýs, 'dolç') i αἷμα (haîma, 'sang'), quin terme ho designa
+      correctament?
+    es: Una analítica indica que un paciente tiene la concentración de azúcar en
+      sangre por DEBAJO del valor normal. Con los formantes griegos ὑπό/ὑπέρ,
+      γλυκύς (glykýs, 'dulce') y αἷμα (haîma, 'sangre'), ¿qué término lo designa
+      correctamente?
+  options:
+    - id: A
+      ca: hipoglucèmia
+      es: hipoglucemia
+    - id: B
+      ca: hiperglucèmia
+      es: hiperglucemia
+    - id: C
+      ca: hipertèrmia
+      es: hipertermia
+    - id: D
+      ca: hipoglòssia
+      es: hipoglosia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El prefix ὑπό (hypó) significa 'sota, per sota', mentre que ὑπέρ (hypér)
+      significa 'sobre, per sobre'. «Hipoglucèmia» = ὑπό + γλυκύς + αἷμα: sucre
+      baix a la sang. «Hiperglucèmia» seria sucre alt; «hipertèrmia» es refereix
+      a la temperatura (θέρμη); «hipoglòssia» conté γλῶσσα ('llengua'), no el
+      sucre."
+    es: "El prefijo ὑπό (hypó) significa 'bajo, por debajo', mientras que ὑπέρ
+      (hypér) significa 'sobre, por encima'. «Hipoglucemia» = ὑπό + γλυκύς +
+      αἷμα: azúcar bajo en sangre. «Hiperglucemia» sería azúcar alto;
+      «hipertermia» se refiere a la temperatura (θέρμη); «hipoglosia» contiene
+      γλῶσσα ('lengua'), no el azúcar."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.lexicon.hellenisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.78
+  question:
+    ca: S'anomena mot «híbrid» el format per la combinació d'un ètim grec i un de
+      llatí. Quina de les paraules següents és un mot híbrid?
+    es: Se llama palabra «híbrida» la formada por la combinación de un étimo griego
+      y uno latino. ¿Cuál de las siguientes palabras es una palabra híbrida?
+  options:
+    - id: A
+      ca: televisió (τῆλε, têle 'lluny' + llatí visio 'visió')
+      es: televisión (τῆλε, têle 'lejos' + latín visio 'visión')
+    - id: B
+      ca: telèfon (τῆλε + φωνή, phōné 'so')
+      es: teléfono (τῆλε + φωνή, phōné 'sonido')
+    - id: C
+      ca: biografia (βίος + γράφω, gráphō 'escriure')
+      es: biografía (βίος + γράφω, gráphō 'escribir')
+    - id: D
+      ca: fonograma (φωνή + γράμμα, grámma 'lletra')
+      es: fonograma (φωνή + γράμμα, grámma 'letra')
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Televisió» combina el formant grec τῆλε (têle, 'lluny') amb el llatí visio
+      ('visió'): és un mot híbrid grecollatí. «Telèfon», «biografia» i
+      «fonograma» estan formats íntegrament per ètims grecs, de manera que no
+      són híbrids."
+    es: "«Televisión» combina el formante griego τῆλε (têle, 'lejos') con el latín
+      visio ('visión'): es una palabra híbrida grecolatina. «Teléfono»,
+      «biografía» y «fonograma» están formados íntegramente por étimos griegos,
+      por lo que no son híbridos."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: La batalla de Marató (490 aC), en què els atenesos van derrotar l'exèrcit
+      invasor, formà part de quin conflicte?
+    es: La batalla de Maratón (490 a. C.), en la que los atenienses derrotaron al
+      ejército invasor, formó parte de ¿qué conflicto?
+  options:
+    - id: A
+      ca: Les Guerres Mèdiques, contra l'Imperi persa
+      es: Las Guerras Médicas, contra el Imperio persa
+    - id: B
+      ca: La Guerra del Peloponès, entre Atenes i Esparta
+      es: La Guerra del Peloponeso, entre Atenas y Esparta
+    - id: C
+      ca: Les conquestes d'Alexandre el Gran
+      es: Las conquistas de Alejandro Magno
+    - id: D
+      ca: La Guerra de Troia
+      es: La Guerra de Troya
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Marató (490 aC) fou la primera gran invasió persa dirigida per Darios I;
+      pertany a les Guerres Mèdiques (490–479 aC). La Guerra del Peloponès
+      (431–404 aC) enfrontà Atenes i Esparta molt més tard; Alexandre és del
+      segle IV aC i la Guerra de Troia és un episodi mític/èpic anterior.
+    es: Maratón (490 a. C.) fue la primera gran invasión persa dirigida por Darío I;
+      pertenece a las Guerras Médicas (490–479 a. C.). La Guerra del Peloponeso
+      (431–404 a. C.) enfrentó a Atenas y Esparta mucho después; Alejandro es
+      del siglo IV a. C. y la Guerra de Troya es un episodio mítico/épico
+      anterior.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: A la societat espartana, quin grup estava format per la població sotmesa,
+      lligada a la terra, que conreava els camps dels ciutadans?
+    es: En la sociedad espartana, ¿qué grupo estaba formado por la población
+      sometida, ligada a la tierra, que cultivaba los campos de los ciudadanos?
+  options:
+    - id: A
+      ca: Els hilotes (εἵλωτες)
+      es: Los ilotas (εἵλωτες)
+    - id: B
+      ca: Els periecs (períoikoi), homes lliures sense drets polítics
+      es: Los periecos (períoikoi), hombres libres sin derechos políticos
+    - id: C
+      ca: Els espartiates (spartiátai), ciutadans de ple dret
+      es: Los espartiatas (spartiátai), ciudadanos de pleno derecho
+    - id: D
+      ca: Els èfors (éphoroi), magistrats elegits anualment
+      es: Los éforos (éphoroi), magistrados elegidos anualmente
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els hilotes eren la població serva de l'Estat espartà, sense llibertat,
+      adscrita a la terra i obligada a treballar-la per als espartiates. Els
+      periecs eren lliures però sense drets polítics; els espartiates eren els
+      ciutadans-guerrers; els èfors eren magistrats. La confusió típica és
+      barrejar hilotes i periecs.
+    es: Los ilotas eran la población sierva del Estado espartano, sin libertad,
+      adscrita a la tierra y obligada a trabajarla para los espartiatas. Los
+      periecos eran libres pero sin derechos políticos; los espartiatas eran los
+      ciudadanos-guerreros; los éforos eran magistrados. La confusión típica es
+      mezclar ilotas y periecos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: A la democràcia atenesa del segle V aC, com s'anomenava l'assemblea que
+      reunia tots els ciutadans amb dret de vot per aprovar les lleis?
+    es: En la democracia ateniense del siglo V a. C., ¿cómo se llamaba la asamblea
+      que reunía a todos los ciudadanos con derecho de voto para aprobar las
+      leyes?
+  options:
+    - id: A
+      ca: L'ekklesía (ἐκκλησία)
+      es: La ekklesía (ἐκκλησία)
+    - id: B
+      ca: La boulé (βουλή), consell de 500 membres
+      es: La boulé (βουλή), consejo de 500 miembros
+    - id: C
+      ca: La gerusía (γερουσία), consell d'ancians
+      es: La gerusía (γερουσία), consejo de ancianos
+    - id: D
+      ca: L'areòpag, tribunal format per antics arconts
+      es: El areópago, tribunal formado por antiguos arcontes
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'ekklesía era l'assemblea popular de tots els ciutadans atenesos, sobirana
+      per votar lleis i decisions polítiques. La boulé (500 membres) preparava
+      els assumptes; la gerusía era el consell d'ancians ESPARTÀ (no atenès);
+      l'areòpag era un antic tribunal aristocràtic. El parany freqüent és
+      confondre l'ekklesía amb la boulé o amb una institució espartana.
+    es: La ekklesía era la asamblea popular de todos los ciudadanos atenienses,
+      soberana para votar leyes y decisiones políticas. La boulé (500 miembros)
+      preparaba los asuntos; la gerusía era el consejo de ancianos ESPARTANO (no
+      ateniense); el areópago era un antiguo tribunal aristocrático. La trampa
+      frecuente es confundir la ekklesía con la boulé o con una institución
+      espartana.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quina és l'ordenació cronològica correcta dels grans períodes de la història
+      grega, del més antic al més recent?
+    es: ¿Cuál es la ordenación cronológica correcta de los grandes períodos de la
+      historia griega, del más antiguo al más reciente?
+  options:
+    - id: A
+      ca: Micènic → Arcaic → Clàssic → Hel·lenístic
+      es: Micénico → Arcaico → Clásico → Helenístico
+    - id: B
+      ca: Arcaic → Micènic → Clàssic → Hel·lenístic
+      es: Arcaico → Micénico → Clásico → Helenístico
+    - id: C
+      ca: Micènic → Clàssic → Arcaic → Hel·lenístic
+      es: Micénico → Clásico → Arcaico → Helenístico
+    - id: D
+      ca: Micènic → Arcaic → Hel·lenístic → Clàssic
+      es: Micénico → Arcaico → Helenístico → Clásico
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'ordre és: món micènic (2n mil·lenni aC, edat del bronze) → època arcaica
+      (aprox. s. VIII–VI aC) → època clàssica (s. V–IV aC) → època hel·lenística
+      (des de la mort d'Alexandre, 323 aC). Els errors habituals inverteixen
+      micènic/arcaic o col·loquen l'hel·lenístic abans del clàssic."
+    es: "El orden es: mundo micénico (2.º milenio a. C., edad del bronce) → época
+      arcaica (aprox. s. VIII–VI a. C.) → época clásica (s. V–IV a. C.) → época
+      helenística (desde la muerte de Alejandro, 323 a. C.). Los errores
+      habituales invierten micénico/arcaico o colocan el helenístico antes del
+      clásico."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: Durant la Guerra del Peloponès (431–404 aC), Esparta encapçalava una aliança
+      militar de ciutats. Com es coneix aquesta aliança?
+    es: Durante la Guerra del Peloponeso (431–404 a. C.), Esparta encabezaba una
+      alianza militar de ciudades. ¿Cómo se conoce esa alianza?
+  options:
+    - id: A
+      ca: La Lliga del Peloponès
+      es: La Liga del Peloponeso
+    - id: B
+      ca: La Lliga de Delos (Confederació Àtico-Dèlica)
+      es: La Liga de Delos (Confederación Ático-Délica)
+    - id: C
+      ca: La Lliga de Corint, creada per Filip i Alexandre de Macedònia
+      es: La Liga de Corinto, creada por Filipo y Alejandro de Macedonia
+    - id: D
+      ca: La Lliga Aquea
+      es: La Liga Aquea
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Esparta liderava la Lliga del Peloponès. La Lliga de Delos, en canvi, estava
+      encapçalada per ATENES i fou el seu instrument d'hegemonia; és el
+      distractor clau. La Lliga de Corint és posterior (època macedònica) i la
+      Lliga Aquea és pròpia de l'època hel·lenística.
+    es: Esparta lideraba la Liga del Peloponeso. La Liga de Delos, en cambio, estaba
+      encabezada por ATENAS y fue su instrumento de hegemonía; es el distractor
+      clave. La Liga de Corinto es posterior (época macedónica) y la Liga Aquea
+      es propia de la época helenística.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: Quin reformador atenès va reorganitzar el cos cívic en 10 tribus (phylaí)
+      basades en els demes, substituint les antigues quatre tribus jòniques, i
+      és considerat el 'pare' de la democràcia?
+    es: ¿Qué reformador ateniense reorganizó el cuerpo cívico en 10 tribus (phylaí)
+      basadas en los demos, sustituyendo las antiguas cuatro tribus jonias, y es
+      considerado el 'padre' de la democracia?
+  options:
+    - id: A
+      ca: Clístenes (c. 508 aC)
+      es: Clístenes (c. 508 a. C.)
+    - id: B
+      ca: Soló, que dividí els ciutadans en quatre classes segons la riquesa
+      es: Solón, que dividió a los ciudadanos en cuatro clases según la riqueza
+    - id: C
+      ca: Pèricles, que instaurà el sou públic (misthós) per als càrrecs
+      es: Pericles, que instauró el sueldo público (misthós) para los cargos
+    - id: D
+      ca: Dracó, autor del primer codi de lleis escrit
+      es: Dracón, autor del primer código de leyes escrito
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Clístenes (508 aC) trencà el pes de les gens aristocràtiques reorganitzant
+      la ciutadania en 10 tribus territorials basades en els demes, base de la
+      democràcia. Soló féu la reforma timocràtica (quatre classes censals);
+      Pèricles hi afegí el misthós; Dracó redactà les primeres lleis escrites.
+      Confondre Soló i Clístenes és l'error més comú.
+    es: Clístenes (508 a. C.) rompió el peso de los clanes aristocráticos
+      reorganizando la ciudadanía en 10 tribus territoriales basadas en los
+      demos, base de la democracia. Solón hizo la reforma timocrática (cuatro
+      clases censitarias); Pericles añadió el misthós; Dracón redactó las
+      primeras leyes escritas. Confundir a Solón con Clístenes es el error más
+      común.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Segons el repartiment del cosmos entre els tres fills de Cronos, quin déu
+      olímpic regnava sobre el mar?
+    es: Según el reparto del cosmos entre los tres hijos de Crono, ¿qué dios
+      olímpico reinaba sobre el mar?
+  options:
+    - id: A
+      ca: Posidó (Ποσειδῶν)
+      es: Poseidón (Ποσειδῶν)
+    - id: B
+      ca: Hades (Ἅιδης)
+      es: Hades (Ἅιδης)
+    - id: C
+      ca: Hefest (Ἥφαιστος)
+      es: Hefesto (Ἥφαιστος)
+    - id: D
+      ca: Zeus (Ζεύς)
+      es: Zeus (Ζεύς)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Després de vèncer els Titans, els tres germans es reparteixen el món: Zeus
+      obté el cel, Posidó el mar i Hades l'inframón. Per tant el mar correspon a
+      Posidó. Hades governa el regne dels morts (error freqüent per confusió de
+      dominis) i Hefest és el déu del foc i la forja."
+    es: "Tras vencer a los Titanes, los tres hermanos se reparten el mundo: Zeus
+      obtiene el cielo, Poseidón el mar y Hades el inframundo. Por tanto el mar
+      corresponde a Poseidón. Hades gobierna el reino de los muertos (error
+      frecuente por confusión de dominios) y Hefesto es el dios del fuego y la
+      fragua."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: De quina divinitat explica el mite que va néixer, ja adulta i armada,
+      sortint del cap de Zeus?
+    es: ¿De qué divinidad cuenta el mito que nació, ya adulta y armada, saliendo de
+      la cabeza de Zeus?
+  options:
+    - id: A
+      ca: Atena (Ἀθηνᾶ)
+      es: Atenea (Ἀθηνᾶ)
+    - id: B
+      ca: Afrodita (Ἀφροδίτη)
+      es: Afrodita (Ἀφροδίτη)
+    - id: C
+      ca: Àrtemis (Ἄρτεμις)
+      es: Ártemis (Ἄρτεμις)
+    - id: D
+      ca: Hera (Ἥρα)
+      es: Hera (Ἥρα)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Atena, deessa de la saviesa i de la guerra estratègica, va sorgir armada del
+      cap de Zeus després que aquest s'empassés Metis. Afrodita, en canvi, neix
+      de l'escuma del mar (error habitual per confondre els dos naixements
+      prodigiosos); Àrtemis i Hera tenen naixements ordinaris.
+    es: Atenea, diosa de la sabiduría y de la guerra estratégica, surgió armada de
+      la cabeza de Zeus después de que este se tragara a Metis. Afrodita, en
+      cambio, nace de la espuma del mar (error habitual por confundir los dos
+      nacimientos prodigiosos); Ártemis y Hera tienen nacimientos ordinarios.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: L'hel·lenisme "pànic" (por sobtada i irracional) deriva del nom de quina
+      divinitat grega?
+    es: El helenismo "pánico" (miedo súbito e irracional) deriva del nombre de qué
+      divinidad griega?
+  options:
+    - id: A
+      ca: Pan (Πάν), déu dels ramats i els boscos
+      es: Pan (Πάν), dios de los rebaños y los bosques
+    - id: B
+      ca: Apol·lo (Ἀπόλλων)
+      es: Apolo (Ἀπόλλων)
+    - id: C
+      ca: Dionís (Διόνυσος)
+      es: Dioniso (Διόνυσος)
+    - id: D
+      ca: Hermes (Ἑρμῆς)
+      es: Hermes (Ἑρμῆς)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El terme prové de Pan, divinitat camperola que, segons es creia, provocava
+      un terror sobtat i col·lectiu en els qui travessaven boscos i indrets
+      solitaris; d'aquí "pànic". Apol·lo, Dionís i Hermes no estan a l'origen
+      del mot, tot i que Hermes és pare de Pan segons algunes versions.
+    es: El término procede de Pan, divinidad campestre que, según se creía,
+      provocaba un terror súbito y colectivo en quienes atravesaban bosques y
+      parajes solitarios; de ahí "pánico". Apolo, Dioniso y Hermes no están en
+      el origen de la palabra, aunque Hermes es padre de Pan según algunas
+      versiones.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Com s'anomenava la sacerdotessa d'Apol·lo que pronunciava els oracles al
+      santuari de Delfos?
+    es: ¿Cómo se llamaba la sacerdotisa de Apolo que pronunciaba los oráculos en el
+      santuario de Delfos?
+  options:
+    - id: A
+      ca: La Pítia (Πυθία)
+      es: La Pitia (Πυθία)
+    - id: B
+      ca: La Sibil·la
+      es: La Sibila
+    - id: C
+      ca: Cassandra
+      es: Casandra
+    - id: D
+      ca: Una mènade
+      es: Una ménade
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: A Delfos, la Pítia era la sacerdotessa que, en trànsit, transmetia les
+      respostes d'Apol·lo. La Sibil·la és la profetessa vinculada sobretot a
+      Cumes; Cassandra és la princesa troiana amb do profètic no cregut; les
+      mènades són seguidores de Dionís, no d'Apol·lo.
+    es: En Delfos, la Pitia era la sacerdotisa que, en trance, transmitía las
+      respuestas de Apolo. La Sibila es la profetisa vinculada sobre todo a
+      Cumas; Casandra es la princesa troyana con don profético no creído; las
+      ménades son seguidoras de Dioniso, no de Apolo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: A quines divinitats estaven consagrats els Misteris d'Eleusis, els cultes
+      mistèrics més cèlebres del món grec?
+    es: ¿A qué divinidades estaban consagrados los Misterios de Eleusis, los cultos
+      mistéricos más célebres del mundo griego?
+  options:
+    - id: A
+      ca: Demèter i Persèfone (Kore)
+      es: Deméter y Perséfone (Kore)
+    - id: B
+      ca: Dionís i Ariadna
+      es: Dioniso y Ariadna
+    - id: C
+      ca: Cíbele i Atis
+      es: Cibeles y Atis
+    - id: D
+      ca: Orfeu i Eurídice
+      es: Orfeo y Eurídice
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els Misteris d'Eleusis honoraven Demèter i la seva filla Persèfone; el mite
+      del rapte i el retorn cíclic de Persèfone simbolitzava la mort i la
+      renaixença de la vegetació i prometia als iniciats un destí millor. Cíbele
+      i Atis són d'origen frigi i Dionís té els seus propis cultes; Orfeu i
+      Eurídice pertanyen a l'orfisme, no a Eleusis.
+    es: Los Misterios de Eleusis honraban a Deméter y a su hija Perséfone; el mito
+      del rapto y el retorno cíclico de Perséfone simbolizaba la muerte y el
+      renacer de la vegetación y prometía a los iniciados un destino mejor.
+      Cibeles y Atis son de origen frigio y Dioniso tiene sus propios cultos;
+      Orfeo y Eurídice pertenecen al orfismo, no a Eleusis.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.mythology
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: Segons la Teogonia d'Hesíode, de què va sorgir la deessa Afrodita?
+    es: Según la Teogonía de Hesíodo, ¿de qué surgió la diosa Afrodita?
+  options:
+    - id: A
+      ca: De l'escuma (ἀφρός) del mar, formada pels genitals tallats d'Urà
+      es: De la espuma (ἀφρός) del mar, formada por los genitales cortados de Urano
+    - id: B
+      ca: De la unió de Zeus i Dione
+      es: De la unión de Zeus y Dione
+    - id: C
+      ca: Del cap de Zeus, com Atena
+      es: De la cabeza de Zeus, como Atenea
+    - id: D
+      ca: D'un ou còsmic post per Nix (la Nit)
+      es: De un huevo cósmico puesto por Nix (la Noche)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En Hesíode, Cronos castra Urà i llança els seus genitals al mar; de l'escuma
+      (ἀφρός, aphrós) que se'n forma neix Afrodita, i el mateix nom en recull
+      l'etimologia popular. L'opció "filla de Zeus i Dione" és la versió
+      alternativa homèrica (Ilíada), no la d'Hesíode; el naixement del cap de
+      Zeus és el d'Atena, i l'ou còsmic pertany a les cosmogonies òrfiques.
+    es: En Hesíodo, Crono castra a Urano y arroja sus genitales al mar; de la espuma
+      (ἀφρός, aphrós) que se forma nace Afrodita, y su propio nombre recoge esa
+      etimología popular. La opción "hija de Zeus y Dione" es la versión
+      alternativa homérica (Ilíada), no la de Hesíodo; el nacimiento de la
+      cabeza de Zeus es el de Atenea, y el huevo cósmico pertenece a las
+      cosmogonías órficas.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.literary_genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quins dos poemes èpics es transmeten sota l'autoria d'Homer i marquen
+      l'inici de la literatura grega?
+    es: ¿Qué dos poemas épicos se transmiten bajo la autoría de Homero y marcan el
+      inicio de la literatura griega?
+  options:
+    - id: A
+      ca: La Ilíada i l'Odissea
+      es: La Ilíada y la Odisea
+    - id: B
+      ca: La Teogonia i Els treballs i els dies
+      es: La Teogonía y Los trabajos y los días
+    - id: C
+      ca: L'Eneida i les Metamorfosis
+      es: La Eneida y las Metamorfosis
+    - id: D
+      ca: Les Argonàutiques i la Batracomiomàquia
+      es: Las Argonáuticas y la Batracomiomaquia
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Els dos grans poemes èpics atribuïts a Homer són la Ilíada (còlera
+      d'Aquil·les a la guerra de Troia) i l'Odissea (retorn d'Odisseu/Ulisses).
+      La Teogonia i Els treballs i els dies són d'Hesíode; l'Eneida i les
+      Metamorfosis són obres llatines (Virgili i Ovidi); les Argonàutiques són
+      d'Apol·loni de Rodes (èpica hel·lenística).
+    es: Los dos grandes poemas épicos atribuidos a Homero son la Ilíada (cólera de
+      Aquiles en la guerra de Troya) y la Odisea (regreso de Odiseo/Ulises). La
+      Teogonía y Los trabajos y los días son de Hesíodo; la Eneida y las
+      Metamorfosis son obras latinas (Virgilio y Ovidio); las Argonáuticas son
+      de Apolonio de Rodas (épica helenística).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.literary_genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quins són els tres grans autors de tragèdia de l'Atenes del segle V aC?
+    es: ¿Cuáles son los tres grandes autores de tragedia de la Atenas del siglo V a.
+      C.?
+  options:
+    - id: A
+      ca: Èsquil, Sòfocles i Eurípides
+      es: Esquilo, Sófocles y Eurípides
+    - id: B
+      ca: Aristòfanes, Menandre i Sòfocles
+      es: Aristófanes, Menandro y Sófocles
+    - id: C
+      ca: Èsquil, Píndar i Safo
+      es: Esquilo, Píndaro y Safo
+    - id: D
+      ca: Homer, Hesíode i Eurípides
+      es: Homero, Hesíodo y Eurípides
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La tríada tràgica canònica és Èsquil, Sòfocles i Eurípides. Aristòfanes i
+      Menandre són autors de comèdia; Píndar (lírica coral) i Safo (lírica
+      monòdica) no són tràgics; Homer i Hesíode són poetes èpics.
+    es: La tríada trágica canónica es Esquilo, Sófocles y Eurípides. Aristófanes y
+      Menandro son autores de comedia; Píndaro (lírica coral) y Safo (lírica
+      monódica) no son trágicos; Homero y Hesíodo son poetas épicos.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.literary_genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "Autor de les Històries (Ἱστορίαι), obra centrada en les Guerres Mèdiques i
+      considerat el «pare de la història»:"
+    es: "Autor de las Historias (Ἱστορίαι), obra centrada en las Guerras Médicas y
+      considerado el «padre de la historia»:"
+  options:
+    - id: A
+      ca: Heròdot
+      es: Heródoto
+    - id: B
+      ca: Tucídides
+      es: Tucídides
+    - id: C
+      ca: Xenofont
+      es: Jenofonte
+    - id: D
+      ca: Polibi
+      es: Polibio
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Heròdot, anomenat per Ciceró «pare de la història», va escriure les
+      Històries sobre el conflicte entre grecs i perses (Guerres Mèdiques).
+      Tucídides narra la Guerra del Peloponès; Xenofont escriu l'Anàbasi i les
+      Hel·lèniques; Polibi és un historiador posterior (època hel·lenística) que
+      explica l'ascens de Roma.
+    es: Heródoto, llamado por Cicerón «padre de la historia», escribió las Historias
+      sobre el conflicto entre griegos y persas (Guerras Médicas). Tucídides
+      narra la Guerra del Peloponeso; Jenofonte escribe la Anábasis y las
+      Helénicas; Polibio es un historiador posterior (época helenística) que
+      explica el ascenso de Roma.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.literary_genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Quin és el vers propi de l'èpica grega, emprat tant a la Ilíada com a
+      l'Odissea?
+    es: ¿Cuál es el verso propio de la épica griega, empleado tanto en la Ilíada
+      como en la Odisea?
+  options:
+    - id: A
+      ca: L'hexàmetre dactílic
+      es: El hexámetro dactílico
+    - id: B
+      ca: El trímetre iàmbic
+      es: El trímetro yámbico
+    - id: C
+      ca: El pentàmetre
+      es: El pentámetro
+    - id: D
+      ca: El tetràmetre trocaic
+      es: El tetrámetro trocaico
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'èpica es compon en hexàmetre dactílic (sis peus, majoritàriament dàctils,
+      amb l'últim sempre bíceps abreujat). El trímetre iàmbic és el vers dels
+      diàlegs dramàtics; el pentàmetre s'associa al dístic elegíac (combinat amb
+      l'hexàmetre); el tetràmetre trocaic apareix en passatges dramàtics
+      agitats, no en l'èpica.
+    es: La épica se compone en hexámetro dactílico (seis pies, mayoritariamente
+      dáctilos, con el último siempre bíceps abreviado). El trímetro yámbico es
+      el verso de los diálogos dramáticos; el pentámetro se asocia al dístico
+      elegíaco (combinado con el hexámetro); el tetrámetro trocaico aparece en
+      pasajes dramáticos agitados, no en la épica.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.literary_genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En l'estructura de la tragèdia grega, com s'anomena el cant amb què el cor
+      fa la seva primera entrada a l'orquestra?
+    es: En la estructura de la tragedia griega, ¿cómo se llama el canto con el que
+      el coro hace su primera entrada en la orquesta?
+  options:
+    - id: A
+      ca: Pàrode
+      es: Párodo
+    - id: B
+      ca: Pròleg
+      es: Prólogo
+    - id: C
+      ca: Estàsim
+      es: Estásimo
+    - id: D
+      ca: Èxode
+      es: Éxodo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El pàrode (πάροδος) és el cant inicial del cor mentre entra a l'orquestra.
+      El pròleg és la part recitada anterior a l'entrada del cor; els estàsims
+      són els cants corals que separen els episodis un cop el cor ja és a
+      escena; l'èxode és la part final, després de l'últim cant coral.
+    es: El párodo (πάροδος) es el canto inicial del coro mientras entra en la
+      orquesta. El prólogo es la parte recitada anterior a la entrada del coro;
+      los estásimos son los cantos corales que separan los episodios una vez el
+      coro ya está en escena; el éxodo es la parte final, tras el último canto
+      coral.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.literary_genres
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "Autor considerat el representant per excel·lència de la Comèdia Nova (Νέα),
+      caracteritzada per intrigues domèstiques i personatges tipus en lloc de la
+      sàtira política:"
+    es: "Autor considerado el representante por excelencia de la Comedia Nueva
+      (Νέα), caracterizada por intrigas domésticas y personajes tipo en lugar de
+      la sátira política:"
+  options:
+    - id: A
+      ca: Menandre
+      es: Menandro
+    - id: B
+      ca: Aristòfanes
+      es: Aristófanes
+    - id: C
+      ca: Cratí
+      es: Cratino
+    - id: D
+      ca: Sòfocles
+      es: Sófocles
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Menandre és el gran autor de la Comèdia Nova, amb temes quotidians, embolics
+      amorosos i personatges tipus (el vell avar, el jove enamorat, l'esclau
+      astut). Aristòfanes i Cratí pertanyen a la Comèdia Antiga, marcada per la
+      sàtira política i personal; Sòfocles és tràgic, no còmic.
+    es: Menandro es el gran autor de la Comedia Nueva, con temas cotidianos, enredos
+      amorosos y personajes tipo (el viejo avaro, el joven enamorado, el esclavo
+      astuto). Aristófanes y Cratino pertenecen a la Comedia Antigua, marcada
+      por la sátira política y personal; Sófocles es trágico, no cómico.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: El mot «democràcia», herència política de Grècia, es va formar a partir de
+      dos elements grecs. Quins són i què signifiquen?
+    es: La palabra «democracia», herencia política de Grecia, se formó a partir de
+      dos elementos griegos. ¿Cuáles son y qué significan?
+  options:
+    - id: A
+      ca: δῆμος (dêmos, «poble») + χρόνος (khrónos, «temps»)
+      es: δῆμος (dêmos, «pueblo») + χρόνος (khrónos, «tiempo»)
+    - id: B
+      ca: δῆμος (dêmos, «poble») + κράτος (krátos, «poder»)
+      es: δῆμος (dêmos, «pueblo») + κράτος (krátos, «poder»)
+    - id: C
+      ca: δόμος (dómos, «casa») + κράτος (krátos, «poder»)
+      es: δόμος (dómos, «casa») + κράτος (krátos, «poder»)
+    - id: D
+      ca: δῆμος (dêmos, «déu») + γράφω (gráphō, «escriure»)
+      es: δῆμος (dêmos, «dios») + γράφω (gráphō, «escribir»)
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "«Democràcia» = δῆμος (dêmos, «poble») + κράτος (krátos, «poder, força»):
+      literalment «el poder del poble», el govern de la ciutadania. χρόνος
+      («temps») dona «cronologia», i δόμος («casa») dona «domèstic»: són
+      confusions habituals per semblança fonètica."
+    es: "«Democracia» = δῆμος (dêmos, «pueblo») + κράτος (krátos, «poder, fuerza»):
+      literalmente «el poder del pueblo», el gobierno de la ciudadanía. χρόνος
+      («tiempo») da «cronología», y δόμος («casa») da «doméstico»: son
+      confusiones habituales por semejanza fonética."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En el terme mèdic «hipodèrmic» (injecció que es posa sota la pell), quin
+      valor té el prefix grec «hipo-»?
+    es: En el término médico «hipodérmico» (inyección que se pone bajo la piel),
+      ¿qué valor tiene el prefijo griego «hipo-»?
+  options:
+    - id: A
+      ca: «per damunt, en excés» (de ὑπέρ, hypér)
+      es: «por encima, en exceso» (de ὑπέρ, hypér)
+    - id: B
+      ca: «cavall» (de ἵππος, híppos)
+      es: «caballo» (de ἵππος, híppos)
+    - id: C
+      ca: «sota, per dessota» (de ὑπό, hypó)
+      es: «bajo, por debajo» (de ὑπό, hypó)
+    - id: D
+      ca: «aigua» (de ὕδωρ, hýdōr)
+      es: «agua» (de ὕδωρ, hýdōr)
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "«Hipodèrmic» = ὑπό (hypó, «sota») + δέρμα (dérma, «pell»): allò que està
+      sota la pell. No s'ha de confondre amb ὑπέρ («sobre», que dona
+      «hipertensió»), ni amb ἵππος («cavall», que dona «hipopòtam, hípica»), ni
+      amb ὕδωρ («aigua», que dona «hidràulic»)."
+    es: "«Hipodérmico» = ὑπό (hypó, «bajo») + δέρμα (dérma, «piel»): lo que está
+      bajo la piel. No debe confundirse con ὑπέρ («sobre», que da
+      «hipertensión»), ni con ἵππος («caballo», que da «hipopótamo, hípica»), ni
+      con ὕδωρ («agua», que da «hidráulico»)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "En el teatre grec clàssic, herència directa del nostre teatre, la
+      «orquestra» (ὀρχήστρα) designava:"
+    es: "En el teatro griego clásico, herencia directa de nuestro teatro, la
+      «orquestra» (ὀρχήστρα) designaba:"
+  options:
+    - id: A
+      ca: la graderia semicircular on seien els espectadors
+      es: la gradería semicircular donde se sentaban los espectadores
+    - id: B
+      ca: l'espai circular al centre on el cor cantava i dansava
+      es: el espacio circular en el centro donde el coro cantaba y danzaba
+    - id: C
+      ca: l'edifici del fons que servia de bastidors i decorat
+      es: el edificio del fondo que servía de bastidores y decorado
+    - id: D
+      ca: el conjunt de músics amb els seus instruments
+      es: el conjunto de músicos con sus instrumentos
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "ὀρχήστρα deriva de ὀρχέομαι («dansar»): era l'espai circular, davant de
+      l'escena, on actuava el cor. La graderia era el θέατρον (theatron),
+      l'edifici del fons la σκηνή (skené); el sentit modern de «orquestra» com a
+      grup de músics és una evolució posterior del terme."
+    es: "ὀρχήστρα deriva de ὀρχέομαι («danzar»): era el espacio circular, delante de
+      la escena, donde actuaba el coro. La gradería era el θέατρον (theatron),
+      el edificio del fondo la σκηνή (skené); el sentido moderno de «orquesta»
+      como grupo de músicos es una evolución posterior del término."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "L'adjectiu «pànic» (por sobtada i irracional) prové, com a llegat de la
+      mitologia grega, de:"
+    es: "El adjetivo «pánico» (miedo súbito e irracional) proviene, como legado de
+      la mitología griega, de:"
+  options:
+    - id: A
+      ca: Pandora, la primera dona, que va deixar escapar tots els mals
+      es: Pandora, la primera mujer, que dejó escapar todos los males
+    - id: B
+      ca: l'adjectiu grec πᾶν (pân, «tot, la totalitat»)
+      es: el adjetivo griego πᾶν (pân, «todo, la totalidad»)
+    - id: C
+      ca: Panacea, la deessa de la curació universal
+      es: Panacea, la diosa de la curación universal
+    - id: D
+      ca: el déu Pan (Πάν), que provocava terror sobtat als camins
+      es: el dios Pan (Πάν), que provocaba terror súbito en los caminos
+  answer:
+    type: single
+    correct: D
+  explanation:
+    ca: El «pànic» és el temor sobtat que, segons els grecs, infonia el déu Pan
+      (Πάν), divinitat dels boscos i pastors, que espantava els viatgers. Tot i
+      la semblança gràfica, no procedeix de πᾶν («tot», que dona «panteó,
+      pandèmia»), ni de Pandora, ni de Panacea.
+    es: El «pánico» es el temor súbito que, según los griegos, infundía el dios Pan
+      (Πάν), divinidad de los bosques y pastores, que asustaba a los viajeros.
+      Pese al parecido gráfico, no procede de πᾶν («todo», que da «panteón,
+      pandemia»), ni de Pandora, ni de Panacea.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "El terme «acadèmia», encara viu a les nostres institucions d'ensenyament i
+      recerca, té el seu origen en:"
+    es: "El término «academia», aún vivo en nuestras instituciones de enseñanza e
+      investigación, tiene su origen en:"
+  options:
+    - id: A
+      ca: el bosc consagrat a l'heroi Ἀκάδημος (Akádemos), als afores d'Atenes, on
+        Plató va fundar la seva escola
+      es: el bosque consagrado al héroe Ἀκάδημος (Akádemos), a las afueras de Atenas,
+        donde Platón fundó su escuela
+    - id: B
+      ca: el Liceu, l'escola peripatètica que va fundar Aristòtil
+      es: el Liceo, la escuela peripatética que fundó Aristóteles
+    - id: C
+      ca: un mot grec comú, ἀκαδημία, que ja significava «estudi superior»
+      es: una palabra griega común, ἀκαδημία, que ya significaba «estudio superior»
+    - id: D
+      ca: Sòcrates, el mestre de Plató, del qual pren el nom
+      es: Sócrates, el maestro de Platón, del que toma el nombre
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'«Acadèmia» era el jardí o bosc dedicat a l'heroi local Akádemos, prop
+      d'Atenes, on Plató (c. 387 aC) va establir la seva escola de filosofia;
+      d'aquí el nom passà a designar la institució i, després, qualsevol centre
+      de saber. El Liceu (Λύκειον) és l'escola d'Aristòtil, no la de Plató.
+    es: La «Academia» era el jardín o bosque dedicado al héroe local Akádemos, cerca
+      de Atenas, donde Platón (c. 387 a. C.) estableció su escuela de filosofía;
+      de ahí el nombre pasó a designar la institución y, luego, cualquier centro
+      de saber. El Liceo (Λύκειον) es la escuela de Aristóteles, no la de
+      Platón.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: gre-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: greek
+  type: multiple_choice
+  skills:
+    - greek.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El cultisme mèdic «hemorràgia» és un compost grec. Quina és l'anàlisi
+      etimològica correcta?
+    es: El cultismo médico «hemorragia» es un compuesto griego. ¿Cuál es el análisis
+      etimológico correcto?
+  options:
+    - id: A
+      ca: αἷμα (haîma, «sang») + λόγος (lógos, «estudi») = «estudi de la sang»
+      es: αἷμα (haîma, «sangre») + λόγος (lógos, «estudio») = «estudio de la sangre»
+    - id: B
+      ca: ὕδωρ (hýdōr, «aigua») + -ραγία (-rhagía, «flux») = «flux d'aigua»
+      es: ὕδωρ (hýdōr, «agua») + -ραγία (-rhagía, «flujo») = «flujo de agua»
+    - id: C
+      ca: αἷμα (haîma, «sang») + -ραγία (-rhagía, de ῥήγνυμι, «brollar, rebentar») =
+        «vessament de sang»
+      es: αἷμα (haîma, «sangre») + -ραγία (-rhagía, de ῥήγνυμι, «brotar, reventar») =
+        «derrame de sangre»
+    - id: D
+      ca: αἷμα (haîma, «sang») + ἄλγος (álgos, «dolor») = «dolor de la sang»
+      es: αἷμα (haîma, «sangre») + ἄλγος (álgos, «dolor») = «dolor de la sangre»
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "«Hemorràgia» = αἷμα (haîma, «sang») + el sufix -ραγία, derivat del verb
+      ῥήγνυμι («rebentar, brollar»): el brollament o vessament de sang. αἷμα +
+      λόγος dona «hematologia»; αἷμα + ἄλγος no és el compost buscat, i ὕδωρ
+      correspon a «hidro-»."
+    es: "«Hemorragia» = αἷμα (haîma, «sangre») + el sufijo -ραγία, derivado del
+      verbo ῥήγνυμι («reventar, brotar»): el brote o derrame de sangre. αἷμα +
+      λόγος da «hematología»; αἷμα + ἄλγος no es el compuesto buscado, y ὕδωρ
+      corresponde a «hidro-»."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

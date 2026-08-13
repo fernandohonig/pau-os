@@ -101,6 +101,12 @@ const SUBJECT_PONDERACIONS: Array<{ subject: string; weights: Map<string, number
   { subject: 'geology', weights: loadPond('ponderacions-geology-2026.json', 'geology') },
   { subject: 'technology', weights: loadPond('ponderacions-technology-2026.json', 'technology') },
   { subject: 'drawing', weights: loadPond('ponderacions-drawing-2026.json', 'drawing') },
+  { subject: 'latin', weights: loadPond('ponderacions-latin-2026.json', 'latin') },
+  { subject: 'greek', weights: loadPond('ponderacions-greek-2026.json', 'greek') },
+  // literature = Literatura Catalana column (a distinct Literatura Castellana column also exists).
+  { subject: 'literature', weights: loadPond('ponderacions-literature-2026.json', 'literature') },
+  { subject: 'geography', weights: loadPond('ponderacions-geography-2026.json', 'geography') },
+  { subject: 'design', weights: loadPond('ponderacions-design-2026.json', 'design') },
   // Anglès and Filosofia are general-phase subjects — no specific-phase ponderació column exists.
 ];
 

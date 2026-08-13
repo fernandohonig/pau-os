@@ -40,13 +40,23 @@ const ROOT_CFG: Record<string, { subject: string; prefix: string; dir: string }>
   technology: { subject: 'technology', prefix: 'tec-g', dir: 'technology' },
   drawing: { subject: 'drawing', prefix: 'dib-g', dir: 'drawing' },
   english: { subject: 'english', prefix: 'ang-g', dir: 'english' },
+  latin: { subject: 'latin', prefix: 'lla-g', dir: 'latin' },
+  greek: { subject: 'greek', prefix: 'gre-g', dir: 'greek' },
+  literature: { subject: 'literature', prefix: 'lit-g', dir: 'literature' },
+  geography: { subject: 'geography', prefix: 'geog-g', dir: 'geography' },
+  design: { subject: 'design', prefix: 'dis-g', dir: 'design' },
 };
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 
 const inputPath = process.argv[2];
+// Optional: output filename (default generated.yaml) and id-prefix override, so
+// a single-skill backfill can be appended alongside an existing bank without id
+// collisions, e.g. `... backfill.json romanesque.yaml art-r`.
+const outBasename = process.argv[3] || 'generated.yaml';
+const idPrefixOverride = process.argv[4];
 if (!inputPath) {
-  process.stderr.write('usage: tsx scripts/materialize-physics/index.ts <workflow-output.json>\n');
+  process.stderr.write('usage: tsx scripts/materialize-physics/index.ts <workflow-output.json> [outFile] [idPrefix]\n');
   process.exit(1);
 }
 
@@ -83,7 +93,7 @@ for (const it of items) {
     continue;
   }
   seq += 1;
-  const id = `${cfg.prefix}-${String(seq).padStart(6, '0')}`;
+  const id = `${idPrefixOverride || cfg.prefix}-${String(seq).padStart(6, '0')}`;
   questions.push({
     id,
     version: 1,
@@ -113,6 +123,6 @@ const banner =
   'validity), provenance `generated`, review status `pending_review`.\n' +
   '# They enter the admin review queue; nothing is served until approved.\n' +
   '# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.\n';
-fs.writeFileSync(path.join(outDir, 'generated.yaml'), banner + stringify(questions));
+fs.writeFileSync(path.join(outDir, outBasename), banner + stringify(questions));
 
 process.stdout.write(`✅ Wrote ${questions.length} questions (skipped ${skipped}).\n`);

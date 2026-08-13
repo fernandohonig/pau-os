@@ -128,13 +128,19 @@ export interface SubjectContribution {
   range: [number, number];
 }
 
+export interface SubjectEstimate {
+  subject: string;
+  name: LocalizedText;
+  subjectLevel: { level: number; range: [number, number]; confidence: number; assessedSkillCount: number };
+  contribution: SubjectContribution | null;
+}
+
 export type TargetEstimate =
   | { goal: null }
   | {
       goal: { degreeId: string; targetScore: number | null };
       degreeName: string;
-      subjectLevel: { level: number; range: [number, number]; confidence: number; assessedSkillCount: number };
-      contribution: SubjectContribution | null;
+      subjects: SubjectEstimate[];
       cutoff: CutoffInfo | null;
       disclaimer: string;
     };

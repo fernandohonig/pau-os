@@ -1,0 +1,300 @@
+- id: design.visual_language
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Fonaments del llenguatge visual
+    es: Fundamentos del lenguaje visual
+  status: published
+  competencies:
+    - reasoning
+    - communication
+
+- id: design.visual_language.elements
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Elements bàsics: punt, línia i pla"
+    es: "Elementos básicos: punto, línea y plano"
+  parent: design.visual_language
+  status: published
+  competencies:
+    - reasoning
+    - communication
+
+- id: design.visual_language.composition
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Composició: equilibri, ritme i proporció"
+    es: "Composición: equilibrio, ritmo y proporción"
+  parent: design.visual_language
+  prerequisites:
+    - design.visual_language.elements
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.visual_language.gestalt
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Percepció visual i lleis de la Gestalt"
+    es: "Percepción visual y leyes de la Gestalt"
+  parent: design.visual_language
+  prerequisites:
+    - design.visual_language.composition
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.color
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Teoria del color
+    es: Teoría del color
+  status: published
+  competencies:
+    - reasoning
+    - communication
+
+- id: design.color.properties
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Propietats del color: to, saturació i lluminositat"
+    es: "Propiedades del color: tono, saturación y luminosidad"
+  parent: design.color
+  status: published
+  competencies:
+    - reasoning
+
+- id: design.color.harmony
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Harmonies i contrastos cromàtics
+    es: Armonías y contrastes cromáticos
+  parent: design.color
+  prerequisites:
+    - design.color.properties
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.color.psychology
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Psicologia i simbolisme del color
+    es: Psicología y simbolismo del color
+  parent: design.color
+  prerequisites:
+    - design.color.properties
+  status: published
+  competencies:
+    - critical_thinking
+    - communication
+
+- id: design.typography
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Tipografia i comunicació visual
+    es: Tipografía y comunicación visual
+  status: published
+  competencies:
+    - communication
+    - reasoning
+
+- id: design.typography.anatomy
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Anatomia de la lletra
+    es: Anatomía de la letra
+  parent: design.typography
+  status: published
+  competencies:
+    - reasoning
+
+- id: design.typography.classification
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Classificació tipogràfica: famílies i estils"
+    es: "Clasificación tipográfica: familias y estilos"
+  parent: design.typography
+  prerequisites:
+    - design.typography.anatomy
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.graphic
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Disseny gràfic
+    es: Diseño gráfico
+  prerequisites:
+    - design.typography
+    - design.color
+  status: published
+  competencies:
+    - communication
+    - critical_thinking
+
+- id: design.graphic.identity
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Identitat visual: marca i imatge corporativa"
+    es: "Identidad visual: marca e imagen corporativa"
+  parent: design.graphic
+  status: published
+  competencies:
+    - communication
+    - critical_thinking
+
+- id: design.product
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Disseny de producte i industrial
+    es: Diseño de producto e industrial
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.product.function
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Funció i forma: la relació funció-forma"
+    es: "Función y forma: la relación función-forma"
+  parent: design.product
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.product.ergonomics
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Ergonomia i usabilitat
+    es: Ergonomía y usabilidad
+  parent: design.product
+  prerequisites:
+    - design.product.function
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.product.materials
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Materials i processos de fabricació
+    es: Materiales y procesos de fabricación
+  parent: design.product
+  status: published
+  competencies:
+    - reasoning
+
+- id: design.interior
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Disseny d'espais i interiors"
+    es: Diseño de espacios e interiores
+  status: published
+  competencies:
+    - reasoning
+    - critical_thinking
+
+- id: design.history
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: Història del disseny
+    es: Historia del diseño
+  status: published
+  competencies:
+    - critical_thinking
+    - communication
+
+- id: design.history.bauhaus
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: La Bauhaus i el moviment modern
+    es: La Bauhaus y el movimiento moderno
+  parent: design.history
+  status: published
+  competencies:
+    - critical_thinking
+    - communication
+
+- id: design.history.functionalism
+  version: 1
+  subject: design
+  region: catalunya
+  academic_year: 2026
+  name:
+    ca: "Funcionalisme i corrents del disseny del segle XX"
+    es: "Funcionalismo y corrientes del diseño del siglo XX"
+  parent: design.history
+  prerequisites:
+    - design.history.bauhaus
+  status: published
+  competencies:
+    - critical_thinking
+    - communication

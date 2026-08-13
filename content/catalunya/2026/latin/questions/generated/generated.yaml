@@ -1,0 +1,4288 @@
+# Física questions — AI-generated and dual-verified (physics correctness + validity), provenance `generated`, review status `pending_review`.
+# They enter the admin review queue; nothing is served until approved.
+# Regenerate via the gen-physics-questions workflow + scripts/materialize-physics.
+- id: lla-g-000001
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: En llatí, la declinació a què pertany un substantiu es reconeix per la
+      terminació del genitiu singular. Quina terminació de genitiu singular és
+      pròpia de la 3a declinació?
+    es: En latín, la declinación a la que pertenece un sustantivo se reconoce por la
+      terminación del genitivo singular. ¿Qué terminación de genitivo singular
+      es propia de la 3ª declinación?
+  options:
+    - id: A
+      ca: -ae
+      es: -ae
+    - id: B
+      ca: -is
+      es: -is
+    - id: C
+      ca: -ī
+      es: -ī
+    - id: D
+      ca: -ūs
+      es: -ūs
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Les terminacions de genitiu singular que identifiquen cada declinació són:
+      1a -ae, 2a -ī, 3a -is, 4a -ūs i 5a -eī/-ēī. Per tant, -is correspon a la
+      3a declinació (p. ex. mīles, mīlit-is). Les altres opcions són distractors
+      de la 1a (-ae), la 2a (-ī) i la 4a (-ūs)."
+    es: "Las terminaciones de genitivo singular que identifican cada declinación
+      son: 1ª -ae, 2ª -ī, 3ª -is, 4ª -ūs y 5ª -eī/-ēī. Por tanto, -is
+      corresponde a la 3ª declinación (p. ej. mīles, mīlit-is). Las demás
+      opciones son distractores de la 1ª (-ae), la 2ª (-ī) y la 4ª (-ūs)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000002
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: El substantiu «rēs, reī» pertany a quina declinació?
+    es: El sustantivo «rēs, reī» pertenece a ¿qué declinación?
+  options:
+    - id: A
+      ca: 2a declinació
+      es: 2ª declinación
+    - id: B
+      ca: 3a declinació
+      es: 3ª declinación
+    - id: C
+      ca: 4a declinació
+      es: 4ª declinación
+    - id: D
+      ca: 5a declinació
+      es: 5ª declinación
+  answer:
+    type: single
+    correct: D
+  explanation:
+    ca: El genitiu singular «reī» acaba en -eī, terminació característica de la 5a
+      declinació (temes en -e-), com «diēs, diēī» o «fidēs, fideī». No pot ser
+      3a (genitiu en -is) ni 4a (genitiu en -ūs). Per tant, «rēs, reī» és de la
+      5a declinació.
+    es: El genitivo singular «reī» acaba en -eī, terminación característica de la 5ª
+      declinación (temas en -e-), como «diēs, diēī» o «fidēs, fideī». No puede
+      ser 3ª (genitivo en -is) ni 4ª (genitivo en -ūs). Por tanto, «rēs, reī» es
+      de la 5ª declinación.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000003
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Analitza morfològicament la forma «dominōrum» (de «dominus, dominī», 2a
+      declinació). Quin cas i nombre és?
+    es: Analiza morfológicamente la forma «dominōrum» (de «dominus, dominī», 2ª
+      declinación). ¿Qué caso y número es?
+  options:
+    - id: A
+      ca: Genitiu plural
+      es: Genitivo plural
+    - id: B
+      ca: Datiu plural
+      es: Dativo plural
+    - id: C
+      ca: Acusatiu plural
+      es: Acusativo plural
+    - id: D
+      ca: Genitiu singular
+      es: Genitivo singular
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "A la 2a declinació el genitiu plural acaba en -ōrum: dominōrum = «dels
+      senyors». El datiu plural seria «dominīs», l'acusatiu plural «dominōs» i
+      el genitiu singular «dominī». La terminació -ōrum és inequívocament
+      genitiu plural."
+    es: "En la 2ª declinación el genitivo plural acaba en -ōrum: dominōrum = «de los
+      señores». El dativo plural sería «dominīs», el acusativo plural «dominōs»
+      y el genitivo singular «dominī». La terminación -ōrum es inequívocamente
+      genitivo plural."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000004
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Quin dels següents substantius pertany a la 4a declinació?
+    es: ¿Cuál de los siguientes sustantivos pertenece a la 4ª declinación?
+  options:
+    - id: A
+      ca: manus, manūs
+      es: manus, manūs
+    - id: B
+      ca: rēs, reī
+      es: rēs, reī
+    - id: C
+      ca: mīles, mīlitis
+      es: mīles, mīlitis
+    - id: D
+      ca: templum, templī
+      es: templum, templī
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La 4a declinació es reconeix pel genitiu singular en -ūs: «manus, manūs»
+      (la mà). «rēs, reī» és 5a (genitiu -eī), «mīles, mīlitis» és 3a (genitiu
+      -is) i «templum, templī» és 2a (genitiu -ī). Cal fixar-se sempre en el
+      genitiu, ja que el nominatiu «manus» aïlladament podria induir a error."
+    es: "La 4ª declinación se reconoce por el genitivo singular en -ūs: «manus,
+      manūs» (la mano). «rēs, reī» es 5ª (genitivo -eī), «mīles, mīlitis» es 3ª
+      (genitivo -is) y «templum, templī» es 2ª (genitivo -ī). Hay que fijarse
+      siempre en el genitivo, pues el nominativo «manus» aislado podría inducir
+      a error."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000005
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: La terminació de genitiu plural «-uum», com en «manuum» o «portuum», és
+      pròpia de quina declinació?
+    es: La terminación de genitivo plural «-uum», como en «manuum» o «portuum», es
+      propia de ¿qué declinación?
+  options:
+    - id: A
+      ca: 2a declinació (-ōrum)
+      es: 2ª declinación (-ōrum)
+    - id: B
+      ca: 3a declinació (-um / -ium)
+      es: 3ª declinación (-um / -ium)
+    - id: C
+      ca: 4a declinació (-uum)
+      es: 4ª declinación (-uum)
+    - id: D
+      ca: 5a declinació (-ērum)
+      es: 5ª declinación (-ērum)
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "El genitiu plural de la 4a declinació acaba en -uum: manuum, portuum,
+      exercituum. La 2a fa -ōrum (dominōrum), la 3a fa -um o -ium (mīlitum,
+      civium) i la 5a fa -ērum (diērum, rērum). Així doncs, -uum identifica la
+      4a declinació."
+    es: "El genitivo plural de la 4ª declinación acaba en -uum: manuum, portuum,
+      exercituum. La 2ª hace -ōrum (dominōrum), la 3ª hace -um o -ium (mīlitum,
+      civium) y la 5ª hace -ērum (diērum, rērum). Así pues, -uum identifica la
+      4ª declinación."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000006
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.declensions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Quina afirmació sobre el gènere dels substantius de la 5a declinació és
+      correcta?
+    es: ¿Qué afirmación sobre el género de los sustantivos de la 5ª declinación es
+      correcta?
+  options:
+    - id: A
+      ca: Tots són neutres.
+      es: Todos son neutros.
+    - id: B
+      ca: Són femenins, llevat de «diēs» (i el compost «merīdiēs»), que solen ser
+        masculins.
+      es: Son femeninos, salvo «diēs» (y el compuesto «merīdiēs»), que suelen ser
+        masculinos.
+    - id: C
+      ca: Tots són masculins sense excepció.
+      es: Todos son masculinos sin excepción.
+    - id: D
+      ca: El gènere és imprevisible i cal memoritzar-lo cas per cas.
+      es: El género es imprevisible y hay que memorizarlo caso por caso.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Els substantius de la 5a declinació són majoritàriament femenins (rēs,
+      fidēs, spēs). L'excepció clàssica és «diēs» (el dia), habitualment masculí
+      —tot i que pot ser femení quan indica un dia assenyalat o un termini— i el
+      seu compost «merīdiēs» (migdia), que és masculí. No hi ha neutres a la 5a
+      declinació.
+    es: Los sustantivos de la 5ª declinación son mayoritariamente femeninos (rēs,
+      fidēs, spēs). La excepción clásica es «diēs» (el día), habitualmente
+      masculino —aunque puede ser femenino cuando indica un día señalado o un
+      plazo— y su compuesto «merīdiēs» (mediodía), que es masculino. No hay
+      neutros en la 5ª declinación.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000007
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quin cas llatí expressa de manera pròpia el complement directe (CD) d'un
+      verb transitiu?
+    es: ¿Qué caso latino expresa de manera propia el complemento directo (CD) de un
+      verbo transitivo?
+  options:
+    - id: A
+      ca: Nominatiu
+      es: Nominativo
+    - id: B
+      ca: Acusatiu
+      es: Acusativo
+    - id: C
+      ca: Datiu
+      es: Dativo
+    - id: D
+      ca: Ablatiu
+      es: Ablativo
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: En llatí cada funció sintàctica es marca amb un cas. El complement directe
+      s'expressa amb l'acusatiu (p. ex. 'video puellam', 'veig la noia'). El
+      nominatiu marca el subjecte, el datiu el complement indirecte i l'ablatiu
+      els complements circumstancials (mitjà, lloc, companyia, etc.). Per tant
+      la resposta correcta és l'acusatiu.
+    es: En latín cada función sintáctica se marca con un caso. El complemento
+      directo se expresa con el acusativo (p. ej. 'video puellam', 'veo a la
+      niña'). El nominativo marca el sujeto, el dativo el complemento indirecto
+      y el ablativo los complementos circunstanciales (medio, lugar, compañía,
+      etc.). Por tanto la respuesta correcta es el acusativo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000008
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: A la frase 'Servus domino epistulam scribit' (El servent escriu una carta a
+      l'amo), quin cas i quina funció té 'domino'?
+    es: En la frase 'Servus domino epistulam scribit' (El siervo escribe una carta
+      al amo), ¿qué caso y qué función tiene 'domino'?
+  options:
+    - id: A
+      ca: Datiu, complement indirecte
+      es: Dativo, complemento indirecto
+    - id: B
+      ca: Ablatiu, complement circumstancial
+      es: Ablativo, complemento circunstancial
+    - id: C
+      ca: Acusatiu, complement directe
+      es: Acusativo, complemento directo
+    - id: D
+      ca: Genitiu, complement del nom
+      es: Genitivo, complemento del nombre
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Dominus' és de la 2a declinació; la forma 'domino' és el datiu (i també
+      l'ablatiu) singular. Ací el CD ja és 'epistulam' (acusatiu) i el subjecte
+      és 'servus' (nominatiu). El destinatari de l'acció d''escriure' és
+      'domino', que fa de complement indirecte i, per tant, va en datiu. La
+      forma coincideix amb l'ablatiu, però la funció ('a qui') el fixa com a
+      datiu."
+    es: "'Dominus' es de la 2ª declinación; la forma 'domino' es el dativo (y
+      también el ablativo) singular. Aquí el CD ya es 'epistulam' (acusativo) y
+      el sujeto es 'servus' (nominativo). El destinatario de la acción de
+      'escribir' es 'domino', que hace de complemento indirecto y, por tanto, va
+      en dativo. La forma coincide con el ablativo, pero la función ('a quién')
+      lo fija como dativo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000009
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: "Volem cridar o adreçar-nos directament a un amic anomenat 'Marcus' (2a
+      declinació). Quina forma cal usar: '____, cur non venis?' ('..., per què
+      no véns?')?"
+    es: "Queremos llamar o dirigirnos directamente a un amigo llamado 'Marcus' (2ª
+      declinación). ¿Qué forma hay que usar: '____, cur non venis?' ('..., ¿por
+      qué no vienes?')?"
+  options:
+    - id: A
+      ca: Marcus
+      es: Marcus
+    - id: B
+      ca: Marce
+      es: Marce
+    - id: C
+      ca: Marco
+      es: Marco
+    - id: D
+      ca: Marcum
+      es: Marcum
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Adreçar-se o cridar algú és la funció del vocatiu. En la 2a declinació, els
+      noms en '-us' fan el vocatiu singular en '-e': 'Marcus' → 'Marce'.
+      'Marcus' és nominatiu, 'Marco' és datiu/ablatiu i 'Marcum' és acusatiu.
+      Per tant, la forma correcta d'apel·lació és 'Marce'."
+    es: "Dirigirse a alguien o llamarlo es la función del vocativo. En la 2ª
+      declinación, los nombres en '-us' hacen el vocativo singular en '-e':
+      'Marcus' → 'Marce'. 'Marcus' es nominativo, 'Marco' es dativo/ablativo y
+      'Marcum' es acusativo. Por tanto, la forma correcta de apelación es
+      'Marce'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000010
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: A la frase 'Hostes gladiis pugnabant' (Els enemics lluitaven amb espases),
+      quin valor té 'gladiis'?
+    es: En la frase 'Hostes gladiis pugnabant' (Los enemigos luchaban con espadas),
+      ¿qué valor tiene 'gladiis'?
+  options:
+    - id: A
+      ca: Ablatiu instrumental (mitjà o instrument)
+      es: Ablativo instrumental (medio o instrumento)
+    - id: B
+      ca: Datiu de complement indirecte
+      es: Dativo de complemento indirecto
+    - id: C
+      ca: Acusatiu de direcció
+      es: Acusativo de dirección
+    - id: D
+      ca: Genitiu possessiu
+      es: Genitivo posesivo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Gladiis' és ablatiu plural de 'gladius'. El verb 'pugnare' (lluitar) és
+      intransitiu i l'espasa és l'instrument amb què es lluita: es tracta d'un
+      ablatiu instrumental o de mitjà, que respon a 'amb què?' i normalment no
+      porta preposició. No és datiu (no hi ha destinatari), ni acusatiu de
+      direcció, ni genitiu."
+    es: "'Gladiis' es ablativo plural de 'gladius'. El verbo 'pugnare' (luchar) es
+      intransitivo y la espada es el instrumento con que se lucha: se trata de
+      un ablativo instrumental o de medio, que responde a '¿con qué?' y
+      normalmente no lleva preposición. No es dativo (no hay destinatario), ni
+      acusativo de dirección, ni genitivo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000011
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: A la frase 'Magna pars militum fugit' (Una gran part dels soldats fuig),
+      quin cas i quin valor té 'militum'?
+    es: En la frase 'Magna pars militum fugit' (Una gran parte de los soldados
+      huye), ¿qué caso y qué valor tiene 'militum'?
+  options:
+    - id: A
+      ca: Genitiu (partitiu), complement del nom
+      es: Genitivo (partitivo), complemento del nombre
+    - id: B
+      ca: Datiu plural, complement indirecte
+      es: Dativo plural, complemento indirecto
+    - id: C
+      ca: Acusatiu plural, complement directe
+      es: Acusativo plural, complemento directo
+    - id: D
+      ca: Nominatiu plural, subjecte
+      es: Nominativo plural, sujeto
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Militum' és el genitiu plural de 'miles, militis' (3a declinació). Depèn
+      del nom 'pars' i n'indica el tot del qual se n'extreu una part: és un
+      genitiu partitiu ('una part DELS soldats'), amb funció de complement del
+      nom. El subjecte de 'fugit' és 'pars' (nominatiu singular), no 'militum'.
+      El nominatiu/acusatiu plural seria 'milites'."
+    es: "'Militum' es el genitivo plural de 'miles, militis' (3ª declinación).
+      Depende del nombre 'pars' e indica el todo del que se extrae una parte: es
+      un genitivo partitivo ('una parte DE los soldados'), con función de
+      complemento del nombre. El sujeto de 'fugit' es 'pars' (nominativo
+      singular), no 'militum'. El nominativo/acusativo plural sería 'milites'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000012
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_nominal.cases
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: La forma 'rosae' és sincrètica (pot ser diversos casos). A la frase 'Rosae
+      pulchrae sunt' (Les roses són belles), en quin cas està 'rosae' i per què?
+    es: La forma 'rosae' es sincrética (puede ser varios casos). En la frase 'Rosae
+      pulchrae sunt' (Las rosas son bellas), ¿en qué caso está 'rosae' y por
+      qué?
+  options:
+    - id: A
+      ca: Nominatiu plural, perquè és el subjecte i concorda amb 'sunt' i amb
+        l'atribut 'pulchrae'
+      es: Nominativo plural, porque es el sujeto y concuerda con 'sunt' y con el
+        atributo 'pulchrae'
+    - id: B
+      ca: Genitiu singular, perquè indica possessió
+      es: Genitivo singular, porque indica posesión
+    - id: C
+      ca: Datiu singular, perquè és el complement indirecte
+      es: Dativo singular, porque es el complemento indirecto
+    - id: D
+      ca: Ablatiu singular, perquè és un complement circumstancial
+      es: Ablativo singular, porque es un complemento circunstancial
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En la 1a declinació, 'rosae' pot ser genitiu singular, datiu singular o
+      nominatiu plural. Cal desambiguar pel context sintàctic: el verb 'sunt'
+      ('són') és plural i l'atribut 'pulchrae' és nominatiu plural femení; tots
+      dos exigeixen un subjecte en nominatiu plural. Per tant, ací 'rosae' és
+      nominatiu plural i fa de subjecte. Les altres opcions (genitiu, datiu,
+      ablatiu) no s'ajusten a la concordança amb 'sunt'."
+    es: "En la 1ª declinación, 'rosae' puede ser genitivo singular, dativo singular
+      o nominativo plural. Hay que desambiguar por el contexto sintáctico: el
+      verbo 'sunt' ('son') es plural y el atributo 'pulchrae' es nominativo
+      plural femenino; ambos exigen un sujeto en nominativo plural. Por tanto,
+      aquí 'rosae' es nominativo plural y hace de sujeto. Las demás opciones
+      (genitivo, dativo, ablativo) no encajan con la concordancia con 'sunt'."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000013
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.conjugations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: El verb llatí «audiō, audīre» pertany a quina conjugació?
+    es: El verbo latino «audiō, audīre» pertenece a la, ¿qué conjugación?
+  options:
+    - id: A
+      ca: Primera conjugació
+      es: Primera conjugación
+    - id: B
+      ca: Segona conjugació
+      es: Segunda conjugación
+    - id: C
+      ca: Tercera conjugació
+      es: Tercera conjugación
+    - id: D
+      ca: Quarta conjugació
+      es: Cuarta conjugación
+  answer:
+    type: single
+    correct: D
+  explanation:
+    ca: La conjugació s'identifica per l'infinitiu de present actiu. «audīre» acaba
+      en -īre (vocal temàtica ī llarga), tret propi de la quarta conjugació (com
+      venīre, dormīre). L'enunciat audiō / audīre ho confirma.
+    es: La conjugación se identifica por el infinitivo de presente activo. «audīre»
+      termina en -īre (vocal temática ī larga), rasgo propio de la cuarta
+      conjugación (como venīre, dormīre). El enunciado audiō / audīre lo
+      confirma.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000014
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.conjugations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quina terminació de l'infinitiu de present actiu és característica de la
+      PRIMERA conjugació?
+    es: ¿Qué terminación del infinitivo de presente activo es característica de la
+      PRIMERA conjugación?
+  options:
+    - id: A
+      ca: -āre (p. ex. amāre)
+      es: -āre (p. ej. amāre)
+    - id: B
+      ca: -ēre (p. ex. monēre)
+      es: -ēre (p. ej. monēre)
+    - id: C
+      ca: -ere (p. ex. regere)
+      es: -ere (p. ej. regere)
+    - id: D
+      ca: -īre (p. ex. audīre)
+      es: -īre (p. ej. audīre)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Cada conjugació té una vocal temàtica pròpia visible a l'infinitiu: 1a
+      -āre, 2a -ēre (e llarga), 3a -ere (e breu), 4a -īre. La primera conjugació
+      es reconeix per -āre amb a llarga (amāre, laudāre, portāre)."
+    es: "Cada conjugación tiene una vocal temática propia visible en el infinitivo:
+      1ª -āre, 2ª -ēre (e larga), 3ª -ere (e breve), 4ª -īre. La primera
+      conjugación se reconoce por -āre con a larga (amāre, laudāre, portāre)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000015
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.conjugations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: Per a classificar un verb llatí en una de les quatre conjugacions, quin
+      element de l'enunciat és el criteri decisiu?
+    es: Para clasificar un verbo latino en una de las cuatro conjugaciones, ¿qué
+      elemento del enunciado es el criterio decisivo?
+  options:
+    - id: A
+      ca: El tema de perfet (p. ex. amāvī, rēxī)
+      es: El tema de perfecto (p. ej. amāvī, rēxī)
+    - id: B
+      ca: La vocal temàtica de l'infinitiu de present (-āre, -ēre, -ere, -īre)
+      es: La vocal temática del infinitivo de presente (-āre, -ēre, -ere, -īre)
+    - id: C
+      ca: La terminació del supí (p. ex. -tum, -sum)
+      es: La terminación del supino (p. ej. -tum, -sum)
+    - id: D
+      ca: La desinència de la 1a persona del singular del present (-ō)
+      es: La desinencia de la 1ª persona del singular del presente (-ō)
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "La conjugació ve determinada pel tema de present, que es reconeix per la
+      vocal temàtica de l'infinitiu de present actiu: -āre, -ēre, -ere, -īre. El
+      perfet i el supí són irregulars i no serveixen per classificar; la
+      desinència -ō de la 1a persona és comuna a totes les conjugacions."
+    es: "La conjugación viene determinada por el tema de presente, que se reconoce
+      por la vocal temática del infinitivo de presente activo: -āre, -ēre, -ere,
+      -īre. El perfecto y el supino son irregulares y no sirven para clasificar;
+      la desinencia -ō de la 1ª persona es común a todas las conjugaciones."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000016
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.conjugations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Donat l'enunciat «moneō, monēre, monuī, monitum», a quina conjugació pertany
+      aquest verb?
+    es: Dado el enunciado «moneō, monēre, monuī, monitum», ¿a qué conjugación
+      pertenece este verbo?
+  options:
+    - id: A
+      ca: Primera conjugació
+      es: Primera conjugación
+    - id: B
+      ca: Segona conjugació
+      es: Segunda conjugación
+    - id: C
+      ca: Tercera conjugació
+      es: Tercera conjugación
+    - id: D
+      ca: Quarta conjugació
+      es: Cuarta conjugación
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: L'infinitiu «monēre» acaba en -ēre amb e LLARGA, marca de la segona
+      conjugació (com vidēre, habēre, dēlēre). Cal no confondre-ho amb la
+      tercera, que té -ere amb e BREU (regere, mittere).
+    es: El infinitivo «monēre» termina en -ēre con e LARGA, marca de la segunda
+      conjugación (como vidēre, habēre, dēlēre). No hay que confundirlo con la
+      tercera, que tiene -ere con e BREVE (regere, mittere).
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000017
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.conjugations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Quin dels verbs següents pertany a la TERCERA conjugació?
+    es: ¿Cuál de los siguientes verbos pertenece a la TERCERA conjugación?
+  options:
+    - id: A
+      ca: laudāre
+      es: laudāre
+    - id: B
+      ca: habēre
+      es: habēre
+    - id: C
+      ca: mittere
+      es: mittere
+    - id: D
+      ca: venīre
+      es: venīre
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "«mittere» acaba en -ere amb e breu: tercera conjugació. laudāre és de la 1a
+      (-āre), habēre de la 2a (-ēre, e llarga) i venīre de la 4a (-īre)."
+    es: "«mittere» termina en -ere con e breve: tercera conjugación. laudāre es de
+      la 1ª (-āre), habēre de la 2ª (-ēre, e larga) y venīre de la 4ª (-īre)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000018
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.conjugations
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El verb «capiō, capere, cēpī, captum» presenta -iō a la 1a persona, com
+      audiō. A quina conjugació pertany realment?
+    es: El verbo «capiō, capere, cēpī, captum» presenta -iō en la 1ª persona, como
+      audiō. ¿A qué conjugación pertenece realmente?
+  options:
+    - id: A
+      ca: Quarta conjugació, perquè fa -iō com audiō
+      es: Cuarta conjugación, porque hace -iō como audiō
+    - id: B
+      ca: Segona conjugació
+      es: Segunda conjugación
+    - id: C
+      ca: Tercera conjugació (mixta, tipus -iō)
+      es: Tercera conjugación (mixta, tipo -iō)
+    - id: D
+      ca: Primera conjugació
+      es: Primera conjugación
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "El criteri decisiu és l'infinitiu: «capere» té -ere amb e breu, propi de la
+      tercera. Es tracta de la tercera conjugació mixta (verbs en -iō com capiō,
+      faciō, fugiō, iaciō), que en el present fa -iō però conserva l'infinitiu
+      -ere breu. No és quarta: la 4a tindria infinitiu -īre (audīre), i «capere»
+      no el té."
+    es: "El criterio decisivo es el infinitivo: «capere» tiene -ere con e breve,
+      propio de la tercera. Se trata de la tercera conjugación mixta (verbos en
+      -iō como capiō, faciō, fugiō, iaciō), que en el presente hace -iō pero
+      conserva el infinitivo -ere breve. No es cuarta: la 4ª tendría infinitivo
+      -īre (audīre), y «capere» no lo tiene."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000019
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Analitza morfològicament la forma verbal llatina «amābat».
+    es: Analiza morfológicamente la forma verbal latina «amābat».
+  options:
+    - id: A
+      ca: 3a persona del singular del pretèrit imperfet d'indicatiu actiu
+      es: 3ª persona del singular del pretérito imperfecto de indicativo activo
+    - id: B
+      ca: 3a persona del singular del present d'indicatiu actiu
+      es: 3ª persona del singular del presente de indicativo activo
+    - id: C
+      ca: 3a persona del singular del pretèrit imperfet d'indicatiu passiu
+      es: 3ª persona del singular del pretérito imperfecto de indicativo pasivo
+    - id: D
+      ca: 3a persona del singular del pretèrit imperfet de subjuntiu actiu
+      es: 3ª persona del singular del pretérito imperfecto de subjuntivo activo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El tema de present d'amō és amā-. L'infix -bā- és la marca del pretèrit
+      imperfet d'indicatiu, i la desinència -t indica 3a persona del singular
+      activa (amā-bā-t). El present seria amat; el passiu, amābātur; l'imperfet
+      de subjuntiu, amāret.
+    es: El tema de presente de amō es amā-. El infijo -bā- es la marca del pretérito
+      imperfecto de indicativo, y la desinencia -t indica 3ª persona del
+      singular activa (amā-bā-t). El presente sería amat; el pasivo, amābātur;
+      el imperfecto de subjuntivo, amāret.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000020
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Indica els accidents gramaticals (temps, mode, veu, persona i nombre) de
+      «reguntur».
+    es: Indica los accidentes gramaticales (tiempo, modo, voz, persona y número) de
+      «reguntur».
+  options:
+    - id: A
+      ca: Present d'indicatiu passiu, 3a persona del plural
+      es: Presente de indicativo pasivo, 3ª persona del plural
+    - id: B
+      ca: Present d'indicatiu actiu, 3a persona del plural
+      es: Presente de indicativo activo, 3ª persona del plural
+    - id: C
+      ca: Pretèrit imperfet d'indicatiu passiu, 3a persona del plural
+      es: Pretérito imperfecto de indicativo pasivo, 3ª persona del plural
+    - id: D
+      ca: Present de subjuntiu passiu, 3a persona del plural
+      es: Presente de subjuntivo pasivo, 3ª persona del plural
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "regō és de la 3a conjugació (tema regu-/regi-). La desinència passiva de 3a
+      del plural és -ntur: regu-ntur. L'actiu seria regunt; l'imperfet passiu,
+      regēbantur; el subjuntiu passiu, regantur."
+    es: "regō es de la 3ª conjugación (tema regu-/regi-). La desinencia pasiva de 3ª
+      del plural es -ntur: regu-ntur. El activo sería regunt; el imperfecto
+      pasivo, regēbantur; el subjuntivo pasivo, regantur."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000021
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "La forma «audīverat» correspon a:"
+    es: "La forma «audīverat» corresponde a:"
+  options:
+    - id: A
+      ca: Pretèrit plusquamperfet d'indicatiu actiu, 3a persona del singular
+      es: Pretérito pluscuamperfecto de indicativo activo, 3ª persona del singular
+    - id: B
+      ca: Pretèrit perfet d'indicatiu actiu, 3a persona del singular
+      es: Pretérito perfecto de indicativo activo, 3ª persona del singular
+    - id: C
+      ca: Futur perfet d'indicatiu actiu, 3a persona del singular
+      es: Futuro perfecto de indicativo activo, 3ª persona del singular
+    - id: D
+      ca: Pretèrit plusquamperfet de subjuntiu actiu, 3a persona del singular
+      es: Pretérito pluscuamperfecto de subjuntivo activo, 3ª persona del singular
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El tema de perfet d'audiō és audīv-. El plusquamperfet d'indicatiu actiu es
+      forma amb tema de perfet + -erā- + desinència: audīv-erā-t. El perfet
+      seria audīvit; el futur perfet, audīverit; el plusquamperfet de subjuntiu,
+      audīvisset."
+    es: "El tema de perfecto de audiō es audīv-. El pluscuamperfecto de indicativo
+      activo se forma con tema de perfecto + -erā- + desinencia: audīv-erā-t. El
+      perfecto sería audīvit; el futuro perfecto, audīverit; el pluscuamperfecto
+      de subjuntivo, audīvisset."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000022
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Determina temps, mode i veu de «vidērētur».
+    es: Determina tiempo, modo y voz de «vidērētur».
+  options:
+    - id: A
+      ca: Pretèrit imperfet de subjuntiu passiu
+      es: Pretérito imperfecto de subjuntivo pasivo
+    - id: B
+      ca: Pretèrit imperfet d'indicatiu passiu
+      es: Pretérito imperfecto de indicativo pasivo
+    - id: C
+      ca: Pretèrit imperfet de subjuntiu actiu
+      es: Pretérito imperfecto de subjuntivo activo
+    - id: D
+      ca: Present de subjuntiu passiu
+      es: Presente de subjuntivo pasivo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "L'imperfet de subjuntiu es forma sobre l'infinitiu de present (vidēre) més
+      la desinència: vidēre-t → vidēret (actiu), i en passiu vidērē-tur. La -r-
+      final de tur amb el tema vidērē- delata subjuntiu passiu; l'imperfet
+      d'indicatiu passiu seria vidēbātur."
+    es: "El imperfecto de subjuntivo se forma sobre el infinitivo de presente
+      (vidēre) más la desinencia: vidēre-t → vidēret (activo), y en pasivo
+      vidērē-tur. El tema vidērē- con desinencia pasiva delata subjuntivo
+      pasivo; el imperfecto de indicativo pasivo sería vidēbātur."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000023
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: El verb loquor, loquī, locūtus sum és deponent. Com s'analitza «locūtī
+      sunt»?
+    es: El verbo loquor, loquī, locūtus sum es deponente. ¿Cómo se analiza «locūtī
+      sunt»?
+  options:
+    - id: A
+      ca: Pretèrit perfet d'indicatiu amb significat actiu, 3a persona del plural
+        («van parlar»)
+      es: Pretérito perfecto de indicativo con significado activo, 3ª persona del
+        plural («hablaron»)
+    - id: B
+      ca: Pretèrit perfet d'indicatiu passiu amb significat passiu, 3a persona del
+        plural («van ser dits»)
+      es: Pretérito perfecto de indicativo pasivo con significado pasivo, 3ª persona
+        del plural («fueron dichos»)
+    - id: C
+      ca: Pretèrit plusquamperfet d'indicatiu amb significat actiu, 3a persona del
+        plural («havien parlat»)
+      es: Pretérito pluscuamperfecto de indicativo con significado activo, 3ª persona
+        del plural («habían hablado»)
+    - id: D
+      ca: Present d'indicatiu amb significat actiu, 3a persona del plural («parlen»)
+      es: Presente de indicativo con significado activo, 3ª persona del plural
+        («hablan»)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els deponents tenen forma passiva però significat actiu. El perfet dels
+      temps del perfet passiu es forma amb el participi (locūtī) + present de
+      sum (sunt): locūtī sunt = «van parlar». Amb el plusquamperfet caldria
+      l'imperfet de sum (erant): locūtī erant."
+    es: "Los deponentes tienen forma pasiva pero significado activo. El perfecto de
+      los tiempos de perfecto pasivo se forma con el participio (locūtī) +
+      presente de sum (sunt): locūtī sunt = «hablaron». Para el pluscuamperfecto
+      haría falta el imperfecto de sum (erant): locūtī erant."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000024
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.morphology_verbal.tenses
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: "Considerada aïlladament (sense context), la forma «amāverit» pot
+      correspondre a:"
+    es: "Considerada aisladamente (sin contexto), la forma «amāverit» puede
+      corresponder a:"
+  options:
+    - id: A
+      ca: Futur perfet d'indicatiu actiu o perfet de subjuntiu actiu, 3a persona del
+        singular
+      es: Futuro perfecto de indicativo activo o perfecto de subjuntivo activo, 3ª
+        persona del singular
+    - id: B
+      ca: Només futur perfet d'indicatiu actiu, 3a persona del singular
+      es: Solo futuro perfecto de indicativo activo, 3ª persona del singular
+    - id: C
+      ca: Només perfet de subjuntiu actiu, 3a persona del singular
+      es: Solo perfecto de subjuntivo activo, 3ª persona del singular
+    - id: D
+      ca: Plusquamperfet de subjuntiu actiu o futur perfet d'indicatiu actiu, 3a
+        persona del singular
+      es: Pluscuamperfecto de subjuntivo activo o futuro perfecto de indicativo
+        activo, 3ª persona del singular
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Sobre el tema de perfet amāv-: el futur perfet d'indicatiu fa amāverō,
+      amāveris, amāverit...; el perfet de subjuntiu fa amāverim, amāveris,
+      amāverit... Les dues 3es persones del singular coincideixen en amāverit,
+      de manera que la forma és ambigua fora de context. El plusquamperfet de
+      subjuntiu seria amāvisset."
+    es: "Sobre el tema de perfecto amāv-: el futuro perfecto de indicativo hace
+      amāverō, amāveris, amāverit...; el perfecto de subjuntivo hace amāverim,
+      amāveris, amāverit... Ambas 3ª personas del singular coinciden en
+      amāverit, por lo que la forma es ambigua fuera de contexto. El
+      pluscuamperfecto de subjuntivo sería amāvisset."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000025
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.case_functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: En el sintagma «templum deōrum» («el temple dels déus»), quina funció
+      sintàctica fa la paraula «deōrum»?
+    es: En el sintagma «templum deōrum» («el templo de los dioses»), ¿qué función
+      sintáctica desempeña la palabra «deōrum»?
+  options:
+    - id: A
+      ca: Subjecte
+      es: Sujeto
+    - id: B
+      ca: Complement del nom (genitiu possessiu)
+      es: Complemento del nombre (genitivo posesivo)
+    - id: C
+      ca: Complement directe
+      es: Complemento directo
+    - id: D
+      ca: Complement indirecte
+      es: Complemento indirecto
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "«Deōrum» és genitiu plural de «deus». El genitiu, quan complementa un
+      substantiu («templum»), funciona com a complement del nom, ací amb valor
+      possessiu: «el temple DELS DÉUS». No pot ser subjecte (aniria en
+      nominatiu), ni CD (acusatiu), ni CI (datiu)."
+    es: "«Deōrum» es genitivo plural de «deus». El genitivo, cuando complementa a un
+      sustantivo («templum»), funciona como complemento del nombre, aquí con
+      valor posesivo: «el templo DE LOS DIOSES». No puede ser sujeto (iría en
+      nominativo), ni CD (acusativo), ni CI (dativo)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000026
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.case_functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: A la frase «Magister discipulīs fābulam narrat» («El mestre explica una
+      faula als deixebles»), quina funció fa «discipulīs»?
+    es: En la frase «Magister discipulīs fābulam narrat» («El maestro cuenta una
+      fábula a los discípulos»), ¿qué función desempeña «discipulīs»?
+  options:
+    - id: A
+      ca: Complement directe
+      es: Complemento directo
+    - id: B
+      ca: Subjecte
+      es: Sujeto
+    - id: C
+      ca: Complement indirecte
+      es: Complemento indirecto
+    - id: D
+      ca: Complement del nom
+      es: Complemento del nombre
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "«Discipulīs» és datiu plural de «discipulus». El datiu expressa el
+      destinatari de l'acció i fa de complement indirecte: «(explica una faula)
+      ALS DEIXEBLES». El CD és «fābulam» (acusatiu) i el subjecte és «magister»
+      (nominatiu)."
+    es: "«Discipulīs» es dativo plural de «discipulus». El dativo expresa el
+      destinatario de la acción y funciona como complemento indirecto: «(cuenta
+      una fábula) A LOS DISCÍPULOS». El CD es «fābulam» (acusativo) y el sujeto
+      es «magister» (nominativo)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000027
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.case_functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: A la frase passiva «Urbs ā mīlitibus dēfenditur» («La ciutat és defensada
+      pels soldats»), quina funció fa el sintagma «ā mīlitibus»?
+    es: En la frase pasiva «Urbs ā mīlitibus dēfenditur» («La ciudad es defendida
+      por los soldados»), ¿qué función desempeña el sintagma «ā mīlitibus»?
+  options:
+    - id: A
+      ca: Complement circumstancial d'instrument
+      es: Complemento circunstancial de instrumento
+    - id: B
+      ca: Complement agent
+      es: Complemento agente
+    - id: C
+      ca: Complement indirecte
+      es: Complemento indirecto
+    - id: D
+      ca: Subjecte pacient
+      es: Sujeto paciente
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "En oració passiva, l'executor de l'acció s'expressa amb «ā/ab + ablatiu»
+      quan és un ésser animat: «ā mīlitibus» = complement agent («pels
+      soldats»). L'instrument (ésser inanimat) aniria en ablatiu SENSE
+      preposició. El subjecte pacient és «urbs» (nominatiu)."
+    es: "En oración pasiva, el ejecutor de la acción se expresa con «ā/ab +
+      ablativo» cuando es un ser animado: «ā mīlitibus» = complemento agente
+      («por los soldados»). El instrumento (ser inanimado) iría en ablativo SIN
+      preposición. El sujeto paciente es «urbs» (nominativo)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000028
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.case_functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: A la frase «Rōmam eō» («Vaig a Roma»), quina és la funció sintàctica de
+      «Rōmam»?
+    es: En la frase «Rōmam eō» («Voy a Roma»), ¿cuál es la función sintáctica de
+      «Rōmam»?
+  options:
+    - id: A
+      ca: Complement directe
+      es: Complemento directo
+    - id: B
+      ca: Subjecte
+      es: Sujeto
+    - id: C
+      ca: Complement circumstancial de lloc «a on» (direcció)
+      es: Complemento circunstancial de lugar «a donde» (dirección)
+    - id: D
+      ca: Complement predicatiu
+      es: Complemento predicativo
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "«Rōmam» és acusatiu, però amb noms de ciutat i illes petites l'acusatiu
+      SENSE preposició expressa la direcció (lloc «a on»): «(vaig) A ROMA». No
+      és CD, perquè «eō» (anar) és un verb intransitiu de moviment i no admet
+      objecte directe."
+    es: "«Rōmam» es acusativo, pero con nombres de ciudad e islas pequeñas el
+      acusativo SIN preposición expresa la dirección (lugar «a donde»): «(voy) A
+      ROMA». No es CD, porque «eō» (ir) es un verbo intransitivo de movimiento y
+      no admite objeto directo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000029
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.case_functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.65
+  question:
+    ca: A la frase «Est mihi magna domus» («Tinc una casa gran» / literalment «Hi ha
+      per a mi una casa gran»), quina funció fa el datiu «mihi»?
+    es: En la frase «Est mihi magna domus» («Tengo una casa grande» / literalmente
+      «Hay para mí una casa grande»), ¿qué función desempeña el dativo «mihi»?
+  options:
+    - id: A
+      ca: Complement indirecte que expressa el posseïdor (datiu possessiu)
+      es: Complemento indirecto que expresa el poseedor (dativo posesivo)
+    - id: B
+      ca: Subjecte de «est»
+      es: Sujeto de «est»
+    - id: C
+      ca: Complement agent
+      es: Complemento agente
+    - id: D
+      ca: Complement directe
+      es: Complemento directo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "És la construcció del datiu possessiu: amb el verb «sum», la cosa posseïda
+      va en nominatiu (subjecte: «domus») i el posseïdor en datiu («mihi»).
+      Literalment «una casa gran és PER A MI», és a dir «jo tinc una casa gran».
+      «Mihi» no pot ser subjecte (seria nominatiu «ego») ni CD (acusatiu «mē»)."
+    es: "Es la construcción del dativo posesivo: con el verbo «sum», la cosa poseída
+      va en nominativo (sujeto: «domus») y el poseedor en dativo («mihi»).
+      Literalmente «una casa grande es PARA MÍ», es decir «yo tengo una casa
+      grande». «Mihi» no puede ser sujeto (sería nominativo «ego») ni CD
+      (acusativo «mē»)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000030
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.case_functions
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.8
+  question:
+    ca: A la frase «Rōmānī Cicerōnem cōnsulem creāvērunt» («Els romans van nomenar
+      cònsol Ciceró»), quina funció fa «cōnsulem»?
+    es: En la frase «Rōmānī Cicerōnem cōnsulem creāvērunt» («Los romanos nombraron
+      cónsul a Cicerón»), ¿qué función desempeña «cōnsulem»?
+  options:
+    - id: A
+      ca: Segon complement directe independent
+      es: Segundo complemento directo independiente
+    - id: B
+      ca: Complement del nom de «Cicerōnem»
+      es: Complemento del nombre de «Cicerōnem»
+    - id: C
+      ca: Complement predicatiu del complement directe
+      es: Complemento predicativo del complemento directo
+    - id: D
+      ca: Complement circumstancial
+      es: Complemento circunstancial
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "Els verbs apel·latius com «creāre» (nomenar, elegir) porten una construcció
+      de doble acusatiu: un és el CD («Cicerōnem») i l'altre, també en acusatiu,
+      és el complement predicatiu que atribueix una qualitat o càrrec a aquest
+      CD («cōnsulem» = «com a cònsol»). Concorda en cas amb el CD, però no n'és
+      un segon objecte ni un CN."
+    es: "Los verbos apelativos como «creāre» (nombrar, elegir) llevan una
+      construcción de doble acusativo: uno es el CD («Cicerōnem») y el otro,
+      también en acusativo, es el complemento predicativo que atribuye una
+      cualidad o cargo a ese CD («cōnsulem» = «como cónsul»). Concuerda en caso
+      con el CD, pero no es un segundo objeto ni un CN."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000031
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.simple_sentence
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina forma de l'adjectiu 'pulcher, pulchra, pulchrum' concorda correctament
+      amb el substantiu 'puella' (nominatiu singular femení)?
+    es: ¿Qué forma del adjetivo 'pulcher, pulchra, pulchrum' concuerda correctamente
+      con el sustantivo 'puella' (nominativo singular femenino)?
+  options:
+    - id: A
+      ca: pulchra
+      es: pulchra
+    - id: B
+      ca: pulcher
+      es: pulcher
+    - id: C
+      ca: pulchrum
+      es: pulchrum
+    - id: D
+      ca: pulchros
+      es: pulchros
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'adjectiu ha de concordar amb el substantiu en gènere, nombre i cas.
+      'Puella' és femení, singular i nominatiu, per tant li correspon la forma
+      femenina 'pulchra'. 'Pulcher' és masculí, 'pulchrum' neutre i 'pulchros'
+      és acusatiu plural masculí.
+    es: El adjetivo debe concordar con el sustantivo en género, número y caso.
+      'Puella' es femenino, singular y nominativo, por lo que le corresponde la
+      forma femenina 'pulchra'. 'Pulcher' es masculino, 'pulchrum' neutro y
+      'pulchros' es acusativo plural masculino.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000032
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.simple_sentence
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: "Trieu la forma verbal que concorda correctament amb el subjecte a l'oració:
+      'Pueri in horto ___.' (Els nens juguen al jardí.)"
+    es: "Elija la forma verbal que concuerda correctamente con el sujeto en la
+      oración: 'Pueri in horto ___.' (Los niños juegan en el jardín.)"
+  options:
+    - id: A
+      ca: ludunt
+      es: ludunt
+    - id: B
+      ca: ludit
+      es: ludit
+    - id: C
+      ca: ludo
+      es: ludo
+    - id: D
+      ca: ludis
+      es: ludis
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El verb concorda amb el subjecte en nombre i persona. 'Pueri' és nominatiu
+      plural (3a persona del plural), de manera que el verb ha d'anar en 3a
+      persona del plural: 'ludunt'. 'Ludit' és 3a del singular, 'ludo' 1a del
+      singular i 'ludis' 2a del singular."
+    es: "El verbo concuerda con el sujeto en número y persona. 'Pueri' es nominativo
+      plural (3.ª persona del plural), por lo que el verbo debe ir en 3.ª
+      persona del plural: 'ludunt'. 'Ludit' es 3.ª del singular, 'ludo' 1.ª del
+      singular y 'ludis' 2.ª del singular."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000033
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.simple_sentence
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: El verb 'sum' (aquí 'erat') és copulatiu i porta atribut. Quina forma
+      completa correctament l'oració 'Cicero ___ erat' (Ciceró era orador)?
+    es: El verbo 'sum' (aquí 'erat') es copulativo y lleva atributo. ¿Qué forma
+      completa correctamente la oración 'Cicero ___ erat' (Cicerón era orador)?
+  options:
+    - id: A
+      ca: orator
+      es: orator
+    - id: B
+      ca: oratorem
+      es: oratorem
+    - id: C
+      ca: oratori
+      es: oratori
+    - id: D
+      ca: oratoris
+      es: oratoris
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Amb un verb copulatiu com 'sum', l'atribut concorda en cas amb el subjecte i
+      va en nominatiu. Com que 'Cicero' és nominatiu, l'atribut ha de ser
+      'orator' (nominatiu). 'Oratorem' és acusatiu (error freqüent de tractar-lo
+      com a complement directe), 'oratori' datiu i 'oratoris' genitiu.
+    es: Con un verbo copulativo como 'sum', el atributo concuerda en caso con el
+      sujeto y va en nominativo. Como 'Cicero' es nominativo, el atributo debe
+      ser 'orator' (nominativo). 'Oratorem' es acusativo (error frecuente de
+      tratarlo como complemento directo), 'oratori' dativo y 'oratoris'
+      genitivo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000034
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.simple_sentence
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "'Poeta' és un substantiu MASCULÍ de la primera declinació. Quina forma de
+      l'adjectiu 'clarus, -a, -um' hi concorda a 'poeta ___' (nominatiu
+      singular)?"
+    es: "'Poeta' es un sustantivo MASCULINO de la primera declinación. ¿Qué forma
+      del adjetivo 'clarus, -a, -um' concuerda con él en 'poeta ___' (nominativo
+      singular)?"
+  options:
+    - id: A
+      ca: clarus
+      es: clarus
+    - id: B
+      ca: clara
+      es: clara
+    - id: C
+      ca: clarum
+      es: clarum
+    - id: D
+      ca: clari
+      es: clari
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La concordança es fa pel gènere real del substantiu, no per la seva
+      declinació. Encara que 'poeta' pertany a la 1a declinació (terminació en
+      -a), és masculí, així que l'adjectiu ha de ser masculí: 'clarus'. 'Clara'
+      (femení) és l'error típic d'associar la 1a declinació al femení; 'clarum'
+      és neutre i 'clari' genitiu singular o nominatiu plural."
+    es: "La concordancia se hace por el género real del sustantivo, no por su
+      declinación. Aunque 'poeta' pertenece a la 1.ª declinación (terminación en
+      -a), es masculino, por lo que el adjetivo debe ser masculino: 'clarus'.
+      'Clara' (femenino) es el error típico de asociar la 1.ª declinación al
+      femenino; 'clarum' es neutro y 'clari' genitivo singular o nominativo
+      plural."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000035
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.simple_sentence
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En l'oració 'Magistrum discipuli amant', quina paraula fa de subjecte i per
+      quin motiu?
+    es: En la oración 'Magistrum discipuli amant', ¿qué palabra funciona como sujeto
+      y por qué motivo?
+  options:
+    - id: A
+      ca: "'discipuli', perquè està en nominatiu plural i concorda amb el verb"
+      es: "'discipuli', porque está en nominativo plural y concuerda con el verbo"
+    - id: B
+      ca: "'magistrum', perquè apareix en primera posició"
+      es: "'magistrum', porque aparece en primera posición"
+    - id: C
+      ca: "'magistrum', perquè està en acusatiu singular"
+      es: "'magistrum', porque está en acusativo singular"
+    - id: D
+      ca: "'amant', perquè és el verb principal"
+      es: "'amant', porque es el verbo principal"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En llatí el subjecte es marca pel cas (nominatiu), no per l'ordre de les
+      paraules. 'Discipuli' és nominatiu plural i concorda amb 'amant' (3a
+      persona del plural), per tant és el subjecte. 'Magistrum' és acusatiu i fa
+      de complement directe, tot i anar al davant. Un verb no pot ser subjecte.
+    es: En latín el sujeto se marca por el caso (nominativo), no por el orden de las
+      palabras. 'Discipuli' es nominativo plural y concuerda con 'amant' (3.ª
+      persona del plural), por lo que es el sujeto. 'Magistrum' es acusativo y
+      funciona como complemento directo, aunque vaya delante. Un verbo no puede
+      ser sujeto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000036
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.simple_sentence
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: En 'Roma, ___ Italiae, antiqua est', la paraula 'urbs' (ciutat) és aposició
+      de 'Roma' (nominatiu). Quina forma hi correspon? (Italiae = genitiu,
+      'd'Itàlia')
+    es: En 'Roma, ___ Italiae, antiqua est', la palabra 'urbs' (ciudad) es aposición
+      de 'Roma' (nominativo). ¿Qué forma le corresponde? (Italiae = genitivo,
+      'de Italia')
+  options:
+    - id: A
+      ca: urbs
+      es: urbs
+    - id: B
+      ca: urbis
+      es: urbis
+    - id: C
+      ca: urbem
+      es: urbem
+    - id: D
+      ca: urbi
+      es: urbi
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'aposició concorda en cas amb el nom que explica. 'Roma' és nominatiu, així
+      que l'aposició ha de ser el nominatiu 'urbs'. El genitiu 'Italiae' és
+      complement del nom de 'urbs' (la ciutat d'Itàlia). L'error freqüent és
+      posar 'urbis' (genitiu) per atracció amb 'Italiae'; 'urbem' és acusatiu i
+      'urbi' datiu.
+    es: La aposición concuerda en caso con el nombre que explica. 'Roma' es
+      nominativo, por lo que la aposición debe ser el nominativo 'urbs'. El
+      genitivo 'Italiae' es complemento del nombre de 'urbs' (la ciudad de
+      Italia). El error frecuente es poner 'urbis' (genitivo) por atracción con
+      'Italiae'; 'urbem' es acusativo y 'urbi' dativo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000037
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.compound_sentences
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En l'oració «Puer dormit, puella autem ludit», quin tipus de relació
+      estableix la conjunció «autem» entre les dues proposicions?
+    es: En la oración «Puer dormit, puella autem ludit», ¿qué tipo de relación
+      establece la conjunción «autem» entre las dos proposiciones?
+  options:
+    - id: A
+      ca: Coordinació copulativa
+      es: Coordinación copulativa
+    - id: B
+      ca: Coordinació disjuntiva
+      es: Coordinación disyuntiva
+    - id: C
+      ca: Coordinació adversativa
+      es: Coordinación adversativa
+    - id: D
+      ca: Coordinació causal (explicativa)
+      es: Coordinación causal (explicativa)
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "«Autem» és una conjunció coordinant adversativa (equival a «però», «en
+      canvi») i, com «enim» o «vero», és postposada (mai va en primera posició).
+      Enllaça dues proposicions de rang equivalent contraposant-ne el contingut:
+      «El nen dorm, la nena en canvi juga». No hi ha suma (copulativa: et, -que,
+      atque), ni alternativa (disjuntiva: aut, vel, -ve), ni explicació causal
+      (nam, enim)."
+    es: "«Autem» es una conjunción coordinante adversativa (equivale a «pero», «en
+      cambio») y, como «enim» o «vero», es pospuesta (nunca va en primera
+      posición). Une dos proposiciones de igual rango contraponiendo su
+      contenido: «El niño duerme, la niña en cambio juega». No hay suma
+      (copulativa: et, -que, atque), ni alternativa (disyuntiva: aut, vel, -ve),
+      ni explicación causal (nam, enim)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000038
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.compound_sentences
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En «Miles qui fortiter pugnabat ab omnibus laudabatur», quina és la funció
+      sintàctica de la proposició «qui fortiter pugnabat»?
+    es: En «Miles qui fortiter pugnabat ab omnibus laudabatur», ¿cuál es la función
+      sintáctica de la proposición «qui fortiter pugnabat»?
+  options:
+    - id: A
+      ca: Subordinada adjectiva (de relatiu)
+      es: Subordinada adjetiva (de relativo)
+    - id: B
+      ca: Coordinada copulativa
+      es: Coordinada copulativa
+    - id: C
+      ca: Subordinada substantiva (completiva)
+      es: Subordinada sustantiva (completiva)
+    - id: D
+      ca: Subordinada adverbial temporal
+      es: Subordinada adverbial temporal
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La proposició va introduïda pel pronom relatiu «qui», que concorda en
+      gènere, nombre i cas (nominatiu singular masculí) amb el seu antecedent
+      «miles». Fa de subjecte dins la seva proposició i, respecte de l'oració
+      principal, la subordinada complementa el nom «miles» com un adjectiu: «El
+      soldat que lluitava amb valentia era lloat per tothom». Per tant és una
+      subordinada adjectiva o de relatiu, no una coordinada ni una completiva."
+    es: "La proposición va introducida por el pronombre relativo «qui», que
+      concuerda en género, número y caso (nominativo singular masculino) con su
+      antecedente «miles». Funciona como sujeto dentro de su proposición y,
+      respecto de la oración principal, la subordinada complementa al nombre
+      «miles» como un adjetivo: «El soldado que luchaba con valentía era alabado
+      por todos». Por tanto es una subordinada adjetiva o de relativo, no una
+      coordinada ni una completiva."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000039
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.compound_sentences
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En «Cum haec dixisset, e curia discessit», com s'ha d'analitzar la
+      proposició «Cum haec dixisset» (fixa't que «dixisset» és plusquamperfet de
+      subjuntiu)?
+    es: En «Cum haec dixisset, e curia discessit», ¿cómo debe analizarse la
+      proposición «Cum haec dixisset» (fíjate en que «dixisset» es
+      pluscuamperfecto de subjuntivo)?
+  options:
+    - id: A
+      ca: "Complement circumstancial de companyia: preposició «cum» + ablatiu"
+      es: "Complemento circunstancial de compañía: preposición «cum» + ablativo"
+    - id: B
+      ca: Subordinada adverbial temporal-causal amb «cum» històric + subjuntiu
+      es: Subordinada adverbial temporal-causal con «cum» histórico + subjuntivo
+    - id: C
+      ca: Coordinada copulativa (unida per «cum» = «i»)
+      es: Coordinada copulativa (unida por «cum» = «y»)
+    - id: D
+      ca: Subordinada de relatiu
+      es: Subordinada de relativo
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Aquí «cum» és conjunció, no preposició: ho demostra el verb en subjuntiu
+      («dixisset»). La combinació «cum» + subjuntiu (imperfet/plusquamperfet) és
+      el «cum» històric o narratiu, que introdueix una subordinada adverbial de
+      valor temporal (sovint amb matís causal): «Quan hagué dit això / Havent
+      dit això, va sortir de la cúria». El «cum» preposicional (opció A) regiria
+      un ablatiu nominal, mai un verb personal."
+    es: "Aquí «cum» es conjunción, no preposición: lo demuestra el verbo en
+      subjuntivo («dixisset»). La combinación «cum» + subjuntivo
+      (imperfecto/pluscuamperfecto) es el «cum» histórico o narrativo, que
+      introduce una subordinada adverbial de valor temporal (a menudo con matiz
+      causal): «Cuando hubo dicho esto / Habiendo dicho esto, salió de la
+      curia». El «cum» preposicional (opción A) regiría un ablativo nominal,
+      nunca un verbo personal."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000040
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.compound_sentences
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En «Caesar militibus imperavit ut castra munirent», quina funció fa la
+      proposició «ut castra munirent»?
+    es: En «Caesar militibus imperavit ut castra munirent», ¿qué función desempeña
+      la proposición «ut castra munirent»?
+  options:
+    - id: A
+      ca: Subordinada substantiva completiva (complement directe del verb principal)
+      es: Subordinada sustantiva completiva (complemento directo del verbo principal)
+    - id: B
+      ca: Subordinada adverbial final
+      es: Subordinada adverbial final
+    - id: C
+      ca: Subordinada adverbial consecutiva
+      es: Subordinada adverbial consecutiva
+    - id: D
+      ca: Subordinada de relatiu
+      es: Subordinada de relativo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els verbs de voluntat i de mandat (impero, iubeo, rogo, oro, moneo, hortor,
+      postulo…) regeixen una subordinada substantiva completiva introduïda per
+      «ut» (negació «ne») + subjuntiu, que fa de complement directe: expressa
+      QUÈ s'ordena, no la finalitat d'una altra acció. «Cèsar va ordenar als
+      soldats que fortifiquessin el campament». L'error habitual és
+      classificar-la com a final pel simple fet de veure «ut» + subjuntiu; però
+      aquí la proposició completa el significat del verb regent, no indica el
+      propòsit d'un altre verb."
+    es: "Los verbos de voluntad y de mandato (impero, iubeo, rogo, oro, moneo,
+      hortor, postulo…) rigen una subordinada sustantiva completiva introducida
+      por «ut» (negación «ne») + subjuntivo, que funciona como complemento
+      directo: expresa QUÉ se ordena, no la finalidad de otra acción. «César
+      ordenó a los soldados que fortificaran el campamento». El error habitual
+      es clasificarla como final por el mero hecho de ver «ut» + subjuntivo;
+      pero aquí la proposición completa el significado del verbo regente, no
+      indica el propósito de otro verbo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000041
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.compound_sentences
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: En «Tanta erat vis tempestatis ut naves in portu manere non possent», quin
+      tipus de subordinada adverbial és «ut ... non possent»?
+    es: En «Tanta erat vis tempestatis ut naves in portu manere non possent», ¿qué
+      tipo de subordinada adverbial es «ut ... non possent»?
+  options:
+    - id: A
+      ca: Final
+      es: Final
+    - id: B
+      ca: Consecutiva
+      es: Consecutiva
+    - id: C
+      ca: Causal
+      es: Causal
+    - id: D
+      ca: Comparativa
+      es: Comparativa
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Dues pistes ho confirmen: (1) l'antecedent correlatiu «tanta» a la
+      principal (tot: tam, ita, sic, talis, tantus… anticipa una consecutiva);
+      (2) la negació es fa amb «ut ... non», mentre que la final negativa faria
+      servir «ne». Per tant, «ut ... non possent» és una subordinada adverbial
+      consecutiva: «Tan gran era la força de la tempesta que les naus no podien
+      romandre al port». Si fos final, la negació seria «ne» i no hi hauria
+      correlatiu «tanta»."
+    es: "Dos indicios lo confirman: (1) el antecedente correlativo «tanta» en la
+      principal (tam, ita, sic, talis, tantus… anticipa una consecutiva); (2) la
+      negación se hace con «ut ... non», mientras que la final negativa
+      emplearía «ne». Por tanto, «ut ... non possent» es una subordinada
+      adverbial consecutiva: «Tan grande era la fuerza de la tempestad que las
+      naves no podían permanecer en el puerto». Si fuera final, la negación
+      sería «ne» y no habría correlativo «tanta»."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000042
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.syntax.compound_sentences
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Classifica el període condicional de l'oració «Si id scivissem, tibi statim
+      dixissem» (protasi i apòdosi en plusquamperfet de subjuntiu).
+    es: Clasifica el período condicional de la oración «Si id scivissem, tibi statim
+      dixissem» (prótasis y apódosis en pluscuamperfecto de subjuntivo).
+  options:
+    - id: A
+      ca: Real (condició objectiva), amb indicatiu
+      es: Real (condición objetiva), con indicativo
+    - id: B
+      ca: Potencial-eventual, amb present de subjuntiu
+      es: Potencial-eventual, con presente de subjuntivo
+    - id: C
+      ca: Irreal de present, amb imperfet de subjuntiu
+      es: Irreal de presente, con imperfecto de subjuntivo
+    - id: D
+      ca: Irreal de passat, amb plusquamperfet de subjuntiu
+      es: Irreal de pasado, con pluscuamperfecto de subjuntivo
+  answer:
+    type: single
+    correct: D
+  explanation:
+    ca: "El tipus de període condicional el marca el mode i el temps del verb.
+      Protasi «si scivissem» i apòdosi «dixissem» estan totes dues en
+      plusquamperfet de subjuntiu, cosa que expressa una condició irreal
+      referida al passat: el fet no es va complir. Traducció: «Si ho hagués
+      sabut, t'ho hauria dit immediatament». L'irreal de present usaria
+      l'imperfet de subjuntiu (si scirem, dicerem); el potencial, el present de
+      subjuntiu; i el real, l'indicatiu."
+    es: "El tipo de período condicional lo marca el modo y el tiempo del verbo. La
+      prótasis «si scivissem» y la apódosis «dixissem» están ambas en
+      pluscuamperfecto de subjuntivo, lo que expresa una condición irreal
+      referida al pasado: el hecho no llegó a cumplirse. Traducción: «Si lo
+      hubiera sabido, te lo habría dicho inmediatamente». El irreal de presente
+      usaría el imperfecto de subjuntivo (si scirem, dicerem); el potencial, el
+      presente de subjuntivo; y el real, el indicativo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000043
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.dictionary_use
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Per traduir la paraula «regibus» amb el diccionari, cal buscar-la per la
+      seva forma d'enunciat (lema). Quina és l'entrada correcta que trobaràs al
+      diccionari?
+    es: Para traducir la palabra «regibus» con el diccionario, hay que buscarla por
+      su forma de enunciado (lema). ¿Cuál es la entrada correcta que encontrarás
+      en el diccionario?
+  options:
+    - id: A
+      ca: rex, regis (m.) — rei
+      es: rex, regis (m.) — rey
+    - id: B
+      ca: regibus, -i (n.) — regne
+      es: regibus, -i (n.) — reino
+    - id: C
+      ca: rego, regere, rexi, rectum — governar
+      es: rego, regere, rexi, rectum — gobernar
+    - id: D
+      ca: regius, -a, -um — reial, del rei
+      es: regius, -a, -um — real, del rey
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: «regibus» és el datiu/ablatiu plural del substantiu de la 3a declinació
+      «rex, regis». Al diccionari els substantius s'enuncien pel nominatiu +
+      genitiu singular; per tant l'entrada és «rex, regis». No es busca mai per
+      la forma flexionada («regibus»), ni pel verb «rego» (radical reg- però
+      significat i categoria diferents), ni per l'adjectiu derivat «regius».
+    es: «regibus» es el dativo/ablativo plural del sustantivo de la 3.ª declinación
+      «rex, regis». En el diccionario los sustantivos se enuncian por el
+      nominativo + genitivo singular; por tanto la entrada es «rex, regis».
+      Nunca se busca por la forma flexionada («regibus»), ni por el verbo «rego»
+      (raíz reg- pero significado y categoría distintos), ni por el adjetivo
+      derivado «regius».
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000044
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.dictionary_use
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.35
+  question:
+    ca: En la frase «Caesar magnam copiam frumenti tulit», la forma verbal «tulit»
+      és el perfet de quin verb? Indica l'enunciat correcte per buscar-lo al
+      diccionari.
+    es: En la frase «Caesar magnam copiam frumenti tulit», la forma verbal «tulit»
+      es el perfecto de ¿qué verbo? Indica el enunciado correcto para buscarlo
+      en el diccionario.
+  options:
+    - id: A
+      ca: fero, ferre, tuli, latum — portar, dur
+      es: fero, ferre, tuli, latum — llevar, portar
+    - id: B
+      ca: tollo, tollere, sustuli, sublatum — aixecar, treure
+      es: tollo, tollere, sustuli, sublatum — levantar, quitar
+    - id: C
+      ca: tulo, tulere, tuli, tultum — portar
+      es: tulo, tulere, tuli, tultum — llevar
+    - id: D
+      ca: fero, ferre, feri, fertum — portar
+      es: fero, ferre, feri, fertum — llevar
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«tulit» és 3a persona del singular del perfet d'indicatiu. El verb «fero»
+      és irregular i té un perfet suplet: «tuli». El seu enunciat complet és
+      «fero, ferre, tuli, latum». No existeix cap verb «tulo» (opció C, radical
+      inventat), i el perfet de «fero» no és «feri» (opció D). «tollo» (B) fa el
+      perfet «sustuli», no «tuli»."
+    es: "«tulit» es 3.ª persona del singular del perfecto de indicativo. El verbo
+      «fero» es irregular y tiene un perfecto supletivo: «tuli». Su enunciado
+      completo es «fero, ferre, tuli, latum». No existe ningún verbo «tulo»
+      (opción C, raíz inventada), y el perfecto de «fero» no es «feri» (opción
+      D). «tollo» (B) hace el perfecto «sustuli», no «tuli»."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000045
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.dictionary_use
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Analitza morfosintàcticament «urbis» en la frase «Portae urbis clausae
+      erant» («Les portes de la ciutat estaven tancades»). Quina és la seva
+      funció?
+    es: Analiza morfosintácticamente «urbis» en la frase «Portae urbis clausae
+      erant» («Las puertas de la ciudad estaban cerradas»). ¿Cuál es su función?
+  options:
+    - id: A
+      ca: Genitiu singular; complement del nom (de «portae»)
+      es: Genitivo singular; complemento del nombre (de «portae»)
+    - id: B
+      ca: Nominatiu plural; subjecte de la frase
+      es: Nominativo plural; sujeto de la frase
+    - id: C
+      ca: Datiu singular; complement indirecte
+      es: Dativo singular; complemento indirecto
+    - id: D
+      ca: Acusatiu plural; complement directe
+      es: Acusativo plural; complemento directo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«urbs, urbis» és de la 3a declinació. La forma «urbis» és genitiu singular
+      i depèn del substantiu «portae» (subjecte), expressant
+      possessió/pertinença: «les portes de la ciutat». No pot ser subjecte (el
+      subjecte és «portae», nominatiu plural, concordant amb «clausae erant»).
+      El datiu singular seria també «urbi» i l'acusatiu plural «urbes/urbis»,
+      però aquí la relació amb «portae» exigeix genitiu."
+    es: "«urbs, urbis» es de la 3.ª declinación. La forma «urbis» es genitivo
+      singular y depende del sustantivo «portae» (sujeto), expresando
+      posesión/pertenencia: «las puertas de la ciudad». No puede ser sujeto (el
+      sujeto es «portae», nominativo plural, que concuerda con «clausae erant»).
+      El dativo singular sería «urbi» y el acusativo plural «urbes/urbis», pero
+      aquí la relación con «portae» exige genitivo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000046
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.dictionary_use
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: En la frase «Milites cum hostibus acriter pugnabant», la paraula «cum» és un
+      mot homògraf. Quin valor té aquí i com ho saps?
+    es: En la frase «Milites cum hostibus acriter pugnabant», la palabra «cum» es
+      una palabra homógrafa. ¿Qué valor tiene aquí y cómo lo sabes?
+  options:
+    - id: A
+      ca: Preposició d'ablatiu («amb»), perquè regeix «hostibus», que és ablatiu, i el
+        verb és en indicatiu
+      es: Preposición de ablativo («con»), porque rige «hostibus», que es ablativo, y
+        el verbo está en indicativo
+    - id: B
+      ca: Conjunció temporal («quan»), perquè introdueix una subordinada
+      es: Conjunción temporal («cuando»), porque introduce una subordinada
+    - id: C
+      ca: Conjunció causal («ja que»), amb verb en subjuntiu
+      es: Conjunción causal («ya que»), con verbo en subjuntivo
+    - id: D
+      ca: Conjunció concessiva («encara que»)
+      es: Conjunción concesiva («aunque»)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«cum» pot ser preposició (+ ablatiu, «amb») o conjunció. La clau
+      morfosintàctica: aquí «cum» va immediatament seguit de «hostibus» (ablatiu
+      plural) i l'única forma verbal, «pugnabant», és indicatiu i pertany a
+      l'oració principal. Per tant «cum hostibus» és un sintagma preposicional
+      (CC de companyia). El «cum» conjunció (temporal/causal/concessiu)
+      introdueix una subordinada amb verb propi, sovint en subjuntiu, cosa que
+      aquí no passa."
+    es: "«cum» puede ser preposición (+ ablativo, «con») o conjunción. La clave
+      morfosintáctica: aquí «cum» va inmediatamente seguido de «hostibus»
+      (ablativo plural) y la única forma verbal, «pugnabant», es indicativo y
+      pertenece a la oración principal. Por tanto «cum hostibus» es un sintagma
+      preposicional (CC de compañía). El «cum» conjunción
+      (temporal/causal/concesivo) introduce una subordinada con verbo propio, a
+      menudo en subjuntivo, lo que aquí no ocurre."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000047
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.dictionary_use
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: "Al diccionari trobes dues entrades gairebé idèntiques: «occĭdo, -ere,
+      occĭdi, occāsum» (caure, morir, pondre's) i «occīdo, -ere, occīdi,
+      occīsum» (matar). Per a la frase «Sol iam occidit», quina entrada has de
+      triar?"
+    es: "En el diccionario encuentras dos entradas casi idénticas: «occĭdo, -ere,
+      occĭdi, occāsum» (caer, morir, ponerse) y «occīdo, -ere, occīdi, occīsum»
+      (matar). Para la frase «Sol iam occidit», ¿qué entrada debes elegir?"
+  options:
+    - id: A
+      ca: "«occĭdo, occāsum» (pondre's): «El sol ja es pon / s'ha post»"
+      es: "«occĭdo, occāsum» (ponerse): «El sol ya se pone / se ha puesto»"
+    - id: B
+      ca: "«occīdo, occīsum» (matar): «El sol ja mata»"
+      es: "«occīdo, occīsum» (matar): «El sol ya mata»"
+    - id: C
+      ca: "«occīdo, occīsum» (matar), en veu passiva: «El sol és mort»"
+      es: "«occīdo, occīsum» (matar), en voz pasiva: «El sol es matado»"
+    - id: D
+      ca: "És impossible decidir-ho: totes dues valen igual"
+      es: "Es imposible decidirlo: ambas valen igual"
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Els dos verbs són homògrafs en l'escriptura sense marca de quantitat
+      (occidit), però es distingeixen per la quantitat de la «i» i, sobretot,
+      pel context. «Sol» (el sol) és subjecte i el sentit lògic és que el sol
+      «es pon»; per tant cal l'entrada «occĭdo, occāsum» (de ob- + cado, caure).
+      «occīdo» (de ob- + caedo, matar) demanaria un CD i un subjecte agent, cosa
+      incongruent amb «Sol». L'opció C, a més, força una passiva inexistent en
+      la forma «occidit» (activa). Sí que es pot decidir: el context resol
+      l'homografia."
+    es: "Los dos verbos son homógrafos en la escritura sin marca de cantidad
+      (occidit), pero se distinguen por la cantidad de la «i» y, sobre todo, por
+      el contexto. «Sol» (el sol) es sujeto y el sentido lógico es que el sol
+      «se pone»; por tanto se necesita la entrada «occĭdo, occāsum» (de ob- +
+      cado, caer). «occīdo» (de ob- + caedo, matar) exigiría un CD y un sujeto
+      agente, incongruente con «Sol». La opción C, además, fuerza una pasiva
+      inexistente en la forma «occidit» (activa). Sí se puede decidir: el
+      contexto resuelve la homografía."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000048
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.dictionary_use
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.72
+  question:
+    ca: La forma verbal «mavult» (en «Puer ludere mavult quam legere») és irregular.
+      Sota quin lema l'has de buscar al diccionari?
+    es: La forma verbal «mavult» (en «Puer ludere mavult quam legere») es irregular.
+      ¿Bajo qué lema debes buscarla en el diccionario?
+  options:
+    - id: A
+      ca: malo, malle, malui — preferir, estimar-se més
+      es: malo, malle, malui — preferir, querer más
+    - id: B
+      ca: maneo, manere, mansi, mansum — romandre
+      es: maneo, manere, mansi, mansum — permanecer
+    - id: C
+      ca: malus, -a, -um — dolent
+      es: malus, -a, -um — malo
+    - id: D
+      ca: volo, velle, volui — voler
+      es: volo, velle, volui — querer
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: «mavult» és la 3a persona del singular del present d'indicatiu de «malo,
+      malle, malui», verb irregular format sobre «magis + volo» («voler més»,
+      d'on «preferir»). Comparteix arrel amb «volo» (D), però l'enunciat propi i
+      l'entrada del diccionari és «malo». «maneo» (B) i l'adjectiu «malus» (C)
+      no tenen res a veure amb aquesta forma tot i la semblança gràfica del
+      radical mal-. La construcció «malle... quam...» («preferir... abans
+      que...») confirma el significat.
+    es: «mavult» es la 3.ª persona del singular del presente de indicativo de «malo,
+      malle, malui», verbo irregular formado sobre «magis + volo» («querer más»,
+      de donde «preferir»). Comparte raíz con «volo» (D), pero el enunciado
+      propio y la entrada del diccionario es «malo». «maneo» (B) y el adjetivo
+      «malus» (C) no tienen relación con esta forma pese al parecido gráfico de
+      la raíz mal-. La construcción «malle... quam...» («preferir... antes
+      que...») confirma el significado.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000049
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.prose_texts
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: "Tria la traducció correcta de la frase: «Signo dato, milites impetum
+      fecerunt.»"
+    es: "Elige la traducción correcta de la frase: «Signo dato, milites impetum
+      fecerunt.»"
+  options:
+    - id: A
+      ca: Donat el senyal, els soldats van fer l'atac.
+      es: Dada la señal, los soldados hicieron el ataque.
+    - id: B
+      ca: El senyal donat va provocar l'atac dels soldats.
+      es: La señal dada provocó el ataque de los soldados.
+    - id: C
+      ca: Els soldats, que donen el senyal, fan l'atac.
+      es: Los soldados, que dan la señal, hacen el ataque.
+    - id: D
+      ca: Donarem el senyal i els soldats faran l'atac.
+      es: Daremos la señal y los soldados harán el ataque.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Signo dato» és un ablatiu absolut (nom en ablatiu + participi de perfet
+      passiu 'dato'), que expressa una circumstància prèvia a l'acció principal:
+      'un cop donat el senyal'. El verb principal 'fecerunt' és perfet
+      d'indicatiu ('van fer'), amb subjecte 'milites'. Per tant la traducció
+      correcta és A."
+    es: "«Signo dato» es un ablativo absoluto (sustantivo en ablativo + participio
+      de perfecto pasivo 'dato'), que expresa una circunstancia previa a la
+      acción principal: 'una vez dada la señal'. El verbo principal 'fecerunt'
+      es perfecto de indicativo ('hicieron'), con sujeto 'milites'. Por tanto la
+      traducción correcta es A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000050
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.prose_texts
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: "Tria la traducció correcta de: «Dux nuntiavit hostes adventare.»"
+    es: "Elige la traducción correcta de: «Dux nuntiavit hostes adventare.»"
+  options:
+    - id: A
+      ca: El general va anunciar que els enemics s'acostaven.
+      es: El general anunció que los enemigos se acercaban.
+    - id: B
+      ca: El general va anunciar els enemics i la seva arribada.
+      es: El general anunció a los enemigos y su llegada.
+    - id: C
+      ca: Els enemics van anunciar que el general s'acostava.
+      es: Los enemigos anunciaron que el general se acercaba.
+    - id: D
+      ca: General, anuncia que els enemics s'acosten!
+      es: ¡General, anuncia que los enemigos se acercan!
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Es tracta d'una oració completiva d'infinitiu (acusatiu + infinitiu) que
+      depèn de 'nuntiavit' (verb de llengua). 'Hostes' és l'acusatiu subjecte de
+      l'infinitiu 'adventare'; el subjecte principal és 'dux'. L'infinitiu de
+      present indica simultaneïtat respecte al verb principal en passat, de
+      manera que es tradueix per un imperfet: 'que els enemics s'acostaven'.
+      Correcta A."
+    es: "Es una oración completiva de infinitivo (acusativo + infinitivo) que
+      depende de 'nuntiavit' (verbo de lengua). 'Hostes' es el acusativo sujeto
+      del infinitivo 'adventare'; el sujeto principal es 'dux'. El infinitivo de
+      presente indica simultaneidad respecto al verbo principal en pasado, por
+      lo que se traduce por un imperfecto: 'que los enemigos se acercaban'.
+      Correcta A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000051
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.prose_texts
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "Tria la traducció correcta de: «Cum Caesar haec cognovisset, copias in
+      hostes duxit.»"
+    es: "Elige la traducción correcta de: «Cum Caesar haec cognovisset, copias in
+      hostes duxit.»"
+  options:
+    - id: A
+      ca: Com que Cèsar havia sabut aquestes coses, va conduir les tropes contra els
+        enemics.
+      es: Como César había sabido estas cosas, condujo las tropas contra los enemigos.
+    - id: B
+      ca: Amb Cèsar, que sabia aquestes coses, va conduir les tropes contra els
+        enemics.
+      es: Con César, que sabía estas cosas, condujo las tropas contra los enemigos.
+    - id: C
+      ca: Quan Cèsar sàpiga aquestes coses, conduirà les tropes contra els enemics.
+      es: Cuando César sepa estas cosas, conducirá las tropas contra los enemigos.
+    - id: D
+      ca: Cèsar, sabent aquestes coses, que sigui conduït contra els enemics.
+      es: César, sabiendo estas cosas, que sea conducido contra los enemigos.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Aquí 'cum' és una conjunció (cum històric) que regeix subjuntiu:
+      'cognovisset' és plusquamperfet de subjuntiu i expressa una acció anterior
+      amb valor temporal-causal ('com que havia sabut'). El verb principal
+      'duxit' és perfet d'indicatiu. B confon 'cum' amb la preposició d'ablatiu
+      ('amb'); C posa el verb en futur; D altera el mode/veu del verb principal.
+      Correcta A."
+    es: "Aquí 'cum' es una conjunción (cum histórico) que rige subjuntivo:
+      'cognovisset' es pluscuamperfecto de subjuntivo y expresa una acción
+      anterior con valor temporal-causal ('como había sabido'). El verbo
+      principal 'duxit' es perfecto de indicativo. B confunde 'cum' con la
+      preposición de ablativo ('con'); C pone el verbo en futuro; D altera el
+      modo/voz del verbo principal. Correcta A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000052
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.prose_texts
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: "Tria la traducció correcta de: «Legati missi sunt ut pacem peterent.»"
+    es: "Elige la traducción correcta de: «Legati missi sunt ut pacem peterent.»"
+  options:
+    - id: A
+      ca: Els legats van ser enviats perquè demanessin la pau.
+      es: Los legados fueron enviados para que pidieran la paz.
+    - id: B
+      ca: Els legats van enviar que demanaven la pau.
+      es: Los legados enviaron que pedían la paz.
+    - id: C
+      ca: Els legats són enviats perquè demanen la pau.
+      es: Los legados son enviados porque piden la paz.
+    - id: D
+      ca: Els legats van ser enviats i van demanar la pau.
+      es: Los legados fueron enviados y pidieron la paz.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Missi sunt' és perfet d'indicatiu passiu ('van ser enviats'), no actiu
+      (per això B és incorrecta). 'Ut' + subjuntiu ('peterent', imperfet de
+      subjuntiu) introdueix una oració final: 'perquè demanessin / per a
+      demanar'. C tradueix erròniament el subjuntiu per un indicatiu de causa; D
+      interpreta 'ut' com una simple coordinació. Correcta A."
+    es: "'Missi sunt' es perfecto de indicativo pasivo ('fueron enviados'), no
+      activo (por eso B es incorrecta). 'Ut' + subjuntivo ('peterent',
+      imperfecto de subjuntivo) introduce una oración final: 'para que pidieran
+      / para pedir'. C traduce erróneamente el subjuntivo por un indicativo
+      causal; D interpreta 'ut' como simple coordinación. Correcta A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000053
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.prose_texts
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: "Tria la traducció correcta de: «Rex quaesivit quis portas aperuisset.»"
+    es: "Elige la traducción correcta de: «Rex quaesivit quis portas aperuisset.»"
+  options:
+    - id: A
+      ca: El rei va preguntar qui havia obert les portes.
+      es: El rey preguntó quién había abierto las puertas.
+    - id: B
+      ca: El rei va preguntar qui obrirà les portes.
+      es: El rey preguntó quién abrirá las puertas.
+    - id: C
+      ca: El rei, que va obrir les portes, va fer una pregunta.
+      es: El rey, que abrió las puertas, hizo una pregunta.
+    - id: D
+      ca: Pregunta al rei qui obre les portes.
+      es: Pregunta al rey quién abre las puertas.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Quis... aperuisset' és una interrogativa indirecta que depèn de
+      'quaesivit'; per això el verb va en subjuntiu ('aperuisset',
+      plusquamperfet), però es tradueix per indicatiu en català/castellà. El
+      plusquamperfet indica anterioritat respecte al verb principal en passat:
+      'havia obert'. B confon el temps amb un futur; C canvia l'estructura de la
+      frase; D la converteix en imperatiu. Correcta A."
+    es: "'Quis... aperuisset' es una interrogativa indirecta que depende de
+      'quaesivit'; por eso el verbo va en subjuntivo ('aperuisset',
+      pluscuamperfecto), pero se traduce por indicativo en catalán/castellano.
+      El pluscuamperfecto indica anterioridad respecto al verbo principal en
+      pasado: 'había abierto'. B confunde el tiempo con un futuro; C cambia la
+      estructura de la frase; D la convierte en imperativo. Correcta A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000054
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.translation.prose_texts
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: "Tria la traducció correcta de: «Caesar, veritus ne hostes effugerent,
+      equites praemisit.»"
+    es: "Elige la traducción correcta de: «Caesar, veritus ne hostes effugerent,
+      equites praemisit.»"
+  options:
+    - id: A
+      ca: Cèsar, tement que els enemics fugissin, va enviar per davant la cavalleria.
+      es: César, temiendo que los enemigos huyeran, envió por delante la caballería.
+    - id: B
+      ca: Cèsar, tement que els enemics no fugissin, va enviar per davant la
+        cavalleria.
+      es: César, temiendo que los enemigos no huyeran, envió por delante la
+        caballería.
+    - id: C
+      ca: Cèsar, que no temia els enemics, va fer fugir la cavalleria.
+      es: César, que no temía a los enemigos, hizo huir a la caballería.
+    - id: D
+      ca: Cèsar, temut pels enemics, va fugir amb la cavalleria.
+      es: César, temido por los enemigos, huyó con la caballería.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Veritus' és el participi de perfet del verb deponent 'vereor', amb sentit
+      actiu: 'tement'. Darrere els verbs de temor (verba timendi), la conjunció
+      'ne' + subjuntiu es tradueix AFIRMATIVAMENT per 'que': 'ne effugerent' =
+      'que fugissin' (allò que hom tem que passi). B cau en l'error habitual de
+      traduir 'ne' per 'que no'; C i D interpreten malament 'veritus' (deponent)
+      com a passiu o negatiu. Correcta A."
+    es: "'Veritus' es el participio de perfecto del verbo deponente 'vereor', con
+      sentido activo: 'temiendo'. Tras los verbos de temor (verba timendi), la
+      conjunción 'ne' + subjuntivo se traduce AFIRMATIVAMENTE por 'que': 'ne
+      effugerent' = 'que huyeran' (aquello que se teme que ocurra). B cae en el
+      error habitual de traducir 'ne' por 'que no'; C y D interpretan mal
+      'veritus' (deponente) como pasivo o negativo. Correcta A."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000055
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.phonetic_evolution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: El mot llatí PORTA(M) evoluciona a «puerta» en castellà però a «porta» en
+      català. Quin fenomen fonètic explica aquesta diferència?
+    es: La palabra latina PORTA(M) evoluciona a «puerta» en castellano pero a
+      «porta» en catalán. ¿Qué fenómeno fonético explica esta diferencia?
+  options:
+    - id: A
+      ca: La Ŏ breu tònica diftonga en «ue» en castellà, mentre que el català la manté
+        sense diftongar.
+      es: La Ŏ breve tónica diptonga en «ue» en castellano, mientras que el catalán la
+        mantiene sin diptongar.
+    - id: B
+      ca: La O llarga tònica es tanca en «u» en totes dues llengües.
+      es: La O larga tónica se cierra en «u» en ambas lenguas.
+    - id: C
+      ca: És un cas de sonorització de la consonant intervocàlica.
+      es: Es un caso de sonorización de la consonante intervocálica.
+    - id: D
+      ca: És la pèrdua de la vocal final àtona.
+      es: Es la pérdida de la vocal final átona.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La O de PORTA és breu i tònica (Ŏ). En castellà la Ŏ tònica diftonga
+      sistemàticament en «ue» (porta > puerta), fenomen que el català no coneix,
+      de manera que conserva «porta». La resposta B confon Ŏ breu amb Ō llarga;
+      C i D descriuen canvis consonàntics o de vocal final que no intervenen
+      ací.
+    es: La O de PORTA es breve y tónica (Ŏ). En castellano la Ŏ tónica diptonga
+      sistemáticamente en «ue» (porta > puerta), fenómeno que el catalán no
+      conoce, por lo que conserva «porta». La respuesta B confunde Ŏ breve con Ō
+      larga; C y D describen cambios consonánticos o de vocal final que no
+      intervienen aquí.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000056
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.phonetic_evolution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: En l'evolució de VITA(M) > «vida» (cat. i cast.), quin canvi ha experimentat
+      la consonant -t-?
+    es: En la evolución de VITA(M) > «vida» (cat. y cast.), ¿qué cambio ha
+      experimentado la consonante -t-?
+  options:
+    - id: A
+      ca: "Sonorització: l'oclusiva sorda intervocàlica -t- passa a sonora -d-."
+      es: "Sonorización: la oclusiva sorda intervocálica -t- pasa a sonora -d-."
+    - id: B
+      ca: Palatalització de la dental en un so africat.
+      es: Palatalización de la dental en un sonido africado.
+    - id: C
+      ca: Assimilació regressiva amb la vocal següent.
+      es: Asimilación regresiva con la vocal siguiente.
+    - id: D
+      ca: Ensordiment d'una oclusiva sonora originària.
+      es: Ensordecimiento de una oclusiva sonora originaria.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Les oclusives sordes intervocàliques llatines P, T, C se sonoritzen en pas
+      al català i al castellà: -T- > -d- (VITA > vida), igual que -P- > -b-
+      (CAPRA > cabra) i -C- > -g-. L'opció D inverteix el procés (parteix d'una
+      sonora); B i C descriuen fenòmens que no s'hi donen."
+    es: "Las oclusivas sordas intervocálicas latinas P, T, C se sonorizan al pasar
+      al catalán y al castellano: -T- > -d- (VITA > vida), igual que -P- > -b-
+      (CAPRA > cabra) y -C- > -g-. La opción D invierte el proceso (parte de una
+      sonora); B y C describen fenómenos que no se dan aquí."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000057
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.phonetic_evolution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Pel que fa a la F- inicial llatina (p. ex. FARINA(M) > cast. «harina», cat.
+      «farina»), quina afirmació és correcta?
+    es: En cuanto a la F- inicial latina (p. ej. FARINA(M) > cast. «harina», cat.
+      «farina»), ¿qué afirmación es correcta?
+  options:
+    - id: A
+      ca: La F- inicial es conserva en català, però en castellà passa a «h» (aspirada
+        i després muda).
+      es: La F- inicial se conserva en catalán, pero en castellano pasa a «h»
+        (aspirada y luego muda).
+    - id: B
+      ca: La F- inicial es conserva igual en totes dues llengües.
+      es: La F- inicial se conserva igual en ambas lenguas.
+    - id: C
+      ca: La F- inicial sonoritza en «v» en castellà.
+      es: La F- inicial sonoriza en «v» en castellano.
+    - id: D
+      ca: La F- inicial desapareix sense deixar rastre en català.
+      es: La F- inicial desaparece sin dejar rastro en catalán.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: Un tret distintiu del castellà és el pas de la F- inicial llatina a una «h»
+      aspirada que després emmudeix (FARINA > harina, FILIU > hijo), mentre que
+      el català manté la F- (farina, fill). B nega aquest canvi característic; C
+      i D descriuen evolucions inexistents.
+    es: Un rasgo distintivo del castellano es el paso de la F- inicial latina a una
+      «h» aspirada que luego enmudece (FARINA > harina, FILIU > hijo), mientras
+      que el catalán mantiene la F- (farina, fill). B niega este cambio
+      característico; C y D describen evoluciones inexistentes.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000058
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.phonetic_evolution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: El grup consonàntic llatí -CT- (p. ex. NOCTE(M)) dóna «nit» en català i
+      «noche» en castellà. Com es descriu correctament aquesta evolució?
+    es: El grupo consonántico latino -CT- (p. ej. NOCTE(M)) da «nit» en catalán y
+      «noche» en castellano. ¿Cómo se describe correctamente esta evolución?
+  options:
+    - id: A
+      ca: En català -CT- dóna una semivocal + t («it», després reduïda); en castellà
+        palatalitza en «ch».
+      es: En catalán -CT- da una semivocal + t («it», luego reducida); en castellano
+        palataliza en «ch».
+    - id: B
+      ca: En totes dues llengües -CT- dóna «ch».
+      es: En ambas lenguas -CT- da «ch».
+    - id: C
+      ca: El grup -CT- se simplifica en «t» en les dues llengües.
+      es: El grupo -CT- se simplifica en «t» en ambas lenguas.
+    - id: D
+      ca: En català dóna «ch» i en castellà «it».
+      es: En catalán da «ch» y en castellano «it».
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La C del grup -CT- es vocalitza en semivocal [i], que en català dóna «it»
+      (NOCTE > noit > nit; LACTE > llet), mentre que en castellà aquesta [i]
+      palatalitza la T i produeix «ch» (noche, leche). L'opció D inverteix els
+      resultats de les dues llengües; B i C uniformen incorrectament l'evolució.
+    es: La C del grupo -CT- se vocaliza en semivocal [i], que en catalán da «it»
+      (NOCTE > noit > nit; LACTE > llet), mientras que en castellano esa [i]
+      palataliza la T y produce «ch» (noche, leche). La opción D invierte los
+      resultados de ambas lenguas; B y C uniforman incorrectamente la evolución.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000059
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.phonetic_evolution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Els grups inicials PL-, CL-, FL- (p. ex. CLAVE(M) > cast. «llave», cat.
+      «clau») reben quin tractament en cada llengua?
+    es: Los grupos iniciales PL-, CL-, FL- (p. ej. CLAVE(M) > cast. «llave», cat.
+      «clau») reciben ¿qué tratamiento en cada lengua?
+  options:
+    - id: A
+      ca: En castellà palatalitzen en «ll-»; en català es conserven (pl-, cl-, fl-).
+      es: En castellano palatalizan en «ll-»; en catalán se conservan (pl-, cl-, fl-).
+    - id: B
+      ca: En totes dues llengües palatalitzen en «ll-».
+      es: En ambas lenguas palatalizan en «ll-».
+    - id: C
+      ca: En castellà es conserven i en català palatalitzen en «ll-».
+      es: En castellano se conservan y en catalán palatalizan en «ll-».
+    - id: D
+      ca: En totes dues llengües desapareix la primera consonant del grup.
+      es: En ambas lenguas desaparece la primera consonante del grupo.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: En castellà els grups inicials PL-, CL-, FL- palatalitzen sistemàticament en
+      «ll-» (CLAVE > llave, PLUVIA > lluvia, FLAMMA > llama), mentre que el
+      català els conserva (clau, pluja, flama). L'opció C inverteix les
+      llengües; B i D no s'ajusten a l'evolució real.
+    es: En castellano los grupos iniciales PL-, CL-, FL- palatalizan
+      sistemáticamente en «ll-» (CLAVE > llave, PLUVIA > lluvia, FLAMMA >
+      llama), mientras que el catalán los conserva (clau, pluja, flama). La
+      opción C invierte las lenguas; B y D no se ajustan a la evolución real.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000060
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.phonetic_evolution
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El grup secundari -C'L- (procedent de -CŬL-, p. ex. OCULU(M) > cast. «ojo»,
+      cat. «ull») evoluciona com?
+    es: El grupo secundario -C'L- (procedente de -CŬL-, p. ej. OCULU(M) > cast.
+      «ojo», cat. «ull») ¿cómo evoluciona?
+  options:
+    - id: A
+      ca: Palatalitza donant «j» [x] en castellà i «ll» [ʎ] en català.
+      es: Palataliza dando «j» [x] en castellano y «ll» [ʎ] en catalán.
+    - id: B
+      ca: Es manté com a oclusiva velar en totes dues llengües.
+      es: Se mantiene como oclusiva velar en ambas lenguas.
+    - id: C
+      ca: Dóna «ch» en castellà i «it» en català, com el grup -CT-.
+      es: Da «ch» en castellano e «it» en catalán, como el grupo -CT-.
+    - id: D
+      ca: Sonoritza en «g» en totes dues llengües.
+      es: Sonoriza en «g» en ambas lenguas.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En perdre's la vocal breu intertònica, el grup -CŬL- esdevé -C'L-, que
+      palatalitza: en castellà dóna «j» (OCULU > ojo, APICULA > abeja) i en
+      català «ll» (ull, abella). L'opció C confon aquest grup amb -CT-; B i D no
+      reflecteixen la palatalització que realment s'hi produeix."
+    es: "Al perderse la vocal breve intertónica, el grupo -CŬL- se convierte en
+      -C'L-, que palataliza: en castellano da «j» (OCULU > ojo, APICULA > abeja)
+      y en catalán «ll» (ull, abella). La opción C confunde este grupo con -CT-;
+      B y D no reflejan la palatalización que realmente se produce."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000061
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.cultisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En l'estudi del lèxic d'origen llatí, quina definició correspon a un
+      CULTISME?
+    es: En el estudio del léxico de origen latino, ¿qué definición corresponde a un
+      CULTISMO?
+  options:
+    - id: A
+      ca: Mot transmès oralment des del llatí que ha patit tota l'evolució fonètica
+        pròpia de la llengua.
+      es: Palabra transmitida oralmente desde el latín que ha sufrido toda la
+        evolución fonética propia de la lengua.
+    - id: B
+      ca: Mot incorporat més tard, directament del llatí per via culta o escrita, amb
+        una evolució fonètica mínima o nul·la.
+      es: Palabra incorporada más tarde, directamente del latín por vía culta o
+        escrita, con una evolución fonética mínima o nula.
+    - id: C
+      ca: Expressió llatina que s'empra sense cap modificació, com ara 'curriculum
+        vitae'.
+      es: Expresión latina que se emplea sin ninguna modificación, como 'curriculum
+        vitae'.
+    - id: D
+      ca: Mot manllevat d'una altra llengua moderna, com el francès o l'anglès.
+      es: Palabra tomada de otra lengua moderna, como el francés o el inglés.
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El cultisme entra a la llengua per via culta (escrita o eclesiàstica) en
+      època posterior i a penes s'adapta a les lleis d'evolució fonètica.
+      L'opció A descriu el mot patrimonial (evolució completa) i l'opció C
+      descriu un llatinisme o locució llatina (forma llatina intacta). L'opció D
+      és un manlleu modern, no un cultisme.
+    es: El cultismo entra en la lengua por vía culta (escrita o eclesiástica) en
+      época posterior y apenas se adapta a las leyes de evolución fonética. La
+      opción A describe la palabra patrimonial (evolución completa) y la opción
+      C describe un latinismo o locución latina (forma latina intacta). La
+      opción D es un préstamo moderno, no un cultismo.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000062
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.cultisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.3
+  question:
+    ca: Quina de les formes següents és un LLATINISME (locució llatina usada sense
+      adaptar)?
+    es: ¿Cuál de las siguientes formas es un LATINISMO (locución latina usada sin
+      adaptar)?
+  options:
+    - id: A
+      ca: càtedra
+      es: cátedra
+    - id: B
+      ca: cadira
+      es: cadera
+    - id: C
+      ca: curriculum vitae
+      es: curriculum vitae
+    - id: D
+      ca: lletra
+      es: letra
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: "'Curriculum vitae' és una locució llatina que s'empra tal com és en llatí,
+      sense adaptació fonètica ni morfològica: és un llatinisme. 'Càtedra' és un
+      cultisme, mentre que 'cadira' i 'lletra' són mots patrimonials plenament
+      evolucionats."
+    es: "'Curriculum vitae' es una locución latina que se emplea tal cual en latín,
+      sin adaptación fonética ni morfológica: es un latinismo. 'Cátedra' es un
+      cultismo, mientras que 'cadera' y 'letra' son palabras patrimoniales
+      plenamente evolucionadas."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000063
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.cultisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: Del llatí CATHEDRA procedeixen dues paraules. Quina afirmació és correcta?
+    es: Del latín CATHEDRA proceden dos palabras. ¿Qué afirmación es correcta?
+  options:
+    - id: A
+      ca: "'cadira' és el mot patrimonial i 'càtedra' és el cultisme."
+      es: "'cadera' es la palabra patrimonial y 'cátedra' es el cultismo."
+    - id: B
+      ca: "'càtedra' és el mot patrimonial i 'cadira' és el cultisme."
+      es: "'cátedra' es la palabra patrimonial y 'cadera' es el cultismo."
+    - id: C
+      ca: totes dues són cultismes.
+      es: ambas son cultismos.
+    - id: D
+      ca: totes dues són mots patrimonials.
+      es: ambas son palabras patrimoniales.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Cadira' (cast. 'cadera') ha seguit tota l'evolució fonètica (canvi
+      d'accent i de significat inclosos), per tant és el mot patrimonial.
+      'Càtedra' (cast. 'cátedra') conserva gairebé intacta la forma llatina i el
+      sentit tècnic: és el cultisme. Formen un doblet."
+    es: "'Cadera' (cat. 'cadira') ha seguido toda la evolución fonética (incluido el
+      cambio de acento y de significado), por lo que es la palabra patrimonial.
+      'Cátedra' (cat. 'càtedra') conserva casi intacta la forma latina y el
+      sentido técnico: es el cultismo. Forman un doblete."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000064
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.cultisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Un DOBLET és una parella formada per un mot patrimonial i un cultisme
+      procedents del mateix ètim llatí. Quina de les parelles següents és un
+      doblet autèntic?
+    es: Un DOBLETE es una pareja formada por una palabra patrimonial y un cultismo
+      procedentes del mismo étimo latino. ¿Cuál de las siguientes parejas es un
+      doblete auténtico?
+  options:
+    - id: A
+      ca: dret / directe (< DIRECTUM)
+      es: derecho / directo (< DIRECTUM)
+    - id: B
+      ca: fred / càlid
+      es: frío / cálido
+    - id: C
+      ca: llet / lletra
+      es: leche / letra
+    - id: D
+      ca: home / humà
+      es: hombre / humano
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Dret' (patrimonial) i 'directe' (cultisme) provenen tots dos de DIRECTUM:
+      és un doblet. 'Fred/càlid' són antònims d'ètims diferents; 'llet' (<
+      LACTE) i 'lletra' (< LITTERA) tenen orígens distints; 'home' (< HOMINE) i
+      'humà' (< HUMANUM) procedeixen de mots llatins diferents, no del mateix
+      ètim."
+    es: "'Derecho' (patrimonial) y 'directo' (cultismo) proceden ambos de DIRECTUM:
+      es un doblete. 'Frío/cálido' son antónimos de étimos distintos; 'leche' (<
+      LACTE) y 'letra' (< LITTERA) tienen orígenes diferentes; 'hombre' (<
+      HOMINE) y 'humano' (< HUMANUM) proceden de palabras latinas distintas, no
+      del mismo étimo."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000065
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.cultisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: Quin dels mots següents és un CULTISME i no un mot patrimonial?
+    es: ¿Cuál de las siguientes palabras es un CULTISMO y no una palabra
+      patrimonial?
+  options:
+    - id: A
+      ca: auricular (< AURICULA)
+      es: auricular (< AURICULA)
+    - id: B
+      ca: orella (< AURICULA)
+      es: oreja (< AURICULA)
+    - id: C
+      ca: ull (< OCULUM)
+      es: ojo (< OCULUM)
+    - id: D
+      ca: full (< FOLIUM)
+      es: hoja (< FOLIUM)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Auricular' conserva gairebé intacta la base llatina AURICULA (no s'hi
+      produeix la palatalització ni la caiguda de síl·labes pròpies de
+      l'evolució popular): és un cultisme. 'Orella', 'ull' i 'full' són mots
+      patrimonials que mostren canvis fonètics regulars (p. ex. -CL- > -ll-, O
+      breu tònica > u/o)."
+    es: "'Auricular' conserva casi intacta la base latina AURICULA (no se produce la
+      palatalización ni la pérdida de sílabas propias de la evolución popular):
+      es un cultismo. 'Oreja', 'ojo' y 'hoja' son palabras patrimoniales que
+      muestran cambios fonéticos regulares (p. ej. -CL- > j/ll, F- > h-)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000066
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.lexicon.cultisms
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: En un text formal apareix la locució llatina 'sui generis'. Quin és el seu
+      significat correcte?
+    es: En un texto formal aparece la locución latina 'sui generis'. ¿Cuál es su
+      significado correcto?
+  options:
+    - id: A
+      ca: "'del seu propi gènere', és a dir, únic, singular o molt particular."
+      es: "'de su propio género', es decir, único, singular o muy particular."
+    - id: B
+      ca: "'a l'instant', immediatament i com a conseqüència directa."
+      es: "'al instante', inmediatamente y como consecuencia directa."
+    - id: C
+      ca: "'en el lloc original', sense desplaçar l'objecte estudiat."
+      es: "'en el lugar original', sin desplazar el objeto estudiado."
+    - id: D
+      ca: "'amb anterioritat', abans de tota experiència o comprovació."
+      es: "'con anterioridad', antes de toda experiencia o comprobación."
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "'Sui generis' (literalment 'del seu gènere') qualifica allò que és únic en
+      el seu gènere, singular o difícil de classificar. Les altres opcions
+      corresponen a altres llatinismes: 'ipso facto' (a l'instant), 'in situ'
+      (en el lloc original) i 'a priori' (abans de l'experiència)."
+    es: "'Sui generis' (literalmente 'de su género') califica lo que es único en su
+      género, singular o difícil de clasificar. Las demás opciones corresponden
+      a otros latinismos: 'ipso facto' (al instante), 'in situ' (en el lugar
+      original) y 'a priori' (antes de la experiencia)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000067
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.15
+  question:
+    ca: Quin és l'ordre cronològic correcte dels tres grans períodes de la història
+      política de Roma?
+    es: ¿Cuál es el orden cronológico correcto de los tres grandes períodos de la
+      historia política de Roma?
+  options:
+    - id: A
+      ca: Monarquia → República → Imperi
+      es: Monarquía → República → Imperio
+    - id: B
+      ca: República → Monarquia → Imperi
+      es: República → Monarquía → Imperio
+    - id: C
+      ca: Monarquia → Imperi → República
+      es: Monarquía → Imperio → República
+    - id: D
+      ca: Imperi → República → Monarquia
+      es: Imperio → República → Monarquía
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "Roma passà per tres etapes successives: la Monarquia (des de la fundació
+      tradicional, 753 aC, fins al 509 aC), la República (509–27 aC) i l'Imperi
+      (des del 27 aC). Per tant l'ordre correcte és Monarquia, República i
+      Imperi."
+    es: "Roma pasó por tres etapas sucesivas: la Monarquía (desde la fundación
+      tradicional, 753 a. C., hasta el 509 a. C.), la República (509–27 a. C.) y
+      el Imperio (desde el 27 a. C.). Por tanto el orden correcto es Monarquía,
+      República e Imperio."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000068
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Segons la tradició romana, en quin any Ròmul va fundar la ciutat de Roma?
+    es: Según la tradición romana, ¿en qué año fundó Rómulo la ciudad de Roma?
+  options:
+    - id: A
+      ca: 753 aC
+      es: 753 a. C.
+    - id: B
+      ca: 509 aC
+      es: 509 a. C.
+    - id: C
+      ca: 27 aC
+      es: 27 a. C.
+    - id: D
+      ca: 476 dC
+      es: 476 d. C.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: La tradició, seguint Varró, situa la fundació de Roma (ab urbe condita)
+      l'any 753 aC. El 509 aC marca l'inici de la República; el 27 aC, l'inici
+      de l'Imperi; i el 476 dC, la caiguda de l'Imperi romà d'Occident.
+    es: La tradición, siguiendo a Varrón, sitúa la fundación de Roma (ab urbe
+      condita) en el año 753 a. C. El 509 a. C. marca el inicio de la República;
+      el 27 a. C., el del Imperio; y el 476 d. C., la caída del Imperio romano
+      de Occidente.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000069
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: La tradició romana atribueix a la Monarquia un nombre concret de reis.
+      Quants reis va tenir Roma i qui va ser l'últim?
+    es: La tradición romana atribuye a la Monarquía un número concreto de reyes.
+      ¿Cuántos reyes tuvo Roma y quién fue el último?
+  options:
+    - id: A
+      ca: Set reis; l'últim fou Tarquini el Superb (Tarquinius Superbus)
+      es: Siete reyes; el último fue Tarquinio el Soberbio (Tarquinius Superbus)
+    - id: B
+      ca: Set reis; l'últim fou Ròmul (Romulus)
+      es: Siete reyes; el último fue Rómulo (Romulus)
+    - id: C
+      ca: Tres reis; l'últim fou Numa Pompili (Numa Pompilius)
+      es: Tres reyes; el último fue Numa Pompilio (Numa Pompilius)
+    - id: D
+      ca: Dotze reis; l'últim fou Servi Tul·li (Servius Tullius)
+      es: Doce reyes; el último fue Servio Tulio (Servius Tullius)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "La tradició compta set reis: Ròmul (el fundador i primer rei), Numa
+      Pompili, Tul·lus Hostili, Anc Marci, Tarquini Prisc, Servi Tul·li i,
+      finalment, Tarquini el Superb, l'expulsió del qual (509 aC) posa fi a la
+      Monarquia. Ròmul fou el primer, no l'últim."
+    es: "La tradición cuenta siete reyes: Rómulo (fundador y primer rey), Numa
+      Pompilio, Tulo Hostilio, Anco Marcio, Tarquinio Prisco, Servio Tulio y,
+      finalmente, Tarquinio el Soberbio, cuya expulsión (509 a. C.) pone fin a
+      la Monarquía. Rómulo fue el primero, no el último."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000070
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: L'any 509 aC és considerat l'inici de la República romana. Quin esdeveniment
+      el marca?
+    es: El año 509 a. C. se considera el inicio de la República romana. ¿Qué
+      acontecimiento lo marca?
+  options:
+    - id: A
+      ca: L'expulsió del rei Tarquini el Superb i la substitució de la reialesa per
+        dos cònsols anuals
+      es: La expulsión del rey Tarquinio el Soberbio y la sustitución de la realeza
+        por dos cónsules anuales
+    - id: B
+      ca: L'assassinat de Juli Cèsar als idus de març
+      es: El asesinato de Julio César en los idus de marzo
+    - id: C
+      ca: La concessió del títol d'August a Octavi
+      es: La concesión del título de Augusto a Octavio
+    - id: D
+      ca: La fundació de la ciutat per Ròmul
+      es: La fundación de la ciudad por Rómulo
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El 509 aC els romans van expulsar l'últim rei, Tarquini el Superb, i van
+      abolir la monarquia. El poder reial es va repartir entre dos cònsols
+      elegits anualment (col·legialitat i anualitat), naixent així la res
+      publica. L'assassinat de Cèsar (44 aC) i el títol d'August (27 aC)
+      pertanyen al final de la República / inici de l'Imperi.
+    es: En el 509 a. C. los romanos expulsaron al último rey, Tarquinio el Soberbio,
+      y abolieron la monarquía. El poder regio se repartió entre dos cónsules
+      elegidos anualmente (colegialidad y anualidad), naciendo así la res
+      publica. El asesinato de César (44 a. C.) y el título de Augusto (27 a.
+      C.) corresponden al final de la República / inicio del Imperio.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000071
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: En quin any Octavi va rebre del Senat el títol d'August, fet considerat
+      l'inici del Principat (Imperi)?
+    es: ¿En qué año recibió Octavio del Senado el título de Augusto, hecho
+      considerado el inicio del Principado (Imperio)?
+  options:
+    - id: A
+      ca: 27 aC
+      es: 27 a. C.
+    - id: B
+      ca: 31 aC
+      es: 31 a. C.
+    - id: C
+      ca: 44 aC
+      es: 44 a. C.
+    - id: D
+      ca: 14 dC
+      es: 14 d. C.
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: L'any 27 aC el Senat va atorgar a Octavi el títol honorífic d'Augustus,
+      moment convencional de l'inici del Principat i de l'Imperi. El 31 aC és la
+      batalla d'Àccium (victòria sobre Marc Antoni i Cleòpatra); el 44 aC,
+      l'assassinat de Juli Cèsar; i el 14 dC, la mort d'August.
+    es: En el 27 a. C. el Senado otorgó a Octavio el título honorífico de Augustus,
+      momento convencional del inicio del Principado y del Imperio. El 31 a. C.
+      es la batalla de Accio (victoria sobre Marco Antonio y Cleopatra); el 44
+      a. C., el asesinato de Julio César; y el 14 d. C., la muerte de Augusto.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000072
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.history
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: La historiografia fixa convencionalment la caiguda de l'Imperi romà
+      d'Occident l'any 476 dC. Quin fet la simbolitza?
+    es: La historiografía fija convencionalmente la caída del Imperio romano de
+      Occidente en el año 476 d. C. ¿Qué hecho la simboliza?
+  options:
+    - id: A
+      ca: La deposició de l'emperador Ròmul Augústul pel cabdill Odoacre
+      es: La deposición del emperador Rómulo Augústulo por el caudillo Odoacro
+    - id: B
+      ca: La divisió definitiva de l'Imperi entre Orient i Occident per Teodosi (395
+        dC)
+      es: La división definitiva del Imperio entre Oriente y Occidente por Teodosio
+        (395 d. C.)
+    - id: C
+      ca: El saqueig de Roma per Alaric i els visigots (410 dC)
+      es: El saqueo de Roma por Alarico y los visigodos (410 d. C.)
+    - id: D
+      ca: La promulgació de l'Edicte de Milà per Constantí (313 dC)
+      es: La promulgación del Edicto de Milán por Constantino (313 d. C.)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El 476 dC el cabdill germànic Odoacre va deposar Ròmul Augústul, l'últim
+      emperador d'Occident, fet pres com a final convencional de l'Imperi romà
+      d'Occident. La divisió de Teodosi (395), el saqueig d'Alaric (410) i
+      l'Edicte de Milà (313) són anteriors i no marquen aquesta caiguda.
+    es: En el 476 d. C. el caudillo germánico Odoacro depuso a Rómulo Augústulo, el
+      último emperador de Occidente, hecho tomado como final convencional del
+      Imperio romano de Occidente. La división de Teodosio (395), el saqueo de
+      Alarico (410) y el Edicto de Milán (313) son anteriores y no marcan esa
+      caída.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000073
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.society
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: En el nom romà «Marcus Tullius Cicero», quina part correspon al nomen (el
+      gentilici, és a dir, el nom de la gens)?
+    es: En el nombre romano «Marcus Tullius Cicero», ¿qué parte corresponde al nomen
+      (el gentilicio, es decir, el nombre de la gens)?
+  options:
+    - id: A
+      ca: Marcus
+      es: Marcus
+    - id: B
+      ca: Tullius
+      es: Tullius
+    - id: C
+      ca: Cicero
+      es: Cicero
+    - id: D
+      ca: Marcus Tullius
+      es: Marcus Tullius
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: "Els tria nomina d'un ciutadà romà lliure eren: praenomen (nom individual) =
+      Marcus; nomen o gentilicium (nom de la gens o clan) = Tullius; cognomen
+      (branca familiar o sobrenom) = Cicero. Per tant, el nomen és Tullius."
+    es: "Los tria nomina de un ciudadano romano libre eran: praenomen (nombre
+      individual) = Marcus; nomen o gentilicium (nombre de la gens o clan) =
+      Tullius; cognomen (rama familiar o sobrenombre) = Cicero. Por tanto, el
+      nomen es Tullius."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000074
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.society
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.25
+  question:
+    ca: Entre els romans, quin dels àpats diaris era el principal i més abundant,
+      celebrat al final de la tarda?
+    es: Entre los romanos, ¿cuál de las comidas diarias era la principal y más
+      abundante, celebrada al final de la tarde?
+  options:
+    - id: A
+      ca: El ientaculum
+      es: El ientaculum
+    - id: B
+      ca: El prandium
+      es: El prandium
+    - id: C
+      ca: La cena
+      es: La cena
+    - id: D
+      ca: La vesperna
+      es: La vesperna
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: El ientaculum era un esmorzar lleuger del matí i el prandium un àpat frugal
+      del migdia; la cena, feta cap al final de la tarda, era l'àpat principal i
+      més copiós, sovint amb convidats. La vesperna era un sopar arcaic caigut
+      en desús.
+    es: El ientaculum era un desayuno ligero de la mañana y el prandium una comida
+      frugal del mediodía; la cena, hacia el final de la tarde, era la comida
+      principal y más copiosa, a menudo con invitados. La vesperna era una cena
+      arcaica en desuso.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000075
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.society
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: "Un esclau que era alliberat legalment pel seu amo mitjançant la manumissio
+      passava a rebre el nom de:"
+    es: "Un esclavo que era liberado legalmente por su amo mediante la manumissio
+      pasaba a recibir el nombre de:"
+  options:
+    - id: A
+      ca: servus
+      es: servus
+    - id: B
+      ca: libertus (llibert)
+      es: libertus (liberto)
+    - id: C
+      ca: cliens
+      es: cliens
+    - id: D
+      ca: patricius
+      es: patricius
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: Amb la manumissio l'esclau (servus) esdevenia libertus (llibert) i el seu
+      antic amo passava a ser el seu patronus. Encara que el llibert quedava
+      lligat al patró amb deures propis de la clientela, el terme tècnic per
+      designar-lo era libertus, no cliens; i mai no assolia la condició de
+      patricius.
+    es: Con la manumissio el esclavo (servus) se convertía en libertus (liberto) y
+      su antiguo amo pasaba a ser su patronus. Aunque el liberto quedaba ligado
+      al patrono con deberes propios de la clientela, el término técnico para
+      designarlo era libertus, no cliens; y nunca alcanzaba la condición de
+      patricius.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000076
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.society
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.45
+  question:
+    ca: "La toga praetexta, orlada amb una franja de porpra, era vestida
+      característicament per:"
+    es: "La toga praetexta, orlada con una franja de púrpura, era vestida
+      característicamente por:"
+  options:
+    - id: A
+      ca: tots els ciutadans adults en general
+      es: todos los ciudadanos adultos en general
+    - id: B
+      ca: els infants nascuts lliures i els magistrats curuls
+      es: los niños nacidos libres y los magistrados curules
+    - id: C
+      ca: els esclaus dins la casa
+      es: los esclavos dentro de la casa
+    - id: D
+      ca: els soldats en campanya militar
+      es: los soldados en campaña militar
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: La toga praetexta, amb vora de porpra, la duien els nens i nenes lliures i
+      també els magistrats curuls com a senyal de dignitat. En arribar a la
+      majoria d'edat, el jove deixava la praetexta i vestia la toga virilis (o
+      toga pura). Els esclaus no podien portar toga i els soldats vestien el
+      sagum o el paludamentum.
+    es: La toga praetexta, con borde de púrpura, la llevaban los niños y niñas
+      libres y también los magistrados curules como signo de dignidad. Al llegar
+      a la mayoría de edad, el joven dejaba la praetexta y vestía la toga
+      virilis (o toga pura). Los esclavos no podían llevar toga y los soldados
+      vestían el sagum o el paludamentum.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000077
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.society
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: A la domus romana, com s'anomenava la bassa o dipòsit situat al centre de
+      l'atri que recollia l'aigua de pluja?
+    es: En la domus romana, ¿cómo se llamaba la pila o depósito situado en el centro
+      del atrio que recogía el agua de lluvia?
+  options:
+    - id: A
+      ca: compluvium
+      es: compluvium
+    - id: B
+      ca: impluvium
+      es: impluvium
+    - id: C
+      ca: peristylium
+      es: peristylium
+    - id: D
+      ca: tablinum
+      es: tablinum
+  answer:
+    type: single
+    correct: B
+  explanation:
+    ca: El compluvium era l'obertura inclinada del sostre de l'atri per on entrava
+      la llum i l'aigua; l'impluvium era la bassa del terra, just a sota, que en
+      recollia l'aigua de pluja. El peristylium era el jardí envoltat de
+      columnes i el tablinum, la sala de rebre o despatx del paterfamilias.
+    es: El compluvium era la abertura inclinada del techo del atrio por donde
+      entraba la luz y el agua; el impluvium era la pila del suelo, justo
+      debajo, que recogía esa agua de lluvia. El peristylium era el jardín
+      rodeado de columnas y el tablinum, la sala de recibir o despacho del
+      paterfamilias.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000078
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.society
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.7
+  question:
+    ca: Segons el cursus honorum de l'època republicana, quin era l'ordre ascendent
+      correcte d'aquestes magistratures ordinàries?
+    es: Según el cursus honorum de época republicana, ¿cuál era el orden ascendente
+      correcto de estas magistraturas ordinarias?
+  options:
+    - id: A
+      ca: qüestor → edil → pretor → cònsol
+      es: cuestor → edil → pretor → cónsul
+    - id: B
+      ca: edil → qüestor → cònsol → pretor
+      es: edil → cuestor → cónsul → pretor
+    - id: C
+      ca: pretor → qüestor → cònsol → edil
+      es: pretor → cuestor → cónsul → edil
+    - id: D
+      ca: cònsol → pretor → edil → qüestor
+      es: cónsul → pretor → edil → cuestor
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "El cursus honorum fixava un ordre ascendent d'edat mínima i
+      responsabilitat: primer la qüestura (gestió financera), després l'edilitat
+      (obres, jocs i abastament), tot seguit la pretura (administració de
+      justícia) i, al capdamunt, el consolat (màxima magistratura executiva i
+      militar). L'opció D en dóna l'ordre invers."
+    es: "El cursus honorum fijaba un orden ascendente de edad mínima y
+      responsabilidad: primero la cuestura (gestión financiera), después la
+      edilidad (obras, juegos y abastecimiento), luego la pretura
+      (administración de justicia) y, en la cúspide, el consulado (máxima
+      magistratura ejecutiva y militar). La opción D da el orden inverso."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000079
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.2
+  question:
+    ca: Quina de les llengües següents NO és una llengua romànica derivada del
+      llatí?
+    es: ¿Cuál de las siguientes lenguas NO es una lengua románica derivada del
+      latín?
+  options:
+    - id: A
+      ca: El romanès
+      es: El rumano
+    - id: B
+      ca: L'occità
+      es: El occitano
+    - id: C
+      ca: L'èuscar (basc)
+      es: El euskera (vasco)
+    - id: D
+      ca: El sard
+      es: El sardo
+  answer:
+    type: single
+    correct: C
+  explanation:
+    ca: El romanès, l'occità i el sard són llengües romàniques, és a dir,
+      evolucionades a partir del llatí vulgar. L'èuscar (basc) és una llengua
+      preindoeuropea aïllada, sense parentiu genètic amb el llatí; per tant, no
+      forma part de la família romànica.
+    es: El rumano, el occitano y el sardo son lenguas románicas, es decir,
+      evolucionadas a partir del latín vulgar. El euskera (vasco) es una lengua
+      preindoeuropea aislada, sin parentesco genético con el latín; por lo
+      tanto, no forma parte de la familia románica.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000080
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.4
+  question:
+    ca: En textos jurídics i administratius encara s'utilitza la locució llatina
+      «sine die». Quin n'és el significat?
+    es: En textos jurídicos y administrativos aún se utiliza la locución latina
+      «sine die». ¿Cuál es su significado?
+  options:
+    - id: A
+      ca: Sense una data fixada
+      es: Sin una fecha fijada
+    - id: B
+      ca: El mateix dia
+      es: El mismo día
+    - id: C
+      ca: Dia rere dia
+      es: Día tras día
+    - id: D
+      ca: Dins del termini previst
+      es: Dentro del plazo previsto
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Sine» és una preposició de regim d'ablatiu que significa 'sense', i «die»
+      és l'ablatiu singular de «dies» ('dia'). Literalment 'sense dia': una
+      reunió o resolució ajornada «sine die» queda posposada sense fixar-ne una
+      nova data."
+    es: "«Sine» es una preposición de régimen de ablativo que significa 'sin', y
+      «die» es el ablativo singular de «dies» ('día'). Literalmente 'sin día':
+      una reunión o resolución aplazada «sine die» queda pospuesta sin fijar una
+      nueva fecha."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000081
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.55
+  question:
+    ca: Un «doblet» és la coexistència d'un mot patrimonial (d'evolució popular) i
+      un cultisme procedents d'un mateix ètim llatí. Quin dels parells següents
+      constitueix un doblet autèntic?
+    es: Un «doblete» es la coexistencia de una palabra patrimonial (de evolución
+      popular) y un cultismo procedentes de un mismo étimo latino. ¿Cuál de las
+      siguientes parejas constituye un doblete auténtico?
+  options:
+    - id: A
+      ca: estret / estricte (< STRICTUM)
+      es: estrecho / estricto (< STRICTUM)
+    - id: B
+      ca: ull / orella
+      es: ojo / oreja
+    - id: C
+      ca: llet / lletra
+      es: leche / letra
+    - id: D
+      ca: aigua / àguila
+      es: agua / águila
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "De STRICTUM en surten dues formes: el mot patrimonial «estret/estrecho»
+      (evolució popular regular) i el cultisme «estricte/estricto» (pres
+      directament del llatí molt més tard, amb poca alteració). Els altres
+      parells només s'assemblen fonèticament però procedeixen d'ètims diferents
+      (OCULUM/AURICULA, LACTEM/LITTERAM, AQUAM/AQUILAM) i, per tant, no són
+      doblets."
+    es: "De STRICTUM surgen dos formas: la palabra patrimonial «estret/estrecho»
+      (evolución popular regular) y el cultismo «estricte/estricto» (tomado
+      directamente del latín mucho más tarde, con poca alteración). Las demás
+      parejas solo se parecen fonéticamente pero proceden de étimos distintos
+      (OCULUM/AURICULA, LACTEM/LITTERAM, AQUAM/AQUILAM) y, por tanto, no son
+      dobletes."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000082
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.5
+  question:
+    ca: El dret romà es va transmetre a l'Europa medieval i moderna principalment
+      mitjançant una gran compilació jurídica ordenada per l'emperador Justinià
+      al segle VI dC. Com s'anomena aquesta obra?
+    es: El derecho romano se transmitió a la Europa medieval y moderna
+      principalmente mediante una gran compilación jurídica ordenada por el
+      emperador Justiniano en el siglo VI d. C. ¿Cómo se llama esta obra?
+  options:
+    - id: A
+      ca: El Corpus Iuris Civilis
+      es: El Corpus Iuris Civilis
+    - id: B
+      ca: La Llei de les XII Taules
+      es: La Ley de las XII Tablas
+    - id: C
+      ca: L'Edicte de Milà
+      es: El Edicto de Milán
+    - id: D
+      ca: El Codi Napoleònic
+      es: El Código Napoleónico
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: El «Corpus Iuris Civilis», compilat sota Justinià al segle VI dC, recull el
+      dret romà i és la base del dret civil europeu posterior. La Llei de les
+      XII Taules és molt anterior (s. V aC) i molt més limitada; l'Edicte de
+      Milà (313) tracta de la tolerància religiosa, no del dret civil; i el Codi
+      Napoleònic (1804) és posterior i, tot i inspirar-se en el dret romà, no és
+      una obra romana.
+    es: El «Corpus Iuris Civilis», compilado bajo Justiniano en el siglo VI d. C.,
+      recoge el derecho romano y es la base del derecho civil europeo posterior.
+      La Ley de las XII Tablas es muy anterior (s. V a. C.) y mucho más
+      limitada; el Edicto de Milán (313) trata de la tolerancia religiosa, no
+      del derecho civil; y el Código Napoleónico (1804) es posterior y, aunque
+      se inspira en el derecho romano, no es una obra romana.
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000083
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.6
+  question:
+    ca: Els noms catalans dels dies feiners deriven de la fórmula llatina «dies +
+      nom d'una divinitat o planeta». De quina expressió llatina prové
+      «dimecres»?
+    es: Los nombres catalanes de los días laborables derivan de la fórmula latina
+      «dies + nombre de una divinidad o planeta». ¿De qué expresión latina
+      proviene «dimecres» (miércoles)?
+  options:
+    - id: A
+      ca: Mercurii dies (dia de Mercuri)
+      es: Mercurii dies (día de Mercurio)
+    - id: B
+      ca: Martis dies (dia de Mart)
+      es: Martis dies (día de Marte)
+    - id: C
+      ca: Iovis dies (dia de Júpiter)
+      es: Iovis dies (día de Júpiter)
+    - id: D
+      ca: Veneris dies (dia de Venus)
+      es: Veneris dies (día de Venus)
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "«Dimecres» prové de «Mercurii dies», el dia consagrat a Mercuri. Les altres
+      expressions corresponen a altres dies: «Martis dies» > dimarts, «Iovis
+      dies» > dijous i «Veneris dies» > divendres."
+    es: "«Dimecres» (miércoles) proviene de «Mercurii dies», el día consagrado a
+      Mercurio. Las demás expresiones corresponden a otros días: «Martis dies» >
+      dimarts (martes), «Iovis dies» > dijous (jueves) y «Veneris dies» >
+      divendres (viernes)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review
+- id: lla-g-000084
+  version: 1
+  region: catalunya
+  academic_year: 2026
+  subject: latin
+  type: multiple_choice
+  skills:
+    - latin.culture.legacy
+  competencies:
+    - reasoning
+    - problem_solving
+  difficulty:
+    initial: 0.75
+  question:
+    ca: El grup consonàntic llatí -CT- va evolucionar de manera diferent en cada
+      llengua romànica. Quin és el resultat regular en CATALÀ dels mots NOCTEM,
+      LACTEM i FACTUM?
+    es: El grupo consonántico latino -CT- evolucionó de manera diferente en cada
+      lengua románica. ¿Cuál es el resultado regular en CATALÁN de las palabras
+      NOCTEM, LACTEM y FACTUM?
+  options:
+    - id: A
+      ca: nit, llet, fet
+      es: nit, llet, fet
+    - id: B
+      ca: noche, leche, hecho
+      es: noche, leche, hecho
+    - id: C
+      ca: noite, leite, feito
+      es: noite, leite, feito
+    - id: D
+      ca: notte, latte, fatto
+      es: notte, latte, fatto
+  answer:
+    type: single
+    correct: A
+  explanation:
+    ca: "En català la velar del grup -CT- es vocalitza en iod, que palatalitza la
+      consonant següent i acaba reduint-se: NOCTEM > nit, LACTEM > llet, FACTUM
+      > fet. Les altres opcions són els resultats regulars del castellà (-ch-:
+      noche, leche, hecho), del gallegoportuguès (-it-: noite, leite, feito) i
+      de l'italià (-tt-: notte, latte, fatto)."
+    es: "En catalán la velar del grupo -CT- se vocaliza en yod, que palataliza la
+      consonante siguiente y acaba reduciéndose: NOCTEM > nit, LACTEM > llet,
+      FACTUM > fet. Las demás opciones son los resultados regulares del
+      castellano (-ch-: noche, leche, hecho), del gallegoportugués (-it-: noite,
+      leite, feito) y del italiano (-tt-: notte, latte, fatto)."
+  source:
+    type: generated
+    authority: PAU OS — AI-generated, dual-verified (physics correctness + validity)
+    url: null
+  review:
+    status: pending_review

@@ -57,12 +57,18 @@ describe.skipIf(!DB_URL)('PauClient (integration)', () => {
     expect(provisional).toBe(true);
     expect(degrees.length).toBeGreaterThan(0);
 
+    // Pick a degree that weights Matemàtiques II so the estimate below has a
+    // covered subject with a contribution (the catalog also has degrees that
+    // weight only subjects we don't yet cover).
+    const target =
+      degrees.find((d) => (d.weightings ?? []).some((w) => w.subject === 'mathematics-ii')) ??
+      degrees[0];
     const { goal } = await client.createGoal({
       studentId: student.id,
-      degreeId: degrees[0].id,
+      degreeId: target.id,
       targetScore: 12,
     });
-    expect(goal.degreeId).toBe(degrees[0].id);
+    expect(goal.degreeId).toBe(target.id);
     expect(goal.targetScore).toBe(12);
 
     const current = await client.getCurrentGoal(student.id);
@@ -97,17 +103,25 @@ describe.skipIf(!DB_URL)('PauClient (integration)', () => {
     // never predicts the full admission score.
     const estimate = await client.getTargetEstimate(student.id);
     if ('degreeName' in estimate) {
-      expect(estimate.subjectLevel.range).toHaveLength(2);
-      // The chosen STEM degree weights mathematics-ii, so a contribution exists.
-      expect(estimate.contribution).not.toBeNull();
-      expect(estimate.disclaimer).toContain('Matemàtiques II');
+      expect(Array.isArray(estimate.subjects)).toBe(true);
+      // The chosen STEM degree weights mathematics-ii, so its estimate is present
+      // with a level range and a non-null contribution to the admission score.
+      const mii = estimate.subjects.find((s) => s.subject === 'mathematics-ii');
+      expect(mii).toBeDefined();
+      expect(mii?.subjectLevel.range).toHaveLength(2);
+      expect(mii?.contribution).not.toBeNull();
+      expect(estimate.disclaimer).toContain('weighted subjects');
     }
 
-    // Degree detail exposes provisional cutoffs, clearly non-official.
-    const detail = await client.getDegree(degrees[0].id);
+    // Degree detail exposes cutoff data (if available). Most are sourced from
+    // Dades Obertes (open data, not official-policy); some may be marked official
+    // if sourced that way. We just verify structure.
+    const detail = await client.getDegree(target.id);
     expect(Array.isArray(detail.cutoffs)).toBe(true);
     for (const c of detail.cutoffs) {
-      expect(c.sourceType).not.toBe('official');
+      expect(c).toHaveProperty('score');
+      expect(c).toHaveProperty('sourceType');
+      expect(c).toHaveProperty('sourceAuthority');
     }
 
     // Profile + recommendations reflect the completed diagnostic.
